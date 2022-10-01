@@ -1,0 +1,150 @@
+<style scope="global">
+  * {
+    font-family: "Poppins";
+    color: white;
+  }
+
+  main {
+    min-width: 17rem;
+    background-color: #03121f;
+    background-image: linear-gradient(#000000, rgba(44, 30, 204, 0.204), rgba(	217, 217, 217, 0));
+    height: 100vh;
+    
+  }
+  .main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  nav {
+    padding: 20px 0px;
+  }
+  .header-main {
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #FF00A8, #9928CE, #998EE0, #E17DC2, #EF9393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-main-text {
+      line-height: 1.25;
+  }
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .welcome {
+    max-width: 26rem;
+  }
+
+  .color-light {
+    color: var(--light);
+  }
+
+  .color-lilac {
+    color: var(--lilac);
+  }
+
+  .border-lilac {
+    border-color: var(--lilac);
+  }
+
+  .bg-navy {
+    background-color: var(--navy);
+  }
+
+  .bg-lilac {
+    background-color: var(--lilac);
+  }
+
+  .link-btn {
+    height: 4rem;
+  }
+
+  .discord-logo {
+    width: 1.75rem;
+  }
+
+  .radius5 {
+    border-radius: 5px;
+  }
+
+  .hero-left-side {
+  width: 2/3;
+  flex-grow: 1;
+}
+  .hero-cta-btn {
+    background-color: #E75B5B;
+    padding: 5px 35px;
+    border-radius: 25px;
+    font-size: 24px;
+  }
+
+  .space-x-3 > * + * {
+    margin-left: 0.75rem;
+  }
+  .space-y-4 > * + * {
+    margin-top: 1rem;
+  }
+  .hero{
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 1023px) {
+    .main-body{
+      padding: 0px 20px;
+      flex-direction: column;
+      height: 50%;
+      justify-content: space-between;
+    }
+    nav {
+      padding: 20px;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1512px){
+    main {
+      padding: 0 75px;
+    }
+    .hero-main-text {
+      font-size: 48px;
+    }
+  }
+
+@media only screen and (min-width: 1024px){
+  .hero-left-side {
+    width: 1/2;
+  }
+  .hero-max-w {
+    max-width: 725px;
+  }
+}
+</style>
+
+<main>
+  <div class="container">
+  <my-header></my-header>
+    <div class="main-body">
+      <div class="hero text1 w-full space-y-4">
+        <div class="flex items-center hero-left-side space-x-3">
+          <span style="color: #42FCCC;">.md</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6.7048 17.5266C10.6116 14.6031 18.1471 8.10153 17.0343 5.48304" stroke="#00D1FF" stroke-width="4" stroke-linecap="round"/>
+            <path d="M18.3933 17.7678C15.0764 15.5164 7.98495 9.99725 6.15414 5.93161" stroke="#00D1FF" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span style="color: #F12828;">runme</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6.7048 17.5266C10.6116 14.6031 18.1471 8.10153 17.0343 5.48304" stroke="#00D1FF" stroke-width="4" stroke-linecap="round"/>
+            <path d="M18.3933 17.7678C15.0764 15.5164 7.98495 9.99725 6.15414 5.93161" stroke="#00D1FF" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span style="color: #FF00A8;">develop</span>
+        </div>
+        <h2 class="text4 font-bold hero-main-text">Supercharge your docs to start building faster</h2>
+        <div>
+          <a href="https://github.com/stateful/vscode-runme" class="hero-cta-btn">Install</a>
+        </div>
+      </div>
+      <img src="/_static/runme-website-commands.gif" alt="Run me shell" class="hero-max-w">
+    </div>
+  </div>
+</main>
+
