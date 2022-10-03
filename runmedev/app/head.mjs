@@ -2,7 +2,7 @@ export default function Head(state) {
   const { req } = state;
   const { path } = req;
   const title = `Runme — ${path}`;
-  return `
+  return /* html */`
     <!DOCTYPE html>
     <html lang="en">
     <head>
