@@ -4,7 +4,9 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "devDependencies": {
+    "@architect/architect": "^10.6.0",
     "@architect/sandbox": "latest",
+    "aws-sdk": "^2.1228.0",
     "eslint": "latest"
   },
   "dependencies": {
