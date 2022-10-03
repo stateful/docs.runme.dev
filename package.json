@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "postinstall": "node ./scripts/createManifest.js",
     "start": "sandbox",
     "lint": "eslint ./app/**/*.mjs --fix"
   },

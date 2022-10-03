@@ -1,5 +1,5 @@
 @app
-runmedev
+app
 
 @plugins
 enhance/arc-plugin-enhance

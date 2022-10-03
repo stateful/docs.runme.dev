@@ -6,7 +6,7 @@
 
   main {
     min-width: 17rem;
-    background: rgba(0, 0, 0, 0.85);
+    /* background: rgba(0, 0, 0, 0.45); */
     /* background-color: #03121f; */
     /* background-image: linear-gradient(#000000, rgba(44, 30, 204, 0.204), rgba(	217, 217, 217, 0)); */
     min-height: 100vh;
@@ -25,7 +25,8 @@
     top: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 10%;
+    /* opacity: 0%; */
+    filter: brightness(30%);
     object-fit: cover;
     z-index: 0;
   }
@@ -54,38 +55,6 @@
     height: 100%;
   }
 
-  .welcome {
-    max-width: 26rem;
-  }
-
-  .color-light {
-    color: var(--light);
-  }
-
-  .color-lilac {
-    color: var(--lilac);
-  }
-
-  .border-lilac {
-    border-color: var(--lilac);
-  }
-
-  .bg-navy {
-    background-color: var(--navy);
-  }
-
-  .bg-lilac {
-    background-color: var(--lilac);
-  }
-
-  .link-btn {
-    height: 4rem;
-  }
-
-  .discord-logo {
-    width: 1.75rem;
-  }
-
   .radius5 {
     border-radius: 5px;
   }
@@ -97,9 +66,15 @@
 
   .hero-cta-btn {
     background-color: #E75B5B;
-    padding: 5px 35px;
+    padding: 0px 20px;
     border-radius: 25px;
-    font-size: 24px;
+    font-size: 14px;
+    width: 119px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
   }
 
   .space-x-3>*+* {
@@ -110,10 +85,37 @@
     margin-top: 1rem;
   }
 
-  .hero {
-    margin-top: 100px;
+  .section .section-description {
+    margin-top: 15px;
   }
-
+  .sections-container {
+    padding: 10px 20px;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-text {
+    font-size: 20px;
+    padding-top: 25px;
+  }
+  .section-text>*+* { 
+     margin-top: 15px;
+  }
+  .markdown {
+    justify-content: space-between;
+   margin-top: 50px;
+  }
+    
+  .markdown > * + * {
+  margin-left: 25px;
+  }
+  .use-case-list ol {
+    list-style-position: inside;
+  }
+  .use-case-list ol  > * + *{
+    margin-top: 15px;
+  }
   @media screen and (max-width: 500px) {
     .main-body .hero-main-text {
       font-size: 32px;
@@ -128,7 +130,7 @@
       justify-content: space-between;
     }
 
-    .main-body img {
+    .main-body video {
       margin-top: 50px;
     }
 
@@ -155,6 +157,9 @@
     .hero-max-w {
       max-width: 725px;
     }
+    .hero-main-text {
+      font-size: 64px;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
@@ -163,7 +168,7 @@
     }
 
     .main-body {
-      height: 75vh;
+      height: 80vh;
     }
 
   }
@@ -192,15 +197,35 @@
           <span style="color: #FF00A8;">develop</span>
         </div>
         <h2 class="text4 font-bold hero-main-text">Supercharge your docs to start building faster</h2>
-        <div>
-          <a href="https://github.com/stateful/vscode-runme" class="hero-cta-btn">Install</a>
+        <div class="hero-cta-btn">
+          <a href="https://github.com/stateful/vscode-runme">Install</a>
         </div>
       </div>
       <img src="/_static/runme-website-commands.gif" alt="Run me shell" class="hero-max-w">
     </div>
+    <div class="sections-container">
+      <section-container direction="row-reverse" title="How it works" description="runme lets you run your markdown documentation."></section-container>
+      <div class="markdown flex">
+        <img src="/_static/markdown-original.png" alt="Shell running markdown files commands" class="hero-max-w"/>
+        <div class="section-text">
+          <p>Write your markdown and any code blocks with `sh` will be read as runnable commands.</p>
+          <div class="use-case-list">
+            <h1>Use Cases</h1>
+            <ol>
+              <li>Setup application</li>
+              <li>Render web components</li>
+            </ol>
+          </div>
+          <img src="/_static/markdown-notebook.png" alt="Shell running markdown files commands" class="hero-max-w"/>
+        </div>
+      </div>
+    </div>
   </div>
   <video autoplay muted loop class='video-bg'>
+    <!-- <source src="/_static/light-particle-bg.mp4" type="video/mp4"> -->
     <source src="/_static/light-particle-bg.mp4" type="video/mp4">
     </source>
   </video>
+
+  
 </main>
