@@ -45,7 +45,7 @@ deployctl deploy --project=runme-staging main.ts
 To deploy to production, run:
 
 ```sh
-deployctl deploy --project=runme.dev main.ts
+deployctl deploy --project=runme main.ts
 ```
 
 ---
