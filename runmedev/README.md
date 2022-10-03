@@ -1,3 +1,21 @@
+# Runme.dev Website
+
+This is the website for the Runme VS Code Extension.
+
+# Set-up
+
+The project is using Begin for creating functional web-apps. You can install it by calling:
+
+```sh
+# Mac, Linux:
+curl -sS https://dl.begin.com/install.sh | sh
+```
+or
+```sh
+# Windows:
+iwr https://dl.begin.com/install.ps1 -useb | iex
+```
+
 # run app
 
 ```sh
