@@ -9,7 +9,7 @@
     background: rgba(0, 0, 0, 0.85);
     /* background-color: #03121f; */
     /* background-image: linear-gradient(#000000, rgba(44, 30, 204, 0.204), rgba(	217, 217, 217, 0)); */
-    height: 100vh;
+    min-height: 100vh;
     
   }
   .main-body {
@@ -38,6 +38,7 @@
     -webkit-text-fill-color: transparent;
   }
   .hero-main-text {
+      font-size: 48px;
       line-height: 1.25;
   }
   .container{
@@ -103,23 +104,39 @@
   .hero{
     margin-top: 100px;
   }
+  @media screen and (max-width: 500px) {
+    .main-body .hero-main-text{
+      font-size: 32px;
+    }
+
+  }
   @media screen and (max-width: 1023px) {
     .main-body{
       padding: 0px 20px;
       flex-direction: column;
-      height: 50%;
       justify-content: space-between;
+    }
+    .main-body img{
+      margin-top: 50px;
     }
     nav {
       padding: 20px;
     }
   }
-  @media only screen and (min-width: 1024px) and (max-width: 1512px){
+  @media only screen and (min-width: 1024px) and (max-width: 1513px){
     main {
       padding: 0 75px;
     }
     .hero-main-text {
       font-size: 48px;
+    }
+    .hero-max-w {
+      max-width: 625px;
+    }
+  }
+  @media only screen and (min-width: 1514px){
+    .hero-max-w {
+      max-width: 725px;
     }
   }
 
@@ -127,9 +144,10 @@
   .hero-left-side {
     width: 1/2;
   }
-  .hero-max-w {
-    max-width: 725px;
+  .main-body {
+    height: 75vh;
   }
+
 }
 </style>
 
