@@ -6,8 +6,9 @@
 
   main {
     min-width: 17rem;
-    background-color: #03121f;
-    background-image: linear-gradient(#000000, rgba(44, 30, 204, 0.204), rgba(	217, 217, 217, 0));
+    background: rgba(0, 0, 0, 0.85);
+    /* background-color: #03121f; */
+    /* background-image: linear-gradient(#000000, rgba(44, 30, 204, 0.204), rgba(	217, 217, 217, 0)); */
     height: 100vh;
     
   }
@@ -16,6 +17,16 @@
     justify-content: center;
     align-items: center;
     height: 80%;
+  }
+  .video-bg {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 10%;
+    object-fit: cover;
+    z-index: 0;
   }
   nav {
     padding: 20px 0px;
@@ -30,6 +41,8 @@
       line-height: 1.25;
   }
   .container{
+    position: relative;
+    z-index: 100;
     max-width: 1440px;
     margin: 0 auto;
     height: 100%;
@@ -146,5 +159,8 @@
       <img src="/_static/runme-website-commands.gif" alt="Run me shell" class="hero-max-w">
     </div>
   </div>
+  <video autoplay muted loop class='video-bg'>
+    <source src="/_static/light-particle-bg.mp4" type="video/mp4"></source>
+  </video>
 </main>
 
