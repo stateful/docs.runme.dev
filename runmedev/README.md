@@ -18,3 +18,8 @@ begin new page --path hello/example3
 ```sh 
 begin new page --path boom --type js
 ```
+
+# Deploy to Begin 
+```sh
+begin deploy
+```
