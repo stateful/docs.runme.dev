@@ -38,18 +38,9 @@ export default function Home() {
                 </svg>
                 <span class='text-[#FF00A8]'>runable docs</span>
               </div>
-              <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">An interactive docs extension for VS Code</h2>
-              <div class="flex items-center flex-wrap space-x-4 lg:space-y-0 lg:max-w-[475px]">
-                <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-[400]">
-                  <a href="https://github.com/stateful/vscode-runme">Install the extension</a>
-                </div>
-                {/* <span class="hidden lg:block text-center w-[200px] sm:w-auto sm:text-left">
-                  or {' '}
-                </span> */}
-                {/* <div class="bg-blue-500 py-[20px] rounded-md text-base w-[220px] h-[40px] flex items-center justify-center font-[400]"> */}
-                <a href="vscode:marketplace" class="hover:underline">or Search in the marketplace</a>
-                {/* </div> */}
-
+              <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">The Interactive Docs Extension for VS Code</h2>
+              <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[119px] h-[40px] flex items-center justify-center font-[400]">
+                <a href="https://github.com/stateful/vscode-runme">Install</a>
               </div>
             </div>
             {/* <video autoplay loop muted class='z-10 h-auto sm:max-w-xl xl:max-w-[720px] z-10' />
