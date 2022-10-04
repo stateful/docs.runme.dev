@@ -72,8 +72,10 @@ export default function Home() {
               <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
                 The Interactive Docs Extension for VS Code
               </h2>
-              <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[119px] h-[40px] flex items-center justify-center font-[400]">
-                <a href="https://github.com/stateful/vscode-runme">Install</a>
+              <div class="bg-[#e75b5b] py-[20px] px-4 font-semibold rounded-md text-base max-w-min h-[40px] flex items-center justify-center font-[400] whitespace-nowrap">
+                <a href="https://github.com/stateful/vscode-runme">
+                  Install the extension
+                </a>
               </div>
             </div>
             {/* <video autoplay loop muted class='z-10 h-auto sm:max-w-xl xl:max-w-[720px] z-10' />
