@@ -39,13 +39,13 @@ deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no
 Once installed successfully, you can run a staging deploy via:
 
 ```sh
-deployctl deploy --project=runme-staging main.ts
+deployctl deploy --project=runme-staging --import-map=import_map.json main.ts
 ```
 
 To deploy to production, run:
 
 ```sh
-deployctl deploy --project=runme main.ts
+deployctl deploy --project=runme --import-map=import_map.json main.ts
 ```
 
 ---
