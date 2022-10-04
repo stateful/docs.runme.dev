@@ -25,7 +25,7 @@ export default function Home() {
                 </svg>
                 <span class='text-[#FF00A8]'>runable docs</span>
               </div>
-              <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">An interactive docs extension for VS Code</h2>
+              <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">An Interactive Docs Extension for VS Code</h2>
               <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[119px] h-[40px] flex items-center justify-center font-[400]">
                 <a href="https://github.com/stateful/vscode-runme">Install</a>
               </div>
