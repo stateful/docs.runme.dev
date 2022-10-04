@@ -52,13 +52,21 @@ then you can run a staging deploy via:
 
 
 ```sh
-deployctl deploy --project=runme-staging --import-map=import_map.json main.ts --token=$DENO_ACCESS_TOKEN
+export PATH="~/.deno/bin:$PATH"
+deployctl deploy \
+    --project=runme-staging \
+    --import-map=import_map.json main.ts \
+    --token=$DENO_ACCESS_TOKEN
 ```
 
 To deploy to production, run:
 
 ```sh
-deployctl deploy --project=runme --import-map=import_map.json main.ts --token=$DENO_ACCESS_TOKEN
+export PATH="~/.deno/bin:$PATH"
+deployctl deploy \
+    --project=runme \
+    --import-map=import_map.json main.ts \
+    --token=$DENO_ACCESS_TOKEN
 ```
 
 ---
