@@ -11,13 +11,6 @@ This project is based on [Fresh](https://fresh.deno.dev/) and requires Deno to r
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
-or
-
-```sh
-# Windows PowerShell
-irm https://deno.land/install.ps1 | iex
-```
-
 ### Development
 
 Start the project:
