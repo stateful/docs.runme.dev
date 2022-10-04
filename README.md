@@ -4,7 +4,14 @@ This project contains the application for [runme.dev](https://runme.dev) and als
 
 ## Prerequisites
 
-This project is based on [Fresh](https://fresh.deno.dev/) and requires Deno to run. To install Deno, run:
+This project is based on [Fresh](https://fresh.deno.dev/) and requires Deno to run. To install Deno via homebrew on macOS:
+
+```sh
+# macOS
+brew bundle --no-lock
+```
+
+Or the installer which also works on Linux:
 
 ```sh
 # macOS or Linux
@@ -21,7 +28,7 @@ deno task start
 
 Open project in your browser:
 
-```sh
+```sh { interactive=false }
 open http://localhost:8000/
 ```
 
