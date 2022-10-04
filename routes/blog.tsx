@@ -8,7 +8,7 @@ import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
 
 const query = gql`
 query Posts() {
-  posts (orderBy: date_DESC, where: {stateful:true}, stage: PUBLISHED) {
+  posts (orderBy: date_DESC, where: {stateful:true, forRunmeSite: true}, stage: PUBLISHED, ) {
     id
     title
     preview
@@ -73,32 +73,36 @@ export const handler: Handlers<Article[] | null> = {
 };
 const Post = ({ post }: { post: Article }) => {
   return (
-    <div className="flex flex-col rounded border-gray-500 border py-2 px-4 shadow space-y-2">
-      <img src={post.cover.url} />
-
-      <div>{format(new Date(post.date), "LLLL d, Y", {})}</div>
-      <a
-        href={`https://stateful.com/blog/${post.slug}`}
-        class="text-xl font-medium hover:text-blue-500 cursor-pointer"
-      >
-        {post.title}
-      </a>
-      <div class="text-gray-400">{post.preview}</div>
-      <div class="flex flex-row space-x-1">
-        {post.authors.map((author) => {
-          return (
-            <div class="flex flex-row space-x-2 items-center">
-              <div>
-                <img class="rounded-2xl w-8 h-8" src={author.photo.url} />
-              </div>
-              <a class="hover:text-blue-500" href={author.url}>
-                {author.name}
-              </a>
-            </div>
-          );
-        })}
+    <a>
+      <div className="flex flex-col rounded border-gray-500 py-2 px-4 space-y-2">
+        <img src={post.cover.url} class='rounded-lg shadow-xl' />
+        <div className="w-12 mt-10 border-t-4 rounded-full border-[#EF2357]" />
+        <div class='space-y-2'>
+          <div>{format(new Date(post.date), "LLLL d, Y", {})}</div>
+          <a
+            href={`https://stateful.com/blog/${post.slug}`}
+            class="text-xl font-medium hover:text-blue-500 cursor-pointer"
+          >
+            {post.title}
+          </a>
+          <div class="text-gray-300 text-xl">{post.preview}</div>
+          <div class="flex flex-row space-x-1">
+            {post.authors.map((author) => {
+              return (
+                <div class="flex flex-row space-x-2 items-center">
+                  <div>
+                    <img class="rounded-2xl w-8 h-8" src={author.photo.url} />
+                  </div>
+                  <a class="hover:text-blue-500" href={author.url}>
+                    {author.name}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
