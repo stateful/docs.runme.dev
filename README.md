@@ -15,8 +15,14 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 
 Start the project:
 
-```sh
+```sh { background=true }
 deno task start
+```
+
+Open project in your browser:
+
+```sh
+open http://localhost:8000/
 ```
 
 This will watch the project directory and restart as necessary.
