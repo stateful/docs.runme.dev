@@ -1,20 +1,10 @@
-<<<<<<< Updated upstream
-import { Navigation } from "../components/Navigation.tsx";
-import { Hero } from "../components/Hero.tsx";
-import { Footer } from "../components/Footer.tsx";
-=======
 import Layout from "../components/Layout.tsx";
->>>>>>> Stashed changes
 
 export default function Home() {
   return (
     <Layout>
       <div class="min-h-screen 2xl:min-h-[50vh]">
         <div class="z-[100] text-white max-w-[1440px] mx-auto">
-<<<<<<< Updated upstream
-          <Navigation />
-          <Hero />
-=======
           <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0">
             <div class="space-y-4">
               <div class="flex text-xl md:text-2xl items-center space-x-3">
@@ -80,7 +70,6 @@ export default function Home() {
               class="rounded-md object-cover scale-110 z-10 h-auto sm:max-w-xl xl:max-w-[720px] z-10"
             />
           </div>
->>>>>>> Stashed changes
         </div>
         <div class="px-12 py-6 flex flex-col items-center mt-24 lg:mt-[24vh]">
           <div class="flex flex-col justify-center items-center">
