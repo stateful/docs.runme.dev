@@ -1,5 +1,6 @@
 import { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
+import Layout from "../components/Layout.tsx";
 
 export default function App({ Component }: AppProps) {
   return (
@@ -8,7 +9,9 @@ export default function App({ Component }: AppProps) {
         <title>runme</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <Component />
+      <Layout>
+        <Component />
+      </Layout>
     </>
   );
 }
