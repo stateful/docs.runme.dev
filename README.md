@@ -35,16 +35,23 @@ To deploy this project you need to have `deployctl` installed on your system. To
 deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no-check -r -f https://deno.land/x/deploy/deployctl.ts
 ```
 
-Once installed successfully, you can run a staging deploy via:
+Once installed successfully, create a [new access token](https://dash.deno.com/account#access-tokens) and export it into your environment:
 
 ```sh
-deployctl deploy --project=runme-staging --import-map=import_map.json main.ts
+export DENO_ACCESS_TOKEN=<insert-token-here>
+```
+
+then you can run a staging deploy via:
+
+
+```sh
+deployctl deploy --project=runme-staging --import-map=import_map.json main.ts --token=$DENO_ACCESS_TOKEN
 ```
 
 To deploy to production, run:
 
 ```sh
-deployctl deploy --project=runme --import-map=import_map.json main.ts
+deployctl deploy --project=runme --import-map=import_map.json main.ts --token=$DENO_ACCESS_TOKEN
 ```
 
 ---
