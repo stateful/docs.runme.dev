@@ -45,7 +45,7 @@ deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no
 Once installed successfully, create a [new access token](https://dash.deno.com/account#access-tokens) and export it into your environment:
 
 ```sh
-export DENO_ACCESS_TOKEN=<insert-token-here>
+export DENO_ACCESS_TOKEN="<insert-token-here>"
 ```
 
 then you can run a staging deploy via:
