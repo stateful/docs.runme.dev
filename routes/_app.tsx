@@ -1,6 +1,6 @@
 import { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
-import Layout from "../components/Layout.tsx";
+// import Layout from "../components/Layout.tsx";
 
 export default function App({ Component }: AppProps) {
   return (
