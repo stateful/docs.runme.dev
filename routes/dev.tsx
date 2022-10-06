@@ -1,6 +1,8 @@
+import Layout from "../components/Layout.tsx";
+
 export default function Dev() {
   return (
-    <>
+    <Layout>
       <div class="min-h-screen 2xl:min-h-[50vh]">
         <div class="z-[100] text-white max-w-[1440px] mx-auto">
           <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0">
@@ -106,6 +108,6 @@ export default function Dev() {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
