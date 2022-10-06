@@ -39,7 +39,11 @@ This will watch the project directory and restart as necessary.
 To deploy this project you need to have `deployctl` installed on your system. To install, please run:
 
 ```sh
-deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no-check -r -f https://deno.land/x/deploy/deployctl.ts
+deno install \
+  --allow-read --allow-write \
+  --allow-env --allow-net --allow-run \
+  --no-check \
+  -r -f https://deno.land/x/deploy/deployctl.ts
 ```
 
 Once installed successfully, create a [new access token](https://dash.deno.com/account#access-tokens) and export it into your environment:
