@@ -1,3 +1,5 @@
+import { h } from "preact";
+
 export default function Home() {
   return (
     <div class="flex h-screen items-center justify-center">
