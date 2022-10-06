@@ -9,9 +9,9 @@ export default function App({ Component }: AppProps) {
         <title>runme</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <Component />
-      </Layout>
+      {/* <Layout> */}
+      <Component />
+      {/* </Layout> */}
     </>
   );
 }
