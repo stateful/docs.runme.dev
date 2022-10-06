@@ -55,8 +55,10 @@ then you can run a staging deploy via:
 export PATH="~/.deno/bin:$PATH"
 deployctl deploy \
     --project=runme-staging \
-    --import-map=import_map.json main.ts \
-    --token=$DENO_ACCESS_TOKEN
+    --exclude=node_modules
+    --import-map=import_map.json \
+    --token=$DENO_ACCESS_TOKEN \
+    main.ts
 ```
 
 To deploy to production, run:
@@ -65,8 +67,9 @@ To deploy to production, run:
 export PATH="~/.deno/bin:$PATH"
 deployctl deploy \
     --project=runme \
-    --import-map=import_map.json main.ts \
-    --token=$DENO_ACCESS_TOKEN
+    --import-map=import_map.json \
+    --token=$DENO_ACCESS_TOKEN \
+     main.ts
 ```
 
 ---
