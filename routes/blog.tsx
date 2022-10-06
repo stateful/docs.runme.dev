@@ -5,6 +5,7 @@ import {
 } from "https://raw.githubusercontent.com/ArnabXD/graphql-request/temp/mod.ts";
 
 import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
+import { h } from "preact";
 
 const query = gql`
 query Posts() {
@@ -75,9 +76,9 @@ const Post = ({ post }: { post: Article }) => {
   return (
     <a>
       <div className="flex flex-col rounded border-gray-500 py-2 px-4 space-y-2">
-        <img src={post.cover.url} class='rounded-lg shadow-xl' />
+        <img src={post.cover.url} class="rounded-lg shadow-xl" />
         <div className="w-12 mt-10 border-t-4 rounded-full border-[#EF2357]" />
-        <div class='space-y-2'>
+        <div class="space-y-2">
           <div>{format(new Date(post.date), "LLLL d, Y", {})}</div>
           <a
             href={`https://stateful.com/blog/${post.slug}`}

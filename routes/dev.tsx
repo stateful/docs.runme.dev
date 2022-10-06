@@ -1,4 +1,5 @@
 import Layout from "../components/Layout.tsx";
+import { h } from "preact";
 
 export default function Dev() {
   return (
