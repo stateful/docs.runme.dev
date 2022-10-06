@@ -71,6 +71,7 @@ To deploy to production, run:
 export PATH="~/.deno/bin:$PATH"
 deployctl deploy \
     --project=runme \
+    --exclude=node_modules \
     --import-map=import_map.json \
     --token=$DENO_ACCESS_TOKEN \
      main.ts
