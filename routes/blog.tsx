@@ -1,3 +1,4 @@
+import { Fragment, h } from "preact";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import {
   gql,
@@ -5,7 +6,6 @@ import {
 } from "https://raw.githubusercontent.com/ArnabXD/graphql-request/temp/mod.ts";
 
 import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
-import { h } from "preact";
 
 const query = gql`
 query Posts() {

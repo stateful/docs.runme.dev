@@ -1,4 +1,5 @@
 import { JSX } from "preact";
+import { h } from "preact";
 
 export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
   return (

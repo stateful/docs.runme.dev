@@ -1,3 +1,5 @@
+import { h } from "preact";
+
 export default function Header() {
   return (
     <nav class="px-12 py-4 flex justify-between items-center ">
