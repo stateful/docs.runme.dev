@@ -124,12 +124,12 @@ export default function Home() {
               description="more stuff about this amazing feature goes here."
             />
             <Feature
-              text="Command line interface"
+              text="Command Line Interface"
               icon={<TerminalIcon />}
               description="more stuff about this amazing feature goes here."
             />
             <Feature
-              text="Cloud Service Intergrations"
+              text="Cloud service intergrations"
               icon={<CloudIcon />}
               description="more stuff about this amazing feature goes here."
             />
@@ -138,7 +138,7 @@ export default function Home() {
 
         <Section
           title="Command Line Interface"
-          description="Parse and run readme files in the terminal."
+          description="Parse and run markdown files in the terminal."
         >
           <img src="/terminal.png" />
         </Section>
