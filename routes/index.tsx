@@ -1,9 +1,9 @@
 import {
   CloudIcon,
   CopyIcon,
-  GearIcon,
   PlayIcon,
   RepoIcon,
+  TableIcon,
   TerminalIcon,
   VariableIcon,
 } from "../components/Icons.tsx";
@@ -120,7 +120,7 @@ export default function Home() {
             />
             <Feature
               text="Rich notebook interactivity"
-              icon={<GearIcon />}
+              icon={<TableIcon />}
               description="overlay commands with web app like interactivity"
             />
             <Feature
