@@ -58,9 +58,9 @@ export default function Home() {
             Use dev-friendly markdown to craft interactive runbooks in VS Code.
           </h3>
           <div className="flex flex-col items-center justify-center py-12 space-y-2">
-            <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
+            <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[280px] h-[40px] flex items-center justify-center font-semibold">
               <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme">
-                Install the extension
+                Install the open source extension
               </a>
             </div>
             <div class="font-medium">
