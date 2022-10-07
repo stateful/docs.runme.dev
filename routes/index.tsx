@@ -49,8 +49,28 @@ const Section = (props: SectionProps) => {
 export default function Home() {
   return (
     <>
-      <div class="min-h-screen 2xl:min-h-[50vh]">
-        <div class="z-[100] text-white max-w-[1440px] mx-auto">
+      <div class="min-h-screen 2xl:min-h-[50vh] z-[100] text-white max-w-[1440px] mx-auto">
+        <div class="text-center py-20 space-y-2">
+          <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
+            Run Readme.md in VS Code
+          </h2>
+          <h3 class="text-2xl">Use markdown to craft interactive runbooks.</h3>
+          <div className="flex flex-col items-center justify-center py-12 space-y-2">
+            <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
+              <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
+                Install the extension
+              </a>
+            </div>
+            <div class="font-medium">
+              or search <i>`runme`</i> in the VS Code extension panel
+            </div>
+          </div>
+          <div class="w-3/4 mx-auto">
+            <img src="/sidebyside.png" />
+          </div>
+        </div>
+
+        {/* <div class="z-[100] text-white max-w-[1440px] mx-auto">
           <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0 pb-48">
             <div class="space-y-4">
               <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
@@ -76,7 +96,7 @@ export default function Home() {
               class="rounded-md object-cover scale-110 z-10 h-auto sm:max-w-xl xl:max-w-[720px] z-10"
             />
           </div>
-        </div>
+        </div> */}
 
         <Section
           title="Features"
