@@ -1,7 +1,6 @@
 import type { ComponentChildren } from "preact";
 import Footer from "../components/Footer.tsx";
 import Header from "../components/Header.tsx";
-import { h } from "preact";
 
 type Props = {
   children: ComponentChildren;
