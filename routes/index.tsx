@@ -1,66 +1,74 @@
+import {
+  CloudIcon,
+  CopyIcon,
+  GearIcon,
+  PlayIcon,
+  TerminalIcon,
+  VariableIcon,
+} from "../components/Icons.tsx";
+import type { ComponentChildren, VNode } from "preact";
+
+import ServiceTabs from "../islands/ServiceTabs.tsx";
+
+type FeatureProps = {
+  text: string;
+  icon: VNode;
+  description?: string;
+};
+type SectionProps = {
+  children: ComponentChildren;
+  title: string;
+  description: string;
+};
+
+const Feature = (props: FeatureProps) => {
+  const { text, icon, description } = props;
+  return (
+    <div class="p-6 flex flex-col items-center justify-center space-y-2">
+      <div>{icon}</div>
+      <div class="font-semibold text-lg">{text}</div>
+      {description && <div>{description}</div>}
+    </div>
+  );
+};
+
+const Section = (props: SectionProps) => {
+  return (
+    <div class="px-12 py-6 flex flex-col items-center py-14">
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold">{props.title}</h1>
+        <p class="text-xl mt-4 font-medium ">{props.description}</p>
+      </div>
+      <div class="py-6 flex flex-row flex-wrap space-x-4 w-3/4 mx-auto">
+        {props.children}
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <>
       <div class="min-h-screen 2xl:min-h-[50vh]">
         <div class="z-[100] text-white max-w-[1440px] mx-auto">
-          <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0">
+          <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0 pb-48">
             <div class="space-y-4">
-              <div class="flex text-xl md:text-2xl items-center space-x-3">
-                <span class="text-[#42FCCC]">.md</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="21"
-                  viewBox="0 0 22 21"
-                  fill="none"
-                >
-                  <path
-                    d="M11.3229 18.802C12.0347 13.9746 12.7995 4.0514 10.1648 2.97776"
-                    stroke="#00D1FF"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M19.7862 10.7362C15.8463 11.4763 6.92544 12.5577 2.76142 10.9632"
-                    stroke="#00D1FF"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <span class="text-[#F12828]">runme</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                >
-                  <path
-                    d="M20.3865 8.52636C15.5019 8.62206 4.49064 8.68236 4.49064 8.68236"
-                    stroke="#00D1FF"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M21.0303 15.0562L4.00003 15.0404"
-                    stroke="#00D1FF"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                <span class="text-[#FF00A8]">runable docs</span>
-              </div>
               <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
-                The Interactive Docs Extension for VS Code
+                Run Readme.md in VS Code
               </h2>
+              <h3 class="text-2xl">
+                Use markdown to craft interactive runbooks.
+              </h3>
 
-              <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
-                <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-[400]">
+              <div class="pt-12 flex flex-col lg:flex-row lg:items-center lg:space-x-2">
+                <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
                   <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
                     Install the extension
                   </a>
                 </div>
-                <span>or Search in the marketplace</span>
+              </div>
+              <div class="font-medium">
+                or search <i>`runme`</i> in the VS Code extension panel
               </div>
             </div>
             <img
@@ -69,42 +77,60 @@ export default function Home() {
             />
           </div>
         </div>
-        <div class="px-12 py-6 flex flex-col items-center mt-24 lg:mt-[24vh]">
-          <div class="flex flex-col justify-center items-center">
-            <h1 class="text-6xl font-bold">How it works</h1>
-            <p class="text-2xl mt-4 font-medium ">
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-                runme{" "}
-              </span>
-              lets you run your markdown documentation.
-            </p>
-          </div>
-          {/* <section-container direction="row-reverse" title="How it works" description="runme lets you run your markdown documentation."></section-container> */}
-          <div class="flex flex-col justify-between mt-12 space-y-10 ">
-            <img
-              src="/sidebyside.png"
-              alt="Side by side of markdown and runme commands"
-              class="object-cover object-left mt-12 lg:mt-0 w-full 2xl:max-w-[1500px]"
-            />
-            <div class="text-2xl px-12">
-              <p class="font-medium">
-                Write your markdown. Any code blocks with the type `sh` will
-                become runnable commands.
-              </p>
-              <div class="list-inside space-y-4">
-                <h1 class="font-medium underline mt-4">Use Cases</h1>
-                <ol class="list-decimal list-inside lg:mb-0">
-                  <li>Setup application</li>
-                  <li>Render web components</li>
-                  <li>Build and deploy</li>
-                  <p>More coming soon...</p>
-                </ol>
-              </div>
-            </div>
 
-            {/* <img src="/markdown-notebook.png" alt="Shell running markdown files commands" class="mt-12 sm:max-w-xl xl:max-w-[520px]" /> */}
+        <Section
+          title="Features"
+          description="Everything a markdown file can do, and way more."
+        >
+          <div class="grid grid-cols-2 gap-2 w-full items-center flex justify-center">
+            <Feature
+              text="Click to copy"
+              icon={<CopyIcon />}
+              description="more stuff about this amazing feature goes here."
+            />
+            <Feature
+              text="Click to run commands"
+              icon={<PlayIcon />}
+              description="more stuff about this amazing feature goes here."
+            />
+            <Feature
+              text="Configurable command execution"
+              icon={<GearIcon />}
+              description="more stuff about this amazing feature goes here."
+            />
+            <Feature
+              text="Stateful environment variables"
+              icon={<VariableIcon />}
+              description="more stuff about this amazing feature goes here."
+            />
+            <Feature
+              text="Command line interface"
+              icon={<TerminalIcon />}
+              description="more stuff about this amazing feature goes here."
+            />
+            <Feature
+              text="Cloud Service Intergrations"
+              icon={<CloudIcon />}
+              description="more stuff about this amazing feature goes here."
+            />
           </div>
-        </div>
+        </Section>
+
+        <Section
+          title="Command Line Interface"
+          description="Parse and run readme files in the terminal."
+        >
+          <img src="/terminal.png" />
+        </Section>
+        <Section
+          title="Cloud Service Integrations"
+          description="Visibility embedded inline in your docs.
+          "
+        >
+          <div class="pt-6">
+            <ServiceTabs />
+          </div>
+        </Section>
       </div>
     </>
   );

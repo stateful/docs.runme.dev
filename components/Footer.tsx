@@ -5,7 +5,6 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
     <footer class="p-24 max-w-[1440px] mx-auto 2xl:px-0">
       <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-between">
         <div class="space-y-2">
-          <p class="text-xl font-medium">Brought to you by:</p>
           <a href="https://www.stateful.com/" class="cursor-pointer">
             <img src="/Stateful-logo.svg" />
           </a>
@@ -13,7 +12,7 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
             The developer happiness company.
           </p>
         </div>
-        <div>
+        {/* <div>
           <h1 class="text-2xl font-bold">Connect with us:</h1>
           <ol class="text-xl space-y-2">
             <li>
@@ -41,7 +40,7 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
               </a>
             </li>
           </ol>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
