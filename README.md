@@ -1,10 +1,13 @@
 # Runme.dev
 
-This project contains the application for [runme.dev](https://runme.dev) and also acts as a guinea pig to showcase the [Runme Extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme).
+This project contains the application for [runme.dev](https://runme.dev) and
+also acts as a guinea pig to showcase the
+[Runme Extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme).
 
 ## Prerequisites
 
-This project is based on [Fresh](https://fresh.deno.dev/) and requires Deno to run. To install Deno via homebrew on macOS:
+This project is based on [Fresh](https://fresh.deno.dev/) and requires Deno to
+run. To install Deno via homebrew on macOS:
 
 ```sh
 # macOS
@@ -36,7 +39,8 @@ This will watch the project directory and restart as necessary.
 
 ### Deployment
 
-To deploy this project you need to have `deployctl` installed on your system. To install, please run:
+To deploy this project you need to have `deployctl` installed on your system. To
+install, please run:
 
 ```sh
 deno install \
@@ -46,14 +50,17 @@ deno install \
   -r -f https://deno.land/x/deploy/deployctl.ts
 ```
 
-Once installed successfully, create a [new access token](https://dash.deno.com/account#access-tokens) and export it into your environment:
+Once installed successfully, create a
+[new access token](https://dash.deno.com/account#access-tokens) and export it
+into your environment:
 
 ```sh
+echo "Set up your deno environment"
+export DENO_PROJECT_NAME="<insert-project-name>"
 export DENO_ACCESS_TOKEN="<insert-token-here>"
 ```
 
 then you can run a staging deploy via:
-
 
 ```sh
 export PATH="~/.deno/bin:$PATH"
