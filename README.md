@@ -72,18 +72,6 @@ deployctl deploy \
     main.ts
 ```
 
-To deploy to production, run:
-
-```sh
-export PATH="~/.deno/bin:$PATH"
-deployctl deploy \
-    --project=runme \
-    --exclude=node_modules \
-    --import-map=import_map.json \
-    --token=$DENO_ACCESS_TOKEN \
-     main.ts
-```
-
 ---
 
 <p align="center"><small>Copyright 2022 © <a href="https://stateful.com/">Stateful</a> (<a href="https://discord.gg/BQm8zRCBUY">💬 Join Discord</a>) – Apache 2.0 License</small> </p>
