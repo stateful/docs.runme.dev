@@ -1,5 +1,47 @@
 const Classes = "w-10 h-10";
 
+const Bar3Icon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="cursor-pointer"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="4" y1="12" x2="20" y2="12" />
+      <line x1="4" y1="18" x2="20" y2="18" />
+    </svg>
+  )
+}
+const XIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="cursor-pointer"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </svg>
+  )
+}
+
 const PlayIcon = () => {
   return (
     <svg
@@ -7,7 +49,7 @@ const PlayIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
+      stroke="#d53f8c"
       class={Classes}
     >
       <path
@@ -26,7 +68,7 @@ const TerminalIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
+      stroke="#d53f8c"
       class={Classes}
     >
       <path
@@ -45,7 +87,7 @@ const GearIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
+      stroke="#d53f8c"
       class={Classes}
     >
       <path
@@ -69,7 +111,7 @@ const VariableIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
+      stroke="#d53f8c"
       class={Classes}
     >
       <path
@@ -88,7 +130,7 @@ const CopyIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={1.5}
-      stroke="currentColor"
+      stroke="#d53f8c"
       class={Classes}
     >
       <path
@@ -107,7 +149,7 @@ const CloudIcon = () => {
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
+      stroke="#d53f8c"
       class={Classes}
     >
       <path
@@ -119,4 +161,4 @@ const CloudIcon = () => {
   );
 };
 
-export { CloudIcon, CopyIcon, VariableIcon, GearIcon, TerminalIcon, PlayIcon };
+export { CloudIcon, CopyIcon, VariableIcon, GearIcon, TerminalIcon, PlayIcon, Bar3Icon, XIcon };

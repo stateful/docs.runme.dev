@@ -39,7 +39,7 @@ const Section = (props: SectionProps) => {
         <h1 class="text-4xl font-bold">{props.title}</h1>
         <p class="text-xl mt-4 font-medium ">{props.description}</p>
       </div>
-      <div class="py-6 flex flex-row flex-wrap space-x-4 w-3/4 mx-auto">
+      <div class="py-6 flex flex-row flex-wrap space-x-4 lg:w-3/4 mx-auto">
         {props.children}
       </div>
     </div>
@@ -64,10 +64,10 @@ export default function Home() {
               </a>
             </div>
             <div class="font-medium">
-              or search <i>`runme`</i> in the VS Code extension panel
+              or search <i class="rounded text-[#EB5757] bg-[#87837826] p-0.5">`runme`</i> in the VS Code extension panel
             </div>
           </div>
-          <div class="w-3/4 mx-auto">
+          <div class="lg:w-3/4 mx-auto">
             <img src="/sidebyside.png" />
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
           title="Features"
           description="Everything a markdown file can do, and way more."
         >
-          <div class="grid grid-cols-2 gap-2 w-full items-center flex justify-center">
+          <div class="flex flex-col lg:grid grid-cols-2 gap-2 w-full justify-center">
             <Feature
               text="Click to run commands"
               icon={<PlayIcon />}
@@ -142,7 +142,7 @@ export default function Home() {
           title="Command Line Interface"
           description="Parse and run markdown files in the terminal."
         >
-          <img src="/terminal.png" />
+          <img src="/terminal.png" alt="Terminal with rdme list command" />
         </Section>
         <Section
           title="Cloud Service Integrations"
