@@ -59,7 +59,7 @@ export default function Home() {
           </h3>
           <div className="flex flex-col items-center justify-center py-12 space-y-2">
             <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
-              <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
+              <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme">
                 Install the extension
               </a>
             </div>
@@ -84,7 +84,7 @@ export default function Home() {
 
               <div class="pt-12 flex flex-col lg:flex-row lg:items-center lg:space-x-2">
                 <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
-                  <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
+                  <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme">
                     Install the extension
                   </a>
                 </div>

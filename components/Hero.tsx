@@ -53,7 +53,7 @@ export function Hero() {
 
         <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-2">
           <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-[400]">
-            <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
+            <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme">
               Install the extension
             </a>
           </div>
