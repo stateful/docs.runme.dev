@@ -54,7 +54,9 @@ export default function Home() {
           <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
             Run your README.md
           </h2>
-          <h3 class="text-2xl">Use familiar markdown to craft interactive runbooks in VS Code.</h3>
+          <h3 class="text-2xl">
+            Use familiar markdown to craft interactive runbooks in VS Code.
+          </h3>
           <div className="flex flex-col items-center justify-center py-12 space-y-2">
             <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
               <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
@@ -121,7 +123,7 @@ export default function Home() {
             <Feature
               text="Stateful environment variables"
               icon={<VariableIcon />}
-              description="uninterruptedly complete your README.md's steps"
+              description="reliably define the execution environment"
             />
             <Feature
               text="Click to copy"
