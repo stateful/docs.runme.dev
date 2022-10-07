@@ -111,27 +111,27 @@ export default function Home() {
             <Feature
               text="Rich interactivity"
               icon={<GearIcon />}
-              description="Overlay commands with web app like interactivity"
+              description="overlay commands with web app like interactivity"
             />
             <Feature
               text="Baseline shell compatibility"
               icon={<TerminalIcon />}
-              description="Break out of shell without losing compatability"
+              description="break out of shell without losing compatability"
             />
             <Feature
               text="Stateful environment variables"
               icon={<VariableIcon />}
-              description="Uninterruptedly complete your README.md's steps"
+              description="uninterruptedly complete your README.md's steps"
             />
             <Feature
               text="Click to copy"
               icon={<CopyIcon />}
-              description="Copy & paste with environment variables filled in"
+              description="copy & paste with environment variables filled in"
             />
             <Feature
               text="Cloud-native notebooks"
               icon={<CloudIcon />}
-              description="Deeply integrated with your favorite cloud services"
+              description="deeply integrated with your favorite cloud services"
             />
           </div>
         </Section>
