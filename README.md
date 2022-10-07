@@ -62,7 +62,7 @@ export DENO_ACCESS_TOKEN="<insert-token-here>"
 
 then you can run a staging deploy via:
 
-```sh
+```sh { background=true }
 export PATH="~/.deno/bin:$PATH"
 deployctl deploy \
     --project=$DENO_PROJECT_NAME \
