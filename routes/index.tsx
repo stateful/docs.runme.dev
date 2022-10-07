@@ -109,7 +109,7 @@ export default function Home() {
               description="effortlessly complete your README's steps"
             />
             <Feature
-              text="Rich interactivity"
+              text="Rich notebook-like interactivity"
               icon={<GearIcon />}
               description="overlay commands with web app like interactivity"
             />
