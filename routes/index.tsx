@@ -146,7 +146,7 @@ export default function Home() {
         </Section>
         <Section
           title="Cloud Service Integrations"
-          description="Visibility embedded inline in your docs.
+          description="Visibly embedded inline in your docs.
           "
         >
           <div class="pt-6">
