@@ -102,7 +102,7 @@ export default function Home() {
 
         <Section
           title="How it works"
-          description="Everything a markdown file can do, and way more."
+          description="Everything a markdown file can do, and way more. No changes required."
         >
           <div class="flex flex-col lg:grid grid-cols-2 gap-2 w-full justify-center">
             <Feature
