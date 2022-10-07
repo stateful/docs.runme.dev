@@ -55,7 +55,7 @@ export default function Home() {
             Run your README.md
           </h2>
           <h3 class="text-2xl">
-            Use familiar markdown to craft interactive runbooks in VS Code.
+            Use dev-friendly markdown to craft interactive runbooks in VS Code.
           </h3>
           <div className="flex flex-col items-center justify-center py-12 space-y-2">
             <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
