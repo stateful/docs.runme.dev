@@ -64,7 +64,7 @@ export default function Home() {
               </a>
             </div>
             <div class="font-medium">
-              or search <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">`runme`</i> in the VS Code extension panel
+              or search <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in the VS Code extension panel
             </div>
           </div>
           <div class="lg:w-3/4 mx-auto">
@@ -90,7 +90,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="font-medium">
-                or search <i>`runme`</i> in the VS Code extension panel
+                or search <i>runme</i> in the VS Code extension panel
               </div>
             </div>
             <img
