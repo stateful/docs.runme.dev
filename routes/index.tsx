@@ -52,9 +52,9 @@ export default function Home() {
       <div class="min-h-screen 2xl:min-h-[50vh] z-[100] text-white max-w-[1440px] mx-auto">
         <div class="text-center py-20 space-y-2">
           <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
-            Run Readme.md in VS Code
+            Run your README.md
           </h2>
-          <h3 class="text-2xl">Use markdown to craft interactive runbooks.</h3>
+          <h3 class="text-2xl">Use familiar markdown to craft interactive runbooks in VS Code.</h3>
           <div className="flex flex-col items-center justify-center py-12 space-y-2">
             <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
               <a href="https://github.com/stateful/vscode-runme/releases/tag/0.1.0-edge.7">
@@ -74,10 +74,10 @@ export default function Home() {
           <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0 pb-48">
             <div class="space-y-4">
               <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
-                Run Readme.md in VS Code
+                Run your README.md
               </h2>
               <h3 class="text-2xl">
-                Use markdown to craft interactive runbooks.
+                Use familiar markdown to craft interactive runbooks in VS Code.
               </h3>
 
               <div class="pt-12 flex flex-col lg:flex-row lg:items-center lg:space-x-2">
@@ -104,34 +104,34 @@ export default function Home() {
         >
           <div class="grid grid-cols-2 gap-2 w-full items-center flex justify-center">
             <Feature
-              text="Click to copy"
-              icon={<CopyIcon />}
-              description="more stuff about this amazing feature goes here."
-            />
-            <Feature
               text="Click to run commands"
               icon={<PlayIcon />}
-              description="more stuff about this amazing feature goes here."
+              description="effortlessly complete your README's steps"
             />
             <Feature
-              text="Configurable command execution"
+              text="Rich interactivity"
               icon={<GearIcon />}
-              description="more stuff about this amazing feature goes here."
+              description="Overlay commands with web app like interactivity"
+            />
+            <Feature
+              text="Baseline shell compatibility"
+              icon={<TerminalIcon />}
+              description="Break out of shell without losing compatability"
             />
             <Feature
               text="Stateful environment variables"
               icon={<VariableIcon />}
-              description="more stuff about this amazing feature goes here."
+              description="Uninterruptedly complete your README.md's steps"
             />
             <Feature
-              text="Command Line Interface"
-              icon={<TerminalIcon />}
-              description="more stuff about this amazing feature goes here."
+              text="Click to copy"
+              icon={<CopyIcon />}
+              description="Copy & paste with environment variables filled in"
             />
             <Feature
-              text="Cloud service intergrations"
+              text="Cloud-native notebooks"
               icon={<CloudIcon />}
-              description="more stuff about this amazing feature goes here."
+              description="Deeply integrated with your favorite cloud services"
             />
           </div>
         </Section>
