@@ -6,7 +6,7 @@ import {
 
 import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
 
-const query = gql`
+export const query = gql`
 query Posts() {
   posts (orderBy: date_DESC, where: {stateful:true, forRunmeSite: true}, stage: PUBLISHED, ) {
     id
