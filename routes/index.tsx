@@ -82,7 +82,7 @@ export default function Home() {
         >
           <div class="flex mx-auto ">
             <div className="flex flex-col space-y-2 ">
-              <div className="flex flex-row space-x-2 ">
+              <div className="flex flex-row space-x-2 items-center">
                 <RepoIcon />
                 <a href="" class="text-blue-400">
                   stateful/vscode-runme
