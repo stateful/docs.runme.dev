@@ -9,7 +9,7 @@ const Tab = (props: {
   const { id, text, setTab, tab } = props;
   return (
     <div
-      class={`${id === tab && "underline"} cursor-pointer text-blue-500`}
+      class={`${id === tab && "underline"} cursor-pointer text-blue-300`}
       id={id}
       onClick={() => {
         setTab(id);
