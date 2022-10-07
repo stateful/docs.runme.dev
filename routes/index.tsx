@@ -1,8 +1,8 @@
 import {
   CloudIcon,
   CopyIcon,
-  GearIcon,
   PlayIcon,
+  TableIcon,
   TerminalIcon,
   VariableIcon,
 } from "../components/Icons.tsx";
@@ -64,7 +64,9 @@ export default function Home() {
               </a>
             </div>
             <div class="font-medium">
-              or search <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in the VS Code extension panel
+              or search{" "}
+              <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in
+              the VS Code extension panel
             </div>
           </div>
           <div class="lg:w-3/4 mx-auto">
@@ -112,7 +114,7 @@ export default function Home() {
             />
             <Feature
               text="Rich notebook interactivity"
-              icon={<GearIcon />}
+              icon={<TableIcon />}
               description="overlay commands with web app like interactivity"
             />
             <Feature
