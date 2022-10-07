@@ -65,7 +65,7 @@ then you can run a staging deploy via:
 ```sh
 export PATH="~/.deno/bin:$PATH"
 deployctl deploy \
-    --project=runme-staging \
+    --project=$DENO_PROJECT_NAME \
     --exclude=node_modules \
     --import-map=import_map.json \
     --token=$DENO_ACCESS_TOKEN \
