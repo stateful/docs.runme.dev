@@ -3,6 +3,7 @@ import {
   CopyIcon,
   GearIcon,
   PlayIcon,
+  RepoIcon,
   TerminalIcon,
   VariableIcon,
 } from "../components/Icons.tsx";
@@ -60,11 +61,14 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center py-12 space-y-2">
             <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[280px] h-[40px] flex items-center justify-center font-semibold">
               <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme">
-                Install the open source extension
+                Install the extension
               </a>
             </div>
+
             <div class="font-medium">
-              or search <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in the VS Code extension panel
+              or search{" "}
+              <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in
+              the VS Code extension panel
             </div>
           </div>
           <div class="lg:w-3/4 mx-auto">
@@ -72,34 +76,38 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div class="z-[100] text-white max-w-[1440px] mx-auto">
-          <div class="px-12 py-2 pt-32 flex flex-col lg:flex-row space-y-12 lg:space-x-12 lg:space-y-0 pb-48">
-            <div class="space-y-4">
-              <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold">
-                Run your README.md
-              </h2>
-              <h3 class="text-2xl">
-                Use familiar markdown to craft interactive runbooks in VS Code.
-              </h3>
-
-              <div class="pt-12 flex flex-col lg:flex-row lg:items-center lg:space-x-2">
-                <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[200px] h-[40px] flex items-center justify-center font-semibold">
-                  <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme">
-                    Install the extension
-                  </a>
-                </div>
+        <Section
+          title="Open Source Software"
+          description="This project is totally open source and available on Github."
+        >
+          <div class="flex mx-auto ">
+            <div className="flex flex-col space-y-2 ">
+              <div className="flex flex-row space-x-2 ">
+                <RepoIcon />
+                <a href="" class="text-blue-400">
+                  stateful/vscode-runme
+                </a>
+                <div> - VS Code extension</div>
               </div>
-              <div class="font-medium">
-                or search <i>runme</i> in the VS Code extension panel
+              <div className="flex flex-row space-x-2 items-center">
+                <RepoIcon />
+
+                <a href="" class="text-blue-400">
+                  stateful/runme
+                </a>
+                <div> - Command Line Interface (CLI) and parser</div>
+              </div>
+              <div className="flex flex-row space-x-2 items-center">
+                <RepoIcon />
+
+                <a href="" class="text-blue-400">
+                  stateful/runme.dev
+                </a>
+                <div> - Showcase website and example readme</div>
               </div>
             </div>
-            <img
-              src="/runme-website-commands-v2.gif"
-              class="rounded-md object-cover scale-110 z-10 h-auto sm:max-w-xl xl:max-w-[720px] z-10"
-            />
           </div>
-        </div> */}
-
+        </Section>
         <Section
           title="How it works"
           description="Everything a markdown file can do, and way more. No changes required."
