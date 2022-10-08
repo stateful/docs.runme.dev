@@ -1,5 +1,6 @@
-import { useState } from "preact/hooks";
 import { Bar3Icon, XIcon } from "../components/Icons.tsx";
+
+import { useState } from "preact/hooks";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Header() {
             </h1>
           </div>
         </a>
-        <div class="hidden md:flex lg:mt-0 space-x-2 lg:space-x-8 items-center">
+        <div class="hidden md:flex lg:mt-0 space-x-4 lg:space-x-8 items-center">
           <a href="/blog" class="hover:underline text-xl">
             Blog
           </a>
@@ -52,20 +53,29 @@ export default function Header() {
               class="hidden lg:block"
             />
           </a>
-          {/* <div class="hidden md:flex items-center space-x-2 bg-[#e75b5b] px-6 py-2 rounded-lg">
+          {
+            /* <div class="hidden md:flex items-center space-x-2 bg-[#e75b5b] px-6 py-2 rounded-lg">
           <a
             href="https://discord.com/invite/BQm8zRCBUY"
             class="hover:underline text-sm"
           >
             Install the extension
           </a>
-        </div> */}
+        </div> */
+          }
         </div>
-        <div class="block md:hidden flex flex-col" onClick={() => setOpen(prev => !prev)} >
+        <div
+          class="block md:hidden flex flex-col"
+          onClick={() => setOpen((prev) => !prev)}
+        >
           {!open ? <Bar3Icon /> : <XIcon />}
         </div>
       </div>
-      <div class={`${open ? 'flex' : 'hidden'} md:hidden px-12 py-4 flex-col justify-between space-y-4`}>
+      <div
+        class={`${
+          open ? "flex" : "hidden"
+        } md:hidden px-12 py-4 flex-col justify-between space-y-4`}
+      >
         <a href="/blog" class="hover:underline text-xl">
           Blog
         </a>
@@ -99,7 +109,6 @@ export default function Header() {
           />
         </a>
       </div>
-
-    </nav >
+    </nav>
   );
 }

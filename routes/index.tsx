@@ -22,6 +22,12 @@ type SectionProps = {
   description: string;
 };
 
+type RepoProps = {
+  url: string;
+  description: string;
+  name: string;
+};
+
 const Feature = (props: FeatureProps) => {
   const { text, icon, description } = props;
   return (
@@ -47,6 +53,20 @@ const Section = (props: SectionProps) => {
   );
 };
 
+const Repo = ({ url, name, description }: RepoProps) => {
+  return (
+    <div className="flex md:flex-row md:space-x-2 flex-col space-y-1 items-center justify-center">
+      <div>
+        <RepoIcon />
+      </div>
+      <a href={url} class="text-blue-400">
+        {name}
+      </a>
+      <div>{description}</div>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <>
@@ -67,8 +87,9 @@ export default function Home() {
 
             <div class="font-medium">
               or search{" "}
-              <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in
-              the VS Code extension panel
+              <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i>
+              {" "}
+              in the VS Code extension panel
             </div>
           </div>
           <div class="lg:w-3/4 mx-auto">
@@ -80,31 +101,23 @@ export default function Home() {
           title="Open Source Software"
           description="This project is totally open source and available on Github."
         >
-          <div class="flex mx-auto ">
-            <div className="flex flex-col space-y-2 ">
-              <div className="flex flex-row space-x-2 items-center">
-                <RepoIcon />
-                <a href="" class="text-blue-400">
-                  stateful/vscode-runme
-                </a>
-                <div> - VS Code extension</div>
-              </div>
-              <div className="flex flex-row space-x-2 items-center">
-                <RepoIcon />
-
-                <a href="" class="text-blue-400">
-                  stateful/runme
-                </a>
-                <div> - Command Line Interface (CLI) and parser</div>
-              </div>
-              <div className="flex flex-row space-x-2 items-center">
-                <RepoIcon />
-
-                <a href="" class="text-blue-400">
-                  stateful/runme.dev
-                </a>
-                <div> - Showcase website and example readme</div>
-              </div>
+          <div class="flex mx-auto">
+            <div className="flex flex-col space-y-4 md:space-y-1">
+              <Repo
+                url="http://github.com/stateful/vscode-runme"
+                name="stateful/vscode-runme"
+                description="The VS Code extension (.vsix)"
+              />
+              <Repo
+                url="http://github.com/stateful/runme"
+                name="stateful/runme"
+                description="Command Line Interface (CLI) and parser"
+              />
+              <Repo
+                url="http://github.com/stateful/runme.dev"
+                name="stateful/runme.dev"
+                description="Showcase website and example Readme"
+              />
             </div>
           </div>
         </Section>
@@ -154,7 +167,7 @@ export default function Home() {
         </Section>
         <Section
           title="Cloud Service Integrations"
-          description="Visibly embedded inline in your docs.
+          description="Visibility and status embedded inline in your docs.
           "
         >
           <div class="pt-6">
