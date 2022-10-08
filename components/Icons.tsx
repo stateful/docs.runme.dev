@@ -171,13 +171,13 @@ const RepoIcon = () => {
 };
 
 export {
+  Bar3Icon,
   CloudIcon,
   CopyIcon,
-  VariableIcon,
+  PlayIcon,
+  RepoIcon,
   TableIcon,
   TerminalIcon,
-  PlayIcon,
-  Bar3Icon,
+  VariableIcon,
   XIcon,
-  RepoIcon,
 };

@@ -9,7 +9,9 @@ const Tab = (props: {
   const { id, text, setTab, tab } = props;
   return (
     <div
-      class={`${id === tab && "underline"} cursor-pointer text-blue-300`}
+      class={`${
+        id === tab && "underline"
+      } cursor-pointer text-blue-400 hover:underline hover:text-blue-500`}
       id={id}
       onClick={() => {
         setTab(id);
@@ -38,13 +40,13 @@ const ServiceTabs = () => {
         <Tab text="Begin" id="begin" setTab={setTab} tab={tab} />
       </div>
       <div class="p-6">
-        {ImageMap[tab] ? (
-          <img src={ImageMap[tab]} />
-        ) : (
-          <div class="text-2xl font-semibold h-80 flex items-center justify-center">
-            Coming soon...
-          </div>
-        )}
+        {ImageMap[tab]
+          ? <img src={ImageMap[tab]} />
+          : (
+            <div class="text-2xl font-semibold h-80 flex items-center justify-center">
+              Coming soon...
+            </div>
+          )}
       </div>
     </div>
   );
