@@ -108,7 +108,7 @@ export default function Home() {
               <Repo
                 url="http://github.com/stateful/vscode-runme"
                 name="stateful/vscode-runme"
-                description="The VS Code extension (.vsix)"
+                description="The VS Code extension"
               />
               <Repo
                 url="http://github.com/stateful/runme"
