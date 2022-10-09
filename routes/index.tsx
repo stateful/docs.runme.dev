@@ -101,7 +101,7 @@ export default function Home() {
 
         <Section
           title="Open Source Software"
-          description="This project is totally open source and available on Github."
+          description="This project is APL 2.0 licensed and sources are available on Github."
         >
           <div class="flex mx-auto">
             <div class="flex flex-col space-y-4 md:space-y-1">
