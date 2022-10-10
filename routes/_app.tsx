@@ -6,7 +6,7 @@ export default function App({ Component }: AppProps) {
   return (
     <>
       <Head>
-        <title>runme</title>
+        <title>Runme: Run your Readme.md</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <Layout>
