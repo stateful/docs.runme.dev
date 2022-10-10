@@ -31,7 +31,7 @@ type RepoProps = {
 const Feature = (props: FeatureProps) => {
   const { text, icon, description } = props;
   return (
-    <div class="p-6 flex flex-col items-center justify-center space-y-2">
+    <div class="p-4 flex flex-col items-center justify-center space-y-1">
       <div>{icon}</div>
       <div class="font-semibold text-lg">{text}</div>
       {description && <div>{description}</div>}
@@ -55,16 +55,14 @@ const Section = (props: SectionProps) => {
 
 const Repo = ({ url, name, description }: RepoProps) => {
   return (
-    <div class="flex md:flex-row md:space-x-2 flex-col md:space-y-0 space-y-1  md:justify-start">
+    <div class="flex md:flex-row md:space-x-2 flex-col md:space-y-0 space-y-1  md:justify-start items-center md:items-start">
       <div>
         <RepoIcon />
       </div>
       <a href={url} class="text-blue-400 hover:text-blue-500 hover:underline">
         {name}
       </a>
-      <div>
-        {description}
-      </div>
+      <div>{description}</div>
     </div>
   );
 };
@@ -78,7 +76,7 @@ export default function Home() {
             Run your README.md
           </h2>
           <h3 class="text-2xl">
-            Use dev-friendly markdown to craft interactive runbooks in VS Code.
+            Use dev-friendly markdown to craft interactive runbooks for VS Code.
           </h3>
           <div class="flex flex-col items-center justify-center py-12 space-y-2">
             <div class="bg-[#e75b5b] py-[20px] rounded-md text-base w-[280px] h-[40px] flex items-center justify-center font-semibold">
@@ -89,9 +87,8 @@ export default function Home() {
 
             <div class="font-medium">
               or search{" "}
-              <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i>
-              {" "}
-              in the VS Code extension panel
+              <i class="rounded text-[#EB5757] bg-[#5E5B54] p-0.5">runme</i> in
+              the VS Code extension panel
             </div>
           </div>
           <div class="lg:w-3/4 mx-auto">
