@@ -25,7 +25,7 @@ const Tab = (props: {
 const ImageMap: {
   [key: string]: string;
 } = {
-  deno: "/tabs/deno.png",
+  deno: "/tabs/deno.gif",
   vercel: "/tabs/vercel.png",
 };
 
