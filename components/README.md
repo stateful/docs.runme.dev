@@ -6,23 +6,32 @@ Site Components
 ### How It Works Section
 
 ```js { framework=react }
+import { PageWrapper } from '/components/Layout.tsx'
 import { HowItWorks } from '/components/Sections.tsx'
 
-<HowItWorks />
+<PageWrapper>
+    <HowItWorks />
+</PageWrapper>
 ```
 
 ### Open Source Section
 
 ```js { framework=react }
+import { PageWrapper } from '/components/Layout.tsx'
 import { OpenSource } from '/components/Sections.tsx'
 
-<OpenSource />
+<PageWrapper>
+    <OpenSource />
+</PageWrapper>
 ```
 
 ### CLI Section
 
 ```js { framework=react }
+import { PageWrapper } from '/components/Layout.tsx'
 import { CLI } from '/components/Sections.tsx'
 
-<CLI />
+<PageWrapper>
+    <CLI />
+</PageWrapper>
 ```
