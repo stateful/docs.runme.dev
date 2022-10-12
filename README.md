@@ -24,7 +24,7 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 Add deno to your path:
 
 ```sh
-export DENO_INSTALL="~/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 ```
 
