@@ -76,7 +76,7 @@ export DENO_PROJECT_NAME="<insert-project-name>"
 export DENO_ACCESS_TOKEN="<insert-token-here>"
 ```
 
-then you can run a staging deploy via:
+then you can run a preview deploy via:
 
 ```sh { background=true }
 deployctl deploy \
