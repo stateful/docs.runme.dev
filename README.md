@@ -21,7 +21,7 @@ Or the installer which also works on Linux:
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
-Add deno to your path:
+Add Deno to your path:
 
 ```sh
 export DENO_INSTALL="$HOME/.deno"
@@ -32,17 +32,21 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 Start the project:
 
-```sh { background=true }
-deno task start
-```
-
-Open project in your browser:
+Open the project in your browser:
 
 ```sh { interactive=false }
 open http://localhost:8000/
 ```
 
 This will watch the project directory and restart as necessary.
+
+### Testing
+
+We have added some basic components tests to verify that they render correctly, run them via:
+
+```sh
+deno test --no-check --allow-env --allow-read
+```
 
 ### Preview Content
 
@@ -76,7 +80,7 @@ export DENO_PROJECT_NAME="<insert-project-name>"
 export DENO_ACCESS_TOKEN="<insert-token-here>"
 ```
 
-then you can run a preview deploy via:
+then you can run a preview deployment via:
 
 ```sh { background=true }
 deployctl deploy \
