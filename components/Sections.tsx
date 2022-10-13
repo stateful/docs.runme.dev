@@ -39,7 +39,7 @@ export function Section (props: SectionProps) {
       </div>
     </div>
   );
-};
+}
 
 export function Feature (props: FeatureProps) {
   const { text, icon, description } = props;
@@ -50,7 +50,7 @@ export function Feature (props: FeatureProps) {
       {description && <div>{description}</div>}
     </div>
   );
-};
+}
 
 export function Repo ({ url, name, description }: RepoProps) {
   return (
@@ -64,7 +64,7 @@ export function Repo ({ url, name, description }: RepoProps) {
       <div>{description}</div>
     </div>
   );
-};
+}
 
 export function HowItWorks() {
   return (
