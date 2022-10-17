@@ -1,12 +1,12 @@
-import { Bar3Icon, XIcon } from "../components/Icons.tsx";
+import { Bar3Icon, DiscordIcon, XIcon } from "../components/Icons.tsx";
 
 import { useState } from "preact/hooks";
 
-export default function Header() {
+export default function Header({ isHomepage = false }) {
   const [open, setOpen] = useState(false);
   return (
-    <nav class="flex flex-col">
-      <div class="px-12 py-4 flex justify-between items-center">
+    <nav class={`flex flex-col  w-full top-0 z-10 ${isHomepage ? 'text-white bg-[#0D003D]' : 'text-black'}`}>
+      <div class="px-1 py-4 md:px-12 flex justify-between items-center">
         <a href="/">
           <div class="flex items-center space-x-2 lg:space-x-4">
             <img
@@ -44,25 +44,11 @@ export default function Header() {
           </a>
           <a
             href="https://github.com/stateful/vscode-runme"
-            class="hover:underline text-xl flex flex-row space-x-2"
+            class="border-b-4 border-[#5B3ADF] text-xl flex items-center flex-row space-x-2"
           >
             <div>Join the Discord</div>
-            <img
-              src="/Discord-Logo.svg"
-              alt="Discord icon"
-              class="hidden lg:block"
-            />
+            <DiscordIcon />
           </a>
-          {
-            /* <div class="hidden md:flex items-center space-x-2 bg-[#e75b5b] px-6 py-2 rounded-lg">
-          <a
-            href="https://discord.com/invite/BQm8zRCBUY"
-            class="hover:underline text-sm"
-          >
-            Install the extension
-          </a>
-        </div> */
-          }
         </div>
         <div
           class="block md:hidden flex flex-col"
@@ -72,9 +58,8 @@ export default function Header() {
         </div>
       </div>
       <div
-        class={`${
-          open ? "flex" : "hidden"
-        } md:hidden px-12 py-4 flex-col justify-between space-y-4`}
+        class={`${open ? "flex" : "hidden"
+          } md:hidden px-12 py-4 flex-col justify-between space-y-4`}
       >
         <a href="/blog" class="hover:underline text-xl">
           Blog
@@ -102,11 +87,7 @@ export default function Header() {
           class="hover:underline text-xl flex flex-row space-x-2"
         >
           <div>Join the Discord</div>
-          <img
-            src="/Discord-Logo.svg"
-            alt="Discord icon"
-            class="hidden lg:block"
-          />
+          <DiscordIcon />
         </a>
       </div>
     </nav>
