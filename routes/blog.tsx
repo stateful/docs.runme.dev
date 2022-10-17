@@ -5,6 +5,7 @@ import {
 } from "https://raw.githubusercontent.com/ArnabXD/graphql-request/temp/mod.ts";
 
 import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
+import Layout from "../components/Layout.tsx";
 
 export const query = gql`
 query Posts() {
@@ -85,7 +86,7 @@ const Post = ({ post }: { post: Article }) => {
           >
             {post.title}
           </a>
-          <div class="text-gray-300 text-xl">{post.preview}</div>
+          <div class="text-xl">{post.preview}</div>
           <div class="flex flex-row space-x-1">
             {post.authors.map((author) => {
               return (
@@ -112,7 +113,7 @@ export default function Blog({ data }: PageProps) {
   }
 
   return (
-    <>
+    <Layout>
       <div class="max-w-lg mx-auto min-h-screen">
         <div class="text-center text-4xl py-12">Blog</div>
         <div class="flex flex-col space-y-6">
@@ -121,6 +122,6 @@ export default function Blog({ data }: PageProps) {
           })}
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
