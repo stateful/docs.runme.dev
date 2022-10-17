@@ -1,7 +1,7 @@
 export function Hero() {
   return (
     <div class="text-center space-y-2 pt-24 lg:pt-32 text-white relative">
-      <div class="absolute top-0 left-0 w-full h-[85%] lg:h-[80%] z-[-1]">
+      <div class="absolute top-0 left-0 w-full h-[85%] lg:h-[75%] z-[-1]">
         <svg class='z-0 min-h-full' xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1567 884" fill="none" preserveAspectRatio="none"
         >
           <path class='z-0' d="M0 -103L1567 -57.3276V776L0 884V-103Z" fill="#0D003D" />
@@ -15,7 +15,7 @@ export function Hero() {
           </span>
         </h2>
         <h3 class="text-2xl">
-          Use dev-friendly markdown to craft interactive runbooks for <br class="md:hidden" />
+          Use dev-friendly markdown to craft interactive runbooks for <br class="sm:hidden md:block lg:hidden" />
           <span id="vscode-bolt" class="relative">
             {" "}VS Code.
           </span>
@@ -34,7 +34,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div class="lg:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1200px]">
+      <div class="md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
         <img src="/sidebyside.png" />
       </div>
     </div>
