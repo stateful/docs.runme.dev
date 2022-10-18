@@ -71,19 +71,19 @@ export default function Header({ isHomepage = false }) {
           Github
         </a>
         <a
-          href="https://github.com/stateful/vscode-runme"
+          href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
           class="hover:underline text-xl"
         >
           Marketplace
         </a>
         <a
-          href="https://github.com/stateful/vscode-runme"
+          href="https://github.com/stateful/runme"
           class="hover:underline text-xl"
         >
           CLI
         </a>
         <a
-          href="https://github.com/stateful/vscode-runme"
+          href="https://discord.gg/BQm8zRCBUY"
           class="hover:underline text-xl flex items-center flex-row space-x-2"
         >
           <div>Join the Discord</div>
