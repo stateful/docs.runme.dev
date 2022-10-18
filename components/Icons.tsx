@@ -42,62 +42,6 @@ const XIcon = () => {
   );
 };
 
-const PlayIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="#d53f8c"
-      class={Classes}
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
-      />
-    </svg>
-  );
-};
-
-const TerminalIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="#d53f8c"
-      class={Classes}
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
-      />
-    </svg>
-  );
-};
-
-const TableIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="#d53f8c"
-      class={Classes}
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5"
-      />
-    </svg>
-  );
-};
 
 const VariableIcon = () => {
   return (
@@ -118,43 +62,7 @@ const VariableIcon = () => {
   );
 };
 
-const CopyIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={1.5}
-      stroke="#d53f8c"
-      class={Classes}
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
-      />
-    </svg>
-  );
-};
 
-const CloudIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="#d53f8c"
-      class={Classes}
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"
-      />
-    </svg>
-  );
-};
 
 const RepoIcon = () => {
   return (
@@ -210,6 +118,97 @@ const GithubIcon = () => {
     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
       <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+    </svg>
+  );
+};
+const RunCommandIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
+      <line x1="2" y1="49" x2="48" y2="49" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" />
+      <path d="M15 2V33.3333L40.4583 17.6667L15 2Z" stroke="#3693FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+};
+const NotebookIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="58" viewBox="0 0 50 58" fill="none">
+      <line x1="2" y1="56" x2="48" y2="56" stroke="#5B3ADF" stroke-width="4" stroke-linecap="round" />
+      <g clip-path="url(#clip0_1262_1115)">
+        <path d="M7.29297 11.4583L10.418 14.5833L15.6263 9.375" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M7.29297 23.9583L10.418 27.0833L15.6263 21.875" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M7.29297 36.4583L10.418 39.5833L15.6263 34.375" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.918 12.5H41.668" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.918 25H41.668" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M22.918 37.5H41.668" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1262_1115">
+          <rect width="50" height="50" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const ShellIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 50 55" fill="none">
+      <line x1="2" y1="53" x2="48" y2="53" stroke="#42FCCC" stroke-width="4" stroke-linecap="round" />
+      <g clip-path="url(#clip0_1262_1116)">
+        <path d="M10.418 14.5833L20.8346 24.9999L10.418 35.4166" stroke="#5B3ADF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M27.082 35.4167H39.582" stroke="#5B3ADF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1262_1116">
+          <rect width="50" height="50" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const CloudNativeNotebookIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="64" viewBox="0 0 50 64" fill="none">
+      <line x1="2" y1="62" x2="48" y2="62" stroke="#3693FF" stroke-width="4" stroke-linecap="round" />
+      <g clip-path="url(#clip0_1262_1117)">
+        <path d="M13.8701 45.8333C8.51172 45.8333 4.16797 41.6521 4.16797 36.4938C4.16797 31.3375 8.51172 27.1563 13.8701 27.1563C14.6888 23.4854 17.6076 20.4896 21.5263 19.2958C25.443 18.1042 29.768 18.8938 32.868 21.3708C35.968 23.85 37.3721 27.6354 36.5555 31.3063H38.618C42.6034 31.3063 45.8346 34.5563 45.8346 38.5688C45.8346 42.5833 42.6034 45.8333 38.6159 45.8333H13.8701" stroke="#42FCCC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1262_1117">
+          <rect width="50" height="50" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const CopyButtonIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="63" viewBox="0 0 50 63" fill="none">
+      <line x1="2" y1="61" x2="48" y2="61" stroke="#FF7761" stroke-width="4" stroke-linecap="round" />
+      <g clip-path="url(#clip0_1262_1119)">
+        <path d="M37.5013 22.5H20.8346C18.5334 22.5 16.668 24.3655 16.668 26.6667V43.3333C16.668 45.6345 18.5334 47.5 20.8346 47.5H37.5013C39.8025 47.5 41.668 45.6345 41.668 43.3333V26.6667C41.668 24.3655 39.8025 22.5 37.5013 22.5Z" stroke="#E476FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M33.332 22.5001V18.3334C33.332 17.2283 32.893 16.1685 32.1116 15.3871C31.3302 14.6057 30.2704 14.1667 29.1654 14.1667H12.4987C11.3936 14.1667 10.3338 14.6057 9.55242 15.3871C8.77102 16.1685 8.33203 17.2283 8.33203 18.3334V35.0001C8.33203 36.1051 8.77102 37.165 9.55242 37.9464C10.3338 38.7278 11.3936 39.1667 12.4987 39.1667H16.6654" stroke="#E476FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1262_1119">
+          <rect width="50" height="50" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const VariablesIcon = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 50 55" fill="none">
+      <line x1="2" y1="53" x2="48" y2="53" stroke="#E476FF" stroke-width="4" stroke-linecap="round" />
+      <g clip-path="url(#clip0_1262_1120)">
+        <path d="M10.418 10C5.20964 20.4167 5.20964 27.5 10.418 40M39.5846 10C44.793 20.4167 44.793 27.5 39.5846 40M18.7513 18.75H20.8346C22.918 18.75 22.918 20.8333 25.0346 26.0979C27.0846 31.25 27.0846 33.3333 29.168 33.3333H31.2513" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M16.668 33.3333C19.793 33.3333 22.918 29.1667 25.0013 26.0417C27.0846 22.9167 30.2096 18.75 33.3346 18.75" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1262_1120">
+          <rect width="50" height="50" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };
@@ -318,15 +317,16 @@ const ApacheIcon = () => {
 export {
   ApacheIcon,
   Bar3Icon,
-  CloudIcon,
-  CopyIcon,
-  PlayIcon,
   RepoIcon,
-  TableIcon,
-  TerminalIcon,
   VariableIcon,
   XIcon,
   DiscordIcon,
   PurpleGhostFooterIcon,
-  GithubIcon
+  GithubIcon,
+  RunCommandIcon,
+  CloudNativeNotebookIcon,
+  CopyButtonIcon,
+  ShellIcon,
+  NotebookIcon,
+  VariablesIcon,
 };
