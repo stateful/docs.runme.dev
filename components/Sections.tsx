@@ -149,8 +149,8 @@ export function OpenSource() {
           <path d="M0 0L1567 102.793V718.665L-11 800L0 0Z" fill="#33384D" />
         </svg>
       </div>
-      <div class="py-48 lg:py-32 flex flex-col lg:flex-row">
-        <div class="w-auto">
+      <div class="py-48 flex flex-col lg:flex-row">
+        <div class="w-auto space-y-4">
           <div class="flex flex-col-reverse lg:flex-row lg:space-x-4">
             <h1 class="text-white text-4xl xs:text-5xl lg:text-6xl tracking-[0.02em] font-bold">Open Source Software</h1>
             <div class="flex-grow w-3/4">
