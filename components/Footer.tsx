@@ -39,7 +39,7 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
   };
 
   return (
-    <footer class="mt-24 overflow-y-hidden relative">
+    <footer class="overflow-y-hidden relative">
       <div class="absolute w-full z-[-1] h-full sm:h-auto">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1567 897" fill="none" preserveAspectRatio="none">
           <path d="M1578 896.989L-7.4906 896.989L-7.49068 44.8957C-75.1214 51.3969 323.888 0.000109638 793.757 6.85607e-05C1253.97 2.83275e-05 1578 44.8956 1578 44.8956L1578 896.989Z" fill="#000726" />
