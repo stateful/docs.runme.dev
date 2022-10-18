@@ -1,9 +1,9 @@
-import { useState } from "preact/hooks";
+import { StateUpdater, useState } from "preact/hooks";
 
 const Tab = (props: {
   id: string;
   text: string;
-  setTab: Function;
+  setTab: StateUpdater<string>;
   tab: string;
 }) => {
   const { id, text, setTab, tab } = props;
