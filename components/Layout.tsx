@@ -1,6 +1,6 @@
 import type { ComponentChildren } from "preact";
 import Footer from "../components/Footer.tsx";
-import Header from "../islands/Header.tsx";
+import Header from "./Header.tsx";
 
 interface Props {
   children: ComponentChildren;

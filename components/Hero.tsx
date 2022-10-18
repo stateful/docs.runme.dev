@@ -7,7 +7,7 @@ export function Hero() {
           <path class='z-0' d="M0 -103L1567 -57.3276V776L0 884V-103Z" fill="#0D003D" />
         </svg>
       </div>
-      <div class="z-10 space-y-8">
+      <div class="z-10 space-y-8 select-none">
         <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em]">
           Run your{" "}
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]">
@@ -35,7 +35,7 @@ export function Hero() {
         </div>
       </div>
       <div class="w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
-        <img src="/intro.gif" class="rounded-lg shadow-2xl" />
+        <img src="/intro.gif" class="rounded-lg shadow-2xl select-none" />
       </div>
     </div>
   );
