@@ -3,6 +3,7 @@ import {
   ApacheIcon,
   CloudIcon,
   CopyIcon,
+  GithubIcon,
   PlayIcon,
   RepoIcon,
   TableIcon,
@@ -165,19 +166,24 @@ export function OpenSource() {
         </div>
         <div class="mt-12 flex flex-col items-center justify-center space-y-10 font-semibold lg:text-lg tracking-[0.02em] leading-[140%]">
           <a href="https://github.com/stateful/vscode-runme" class="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
-            <span class="bg-[#E476FF] rounded-md p-4">stateful/vscode-runme</span>
+            <span class="bg-[#E476FF] rounded-md p-4 flex items-center space-x-2">
+              <GithubIcon />
+              stateful/vscode-runme</span>
             <div>
               The VS Code Extension
             </div>
           </a>
-          <a href="https://github.com/stateful/runme" class="w-full flex flex-col-reverse sm:flex-row sm:items-center sm:space-x-4">
-            <span class="bg-[#3693FF] rounded-md p-4">stateful/runme</span>
+          <a href="https://github.com/stateful/runme" class="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+            <span class="bg-[#3693FF] rounded-md p-4 flex items-center space-x-2">
+              <GithubIcon />
+              stateful/runme</span>
             <div>
               Command Line Interface (CLI) and parser
             </div>
           </a>
           <a href="https://github.com/stateful/runme.dev" class="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
-            <span class="bg-[#F62459] rounded-md p-4">stateful/runme.dev</span>
+            <span class="bg-[#F62459] rounded-md p-4 flex items-center space-x-2">
+              <GithubIcon />stateful/runme.dev</span>
             <div>
               Showcase website and example readme.md
             </div>

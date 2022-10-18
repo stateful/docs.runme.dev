@@ -116,7 +116,7 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
             <div className="flex flex-col space-y-2 lg:space-y-3">
               <FooterHeadline name="Projects" />
               <FooterLink name="runme.dev" href="https://github.com/stateful/rdme.dev" />
-              <FooterLink name="vscode-rundme" href="https://github.com/stateful/vscode-runme" />
+              <FooterLink name="vscode-runme" href="https://github.com/stateful/vscode-runme" />
               <FooterLink name="runme cli" href="https://github.com/stateful/runme" />
             </div>
             <div class="pt-24 absolute right-0 lg:right-32">
