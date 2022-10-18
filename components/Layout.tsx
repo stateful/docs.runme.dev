@@ -27,7 +27,7 @@ export default function Layout(props: LayoutProps) {
       {children}
       <div class="relative">
         <div className="absolute top-[-6.5px] sm:top-[-10px] md:top-[-13px] lg:top-[-16px] xl:top-[-20px] 2xl:top-[-25px] 3xl:top-[-32px] 4xl:top-[-40px] translate-x-1/2 right-1/2 w-[102%] lg:w-[105%] 3xl:w-[110%]">
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             width={"100%"}
             height={"100%"}
@@ -39,7 +39,7 @@ export default function Layout(props: LayoutProps) {
               d="M4000.99 67H1C1 42.2532 548.893 0.313874 2086.86 1.00852C3624.83 1.70317 4003.76 45.2923 4000.99 67Z"
               fill="#0D003D"
             />
-          </svg>
+          </svg> */}
         </div>
       </div>
       <Footer />
