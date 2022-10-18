@@ -31,6 +31,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 ### Development
 
 Start the project:
+
 ```sh { background=true }
 deno task start
 ```

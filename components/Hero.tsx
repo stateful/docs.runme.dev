@@ -35,7 +35,7 @@ export function Hero() {
         </div>
       </div>
       <div class="md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
-        <img src="/sidebyside.png" />
+        <img src="/intro.gif" />
       </div>
     </div>
   );
