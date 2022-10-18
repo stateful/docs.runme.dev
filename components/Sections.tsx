@@ -66,10 +66,10 @@ export function SectionTitle(props: SectionTitleProps) {
 export function Feature(props: FeatureProps) {
   const { text, icon, description } = props;
   return (
-    <div class="p-4 flex flex-col items-center justify-center space-y-1">
+    <div class="p-4 flex flex-col items-center justify-center text-center space-y-1">
       <div>{icon}</div>
-      <div class="font-semibold text-lg">{text}</div>
-      {description && <div>{description}</div>}
+      <h1 class="font-bold text-2xl">{text}</h1>
+      {description && <p>{description}</p>}
     </div>
   );
 }
@@ -92,44 +92,48 @@ export function HowItWorks() {
   return (
     <div class="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center py-14">
       <div class="text-center">
-        <h1 id="arrows-graphic" class="relative text-4xl lg:text-6xl tracking-[0.02em] font-bold">
+        <h1 id="arrows-graphic" class="relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold">
           How it works</h1>
-        <p class="text-2xl leading-9">Everything a markdown file can do, and way more. <br class="hidden md:block" />
-          <span id="underline-graphic" class="relative">
-          </span>
-          {' '}No changes required.
-        </p>
+        <div class="max-w-[600px]">
+          <p class="text-2xl leading-9">
+            Everything a markdown file can do and way more.{' '}
+            <span id="underline-graphic" class="relative ">No changes </span>
+            required.
+          </p>
+        </div>
+        {/* <br class="hidden lg:block" /> */}
+
       </div>
       <div class="flex flex-col lg:grid grid-cols-2 gap-2 w-full justify-center">
         <Feature
           text="Click to run commands"
           icon={<PlayIcon />}
-          description="effortlessly complete your README's steps"
+          description="Effortlessly complete your README's steps"
         />
         <Feature
           text="Rich notebook interactivity"
           icon={<TableIcon />}
-          description="overlay commands with web app like interactivity"
+          description="Overlay commands with web app like interactivity"
         />
         <Feature
           text="Baseline shell compatibility"
           icon={<TerminalIcon />}
-          description="break out of shell without losing compatability"
+          description="Break out of shell without losing compatability"
         />
         <Feature
           text="Stateful environment variables"
           icon={<VariableIcon />}
-          description="reliably define the execution environment"
+          description="Reliably define the execution environment"
         />
         <Feature
           text="Click to copy"
           icon={<CopyIcon />}
-          description="copy & paste with environment variables filled in"
+          description="Copy & paste with environment variables filled in"
         />
         <Feature
           text="Cloud-native notebooks"
           icon={<CloudIcon />}
-          description="deeply integrated with your favorite cloud services"
+          description="Deeply integrated with your favorite cloud services"
         />
       </div>
     </div>
@@ -145,8 +149,8 @@ export function OpenSource() {
         </svg>
       </div>
       <div class="py-48 lg:py-32">
-        <div>
-          <h1 class="text-white text-4xl lg:text-6xl tracking-[0.02em] font-bold"><span>Open Source</span> Software</h1>
+        <div class="space-y-4">
+          <h1 class="text-white text-4xl xs:text-5xl lg:text-6xl tracking-[0.02em] font-bold"><span id="open-source-graphic" class="relative mr-2">Open Source</span> Software</h1>
           <p class="text-white text-2xl tracking-[0.02em] leading-10">This project is APL 2.0 licensed and sources are available on Github.</p>
         </div>
         <div class="mt-12 flex flex-col items-center justify-center space-y-10 font-semibold lg:text-lg tracking-[0.02em] leading-[140%]">

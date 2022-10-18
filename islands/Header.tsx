@@ -20,31 +20,31 @@ export default function Header({ isHomepage = false }) {
             </h1>
           </div>
         </a>
-        <div class="hidden md:flex lg:mt-0 space-x-4 lg:space-x-8 items-center">
-          <a href="/blog" class="hover:underline text-xl">
+        <div class="hidden md:flex lg:mt-0 space-x-4 lg:space-x-8 items-center text-lg lg:text-xl">
+          <a href="/blog" class="hover:underline">
             Blog
           </a>
           <a
             href="https://github.com/stateful/vscode-runme"
-            class="hover:underline text-xl"
+            class="hover:underline"
           >
             Github
           </a>
           <a
             href="https://github.com/stateful/vscode-runme"
-            class="hover:underline text-xl"
+            class="hover:underline"
           >
             Marketplace
           </a>
           <a
             href="https://github.com/stateful/vscode-runme"
-            class="hover:underline text-xl"
+            class="hover:underline"
           >
             CLI
           </a>
           <a
             href="https://github.com/stateful/vscode-runme"
-            class="border-b-4 border-[#5B3ADF] text-xl flex items-center flex-row space-x-2"
+            class="border-b-4 border-[#5B3ADF] flex items-center flex-row space-x-2"
           >
             <div>Join the Discord</div>
             <DiscordIcon />
@@ -84,7 +84,7 @@ export default function Header({ isHomepage = false }) {
         </a>
         <a
           href="https://github.com/stateful/vscode-runme"
-          class="hover:underline text-xl flex flex-row space-x-2"
+          class="hover:underline text-xl flex items-center flex-row space-x-2"
         >
           <div>Join the Discord</div>
           <DiscordIcon />

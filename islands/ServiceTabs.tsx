@@ -1,16 +1,16 @@
-import { useState } from "preact/hooks";
+import { StateUpdater, useState } from "preact/hooks";
 
 const Tab = (props: {
   id: string;
   text: string;
-  setTab: Function;
+  setTab: StateUpdater<string>;
   tab: string;
 }) => {
   const { id, text, setTab, tab } = props;
   return (
     <div
       class={`${id === tab && "bg-[#3693FF] p-3 rounded-[58px]"
-        } lg:w-48 text-center font-semibold cursor-pointer text-blue-400 hover:underline hover:text-blue-500`}
+        } lg:w-48 text-center font-semibold cursor-pointer text-blue-400`}
       id={id}
       onClick={() => {
         setTab(id);
