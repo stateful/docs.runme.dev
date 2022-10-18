@@ -65,6 +65,14 @@ p {
   right: -15px;
 }
 
+#yellow-underline::after{
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='9' viewBox='0 0 200 9' fill='none'%3E%3Cpath d='M2 7C53.6667 3.22688 165.2 -2.05548 198 7' stroke='%23FFDB06' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  right: 0px;
+}
+
 @media only screen and (max-width: 499px) {
   #open-source-graphic::before, #open-source-graphic::after {
     top: -10px;

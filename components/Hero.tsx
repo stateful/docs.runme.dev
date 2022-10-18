@@ -34,8 +34,8 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div class="md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
-        <img src="/intro.gif" />
+      <div class="w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
+        <img src="/intro.gif" class="rounded-lg shadow-2xl" />
       </div>
     </div>
   );

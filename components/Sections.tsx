@@ -1,5 +1,6 @@
 import { ComponentChildren, VNode } from "preact";
 import {
+  ApacheIcon,
   CloudIcon,
   CopyIcon,
   PlayIcon,
@@ -97,7 +98,7 @@ export function HowItWorks() {
         <div class="max-w-[600px]">
           <p class="text-2xl leading-9">
             Everything a markdown file can do and way more.{' '}
-            <span id="underline-graphic" class="relative ">No changes </span>
+            <span id="underline-graphic" class="relative whitespace-nowrap">No changes </span>
             required.
           </p>
         </div>
@@ -148,25 +149,34 @@ export function OpenSource() {
           <path d="M0 0L1567 102.793V718.665L-11 800L0 0Z" fill="#33384D" />
         </svg>
       </div>
-      <div class="py-48 lg:py-32">
-        <div class="space-y-4">
-          <h1 class="text-white text-4xl xs:text-5xl lg:text-6xl tracking-[0.02em] font-bold"><span id="open-source-graphic" class="relative mr-2">Open Source</span> Software</h1>
-          <p class="text-white text-2xl tracking-[0.02em] leading-10">This project is APL 2.0 licensed and sources are available on Github.</p>
+      <div class="py-48 lg:py-32 flex flex-col lg:flex-row">
+        <div class="w-auto">
+          <div class="flex flex-col-reverse lg:flex-row lg:space-x-4">
+            <h1 class="text-white text-4xl xs:text-5xl lg:text-6xl tracking-[0.02em] font-bold">Open Source Software</h1>
+            <div class="flex-grow w-3/4">
+              <ApacheIcon />
+            </div>
+          </div>
+          <p class="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4">This project is {" "}
+            <span id="yellow-underline" class="relative whitespace-nowrap">
+              APL 2.0 licensed
+            </span>
+            {" "}and sources are available on Github.</p>
         </div>
         <div class="mt-12 flex flex-col items-center justify-center space-y-10 font-semibold lg:text-lg tracking-[0.02em] leading-[140%]">
-          <a href="https://github.com/stateful/vscode-runme" class="w-full flex flex-col xs:flex-row xs:items-center xs:space-x-4">
+          <a href="https://github.com/stateful/vscode-runme" class="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
             <span class="bg-[#E476FF] rounded-md p-4">stateful/vscode-runme</span>
             <div>
               The VS Code Extension
             </div>
           </a>
-          <a href="https://github.com/stateful/runme" class="flex flex-col-reverse xs:flex-row xs:items-center xs:space-x-4">
+          <a href="https://github.com/stateful/runme" class="w-full flex flex-col-reverse sm:flex-row sm:items-center sm:space-x-4">
+            <span class="bg-[#3693FF] rounded-md p-4">stateful/runme</span>
             <div>
               Command Line Interface (CLI) and parser
             </div>
-            <span class="bg-[#3693FF] rounded-md p-4">stateful/runme</span>
           </a>
-          <a href="https://github.com/stateful/runme.dev" class="flex flex-col xs:flex-row xs:items-center xs:space-x-4">
+          <a href="https://github.com/stateful/runme.dev" class="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
             <span class="bg-[#F62459] rounded-md p-4">stateful/runme.dev</span>
             <div>
               Showcase website and example readme.md
