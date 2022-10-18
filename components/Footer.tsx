@@ -124,7 +124,7 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
             </div>
           </div>
           <div className="text-sm md:absolute bottom-12">
-            © 2021-2022 Stateful Inc. All rights reserved.
+            &copy; 2021-2022 Stateful Inc. All rights reserved.
           </div>
         </div>
       </div>
