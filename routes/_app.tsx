@@ -4,11 +4,12 @@ import { Head } from "$fresh/runtime.ts";
 const title = 'Runme: Run your Readme.md'
 const description = 'Runme is a VS Code extension that transparently opens markdown files as runnable VS Code notebooks so that repo maintainers can annotate code blocks to enhance the interactive runbook-like experience.'
 const siteName = 'Runme.dev'
-const imageUrl = 'https://staging.runme.dev/intro.gif'
+const imageUrl = 'https://staging.runme.dev/twitter-image.png'
 const twitterHandle = '@stateful'
 const prodUrl = 'https://runme.dev'
 const keywords = ['runme', 'readme', 'vscode', 'code', 'markdown', 'README.md', 'onboarding', 'notebook', 'renderer']
 const previewImages = [
+  'https://staging.runme.dev/twitter-image.png',
   'https://staging.runme.dev/sidebyside.png',
   'https://staging.runme.dev/tabs/deno.gif'
 ]
