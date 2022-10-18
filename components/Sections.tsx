@@ -130,7 +130,7 @@ export function HowItWorks() {
         <Feature
           text="Click to copy"
           icon={<CopyButtonIcon />}
-          description="Copy & paste with environment variables filled in"
+          description="Copy & paste commands and their output"
         />
         <Feature
           text="Cloud-native notebooks"
