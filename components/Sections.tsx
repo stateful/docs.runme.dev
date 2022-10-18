@@ -1,13 +1,13 @@
 import { ComponentChildren, VNode } from "preact";
 import {
   ApacheIcon,
-  CloudIcon,
-  CopyIcon,
+  CloudNativeNotebookIcon,
+  CopyButtonIcon,
   GithubIcon,
-  PlayIcon,
+  NotebookIcon,
   RepoIcon,
-  TableIcon,
-  TerminalIcon,
+  RunCommandIcon,
+  ShellIcon,
   VariableIcon,
 } from "./Icons.tsx";
 
@@ -68,10 +68,10 @@ export function SectionTitle(props: SectionTitleProps) {
 export function Feature(props: FeatureProps) {
   const { text, icon, description } = props;
   return (
-    <div class="p-4 flex flex-col items-center justify-center text-center space-y-1">
+    <div class="lg:w-[520px] lg:odd:ml-auto p-4 flex flex-col justify-end space-y-8">
       <div>{icon}</div>
-      <h1 class="font-bold text-2xl">{text}</h1>
-      {description && <p>{description}</p>}
+      <h1 class="font-bold text-3xl">{text}</h1>
+      {description && <p class="text-lg">{description}</p>}
     </div>
   );
 }
@@ -106,20 +106,20 @@ export function HowItWorks() {
         {/* <br class="hidden lg:block" /> */}
 
       </div>
-      <div class="flex flex-col lg:grid grid-cols-2 gap-2 w-full justify-center">
+      <div class="mt-24 flex flex-col lg:grid grid-cols-2 gap-10 2xl:gap-16 w-full">
         <Feature
           text="Click to run commands"
-          icon={<PlayIcon />}
+          icon={<RunCommandIcon />}
           description="Effortlessly complete your README's steps"
         />
         <Feature
           text="Rich notebook interactivity"
-          icon={<TableIcon />}
+          icon={<NotebookIcon />}
           description="Overlay commands with web app like interactivity"
         />
         <Feature
           text="Baseline shell compatibility"
-          icon={<TerminalIcon />}
+          icon={<ShellIcon />}
           description="Break out of shell without losing compatability"
         />
         <Feature
@@ -129,12 +129,12 @@ export function HowItWorks() {
         />
         <Feature
           text="Click to copy"
-          icon={<CopyIcon />}
+          icon={<CopyButtonIcon />}
           description="Copy & paste with environment variables filled in"
         />
         <Feature
           text="Cloud-native notebooks"
-          icon={<CloudIcon />}
+          icon={<CloudNativeNotebookIcon />}
           description="Deeply integrated with your favorite cloud services"
         />
       </div>
