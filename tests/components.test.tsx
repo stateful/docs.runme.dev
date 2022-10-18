@@ -1,7 +1,7 @@
 import render from 'https://esm.sh/preact-render-to-string@5.2.1'
 import { DOMParser } from 'https://deno.land/x/deno_dom@v0.1.32-alpha/deno-dom-wasm.ts'
 import { describe, it } from 'https://deno.land/std@0.148.0/testing/bdd.ts'
-import { assertEquals, assertExists } from 'https://deno.land/std@0.148.0/testing/asserts.ts'
+import { assert, assertExists } from 'https://deno.land/std@0.148.0/testing/asserts.ts'
 import { assertSnapshot } from 'https://deno.land/std@0.159.0/testing/snapshot.ts'
 
 import Footer from '../components/Footer.tsx';
@@ -13,7 +13,7 @@ describe('Footer', () => {
     const compAsString  = render(<Footer />)
     const doc = new DOMParser().parseFromString(compAsString, 'text/html');
     assertExists(doc)
-    assertEquals(doc.textContent, 'The developer happiness company.')
+    assert(doc.textContent.includes('Stateful Inc. All rights reserved.'))
   })
 })
 
