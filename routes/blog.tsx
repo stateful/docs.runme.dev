@@ -59,6 +59,22 @@ interface Article {
   stateful: boolean;
 }
 
+interface LinkyProps {
+  name: string;
+  href: string;
+  classStr?: string
+}
+export const Linky = ({ name, href, classStr }: LinkyProps) => {
+  return (
+    <a href={href}>
+      <p className={`font-medium hover:underline hover:text-covey-500 ${classStr}`}>
+        {name}
+      </p>
+    </a>
+  );
+};
+
+
 export const handler: Handlers<Article[] | null> = {
   async GET(_, ctx) {
     const resp = await request(
@@ -72,53 +88,65 @@ export const handler: Handlers<Article[] | null> = {
     return ctx.render(resp);
   },
 };
-const Post = ({ post }: { post: Article }) => {
-  return (
-    <a>
-      <div className="flex flex-col rounded border-gray-500 py-2 px-4 space-y-2">
-        <img src={post.cover.url} class="rounded-lg shadow-xl" />
-        <div className="w-12 mt-10 border-t-4 rounded-full border-[#EF2357]" />
-        <div class="space-y-2">
-          <div>{format(new Date(post.date), "LLLL d, Y", {})}</div>
-          <a
-            href={`https://stateful.com/blog/${post.slug}`}
-            class="text-xl font-medium hover:text-blue-500 cursor-pointer"
-          >
-            {post.title}
-          </a>
-          <div class="text-xl">{post.preview}</div>
-          <div class="flex flex-row space-x-1">
-            {post.authors.map((author) => {
-              return (
-                <div class="flex flex-row space-x-2 items-center">
-                  <div>
-                    <img class="rounded-2xl w-8 h-8" src={author.photo.url} />
-                  </div>
-                  <a class="hover:text-blue-500" href={author.url}>
-                    {author.name}
-                  </a>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    </a>
-  );
-};
 
 export default function Blog({ data }: PageProps) {
-  if (!data) {
+  const posts: Article[] = data?.posts;
+  if (!data || !posts) {
     return <h1>Articles not found</h1>;
   }
-
   return (
     <Layout>
-      <div class="max-w-lg mx-auto min-h-screen">
-        <div class="text-center text-4xl py-12">Blog</div>
-        <div class="flex flex-col space-y-6">
-          {data.posts.map((post: Article) => {
-            return <Post post={post} />;
+      <div class="text-black pb-24">
+        <div className="relative py-24 mb-12 font-bold text-center">
+          <h1 id="fluid-typography-blog-header" class="vscode-bolt">Our blog</h1>
+        </div>
+        <div className="flex flex-col grid-cols-2 gap-10 mt-20 md:grid px-4 pb-36 max-w-[1440px] mx-auto">
+          {posts.map((post) => {
+            const slug = `https://stateful.com/blog/${post?.slug}`;
+            return (
+              <div key={post?.id} className="mb-24 ">
+                <a href={slug}>
+                  <div className="cursor-pointer relative h-[250px] bg-blue-500 xs:h-[250px] sm:h-[300px] md:h-[200px] lg:h-[325px] bg-white shadow-2xl">
+                    {post.cover?.url && (
+                      <img
+                        src={post?.cover?.url}
+                        alt={post?.title}
+                        className="object-cover rounded-md absolute w-full h-full"
+                      />
+                    )}
+                  </div>
+                </a>
+                <div className="w-12 mt-10 border-t-4 rounded-full border-covey-500" />
+                <div className="text-[#516C8C] font-medium my-4">
+                  {format(new Date(post.date), "LLLL d, Y", {})}
+                </div>
+                <a href={slug}>
+                  <a className="font-semibold line-clamp-2 text-[20px] h-16 text-heading tracking-[0.035em] hover:underline">
+                    {post?.title}
+                  </a>
+                </a>
+                <div className="line-clamp-3 text-[18px] h-28">
+                  {post?.preview}
+                </div>
+                {post?.authors?.length > 0 && (
+                  <div className="flex items-center mt-4 space-x-2">
+                    <div className="relative w-10 h-10">
+                      <img
+                        src={post?.authors?.[0]?.photo?.url}
+                        className="rounded-full absolute w-full h-full"
+                        alt={post?.authors?.[0]?.name}
+                      />
+                    </div>
+                    <div className="font-semibold leading-none text-[#516C8C]">
+                      <Linky
+                        name={post?.authors?.[0]?.name}
+                        href={post.authors?.[0]?.url}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
           })}
         </div>
       </div>

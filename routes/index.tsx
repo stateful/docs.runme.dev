@@ -7,7 +7,7 @@ import ServiceTabs from "../islands/ServiceTabs.tsx";
 export default function Home() {
   return (
     <Layout isHomepage={true}>
-      <div class='relative overflow-x-hidden'>
+      <div class='relative overflow-x-hidden mb-24'>
         <Hero />
         <HowItWorks />
         <OpenSource />
