@@ -235,7 +235,7 @@ export function FinalCta() {
           <YellowGhostIcon />
         </span>
         <a
-          href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
+          href="https://discord.gg/BQm8zRCBUY"
           class=" text-white flex items-center justify-center bg-[#3693FF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-2"
         >
           <span class="text-2xl">Join our Discord</span>
