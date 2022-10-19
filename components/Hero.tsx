@@ -7,7 +7,7 @@ export function Hero() {
           <path class='z-0' d="M0 -103L1567 -57.3276V776L0 884V-103Z" fill="#0D003D" />
         </svg>
       </div>
-      <div class="z-10 space-y-8 select-none">
+      <div class="z-10 space-y-8 select-none bg-[#0D003D]">
         <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em]">
           Run your{" "}
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]">
