@@ -3,6 +3,7 @@ import {
   ApacheIcon,
   CloudNativeNotebookIcon,
   CopyButtonIcon,
+  DiscordIcon,
   GithubIcon,
   NotebookIcon,
   RepoIcon,
@@ -214,4 +215,32 @@ export function CLI() {
       <img src="/terminal.png" alt="Terminal with rdme list command" />
     </div>
   );
+}
+
+export function FinalCta() {
+  return (
+    <div class='flex flex-col items-center justify-center'>
+      {/* <div class='relative text-4xl lg:text-6xl tracking-[0.02em] font-bold'>Lets get started!</div> */}
+      <div class="max-w-[1000px] flex flex-col lg:flex-row items-center justify-center py-12 space-y-4 lg:space-y-0 lg:space-x-4">
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
+          class="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold"
+        >
+          <span class="text-2xl">Install the extension</span>
+        </a>
+        <span class="text-2xl">or</span>
+
+
+        {/* <i class="rounded-[6px] font-bold text-black bg-[#42FCCC] p-1.5">runme</i> */}
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
+          class=" text-white flex items-center justify-center bg-[#3693FF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-2"
+        >
+          <span class="text-2xl">Join our discord</span>
+          <DiscordIcon />
+        </a>
+
+      </div>
+    </div>
+  )
 }

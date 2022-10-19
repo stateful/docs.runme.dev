@@ -98,7 +98,7 @@ export default function Blog({ data }: PageProps) {
     <Layout>
       <div class="text-black pb-24">
         <div className="relative py-24 mb-12 font-bold text-center">
-          <h1 id="fluid-typography-blog-header" class="vscode-bolt">Our blog</h1>
+          <h1 id="fluid-typography-blog-header" class="vscode-bolt">Blog</h1>
         </div>
         <div className="flex flex-col grid-cols-2 gap-10 mt-20 md:grid px-4 pb-36 max-w-[1440px] mx-auto">
           {posts.map((post) => {

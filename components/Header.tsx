@@ -7,7 +7,7 @@ export default function Header({ isHomepage = false }) {
   const CLILink = () => (<a href="https://github.com/stateful/runme" class="hover:underline select-none">CLI</a>)
   const DiscordLink = () => (
     <a href="https://discord.gg/BQm8zRCBUY" class="hover:underline select-none flex items-center flex-row space-x-2">
-      <div>Join the Discord</div>
+      <div>Join our Discord</div>
       <DiscordIcon />
     </a>
   )
