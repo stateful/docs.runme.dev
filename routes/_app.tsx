@@ -41,6 +41,18 @@ export default function App({ Component }: AppProps) {
 
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/style.css" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8HQR9WTV5"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+
+          gtag('config', 'G-N8HQR9WTV5');
+          `
+        }} />
       </Head>
       <Component />
     </>
