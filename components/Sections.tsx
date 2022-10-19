@@ -1,4 +1,3 @@
-import { ComponentChildren, VNode } from "preact";
 import {
   ApacheIcon,
   CloudNativeNotebookIcon,
@@ -12,6 +11,7 @@ import {
   VariableIcon,
   YellowGhostIcon,
 } from "./Icons.tsx";
+import { ComponentChildren, VNode } from "preact";
 
 type SectionProps = {
   children: ComponentChildren;
@@ -70,7 +70,7 @@ export function SectionTitle(props: SectionTitleProps) {
 export function Feature(props: FeatureProps) {
   const { text, icon, description } = props;
   return (
-    <div class="lg:w-[520px] lg:odd:ml-auto p-4 flex flex-col justify-end space-y-8">
+    <div class="lg:w-[520px] lg:odd:ml-auto p-4 flex flex-col justify-end space-y-6">
       <div>{icon}</div>
       <h1 class="font-bold text-3xl">{text}</h1>
       {description && <p class="text-lg">{description}</p>}
@@ -108,7 +108,7 @@ export function HowItWorks() {
         {/* <br class="hidden lg:block" /> */}
 
       </div>
-      <div class="mt-24 flex flex-col lg:grid grid-cols-2 gap-10 2xl:gap-16 w-full">
+      <div class="mt-24 flex flex-col lg:grid grid-cols-2 gap-4 2xl:gap-12 w-full">
         <Feature
           text="Click to run commands"
           icon={<RunCommandIcon />}
