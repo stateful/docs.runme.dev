@@ -201,6 +201,16 @@ export function CLI() {
         Command Line Interface
       </h1>
       <p class="text-2xl leading-9">Parse and run markdown files in the terminal.</p>
+      <div class="flex items-center justify-center">
+        <div class="px-8 pt-2 pb-5 shadow-lg text-gray-100 font-mono subpixel-antialiased bg-gray-800  rounded-lg leading-normal overflow-hidden">
+          <div class="mt-4 flex items-center flex-nowrap justify-center space-x-1">
+            <span class="text-covey-500">$ brew install{' '}</span>
+            <p class="text-white">
+              stateful/tap/runme
+            </p>
+          </div>
+        </div>
+      </div>
       <img src="/terminal.png" alt="Terminal with rdme list command" />
     </div>
   );
