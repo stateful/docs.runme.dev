@@ -22,7 +22,9 @@ describe('Hero', () => {
     const compAsString  = render(<Hero />)
     const doc = new DOMParser().parseFromString(compAsString, 'text/html');
     assertExists(doc)
-    await assertSnapshot(t, doc.querySelector('body')?.innerHTML)
+    await assert(doc.querySelector('body')?.innerHTML.includes(
+      'Run your <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]">Readme.md</span>'
+    ))
   })
 })
 
@@ -31,27 +33,27 @@ describe('Sections', () => {
     const compAsString  = render(<CLI />)
     const doc = new DOMParser().parseFromString(compAsString, 'text/html');
     assertExists(doc)
-    await assertSnapshot(t, doc.querySelector('body')?.innerHTML)
+    await assert(doc.querySelector('body')?.innerHTML.includes('Command Line Interface'))
   })
 
   it('should render Repo section correctly', async (t) => {
     const compAsString  = render(<Repo url="https://github.com/webdriverio/webdriverio" name="WebdriverIO" description="A cool repo" />)
     const doc = new DOMParser().parseFromString(compAsString, 'text/html');
     assertExists(doc)
-    await assertSnapshot(t, doc.querySelector('body')?.innerHTML)
+    await assert(doc.querySelector('body')?.innerHTML.includes('WebdriverIO'))
   })
 
   it('should render HowItWorks section correctly', async (t) => {
     const compAsString  = render(<HowItWorks />)
     const doc = new DOMParser().parseFromString(compAsString, 'text/html');
     assertExists(doc)
-    await assertSnapshot(t, doc.querySelector('body')?.innerHTML)
+    await assert(doc.querySelector('body')?.innerHTML.includes('How it works'))
   })
 
   it('should render OpenSource section correctly', async (t) => {
     const compAsString  = render(<OpenSource />)
     const doc = new DOMParser().parseFromString(compAsString, 'text/html');
     assertExists(doc)
-    await assertSnapshot(t, doc.querySelector('body')?.innerHTML)
+    await assert(doc.querySelector('body')?.innerHTML.includes('Open Source Software'))
   })
 })

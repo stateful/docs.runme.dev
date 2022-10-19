@@ -1,12 +1,12 @@
 import render from 'https://esm.sh/preact-render-to-string@5.2.1'
 import { describe, it } from 'https://deno.land/std@0.148.0/testing/bdd.ts'
-import { assert, assertExists } from 'https://deno.land/std@0.148.0/testing/asserts.ts'
+import { assert } from 'https://deno.land/std@0.148.0/testing/asserts.ts'
 // @ts-expect-error no exported memeber is recognised
 import { JSDOM } from "https://esm.sh/jsdom@20.0.1"
 
 import ServiceTabs from '../islands/ServiceTabs.tsx'
 
-describe('Footer', () => {
+describe('ServiceTabs', () => {
   function renderComponent () {
     const compAsString  = render(<ServiceTabs />)
     return new JSDOM(compAsString.replace('<img', '<div'), {
