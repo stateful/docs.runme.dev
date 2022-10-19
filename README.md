@@ -90,7 +90,7 @@ export DENO_PROJECT_NAME="<insert-project-name>"
 export DENO_ACCESS_TOKEN="<insert-token-here>"
 ```
 
-then you can run a preview deployment via:
+then you can run a preview deployment and subsequently promote it to production via:
 
 ```sh { background=true }
 deployctl deploy \
