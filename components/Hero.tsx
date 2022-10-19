@@ -7,7 +7,7 @@ export function Hero() {
     ['pauseFor', 1500],
     ['deleteAll'],
     ['pauseFor', 2500],
-    ['typeString', 'Documentation!'],
+    ['typeString', 'Docs!'],
     ['pauseFor', 3000],
     ['deleteAll'],
     ['pauseFor', 1500],
