@@ -121,9 +121,9 @@ export default function Blog({ data }: PageProps) {
                   {format(new Date(post.date), "LLLL d, Y", {})}
                 </div>
                 <a href={slug}>
-                  <a className="font-semibold line-clamp-2 text-[20px] h-16 text-heading tracking-[0.035em] hover:underline">
+                  <p className="font-semibold line-clamp-2 text-[20px] h-16 text-heading tracking-[0.035em] hover:underline">
                     {post?.title}
-                  </a>
+                  </p>
                 </a>
                 <div className="line-clamp-3 text-[18px] h-28">
                   {post?.preview}
