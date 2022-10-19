@@ -1,5 +1,6 @@
-import { JSX } from "preact";
 import { DiscordIcon, PurpleGhostFooterIcon } from "./Icons.tsx";
+
+import { JSX } from "preact";
 
 export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
   type FooterLinkProps = {
@@ -118,6 +119,11 @@ export default function Footer(props: JSX.HTMLAttributes<HTMLButtonElement>) {
               <FooterLink name="runme.dev" href="https://github.com/stateful/rdme.dev" />
               <FooterLink name="vscode-runme" href="https://github.com/stateful/vscode-runme" />
               <FooterLink name="runme cli" href="https://github.com/stateful/runme" />
+            </div>
+            <div className="flex items-center">
+              <a href="https://fresh.deno.dev">
+                <img width="197" height="37" src="https://fresh.deno.dev/fresh-badge.svg" alt="Made with Fresh" />
+              </a>
             </div>
             <div class="pt-24 absolute right-0 lg:right-32">
               <PurpleGhostFooterIcon />
