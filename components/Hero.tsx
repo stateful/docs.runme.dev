@@ -9,9 +9,12 @@ export function Hero() {
       </div>
       <div class="z-10 space-y-8 select-none">
         <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em]">
-          Run your{" "}
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]">
-            README.md
+          <span title="Run your" class="glitch relative">Run your{" "}</span>
+          <span class="relative">
+            <span class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]">README.md</span>
+            <span title="README.md" class="glitch top-[14px] left-[2px] absolute relative z-0 text-[#B36CC0]">
+              README.md
+            </span>
           </span>
         </h2>
         <h3 class="text-2xl">
