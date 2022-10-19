@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'preact/hooks'
-import * as TypewriterPlugin from 'https://unpkg.com/typewriter-effect@latest/dist/core.js'
+import TypeWriterPlugin from '../third_party/Typewriter.ts'
 
 export interface TypeWriterProps {
   // deno-lint-ignore no-explicit-any
@@ -9,14 +9,18 @@ export interface TypeWriterProps {
 export default function TypeWriter (props: TypeWriterProps) {
   const ref = useRef<HTMLSpanElement>(null)
   useEffect(() => {
-    const typewriter = new TypewriterPlugin.default(ref.current, {
+    if (!ref.current) {
+      return
+    }
+
+    const typewriter = new TypeWriterPlugin(ref.current, {
       loop: true,
       delay: 75,
       autoStart: true,
-      strings: ['Readme.md']
-    });
+    })
 
     for (const [method, args] of props.sequence) {
+      // @ts-expect-error type issue
       typewriter[method](args)
     }
 
@@ -30,7 +34,7 @@ export default function TypeWriter (props: TypeWriterProps) {
 
   return (
     <>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]" ref={ref} />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]" ref={ref}>Readme.md</span>
       <span style={cursorStyle}>|</span>
     </>
   )

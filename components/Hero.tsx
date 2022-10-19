@@ -2,12 +2,16 @@ import TypeWriter from '../islands/TypeWriter.tsx'
 
 export function Hero() {
   const sequence = [
-    ['pauseFor', 1500],
+    ['pauseFor', 500],
     ['typeString', '<i>Runme</i>.md'],
     ['pauseFor', 1500],
     ['deleteAll'],
     ['pauseFor', 2500],
     ['typeString', 'Docs!'],
+    ['pauseFor', 3000],
+    ['deleteAll'],
+    ['pauseFor', 1500],
+    ['typeString', 'Readme.md'],
     ['pauseFor', 3000],
     ['deleteAll'],
     ['pauseFor', 1500],
@@ -22,7 +26,7 @@ export function Hero() {
         </svg>
       </div>
       <div class="z-10 space-y-8 select-none bg-[#0D003D]">
-        <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em]">
+        <h2 class="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em] min-h-[100px] sm:min-h-full">
           Run your{" "}
           <TypeWriter sequence={sequence} />
         </h2>
