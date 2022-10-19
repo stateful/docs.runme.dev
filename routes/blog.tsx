@@ -4,8 +4,8 @@ import {
   request,
 } from "https://raw.githubusercontent.com/ArnabXD/graphql-request/temp/mod.ts";
 
-import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
 import Layout from "../components/Layout.tsx";
+import { format } from "https://deno.land/x/date_fns@v2.15.0/index.js";
 
 export const query = gql`
 query Posts() {
@@ -67,7 +67,7 @@ interface LinkyProps {
 export const Linky = ({ name, href, classStr }: LinkyProps) => {
   return (
     <a href={href}>
-      <p className={`font-medium hover:underline hover:text-covey-500 ${classStr}`}>
+      <p class={`font-medium hover:underline hover:text-covey-500 ${classStr}`}>
         {name}
       </p>
     </a>
@@ -97,45 +97,45 @@ export default function Blog({ data }: PageProps) {
   return (
     <Layout>
       <div class="text-black pb-24">
-        <div className="relative py-24 mb-12 font-bold text-center">
+        <div class="relative py-24 mb-12 font-bold text-center">
           <h1 id="fluid-typography-blog-header" class="vscode-bolt">Blog</h1>
         </div>
-        <div className="flex flex-col grid-cols-2 gap-10 mt-20 md:grid px-4 pb-36 max-w-[1440px] mx-auto">
+        <div class="flex flex-col grid-cols-2 gap-10 mt-20 md:grid px-4 pb-36 max-w-[1440px] mx-auto">
           {posts.map((post) => {
             const slug = `https://stateful.com/blog/${post?.slug}`;
             return (
-              <div key={post?.id} className="mb-24 ">
+              <div key={post?.id} class="mb-24 ">
                 <a href={slug}>
-                  <div className="cursor-pointer relative h-[250px] bg-blue-500 xs:h-[250px] sm:h-[300px] md:h-[200px] lg:h-[325px] bg-white shadow-2xl">
+                  <div class="cursor-pointer relative h-[250px] bg-blue-500 xs:h-[250px] sm:h-[300px] md:h-[200px] lg:h-[325px] bg-white shadow-2xl">
                     {post.cover?.url && (
                       <img
                         src={post?.cover?.url}
                         alt={post?.title}
-                        className="object-cover rounded-md absolute w-full h-full"
+                        class="object-cover rounded-md absolute w-full h-full"
                       />
                     )}
                   </div>
                 </a>
-                <div className="w-12 mt-10 border-t-4 rounded-full border-covey-500" />
-                <div className="text-[#516C8C] font-medium my-4">
+                <div class="w-12 mt-10 border-t-4 rounded-full border-covey-500" />
+                <div class="text-[#516C8C] font-medium my-4">
                   {format(new Date(post.date), "LLLL d, Y", {})}
                 </div>
-                <a href={slug} className="font-semibold line-clamp-2 text-[20px] h-16 text-heading tracking-[0.035em] hover:underline">
+                <a href={slug} class="font-semibold line-clamp-2 text-[20px] h-16 text-heading tracking-[0.035em] hover:underline">
                   {post?.title}
                 </a>
-                <div className="line-clamp-3 text-[18px] h-28">
+                <div class="line-clamp-3 text-[18px] h-28">
                   {post?.preview}
                 </div>
                 {post?.authors?.length > 0 && (
-                  <div className="flex items-center mt-4 space-x-2">
-                    <div className="relative w-10 h-10">
+                  <div class="flex items-center mt-4 space-x-2">
+                    <div class="relative w-10 h-10">
                       <img
                         src={post?.authors?.[0]?.photo?.url}
-                        className="rounded-full absolute w-full h-full"
+                        class="rounded-full absolute w-full h-full"
                         alt={post?.authors?.[0]?.name}
                       />
                     </div>
-                    <div className="font-semibold leading-none text-[#516C8C]">
+                    <div class="font-semibold leading-none text-[#516C8C]">
                       <Linky
                         name={post?.authors?.[0]?.name}
                         href={post.authors?.[0]?.url}
