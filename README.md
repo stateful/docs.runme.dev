@@ -52,6 +52,12 @@ We have added some basic components tests to verify that they render correctly, 
 deno test --no-check --allow-env --allow-read
 ```
 
+In case changes occur to markup rendering, snapshot-based test will fail. Be sure to update them running:
+
+```sh
+deno test --no-check --allow-env --allow-read --allow-write -- --update
+```
+
 ### Preview Content
 
 Doublecheck what's in the CMS to be published in the blog section:
