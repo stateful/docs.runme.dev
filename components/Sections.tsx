@@ -202,7 +202,7 @@ export function CLI() {
       </h1>
       <p class="text-2xl leading-9">Parse and run markdown files in the terminal.</p>
       <div class="flex items-center justify-center">
-        <div class="px-8 pt-2 pb-5 shadow-lg text-gray-100 font-mono subpixel-antialiased bg-gray-800  rounded-lg leading-normal overflow-hidden">
+        <div class="px-8 pt-2 pb-5 shadow-lg text-gray-100 font-mono subpixel-antialiased bg-[#0A0A0A]  rounded-lg leading-normal overflow-hidden">
           <div class="mt-4 flex items-center flex-nowrap justify-center space-x-1">
             <span class="text-covey-500">$ brew install{' '}</span>
             <p class="text-white">
