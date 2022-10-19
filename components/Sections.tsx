@@ -211,6 +211,9 @@ export function CLI() {
           </div>
         </div>
       </div>
+      <p class="text-xs py-0">
+        other platforms available at <a class="underline" href="https://github.com/stateful/runme/releases">https://github.com/stateful/runme/releases</a>
+      </p>
       <img src="/terminal.png" alt="Terminal with rdme list command" />
     </div>
   );
