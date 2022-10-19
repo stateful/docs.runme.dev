@@ -3,12 +3,14 @@ import {
   ApacheIcon,
   CloudNativeNotebookIcon,
   CopyButtonIcon,
+  DiscordIcon,
   GithubIcon,
   NotebookIcon,
   RepoIcon,
   RunCommandIcon,
   ShellIcon,
   VariableIcon,
+  YellowGhostIcon,
 } from "./Icons.tsx";
 
 type SectionProps = {
@@ -211,10 +213,35 @@ export function CLI() {
           </div>
         </div>
       </div>
-      <p class="text-xs py-0">
-        other platforms available at <a class="underline" href="https://github.com/stateful/runme/releases">https://github.com/stateful/runme/releases</a>
+      <p class="text-sm py-0 max-w-sm">
+        other platforms available at <a class="underline font-semibold" href="https://github.com/stateful/runme/releases">https://github.com/stateful/runme/releases</a>
       </p>
       <img src="/terminal.png" alt="Terminal with rdme list command" />
     </div>
   );
+}
+
+export function FinalCta() {
+  return (
+    <div class='flex flex-col items-center justify-center'>
+      <div class="max-w-[1000px] flex flex-col lg:flex-row items-center justify-center py-12 space-y-4 lg:space-y-0 lg:space-x-4">
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
+          class="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold"
+        >
+          <span class="text-2xl">Install the extension</span>
+        </a>
+        <span class="text-3xl">
+          <YellowGhostIcon />
+        </span>
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
+          class=" text-white flex items-center justify-center bg-[#3693FF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-2"
+        >
+          <span class="text-2xl">Join our Discord</span>
+          <DiscordIcon />
+        </a>
+      </div>
+    </div>
+  )
 }

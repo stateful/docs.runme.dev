@@ -1,4 +1,4 @@
-import { HowItWorks, OpenSource, CLI } from '../components/Sections.tsx';
+import { HowItWorks, OpenSource, CLI, FinalCta } from '../components/Sections.tsx';
 import { Hero } from '../components/Hero.tsx'
 import Layout, { PageWrapper } from '../components/Layout.tsx'
 
@@ -15,6 +15,7 @@ export default function Home() {
           <CLI />
           <ServiceTabs />
         </PageWrapper>
+        <FinalCta />
       </div>
     </Layout>
   );
