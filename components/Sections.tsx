@@ -100,7 +100,7 @@ export function HowItWorks() {
           How it works</h1>
         <div class="max-w-[600px]">
           <p class="text-2xl leading-9">
-            Use dev-friendly markdown to craft interactive runbooks for <br class="sm:hidden md:block lg:hidden" />
+            Use dev-native markdown to craft interactive runbooks for <br class="sm:hidden md:block lg:hidden" />
             <span id="vscode-bolt" class="relative">
               {" "}VS Code.
             </span>
