@@ -28,10 +28,10 @@ export default function Header({ isHomepage = false }) {
           </div>
         </a>
         <div class="hidden md:flex lg:mt-0 py-2 space-x-4 lg:space-x-8 items-center text-lg lg:text-xl">
-          <BlogLink />
-          <GithubLink />
           <MarketplaceLink />
-          <CLILink />
+          {/* <GithubLink /> */}
+          <BlogLink />
+          {/* <CLILink /> */}
           <DiscordLink />
         </div>
         <div class="group md:hidden">
