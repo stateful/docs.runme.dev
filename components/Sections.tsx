@@ -100,9 +100,10 @@ export function HowItWorks() {
           How it works</h1>
         <div class="max-w-[600px]">
           <p class="text-2xl leading-9">
-            Everything a markdown file can do and way more.{' '}
-            <span id="underline-graphic" class="relative whitespace-nowrap">No changes </span>
-            required.
+            Use dev-friendly markdown to craft interactive runbooks for <br class="sm:hidden md:block lg:hidden" />
+            <span id="vscode-bolt" class="relative">
+              {" "}VS Code.
+            </span>
           </p>
         </div>
         {/* <br class="hidden lg:block" /> */}

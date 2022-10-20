@@ -31,10 +31,9 @@ export function Hero() {
           <TypeWriter sequence={sequence} />
         </h2>
         <h3 class="text-2xl">
-          Use dev-friendly markdown to craft interactive runbooks for <br class="sm:hidden md:block lg:hidden" />
-          <span id="vscode-bolt" class="relative">
-            {" "}VS Code.
-          </span>
+          Everything a markdown file can do and way more.{' '}
+          <span id="underline-graphic" class="relative whitespace-nowrap">No changes </span>
+          required.
         </h3>
         <div class="flex flex-col items-center justify-center py-12 space-y-4">
           <a
