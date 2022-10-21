@@ -238,7 +238,7 @@ export function FinalCta() {
           class="flex items-center justify-center px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-3"
         >
           <DiscordIcon />
-          <span class="text-2xl tracking-[0.08em]">Join our Discord</span>
+          <span class="text-xl sm:text-2xl tracking-[0.08em] whitespace-nowrap">Join our Discord</span>
           <RedRightArrow />
         </a>
       </div>
