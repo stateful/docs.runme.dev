@@ -5,11 +5,11 @@ import {
   DiscordIcon,
   GithubIcon,
   NotebookIcon,
+  RedRightArrow,
   RepoIcon,
   RunCommandIcon,
   ShellIcon,
-  VariableIcon,
-  YellowGhostIcon,
+  VariablesIcon,
 } from "./Icons.tsx";
 import { ComponentChildren, VNode } from "preact";
 
@@ -72,8 +72,8 @@ export function Feature(props: FeatureProps) {
   return (
     <div class="lg:w-[520px] lg:odd:ml-auto p-4 flex flex-col justify-end space-y-6">
       <div>{icon}</div>
-      <h1 class="font-bold text-3xl">{text}</h1>
-      {description && <p class="text-lg">{description}</p>}
+      <h1 class="font-bold text-[28px]">{text}</h1>
+      {description && <p class="text-2xl">{description}</p>}
     </div>
   );
 }
@@ -95,11 +95,11 @@ export function Repo({ url, name, description }: RepoProps) {
 export function HowItWorks() {
   return (
     <div class="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center py-14">
-      <div class="text-center">
-        <h1 id="arrows-graphic" class="relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold">
+      <div class="text-center space-y-4 md:space-y-8">
+        <h1 id="arrows-graphic" class="lg:max-w-min mx-auto whitespace-nowrap relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold">
           How it works</h1>
-        <div class="max-w-[600px]">
-          <p class="text-2xl leading-9">
+        <div class="lg:whitespace-nowrap">
+          <p class="text-2xl leading-9 text-center">
             Use dev-native markdown to craft interactive runbooks for <br class="sm:hidden md:block lg:hidden" />
             <span id="vscode-bolt" class="relative">
               {" "}VS Code.
@@ -127,7 +127,7 @@ export function HowItWorks() {
         />
         <Feature
           text="Stateful environment variables"
-          icon={<VariableIcon />}
+          icon={<VariablesIcon />}
           description="Reliably define the execution environment"
         />
         <Feature
@@ -153,11 +153,11 @@ export function OpenSource() {
           <path d="M0 0L1567 102.793V718.665L-11 800L0 0Z" fill="#33384D" />
         </svg>
       </div>
-      <div class="py-48 flex flex-col lg:flex-row">
-        <div class="w-auto space-y-4">
+      <div class="py-48 lg:px-24 flex flex-col lg:flex-row">
+        <div class="space-y-4">
           <div class="flex flex-col-reverse lg:flex-row lg:space-x-4">
             <h1 class="text-white text-4xl xs:text-5xl lg:text-6xl tracking-[0.02em] font-bold">Open Source Software</h1>
-            <div class="flex-grow w-3/4">
+            <div class="flex-grow w-3/5">
               <ApacheIcon />
             </div>
           </div>
@@ -225,22 +225,21 @@ export function CLI() {
 export function FinalCta() {
   return (
     <div class='flex flex-col items-center justify-center'>
-      <div class="max-w-[1000px] flex flex-col lg:flex-row items-center justify-center py-12 space-y-4 lg:space-y-0 lg:space-x-4">
+      <div class="max-w-[1000px] flex flex-col items-center justify-center py-12 space-y-12 lg:space-x-4">
+        <p class="text-5xl font-bold tracking-[0.03em] leading-relaxed sm:leading-normal text-center">Ready to get <span>started?</span></p>
         <a
           href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
-          class="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold"
+          class="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[10px] rounded-[60px] text-base leading-[0px] font-semibold"
         >
-          <span class="text-2xl">Install the extension</span>
+          <span class="text-2xl font-semibold">Install the extension</span>
         </a>
-        <span class="text-3xl">
-          <YellowGhostIcon />
-        </span>
         <a
           href="https://discord.gg/BQm8zRCBUY"
-          class=" text-white flex items-center justify-center bg-[#3693FF] px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-2"
+          class="flex items-center justify-center px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-3"
         >
-          <span class="text-2xl">Join our Discord</span>
           <DiscordIcon />
+          <span class="text-2xl tracking-[0.08em]">Join our Discord</span>
+          <RedRightArrow />
         </a>
       </div>
     </div>
