@@ -42,28 +42,6 @@ const XIcon = () => {
   );
 };
 
-
-const VariableIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="#d53f8c"
-      class={Classes}
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"
-      />
-    </svg>
-  );
-};
-
-
-
 const RepoIcon = () => {
   return (
     <svg
@@ -89,6 +67,14 @@ const DiscordIcon = () => {
           <rect width="21.3351" height="16.5939" fill="currentColor" transform="translate(0.665039 0.910156)" />
         </clipPath>
       </defs>
+    </svg>
+  );
+};
+
+const RedRightArrow = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
+      <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#F62459" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   );
 };
@@ -200,12 +186,12 @@ const VariablesIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 50 55" fill="none">
       <line x1="2" y1="53" x2="48" y2="53" stroke="#E476FF" stroke-width="4" stroke-linecap="round" />
-      <g clip-path="url(#clip0_1262_1120)">
+      <g clip-path="url(#clip0_1262_1118)">
         <path d="M10.418 10C5.20964 20.4167 5.20964 27.5 10.418 40M39.5846 10C44.793 20.4167 44.793 27.5 39.5846 40M18.7513 18.75H20.8346C22.918 18.75 22.918 20.8333 25.0346 26.0979C27.0846 31.25 27.0846 33.3333 29.168 33.3333H31.2513" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M16.668 33.3333C19.793 33.3333 22.918 29.1667 25.0013 26.0417C27.0846 22.9167 30.2096 18.75 33.3346 18.75" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
       </g>
       <defs>
-        <clipPath id="clip0_1262_1120">
+        <clipPath id="clip0_1262_1118">
           <rect width="50" height="50" fill="white" />
         </clipPath>
       </defs>
@@ -329,7 +315,6 @@ export {
   ApacheIcon,
   Bar3Icon,
   RepoIcon,
-  VariableIcon,
   XIcon,
   DiscordIcon,
   PurpleGhostFooterIcon,
@@ -340,5 +325,6 @@ export {
   ShellIcon,
   NotebookIcon,
   VariablesIcon,
-  YellowGhostIcon
+  YellowGhostIcon,
+  RedRightArrow
 };

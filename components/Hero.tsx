@@ -18,7 +18,7 @@ export function Hero() {
   ]
 
   return (
-    <div class="text-center space-y-2 pt-24 lg:pt-32 text-white relative">
+    <div class="text-center space-y-12 pt-24 text-white relative">
       <div class="absolute top-0 left-0 w-full h-[85%] lg:h-[75%] z-[-1]">
         <svg class='z-0 min-h-full' xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1567 884" fill="none" preserveAspectRatio="none"
         >
@@ -35,7 +35,7 @@ export function Hero() {
           <span id="underline-graphic" class="relative whitespace-nowrap">No changes </span>
           required.
         </h3>
-        <div class="flex flex-col items-center justify-center py-12 space-y-4">
+        <div class="flex flex-col items-center justify-center space-y-8">
           <a
             href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
             class="bg-[#5B3ADF] py-[20px] rounded-[60px] text-base w-[280px] h-[40px] leading-[0px] font-semibold"
@@ -50,7 +50,7 @@ export function Hero() {
           </div>
         </div>
       </div>
-      <div class="w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
+      <div class="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
         <img src="/intro.gif" class="rounded-lg shadow-2xl select-none" />
       </div>
     </div>
