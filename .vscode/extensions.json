@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "stateful.runme",
     "denoland.vscode-deno",
     "sastan.twind-intellisense"
   ]
