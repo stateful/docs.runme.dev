@@ -41,13 +41,13 @@ const ServiceTabs = () => {
         Service Integrations
       </h1>
       <p class="text-2xl leading-9">Visibility and status embedded inline in your docs.</p>
-      {/* <div class="w-full flex flex-row flex-wrap space-x-4 items-center justify-center">
+      <div class="w-full flex flex-row flex-wrap space-x-4 items-center justify-center">
         <Tab text="Deno Deploy" id="deno" setTab={setTab} tab={tab} />
-        {/* <Tab text="Vercel" id="vercel" setTab={setTab} tab={tab} /> */}
-        <div class="font-semibold">More coming soon...</div>
-        <Tab text="Netlify" id="netlify" setTab={setTab} tab={tab} />
-        <Tab text="Begin" id="begin" setTab={setTab} tab={tab} />
-      </div> */}
+        <Tab text="Vercel" id="vercel" setTab={setTab} tab={tab} />
+        {/* <div class="font-semibold">More coming soon...</div> */}
+        {/* <Tab text="Netlify" id="netlify" setTab={setTab} tab={tab} />
+        <Tab text="Begin" id="begin" setTab={setTab} tab={tab} /> */}
+      </div>
       <div class="p-6">
         {ImageMap[tab]
           ? <img class="xl:max-w-[900px] 2xl:max-w-[1200px]" src={ImageMap[tab]} />
