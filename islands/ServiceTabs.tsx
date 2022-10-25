@@ -10,7 +10,7 @@ const Tab = (props: {
   return (
     <div
       class={`${id === tab && "bg-[#3693FF] p-3 rounded-[58px]"
-        } lg:w-48 text-center font-semibold cursor-pointer text-blue-400`}
+        } p-3 rounded-[58px] border border-gray-200 lg:w-48 text-center font-semibold cursor-pointer text-blue-400 hover:shadow`}
       id={id}
       onClick={() => {
         setTab(id);
