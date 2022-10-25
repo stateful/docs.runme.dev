@@ -27,7 +27,7 @@ const ImageMap: {
   [key: string]: string;
 } = {
   deno: "/tabs/deno.gif",
-  vercel: "/tabs/vercel.png",
+  vercel: "/tabs/vercel.gif",
 };
 
 const ServiceTabs = () => {
