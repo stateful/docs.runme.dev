@@ -31,7 +31,7 @@ const ImageMap: {
 };
 
 const ServiceTabs = () => {
-  const [tab, setTab] = useState("deno");
+  const [tab, setTab] = useState("vercel");
   return (
     <div class="px-1 my-48 flex flex-col items-center justify-center space-y-8 text-center">
       <h1 class="text-4xl lg:text-6xl tracking-[0.02em] font-bold">
@@ -42,8 +42,8 @@ const ServiceTabs = () => {
       </h1>
       <p class="text-2xl leading-9">Visibility and status embedded inline in your docs.</p>
       <div class="w-full flex flex-row flex-wrap space-x-4 items-center justify-center">
-        <Tab text="Deno Deploy" id="deno" setTab={setTab} tab={tab} />
         <Tab text="Vercel" id="vercel" setTab={setTab} tab={tab} />
+        <Tab text="Deno Deploy" id="deno" setTab={setTab} tab={tab} />
         {/* <div class="font-semibold">More coming soon...</div> */}
         {/* <Tab text="Netlify" id="netlify" setTab={setTab} tab={tab} />
         <Tab text="Begin" id="begin" setTab={setTab} tab={tab} /> */}
