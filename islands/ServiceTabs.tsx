@@ -27,7 +27,7 @@ const ImageMap: {
   [key: string]: string;
 } = {
   deno: "/tabs/deno.gif",
-  vercel: "/tabs/vercel.gif",
+  vercel: "/tabs/vercel.png",
 };
 
 const ServiceTabs = () => {
@@ -43,7 +43,7 @@ const ServiceTabs = () => {
       <p class="text-2xl leading-9">Visibility and status embedded inline in your docs.</p>
       {/* <div class="w-full flex flex-row flex-wrap space-x-4 items-center justify-center">
         <Tab text="Deno Deploy" id="deno" setTab={setTab} tab={tab} />
-        <Tab text="Vercel" id="vercel" setTab={setTab} tab={tab} />
+        {/* <Tab text="Vercel" id="vercel" setTab={setTab} tab={tab} /> */}
         <div class="font-semibold">More coming soon...</div>
         <Tab text="Netlify" id="netlify" setTab={setTab} tab={tab} />
         <Tab text="Begin" id="begin" setTab={setTab} tab={tab} />
