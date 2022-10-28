@@ -715,7 +715,7 @@ export default class Typewriter {
 
       case EVENT_NAMES.REMOVE_ALL: {
         const { visibleNodes } = this
-        console.log(222, visibleNodes)
+        //console.log(222, visibleNodes)
 
         const { speed } = eventArgs
         const removeAllEventItems = []
