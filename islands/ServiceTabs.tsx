@@ -30,6 +30,13 @@ const ImageMap: {
   vercel: "/tabs/vercel.gif",
 };
 
+const ExampleMap: {
+  [key: string]: string;
+} = {
+  deno: "https://github.com/stateful/runme.dev/blob/main/README.md",
+  vercel: "https://github.com/stateful/vscode-runme/blob/main/examples/deploy/README.md",
+};
+
 const ServiceTabs = () => {
   const [tab, setTab] = useState("vercel");
   return (
@@ -48,7 +55,15 @@ const ServiceTabs = () => {
         {/* <Tab text="Netlify" id="netlify" setTab={setTab} tab={tab} />
         <Tab text="Begin" id="begin" setTab={setTab} tab={tab} /> */}
       </div>
-      <div class="p-6">
+
+
+      <div class="p-2">
+        <div class="text-base font-medium xl:text-lg hover:text-blue-600 cursor-pointer pb-6 text-blue-500 hover:underline">
+          <a href={ExampleMap[tab]}>
+            Check out the example markdown.
+          </a>
+        </div>
+
         {ImageMap[tab]
           ? <img class="xl:max-w-[900px] 2xl:max-w-[1200px]" src={ImageMap[tab]} />
           : (
