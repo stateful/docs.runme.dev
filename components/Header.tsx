@@ -43,10 +43,10 @@ export default function Header({ isHomepage = false }) {
             <XIcon />
           </label>
           <div class={`hidden flex md:hidden px-14 py-4 flex-col text-xl justify-between space-y-4 absolute inset-x-0 ${isHomepage ? 'text-white bg-[#0D003D]' : 'text-black'} top-[70px] z-10`}>
-            <BlogLink />
-            <GithubLink />
             <MarketplaceLink />
-            <CLILink />
+            {/* <GithubLink /> */}
+            <BlogLink />
+            {/* <CLILink /> */}
             <DiscordLink />
           </div>
         </div>
