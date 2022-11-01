@@ -7,8 +7,8 @@ import { JSDOM } from "https://esm.sh/jsdom@20.0.1"
 import ServiceTabs from '../islands/ServiceTabs.tsx'
 
 describe('ServiceTabs', () => {
-  function renderComponent () {
-    const compAsString  = render(<ServiceTabs />)
+  function renderComponent() {
+    const compAsString = render(<ServiceTabs />)
     return new JSDOM(compAsString.replace('<img', '<div'), {
       url: "https://example.com/",
       referrer: "https://example.org/",
@@ -19,7 +19,7 @@ describe('ServiceTabs', () => {
 
   it('should render as Deno example as default state', () => {
     const { window: { document } } = renderComponent()
-    assert(document.body.innerHTML.includes('src="/tabs/deno.gif"'))
+    assert(document.body.innerHTML.includes('src="/tabs/vercel.gif"'))
   })
 
   /**
