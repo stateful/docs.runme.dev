@@ -141,6 +141,20 @@ export function HowItWorks() {
           description="Deeply integrated with your favorite cloud services"
         />
       </div>
+      <div class="w-full mt-12 lg:mt-24">
+        <div class="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
+          <iframe
+            class='rounded-lg shadow-2xl select-none mx-auto'
+            width={'100%'}
+            height={'100%'}
+            src="https://www.youtube.com/embed/XbYeeMC2oao"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }
