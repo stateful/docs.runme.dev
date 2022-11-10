@@ -142,7 +142,7 @@ export function HowItWorks() {
         />
       </div>
       <div class="w-full mt-12 lg:mt-24">
-        <div class="w-full h-[250px] sm:h-[450px] lg:w-[1000px] lg:h-[600px] max-w-6xl mx-auto">
+        <div class="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
           <iframe
             class='rounded-lg shadow-2xl select-none mx-auto'
             width={'100%'}
