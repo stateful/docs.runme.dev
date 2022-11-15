@@ -17,7 +17,7 @@ describe('ServiceTabs', () => {
     })
   }
 
-  it('should render as Deno example as default state', () => {
+  it.ignore('should render as Deno example as default state', () => {
     const { window: { document } } = renderComponent()
     assert(document.body.innerHTML.includes('src="/tabs/vercel.gif"'))
   })
