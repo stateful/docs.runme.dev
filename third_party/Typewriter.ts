@@ -2,18 +2,18 @@
  * Code and imported local modules were imported from https://github.com/tameemsafi/typewriterjs
  * and rewritten into TypeScript.
  */
-import raf, { cancel as cancelRaf } from './raf.ts'
+import raf, { cancel as cancelRaf } from './raf'
 import {
   doesStringContainHTMLTag,
   getDOMElementFromString,
   getRandomInteger,
   addStyles,
-} from './Typewriter/utils.ts'
+} from './Typewriter/utils'
 import {
   EVENT_NAMES,
   VISIBLE_NODE_TYPES,
   STYLES,
-} from './Typewriter/constants.ts'
+} from './Typewriter/constants'
 
 declare global {
   interface Window { ___TYPEWRITER_JS_STYLES_ADDED___: boolean; }

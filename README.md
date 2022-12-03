@@ -1,106 +1,41 @@
-# Runme.dev
+# Website
 
-This project contains the application for [runme.dev](https://runme.dev) and
-also acts as a guinea pig to showcase the
-[Runme Extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme).
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-## Prerequisites
+### Installation
 
-This project is based on [Fresh](https://fresh.deno.dev/) and requires Deno to
-run. To install Deno via homebrew on macOS:
-
-```sh
-# macOS
-brew bundle --no-lock
+```
+$ yarn
 ```
 
-Or the installer which also works on Linux:
+### Local Development
 
-```sh
-# macOS or Linux
-curl -fsSL https://deno.land/x/install/install.sh | sh
+```
+$ yarn start
 ```
 
-Add Deno to your path:
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-```sh
-export DENO_INSTALL="$HOME/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+### Build
+
+```
+$ yarn build
 ```
 
-### Development
-
-Start the project:
-
-```sh { background=true }
-deno task start
-```
-
-Open the project in your browser:
-
-```sh { interactive=false }
-open http://localhost:8000/
-```
-
-This will watch the project directory and restart as necessary.
-
-### Testing
-
-We have added some basic components tests to verify that they render correctly, run them via:
-
-```sh
-deno test --no-check --allow-env --allow-read
-```
-
-In case changes occur to markup rendering, snapshot-based test will fail. Be sure to update them running:
-
-```sh
-deno test --no-check --allow-env --allow-read --allow-write -- --update
-```
-
-### Preview Content
-
-Doublecheck what's in the CMS to be published in the blog section:
-
-```sh { interactive=false }
-curl "https://api-us-west-2.graphcms.com/v2/cksds5im94b3w01xq4hfka1r4/master?query=$(deno run -A query.ts)" --compressed 2>/dev/null \
-  | jq -r '.[].posts[] | "\(.title) - by \(.authors[0].name), id: \(.id)"'
-```
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ### Deployment
 
-To deploy this project you need to have `deployctl` installed on your system. To
-install, please run:
+Using SSH:
 
-```sh
-deno install \
-  --allow-read --allow-write \
-  --allow-env --allow-net --allow-run \
-  --no-check \
-  -r -f https://deno.land/x/deploy/deployctl.ts
+```
+$ USE_SSH=true yarn deploy
 ```
 
-Once installed successfully, create a
-[new access token](https://dash.deno.com/account#access-tokens) and export it
-into your environment:
+Not using SSH:
 
-```sh
-echo "Set up your deno environment"
-export DENO_PROJECT_NAME="<insert-project-name>"
-export DENO_ACCESS_TOKEN="<insert-token-here>"
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-then you can run a preview deployment and subsequently promote it to production via:
-
-```sh { background=true }
-deployctl deploy \
-    --project=$DENO_PROJECT_NAME \
-    --exclude=node_modules \
-    --import-map=import_map.json \
-    --token=$DENO_ACCESS_TOKEN \
-    main.ts
-```
-
----
-
-<p align="center"><small>Copyright 2022 © <a href="https://stateful.com/">Stateful</a> (<a href="https://discord.gg/BQm8zRCBUY">💬 Join Discord</a>) – Apache 2.0 License</small> </p>
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
