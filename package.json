@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.2.0",
+    "@docusaurus/plugin-content-docs": "^2.2.0",
     "@tsconfig/docusaurus": "^1.0.6",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
