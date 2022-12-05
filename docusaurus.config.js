@@ -74,6 +74,7 @@ const config = {
         logo: {
           alt: 'Runme Logo',
           src: 'img/logo.svg',
+          href: '/'
         },
         items: [
           {
@@ -90,14 +91,16 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/stateful/runme',
             label: 'GitHub',
-            position: 'right'
+            position: 'right',
+            className: 'githubLink'
           },
           {
             href: 'https://discord.gg/BQm8zRCBUY',
             label: 'Join our Discord',
-            position: 'right'
+            position: 'right',
+            className: 'discordLink'
           },
         ],
       },
