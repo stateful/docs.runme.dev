@@ -14,7 +14,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}: Run your Readme.md`}
       description="Description will go into a meta tag in <head />"
       wrapperClassName="main"
     >
