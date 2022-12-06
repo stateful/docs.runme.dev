@@ -37,7 +37,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en']
   },
 
   plugins: [
@@ -76,9 +76,9 @@ const config = {
             tagName: 'meta',
             name: 'theme-color',
             content: 'rgb(88, 57, 218)',
-          },
-        ],
-      },
+          }
+        ]
+      }
     ]
   ],
 
@@ -91,25 +91,23 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/stateful/runme.dev/edit/cb-docusaurus'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/stateful/runme.dev/edit/cb-docusaurus'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css')
         },
         gtag: {
           trackingID: 'G-N8HQR9WTV5',
-          anonymizeIP: true,
+          anonymizeIP: true
         }
-      }),
-    ],
+      })
+    ]
   ],
 
   themeConfig:
@@ -166,14 +164,14 @@ const config = {
             label: 'Join our Discord',
             position: 'right',
             className: 'discordLink'
-          },
-        ],
+          }
+        ]
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        darkTheme: darkCodeTheme
+      }
+    })
 };
 
 module.exports = config;
