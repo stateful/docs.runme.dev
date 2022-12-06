@@ -238,6 +238,7 @@ p {
 a[aria-label="Home page"] {
   position: relative;
   top: 7px;
+  padding-left: 0;
 }
 
 a:hover {
