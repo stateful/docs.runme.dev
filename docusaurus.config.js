@@ -4,6 +4,19 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const title = 'Runme: Run your Readme.md'
+const description = 'Runme is a VS Code extension that transparently opens markdown files as runnable VS Code notebooks so that repo maintainers can annotate code blocks to enhance the interactive runbook-like experience.'
+const siteName = 'Runme.dev'
+const imageUrl = 'https://runme.dev/twitter-image.png'
+const twitterHandle = '@stateful'
+const prodUrl = 'https://runme.dev'
+const keywords = ['runme', 'readme', 'vscode', 'code', 'markdown', 'README.md', 'onboarding', 'notebook', 'renderer']
+const previewImages = [
+  'https://runme.dev/twitter-image.png',
+  'https://runme.dev/sidebyside.png',
+  'https://runme.dev/tabs/deno.gif'
+]
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Runme',
@@ -98,6 +111,26 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        { 'http-equiv': 'Content-Type', content: 'text/html; charset=utf-8' },
+        { name: 'description', content: description },
+        { name: 'keywords', content: keywords.join(',') },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'language', content: 'English' },
+        { name: 'author', content: 'Stateful Inc.' },
+        { name: 'contact', content: 'contact@stateful.com' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: twitterHandle },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: imageUrl },
+        { property: 'og:title', content: title },
+        { property: 'og:site_name', content: siteName },
+        { property: 'og:url', content: prodUrl },
+        { property: 'og:description', content: description },
+        { property: 'og:type', content: 'website' },
+        ...previewImages.map((imgUrl) => ({ property: 'og:image', content: imgUrl }))
+      ],
       navbar: {
         logo: {
           alt: 'Runme Logo',
