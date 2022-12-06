@@ -26,7 +26,7 @@ const Tabs = () => {
 
             <div className="p-2">
               <div className="text-base font-medium xl:text-lg hover:text-blue-600 cursor-pointer pb-6 text-blue-500 hover:underline">
-                <a href={ExampleMap[tab]}>
+                <a href={ExampleMap[tab]} className="text-blue-400">
                   Check out the example markdown.
                 </a>
               </div>
@@ -51,13 +51,13 @@ const Tab = (props: TabProps) => {
   return (
     <div
       className={`${id === tab && "bg-[#3693FF] p-3 rounded-[58px]"
-        } p-3 rounded-[58px] border border-gray-200 lg:w-48 text-center font-semibold cursor-pointer text-blue-400 hover:shadow`}
+        } p-3 rounded-[58px] border border-gray-200 lg:w-48 text-center font-semibold cursor-pointer hover:shadow`}
       id={id}
       onClick={() => {
         setTab(id);
       }}
     >
-      <p>
+      <p className="text-black-400">
         {text}
       </p>
     </div>

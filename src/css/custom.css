@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('./normalize.css');
+@import url('./mobile.css');
 
 /**
  * Any CSS included here will be global. The classic template
@@ -237,7 +238,7 @@ a[aria-label="Home page"] {
 }
 
 a:hover {
-  color: white;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -273,7 +274,7 @@ a:hover {
 
 .discordLink svg,
 .githubLink svg {
-  display: none;
+  display: none!important;
 }
 
 .discordLink:before {
@@ -287,7 +288,7 @@ a:hover {
 
 .docs-doc-page .githubLink:before,
 .docs-doc-page .discordLink:before {
-  display: none!important;
+  display: none;
 }
 
 .theme-edit-this-page svg {
