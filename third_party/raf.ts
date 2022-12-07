@@ -1,8 +1,6 @@
 /**
  * original implementation: https://www.npmjs.com/package/raf
  */
-
-// @ts-expect-error no global
 const root = typeof window === 'undefined' ? global : window
 const vendors = ['moz', 'webkit']
 const suffix = 'AnimationFrame'
@@ -76,7 +74,7 @@ export default function (fn: unknown) {
 export const cancel = function(param: number) {
   caf.call(root, param)
 }
-export const polyfill = function(object: Window) {
+export const polyfill = function(object: any) {
   if (!object) {
     object = root;
   }

@@ -1,2 +1,6 @@
 .vite
 node_modules
+.docusaurus
+.vercel
+build
+.DS_Store
