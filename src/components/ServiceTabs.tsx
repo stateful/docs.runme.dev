@@ -15,7 +15,7 @@ const Tabs = () => {
         const [tab, setTab] = useState("vercel")
         return (
           <>
-            <div className="w-full flex flex-row flex-wrap space-x-4 items-center justify-center">
+            <div className="flex flex-row flex-wrap items-center justify-center w-full space-x-4">
               <Tab text="Vercel" id="vercel" setTab={setTab} tab={tab} />
               <Tab text="Deno Deploy" id="deno" setTab={setTab} tab={tab} />
               {/* <div className="font-semibold">More coming soon...</div> */}
@@ -25,16 +25,10 @@ const Tabs = () => {
 
 
             <div className="p-2">
-              <div className="text-base font-medium xl:text-lg hover:text-blue-600 cursor-pointer pb-6 text-blue-500 hover:underline">
-                <a href={ExampleMap[tab]} className="text-blue-400">
-                  Check out the example markdown.
-                </a>
-              </div>
-
               {ImageMap[tab]
                 ? <img className="xl:max-w-[900px] 2xl:max-w-[1200px]" src={ImageMap[tab]} />
                 : (
-                  <div className="text-2xl font-semibold h-80 flex items-center justify-center">
+                  <div className="flex items-center justify-center text-2xl font-semibold h-80">
                     Coming soon...
                   </div>
                 )}
