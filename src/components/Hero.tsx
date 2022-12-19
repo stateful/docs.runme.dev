@@ -50,6 +50,9 @@ export function Hero() {
             the VS Code extension panel
           </div>
         </div>
+        <h4 className="text-xl">
+          Learn about v1.0 roadmap and 🔥 new features <a className="underline" href="https://www.stateful.com/blog/runme-road-to-reliable-docs">here</a>
+        </h4>
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
         <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" />
