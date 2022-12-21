@@ -7,14 +7,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const title = 'Runme: Run your Readme.md'
 const description = 'Runme is a VS Code extension that transparently opens markdown files as runnable VS Code notebooks so that repo maintainers can annotate code blocks to enhance the interactive runbook-like experience.'
 const siteName = 'Runme.dev'
-const imageUrl = 'https://runme.dev/twitter-image.png'
+const imageUrl = 'https://runme.dev/img/twitter-image.png'
 const twitterHandle = '@stateful'
 const prodUrl = 'https://runme.dev'
 const keywords = ['runme', 'readme', 'vscode', 'code', 'markdown', 'README.md', 'onboarding', 'notebook', 'renderer']
 const previewImages = [
-  'https://runme.dev/twitter-image.png',
-  'https://runme.dev/sidebyside.png',
-  'https://runme.dev/tabs/deno.gif'
+  'https://runme.dev/img/sidebyside.png',
+  'https://runme.dev/img/intro.gif',
 ]
 
 /** @type {import('@docusaurus/types').Config} */
