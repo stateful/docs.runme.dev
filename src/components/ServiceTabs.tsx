@@ -23,10 +23,9 @@ const Tabs = () => {
                 <Tab text="Begin" id="begin" setTab={setTab} tab={tab} /> */}
             </div>
 
-
             <div className="p-2">
               {ImageMap[tab]
-                ? <img className="xl:max-w-[900px] 2xl:max-w-[1200px]" src={ImageMap[tab]} />
+                ? <img className="xl:max-w-[900px] 2xl:max-w-[1200px]" src={ImageMap[tab]} alt={`${tab.slice(0, 1).toUpperCase()}${tab.slice(1)} Demo`} />
                 : (
                   <div className="flex items-center justify-center text-2xl font-semibold h-80">
                     Coming soon...

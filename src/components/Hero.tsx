@@ -55,7 +55,7 @@ export function Hero() {
         </h4>
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
-        <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" />
+        <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" alt="Runme Demo" />
       </div>
     </div>
   );
