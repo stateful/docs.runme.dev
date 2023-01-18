@@ -26,7 +26,7 @@ export default function Footer() {
   const FooterLink = ({ name, href }: FooterLinkProps) => {
     return (
       <div className="text-base font-medium xl:text-lg hover:text-[#f62459] cursor-pointer">
-        <a href={href}>
+        <a href={href} aria-label={`Learn more about our ${name} project`}>
           {name}
         </a>
       </div>
