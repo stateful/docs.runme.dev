@@ -5,10 +5,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 import Footer from '@site/src/components/Footer'
-import ServiceTabs from '@site/src/components/ServiceTabs'
 import { Hero } from '@site/src/components/Hero'
 import { PageWrapper } from '@site/src/components/Layout'
-import { HowItWorks, OpenSource, FinalCta, CLI } from '@site/src/components/Sections';
+import { HowItWorks, OpenSource, FinalCta, CLI, Documentation } from '@site/src/components/Sections';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -24,7 +23,7 @@ export default function Home() {
         <OpenSource />
         <PageWrapper>
           <CLI />
-          <ServiceTabs />
+          <Documentation />
         </PageWrapper>
         <FinalCta />
       </div>
