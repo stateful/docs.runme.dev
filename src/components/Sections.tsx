@@ -174,7 +174,7 @@ export function OpenSource() {
               <ApacheIcon />
             </div>
           </div>
-          <p className="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4">This project is {" "}
+          <p className="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4 2xs:pb-4 xs:pb-0">This project is {" "}
             <span id="yellow-underline" className="relative whitespace-nowrap">
               APL 2.0 licensed
             </span>
@@ -184,23 +184,26 @@ export function OpenSource() {
           <a href="https://github.com/stateful/vscode-runme" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
             <span className="bg-[#5B3ADF] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />
-              stateful/vscode-runme</span>
-            <div>
+              stateful/vscode-runme
+            </span>
+            <div className="mt-2">
               The VS Code Extension
             </div>
           </a>
           <a href="https://github.com/stateful/runme" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
             <span className="bg-[#F62459] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />
-              stateful/runme</span>
-            <div>
+              stateful/runme
+            </span>
+            <div className="mt-2">
               Command Line Interface (CLI) and parser
             </div>
           </a>
           <a href="https://github.com/stateful/runme.dev" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
             <span className="bg-[#3693FF] rounded-md py-2 p-4 flex items-center space-x-2">
-              <GithubIcon />stateful/runme.dev</span>
-            <div>
+              <GithubIcon />stateful/runme.dev
+            </span>
+            <div className="mt-2">
               Showcase website and example readme.md
             </div>
           </a>
@@ -242,7 +245,7 @@ export function Documentation() {
         Documentation
       </h1>
       <p className="text-2xl my-4 mb-20">Visibility and status embedded inline in your docs.</p>
-      <div className="flex justify-start gap-16 xs:gap-4 mx-auto w-full md:w-[850px] xs:px-4 mb-20">
+      <div className="flex justify-start gap-16 2xs:gap-4 mx-auto w-full md:w-[850px] 2xs:px-4 mb-20">
         <div className="flex-initial">
           <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="125" height="125" rx="6" fill="#42FCCC"/>
@@ -260,11 +263,11 @@ export function Documentation() {
             Learn how to install Runme as CLI or VS Code Extension.
           </p>
           <p className="text-xl pt-4">
-            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 xs:py-0 mx-2 xs:mx-1 border border-solid border-purple-600 text-purple-600 hover:text-purple-600 rounded">Install Extension</a> to add Runme to your VS Code.
+            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 xs:mx-2 xs:mx-1 border border-solid border-purple-600 text-purple-600 hover:text-purple-600 rounded">Install Extension</a> to add Runme to your VS Code.
           </p>
         </div>
       </div>
-      <div className="flex justify-start gap-16 xs:gap-4 mx-auto w-full md:w-[850px] xs:px-4 mb-20">
+      <div className="flex justify-start gap-16 2xs:gap-4 mx-auto w-full md:w-[850px] 2xs:px-4 mb-20">
         <div className="flex-initial">
           <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="125" height="125" rx="6" fill="#FFDB06"/>
@@ -284,11 +287,11 @@ export function Documentation() {
             Define the execution behavior of code blocks through annotations.
           </p>
           <p className="text-xl pt-4">
-            Add a <span className="whitespace-nowrap p-2 lg:py-2 xs:py-0 mx-2 xs:mx-1 border border-solid border-blue-600 text-blue-600 rounded">background</span> annotation to run a task in the background.
+            Add a <span className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 xs:mx-2 xs:mx-1 border border-solid border-blue-600 text-blue-600 rounded">background</span> annotation to run a task in the background.
           </p>
         </div>
       </div>
-      <div className="flex justify-start gap-16 xs:gap-4 mx-auto w-full md:w-[850px] xs:px-4 mb-20">
+      <div className="flex justify-start gap-16 2xs:gap-4 mx-auto w-full md:w-[850px] 2xs:px-4 mb-20">
         <div className="flex-initial">
           <svg width="125" height="125" viewBox="0 0 125 126" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="125" height="125" rx="6" fill="#5B3ADF"/>
@@ -310,7 +313,7 @@ export function Documentation() {
             Everything is open source and we love your contributions.
           </p>
           <p className="text-xl pt-4">
-            Read our <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md" className="whitespace-nowrap p-2 lg:py-2 xs:py-0 mx-2 xs:mx-1 border border-solid border-red-600 text-red-600 hover:text-red-600 rounded">Contributing Guidelines</a> for more information.
+            Read our <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 xs:mx-2 xs:mx-1 border border-solid border-red-600 text-red-600 hover:text-red-600 rounded">Contributing Guidelines</a> for more information.
           </p>
         </div>
       </div>
