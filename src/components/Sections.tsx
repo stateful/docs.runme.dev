@@ -174,7 +174,7 @@ export function OpenSource() {
               <ApacheIcon />
             </div>
           </div>
-          <p className="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4 2xs:pb-4 xs:pb-0">This project is {" "}
+          <p className="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4 2xs:pb-4 md:pb-0">This project is {" "}
             <span id="yellow-underline" className="relative whitespace-nowrap">
               APL 2.0 licensed
             </span>
@@ -263,7 +263,7 @@ export function Documentation() {
             Learn how to install Runme as CLI or VS Code Extension.
           </p>
           <p className="text-xl pt-4">
-            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 xs:mx-2 xs:mx-1 border border-solid border-purple-600 text-purple-600 hover:text-purple-600 rounded">Install Extension</a> to add Runme to your VS Code.
+            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-purple-600 text-purple-600 hover:text-purple-600 rounded">Install Extension</a> to add Runme to your VS Code.
           </p>
         </div>
       </div>
@@ -287,7 +287,7 @@ export function Documentation() {
             Define the execution behavior of code blocks through annotations.
           </p>
           <p className="text-xl pt-4">
-            Add a <span className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 xs:mx-2 xs:mx-1 border border-solid border-blue-600 text-blue-600 rounded">background</span> annotation to run a task in the background.
+            Add a <span className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-blue-600 text-blue-600 rounded">background</span> annotation to run a task in the background.
           </p>
         </div>
       </div>
@@ -313,7 +313,7 @@ export function Documentation() {
             Everything is open source and we love your contributions.
           </p>
           <p className="text-xl pt-4">
-            Read our <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 xs:mx-2 xs:mx-1 border border-solid border-red-600 text-red-600 hover:text-red-600 rounded">Contributing Guidelines</a> for more information.
+            Read our <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-red-600 text-red-600 hover:text-red-600 rounded">Contributing Guidelines</a> for more information.
           </p>
         </div>
       </div>
