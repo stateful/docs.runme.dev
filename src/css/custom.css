@@ -191,6 +191,7 @@
   }
 }
 
+.navbar__items a,
 body p,
 body h1,
 body h2,
@@ -218,6 +219,16 @@ p {
 
 .navbar__brand {
   margin-right: 0;
+}
+
+.navbar__items--right a {
+  margin: 0 30px;
+  padding: 0;
+  border-bottom: 4px solid transparent;
+}
+.navbar__items--right a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid var(--runme-color-lila);
 }
 
 .navbar__link svg {

@@ -39,24 +39,29 @@ export function Hero() {
         <div className="flex flex-col items-center justify-center space-y-8">
           <a
             href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
-            className="bg-[#5B3ADF] py-[20px] rounded-[60px] text-base w-[280px] h-[40px] leading-[0px] font-semibold"
+            className="bg-[color:var(--runme-color-lila)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
           >
             Install the extension
           </a>
 
-          <div className="">
+          <p className="">
             or search{" "}
-            <i className="rounded-[6px] font-bold text-black bg-[#42FCCC] p-1.5">runme</i> in
+            <span className="rounded-[6px] font-bold text-white border border-solid border-[color:var(--runme-color-lila)] p-1.5 font-mono mx-2">runme</span> in
             the VS Code extension panel
-          </div>
+          </p>
         </div>
-        <h4 className="text-xl">
-          Learn about v1.0 roadmap and 🔥 new features <a className="underline" href="https://www.stateful.com/blog/runme-road-to-reliable-docs" aria-label="Learn about v1.0 roadmap and 🔥 new features in our latest blog">in our latest blog</a>
-        </h4>
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
         <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" alt="Runme Demo" />
       </div>
+      <h4 className="text-xl text-black font-semibold">
+        <a href="https://www.stateful.com/blog/runme-road-to-reliable-docs">
+          Learn about v1.0 roadmap and 🔥 new features
+          <svg className="inline pl-2" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#5B3ADF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </h4>
     </div>
   );
 }

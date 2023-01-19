@@ -160,7 +160,7 @@ export function HowItWorks() {
 
 export function OpenSource() {
   return (
-    <div className="relative mb-32 flex items-center justify-center min-h-[50vh] px-12 flex flex-col items-center overflow-x-hidden text-white">
+    <div className="relative mb-32 flex items-center justify-center min-h-[30vh] px-12 flex flex-col items-center overflow-x-hidden text-white">
       <div className="absolute w-full h-full z-[-1] top-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1567 800" fill="none">
           <path d="M0 0L1567 102.793V718.665L-11 800L0 0Z" fill="#33384D" />
@@ -169,8 +169,8 @@ export function OpenSource() {
       <div className="py-48 lg:px-24 flex flex-col lg:flex-row">
         <div className="space-y-4">
           <div className="flex flex-col-reverse lg:flex-row lg:space-x-4">
-            <h1 className="text-white text-4xl xs:text-5xl lg:text-6xl tracking-[0.02em] font-bold">Open Source Software</h1>
-            <div className="flex-grow w-3/5">
+            <h1 className="text-white text-4xl xs:text-5xl lg:text-5xl tracking-[0.02em] font-bold">Open Source Software</h1>
+            <div className="flex-grow w-4/5">
               <ApacheIcon />
             </div>
           </div>
@@ -178,11 +178,11 @@ export function OpenSource() {
             <span id="yellow-underline" className="relative whitespace-nowrap">
               APL 2.0 licensed
             </span>
-            {" "}and sources are available on Github.</p>
+            {" "}and<br />sources are available on Github.</p>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-center space-y-10 font-semibold lg:text-lg tracking-[0.02em] leading-[140%]">
+        <div className="flex flex-col items-center justify-center space-y-8 font-semibold lg:text-lg tracking-[0.02em] leading-[140%]">
           <a href="https://github.com/stateful/vscode-runme" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
-            <span className="bg-[#E476FF] rounded-md p-4 flex items-center space-x-2">
+            <span className="bg-[#5B3ADF] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />
               stateful/vscode-runme</span>
             <div>
@@ -190,7 +190,7 @@ export function OpenSource() {
             </div>
           </a>
           <a href="https://github.com/stateful/runme" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
-            <span className="bg-[#3693FF] rounded-md p-4 flex items-center space-x-2">
+            <span className="bg-[#F62459] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />
               stateful/runme</span>
             <div>
@@ -198,7 +198,7 @@ export function OpenSource() {
             </div>
           </a>
           <a href="https://github.com/stateful/runme.dev" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
-            <span className="bg-[#F62459] rounded-md p-4 flex items-center space-x-2">
+            <span className="bg-[#3693FF] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />stateful/runme.dev</span>
             <div>
               Showcase website and example readme.md
