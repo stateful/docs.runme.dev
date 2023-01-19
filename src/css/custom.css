@@ -30,7 +30,6 @@
 
   --runme-color-lila: #5B39DF;
   --runme-color-lila-dark: #0D003D;
-  --runme-background-dark: #161821;
   --runme-font-size-base: 1rem;
   --runme-font-size-sm: .875rem;
 
@@ -50,7 +49,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+html[data-theme='dark'] {
   --ifm-color-primary: #F62459;
   --ifm-color-primary-dark: #af415c;
   --ifm-color-primary-darker: #6F1028;
@@ -60,6 +59,7 @@
   --ifm-color-primary-lightest: #FDC8D6;
   --ifm-color-primary-more-lightest: #FFF4F7;
   --ifm-color-primary-even-more-lightest: #FEE9EE;
+  --ifm-background-color: #161821;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
   --runme-heading-color: white;
