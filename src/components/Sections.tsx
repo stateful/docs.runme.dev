@@ -220,20 +220,27 @@ export function CLI() {
         Command Line Interface
       </h1>
       <p className="text-2xl leading-9">Parse and run markdown files in the terminal.</p>
-      <div className="flex items-center justify-center">
-        <div className="px-8 pt-2 pb-5 shadow-lg text-gray-100 font-mono subpixel-antialiased bg-[#0A0A0A]  rounded-lg leading-normal overflow-hidden">
-          <div className="mt-4 flex items-center flex-nowrap justify-center space-x-1">
-            <span className="text-covey-500">$ brew install{' '}</span>
-            <p className="text-white">
-              stateful/tap/runme
-            </p>
+      <img src="/img/terminal.png" alt="Terminal with runme list command" />
+      <div className="flex items-center gap-6">
+        <div className="flex items-center justify-center">
+          <div className="px-6 pb-3 border border-solid border-[color:var(--runme-color-lila)] text-gray-100 font-mono subpixel-antialiased transparent rounded-lg leading-normal overflow-hidden">
+            <div className="mt-4 flex items-center flex-nowrap justify-center space-x-1">
+              <span className="text-[color:var(--runme-color-lila)]">$ brew install{' '}</span>
+              <p className="text-black dark:text-white">
+                stateful/tap/runme
+              </p>
+            </div>
           </div>
         </div>
+        <p className="text-sm py-0 max-w-sm">
+          <a className="font-semibold" href="https://github.com/stateful/runme/releases">
+            Other platforms available
+            <svg className="inline-block mx-2" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.5C5.51472 6.5 13.7692 6.5 13.7692 6.5M13.7692 6.5L9.26923 2M13.7692 6.5L9.26923 11" stroke="#5B3ADF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </p>
       </div>
-      <p className="text-sm py-0 max-w-sm">
-        Other platforms available: <a className="underline font-semibold" href="https://github.com/stateful/runme/releases">https://github.com/stateful/runme/releases</a>
-      </p>
-      <img src="/img/terminal.png" alt="Terminal with runme list command" />
     </div>
   );
 }
@@ -263,7 +270,7 @@ export function Documentation() {
             Learn how to install Runme as CLI or VS Code Extension.
           </p>
           <p className="text-xl pt-4">
-            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-purple-600 text-purple-600 hover:text-purple-600 rounded">Install Extension</a> to add Runme to your VS Code.
+            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-[color:var(--runme-color-lila)] text-[color:var(--runme-color-lila)] hover:text-[color:var(--runme-color-lila)] rounded">Install Extension</a> to add Runme to your VS Code.
           </p>
         </div>
       </div>
@@ -325,7 +332,7 @@ export function FinalCta() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="max-w-[1000px] flex flex-col items-center justify-center py-12 space-y-12 lg:space-x-4">
-        <p className="text-5xl font-bold tracking-[0.03em] leading-relaxed sm:leading-normal text-center">Ready to get <span>started?</span></p>
+        <p className="text-5xl font-bold tracking-[0.03em] leading-relaxed sm:leading-normal text-center">Ready to get <span id="started-underline" className="relative whitespace-nowrap">started?</span></p>
         <a
           href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
           className="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[10px] rounded-[60px] text-base leading-[0px] font-semibold"
@@ -334,7 +341,7 @@ export function FinalCta() {
         </a>
         <a
           href="https://discord.gg/BQm8zRCBUY"
-          className="flex items-center justify-center px-12 py-[20px] rounded-[60px] text-base leading-[0px] font-semibold space-x-3"
+          className="flex items-center justify-center px-12 rounded-[60px] text-base leading-[0px] font-semibold space-x-3"
         >
           <DiscordIcon />
           <span className="text-xl sm:text-2xl tracking-[0.08em] whitespace-nowrap">Join our Discord</span>

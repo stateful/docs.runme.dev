@@ -32,9 +32,8 @@ export function Hero() {
           <TypeWriter sequence={sequence} />
         </h2>
         <h3 className="text-2xl">
-          Everything a markdown file can do and way more.{' '}
-          <span id="underline-graphic" className="relative whitespace-nowrap">No changes </span>
-          required.
+          <span id="everything-underline" className="relative whitespace-nowrap">Everything</span> a markdown file can do and way more.{' '}
+          No changes required.
         </h3>
         <div className="flex flex-col items-center justify-center space-y-8">
           <a
