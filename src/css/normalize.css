@@ -8,6 +8,24 @@
 h1 {
   color: var(--runme-color-lila-dark);
 }
-[data-theme='dark'] h1 {
+[data-theme='dark'] .main h1 {
   color: var(--ifm-color-primary-more-lightest);
+}
+
+body ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+code {
+  display: inline-block;
+  padding: 4px 5px;
+  margin: 0 5px;
+  color: var(--runme-code-color);
+  border: 1px solid var(--runme-code-border);
+  background: var(--runme-code-background);
+}
+
+body pre code {
+  min-width: 99%!important;
 }

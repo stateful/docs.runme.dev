@@ -54,7 +54,7 @@ export function Hero() {
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1200px]">
         <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" alt="Runme Demo" />
       </div>
-      <h4 className="text-xl text-black font-semibold">
+      <h4 className="text-xl text-black dark:text-white font-semibold">
         <a href="https://www.stateful.com/blog/runme-road-to-reliable-docs">
           Learn about v1.0 roadmap and 🔥 new features
           <svg className="inline pl-2" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">

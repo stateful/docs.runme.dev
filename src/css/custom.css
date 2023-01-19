@@ -30,6 +30,7 @@
 
   --runme-color-lila: #5B39DF;
   --runme-color-lila-dark: #0D003D;
+  --runme-background-dark: #161821;
   --runme-font-size-base: 1rem;
   --runme-font-size-sm: .875rem;
 
@@ -40,6 +41,12 @@
 
   --runme-line-height-base: 1.5;
   --runme-baseline: 1.5rem;
+
+  --runme-heading-color: #0D003D;
+
+  --runme-code-color: #0D003D;
+  --runme-code-border: #BDCBFF;
+  --runme-code-background: #F4F5FF;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -54,6 +61,12 @@
   --ifm-color-primary-more-lightest: #FFF4F7;
   --ifm-color-primary-even-more-lightest: #FEE9EE;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --runme-heading-color: white;
+
+  --runme-code-color: white;
+  --runme-code-border: #737EA5;
+  --runme-code-background: #33384D;
 }
 
 #vscode-bolt::after {
@@ -193,6 +206,7 @@
 
 .navbar__items a,
 body p,
+body li,
 body h1,
 body h2,
 body h3,
@@ -202,12 +216,9 @@ body h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  color: #0D003D;
-}
-
-p {
-  color: #292E3A;
+.main h1,
+.main-wrapper h1 {
+  color: var(--runme-heading-color);
 }
 
 .navbar {
@@ -221,6 +232,9 @@ p {
   margin-right: 0;
 }
 
+.navbar__items--right {
+  margin-top: 15px;
+}
 .navbar__items--right a {
   margin: 0 30px;
   padding: 0;
@@ -242,10 +256,13 @@ p {
   color: inherit;
   text-decoration: none;
 }
-
-.breadcrumbs__link svg {
-  color: var(--ifm-color-primary-dark);
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--runme-color-lila);
 }
+[data-theme='dark'] .breadcrumbs__item--active .breadcrumbs__link {
+  color: white;
+}
+
 a[aria-label="Home page"] {
   position: relative;
   top: 7px;
@@ -278,13 +295,6 @@ a:hover {
 .docs-doc-page .navbar__link,
 .docs-doc-page .clean-btn {
   color: var(--ifm-navbar-link-color);
-}
-
-.mdx-page .navbar__link:hover,
-.mdx-page .navbar__link--active,
-.docs-doc-page .navbar__link:hover,
-.docs-doc-page .navbar__link--active {
-  color: var(--ifm-navbar-link-hover-color);
 }
 
 .discordLink svg,
@@ -333,4 +343,30 @@ p {
 
 .docs-doc-page strong {
   color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .docs-wrapper {
+  background-color: var(--runme-background-dark);
+}
+
+.theme-doc-toc-desktop:before {
+  content: "On this page";
+  font-weight: bold;
+  margin-top: 92px;
+  display: block;
+  font-size: 1.2em;
+}
+
+.table-of-contents__left-border,
+.table-of-contents__left-border li {
+  border: 0;
+  padding-left: 0;
+  margin-left: 0;
+}
+.table-of-contents__link {
+  font-size: 1.2em;
+}
+.table-of-contents li code {
+  background: transparent;
+  border: 0;
 }
