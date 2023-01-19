@@ -6,7 +6,6 @@ import Layout from '@theme/Layout';
 
 import Footer from '@site/src/components/Footer'
 import { Hero } from '@site/src/components/Hero'
-import { PageWrapper } from '@site/src/components/Layout'
 import { HowItWorks, OpenSource, FinalCta, CLI, Documentation } from '@site/src/components/Sections';
 
 export default function Home() {
@@ -21,10 +20,8 @@ export default function Home() {
         <Hero />
         <HowItWorks />
         <OpenSource />
-        <PageWrapper>
-          <CLI />
-          <Documentation />
-        </PageWrapper>
+        <CLI />
+        <Documentation />
         <FinalCta />
       </div>
       <Footer />
