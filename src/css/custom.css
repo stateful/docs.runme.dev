@@ -220,6 +220,9 @@ body h6 {
 .main-wrapper h1 {
   color: var(--runme-heading-color);
 }
+h1.text-white {
+  color: white;
+}
 
 .navbar {
   background-color: transparent;
