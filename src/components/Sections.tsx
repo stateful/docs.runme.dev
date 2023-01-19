@@ -174,7 +174,7 @@ export function OpenSource() {
               <ApacheIcon />
             </div>
           </div>
-          <p className="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4 2xs:pb-4 md:pb-0">This project is {" "}
+          <p className="text-white text-2xl tracking-[0.02em] leading-10 lg:w-3/4 2xs:pb-4 lg:pb-0">This project is {" "}
             <span id="yellow-underline" className="relative whitespace-nowrap">
               APL 2.0 licensed
             </span>
