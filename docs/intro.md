@@ -31,7 +31,7 @@ A few highlights of what's coming:
 - Notebook UX tweaks and integrations for both authors and users
 - And more - tell us about your feature request [on Discord](https://discord.gg/stateful)
 
-## Telemetry to provide insights for Runme improvements
+## 💡 Telemetry to provide insights for Runme improvements
 
 Any telemetry information emitted is pseudo-anonymized (no PII whatsoever) and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to continuously improve the Runme experience for developers.
 
