@@ -30,3 +30,15 @@ A few highlights of what's coming:
 - Switch back and forth between notebook and terminal UX seamlessly
 - Notebook UX tweaks and integrations for both authors and users
 - And more - tell us about your feature request [on Discord](https://discord.gg/stateful)
+
+## Telemetry to provide insights for Runme improvements
+
+Any telemetry information emitted is pseudo-anonymized (no PII whatsoever) and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to continuously improve the Runme experience for developers.
+
+Telemetry collected includes:
+* Buttons clicked & commands triggered
+* Total cells and how many are being executed
+* Extension activation and deactivation
+* Notebook opened and saved (incl. metadata; file names are obfuscated)
+
+Please find us on Discord (https://discord.gg/stateful) if you have any questions.
