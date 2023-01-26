@@ -151,6 +151,7 @@ const config = {
             docId: 'intro',
             position: 'right',
             label: 'Documentation',
+            className: 'docsLink'
           },
           {
             href: 'https://github.com/stateful/runme',
