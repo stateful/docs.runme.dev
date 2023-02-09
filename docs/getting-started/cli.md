@@ -32,3 +32,9 @@ You can use the `--chdir` flag to alter this behavior, without changing the envi
 (TODO: better gif)
 
 This allows you to quickly execute any script present in the README.
+
+## Running Script Directly
+
+The TUI is nice, but what if you just want to run a specific command quickly?
+
+To run a specific script by name, use the `runme run <command>` subcommand!
