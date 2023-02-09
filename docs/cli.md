@@ -1,8 +1,8 @@
 ---
-title: Runme CLI
+title: CLI
 ---
 
-# Runme CLI
+# CLI
 
 Runme can be run not only as VS Code extension but also as CLI tool to run certain code snippets within your `Readme.md`.
 

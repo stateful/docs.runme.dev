@@ -148,7 +148,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getting-started',
             position: 'right',
             label: 'Documentation',
             className: 'docsLink'
