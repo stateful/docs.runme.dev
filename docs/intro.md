@@ -1,45 +1,121 @@
 ---
-title: Why Runme?
-draft: true
+sidebar_position: 1
 ---
 
-# Why Runme?
+# Getting Started ⚡️
 
-Thank you for interest in Runme 💟!
+Welcome 👋! Runme strives to provide a great experience right out of the box. Please continue on to learn how to get the most out of our docs via Runme. In fact, why not use Runme to learn about Runme?
 
-Runme is a human-centric approach to providing and consuming code repository documentation. It's designed to progressively bridge the widening developer experience gaps in a cloud-native age. Gaps such as low integration between building blocks employed to deliver apps and services, error-prone copy&paste-management of dev environments, docs that have fallen behind undetect, and the vault lines of commonplace tools which were designed for machines not humans.
+[![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git)
 
-![Readme as Notebook and Markdown side-by-side](static/README_side_by_side.png)
+## What is Runme? 🤔
 
-## 🌈 Runme will let you
+📜 Runme lets you seamlessly turn your existing Markdown docs, such as README.md, into runnable notebooks.
 
-- Easily onramp via your existing README.md (any markdown docs) with zero changes
-- Intuitively run your commands (shell) in a notebook UX inside your IDE
-- Make edits and author markdown docs inside of a notebook UX
-- Alternatively the `runme` CLI is available for power users
-- Curate developer experiences using Runme's subtle command block annotations
-- Use commonplace git workflows to continuously improve your docs, just like code
-- Continue to display your docs in Markdown-compatible viewers
+⏯ Runme enables static docs to become interactive for its readers and greatly improve their learning experience.
 
-## 🛣 What's on the roadmap
+👩‍💻 As a VS Code user, just [click here](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) to *leverage Runme to run through this getting started guide*.
 
-Review development progress in [Runme's roadmap](https://github.com/stateful/runme/projects)
-A few highlights of what's coming:
+### Installation
 
-- Just like code, test your documentation in Continiuous Integration
-- Switch back and forth between notebook and terminal UX seamlessly
-- Notebook UX tweaks and integrations for both authors and users
-- And more - tell us about your feature request [on Discord](https://discord.gg/stateful)
+Open and search `runme` from within the Extension Panel inside VS Code or click-to-install from the Marketplace:
 
-## 💡 Telemetry to provide insights for Runme improvements
+- VS Code's official Marketplace: [https://marketplace.visualstudio.com/items?itemName=stateful.runme](https://marketplace.visualstudio.com/items?itemName=stateful.runme)
+- Open VSX Registry: [https://open-vsx.org/extension/stateful/runme](https://open-vsx.org/extension/stateful/runme)
 
-Any telemetry information emitted is pseudo-anonymized (no PII whatsoever) and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to continuously improve the Runme experience for developers.
+## Why Runme? 💡
 
-Telemetry collected includes:
+While markdown docs are ubiquitous in software and the written word foundational to documentation, bit-rot and "broken docs" are all too commonplace. The low coupling between documentation's static text and the code of the documented system exposes our docs to breakage. Runme is here to address this fundamental problem. Runme's goal is to makes existing markdown docs both **runnable** and subsequently **testable**. Much in the same way how unit tests relates to your code.
 
-- Buttons clicked & commands triggered
-- Total cells and how many are being executed
-- Extension activation and deactivation
-- Notebook opened and saved (incl. metadata; file names are obfuscated)
+## Jump Right In 🚀
 
-Please find us on Discord (https://discord.gg/stateful) if you have any questions.
+Just [open this guide](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) as notebook inside VS Code to experience Runme first-hand.
+
+### Inside VS Code
+
+```sh { background=false interactive=false }
+export MY_NAME=Enter your name
+$ echo "Hi $MY_NAME, just let Runme execute your docs for you."
+```
+
+### In Your Terminal
+
+Alternatively, you could use Runme's CLI in your terminal. On MacOS:
+
+```sh { interactive=true }
+$ brew install stateful/tap/runme
+$ runme --filename getting-started.md
+```
+
+Check [Runme's releases page](https://github.com/stateful/runme/releases) to download the CLI for all other platforms.
+
+## What You Need To Know 👩‍🏫
+
+Runme turns arbitrary markdown files into runnable notebooks. If your markdown contains [fenced-code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) with shell-compatible commands, Runme is your friend. You most commonly find these in `README.md`, `DEV.md`, `BUILD.md`, etc but is up to your editorial preference.
+
+### Specify Language in Blocks
+
+Runme, just like most Markdown viewers, will work best without ambiguity what language is contained inside of fenced code blocks. If possible, always specify the language [according to the standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) and illustrated below.
+
+    ```sh
+    $ echo "language identifier in fenced code block"
+    ```
+
+> Out-of-the box, Runme will leverage the [Guesslang](https://github.com/yoeo/guesslang) ML/AI model with a bias towards Shell to detect the languages for unidentified code blocks. While this works well in a lot of cases, the accuracy is nowhere near 100%.
+
+### Configure Cell's Execution
+
+Not all commands are equal and expectations how execution works differs. Most commond cases are:
+
+1. File-watchers for compilers & bundlers should run as background tasks
+2. Interactive vs non-interactive execution
+3. Human-centric output: JSON, text, images, etc
+4. Terminal visibility when no errors occur
+
+Just click "Configure" on the respective cell to make modifications to the cell execution behavior.
+
+![Configure a Cell](static/configure-cell.png)
+
+### How to handle long-running processes (`background`)
+
+You want to enable the `background` setting if notebook execution will continue indefinitely on a single command.
+
+![Blocks notebook UX](static/cell-blocking.png)
+
+It is very common to use file-watcher enabled compilers/bundlers (`npm start dev`, `watchexec...` etc) in the background during development. For any cell containing an instance of these commands be sure to tick the "background" cell setting. It prevents execution to permanently block the notebook UX. Once ticked notice the "Background Task" label show up in the cell status bar.
+
+![Cell is Background Task](static/cell-background.png)
+
+### Interactive vs non-interactive execution (`interactive`)
+
+If a cell's commands do not require any input from a reader it might be a good
+fit to include the cell's output inside of the notebook. This is useful if
+resulting output could be useful as input in a downstream cell.
+
+![Non-interactive Cell Output](static/cell-non-interactive.png)
+
+> Please note that the Runme team is currently working on making output in both
+> notebook & terminal default behavior.
+
+### Human-centric output: JSON, text, images, etc (`mimeType`)
+
+Not all cell's output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly.
+
+![Human-friendly output with MIME types](static/cell-mime-type.png)
+
+Amongst other here are a few popular choices: `image/svg+xml`, `text/x-json`, `text/x-javascript`, `text/x-html`, `text/x-rust`, etc.
+
+### Terminal visibility when no errors occur (`closeTerminalOnSuccess`)
+
+A cell's execution terminal is being auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
+
+## Key Features 🦾
+
+- Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
+- Leverage placeholder and prompts to have readers interactively complete ENV VARs
+- Fine-tune your doc's executable notebook cells to streamline the execution experience for others
+- Run watchers for compilation/bundling in as background tasks
+- Capture non-interactive output directly inside the respective notebook's cell output
+- Control whether or not a cell's terminal should remain open after successful execution
+- Use language identifiers in fenced code blocks to forgo language detection and higher reliability
+- Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways
