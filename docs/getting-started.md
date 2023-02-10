@@ -43,8 +43,8 @@ $ go install github.com/stateful/runme@latest
 ## Features
 
 - Easily onramp via your existing README.md (any markdown docs) with zero changes
-- Intuitively run your commands (shell) in a notebook UX inside your IDE
-- Make edits and author markdown docs inside of a notebook UX
+- Intuitively run your commands (shell) in a [notebook UX](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) inside your IDE
+- Make edits and author markdown docs inside of a [notebook UX](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 - Alternatively the `runme` CLI is available for power users
 - Curate developer experiences using Runme's subtle command block annotations
 - Use commonplace git workflows to continuously improve your docs, just like code
