@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Getting Started ⚡️
+
 Welcome 👋! Runme strives to provide a great experience right out of the box. Please continue on to learn how to get the most out of our docs via Runme. In fact, why not use Runme to learn about Runme?
 
 [![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git)
@@ -68,14 +69,14 @@ Not all commands are equal and expectations how execution works differs. Most co
 
 1. File-watchers for compilers & bundlers should run as background tasks
 2. Interactive vs non-interactive execution
-3. Importance of terminal if execution completes successfully (non-zero exit code)
+3. Terminal visibility when no errors occur
 4. Human-centric output: JSON, text, images, etc
 
 Just click "Configure" on the respective cell to make modifications to the cell execution behavior.
 
 ![Configure a Cell](static/configure-cell.png)
 
-### How to handle long-running processes
+### How to handle long-running processes (`background`)
 
 You want to enable the `background` setting if notebook execution will continue indefinitely on a single command.
 
@@ -84,6 +85,21 @@ You want to enable the `background` setting if notebook execution will continue 
 It is very common to use file-watcher enabled compilers/bundlers (`npm start dev`, `watchexec...` etc) in the background during development. For any cell containing an instance of these commands be sure to tick the "background" cell setting. It prevents execution to permanently block the notebook UX. Once ticked notice the "Background Task" label show up in the cell status bar.
 
 ![Cell is Background Task](static/cell-background.png)
+
+### Interactive vs non-interactive execution (`interactive`)
+
+If a cell's commands do not require any input from a reader it might be a good
+fit to include the cell's output inside of the notebook. This is useful if
+resulting output could be useful as input in a downstream cell.
+
+![Non-interactive Cell Output](static/cell-non-interactive.png)
+
+> Please note that the Runme team is currently working on making output in both
+> notebook & terminal default behavior.
+
+### Terminal visibility when no errors occur (`closeTerminalOnSuccess`)
+
+### Human-centric output: JSON, text, images, etc (`mimeType`)
 
 ## Key Features 🦾
 
