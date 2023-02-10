@@ -20,7 +20,7 @@ Make sure to [get in touch](https://discord.gg/BQm8zRCBUY) with us if you are mi
 
 ### VS Code Extension
 
-Like any other VS Code extension Runme can be installed through the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme) or [directly within VS Code](vscode://stateful.runme?command=setup&fileToOpen=https://gist.githubusercontent.com/christian-bromann/df97ce3dace21564ffdf1900400ec099/raw/720aaad96a97534bd8c30fd08be8cbdbb3e60fb9/ThankYou.md).
+Like any other VS Code extension Runme can be installed through the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme) or [directly within VS Code](vscode://stateful.runme?command=setup&fileToOpen=https://gist.githubusercontent.com/christian-bromann/df97ce3dace21564ffdf1900400ec099/raw/0a9b29c979d61e17032c855b04dbc4f5b962f847/ThankYou.md).
 
 That's it. Now, any time you open a Markdown file (`*.md` or `*.mdx`) it will open as Runme notebook.
 
