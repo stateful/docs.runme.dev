@@ -1,6 +1,12 @@
+---
+sidebar_position: 1
+---
+
 # Getting Started
 
-Runme lets you seamlessly turn your existing Markdown docs, such as README.md, into runnable notebooks. This enables static docs to become interactive for its readers and greatly improve their learning experience. As a VS Code user, just [click here](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) to *run this getting started guide*.
+[![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git)
+
+Runme lets you seamlessly turn your existing Markdown docs, such as README.md, into runnable notebooks. This enables static docs to become interactive for its readers and greatly improve their learning experience. As a VS Code user, just [click here](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) to _run this getting started guide_.
 
 ## Why Runme?
 
@@ -9,6 +15,7 @@ While markdown docs are ubiquitous in software and the written word foundational
 Runme's goal is to makes existing markdown docs both **runnable** and subsequently **testable**. Much in the same way how unit tests relates to your code.
 
 ## Jump Right In
+
 Just [open this guide](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) as notebook inside VS Code to experience Runme first-hand.
 
 ### Inside VS Code
@@ -29,10 +36,12 @@ $ runme --filename getting-started.md
 
 Check [Runme's releases page](https://github.com/stateful/runme/releases) to download the CLI for all other platforms.
 
+## What You Need To Know
+
 ## Key Features
 
 - Execute command blocks via a simple ▶️ play button instead of copy&paste-ing into your terminal
-- Leverage placeholder and prompts to have readers interactively complete ENV VARs 
+- Leverage placeholder and prompts to have readers interactively complete ENV VARs
 - Fine-tune your doc's executable notebook cells to streamline the execution experience for others
 - Run watchers for compilation/bundling in as background tasks
 - Capture non-interactive output directly inside the respective notebook's cell output
