@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome 👋! Runme strives to provide a great experience right out of the box. Please continue on to learn how to get the most out of our docs via Runme. In fact, why not use Runme to learn about Runme?
 
-[![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git)
+[![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/intro.md&repository=https://github.com/stateful/runme.dev.git)
 
 ## What is Runme? 🤔
 
@@ -14,7 +14,7 @@ Welcome 👋! Runme strives to provide a great experience right out of the box. 
 
 ⏯ Runme enables static docs to become interactive for its readers and greatly improve their learning experience.
 
-👩‍💻 As a VS Code user, just [click here](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) to *leverage Runme to run through this getting started guide*.
+👩‍💻 As a VS Code user, just [click here](vscode://stateful.runme?command=setup&fileToOpen=docs/intro.md&repository=https://github.com/stateful/runme.dev.git) to *leverage Runme to run through this getting started guide*.
 
 ### Installation
 
@@ -29,7 +29,7 @@ While markdown docs are ubiquitous in software and the written word foundational
 
 ## Jump Right In 🚀
 
-Just [open this guide](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git) as notebook inside VS Code to experience Runme first-hand.
+Just [open this guide](vscode://stateful.runme?command=setup&fileToOpen=docs/intro.md&repository=https://github.com/stateful/runme.dev.git) as notebook inside VS Code to experience Runme first-hand.
 
 ### Inside VS Code
 
