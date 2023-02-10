@@ -69,8 +69,8 @@ Not all commands are equal and expectations how execution works differs. Most co
 
 1. File-watchers for compilers & bundlers should run as background tasks
 2. Interactive vs non-interactive execution
-3. Terminal visibility when no errors occur
-4. Human-centric output: JSON, text, images, etc
+3. Human-centric output: JSON, text, images, etc
+4. Terminal visibility when no errors occur
 
 Just click "Configure" on the respective cell to make modifications to the cell execution behavior.
 
@@ -97,9 +97,17 @@ resulting output could be useful as input in a downstream cell.
 > Please note that the Runme team is currently working on making output in both
 > notebook & terminal default behavior.
 
+### Human-centric output: JSON, text, images, etc (`mimeType`)
+
+Not all cell's output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly.
+
+![Human-friendly output with MIME types](static/cell-mime-type.png)
+
+Amongst other here are a few popular choices: `image/svg+xml`, `text/x-json`, `text/x-javascript`, `text/x-html`, `text/x-rust`, etc.
+
 ### Terminal visibility when no errors occur (`closeTerminalOnSuccess`)
 
-### Human-centric output: JSON, text, images, etc (`mimeType`)
+A cell's execution terminal is being auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
 ## Key Features 🦾
 
