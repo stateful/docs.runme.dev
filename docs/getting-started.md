@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 # Getting Started ⚡️
+Welcome 👋! Runme strives to provide a great experience right out of the box. Please continue on to learn how to get the most out of our docs via Runme. In fact, why not use Runme to learn about Runme?
 
 [![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git)
 
