@@ -7,6 +7,8 @@ Welcome 👋! Runme strives to provide a great experience right out of the box. 
 
 [![Open with Runme](https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/getting-started.md&repository=https://github.com/stateful/runme.dev.git)
 
+## What is Runme? 🤔
+
 📜 Runme lets you seamlessly turn your existing Markdown docs, such as README.md, into runnable notebooks.
 
 ⏯ Runme enables static docs to become interactive for its readers and greatly improve their learning experience.
