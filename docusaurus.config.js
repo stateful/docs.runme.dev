@@ -186,11 +186,19 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      algolia: {
-          apiKey: process.env.ALGOLIA_API_KEY,
-          indexName: process.env.ALGOLIA_INDEX_NAME,
-          appId: process.env.ALGOLIA_APP_ID
-      },
+      /**
+       * credentials available in 1password
+       */
+      ...(process.env.ALGOLIA_API_KEY && process.env.ALGOLIA_INDEX_NAME && process.env.ALGOLIA_APP_ID
+        ? {
+          algolia: {
+            apiKey: process.env.ALGOLIA_API_KEY,
+            indexName: process.env.ALGOLIA_INDEX_NAME,
+            appId: process.env.ALGOLIA_APP_ID
+          }
+        }
+        : {}
+      ),
     })
 };
 

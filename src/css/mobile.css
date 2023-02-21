@@ -13,3 +13,9 @@
     bottom: 5px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .theme-doc-breadcrumbs {
+    margin-right: 50px;
+  }
+}
