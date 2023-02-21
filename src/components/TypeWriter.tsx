@@ -6,11 +6,17 @@ export interface TypeWriterProps {
   sequence: any[]
 }
 
+const DEFAULT_TEXT = 'Readme.md'
+
 export default function TypeWriter (props: TypeWriterProps) {
   const ref = useRef<HTMLSpanElement>(null)
   useEffect(() => {
     if (!ref.current) {
       return
+    }
+
+    if (ref.current.childElementCount) {
+      ref.current.innerHTML = DEFAULT_TEXT
     }
 
     const typewriter = new TypeWriterPlugin(ref.current, {
@@ -34,7 +40,7 @@ export default function TypeWriter (props: TypeWriterProps) {
   return (
     <>
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#A38CF0] to-[#C83D79]" ref={ref}>
-        Readme.md
+        {DEFAULT_TEXT}
       </span>
       <span style={cursorStyle}>|</span>
     </>
