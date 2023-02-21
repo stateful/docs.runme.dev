@@ -397,6 +397,10 @@ html[data-theme="dark"] .navbar-sidebar .docsLink:before {
   margin-top: 3em;
 }
 
+.theme-doc-sidebar-container {
+  min-height: 300px;
+}
+
 p {
   color: var(--ifm-heading-color);
 }
