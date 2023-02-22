@@ -35,7 +35,7 @@ Runme is a [VS Code extension](https://marketplace.visualstudio.com/items?itemNa
 * Docs that have fallen behind undetected
 * The vault lines of commonplace tools were designed for machines, not humans.
 
-![Readme as Notebook and Markdown side-by-side](static/img/sidebyside.png)
+![Readme as Notebook and Markdown side-by-side](../static/img/sidebyside.png)
 
 Runme’s purpose is to enable developers to achieve a functional local development environment quickly, starting with copy&paste, click to run commands, and many more features. While [README.md](http://README.md) is the most well-known, there are several other markdown files often found in a repo that you may encounter, including;[ BUILD.md](http://BUILD.md), [CONTRIBUTING.md](http://CONTRIBUTING.md), and many more. Runme supports most .md and .mdx files!
 
