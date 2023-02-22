@@ -254,7 +254,7 @@ h1.text-white {
 }
 
 .navbar__items--right {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .navbar__items--right a {
   margin: 0 30px;
@@ -433,4 +433,8 @@ p {
 .table-of-contents li code {
   background: transparent;
   border: 0;
+}
+.navbar__items--right button {
+  position: relative;
+  bottom: 5px;
 }
