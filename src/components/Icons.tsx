@@ -80,6 +80,14 @@ const RedRightArrow = () => {
   );
 };
 
+const PurpleRightArrow = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
+      <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#5b39df" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  );
+};
+
 const PurpleGhostFooterIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="138" viewBox="0 0 120 138" fill="none">
@@ -326,5 +334,6 @@ export {
   NotebookIcon,
   VariablesIcon,
   YellowGhostIcon,
-  RedRightArrow
+  RedRightArrow,
+  PurpleRightArrow
 };

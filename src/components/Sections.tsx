@@ -1,4 +1,3 @@
-import React, { ReactNode } from 'react'
 import {
   ApacheIcon,
   CloudNativeNotebookIcon,
@@ -6,17 +5,13 @@ import {
   DiscordIcon,
   GithubIcon,
   NotebookIcon,
-  RedRightArrow,
+  PurpleRightArrow,
   RepoIcon,
   RunCommandIcon,
   ShellIcon,
   VariablesIcon,
 } from "./Icons";
-
-interface SectionProps extends React.PropsWithChildren {
-  title: string;
-  description: string;
-};
+import React, { ReactNode } from 'react'
 
 type FeatureProps = {
   text: string;
@@ -32,27 +27,6 @@ type RepoProps = {
 
 interface SectionTitleProps extends React.PropsWithChildren {
   title: string;
-}
-
-export function Section(props: SectionProps) {
-  return (
-    <div className="px-12 py-6 flex flex-col items-center py-14">
-      <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-bold text-4xl lg:text-[64px] leading-10 tracking-[0.03em]">
-          {props.title}
-        </h1>
-        <p
-          id="underline-graphic"
-          className="text-xl mt-4 w-[70%] text-center relative"
-        >
-          {props.description}
-        </p>
-      </div>
-      <div className="py-6 flex flex-row flex-wrap space-x-4 lg:max-w-3xl mx-auto">
-        {props.children}
-      </div>
-    </div>
-  );
 }
 
 export function SectionTitle(props: SectionTitleProps) {
@@ -78,7 +52,7 @@ export function Feature(props: FeatureProps) {
 
 export function Repo({ url, name, description }: RepoProps) {
   return (
-    <div className="flex md:flex-row md:space-x-2 flex-col md:space-y-0 space-y-1  md:justify-start items-center md:items-start">
+    <div className="flex flex-col items-center space-y-1 md:flex-row md:space-x-2 md:space-y-0 md:justify-start md:items-start">
       <div>
         <RepoIcon />
       </div>
@@ -92,8 +66,8 @@ export function Repo({ url, name, description }: RepoProps) {
 
 export function HowItWorks() {
   return (
-    <div className="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center py-14">
-      <div className="text-center space-y-4 md:space-y-8">
+    <div className="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center">
+      <div className="space-y-4 text-center md:space-y-8">
         <h1 id="arrows-graphic" className="lg:max-w-min mx-auto whitespace-nowrap relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold">
           How it works
         </h1>
@@ -108,7 +82,7 @@ export function HowItWorks() {
         {/* <br className="hidden lg:block" /> */}
 
       </div>
-      <div className="mt-24 flex flex-col lg:grid grid-cols-2 gap-4 2xl:gap-12 w-full">
+      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-24 lg:grid 2xl:gap-12">
         <Feature
           text="Click to run commands"
           icon={<RunCommandIcon />}
@@ -143,7 +117,7 @@ export function HowItWorks() {
       <div className="w-full mt-12 lg:mt-24">
         <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
           <iframe
-            className="rounded-lg shadow-2xl select-none mx-auto"
+            className="mx-auto rounded-lg shadow-2xl select-none"
             width={"100%"}
             height={"100%"}
             src="https://www.youtube.com/embed/XbYeeMC2oao"
@@ -160,13 +134,13 @@ export function HowItWorks() {
 
 export function OpenSource() {
   return (
-    <div className="relative mb-32 flex items-center justify-center min-h-[30vh] px-12 flex flex-col items-center overflow-x-hidden text-white">
+    <div className="relative mb-32 flex items-center justify-center min-h-[30vh] px-12 flex-col overflow-x-hidden text-white">
       <div className="absolute w-full h-full z-[-1] top-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1567 800" fill="none">
           <path d="M0 0L1567 102.793V718.665L-11 800L0 0Z" fill="#33384D" />
         </svg>
       </div>
-      <div className="py-48 lg:px-24 flex flex-col lg:flex-row">
+      <div className="flex flex-col py-48 lg:px-24 lg:flex-row">
         <div className="space-y-4">
           <div className="flex flex-col-reverse lg:flex-row lg:space-x-4">
             <h1 className="text-white text-4xl xs:text-5xl lg:text-5xl tracking-[0.02em] font-bold">Open Source Software</h1>
@@ -181,7 +155,7 @@ export function OpenSource() {
             {" "}and<br />sources are available on Github.</p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-8 font-semibold lg:text-lg tracking-[0.02em] leading-[140%]">
-          <a href="https://github.com/stateful/vscode-runme" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+          <a href="https://github.com/stateful/vscode-runme" className="flex flex-col w-full sm:flex-row sm:items-center sm:space-x-4">
             <span className="bg-[#5B3ADF] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />
               stateful/vscode-runme
@@ -190,7 +164,7 @@ export function OpenSource() {
               The VS Code Extension
             </div>
           </a>
-          <a href="https://github.com/stateful/runme" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+          <a href="https://github.com/stateful/runme" className="flex flex-col w-full sm:flex-row sm:items-center sm:space-x-4">
             <span className="bg-[#F62459] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />
               stateful/runme
@@ -199,7 +173,7 @@ export function OpenSource() {
               Command Line Interface (CLI) and parser
             </div>
           </a>
-          <a href="https://github.com/stateful/runme.dev" className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+          <a href="https://github.com/stateful/runme.dev" className="flex flex-col w-full sm:flex-row sm:items-center sm:space-x-4">
             <span className="bg-[#3693FF] rounded-md py-2 p-4 flex items-center space-x-2">
               <GithubIcon />stateful/runme.dev
             </span>
@@ -223,16 +197,16 @@ export function CLI() {
       <img src="/img/terminal.png" alt="Terminal with runme list command" />
       <div className="flex items-center gap-6">
         <div className="flex items-center justify-center">
-          <div className="px-6 pb-3 border border-solid border-[color:var(--runme-color-lila)] text-gray-100 font-mono subpixel-antialiased transparent rounded-lg leading-normal overflow-hidden">
-            <div className="mt-4 flex items-center flex-nowrap justify-center space-x-1">
-              <span className="text-[color:var(--runme-color-lila)]">$ brew install{' '}</span>
+          <div className="px-6 pb-3 border border-solid border-[color:var(--ifm-color-primary)] text-gray-100 font-mono subpixel-antialiased transparent rounded-lg leading-normal overflow-hidden">
+            <div className="flex items-center justify-center mt-4 space-x-1 flex-nowrap">
+              <span className="text-[color:var(--ifm-color-primary)]">$ brew install{' '}</span>
               <p className="text-black dark:text-white">
                 stateful/tap/runme
               </p>
             </div>
           </div>
         </div>
-        <p className="text-sm py-0 max-w-sm">
+        <p className="max-w-sm py-0 text-sm">
           <a className="font-semibold" href="https://github.com/stateful/runme/releases">
             Other platforms available
             <svg className="inline-block mx-2" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +225,7 @@ export function Documentation() {
       <h1 className="relative text-4xl lg:text-6xl tracking-[0.02em] font-bold">
         Documentation
       </h1>
-      <p className="text-2xl my-4 mb-20">Visibility and status embedded inline in your docs.</p>
+      <p className="my-4 mb-20 text-2xl">Visibility and status embedded inline in your docs.</p>
       <div className="flex justify-start gap-16 2xs:gap-4 mx-auto w-full md:w-[850px] 2xs:px-4 mb-20">
         <div className="flex-initial">
           <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,14 +237,14 @@ export function Documentation() {
           </svg>
         </div>
         <div className="flex-row text-left">
-          <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--runme-color-lila-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
+          <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--ifm-color-primary-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
             <a href="/docs/install">Getting Started</a>
           </h2>
           <p className="text-xl">
             Learn how to install Runme as CLI or VS Code Extension.
           </p>
-          <p className="text-xl pt-4">
-            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-[color:var(--runme-color-lila)] text-[color:var(--runme-color-lila)] hover:text-[color:var(--runme-color-lila)] rounded">Install Extension</a> to add Runme to your VS Code.
+          <p className="pt-4 text-xl">
+            Click <a href="vscode:extension/stateful.runme" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-[color:var(--ifm-color-primary)] text-[color:var(--ifm-color-primary)] hover:text-[color:var(--ifm-color-primary)] rounded">Install Extension</a> to add Runme to your VS Code.
           </p>
         </div>
       </div>
@@ -287,14 +261,14 @@ export function Documentation() {
           </svg>
         </div>
         <div className="flex-row text-left">
-          <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--runme-color-lila-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
+          <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--ifm-color-primary-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
             <a href="/docs/configuration">Configuration</a>
           </h2>
           <p className="text-xl">
             Define the execution behavior of code blocks through annotations.
           </p>
-          <p className="text-xl pt-4">
-            Add a <span className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-blue-600 text-blue-600 rounded">background</span> annotation to run a task in the background.
+          <p className="pt-4 text-xl">
+            Add a <span className="p-2 text-blue-600 border border-blue-600 border-solid rounded whitespace-nowrap lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2">background</span> annotation to run a task in the background.
           </p>
         </div>
       </div>
@@ -313,14 +287,14 @@ export function Documentation() {
         </div>
 
         <div className="flex-row text-left">
-          <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--runme-color-lila-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
+          <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--ifm-color-primary-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
             <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md">Contributing</a>
           </h2>
           <p className="text-xl">
             Everything is open source and we love your contributions.
           </p>
-          <p className="text-xl pt-4">
-            Read our <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md" className="whitespace-nowrap p-2 lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 border border-solid border-red-600 text-red-600 hover:text-red-600 rounded">Contributing Guidelines</a> for more information.
+          <p className="pt-4 text-xl">
+            Read our <a href="https://github.com/stateful/vscode-runme/blob/main/CONTRIBUTING.md" className="p-2 text-red-600 border border-red-600 border-solid rounded whitespace-nowrap lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 hover:text-red-600">Contributing Guidelines</a> for more information.
           </p>
         </div>
       </div>
@@ -331,11 +305,11 @@ export function Documentation() {
 export function FinalCta() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="max-w-[1000px] flex flex-col items-center justify-center py-12 space-y-12 lg:space-x-4">
+      <div className="max-w-[1000px] flex flex-col items-center justify-center py-12 space-y-8 lg:space-x-4">
         <p className="text-5xl font-bold tracking-[0.03em] leading-relaxed sm:leading-normal text-center">Ready to get <span id="started-underline" className="relative whitespace-nowrap">started?</span></p>
         <a
           href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
-          className="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[10px] rounded-[60px] text-base leading-[0px] font-semibold"
+          className="text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[10px] rounded-[60px] text-base leading-[0px] font-semibold"
         >
           <span className="text-2xl font-semibold">Install the extension</span>
         </a>
@@ -344,8 +318,8 @@ export function FinalCta() {
           className="flex items-center justify-center px-12 rounded-[60px] text-base leading-[0px] font-semibold space-x-3"
         >
           <DiscordIcon />
-          <span className="text-xl sm:text-2xl tracking-[0.08em] whitespace-nowrap">Join our Discord</span>
-          <RedRightArrow />
+          <span className="text-lg sm:text-xl tracking-[0.08em] whitespace-nowrap">Join our Discord</span>
+          <PurpleRightArrow />
         </a>
       </div>
     </div>
