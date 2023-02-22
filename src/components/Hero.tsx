@@ -38,14 +38,14 @@ export function Hero() {
         <div className="flex flex-col items-center justify-center space-y-8">
           <a
             href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
-            className="bg-[color:var(--runme-color-lila)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
+            className="bg-[color:var(--ifm-color-primary)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
           >
             Install the extension
           </a>
 
           <p className="">
             or search{" "}
-            <span className="rounded-[6px] font-bold text-white border border-solid border-[color:var(--runme-color-lila)] p-1.5 font-mono mx-2">runme</span> in
+            <span className="rounded-[6px] font-bold text-white border border-solid border-[color:var(--ifm-color-primary)] p-1.5 font-mono mx-2">runme</span> in
             the VS Code extension panel
           </p>
         </div>

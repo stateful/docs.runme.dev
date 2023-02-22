@@ -6,7 +6,7 @@
 .docs-doc-page h6 { font-size: 0.75em!important;    /* 0.75*16 = 12 */    }
 
 h1 {
-  color: var(--runme-color-lila-dark);
+  color: var(--ifm-color-primary-dark);
 }
 [data-theme='dark'] .main h1 {
   color: var(--ifm-color-primary-more-lightest);
