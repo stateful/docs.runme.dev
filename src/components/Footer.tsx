@@ -40,15 +40,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="overflow-y-hidden relative">
+    <footer className="relative overflow-y-hidden">
       <div className="absolute w-full z-[-1] h-full sm:h-auto">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1567 897" fill="none" preserveAspectRatio="none">
           <path d="M1578 896.989L-7.4906 896.989L-7.49068 44.8957C-75.1214 51.3969 323.888 0.000109638 793.757 6.85607e-05C1253.97 2.83275e-05 1578 44.8956 1578 44.8956L1578 896.989Z" fill="#000726" />
         </svg>
       </div>
-      <div className="p-6 pb-12 pb-32 pt-24 text-white relative">
+      <div className="relative p-6 pt-24 pb-32 text-white">
         <div className="flex flex-col mx-auto space-y-6 sm:px-6 lg:px-8 lg:max-w-7xl">
-          <div className="flex flex-col md:pr-48 justify-between space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+          <div className="flex flex-col justify-between space-y-6 md:pr-48 md:flex-row md:space-x-4 md:space-y-0">
             <div className="flex flex-col space-y-3 ">
               <div className="lg:mb-8">
                 <svg
@@ -101,7 +101,7 @@ export default function Footer() {
                 </svg>
               </div>
               <div className="font-medium 3xl:text-lg">The developer happiness company.</div>
-              <div className="flex items-center flex-row space-x-4">
+              <div className="flex flex-row items-center space-x-4">
                 <a href={"https://twitter.com/statefulhq"}>
                   <TwitterIcon />
                 </a>
@@ -120,7 +120,7 @@ export default function Footer() {
               <FooterLink name="vscode-runme" href="https://github.com/stateful/vscode-runme" />
               <FooterLink name="runme cli" href="https://github.com/stateful/runme" />
             </div>
-            <div className="pt-24 absolute right-0 lg:right-32">
+            <div className="absolute right-0 pt-24 lg:right-32">
               <PurpleGhostFooterIcon />
             </div>
           </div>

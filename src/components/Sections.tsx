@@ -13,11 +13,6 @@ import {
 } from "./Icons";
 import React, { ReactNode } from 'react'
 
-interface SectionProps extends React.PropsWithChildren {
-  title: string;
-  description: string;
-};
-
 type FeatureProps = {
   text: string;
   icon: ReactNode;
@@ -32,27 +27,6 @@ type RepoProps = {
 
 interface SectionTitleProps extends React.PropsWithChildren {
   title: string;
-}
-
-export function Section(props: SectionProps) {
-  return (
-    <div className="flex flex-col items-center px-12 py-6 py-14">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-4xl lg:text-[64px] leading-10 tracking-[0.03em]">
-          {props.title}
-        </h1>
-        <p
-          id="underline-graphic"
-          className="text-xl mt-4 w-[70%] text-center relative"
-        >
-          {props.description}
-        </p>
-      </div>
-      <div className="flex flex-row flex-wrap py-6 mx-auto space-x-4 lg:max-w-3xl">
-        {props.children}
-      </div>
-    </div>
-  );
 }
 
 export function SectionTitle(props: SectionTitleProps) {
@@ -92,7 +66,7 @@ export function Repo({ url, name, description }: RepoProps) {
 
 export function HowItWorks() {
   return (
-    <div className="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center py-14">
+    <div className="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center">
       <div className="space-y-4 text-center md:space-y-8">
         <h1 id="arrows-graphic" className="lg:max-w-min mx-auto whitespace-nowrap relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold">
           How it works
@@ -160,7 +134,7 @@ export function HowItWorks() {
 
 export function OpenSource() {
   return (
-    <div className="relative mb-32 flex items-center justify-center min-h-[30vh] px-12 flex flex-col items-center overflow-x-hidden text-white">
+    <div className="relative mb-32 flex items-center justify-center min-h-[30vh] px-12 flex-col overflow-x-hidden text-white">
       <div className="absolute w-full h-full z-[-1] top-0">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1567 800" fill="none">
           <path d="M0 0L1567 102.793V718.665L-11 800L0 0Z" fill="#33384D" />
@@ -335,7 +309,7 @@ export function FinalCta() {
         <p className="text-5xl font-bold tracking-[0.03em] leading-relaxed sm:leading-normal text-center">Ready to get <span id="started-underline" className="relative whitespace-nowrap">started?</span></p>
         <a
           href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
-          className="text-2xl text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[10px] rounded-[60px] text-base leading-[0px] font-semibold"
+          className="text-white flex items-center justify-center bg-[#5B3ADF] px-12 py-[10px] rounded-[60px] text-base leading-[0px] font-semibold"
         >
           <span className="text-2xl font-semibold">Install the extension</span>
         </a>
