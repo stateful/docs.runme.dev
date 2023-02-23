@@ -21,7 +21,7 @@ If you want to test drive cutting-edge features, Runme offers regular edge relea
 
 On macOS you can install Runme via Homebrew.sh which receives regular updates:
 
-```
+```sh
     $ brew install stateful/tap/runme
 ```
 
@@ -31,7 +31,7 @@ Alternatively, check out [runme's releases](https://github.com/stateful/runme/re
 
 With Go dev tools installed, you can install `Runme` with `go install`:
 
-```
+```sh
 $ go install github.com/stateful/runme@latest
 ```
 
