@@ -31,6 +31,12 @@
   --runme-font-size-base: 1rem;
   --runme-font-size-sm: 0.875rem;
 
+  --runme-color-warning: #FF776150;
+  --runme-color-warning-dark: #A8201150;
+
+  --runme-color-lila-opac: #5B39DF50;
+  --runme-color-lila-dark-opac: #0D003D50;
+
   --runme-font-size-h1: 2.25rem;
   --runme-font-size-h2: 2rem;
   --runme-font-size-h3: $font-size-base;
@@ -405,4 +411,60 @@ p {
 .navbar__items--right button {
   position: relative;
   bottom: 5px;
+}
+
+.infobox {
+  position: relative;
+  border-radius: 4px;
+  padding: 0.75rem 1.25rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--ifm-leading);
+}
+
+.infobox > p:not(:last-child) {
+  margin-bottom: calc(var(--ifm-leading)/2);
+}
+
+.markdown img {
+  margin: 1em auto;
+  border-radius: 4px;
+}
+
+.infobox-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes floating{
+  0%{transform:translate(0)}
+  50%{transform:translateY(5px)}
+  to{transform:translate(0)}
+}
+
+.infobox-icon {
+  position: absolute;
+  left: -2em;
+  top: 0.5em;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.infobox-sidenote > .infobox-icon {
+  left: -2.6em;
+  top: 0.6em;
+}
+
+.infobox-warning {
+  background-color: var(--runme-color-warning);
+  border: 1px solid var(--runme-color-warning-dark);
+}
+
+.infobox-sidenote {
+  background-color: var(--runme-color-lila-opac);
+  border: 1px solid var(--runme-color-lila-dark-opac);
+}
+
+.markdown a {
+  color: var(--ifm-color-content-secondary);
 }
