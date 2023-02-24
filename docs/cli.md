@@ -11,7 +11,7 @@ Runme can be run not only as a VS Code extension but also as a CLI tool to run c
 
 Also, you can parse markdown files and easily run their commands right from the terminal, with no VS Code required.
 
-![Runme CLI run commands from terminal](../static/img/images/cli-runme.png)
+![Runme CLI run commands from terminal](../static/img/cli-runme.png)
 
 The Runme CLI is ideal for power users who want to get the absolute most out of Runme.
 
