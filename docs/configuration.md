@@ -7,10 +7,6 @@ title: Cell Configuration
 
 To provide the best possible README (interactive markdown) experience to your users, be sure to configure your document's cells.
 
-# What You Need To Know
-
-Runme turns arbitrary markdown files into runnable notebooks. If your markdown contains [fenced-code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) with shell-compatible commands, Runme is your friend. You most commonly find these in `README.md`, `DEV.md`, `BUILD.md`, etc but is up to your editorial preference.
-
 ## Specify Language in Blocks
 
 Runme, just like most Markdown viewers, will work best without ambiguity about what language is contained inside of fenced code blocks. If possible, always specify the language [according to the standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) illustrated below.
