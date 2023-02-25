@@ -1,9 +1,7 @@
 ---
 sidebar_position: 5
-title: Runme CLI
+title: CLI in the Terminal
 ---
-
-# Runme CLI
 
 Feeling like Runme is great, but you want something even more powerful? Well, lucky for you, there is a Runme CLI!
 
@@ -54,9 +52,7 @@ Runme has a nice TUI that you can use simply like so:
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
 You can use the `--chdir` flag to alter this behavior, without changing the environment's working directory.
-
-(TODO: better gif)
-
+<!-- (TODO: better gif) -->
 This allows you to quickly execute any script present in the README.
 
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
@@ -88,9 +84,6 @@ By default, Runme will try to open a `Readme.md` file in your current work direc
 ```sh
 runme ls --filename SUPPORT.md --chdir ./.github
 ```
-
-If you want to use RUNME outside VS Code, you can install the CLI as a standalone application. [Read more about runme CLI](https://github.com/stateful/runme)
-
 ## Running Script Directly
 
 The TUI is nice, but what if you just want to run a specific command quickly?
