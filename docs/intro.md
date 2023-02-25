@@ -5,7 +5,7 @@ title: Why Runme?
 
 Thank you for interest in Runme 💟!
 
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our docs via Runme. In fact, why not use Runme to learn about Runme?
+Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our docs via Runme. Please don't be surprised if Runme's docs prompt you to use Runme. Learning by using is very effective.
 
 A well-written README can significantly impact time to get up and running on your projects, reduce onboarding time, and interactively document common development and operations workflows (runbooks). On the contrary, a poorly written README can negatively impact the visibility of your project, even if the underyling code of your software is in excellent condition. For new contributors, it can quickly become a very frustrating experience.
 
@@ -55,7 +55,6 @@ Review development progress in [Runme's roadmap](https://github.com/stateful/run
 * Be cautious with environment variables interleaved within code blocks. The stateful execution of the notebooks (shell/bash-only; no PowerShell on Windows yet) leverages a naive implementation where the VS Code extension prompts for ENV var values and attempts to expand them. In essence, it does not match an interactive bash/shell session (yet).
 * We continue experimenting with aspects of user/developer experience including the passing of information/variables from cell to cell, ENV var handling that more closely matches shell a session and more robust markdown handling.
 * Please report any issues you encounter to help us mature Runme.
-
 
 ## 💡 Telemetry for improvements
 
