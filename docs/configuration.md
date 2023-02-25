@@ -21,6 +21,20 @@ Runme, just like most Markdown viewers, will work best without ambiguity about w
     ```
 ```
 
+## Cell Execution
+
+Not all commands are equal and expectations how execution works differs. Most commond cases are:
+
+1. File-watchers for compilers & bundlers should run as background tasks
+2. Interactive vs non-interactive execution
+3. Human-centric output: JSON, text, images, etc
+4. Terminal visibility when no errors occur
+
+Just click "Configure" on the respective cell to make modifications to the cell execution behavior.
+
+![Configure a Cell](../static/img/configure-cell.png)
+
+
 Out of the box, Runme will leverage the [Guesslang](https://github.com/yoeo/guesslang) ML/AI model with a bias towards Shell to detect the languages for unidentified code blocks. While this works well in a lot of cases, the accuracy is nowhere near 100%.
 
 ## Handle long-running processes
