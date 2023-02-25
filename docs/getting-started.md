@@ -12,8 +12,7 @@ Ever wondered if there is a better way of experiencing READMEs; forget copy&past
 # Your First Runme
 
 You can get started in one click with the following badge:
-
-[![Run Locally via Runme](https://badgen.net/badge/Run%20this/Markdown/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/intro.md&repository=https://github.com/stateful/runme.dev.git)
+<!-- [![Run Locally via Runme](https://badgen.net/badge/Run%20this/Markdown/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/intro.md&repository=https://github.com/stateful/runme.dev.git) -->
 
 Simply follow the instructions provided by VS Code to get started in seconds:
 
