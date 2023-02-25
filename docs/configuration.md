@@ -57,15 +57,15 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 
 ## Human-friendly output: JSON, text, images, etc
 
-Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The mime type defaults to *text/plain*.
+Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The MIME type defaults to *text/plain*.
 
 ![Human-centric output](../static/img/human-centric-output.png)
 
-### Supported mime types
+### Supported MIME types
 
-Runme supports the standard VS Code mime types alongside custom Runme mime types.
+Runme supports the standard VS Code MIME types alongside custom Runme MIME types.
 
-**Standard VS Code mime types**
+**Standard VS Code MIME types**
 
 * text/plain
 * application/javascript
@@ -75,7 +75,7 @@ Runme supports the standard VS Code mime types alongside custom Runme mime types
 * image/png
 * image/jpeg
 
-**Mime types for rendering code**
+**MIME types for rendering code**
 
 * text/x-json
 * text/x-javascript
