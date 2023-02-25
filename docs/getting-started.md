@@ -257,30 +257,6 @@ echo hello world ```
 
 Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/main/examples) available inside the VS Code extension repo for a reference on how to apply these code block attributes in different use cases.
 
-### State Management
-
-This is an active area of development, but the currently released version of Runme doesn’t share an environment state between cells.
-
-To get around this problem, you can make cells completely independent by having all of the pre-requisite commands also run in the same code cell. In the following example, I solve the problem by using the file system.
-
-**Example with the environment (DOESN’T WORK):**
-
-```sh
-$ export NAME='Adam'
-
-$ node ./run_server -name $NAME # This wont work!
-```
-
-**Example with the file system (WORKS):**
-
-```sh
-$ echo "Adam" > name.txt
-
-$ NAME=$(&lt;name.txt)
-
-$ node ./run_server -name $NAME # This works!
-```
-
 ## Notebook Explorer
 
 To help you navigate the markdown files in your project, Runme adds this super handy “RUNME NOTEBOOKS” panel. Clicking any markdown file will open it in your code editor view.
