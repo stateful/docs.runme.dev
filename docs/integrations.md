@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: Runme Examples
+title: Integrations
 ---
 
 Previously, you learned the basic editing tools for creating and editing README files.
@@ -17,7 +17,7 @@ Go ahead and clone the `stateful/vscode-runme` repo:
 
 These examples are from the `examples` sub-folder!
 
-## Fresh Service
+## Deno Fresh App
 
 The first example is in the `fresh` folder and sets up a fresh service with deno.
 
