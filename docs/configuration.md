@@ -1,159 +1,74 @@
 ---
-sidebar_position: 6
-title: Configuration
+sidebar_position: 4
+title: Cell Configuration
 ---
 
-# Configuration
+# Cell Configuration
 
-## Code Block Annotations
+To provide the best possible README (interactive markdown) experience to your users, be sure to configure your document's cells.
 
-Runme supports a variety of code block annotations that allow users to modify the behavior of the cell and how it is being executed.
+# What You Need To Know
 
-### `background`
+Runme turns arbitrary markdown files into runnable notebooks. If your markdown contains [fenced-code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) with shell-compatible commands, Runme is your friend. You most commonly find these in `README.md`, `DEV.md`, `BUILD.md`, etc but is up to your editorial preference.
 
-Some scripts are supposed to run within the background to not disturb you from development. With the `background` annotation, you can tell Runme to have this command run as a background task and don't have it pop up in a terminal.
+## Specify Language in Blocks
 
-__Default:__ `false`<br />
-__Example:__
+Runme, just like most Markdown viewers, will work best without ambiguity about what language is contained inside of fenced code blocks. If possible, always specify the language [according to the standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) illustrated below.
 
 ```
-    ```sh { background=true }
-    npm run watch
+    ```sh
+    $ echo "language identifier in fenced code block"
     ```
 ```
 
-### `interactive`
+Out of the box, Runme will leverage the [Guesslang](https://github.com/yoeo/guesslang) ML/AI model with a bias towards Shell to detect the languages for unidentified code blocks. While this works well in a lot of cases, the accuracy is nowhere near 100%.
 
-With the interactive flag, you can decide whether the stdout of the process should be printed directly within the result cell or as part of a VS Code terminal. __Note:__ printing stdout within the result cell doesn't allow you to interact with the process, e.g. through `stdin` input. However, it allows you to copy out the process output which is useful in many situations to continue with your dev-ops process.
+## Handle long-running processes
 
-__Default:__ `true`<br />
-__Example:__
+You want to enable the `background` setting if notebook execution will continue indefinitely on a single command.
 
-```
-    ```sh { interactive=false }
-    openssl rand -base64 32
-    ```
-```
+![long-running processes in vs code](../static/img/long-running-process.png)
 
-### `closeTerminalOnSuccess`
+It is very common to use file-watcher enabled compilers/bundlers (`npm start dev`, `watchexec...` etc) in the background during development. For any cell containing an instance of these commands be sure to tick the "background" cell setting. It prevents execution from permanently blocking the notebook UX. Once ticked notice the "Background Task" label shows up in the cell status bar.
 
-If you execute a command within a VS Code terminal window you can have it stick around even after successful execution using the `closeTerminalOnSuccess` flag.
+![background task process in vs code](../static/img/background-task-process.png)
 
-Default: `true`
+## Interactive vs non-interactive cells
 
-Example:
+If a cell's commands do not require any input from a reader it might be a good fit to include the cell's output inside the notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for which defaults to *true*.
 
-```
-    ```sh { closeTerminalOnSuccess=false }
-    docker ps | grep runme/demo:latest
-```
+![interactive execution in vs code](../static/img/interactive-execution.png)
 
-## Available commands
+Please note that the Runme team is currently working on making output in both notebook & terminal default behavior.
 
-**Help**
+## Terminal visibility post-execution
 
-```sh
-$ runme help
-```
+A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
-**List**
+## Human-friendly output: JSON, text, images, etc
 
-```sh
-$ runme list
-```
+Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The mime type defaults to *text/plain*.
 
-**Print**
+![Human-centric output](../static/img/human-centric-output.png)
 
-```sh
-$ runme print echo-hello-world
-```
+### Supported mime types
 
-**Run selected command, Example: Update brew**
+Runme supports the standard VS Code mime types alongside custom Runme mime types.
 
-```sh
-$ runme run brew-update
-```
+**Standard VS Code mime types**
 
-#### Check the CLI is working
+* text/plain
+* application/javascript
+* text/html
+* image/svg+xml
+* text/markdown
+* image/png
+* image/jpeg
 
-Once the CLI is installed, ensure you have a markdown file named README.md in the working directory you are running the CLI and run the following command:
+**Mime types for rendering code**
 
-```sh
-runme fmt
-```
-
-You should see the markdown file contents from your working directory. If you want to run the command against a different markdown file, you can use the filename flag in combination with the chdir flag:
-
-```
-runme ls --filename SUPPORT.md --chdir ./.github
-```
-
-### RUNME usage
-
-NOTE: This usage example should be at a separate project since it depends on Node.js to work, it shouldn't be part of the extension getting started guide.
-
-Let’s learn how to leverage RUNME powerful features to provide a fantastic README experience. We will use [zx](https://github.com/google/zx), a powerful tool for writing complex scripts.
-
-Node.js is required for running the following examples.
-
-Check if Node.js is already installed by running
-
-```sh
-node --version
-```
-
-Ensure you are running at least Node version >= 16.0.0
-
-**Installing Node.js**
-
-**MacOS**
-
-Install using brew
-
-```
-brew install node
-```
-
-Alternatively, you can head to the [Node.js download page](https://nodejs.org/en/)
-
-Once Node.js is installed, install project dependencies by running the following command:
-
-```
-npm i
-```
-
-Now we have all of our project dependencies installed, it's time to try some zx features.
-
-### Get the last git logs
-
-```sh
-#!/usr/bin/env zx
-
-let flags = [
-    '--oneline',
-    '--decorate',
-    '--color',
-  ]
-await $`git log ${flags}`
-npx zx git-log.mjs
-```
-
-### Use node-fetch to get runme package dependencies
-
-```sh
-#!/usr/bin/env zx
-
-const req = await fetch('https://cdn.jsdelivr.net/gh/stateful/vscode-runme/package.json')
-const { dependencies } = await req.json()
-await $`echo The runme project has ${Object.keys(dependencies).length} dependencies`
-npx zx node-fetch.mjs
-```
-
-### Print current date
-
-```sh
-#!/usr/bin/env zx
-
-const date = await $`date`
-await $`echo Current date is ${date}.`
-npx zx date.mjs
+* text/x-json
+* text/x-javascript
+* text/x-html
+* text/x-rust
+* text/x-LANGUAGE_ID for any other built-in or installed languages.

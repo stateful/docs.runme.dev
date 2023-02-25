@@ -1,9 +1,7 @@
 ---
 sidebar_position: 5
-title: Runme CLI
+title: CLI in the Terminal
 ---
-
-# Runme CLI
 
 Feeling like Runme is great, but you want something even more powerful? Well, lucky for you, there is a Runme CLI!
 

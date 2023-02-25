@@ -1,9 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 7
 title: Key Features
 ---
-
-# Key Features 🦾
 
 ### Run a command
 
