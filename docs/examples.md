@@ -85,6 +85,4 @@ In this case, this can be used to get a list of the user's current registered pr
 
 So what if you want to have both interactivity _and_ stay within the notebook?
 
-Unfortunately, making this work with VS Code is a challenge. We're working hard, however, to look for a good solution to this problem!
-
-(TODO: maybe link to upstream VS Code issue here?)
+Unfortunately, making this work with VS Code is a challenge. We're working hard, however, to look for a good solution to this limitation. Stay tuned!

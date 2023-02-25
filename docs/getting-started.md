@@ -19,7 +19,10 @@ Simply follow the instructions provided by VS Code to get started in seconds:
 
 ![run commands in vs code](../static/img/run-commands-vscode.gif)
 
-Alternatively, check out the [Install Guide](https://runme-dev-mxsdev.vercel.app/docs/install) and clone the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
+Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
+
+If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/docs/cli)
+
 
 ## Running Scripts
 
@@ -178,15 +181,14 @@ Background Tasks also get a "Stop Task" button to end their execution long after
 
 ### Sidenote
 
-Configuration fields like "background" and "interactive" are set using markdown's script metadata feature:
+Configuration fields like `background` and `interactive` are set using markdown's script metadata feature:
 
 ![configuration of background vs code](../static/img/config-background.png)
 
 Be sure not to strip this data if you want to use it!
 
-### Changing Language
-
-(TODO: show how to change language; need issues fixed for this since language selection is broken at the moment)
+<!-- ### Changing Language -->
+<!-- (TODO: show how to change language; need issues fixed for this since language selection is broken at the moment) -->
 
 ## Summary
 
