@@ -238,7 +238,7 @@ export function Documentation() {
         </div>
         <div className="flex-row text-left">
           <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--ifm-color-primary-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
-            <a href="/docs/install">Getting Started</a>
+            <a href="/docs/intro">Getting Started</a>
           </h2>
           <p className="text-xl">
             Learn how to install Runme as CLI or VS Code Extension.
@@ -268,7 +268,7 @@ export function Documentation() {
             Define the execution behavior of code blocks through annotations.
           </p>
           <p className="pt-4 text-xl">
-            Add a <span className="p-2 text-blue-600 border border-blue-600 border-solid rounded whitespace-nowrap lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2">background</span> annotation to run a task in the background.
+            Add a <a href="/docs/configuration" className="p-2 text-blue-600 border border-blue-600 border-solid rounded whitespace-nowrap lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 hover:text-[color:var(--ifm-color-primary)] rounded">background</a> annotation to run a task in the background.
           </p>
         </div>
       </div>
