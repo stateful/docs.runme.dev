@@ -17,7 +17,7 @@ Go ahead and clone the `stateful/vscode-runme` repo:
 
 These examples are from the `examples` sub-folder!
 
-## Deno Fresh App
+## Fresh App on Deno Cloud
 
 The first example is in the `fresh` folder and sets up a fresh service with deno.
 
@@ -51,7 +51,7 @@ For a deploy script, such as the one below, running as a Background task is a gr
 
 ![deploy script in vs code](../static/img/deploying-a-script.png)
 
-## Next.js App
+## Next.js App on Vercel
 
 This example can be found in the `vercel` sub-folder.
 
