@@ -17,9 +17,16 @@ Runme, just like most Markdown viewers, will work best without ambiguity about w
     ```
 ```
 
-## Cell Execution
+Out of the box, Runme will leverage the [Guesslang](https://github.com/yoeo/guesslang) ML/AI model with a bias towards Shell to detect the languages for unidentified code blocks. While this works well in a lot of cases, the accuracy is nowhere near 100%.
 
-Not all commands are equal and expectations how execution works differs. Most commond cases are:
+
+## Getting the most out of Runme
+
+To get the best of RUNME, and to offer a fantastic README experience, RUNME has a cell configuration option, which allows you to indicate HOW the cell will be executed. The cell represents an execution block, usually shell commands.
+
+### Configure Cell's Execution
+
+Not all commands are equal and expectations of how execution works differ. The most common cases are:
 
 1. File-watchers for compilers & bundlers should run as background tasks
 2. Interactive vs non-interactive execution
@@ -28,10 +35,40 @@ Not all commands are equal and expectations how execution works differs. Most co
 
 Just click "Configure" on the respective cell to make modifications to the cell execution behavior.
 
-![Configure a Cell](../static/img/configure-cell.png)
+![Configure Cell's Execution in vs code](../static/img/configure-cell-execution.gif)
 
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
 
-Out of the box, Runme will leverage the [Guesslang](https://github.com/yoeo/guesslang) ML/AI model with a bias towards Shell to detect the languages for unidentified code blocks. While this works well in a lot of cases, the accuracy is nowhere near 100%.
+```sh
+```sh { interactive=false name=echo-hello-world }
+echo hello world ```
+```
+
+Try out the previous command
+
+```sh
+echo hello world
+```
+
+The entire configuration schema as an example
+
+```sh
+```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
+echo hello world ```
+```
+
+Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/main/examples) available inside the VS Code extension repo for a reference on how to apply these code block attributes in different use cases.
+
+### All available options
+
+| Configuration         | Description                                                    | Default value |
+| ------------ | ---------------------------------------------------------------| ------------- |
+|  background  | Indicates if the cell should be runned as a background process | false         |
+|  interactive | Indicates if run should allow interactive input                | false         |
+|  closeTerminalOnSuccess | Hide Terminal after cell successful execution       | true          |
+|  mimeType    |  Cell’s output content MIME type                               | text/plain    |
+|  name        | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
+
 
 ## Handle long-running processes
 

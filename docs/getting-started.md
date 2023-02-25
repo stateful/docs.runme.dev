@@ -206,57 +206,6 @@ Sometimes, you will want to see the file as a regular markdown file, and you don
 
 ![open a README file as a markdown file](../static/img/open-readme-file.gif)
 
-## Getting the best of Runme
-
-To get the best of RUNME, and to offer a fantastic README experience, RUNME has a cell configuration option, which allows you to indicate HOW the cell will be executed. The cell represents an execution block, usually shell commands.
-
-## Cell configuration
-
-### Options
-
-| Configuration         | Description                                                    | Default value |
-| ------------ | ---------------------------------------------------------------| ------------- |
-|  background  | Indicates if the cell should be runned as a background process | false         |
-|  interactive | Indicates if run should allow interactive input                | false         |
-|  closeTerminalOnSuccess | Hide Terminal after cell successful execution       | true          |
-|  mimeType    |  Cell’s output content MIME type                               | text/plain    |
-|  name        | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
-
-### Configure Cell's Execution
-
-Not all commands are equal and expectations of how execution works differ. The most common cases are:
-
-1. File-watchers for compilers & bundlers should run as background tasks
-2. Interactive vs non-interactive execution
-3. Human-centric output: JSON, text, images, etc
-4. Terminal visibility when no errors occur
-
-Just click "Configure" on the respective cell to make modifications to the cell execution behavior.
-
-![Configure Cell's Execution in vs code](../static/img/configure-cell-execution.gif)
-
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
-
-```sh
-```sh { interactive=false name=echo-hello-world }
-echo hello world ```
-```
-
-Try out the previous command
-
-```sh
-echo hello world
-```
-
-The entire configuration schema as an example
-
-```sh
-```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
-echo hello world ```
-```
-
-Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/main/examples) available inside the VS Code extension repo for a reference on how to apply these code block attributes in different use cases.
-
 ## Notebook Explorer
 
 To help you navigate the markdown files in your project, Runme adds this super handy “RUNME NOTEBOOKS” panel. Clicking any markdown file will open it in your code editor view.
