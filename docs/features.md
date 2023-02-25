@@ -5,12 +5,6 @@ title: Key Features
 
 # Key Features 🦾
 
-### Copy paste
-
-One of the best features of Runme is the ability to quickly copy commands (with the click of a button) out of a markdown file to paste into your terminal.
-
-![copy paste in runme](../static/img/feature-copy.png)
-
 ### Run a command
 
 To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
@@ -22,6 +16,12 @@ A succeeding exit code will be indicated with the small green checkbox seen belo
 ![checkmark when running a command](../static/img/check-mark-success.png)
 
 You can also open the terminal that did the execution by clicking the “Open Terminal” button as shown above with its PID.
+
+### Copy & paste
+
+Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a markdown file to paste into your terminal.
+
+![copy paste in runme](../static/img/feature-copy.png)
 
 ### Run all commands
 
@@ -37,15 +37,15 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 It’s easy to get from notebook to markdown and vice versa.
 
-**Open the notebook version**
+### Open the notebook version
 
 ![split view in vs code](../static/img/split-view.png)
 
-**Open the markdown version**
+### Open the markdown version
 
 ![markdown version](../static/img/markdown-version.png)
 
-### Summary:
+### Summary
 
 * Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
 * Leverage placeholder and prompts to have readers interactively complete ENV VARs
