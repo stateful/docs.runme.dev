@@ -146,7 +146,7 @@ And our code block will now display its output exactly as in the previous guide:
 
 [Frontmatter](https://jekyllrb.com/docs/front-matter/) is common occurrence in markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
 
-# Runme Settings for VS Code
+## Runme Settings for VS Code
 
 In the VS Code settings, several configurable settings influence general Runme behavior and enable experimental functionality.
 
