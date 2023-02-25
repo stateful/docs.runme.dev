@@ -7,11 +7,12 @@ title: Getting Started
 
 Copypasta menu is over.
 
-Ever wondered if there is a better way of experiencing READMEs; forget copy&pasting into terminals? Skip right to dessert, and enjoy Runme sweetness to streamline reading, running, and editing.
+Ever wondered if there is a better way of experiencing READMEs; forget copy&pasting into terminals? Skip right to dessert, and enjoy Runme sweetness to streamline reading, running, and editing or markdown docs.
 
 # Your First Runme
 
 You can get started in one click with the following badge:
+
 <!-- [![Run Locally via Runme](https://badgen.net/badge/Run%20this/Markdown/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&fileToOpen=docs/intro.md&repository=https://github.com/stateful/runme.dev.git) -->
 
 Simply follow the instructions provided by VS Code to get started in seconds:
@@ -21,7 +22,6 @@ Simply follow the instructions provided by VS Code to get started in seconds:
 Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
 
 If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/docs/cli)
-
 
 ## Running Scripts
 
@@ -187,6 +187,7 @@ Configuration fields like `background` and `interactive` are set using markdown'
 Be sure not to strip this data if you want to use it!
 
 <!-- ### Changing Language -->
+
 <!-- (TODO: show how to change language; need issues fixed for this since language selection is broken at the moment) -->
 
 ## Summary
