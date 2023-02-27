@@ -92,9 +92,9 @@ Please note that the Runme team is currently working on making output in both no
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
-## Human-friendly output: JSON, text, images, etc
+## Human-friendly output
 
-Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The MIME type defaults to *text/plain*.
+JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The MIME type defaults to *text/plain*.
 
 ![Human-centric output](../static/img/human-centric-output.png)
 
