@@ -413,6 +413,12 @@ p {
   bottom: 5px;
 }
 
+ol {
+  list-style-type: decimal;
+  margin-left: 2em;
+  margin-bottom: var(--ifm-leading);
+}
+
 .infobox {
   position: relative;
   border-radius: 4px;
