@@ -12,7 +12,7 @@ In this guide, you'll be exposed to a few examples of usages for Runme. Hopefull
 Go ahead and clone the `stateful/vscode-runme` repo:
 
 ```sh
-    git clone https://github.com/stateful/vscode-runme
+git clone https://github.com/stateful/vscode-runme
 ```
 
 These examples are from the `examples` sub-folder!
