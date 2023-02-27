@@ -39,11 +39,7 @@ Runme can also be used to establish local environment variables for the current 
 
 ![establish environmental variables in vs code](../static/img/environmental-variables-vs-code.png)
 
-### Warning!
-
-Environment variable support in Runme is currently largely a work in progress.
-
-We have a lot planned for supporting the environment/secrets in the future, so stay tuned!
+> 💡 Warning: Environment variable support in Runme is currently a work in progress. We have a lot planned for supporting the environment/secrets in the future, so stay tuned!
 
 ### Deploying
 
