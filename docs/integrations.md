@@ -57,9 +57,7 @@ Similar to the last example, we can do our setup, starting, and opening of the w
 
 ![setup environment in vs code](../static/img/setup-environment.png)
 
-### Sidenote
-
-In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
+> 💡 In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
 
 ### Authentication
 
@@ -77,8 +75,4 @@ In this case, this can be used to get a list of the user's current registered pr
 
 ![run hello world in vs code](../static/img/run-hello-world.gif)
 
-### Sidenote
-
-So what if you want to have both interactivity _and_ stay within the notebook?
-
-Unfortunately, making this work with VS Code is a challenge. We're working hard, however, to look for a good solution to this limitation. Stay tuned!
+> 💡 So what if you want to have both interactivity _and_ stay within the notebook? - Making this work with VS Code is a challenge. We are currently working on a solution to this limitation. Stay tuned!
