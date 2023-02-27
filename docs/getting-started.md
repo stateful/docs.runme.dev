@@ -188,23 +188,23 @@ Configuration fields like `background` and `interactive` are set using markdown'
 
 <!-- (TODO: show how to change language; need issues fixed for this since language selection is broken at the moment) -->
 
-## Summary
+## Great work!
 
-Hopefully, you now feel comfortable making your own notebooks!
+Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/stateful).
 
-In the next guide, you'll see some more practical examples, so you can get some ideas on how to use these tools in action.
+## Useful Tips & Tricks
 
-## How to ensure Runme is working properly?
+### How to ensure Runme is working properly?
 
 It’s easy. Open your project README file and see it is now opened as a Notebook file! Check that shell commands are now rendered as runnable blocks. That’s pretty nice. Finally, you’re seeing the future of running your README files now. We bet you won’t want to return to plain markdown viewers.
 
-## How to open a README file as a markdown file?
+### How to open a README file as a markdown file?
 
 Sometimes, you will want to see the file as a regular markdown file, and you don’t need to disable or uninstall RUNME. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or markdown preview for such cases.
 
 ![open a README file as a markdown file](../static/img/open-readme-file.gif)
 
-## Notebook Explorer
+### Notebook Explorer
 
 To help you navigate the markdown files in your project, Runme adds this super handy “RUNME NOTEBOOKS” panel. Clicking any markdown file will open it in your code editor view.
 
