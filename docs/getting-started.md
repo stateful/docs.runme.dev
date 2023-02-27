@@ -162,9 +162,7 @@ You can enable Background mode in the same foldout you configured Interactive mo
 
 ![Background Processes in vs code](../static/img/background-process-vs-code.png)
 
-### Warning!
-
-Background mode only works in tandem with Interactive mode!
+> ⚠️ Warning: Background mode only works in tandem with Interactive mode!
 
 Now, when you run the script, it will be part of a long-running terminal session:
 
@@ -178,13 +176,13 @@ Background Tasks also get a "Stop Task" button to end their execution long after
 
 ![stop task in background in vs code](../static/img/background-stop-task.png)
 
-### Sidenote
+### Markdown Script Metadata
 
 Configuration fields like `background` and `interactive` are set using markdown's script metadata feature:
 
 ![configuration of background vs code](../static/img/config-background.png)
 
-Be sure not to strip this data if you want to use it!
+> ⚠️ Warning: Be sure not to strip this data if you want to use it!
 
 <!-- ### Changing Language -->
 
