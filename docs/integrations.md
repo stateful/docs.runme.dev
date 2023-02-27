@@ -27,11 +27,7 @@ Runme makes setting up your local environment a breeze! Here, you can see a few 
 
 ![Runme Local Environment](../static/img/runme-local-enviroment.png)
 
-### Sidenote
-
-In a future version of Runme, we plan on only showing installers relevant to your current operating system/environment.
-
-Stay tuned!
+> 💡 In a future version of Runme, we plan on only showing installers relevant to your current operating system/environment. Stay tuned!
 
 ### Environment Variables
 
