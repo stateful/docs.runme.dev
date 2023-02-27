@@ -192,6 +192,8 @@ Configuration fields like `background` and `interactive` are set using markdown'
 
 Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/stateful).
 
+Please see the [integrations section](/docs/integrations) to see more sophisticated use-cases of Runme or learn about all the [cell configuration options](/docs/configuration) available to streamline the reading and running experience.
+
 ## Useful Tips & Tricks
 
 ### How to ensure Runme is working properly?
