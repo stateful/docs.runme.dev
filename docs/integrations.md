@@ -15,7 +15,7 @@ Go ahead and clone the `stateful/vscode-runme` repo:
 git clone https://github.com/stateful/vscode-runme
 ```
 
-These examples are from the `examples` sub-folder!
+These examples are from the `examples` [sub-folder](https://github.com/stateful/vscode-runme/tree/main/examples)!
 
 ## Fresh App on Deno Cloud
 
