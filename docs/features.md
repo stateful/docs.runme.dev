@@ -43,6 +43,24 @@ It’s easy to get from notebook to markdown and vice versa.
 
 ![markdown version](../static/img/markdown-version.png)
 
+### Run with Runme Link
+
+You can use Runme to on-board developers with a simple click on a button. It will trigger VS Code to clone a repository and open it for the user with a specific markdown file opened, e.g. an onboarding markdown file to have the user get started with the project:
+
+You can create such a link using the following structure:
+
+![Runme URL Schema Structure](../static/img/run-with-runme.png)
+
+You can put this as HTML link on any website, e.g.:
+
+```html
+<a href="vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md">Getting onboarded to Project</a>
+```
+
+You can also just have Runme check out any arbitrary markdown file accessible from the internet. This can be useful when designing tutorials for user to go through or if your documentation is not connected to any code. For this use case rmeove the `repository` parameter and have `fileToOpen` be an url to a raw markdown file that is publicly accessible.
+
+![Runme URL Schema Structure](../static/img/run-with-runme-gist.png)
+
 ### Summary
 
 * Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
