@@ -1,5 +1,6 @@
-import React from 'react'
 import { DiscordIcon, PurpleGhostFooterIcon } from "./Icons";
+
+import React from 'react'
 
 interface FooterLinkProps {
   name: string
@@ -100,7 +101,7 @@ export default function Footer() {
                   />
                 </svg>
               </div>
-              <div className="font-medium 3xl:text-lg">The developer happiness company.</div>
+              <div className="font-medium 3xl:text-lg">The ReadmeOps company.</div>
               <div className="flex flex-row items-center space-x-4">
                 <a href={"https://twitter.com/statefulhq"}>
                   <TwitterIcon />
@@ -113,12 +114,18 @@ export default function Footer() {
                 </a>
               </div>
             </div>
+            <div className="flex flex-col space-y-2 lg:space-y-3">
+              <FooterHeadline name="Documentation" />
+              <FooterLink name="Why Runme?" href="/docs/intro" />
+              <FooterLink name="Getting Started" href="/docs/getting-started" />
+              <FooterLink name="Key Features" href="/docs/features" />
+            </div>
 
             <div className="flex flex-col space-y-2 lg:space-y-3">
-              <FooterHeadline name="Projects" />
-              <FooterLink name="runme.dev" href="https://github.com/stateful/runme.dev" />
-              <FooterLink name="vscode-runme" href="https://github.com/stateful/vscode-runme" />
-              <FooterLink name="runme cli" href="https://github.com/stateful/runme" />
+              <FooterHeadline name="Code on Github" />
+              <FooterLink name="Runme Website" href="https://github.com/stateful/runme.dev" />
+              <FooterLink name="Runme Extension" href="https://github.com/stateful/vscode-runme" />
+              <FooterLink name="Runme CLI" href="https://github.com/stateful/runme" />
             </div>
             <div className="absolute right-0 pt-24 lg:right-32">
               <PurpleGhostFooterIcon />

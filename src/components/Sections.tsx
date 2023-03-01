@@ -238,7 +238,7 @@ export function Documentation() {
         </div>
         <div className="flex-row text-left">
           <h2 className="relative text-2xl lg:text-3xl tracking-[0.02em] font-bold mb-4 text-[color:var(--ifm-color-primary-dark)] dark:text-[color:var(--ifm-color-primary-more-lightest)]">
-            <a href="/docs/intro">Getting Started</a>
+            <a href="/docs/getting-started">Getting Started</a>
           </h2>
           <p className="text-xl">
             Learn how to install Runme as CLI or VS Code Extension.
