@@ -5,11 +5,9 @@ title: Why Runme?
 
 Thank you for interest in Runme 💟!
 
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our docs via Runme. Please don't be surprised if Runme's docs prompt you to use Runme. Learning by using is very effective.
-
 A well-written README can significantly impact time to get up and running on your projects, reduce onboarding time, and interactively document common development and operations workflows (runbooks). On the contrary, a poorly written README can negatively impact the visibility of your project, even if the underyling code of your software is in excellent condition. For new contributors, it can quickly become a very frustrating experience.
 
-The Runme team believes that even if you have textually excellent README.md, encouraging your users to experience it through the lens of Runme, your docs will be more reliable, less susceptible to bit-rot, and a lot more humanly ergnomic. All of which leeds to happier and more productive developers.
+The Runme team believes that even if you have textually excellent README.md, encouraging your users to experience it through the lens of Runme - literally running your docs, your docs will be more reliable, less susceptible to bit-rot, and a lot more humanly ergnomic. All of which leeds to happier and more productive developers.
 
 # What is Runme? 🤔​
 
@@ -38,8 +36,6 @@ Gaps in developer experience such as:
 Runme’s purpose is to enable developers to achieve a functional local development environment quickly, starting with copy&paste, click to run commands, and many more features. While [README.md](http://README.md) is the most well-known, there are several other markdown files often found in a repo that you may encounter, including;[ BUILD.md](http://BUILD.md), [CONTRIBUTING.md](http://CONTRIBUTING.md), and many more. Runme supports most `.md` and `.mdx` files!
 
 Make sure to [get in touch](https://discord.gg/BQm8zRCBUY) with us if you are missing a feature or have other ideas. You can review development progress in [Runme's roadmap](https://github.com/stateful/runme/projects).
-
-👩‍💻 As a VS Code user, just click here to *leverage Runme to run through this getting started guide*.
 
 ## 🛣 What's on the roadmap
 

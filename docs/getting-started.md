@@ -9,6 +9,8 @@ Copypasta menu is over.
 
 Ever wondered if there is a better way of experiencing READMEs; forget copy&pasting into terminals? Skip right to dessert, and enjoy Runme sweetness to streamline reading, running, and editing or markdown docs.
 
+Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our docs via Runme. Please don't be surprised if Runme's docs prompt you to use Runme. Learning by using is very effective.
+
 # Your First Runme
 
 You can get started in one click with the following badge:
