@@ -241,9 +241,10 @@ h1.text-white {
 }
 
 .navbar {
-  background-color: transparent;
-  position: absolute;
+  background-color: none;
+  position: sticky;
   top: 0;
+  z-index: 100;
   width: 100%;
 }
 
