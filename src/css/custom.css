@@ -44,6 +44,7 @@
   --runme-code-color: #0d003d;
   --runme-code-border: #bdcbff;
   --runme-code-background: #f4f5ff;
+  --runme-nav-background:#fff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -65,6 +66,7 @@ html[data-theme="dark"] {
   --runme-code-color: white;
   --runme-code-border: #737ea5;
   --runme-code-background: #33384d;
+  --runme-nav-background:#161821;
 }
 
 #vscode-bolt::after {
@@ -241,10 +243,16 @@ h1.text-white {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #0d003d;
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.docs-doc-page .navbar {
+  position: sticky;
+  background-color: var(--runme-nav-background);
+  z-index: 100;
 }
 
 .navbar__brand {
