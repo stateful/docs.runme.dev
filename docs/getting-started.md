@@ -3,6 +3,8 @@ sidebar_position: 3
 title: Getting Started
 ---
 
+import Infobox from "../src/components/Infobox.tsx"
+
 # Getting Started
 
 Copypasta menu is over.
@@ -35,8 +37,11 @@ To run a script, click the Run button on its left-hand side. Start by running th
 
 As you can see, we have downloaded the `business_data.csv` file, which contains business statistics about New Zealand in the years 2000-2021. It's a pretty big file!
 
-> In order for the set-up script to work, you'll need to have the `curl` and `unzip` utilities installed. The remainder of the scripts will also require `node.js` to be installed.
-> In a future version of Runme, we plan to provide a solution to help you manage these dependencies from within the notebook. Stay tuned!
+<Infobox type="warning">
+
+In order for the set-up script to work, you'll need to have the `curl` and `unzip` utilities installed. The remainder of the scripts will also require `node.js` to be installed. In a future version of Runme, we plan to provide a solution to help you manage these dependencies from within the notebook. Stay tuned!
+
+</Infobox>
 
 ## Command Output
 
@@ -106,11 +111,15 @@ Finally, you can remove a cell at any time using the "Remove Cell" button:
 
 Note that the usual shortcuts (like Ctrl + Z) work perfectly in this environment too!
 
-> You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
+<Infobox type="sidenote">
 
-> You can use Enter on its own to start editing a selected cell.
+You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
 
-> You can also use `CMD+Delete` to quickly remove a cell.
+You can use Enter on its own to start editing a selected cell.
+
+You can also use `CMD+Delete` to quickly remove a cell.
+
+</Infobox>
 
 ## Adding Code
 
@@ -164,7 +173,11 @@ You can enable Background mode in the same foldout you configured Interactive mo
 
 ![Background Processes in vs code](../static/img/background-process-vs-code.png)
 
-> ⚠️ Warning: Background mode only works in tandem with Interactive mode!
+<Infobox type="warning">
+
+Background mode only works in tandem with Interactive mode!
+
+</Infobox>
 
 Now, when you run the script, it will be part of a long-running terminal session:
 
@@ -184,7 +197,11 @@ Configuration fields like `background` and `interactive` are set using markdown'
 
 ![configuration of background vs code](../static/img/config-background.png)
 
-> ⚠️ Warning: Be sure not to strip this data if you want to use it!
+<Infobox type="warning">
+
+Be sure not to strip this data if you want to use it!
+
+</Infobox>
 
 <!-- ### Changing Language -->
 
@@ -210,6 +227,6 @@ Sometimes, you will want to see the file as a regular markdown file, and you don
 
 ### Notebook Explorer
 
-To help you navigate the markdown files in your project, Runme adds this super handy “RUNME NOTEBOOKS” panel. Clicking any markdown file will open it in your code editor view.
+To help you navigate the markdown files in your project, Runme adds a super handy "Runme Notebooks" panel. Clicking any markdown file will open it in your code editor view:
 
-![notebook explorer](../static/img/notebook-explorer.png)
+![notebook explorer](../static/img/runme-notebooks.png)

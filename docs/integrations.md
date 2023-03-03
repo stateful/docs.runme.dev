@@ -3,6 +3,8 @@ sidebar_position: 6
 title: Integrations
 ---
 
+import Infobox from "../src/components/Infobox.tsx"
+
 Previously, you learned the basic editing tools for creating and editing README files.
 
 In this guide, you'll be exposed to a few examples of usages for Runme. Hopefully, this helps inspire you to use Runme in interesting and useful ways!
@@ -27,7 +29,11 @@ Runme makes setting up your local environment a breeze! Here, you can see a few 
 
 ![Runme Local Environment](../static/img/runme-local-enviroment.png)
 
-> 💡 In a future version of Runme, we plan on only showing installers relevant to your current operating system/environment. Stay tuned!
+<Infobox type="sidenote">
+
+In a future version of Runme, we plan on only showing installers relevant to your current operating system/environment. Stay tuned!
+
+</Infobox>
 
 ### Environment Variables
 
@@ -35,7 +41,11 @@ Runme can also be used to establish local environment variables for the current 
 
 ![establish environmental variables in vs code](../static/img/environmental-variables-vs-code.png)
 
-> 💡 Warning: Environment variable support in Runme is currently a work in progress. We have a lot planned for supporting the environment/secrets in the future, so stay tuned!
+<Infobox type="warning">
+
+Environment variable support in Runme is currently a work in progress. We have a lot planned for supporting the environment/secrets in the future, so stay tuned!
+
+</Infobox>
 
 ### Deploying
 
@@ -53,7 +63,11 @@ Similar to the last example, we can do our setup, starting, and opening of the w
 
 ![setup environment in vs code](../static/img/setup-environment.png)
 
-> 💡 In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
+<Infobox type="sidenote">
+
+In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
+
+</Infobox>
 
 ### Authentication
 
@@ -71,4 +85,8 @@ In this case, this can be used to get a list of the user's current registered pr
 
 ![run hello world in vs code](../static/img/run-hello-world.gif)
 
-> 💡 So what if you want to have both interactivity _and_ stay within the notebook? - Making this work with VS Code is a challenge. We are currently working on a solution to this limitation. Stay tuned!
+<Infobox type="sidenote">
+
+So what if you want to have both interactivity _and_ stay within the notebook? - Making this work with VS Code is a challenge. We are currently working on a solution to this limitation. Stay tuned!
+
+</Infobox>
