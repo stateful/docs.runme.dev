@@ -6,7 +6,8 @@ import OrangeGhost from '../../static/svg/orange-ghost.svg'
 export type InfoboxType = 'warning'|'sidenote'
 
 interface InfoboxProps extends PropsWithChildren {
-  type: InfoboxType
+  type: InfoboxType,
+  title: string
 }
 
 const InfoboxData: Record<InfoboxType, { 
@@ -23,12 +24,13 @@ const InfoboxData: Record<InfoboxType, {
   },
 }
 
-export default function Infobox({ type, children }: InfoboxProps) {
-  const { title, Icon } = InfoboxData[type]
+export default function Infobox({ type, title, children }: InfoboxProps) {
+
+  const { title: typeTitle, Icon } = InfoboxData[type]
   
   return (
     <div className={`infobox infobox-${type}`}>
-      <h3 className="infobox-title">{title}</h3>
+      <h3 className="infobox-title">{title || typeTitle}</h3>
       <Icon 
         className="infobox-icon"
       />

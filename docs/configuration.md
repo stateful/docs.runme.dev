@@ -79,11 +79,27 @@ For any cell containing an instance of these commands be sure to tick the "backg
 
 Once ticked notice the "Background Task" label shows up in the cell status bar!
 
+**Default:** `false`
+
+**Example**
+
+    ```sh { background=true }
+    npm run watch
+    ```
+
 ## Interactive vs non-interactive cells
 
 If a cell's commands do not require any input from a reader it might be a good fit to include the cell's output inside the notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for, and it defaults to *true*.
 
 ![interactive execution in vs code](../static/img/interactive-execution.png)
+
+**Default:** `true`
+
+**Example**
+
+    ```sh { interactive=false }
+    openssl rand -base64 32
+    ```
 
 <Infobox type="sidenote">
 
@@ -94,6 +110,14 @@ Please note that the Runme team is currently working on making output in both no
 ## Terminal visibility post-execution
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
+
+**Default:** `true`
+
+**Example**
+
+    ```sh { closeTerminalOnSuccess=false }
+    docker ps | grep runme/demo:latest
+    ```
 
 ## Human-friendly output
 
