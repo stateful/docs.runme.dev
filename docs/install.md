@@ -49,6 +49,22 @@ Download a binary from runme CLI [release page](https://github.com/degrammer/run
 
 Binaries are offered for Windows, MacOS, and Linux
 
-## The TLDR
+## Runme as Default Markdown Viewer
 
-Install the VS Code runme extension just like every other VS Code extension, open any `.md` / `.mdx` file in VS Code with commands, then click to run them (and much more). Then go create your own custom runnable markdown files!
+Install the VS Code Runme extension just like every other VS Code extension, open any `.md` / `.mdx` file in VS Code with commands, then click to run them (and much more). Then go create your own custom runnable markdown files! If you like to use Runme as your default markdown file viewer in VS Code, follow these steps:
+
+1. Right-click on any `*.md` or `*.mdx` file in the explorer window (in the directory file list, not under "Open Editors").
+1. Pick "Open With"
+1. Pick "configure default editor" at the bottom of the list
+1. Pick "Run your README.md - Runme"
+
+or set the following in your `/.vscode/settings.json` file of your project:
+
+```json
+  // ...
+  "workbench.editorAssociations": {
+    "*.md": "runme"
+    // ...
+  },
+  // ...
+```
