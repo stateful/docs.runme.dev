@@ -35,6 +35,8 @@ If you have Go developer tools installed, you can install it with go install:
 $ go install github.com/stateful/runme@latest
 ```
 
+If you don't have go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
+
 ### All other platforms
 
 You can find a binary for your OS/arch on our [releases page](https://github.com/stateful/runme/releases). Let us know on [Discord](https://discord.com/invite/BQm8zRCBUY) if you have a preferred distribution mechanism.

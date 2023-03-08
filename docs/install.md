@@ -3,12 +3,6 @@ sidebar_position: 2
 title: Install Extension
 ---
 
-# Install Runme
-
-While VS Code extension and CLI can be used separately, consider installing both to get the most out of GUI and TUI experiences, respectively.
-
-## The VS Code Extension
-
 Open the `Extensions Tab` in the VS Code sidebar and search for **"Runme"**.
 
 ![install runme gif](../static/img/install.gif)
@@ -16,26 +10,6 @@ Open the `Extensions Tab` in the VS Code sidebar and search for **"Runme"**.
 Alternatively, you can go to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and click the green `Install` button.
 
 That's it. Now, any time you open a Markdown file (`*.md` or `*.mdx`) it will open as a Runme notebook.
-
-## The Command Line Interface
-
-On macOS you can install Runme via Homebrew.sh which receives regular updates:
-
-```sh
-    $ brew install stateful/tap/runme
-```
-
-If you don’t have homebrew, you can download it from [here](https://github.com/degrammer/runme-getting-started/blob/main/img/https:/brew.sh). Follow all the instructions and ensure brew is added to your PATH.
-
-Alternatively, check out [runme's releases](https://github.com/stateful/runme/releases) and select a binary for your OS/arch. Let us know [on Discord](https://discord.gg/stateful) if you have a preferred distribution mechanism.
-
-With Go dev tools installed, you can install `Runme` with `go install`:
-
-```sh
-$ go install github.com/stateful/runme@latest
-```
-
-If you don't have go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
 
 ## Pre-release: Test drive new features early
 
