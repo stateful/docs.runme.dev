@@ -68,3 +68,7 @@ or set the following in your `/.vscode/settings.json` file of your project:
   },
   // ...
 ```
+
+You can also switch by just doing a right-click on the file and go to `"Open With ..."`, e.g.:
+
+![Find runme in vs code](../static/img/switch-notebook-viewers.gif)
