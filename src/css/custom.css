@@ -482,3 +482,6 @@ ol {
 .markdown a {
   color: var(--ifm-color-content-secondary);
 }
+html[data-theme="dark"] .markdown a {
+  color: var(--ifm-color-primary);
+}
