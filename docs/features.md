@@ -61,6 +61,14 @@ You can also just have Runme check out any arbitrary markdown file accessible fr
 
 ![Runme URL Schema Structure](../static/img/run-with-runme-gist.png)
 
+By adding the following badge to your `Readme.md`, developers will be able to check out your project with a simple click:
+
+    [![](https://badgen.net/badge/Run%20this%20/README/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git%40github.com%3Astateful%2Frunme.git)
+
+Which will result in:
+
+[![](https://badgen.net/badge/Run%20this%20/README/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git%40github.com%3Astateful%2Frunme.git)
+
 ### Summary
 
 * Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
