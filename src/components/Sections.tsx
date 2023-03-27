@@ -120,7 +120,7 @@ export function HowItWorks() {
             className="mx-auto rounded-lg shadow-2xl select-none"
             width={"100%"}
             height={"100%"}
-            src="https://www.youtube.com/embed/XbYeeMC2oao"
+            src="https://www.youtube.com/embed/0RpCmDV4wZg"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
