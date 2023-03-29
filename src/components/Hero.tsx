@@ -28,7 +28,7 @@ export function Hero() {
       </div>
       <div className="z-10 select-none bg-[#0D003D]">
         <div >
-        <a className="text-lg hover:underline" href="https://stateful.com/events/runme-v1-launch">RSVP for the Runme v1.0 Launch 🎉</a>
+        <a className="text-lg hover:underline" href="https://stateful.com/blog/readmeops-testing-docs-in-ci">💡 Runme v1.0 is finally available! Click to Learn more.</a>
         </div>
         <h2 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em] min-h-[100px] sm:min-h-full">
           Run your{" "}
@@ -57,8 +57,8 @@ export function Hero() {
         <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" alt="Runme Demo" />
       </div>
       <h4 className="px-4 text-xl font-semibold text-black dark:text-white">
-        <a href="https://www.stateful.com/blog/runme-road-to-reliable-docs">
-          Learn about v1.0 roadmap and 🔥 new features
+        <a href="https://stateful.com/blog/readmeops-testing-docs-in-ci">
+          Learn about Runme v1.0 and 🔥 how it enables ReadmeOps
           <svg className="inline pl-2" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#5B3ADF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
