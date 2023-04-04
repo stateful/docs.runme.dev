@@ -9,15 +9,15 @@ If you like to quickly checkout a GitHub project from your browser, you can use 
 
 The web extension adds Runme links to the following places:
 
-#### Local Clone Section
+### Local Clone Section
 
 ![Runme Link in Local Clone Section](../static/img/web-extension/list.png)
 
-#### Markdown Title Header
+### Markdown Title Header
 
 ![Runme Link in Markdown Title Header](../static/img/web-extension/markdown.png)
 
-#### Code Sections
+### Code Sections
 
 ![Runme Link in Code Sections](../static/img/web-extension/code.png)
 
