@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '@docusaurus/Head'
 
-import { title, imageUrl, description, previewImages } from '../pages/constants'
+import { title, imageUrl, description, previewImages } from '@site/src/pages/constants'
 
 const DEFAULT_META_TAGS = { title, imageUrl, description, previewImages }
 

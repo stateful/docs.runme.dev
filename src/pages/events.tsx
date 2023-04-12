@@ -10,8 +10,6 @@ export default function Home() {
   const title = 'Runme Community Events'
   const description = 'Join us in our bi-weekly Runme community meetings and let us have a chat on Runme and the DevX space as a whole'
 
-  console.log(EventsHero);
-
   return (
     <Layout
       title={title}
