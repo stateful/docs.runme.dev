@@ -485,3 +485,7 @@ ol {
 html[data-theme="dark"] .markdown a {
   color: var(--ifm-color-primary);
 }
+
+.events {
+  background: white;
+}
