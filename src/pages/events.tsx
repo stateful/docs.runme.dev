@@ -8,7 +8,7 @@ import { EventsHero } from '@site/src/components/Hero'
 export default function Home() {
   const bgImage = 'https://runme.dev/svg/community-events.svg'
   const title = 'Runme Community Events'
-  const description = 'Join us in our bi-weekly Runme community meetings and let us have a chat on Runme and the DevX space as a whole'
+  const description = 'Join us in our Runme community meetings and let us have a chat on Runme and the DevX space as a whole'
 
   return (
     <Layout
