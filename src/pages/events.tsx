@@ -1,5 +1,5 @@
-import React from 'react';
-import Layout from '@theme/Layout';
+import React from 'react'
+import Layout from '@theme/Layout'
 
 import Meta from '@site/src/components/Meta'
 import Footer from '@site/src/components/Footer'
@@ -14,14 +14,16 @@ export default function Home() {
     <Layout
       title={title}
       description={description}
-      wrapperClassName="main events"
+      wrapperClassName="main"
     >
       <Meta title={title} description={description} imageUrl={bgImage} previewImages={[bgImage]} />
       <EventsHero />
-      <iframe
-        src="https://notioniframe.com/notion/wfwbs2chcc"
-        style={{ width: '100%', height: '100vh', border: 0, padding: 0 }}>
-      </iframe>
+      <div className="relative overflow-x-hidden events">
+        <iframe
+          src="https://notioniframe.com/notion/wfwbs2chcc"
+          style={{ width: '100%', height: '100vh', border: 0, padding: 0 }}>
+        </iframe>
+      </div>
       <Footer />
     </Layout>
   );
