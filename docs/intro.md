@@ -54,11 +54,11 @@ Review development progress in [Runme's roadmap](https://github.com/stateful/run
 * Notebook UX tweaks and integrations for both authors and users
 * And more - tell us about your feature request [on Discord](https://discord.gg/stateful)
 
-### Known limitations
+### ⚠️ Known limitations
 
-* Be cautious with environment variables interleaved within code blocks. The stateful execution of the notebooks (shell/bash-only; no PowerShell on Windows yet) leverages a naive implementation where the VS Code extension prompts for ENV var values and attempts to expand them. In essence, it does not match an interactive bash/shell session (yet).
-* We continue experimenting with aspects of user/developer experience including the passing of information/variables from cell to cell, ENV var handling that more closely matches shell a session and more robust markdown handling.
-* Please report any issues you encounter to help us mature Runme.
+* Runme currently only has rudimentary PowerShell on Windows (or any other platform).
+* As of v1, Runme introduced terminal-session-like stateful execution.
+* Please report any issues you encounter big or small to help us make Runme better.
 
 ## 💡 Telemetry for improvements
 
