@@ -41,8 +41,6 @@ Runme’s purpose is to enable developers to achieve a functional local developm
 
 Make sure to [get in touch](https://discord.gg/stateful) with us if you are missing a feature or have other ideas.
 
-You can review development progress in [Runme's roadmap](https://github.com/stateful/runme/projects).
-
 </Infobox>
 
 ## 🛣 What's on the roadmap
