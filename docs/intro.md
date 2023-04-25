@@ -52,11 +52,11 @@ Review development progress in [Runme's roadmap](https://github.com/stateful/run
 * Notebook UX tweaks and integrations for both authors and users
 * And more - tell us about your feature request [on Discord](https://discord.gg/stateful)
 
-### ⚠️ Known limitations
+## ⚠️ Known limitations
 
 * Runme currently only has rudimentary PowerShell on Windows (or any other platform).
 * As of v1, Runme introduced terminal-session-like stateful execution.
-* Please report any issues you encounter big or small to help us make Runme better.
+* Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter big or small to help us make Runme better.
 
 ## 💡 Telemetry for improvements
 
