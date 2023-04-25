@@ -160,7 +160,7 @@ const config = {
             className: "githubLink",
           },
           {
-            href: "https://discord.gg/BQm8zRCBUY",
+            href: "https://discord.gg/stateful",
             label: "Join our Discord",
             position: "right",
             className: "discordLink",

@@ -109,7 +109,7 @@ export default function Footer() {
                 <a href={"https://github.com/stateful"}>
                   <GithubIcon />
                 </a>
-                <a href={"https://discord.gg/BQm8zRCBUY"}>
+                <a href={"https://discord.gg/stateful"}>
                   <DiscordIcon />
                 </a>
               </div>

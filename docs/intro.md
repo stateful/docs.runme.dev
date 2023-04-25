@@ -39,7 +39,7 @@ Runme’s purpose is to enable developers to achieve a functional local developm
 
 <Infobox type="sidenote" title="Join Runme community!">
 
-Make sure to [get in touch](https://discord.gg/BQm8zRCBUY) with us if you are missing a feature or have other ideas.
+Make sure to [get in touch](https://discord.gg/stateful) with us if you are missing a feature or have other ideas.
 
 You can review development progress in [Runme's roadmap](https://github.com/stateful/runme/projects).
 

@@ -314,7 +314,7 @@ export function FinalCta() {
           <span className="text-2xl font-semibold">Install the extension</span>
         </a>
         <a
-          href="https://discord.gg/BQm8zRCBUY"
+          href="https://discord.gg/stateful"
           className="flex items-center justify-center px-12 rounded-[60px] text-base leading-[0px] font-semibold space-x-3"
         >
           <DiscordIcon />
