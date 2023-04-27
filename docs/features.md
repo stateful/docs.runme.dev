@@ -3,7 +3,35 @@ sidebar_position: 7
 title: Key Features
 ---
 
-### Run a command
+## Runme UX
+
+Easily switch between different views.
+
+### Open the notebook version
+
+![split view in vs code](../static/img/split-view.png)
+
+### Open the markdown version
+
+![markdown version](../static/img/markdown-version.png)
+
+## Markdown Editor
+
+### Run a command block
+
+It's super convenient to run one-off command blocks, right from the raw markdown. What's even more convenient about is that changes to to environment persist across runs and when switching back and forth between markdown and notebook views.
+
+![run a command in vs code](../static/img/runme-editor-run.png)
+
+### Open block in notebook
+
+Jump right into your Markdown's notebook view at the respective block from your editor view.
+
+![run a command in vs code](../static/img/runme-open-in-notebook.png)
+
+## Runme Notebook
+
+### Run a command block
 
 To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
 
@@ -21,7 +49,7 @@ Outside of literally running commands, Runme offers the ability to quickly copy 
 
 ![copy paste in runme](../static/img/feature-copy.png)
 
-### Run all commands
+### Run all command blocks
 
 To run all the commands in the notebook in the order they are found, you can click the “Run All” button.
 
@@ -34,14 +62,6 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 ### Split view of markdown and notebook
 
 It’s easy to get from notebook to markdown and vice versa.
-
-### Open the notebook version
-
-![split view in vs code](../static/img/split-view.png)
-
-### Open the markdown version
-
-![markdown version](../static/img/markdown-version.png)
 
 ### Run with Runme Deep Linking
 
