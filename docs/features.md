@@ -43,7 +43,7 @@ It’s easy to get from notebook to markdown and vice versa.
 
 ![markdown version](../static/img/markdown-version.png)
 
-### Run with Runme Link
+### Run with Runme Deep Linking
 
 You can use Runme to on-board developers with a simple click on a button. It will trigger VS Code to clone a repository and open it for the user with a specific markdown file opened, e.g. an onboarding markdown file to have the user get started with the project:
 
