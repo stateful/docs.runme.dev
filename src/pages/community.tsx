@@ -30,7 +30,7 @@ export default function Community() {
           <div className="flex flex-col space-y-4">
             <h3 className="text-3xl">Benefits</h3>
             <div>
-              <ul className="text-2xl">
+              <ul className="text-2xl leading-relaxed">
                 <li>Stay up to date with new features and functionality</li>
                 <li>Connect with other developers about their tools</li>
                 <li>Shape the Runme roadmap and priorities</li>
