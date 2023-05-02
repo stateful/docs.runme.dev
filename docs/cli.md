@@ -27,7 +27,7 @@ Install runme
 $ brew install stateful/tap/runme
 ```
 
-Alternatively, check out runme's [releases](https://github.com/stateful/runme/releases) and select a binary for your operating system. Let us know [on Discord](https://discord.gg/stateful) if you have a different preferred distribution mechanism.
+Alternatively, check out runme's [releases](https://github.com/stateful/runme/releases) and select a binary for your operating system. Let us know [on Discord](https://discord.gg/runme) if you have a different preferred distribution mechanism.
 
 If you have Go developer tools installed, you can install it with go install:
 
@@ -54,7 +54,9 @@ Runme has a nice TUI that you can use simply like so:
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
 You can use the `--chdir` flag to alter this behavior, without changing the environment's working directory.
+
 <!-- (TODO: better gif) -->
+
 This allows you to quickly execute any script present in the README.
 
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
@@ -80,12 +82,12 @@ Runme parses every shell or bash code block of a markdown file and allows you to
      -v, --version           version for runme
 ```
 
-
 By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
 
 ```sh
 runme ls --filename SUPPORT.md --chdir ./.github
 ```
+
 ## Running Script Directly
 
 The TUI is nice, but what if you just want to run a specific command quickly?
