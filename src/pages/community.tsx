@@ -10,9 +10,8 @@ const linkClasses =
 
 export default function Community() {
   const bgImage = "https://runme.dev/svg/community-events.svg";
-  const title = "Runme Community Events";
-  const description =
-    "Join us in our Runme community meetings and let us have a chat on Runme and the DevX space as a whole";
+  const title = "Community";
+  const description = "Join the Runme Community!";
 
   return (
     <Layout title={title} description={description} wrapperClassName="main">
