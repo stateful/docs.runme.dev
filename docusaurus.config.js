@@ -5,7 +5,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const siteName = "Runme.dev";
-const twitterHandle = "@stateful";
+const twitterHandle = "@statefulhq";
 const prodUrl = "https://runme.dev";
 const keywords = [
   "runme",
