@@ -130,7 +130,7 @@ const config = {
         { name: "twitter:site", content: twitterHandle },
         { property: "og:site_name", content: siteName },
         { property: "og:url", content: prodUrl },
-        { property: "og:type", content: "website" }
+        { property: "og:type", content: "website" },
       ],
       navbar: {
         logo: {
@@ -160,7 +160,7 @@ const config = {
             className: "githubLink",
           },
           {
-            href: "https://discord.gg/stateful",
+            href: "https://discord.gg/runme",
             label: "Join our Discord",
             position: "right",
             className: "discordLink",
@@ -174,17 +174,18 @@ const config = {
       /**
        * credentials available in 1password
        */
-      ...(process.env.ALGOLIA_API_KEY && process.env.ALGOLIA_INDEX_NAME && process.env.ALGOLIA_APP_ID
+      ...(process.env.ALGOLIA_API_KEY &&
+      process.env.ALGOLIA_INDEX_NAME &&
+      process.env.ALGOLIA_APP_ID
         ? {
-          algolia: {
-            apiKey: process.env.ALGOLIA_API_KEY,
-            indexName: process.env.ALGOLIA_INDEX_NAME,
-            appId: process.env.ALGOLIA_APP_ID
+            algolia: {
+              apiKey: process.env.ALGOLIA_API_KEY,
+              indexName: process.env.ALGOLIA_INDEX_NAME,
+              appId: process.env.ALGOLIA_APP_ID,
+            },
           }
-        }
-        : {}
-      ),
-    })
+        : {}),
+    }),
 };
 
 module.exports = config;

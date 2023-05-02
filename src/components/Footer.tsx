@@ -1,10 +1,10 @@
 import { DiscordIcon, PurpleGhostFooterIcon } from "./Icons";
 
-import React from 'react'
+import React from "react";
 
 interface FooterLinkProps {
-  name: string
-  href: string
+  name: string;
+  href: string;
 }
 
 export default function Footer() {
@@ -36,15 +36,27 @@ export default function Footer() {
 
   const FooterHeadline = ({ name }: { name: string }) => {
     return (
-      <div className="pb-2 mt-6 text-lg font-semibold text-gray-300 uppercase md:mt-0">{name}</div>
+      <div className="pb-2 mt-6 text-lg font-semibold text-gray-300 uppercase md:mt-0">
+        {name}
+      </div>
     );
   };
 
   return (
     <footer className="relative overflow-y-hidden">
       <div className="absolute w-full z-[-1] h-full sm:h-auto">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1567 897" fill="none" preserveAspectRatio="none">
-          <path d="M1578 896.989L-7.4906 896.989L-7.49068 44.8957C-75.1214 51.3969 323.888 0.000109638 793.757 6.85607e-05C1253.97 2.83275e-05 1578 44.8956 1578 44.8956L1578 896.989Z" fill="#000726" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="100%"
+          viewBox="0 0 1567 897"
+          fill="none"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1578 896.989L-7.4906 896.989L-7.49068 44.8957C-75.1214 51.3969 323.888 0.000109638 793.757 6.85607e-05C1253.97 2.83275e-05 1578 44.8956 1578 44.8956L1578 896.989Z"
+            fill="#000726"
+          />
         </svg>
       </div>
       <div className="relative p-6 pt-24 pb-32 text-white">
@@ -101,7 +113,9 @@ export default function Footer() {
                   />
                 </svg>
               </div>
-              <div className="font-medium 3xl:text-lg">The ReadmeOps company.</div>
+              <div className="font-medium 3xl:text-lg">
+                The ReadmeOps company.
+              </div>
               <div className="flex flex-row items-center space-x-4">
                 <a href={"https://twitter.com/statefulhq"}>
                   <TwitterIcon />
@@ -109,7 +123,7 @@ export default function Footer() {
                 <a href={"https://github.com/stateful"}>
                   <GithubIcon />
                 </a>
-                <a href={"https://discord.gg/stateful"}>
+                <a href={"https://discord.gg/runme"}>
                   <DiscordIcon />
                 </a>
               </div>
@@ -123,9 +137,18 @@ export default function Footer() {
 
             <div className="flex flex-col space-y-2 lg:space-y-3">
               <FooterHeadline name="Code on Github" />
-              <FooterLink name="Runme Website" href="https://github.com/stateful/runme.dev" />
-              <FooterLink name="Runme Extension" href="https://github.com/stateful/vscode-runme" />
-              <FooterLink name="Runme CLI" href="https://github.com/stateful/runme" />
+              <FooterLink
+                name="Runme Website"
+                href="https://github.com/stateful/runme.dev"
+              />
+              <FooterLink
+                name="Runme Extension"
+                href="https://github.com/stateful/vscode-runme"
+              />
+              <FooterLink
+                name="Runme CLI"
+                href="https://github.com/stateful/runme"
+              />
             </div>
             <div className="absolute right-0 pt-24 lg:right-32">
               <PurpleGhostFooterIcon />

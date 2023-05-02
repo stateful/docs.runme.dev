@@ -167,7 +167,7 @@ In the VS Code settings, several configurable settings influence general Runme b
 
 Suppose that you have a script that intends to run in the background (like a dev watcher). To simulate this now, we'll use the script `sleep 10000`.
 
-You *could* run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
+You _could_ run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
@@ -209,7 +209,7 @@ Be sure not to strip this data if you want to use it!
 
 ## Great work!
 
-Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/stateful).
+Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
 
 Please see the [integrations section](/docs/integrations) to see more sophisticated use-cases of Runme or learn about all the [cell configuration options](/docs/configuration) available to streamline the reading and running experience.
 
