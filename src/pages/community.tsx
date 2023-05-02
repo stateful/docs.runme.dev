@@ -5,11 +5,13 @@ import Meta from "@site/src/components/Meta";
 import Footer from "@site/src/components/Footer";
 import { DiscordIcon } from "../components/Icons";
 
+const linkClasses =
+  "font-bold text-blue-500 hover:text-blue-500 hover:underline";
+
 export default function Community() {
   const bgImage = "https://runme.dev/svg/community-events.svg";
-  const title = "Runme Community Events";
-  const description =
-    "Join us in our Runme community meetings and let us have a chat on Runme and the DevX space as a whole";
+  const title = "Community";
+  const description = "Join the Runme Community!";
 
   return (
     <Layout title={title} description={description} wrapperClassName="main">
@@ -22,11 +24,22 @@ export default function Community() {
 
       <div className="pb-16 pt-36">
         <div className="relative text-center">
-          <h3 className="text-6xl font-bold">Runme Community</h3>
+          <h3 className="text-6xl font-semibold">Runme Community 👋</h3>
         </div>
         <div className="flex flex-col w-2/3 py-24 mx-auto space-y-6">
           <div className="flex flex-col space-y-4">
-            <div className="flex flex-row items-center space-x-2">
+            <h3 className="text-3xl">Benefits</h3>
+            <div>
+              <ul className="text-2xl">
+                <li>Stay up to date with new features and functionality</li>
+                <li>Connect with other developers about their tools</li>
+                <li>Shape the Runme roadmap and priorities</li>
+                <li>Exposure to early showcases and proof of concepts</li>
+                <li>Help and support to get Runme working for you!</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-row items-center pt-8 space-x-2">
               <h3 className="text-3xl">Discord</h3>
               <DiscordIcon />
             </div>
@@ -38,10 +51,7 @@ export default function Community() {
               contribute.
             </div>
             <div className="text-xl">
-              <a
-                className="font-bold text-blue-500 hover:text-blue-500 hover:underline"
-                href="https://discord.gg/runme"
-              >
+              <a className={linkClasses} href="https://discord.gg/runme">
                 Join the Runme Discord
               </a>
             </div>
@@ -65,11 +75,11 @@ export default function Community() {
           </div>
 
           <div className="flex flex-col space-y-4">
-            <h3 className="text-3xl">Newsletter</h3>
+            <h3 className="text-3xl">Mailing list</h3>
             <div>
-              We curate a newsletter about Runme and other DX related topics, we
-              email infrequently, you can unsubscribe at any time and we try to
-              keep the content focused and useful.
+              A newsletter of Runme articles and other cool topics, we email
+              infrequently, you can unsubscribe at any time and we try to keep
+              the content focused and useful.
             </div>
             <div className="text-xl">
               <a
@@ -79,6 +89,62 @@ export default function Community() {
                 Join the Newsletter
               </a>
             </div>
+          </div>
+
+          <div className="flex flex-col space-y-4">
+            <h3 className="text-3xl">Open Source</h3>
+            <div>
+              Runme is comprised of a few different code repositories on Github
+              and we work hard to make them approachable by eating our own
+              dogfood. We really want to support contributors, so give it a try
+              and don't be afraid to ask for help.
+            </div>
+            <table>
+              <tr>
+                <td>
+                  <a
+                    className={linkClasses}
+                    href="https://github.com/stateful/runme.dev"
+                  >
+                    runme.dev
+                  </a>
+                </td>
+                <td>The project website and documentation.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    className={linkClasses}
+                    href="https://github.com/stateful/runme"
+                  >
+                    stateful/runme
+                  </a>
+                </td>
+                <td>The Go server and CLI interface.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    className={linkClasses}
+                    href="https://github.com/stateful/vscode-runme"
+                  >
+                    stateful/vscode-runme
+                  </a>
+                </td>
+                <td>The VS Code extension.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    className={linkClasses}
+                    href="https://github.com/stateful/runme-action"
+                  >
+                    stateful/runme-action
+                  </a>
+                </td>
+                <td>A GitHub action to run Runme in CI.</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
