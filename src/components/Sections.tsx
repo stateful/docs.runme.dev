@@ -107,7 +107,7 @@ export function Benefits() {
         <Feature
           text="Colocated with Code"
           icon={<RunCommandIcon />}
-          description="Avoid drifts and easily share what otherwise remains buried in contributors .bash_history"
+          description="Avoid drifts and easily share what otherwise remains buried in .bash_history's"
         />
         <Feature
           text="Leverage Existing Task Definitions"
