@@ -5,7 +5,11 @@ import CommunityEvents from '../../static/svg/community-events.svg'
 export function Hero() {
   const sequence = [
     ['pauseFor', 500],
-    ['typeString', '<i>Runme</i>.md'],
+    ['typeString', 'Tasks!'],
+    ['pauseFor', 1500],
+    ['deleteAll'],
+    ['pauseFor', 2500],
+    ['typeString', 'Workflows!'],
     ['pauseFor', 1500],
     ['deleteAll'],
     ['pauseFor', 2500],
@@ -28,30 +32,27 @@ export function Hero() {
         </svg>
       </div>
       <div className="z-10 select-none bg-[#0D003D]">
-        <div>
-          <a className="text-lg hover:underline" href="https://stateful.com/blog/readmeops-testing-docs-in-ci">💡 Runme v1.0 is finally available! Click to Learn more.</a>
-        </div>
         <h2 className="text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-[0.03em] min-h-[100px] sm:min-h-full">
           Run your{" "}
           <TypeWriter sequence={sequence} />
         </h2>
         <h3 className="py-4 text-2xl">
-          <span id="everything-underline" className="relative whitespace-nowrap">Everything</span> a markdown file can do and way more.{' '}
-          No changes required.
+          A Next-Gen{' '}
+          <span id="everything-underline" className="relative whitespace-nowrap">Workflow Runner</span> for Development Workflows & Environments
         </h3>
         <div className="flex flex-col items-center justify-center py-4 space-y-8">
           <a
-            href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
+            href="/docs/intro"
             className="bg-[color:var(--ifm-color-primary)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
           >
-            Install the extension
+            Learn more
           </a>
 
-          <p className="">
+          {/* <p className="">
             or search{" "}
             <span className="rounded-[6px] font-bold text-white border border-solid border-[color:var(--ifm-color-primary)] p-1.5 font-mono mx-2">runme</span> in
             the VS Code extension panel
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[900px] 2xl:max-w-[1000px]">
@@ -59,16 +60,7 @@ export function Hero() {
           <source src="/videos/intro.mp4" type="video/mp4" />
           <source src="/videos/intro.webm" type="video/webm" />
         </video>
-        {/* <img src="/img/intro.gif" className="rounded-lg shadow-2xl select-none" alt="Runme Demo" /> */}
       </div>
-      <h4 className="px-4 text-xl font-semibold text-black dark:text-white">
-        <a href="https://stateful.com/blog/readmeops-testing-docs-in-ci">
-          Learn about Runme v1.0 🔥
-          <svg className="inline pl-2" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#5B3ADF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </a>
-      </h4>
     </div>
   );
 }
@@ -86,7 +78,7 @@ export function EventsHero() {
 export function CommunityHero() {
   return (
     <div className="mt-[60px] bg-cover bg-[url('/img/community/splash.png')] bg-[color:#0D003D] bg-no-repeat bg-center relative space-y-12 text-center text-white community-header">
-      <div className="mt-12 mx-auto w-2/3 text-left pb-32 pt-12 lg:pb-64 lg:pt-24">
+      <div className="w-2/3 pt-12 pb-32 mx-auto mt-12 text-left lg:pb-64 lg:pt-24">
         <h2 className="[text-shadow:_0px_0px_5px_#b393d3,_0px_0px_10px_#0D003D,_0px_0px_10px_#b393d3,_0px_0px_20px_#b393d3] pb-8 text-5xl xl:text-6xl 2xl:text-8xl font-bold tracking-[0.03em]">
           Runme Community
         </h2>
