@@ -86,7 +86,7 @@ export function EventsHero() {
 export function CommunityHero() {
   return (
     <div className="mt-[60px] bg-cover bg-[url('/img/community/splash.png')] bg-[color:#0D003D] bg-no-repeat bg-center relative space-y-12 text-center text-white community-header">
-      <div className="mt-12 mx-auto w-2/3 text-left pb-32 pt-12">
+      <div className="mt-12 mx-auto w-2/3 text-left pb-32 pt-12 lg:pb-64 lg:pt-24">
         <h2 className="[text-shadow:_0px_0px_5px_#b393d3,_0px_0px_10px_#0D003D,_0px_0px_10px_#b393d3,_0px_0px_20px_#b393d3] pb-8 text-5xl xl:text-6xl 2xl:text-8xl font-bold tracking-[0.03em]">
           Runme Community
         </h2>
