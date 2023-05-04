@@ -489,3 +489,16 @@ html[data-theme="dark"] .markdown a {
 .events {
   background: white;
 }
+
+.community-header:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-style: solid;
+  border-width: 0 100vw 60px 0;
+  border-color: transparent white transparent transparent;
+  transform: scale(1, -1);
+}

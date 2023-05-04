@@ -82,3 +82,21 @@ export function EventsHero() {
     </div>
   )
 }
+
+export function CommunityHero() {
+  return (
+    <div className="mt-[60px] bg-cover bg-[url('/img/community/splash.png')] bg-[color:#0D003D] bg-no-repeat bg-center relative pt-24 space-y-12 text-center text-white community-header">
+      <div className="mt-12 mx-auto h-[700px] w-2/3 text-left">
+        <h2 className="[text-shadow:_0px_0px_5px_#b393d3,_0px_0px_10px_#0D003D,_0px_0px_10px_#b393d3,_0px_0px_20px_#b393d3] pb-8 text-5xl xl:text-6xl 2xl:text-8xl font-bold tracking-[0.03em]">
+          Runme Community
+        </h2>
+        <h3 className="py-2 [text-shadow:_0px_0px_5px_#0D003D,_0px_0px_10px_#0D003D,_0px_0px_20px_#0D003D,_0px_0px_30px_#0D003D,_0px_0px_50px_#0D003D,_0px_0px_70px_#0D003D] text-2xl">📰 Stay up to date with new features and functionality</h3>
+        <h3 className="py-2 [text-shadow:_0px_0px_5px_#0D003D,_0px_0px_10px_#0D003D,_0px_0px_20px_#0D003D,_0px_0px_30px_#0D003D,_0px_0px_50px_#0D003D,_0px_0px_70px_#0D003D] text-2xl">🤝 Connect with other developers about their tools</h3>
+        <h3 className="py-2 [text-shadow:_0px_0px_5px_#0D003D,_0px_0px_10px_#0D003D,_0px_0px_20px_#0D003D,_0px_0px_30px_#0D003D,_0px_0px_50px_#0D003D,_0px_0px_70px_#0D003D] text-2xl">🚀 Shape the Runme roadmap and priorities</h3>
+        <h3 className="py-2 [text-shadow:_0px_0px_5px_#0D003D,_0px_0px_10px_#0D003D,_0px_0px_20px_#0D003D,_0px_0px_30px_#0D003D,_0px_0px_50px_#0D003D,_0px_0px_70px_#0D003D] text-2xl">👀 Exposure to early showcases and proof of concepts</h3>
+        <h3 className="py-2 [text-shadow:_0px_0px_5px_#0D003D,_0px_0px_10px_#0D003D,_0px_0px_20px_#0D003D,_0px_0px_30px_#0D003D,_0px_0px_50px_#0D003D,_0px_0px_70px_#0D003D] text-2xl">🎉 Help and support to get Runme working for you!</h3>
+      </div>
+    </div>
+  );
+}
+
