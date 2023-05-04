@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import Meta from "@site/src/components/Meta";
 import Footer from "@site/src/components/Footer";
 import { DiscordIcon } from "../components/Icons";
+import { CommunityHero } from '../components/Hero';
 
 const linkClasses =
   "font-bold text-blue-500 hover:text-blue-500 hover:underline";
@@ -21,24 +22,11 @@ export default function Community() {
         imageUrl={bgImage}
         previewImages={[bgImage]}
       />
+      <CommunityHero />
 
-      <div className="pb-16 pt-36">
-        <div className="relative text-center">
-          <h3 className="text-6xl font-semibold">Runme Community 👋</h3>
-        </div>
+      <div className="pb-16">
         <div className="flex flex-col w-2/3 py-24 mx-auto space-y-6">
           <div className="flex flex-col space-y-4">
-            <h3 className="text-3xl">Benefits</h3>
-            <div>
-              <ul className="text-2xl leading-relaxed">
-                <li>Stay up to date with new features and functionality</li>
-                <li>Connect with other developers about their tools</li>
-                <li>Shape the Runme roadmap and priorities</li>
-                <li>Exposure to early showcases and proof of concepts</li>
-                <li>Help and support to get Runme working for you!</li>
-              </ul>
-            </div>
-
             <div className="flex flex-row items-center pt-8 space-x-2">
               <h3 className="text-3xl">Discord</h3>
               <DiscordIcon />
