@@ -37,8 +37,8 @@ export function Hero() {
           <TypeWriter sequence={sequence} />
         </h2>
         <h3 className="py-4 text-2xl">
-          A Markdown-Native{' '}
-          <span id="everything-underline" className="relative whitespace-nowrap">Workflow Runner</span> for Next-Gen Dev Environments
+          A Next-Gen{' '}
+          <span id="everything-underline" className="relative whitespace-nowrap">Workflow Runner</span> for Development Workflows & Environments
         </h3>
         <div className="flex flex-col items-center justify-center py-4 space-y-8">
           <a
