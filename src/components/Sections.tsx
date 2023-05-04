@@ -48,8 +48,8 @@ export function Feature(props: FeatureProps) {
   return (
     <div className="lg:w-[520px] lg:odd:ml-auto p-4 flex flex-col justify-end space-y-6">
       <div>{icon}</div>
-      <h1 className="font-bold text-[28px]">{text}</h1>
-      {description && <p className="text-2xl">{description}</p>}
+      <h1 className="font-bold text-[22px]">{text}</h1>
+      {description && <p className="text-xl">{description}</p>}
     </div>
   );
 }
@@ -67,6 +67,92 @@ export function Repo({ url, name, description }: RepoProps) {
         {name}
       </a>
       <div>{description}</div>
+    </div>
+  );
+}
+
+export function Benefits() {
+  return (
+    <div className="max-w-[1440px] my-16 mx-auto px-12 py-6 flex flex-col items-center">
+      <div className="space-y-4 text-center md:space-y-8">
+        <h1
+          id="arrows-graphic"
+          className="lg:max-w-min mx-auto whitespace-nowrap relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold"
+        >
+          How it works
+        </h1>
+        <div className="lg:whitespace-nowrap">
+          <p className="text-2xl leading-9 text-center">
+            Express and share dev workflows
+            <br className="sm:hidden md:block lg:hidden" />
+            <span id="vscode-bolt" className="relative">
+              {" "}
+              in Markdown️
+            </span>
+            {" "}already ubiquitous in code repos
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-24 lg:grid 2xl:gap-1">
+        <Feature
+          text="Human-friendly DX"
+          icon={<CloudNativeNotebookIcon />}
+          description="Turn BUILD.md, DEV.md, and README.md into an interactive control plane"
+        />
+        <Feature
+          text="Portable & Reliable"
+          icon={<NotebookIcon />}
+          description="Run command blocks while simultaneously following along documented steps"
+        />
+        <Feature
+          text="Colocated with Code"
+          icon={<RunCommandIcon />}
+          description="Avoid drifts and easily share what otherwise remains buried in contributors .bash_history"
+        />
+        <Feature
+          text="Leverage Existing Task Definitions"
+          icon={<CopyButtonIcon />}
+          description="100%-compatible with NPM Scripts, Ruby Rake, Makefile, Gradle, etc"
+        />
+        <Feature
+          text="Break out of The Terminal"
+          icon={<ShellIcon />}
+          description="Leverage rich web interactivity without leaving the terminal behind"
+        />
+        <Feature
+          text="Test Workflows in CI/CD"
+          icon={<VariablesIcon />}
+          description="Always keep your contributors productive and detect breakages ahead of time"
+        />
+      </div>
+      {/* <div className="w-full mt-12 lg:mt-24">
+        <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
+          <iframe
+            className="mx-auto rounded-lg shadow-2xl select-none"
+            width={"100%"}
+            height={"100%"}
+            src="https://www.youtube.com/embed/0RpCmDV4wZg"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div> */}
+      <div className="w-full mt-12 lg:mt-24">
+        <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
+          <iframe
+            className="mx-auto rounded-lg shadow-2xl select-none"
+            width={"100%"}
+            height={"100%"}
+            src="https://www.youtube.com/embed/0RpCmDV4wZg"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }
