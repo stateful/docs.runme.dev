@@ -161,7 +161,7 @@ const config = {
           },
           {
             href: "https://discord.gg/runme",
-            label: "Join our Discord",
+            label: "Join our Community",
             position: "right",
             className: "discordLink",
           },

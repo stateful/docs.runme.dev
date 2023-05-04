@@ -591,7 +591,7 @@ export function FinalCta() {
         >
           <DiscordIcon />
           <span className="text-lg sm:text-xl tracking-[0.08em] whitespace-nowrap">
-            Join our Discord
+            Join our Community
           </span>
           <PurpleRightArrow />
         </a>

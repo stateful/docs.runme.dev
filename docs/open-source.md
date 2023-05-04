@@ -19,4 +19,4 @@ You can also follow Runme's [roadmap](https://github.com/orgs/stateful/projects)
 
 ## Getting help
 
-We encourage you to log [issues in Github](https://github.com/stateful/runme/issues), or [join our Discord](https://discord.gg/runme) - we look forward to hearing what you have to say.
+We encourage you to log [issues in Github](https://github.com/stateful/runme/issues), or [Join our Community](https://discord.gg/runme) - we look forward to hearing what you have to say.
