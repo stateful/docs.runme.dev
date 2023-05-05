@@ -83,46 +83,46 @@ export function Benefits() {
         </h1>
         <div className="lg:whitespace-nowrap">
           <p className="text-2xl leading-9 text-center">
-            Express and share dev workflows
+            Express workflows
             <br className="sm:hidden md:block lg:hidden" />
             <span id="vscode-bolt" className="relative">
               {" "}
               in Markdown️
             </span>
-            {" "}already ubiquitous in code repos
+            {" "}ubiquitous in docs inside source code repos
           </p>
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-24 lg:grid 2xl:gap-1">
         <Feature
-          text="Human-friendly DX"
+          text="Fuse Docs with Workflows & Tasks"
           icon={<CloudNativeNotebookIcon />}
-          description="Turn BUILD.md, DEV.md, and README.md into an interactive control plane"
+          description="Built upon Markdown. Turn BUILD.md, DEV.md, README.md, etc into interactive control planes. No changes required and 100%-compatible."
         />
         <Feature
-          text="Portable & Reliable"
+          text="Human-centric Developer Experience"
           icon={<NotebookIcon />}
-          description="Run command blocks while simultaneously following along documented steps"
+          description="Run command blocks while simultaneously following along documented steps and their reasoning; interoperably in a GUI or a CLI."
         />
         <Feature
           text="Colocated with Code"
           icon={<RunCommandIcon />}
-          description="Avoid drifts and easily share what otherwise remains buried in .bash_history's"
+          description="Avoid drifts and easily share tasks and workflows that otherwise remains buried in .bash_history's. Make workflows truly portable within your team."
         />
         <Feature
-          text="Leverage Existing Task Definitions"
+          text="Uplevel Existing Task Definitions"
           icon={<CopyButtonIcon />}
-          description="100%-compatible with NPM Scripts, Ruby Rake, Makefile, Gradle, etc"
+          description="Out of the box works with NPM Scripts, Ruby Rake, Makefile, Gradle, etc. Unleash the best of the written word paired with executable commands."
         />
         <Feature
           text="Break out of The Terminal"
           icon={<ShellIcon />}
-          description="Leverage rich web interactivity without leaving the terminal behind"
+          description="Rich web interactivity without leaving the terminal behind. Have forms, graph, tables, etc render visually without breaking the CLI."
         />
         <Feature
           text="Test Workflows in CI/CD"
           icon={<VariablesIcon />}
-          description="Always keep your contributors productive and detect breakages ahead of time"
+          description="Avoid frustration for your repo's contributors detecting breakages ahead of time. Leverage git workflows to introduce changes."
         />
       </div>
       {/* <div className="w-full mt-12 lg:mt-24">
