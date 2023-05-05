@@ -112,7 +112,7 @@ export function Benefits() {
         <Feature
           text="Uplevel Existing Task Definitions"
           icon={<CopyButtonIcon />}
-          description="Out of the box works with NPM Scripts, Ruby Rake, Makefile, Gradle, etc. Unleash the best of the written word paired with executable commands."
+          description="Out of the box works with NPM Scripts, Ruby Rake, Makefile, Gradle, etc. Unleash the best of the written word paired with runnable docs."
         />
         <Feature
           text="Break out of The Terminal"
