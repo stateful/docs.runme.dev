@@ -8,11 +8,11 @@ const Bar3Icon = () => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      stroke-width="2"
+      strokeWidth="2"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className="cursor-pointer"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -30,11 +30,11 @@ const XIcon = () => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      stroke-width="2"
+      strokeWidth="2"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <line x1="18" y1="6" x2="6" y2="18" />
@@ -60,7 +60,7 @@ const RepoIcon = () => {
 const DiscordIcon = () => {
   return (
     <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_669_2376)">
+      <g clipPath="url(#clip0_669_2376)">
         <path d="M18.7261 2.38863C17.3662 1.76217 15.908 1.30062 14.3834 1.03627C14.3556 1.03116 14.3279 1.04391 14.3136 1.06941C14.126 1.40431 13.9183 1.84122 13.7728 2.18462C12.133 1.93812 10.5016 1.93812 8.89532 2.18462C8.74982 1.83358 8.53455 1.40431 8.34617 1.06941C8.33187 1.04476 8.30413 1.03201 8.27636 1.03627C6.75256 1.29977 5.29435 1.76132 3.93369 2.38863C3.92191 2.39373 3.91181 2.40224 3.90511 2.41328C1.1392 6.56219 0.381505 10.6091 0.753206 14.6059C0.754888 14.6254 0.76582 14.6441 0.780958 14.656C2.60583 16.0016 4.37352 16.8184 6.10839 17.3599C6.13616 17.3684 6.16558 17.3582 6.18325 17.3352C6.59363 16.7726 6.95945 16.1792 7.27311 15.5553C7.29162 15.5188 7.27395 15.4754 7.23612 15.461C6.65586 15.24 6.10334 14.9705 5.57186 14.6645C5.52982 14.6399 5.52646 14.5795 5.56513 14.5506C5.67697 14.4665 5.78885 14.3789 5.89564 14.2905C5.91496 14.2744 5.94189 14.2709 5.96461 14.2811C9.45622 15.8817 13.2363 15.8817 16.6867 14.2811C16.7095 14.2701 16.7364 14.2735 16.7565 14.2897C16.8634 14.3781 16.9752 14.4665 17.0879 14.5506C17.1266 14.5795 17.124 14.6399 17.082 14.6645C16.5505 14.9765 15.998 15.24 15.4169 15.4601C15.3791 15.4746 15.3622 15.5188 15.3808 15.5553C15.7011 16.1784 16.067 16.7717 16.4698 17.3344C16.4866 17.3582 16.5169 17.3684 16.5446 17.3599C18.2879 16.8184 20.0556 16.0016 21.8805 14.656C21.8965 14.6441 21.9065 14.6263 21.9082 14.6067C22.3531 9.98603 21.1631 5.97229 18.7538 2.41413C18.7479 2.40224 18.7378 2.39373 18.7261 2.38863ZM7.79452 12.1723C6.74331 12.1723 5.87713 11.2033 5.87713 10.0132C5.87713 8.82322 6.72651 7.85422 7.79452 7.85422C8.87092 7.85422 9.72871 8.83173 9.71188 10.0132C9.71188 11.2033 8.86251 12.1723 7.79452 12.1723ZM14.8837 12.1723C13.8326 12.1723 12.9664 11.2033 12.9664 10.0132C12.9664 8.82322 13.8157 7.85422 14.8837 7.85422C15.9602 7.85422 16.8179 8.83173 16.8011 10.0132C16.8011 11.2033 15.9602 12.1723 14.8837 12.1723Z" fill="currentColor" />
       </g>
       <defs>
@@ -75,7 +75,7 @@ const DiscordIcon = () => {
 const RedRightArrow = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
-      <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#F62459" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#F62459" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 };
@@ -83,7 +83,7 @@ const RedRightArrow = () => {
 const PurpleRightArrow = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
-      <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#5b39df" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2 8.5C7.07682 8.5 19 8.5 19 8.5M19 8.5L12.5 2M19 8.5L12.5 15" stroke="#5b39df" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 };
@@ -91,14 +91,14 @@ const PurpleRightArrow = () => {
 const PurpleGhostFooterIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="138" viewBox="0 0 120 138" fill="none">
-      <g clip-path="url(#clip0_1236_1076)">
+      <g clipPath="url(#clip0_1236_1076)">
         <path d="M61.3862 44.0918C59.4821 47.4822 53.8122 45.8348 52.4679 46.2757C45.2919 56.7823 42.0085 53.3419 32.0454 51.6479C21.7447 59.7977 11.9622 48.2997 12.7283 37.5695C6.29954 28.5297 6.60755 14.075 18.3007 9.78197C31.2569 3.01546 36.2596 9.76188 47.1288 8.49161C55.81 7.60377 63.897 17.1152 58.6081 25.0898C59.748 31.1643 65.71 38.3113 61.3862 44.0918L61.3862 44.0918Z" fill="#A900D2" />
         <path d="M56.9771 40.0441C55.0731 43.4345 49.4032 41.787 48.0589 42.2279C40.8828 52.7345 37.5994 49.2942 27.6364 47.6002C17.3356 55.75 7.55318 44.252 8.31921 33.5217C1.89047 24.482 4.47161 7.19652 14.0371 3.46743C27.6516 -1.84019 31.8505 5.71415 42.7197 4.44389C51.4009 3.55605 59.4879 13.0675 54.199 21.0421C55.3389 27.1166 61.3009 34.2636 56.9771 40.0441L56.9771 40.0441Z" fill="#E476FF" />
         <path d="M27.1857 20.2762C26.223 19.9655 25.7872 18.6366 26.2124 17.308C26.6376 15.9794 27.7628 15.1542 28.7255 15.4649C29.6883 15.7756 30.124 17.1045 29.6988 18.4331C29.2736 19.7617 28.1485 20.5869 27.1857 20.2762Z" fill="#0D003D" />
         <path d="M16.7287 16.9008C15.7659 16.5902 15.3302 15.2612 15.7554 13.9326C16.1806 12.604 17.3058 11.7788 18.2685 12.0895C19.2313 12.4002 19.667 13.7291 19.2418 15.0577C18.8166 16.3864 17.6914 17.2115 16.7287 16.9008Z" fill="#0D003D" />
         <path d="M23.0556 25.0369L18.7734 23.6568C18.2524 23.4888 17.9194 24.1036 18.1865 24.7348C19.0185 26.7009 20.5733 29.9953 21.7634 30.2964C23.0372 30.6187 23.5156 27.6545 23.6764 26.1302C23.7254 25.6659 23.441 25.1612 23.0556 25.037L23.0556 25.0369Z" fill="#0D003D" />
       </g>
-      <path d="M2.33013 83.6649C-2.47989 101.243 69.3145 81.7485 78.9876 85.6936C88.6607 89.6387 23.6705 109.65 35.5725 109.187C47.4745 108.724 114.047 98.4698 117.049 128.304" stroke="#42FCCC" stroke-width="4" stroke-linecap="round" />
+      <path d="M2.33013 83.6649C-2.47989 101.243 69.3145 81.7485 78.9876 85.6936C88.6607 89.6387 23.6705 109.65 35.5725 109.187C47.4745 108.724 114.047 98.4698 117.049 128.304" stroke="#42FCCC" strokeWidth="4" strokeLinecap="round" />
       <defs>
         <clipPath id="clip0_1236_1076">
           <rect width="57.4031" height="52.9009" fill="white" transform="matrix(-0.999189 0.0402678 0.0402678 0.999189 61.3594 0)" />
@@ -118,22 +118,22 @@ const GithubIcon = () => {
 const RunCommandIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
-      <line x1="2" y1="49" x2="48" y2="49" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" />
-      <path d="M15 2V33.3333L40.4583 17.6667L15 2Z" stroke="#3693FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="2" y1="49" x2="48" y2="49" stroke="#FFDB06" strokeWidth="4" strokeLinecap="round" />
+      <path d="M15 2V33.3333L40.4583 17.6667L15 2Z" stroke="#3693FF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 };
 const NotebookIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="58" viewBox="0 0 50 58" fill="none">
-      <line x1="2" y1="56" x2="48" y2="56" stroke="#5B3ADF" stroke-width="4" stroke-linecap="round" />
-      <g clip-path="url(#clip0_1262_1115)">
-        <path d="M7.29297 11.4583L10.418 14.5833L15.6263 9.375" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M7.29297 23.9583L10.418 27.0833L15.6263 21.875" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M7.29297 36.4583L10.418 39.5833L15.6263 34.375" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M22.918 12.5H41.668" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M22.918 25H41.668" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M22.918 37.5H41.668" stroke="#FF906E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="2" y1="56" x2="48" y2="56" stroke="#5B3ADF" strokeWidth="4" strokeLinecap="round" />
+      <g clipPath="url(#clip0_1262_1115)">
+        <path d="M7.29297 11.4583L10.418 14.5833L15.6263 9.375" stroke="#FF906E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7.29297 23.9583L10.418 27.0833L15.6263 21.875" stroke="#FF906E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M7.29297 36.4583L10.418 39.5833L15.6263 34.375" stroke="#FF906E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M22.918 12.5H41.668" stroke="#FF906E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M22.918 25H41.668" stroke="#FF906E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M22.918 37.5H41.668" stroke="#FF906E" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </g>
       <defs>
         <clipPath id="clip0_1262_1115">
@@ -146,10 +146,10 @@ const NotebookIcon = () => {
 const ShellIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 50 55" fill="none">
-      <line x1="2" y1="53" x2="48" y2="53" stroke="#42FCCC" stroke-width="4" stroke-linecap="round" />
-      <g clip-path="url(#clip0_1262_1116)">
-        <path d="M10.418 14.5833L20.8346 24.9999L10.418 35.4166" stroke="#5B3ADF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M27.082 35.4167H39.582" stroke="#5B3ADF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="2" y1="53" x2="48" y2="53" stroke="#42FCCC" strokeWidth="4" strokeLinecap="round" />
+      <g clipPath="url(#clip0_1262_1116)">
+        <path d="M10.418 14.5833L20.8346 24.9999L10.418 35.4166" stroke="#5B3ADF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M27.082 35.4167H39.582" stroke="#5B3ADF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </g>
       <defs>
         <clipPath id="clip0_1262_1116">
@@ -162,9 +162,9 @@ const ShellIcon = () => {
 const CloudNativeNotebookIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="64" viewBox="0 0 50 64" fill="none">
-      <line x1="2" y1="62" x2="48" y2="62" stroke="#3693FF" stroke-width="4" stroke-linecap="round" />
-      <g clip-path="url(#clip0_1262_1117)">
-        <path d="M13.8701 45.8333C8.51172 45.8333 4.16797 41.6521 4.16797 36.4938C4.16797 31.3375 8.51172 27.1563 13.8701 27.1563C14.6888 23.4854 17.6076 20.4896 21.5263 19.2958C25.443 18.1042 29.768 18.8938 32.868 21.3708C35.968 23.85 37.3721 27.6354 36.5555 31.3063H38.618C42.6034 31.3063 45.8346 34.5563 45.8346 38.5688C45.8346 42.5833 42.6034 45.8333 38.6159 45.8333H13.8701" stroke="#42FCCC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="2" y1="62" x2="48" y2="62" stroke="#3693FF" strokeWidth="4" strokeLinecap="round" />
+      <g clipPath="url(#clip0_1262_1117)">
+        <path d="M13.8701 45.8333C8.51172 45.8333 4.16797 41.6521 4.16797 36.4938C4.16797 31.3375 8.51172 27.1563 13.8701 27.1563C14.6888 23.4854 17.6076 20.4896 21.5263 19.2958C25.443 18.1042 29.768 18.8938 32.868 21.3708C35.968 23.85 37.3721 27.6354 36.5555 31.3063H38.618C42.6034 31.3063 45.8346 34.5563 45.8346 38.5688C45.8346 42.5833 42.6034 45.8333 38.6159 45.8333H13.8701" stroke="#42FCCC" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </g>
       <defs>
         <clipPath id="clip0_1262_1117">
@@ -177,10 +177,10 @@ const CloudNativeNotebookIcon = () => {
 const CopyButtonIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="63" viewBox="0 0 50 63" fill="none">
-      <line x1="2" y1="61" x2="48" y2="61" stroke="#FF7761" stroke-width="4" stroke-linecap="round" />
-      <g clip-path="url(#clip0_1262_1119)">
-        <path d="M37.5013 22.5H20.8346C18.5334 22.5 16.668 24.3655 16.668 26.6667V43.3333C16.668 45.6345 18.5334 47.5 20.8346 47.5H37.5013C39.8025 47.5 41.668 45.6345 41.668 43.3333V26.6667C41.668 24.3655 39.8025 22.5 37.5013 22.5Z" stroke="#E476FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M33.332 22.5001V18.3334C33.332 17.2283 32.893 16.1685 32.1116 15.3871C31.3302 14.6057 30.2704 14.1667 29.1654 14.1667H12.4987C11.3936 14.1667 10.3338 14.6057 9.55242 15.3871C8.77102 16.1685 8.33203 17.2283 8.33203 18.3334V35.0001C8.33203 36.1051 8.77102 37.165 9.55242 37.9464C10.3338 38.7278 11.3936 39.1667 12.4987 39.1667H16.6654" stroke="#E476FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="2" y1="61" x2="48" y2="61" stroke="#FF7761" strokeWidth="4" strokeLinecap="round" />
+      <g clipPath="url(#clip0_1262_1119)">
+        <path d="M37.5013 22.5H20.8346C18.5334 22.5 16.668 24.3655 16.668 26.6667V43.3333C16.668 45.6345 18.5334 47.5 20.8346 47.5H37.5013C39.8025 47.5 41.668 45.6345 41.668 43.3333V26.6667C41.668 24.3655 39.8025 22.5 37.5013 22.5Z" stroke="#E476FF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M33.332 22.5001V18.3334C33.332 17.2283 32.893 16.1685 32.1116 15.3871C31.3302 14.6057 30.2704 14.1667 29.1654 14.1667H12.4987C11.3936 14.1667 10.3338 14.6057 9.55242 15.3871C8.77102 16.1685 8.33203 17.2283 8.33203 18.3334V35.0001C8.33203 36.1051 8.77102 37.165 9.55242 37.9464C10.3338 38.7278 11.3936 39.1667 12.4987 39.1667H16.6654" stroke="#E476FF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </g>
       <defs>
         <clipPath id="clip0_1262_1119">
@@ -193,10 +193,10 @@ const CopyButtonIcon = () => {
 const VariablesIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="55" viewBox="0 0 50 55" fill="none">
-      <line x1="2" y1="53" x2="48" y2="53" stroke="#E476FF" stroke-width="4" stroke-linecap="round" />
-      <g clip-path="url(#clip0_1262_1118)">
-        <path d="M10.418 10C5.20964 20.4167 5.20964 27.5 10.418 40M39.5846 10C44.793 20.4167 44.793 27.5 39.5846 40M18.7513 18.75H20.8346C22.918 18.75 22.918 20.8333 25.0346 26.0979C27.0846 31.25 27.0846 33.3333 29.168 33.3333H31.2513" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M16.668 33.3333C19.793 33.3333 22.918 29.1667 25.0013 26.0417C27.0846 22.9167 30.2096 18.75 33.3346 18.75" stroke="#FFDB06" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="2" y1="53" x2="48" y2="53" stroke="#E476FF" strokeWidth="4" strokeLinecap="round" />
+      <g clipPath="url(#clip0_1262_1118)">
+        <path d="M10.418 10C5.20964 20.4167 5.20964 27.5 10.418 40M39.5846 10C44.793 20.4167 44.793 27.5 39.5846 40M18.7513 18.75H20.8346C22.918 18.75 22.918 20.8333 25.0346 26.0979C27.0846 31.25 27.0846 33.3333 29.168 33.3333H31.2513" stroke="#FFDB06" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M16.668 33.3333C19.793 33.3333 22.918 29.1667 25.0013 26.0417C27.0846 22.9167 30.2096 18.75 33.3346 18.75" stroke="#FFDB06" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </g>
       <defs>
         <clipPath id="clip0_1262_1118">

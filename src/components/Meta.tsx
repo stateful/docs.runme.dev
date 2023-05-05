@@ -21,7 +21,7 @@ export default function MetaTags (props: Partial<typeof DEFAULT_META_TAGS>) {
       <meta property="og:description" content={meta.description} />
       <meta property="twitter:description" content={meta.description} />
       {meta.previewImages.map((imageUrl) => (
-        <meta property="og:image" content={imageUrl} />
+        <meta property="og:image" content={imageUrl} key={imageUrl} />
       ))}
     </Head>
   )
