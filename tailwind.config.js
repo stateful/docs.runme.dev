@@ -18,6 +18,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        purpleish: {
+          100: "var(--ifm-color-primary)",
+          200: "var(--ifm-color-primary-darker)"
+        },
         covey: {
           50: "#FFF4F7",
           100: "#FEE9EE",
