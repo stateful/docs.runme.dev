@@ -79,20 +79,18 @@ export function Hero() {
             </div>
           </a>
         </div>
-        <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">
+        <div className="flex flex-col items-center justify-center py-2 space-y-1 text-xs text-gray-300 md:space-x-2 md:flex-row md:space-y-0">
           <QuickShell command={"npx runme"} />
           <span className="hidden md:block"> • </span>
           <QuickShell command={"brew install stateful/tap/runme"} />
-          <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">
           <span className="hidden md:block"> • </span>
-
           <a
             href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
             className="font-medium underline cursor-pointer hover:underline hover:brightness-150"
           >
             VS Code Extension
           </a>
-        </div>
+     
         </div>
   
       </div>
