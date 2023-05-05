@@ -20,7 +20,7 @@ export function QuickShell({ command }) {
         <span className="text-cyan-400">Copied to clipboard 👍</span>
       ) : (
         <span
-          className="font-mono cursor-pointer hover:underline"
+          className="font-mono cursor-pointer hover:underline hover:brightness-150"
           onClick={() => {
             copyCmd();
           }}
