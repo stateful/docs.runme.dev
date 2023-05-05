@@ -53,16 +53,16 @@ export function Hero() {
         </svg>
       </div>
       <div className="z-10 select-none bg-[#0D003D]">
-        <div className="max-w-3xl py-4 mx-auto ">
+        <div className="max-w-5xl py-4 mx-auto ">
           <h3 className="text-4xl leading-snug md:text-5xl">
             The <span className="font-semibold">Next-Gen</span>{" "}
             <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-fuchsia-500">
               Runner
             </span>{" "}
-            for development workflows.
+            for dev workflows.
           </h3>
           <div className="py-2 font-mono text-lg font-gray-200">
-            Markdown-native tools to express workflows for your apps & services.
+            A markdown-native toolkit to express workflows for your apps & services.
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export function Hero() {
             href="https://marketplace.visualstudio.com/items?itemName=stateful.runme"
             className="font-medium underline cursor-pointer hover:underline hover:brightness-150"
           >
-            VS Code Extension
+            Runme for VS Code
           </a>
      
         </div>
