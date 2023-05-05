@@ -53,7 +53,7 @@ export function Hero() {
         </div>
         <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">
           <QuickShell command={'npx runme'} />
-          <span className="hidden md:block">|</span>
+          <span className="hidden md:block">↔️</span>
           <QuickShell command={'brew install stateful/tap/runme'} />
         </div>
         <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">
