@@ -32,9 +32,9 @@ export default function TypeWriter (props: TypeWriterProps) {
     ref.current?.querySelector('.Typewriter__cursor')?.remove()
   })
   const cursorStyle = {
-    '-webkit-animation': 'Typewriter-cursor 1s infinite',
+    'WebkitAnimation': 'Typewriter-cursor 1s infinite',
     animation: 'Typewriter-cursor 1s infinite',
-    'margin-left': '1px'
+    'marginLeft': '1px'
   }
 
   return (
