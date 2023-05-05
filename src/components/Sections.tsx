@@ -96,15 +96,15 @@ export function Benefits() {
   return (
     <div className="max-w-[1440px] my-16 mx-auto px-12 py-6 flex flex-col items-center">
       <div className="space-y-4 text-center md:space-y-8">
-               
+
         <h2 className="text-5xl font-bold tracking-[0.03em]">
           Run your{" "}
           <TypeWriter sequence={sequence} />
         </h2>
 
-      
+
         <div className="text-2xl">
-           Replace your scripts and makefiles with an experience made for humans.
+           Augment your scripts and makefiles with an experience made for humans.
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
