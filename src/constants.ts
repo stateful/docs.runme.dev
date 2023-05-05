@@ -1,7 +1,7 @@
 export const title = "Runme: Run your Readme.md";
 export const imageUrl = "https://runme.dev/img/unfurl.gif";
 export const description =
-  "Runme is a VS Code extension that transparently opens markdown files as runnable VS Code notebooks so that repo maintainers can annotate code blocks to enhance the interactive runbook-like experience.";
+  "Runme is a next-gen runner that uses markdown to express workflows for your apps & services to make developer experience reliable and portable. Runme comes with a command line interface and a first-class integration into VS Code";
 export const previewImages = [
   "https://runme.dev/img/unfurl.gif",
   "https://runme.dev/img/sidebyside.png",
