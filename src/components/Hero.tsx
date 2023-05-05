@@ -3,19 +3,27 @@ import CommunityEvents from '../../static/svg/community-events.svg'
 import { useState } from 'react';
 import copy from 'copy-to-clipboard';
 
-const brewText = "brew install stateful/tap/runme";
-
-export function Hero() {
+export function QuickShell({ command }) {
   const [copied, setCopied] = useState(false);
 
-  const copyBrew = () => {
-    copy(brewText);
+  const copyCmd = () => {
+    copy(command);
     setCopied(true)
-    setTimeout(()=> {
+    setTimeout(() => {
       setCopied(false)
     }, 5000)
   }
 
+  return (
+    <>
+      {copied ? <span className="text-cyan-400">Copied to clipboard 👍</span> : <span className="font-mono cursor-pointer hover:underline" onClick={() => {
+        copyCmd()
+      }}>$ {command}</span>}
+    </>
+  )
+}
+
+export function Hero() {
   return (
     <div className="relative px-4 pt-12 space-y-12 text-center text-white md:px-0 md:pt-24">
       <div className="absolute top-0 left-0 w-full h-[85%] lg:h-[75%] z-[-1]">
@@ -25,27 +33,31 @@ export function Hero() {
         </svg>
       </div>
       <div className="z-10 select-none bg-[#0D003D]">
-     <div className="max-w-3xl py-4 mx-auto ">
-     <h3 className="text-4xl leading-snug md:text-5xl">The <span className="font-semibold">Next-Gen</span> <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-fuchsia-500">Runner</span> for development workflows.</h3>
-      <div className="py-2 font-mono text-lg font-gray-200">Markdown-native tools to express workflows for your apps & services.</div>
-     </div>
- 
+        <div className="max-w-3xl py-4 mx-auto ">
+          <h3 className="text-4xl leading-snug md:text-5xl">The <span className="font-semibold">Next-Gen</span> <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-fuchsia-500">Runner</span> for development workflows.</h3>
+          <div className="py-2 font-mono text-lg font-gray-200">Markdown-native tools to express workflows for your apps & services.</div>
+        </div>
+
         <div className="flex flex-col items-center justify-center py-4 space-y-3 md:space-x-4 md:flex-row md:space-y-0">
           <a
             href="/docs/intro"
           >
-           <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200 whitespace-nowrap">Documentation</div>
+            <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200 whitespace-nowrap">Documentation</div>
           </a>
 
           <a
             href="https://github.com/stateful/runme"
           >
-           <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purpleish-200 whitespace-nowrap">View on Github</div>
+            <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purpleish-200 whitespace-nowrap">View on Github</div>
           </a>
         </div>
-        <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">{copied? <span className="text-cyan-400">Copied to clipboard 👍</span> : <span className="font-mono cursor-pointer hover:underline" onClick={()=> {
-          copyBrew()
-        }}>{brewText}</span>}<span className="hidden md:block">|</span> <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme" className="font-medium underline cursor-pointer hover:underline hover:brightness-150">VS Code Extension</a></div>
+        <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">
+          <QuickShell command={'npx runme'} />
+          <span className="hidden md:block">|</span>
+          <QuickShell command={'brew install stateful/tap/runme'} />
+        </div>
+        <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">
+          <a href="https://marketplace.visualstudio.com/items?itemName=stateful.runme" className="font-medium underline cursor-pointer hover:underline hover:brightness-150">VS Code Extension</a></div>
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[900px] 2xl:max-w-[1000px]">
         <video autoPlay loop muted playsInline>
