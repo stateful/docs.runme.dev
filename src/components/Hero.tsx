@@ -40,7 +40,7 @@ export function Hero() {
           <a
             href="/docs/intro"
           >
-           <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purplish-200 whitespace-nowrap">View on Github</div>
+           <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purpleish-200 whitespace-nowrap">View on Github</div>
           </a>
         </div>
         <div className="flex flex-col items-center justify-center py-2 space-x-2 text-xs text-gray-300 md:flex-row">{copied? <span className="text-cyan-400">Copied to clipboard 👍</span> : <span className="font-mono cursor-pointer hover:underline" onClick={()=> {
