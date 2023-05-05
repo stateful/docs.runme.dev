@@ -38,7 +38,7 @@ export function Hero() {
           </a>
 
           <a
-            href="/docs/intro"
+            href="https://github.com/stateful/runme"
           >
            <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purplish-200 whitespace-nowrap">View on Github</div>
           </a>
