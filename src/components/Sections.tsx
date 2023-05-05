@@ -83,13 +83,13 @@ export function Benefits() {
         </h1>
         <div className="lg:whitespace-nowrap">
           <p className="text-2xl leading-9 text-center">
-            Express workflows for your apps and services
+            Express workflows for your apps & services
             <br className="sm:hidden md:block lg:hidden" />
             <span id="vscode-bolt" className="relative">
               {" "}
               in Markdown️
             </span>
-            {" "}already ubiquitous in docs
+            {" "}already second-nature to developers
           </p>
         </div>
       </div>
@@ -125,20 +125,18 @@ export function Benefits() {
           description="Automate testing the human-interface to your projects. Detect breakages ahead of time. Use established git-workflows to introduce changes."
         />
       </div>
-      {/* <div className="w-full mt-12 lg:mt-24">
-        <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
-          <iframe
-            className="mx-auto rounded-lg shadow-2xl select-none"
-            width={"100%"}
-            height={"100%"}
-            src="https://www.youtube.com/embed/0RpCmDV4wZg"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+      <div className="relative space-y-12 text-center text-white pt-14">
+        <div className="z-10 select-none">
+          <div className="flex flex-col items-center justify-center py-4 space-y-8">
+            <a
+              href="/docs/intro"
+              className="bg-[color:var(--ifm-color-primary)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
+            >
+              💡 Read the docs
+            </a>
+          </div>
         </div>
-      </div> */}
+      </div>
       <div className="w-full mt-12 lg:mt-24">
         <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
           <iframe

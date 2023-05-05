@@ -45,7 +45,7 @@ export function Hero() {
             href="/docs/intro"
             className="bg-[color:var(--ifm-color-primary)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
           >
-            Learn more
+            💡 Learn more
           </a>
 
           {/* <p className="">
