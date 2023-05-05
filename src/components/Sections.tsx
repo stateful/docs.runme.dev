@@ -83,13 +83,13 @@ export function Benefits() {
         </h1>
         <div className="lg:whitespace-nowrap">
           <p className="text-2xl leading-9 text-center">
-            Express workflows
+            Express workflows for your apps and services
             <br className="sm:hidden md:block lg:hidden" />
             <span id="vscode-bolt" className="relative">
               {" "}
               in Markdown️
             </span>
-            {" "}ubiquitous in docs inside source code repos
+            {" "}already ubiquitous in docs
           </p>
         </div>
       </div>
@@ -120,9 +120,9 @@ export function Benefits() {
           description="Rich web interactivity without leaving the terminal behind. Have forms, graph, tables, etc render visually without breaking the CLI."
         />
         <Feature
-          text="Test Workflows in CI/CD"
+          text="Test Repo's DX in CI/CD"
           icon={<VariablesIcon />}
-          description="Avoid frustration for your repo's contributors detecting breakages ahead of time. Leverage git workflows to introduce changes."
+          description="Automate testing the human-interface to your projects. Detect breakages ahead of time. Use established git-workflows to introduce changes."
         />
       </div>
       {/* <div className="w-full mt-12 lg:mt-24">
