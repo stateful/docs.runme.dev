@@ -12,6 +12,27 @@ import {
   VariablesIcon,
 } from "./Icons";
 import React, { ReactNode } from "react";
+import TypeWriter from '@site/src/components/TypeWriter'
+
+const sequence = [
+  ['pauseFor', 500],
+  ['typeString', 'Tasks!'],
+  ['pauseFor', 1500],
+  ['deleteAll'],
+  ['pauseFor', 2500],
+  ['typeString', 'Workflows!'],
+  ['pauseFor', 1500],
+  ['deleteAll'],
+  ['pauseFor', 2500],
+  ['typeString', 'Docs!'],
+  ['pauseFor', 3000],
+  ['deleteAll'],
+  ['pauseFor', 1500],
+  ['typeString', 'Readme.md'],
+  ['pauseFor', 3000],
+  ['deleteAll'],
+  ['pauseFor', 1500],
+]
 
 type FeatureProps = {
   text: string;
@@ -75,25 +96,18 @@ export function Benefits() {
   return (
     <div className="max-w-[1440px] my-16 mx-auto px-12 py-6 flex flex-col items-center">
       <div className="space-y-4 text-center md:space-y-8">
-        <h1
-          id="arrows-graphic"
-          className="lg:max-w-min mx-auto whitespace-nowrap relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold"
-        >
-          How it works
-        </h1>
-        <div className="lg:whitespace-nowrap">
-          <p className="text-2xl leading-9 text-center">
-            Express workflows for your apps & services
-            <br className="sm:hidden md:block lg:hidden" />
-            <span id="vscode-bolt" className="relative">
-              {" "}
-              in Markdown️
-            </span>
-            {" "}already second-nature to developers
-          </p>
+               
+        <h2 className="text-5xl font-bold tracking-[0.03em]">
+          Run your{" "}
+          <TypeWriter sequence={sequence} />
+        </h2>
+
+      
+        <div className="text-2xl">
+           Replace your scripts and makefiles with an experience made for humans.
         </div>
       </div>
-      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-24 lg:grid 2xl:gap-1">
+      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
         <Feature
           text="Fuse Docs with Workflows & Tasks"
           icon={<CloudNativeNotebookIcon />}
@@ -128,12 +142,11 @@ export function Benefits() {
       <div className="relative space-y-12 text-center text-white pt-14">
         <div className="z-10 select-none">
           <div className="flex flex-col items-center justify-center py-4 space-y-8">
-            <a
-              href="/docs/intro"
-              className="bg-[color:var(--ifm-color-primary)] py-[20px] rounded-[60px] text-base w-[220px] h-[40px] leading-[0px] font-semibold"
-            >
-              💡 Read the docs
-            </a>
+          <a
+            href="/docs/intro"
+          >
+           <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200">Learn more about how it works! 👀</div>
+          </a>
           </div>
         </div>
       </div>
@@ -177,7 +190,7 @@ export function HowItWorks() {
         </div>
         {/* <br className="hidden lg:block" /> */}
       </div>
-      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-24 lg:grid 2xl:gap-12">
+      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-12">
         <Feature
           text="Click to run commands"
           icon={<RunCommandIcon />}
