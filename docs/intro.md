@@ -13,10 +13,26 @@ The Runme team believes that even if you have textually excellent README.md, enc
 
 # What is Runme? 🤔​
 
-Runme's primary interface is a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) that provides developers with the ability to navigate workflows center around code repositories by making Readme markdown files interactive and smart. It consists of two major parts:
+Runme's primary interface is a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) that provides developers with the ability to navigate workflows center around code repositories by making Readme markdown files interactive and smart. Runme consists of two major parts:
 
-- A [CLI tool](https://github.com/stateful/runme) that understands markdown and allows you to discover and run code snippets within it
-- A [VS Code extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) that integrates these capabilities into VS Code and allows you to run markdown through a notebook UI
+- [Runme CLI](https://github.com/stateful/runme) and host of the kernel. It understands markdown, retains session state, and allows to discover and run command blocks.
+- [Runme for VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) integrates capabilities into VS Code and allows you to run markdown from the raw editor as well as through a notebook UIs.
+
+<Infobox type="sidenote" title="Skip Ahead">
+Learn how to <a href="/docs/install">install Runme</a> and get started.
+</Infobox>
+
+## ⏯ Under Runme's hood
+
+Architecturally Runme consists of the following parts:
+
+- A serializer that transforms markdown into executable tasks & workflows
+- A portable task runner interface that supports multimodal clients
+- A kernel that retains state across execution in sessions akin to a terminal
+- A raw-markdown editor (inside VS Code) client for the workflow runner
+- A CLI client for the workflow runner
+- A notebook client (inside VS Code) for the workflow runner
+- A visual markdown viewer and editor (inside VS Code)
 
 ## 🤩 Markdown turned interactive
 
@@ -26,7 +42,7 @@ Runme's primary interface is a [VS Code extension](https://marketplace.visualstu
 - ⏯ It enables static docs to become interactive for its readers and greatly improves their learning experience.
 - 🙆 Runme is a human-centric approach to providing and consuming code repository documentation. It's designed to progressively bridge the widening developer experience gaps in a cloud-native age.
 
-Gaps in developer experience such as:
+Bridging gaps in Developer Experience such as:
 
 - Low integration between building blocks employed to deliver apps and services
 - Error-prone copy&paste-management of dev environments
@@ -43,18 +59,9 @@ Make sure to [get in touch](https://discord.gg/runme) with us if you are missing
 
 </Infobox>
 
-## 🛣 What's on the roadmap
-
-Review development progress in [Runme's roadmap](https://github.com/stateful/runme/projects) A few highlights of what's coming:
-
-- Just like code, test your documentation in Continuous Integration
-- Switch back and forth between notebook and terminal UX seamlessly
-- Notebook UX tweaks and integrations for both authors and users
-- And more - tell us about your feature request [on Discord](https://discord.gg/runme)
-
 ## ⚠️ Known limitations
 
-- Runme currently only has rudimentary PowerShell on Windows (or any other platform).
+- Runme currently only has rudimentary PowerShell on Windows (or any other PowerShell platform).
 - As of v1, Runme introduced terminal-session-like stateful execution.
 - Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter big or small to help us make Runme better.
 
