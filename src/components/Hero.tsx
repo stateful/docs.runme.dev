@@ -53,7 +53,7 @@ export function Hero() {
         </svg>
       </div>
       <div className="z-10 select-none bg-[#0D003D]">
-        <div className="max-w-4xl py-4 mx-auto ">
+        <div className="max-w-5xl py-4 mx-auto ">
           <h3 className="text-4xl leading-snug md:text-5xl">
             The <span className="font-semibold">Next-Gen</span>{" "}
             <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-fuchsia-500">
