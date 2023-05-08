@@ -113,27 +113,27 @@ export function Benefits() {
         <Feature
           text="Human-centric Developer Experience"
           icon={<RunCommandIcon />}
-          description="Run command blocks while simultaneously following along documented steps and their reasoning; interoperably in a GUI or a CLI."
+          description="Run command blocks while simultaneously following with documented steps with context; interoperably in a GUI or a CLI."
         />
         <Feature
           text="Colocated with Code"
           icon={<CopyButtonIcon />}
-          description="Avoid drifts and easily share tasks and workflows that otherwise remains buried in .bash_history's. Make workflows truly portable within your team."
+          description="Avoid code/doc divergence and easily share tasks and workflows that otherwise remain buried in .bash_history's. Make workflows truly portable within your team."
         />
         <Feature
           text="Uplevel Existing Task Definitions"
           icon={<NotebookIcon />}
-          description="Out of the box works with NPM Scripts, Ruby Rake, Makefile, Gradle, etc. Unleash the best of the written word paired with runnable docs."
+          description="Works out of the box with NPM Scripts, Ruby Rake, Makefile, Gradle, etc. The combo of the written words and runnable commands is the ultimate docs utility."
         />
         <Feature
           text="Break out of The Terminal"
           icon={<ShellIcon />}
-          description="Rich web interactivity without leaving the terminal behind. Have forms, graph, tables, etc render visually without breaking the CLI."
+          description="Rich web interactivity without leaving the terminal behind. Render forms, graphs, tables and more without breaking the CLI."
         />
         <Feature
           text="Test Repo's DX in CI/CD"
           icon={<CiCdIcon />}
-          description="Automate testing the human-interface to your projects. Detect breakages ahead of time. Use established git-workflows to introduce changes."
+          description="Automate testing the human-interface of your projects. Detect breakage ahead of time. Use established git-workflows to introduce changes."
         />
       </div>
       <div className="relative space-y-12 text-center text-white pt-14">
