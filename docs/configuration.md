@@ -136,6 +136,7 @@ See below for the list of supported MIME types!
 |  closeTerminalOnSuccess | Hide Terminal after cell successful execution       | true          |
 |  mimeType    |  Cell’s output content MIME type                               | text/plain    |
 |  name        | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
+|  promptEnv | Prompt user to set exported environment vars | true |
 
 ### Supported MIME types
 
