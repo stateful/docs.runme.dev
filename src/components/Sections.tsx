@@ -1,6 +1,5 @@
 import {
   ApacheIcon,
-  CloudNativeNotebookIcon,
   CopyButtonIcon,
   DiscordIcon,
   GithubIcon,
@@ -9,30 +8,31 @@ import {
   RepoIcon,
   RunCommandIcon,
   ShellIcon,
-  VariablesIcon,
+  CiCdIcon,
+  FuseDocsIcon,
 } from "./Icons";
 import React, { ReactNode } from "react";
-import TypeWriter from '@site/src/components/TypeWriter'
+import TypeWriter from "@site/src/components/TypeWriter";
 
 const sequence = [
-  ['pauseFor', 500],
-  ['typeString', 'Tasks!'],
-  ['pauseFor', 1500],
-  ['deleteAll'],
-  ['pauseFor', 2500],
-  ['typeString', 'Workflows!'],
-  ['pauseFor', 1500],
-  ['deleteAll'],
-  ['pauseFor', 2500],
-  ['typeString', 'Docs!'],
-  ['pauseFor', 3000],
-  ['deleteAll'],
-  ['pauseFor', 1500],
-  ['typeString', 'Readme.md'],
-  ['pauseFor', 3000],
-  ['deleteAll'],
-  ['pauseFor', 1500],
-]
+  ["pauseFor", 500],
+  ["typeString", "Tasks!"],
+  ["pauseFor", 1500],
+  ["deleteAll"],
+  ["pauseFor", 2500],
+  ["typeString", "Workflows!"],
+  ["pauseFor", 1500],
+  ["deleteAll"],
+  ["pauseFor", 2500],
+  ["typeString", "Docs!"],
+  ["pauseFor", 3000],
+  ["deleteAll"],
+  ["pauseFor", 1500],
+  ["typeString", "Readme.md"],
+  ["pauseFor", 3000],
+  ["deleteAll"],
+  ["pauseFor", 1500],
+];
 
 type FeatureProps = {
   text: string;
@@ -96,36 +96,33 @@ export function Benefits() {
   return (
     <div className="max-w-[1440px] my-16 mx-auto px-12 py-6 flex flex-col items-center">
       <div className="space-y-4 text-center md:space-y-8">
-
-        <h2 className="text-5xl font-bold tracking-[0.03em]">
-          Run your{" "}
-          <TypeWriter sequence={sequence} />
+        <h2 className="text-5xl font-bold tracking-[0.03em] h-[100px] sm:h-fit">
+          Run your <TypeWriter sequence={sequence} />
         </h2>
 
-
         <div className="text-2xl">
-           Augment your scripts and makefiles with an experience made for humans.
+          Augment your scripts and makefiles with an experience made for humans.
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
         <Feature
           text="Fuse Docs with Workflows & Tasks"
-          icon={<CloudNativeNotebookIcon />}
-          description="Built upon Markdown. Turn BUILD.md, DEV.md, README.md, etc into interactive control planes. No changes required and 100%-compatible."
+          icon={<FuseDocsIcon />}
+          description="Built on Markdown. Turn BUILD.md, DEV.md, README.md, etc into interactive control planes. No changes required and 100% compatible."
         />
         <Feature
           text="Human-centric Developer Experience"
-          icon={<NotebookIcon />}
+          icon={<RunCommandIcon />}
           description="Run command blocks while simultaneously following along documented steps and their reasoning; interoperably in a GUI or a CLI."
         />
         <Feature
           text="Colocated with Code"
-          icon={<RunCommandIcon />}
+          icon={<CopyButtonIcon />}
           description="Avoid drifts and easily share tasks and workflows that otherwise remains buried in .bash_history's. Make workflows truly portable within your team."
         />
         <Feature
           text="Uplevel Existing Task Definitions"
-          icon={<CopyButtonIcon />}
+          icon={<NotebookIcon />}
           description="Out of the box works with NPM Scripts, Ruby Rake, Makefile, Gradle, etc. Unleash the best of the written word paired with runnable docs."
         />
         <Feature
@@ -135,92 +132,20 @@ export function Benefits() {
         />
         <Feature
           text="Test Repo's DX in CI/CD"
-          icon={<VariablesIcon />}
+          icon={<CiCdIcon />}
           description="Automate testing the human-interface to your projects. Detect breakages ahead of time. Use established git-workflows to introduce changes."
         />
       </div>
       <div className="relative space-y-12 text-center text-white pt-14">
         <div className="z-10 select-none">
           <div className="flex flex-col items-center justify-center py-4 space-y-8">
-          <a
-            href="/docs/intro"
-          >
-           <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200">Learn more about how it works 👀</div>
-          </a>
+            <a href="/docs/intro">
+              <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200">
+                Learn more about how it works 👀
+              </div>
+            </a>
           </div>
         </div>
-      </div>
-      <div className="w-full mt-12 lg:mt-24">
-        <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
-          <iframe
-            className="mx-auto rounded-lg shadow-2xl select-none"
-            width={"100%"}
-            height={"100%"}
-            src="https://www.youtube.com/embed/0RpCmDV4wZg"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function HowItWorks() {
-  return (
-    <div className="max-w-[1440px] my-32 mx-auto px-12 py-6 flex flex-col items-center">
-      <div className="space-y-4 text-center md:space-y-8">
-        <h1
-          id="arrows-graphic"
-          className="lg:max-w-min mx-auto whitespace-nowrap relative text-4xl md:text-5xl lg:text-6xl tracking-[0.02em] font-bold"
-        >
-          How it works
-        </h1>
-        <div className="lg:whitespace-nowrap">
-          <p className="text-2xl leading-9 text-center">
-            Use dev-native markdown to craft interactive runbooks for{" "}
-            <br className="sm:hidden md:block lg:hidden" />
-            <span id="vscode-bolt" className="relative">
-              {" "}
-              VS Code.
-            </span>
-          </p>
-        </div>
-        {/* <br className="hidden lg:block" /> */}
-      </div>
-      <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-12">
-        <Feature
-          text="Click to run commands"
-          icon={<RunCommandIcon />}
-          description="Effortlessly complete your README's steps"
-        />
-        <Feature
-          text="Rich notebook interactivity"
-          icon={<NotebookIcon />}
-          description="Overlay commands with web app like interactivity"
-        />
-        <Feature
-          text="Baseline shell compatibility"
-          icon={<ShellIcon />}
-          description="Break out of shell without losing compatability"
-        />
-        <Feature
-          text="Stateful environment variables"
-          icon={<VariablesIcon />}
-          description="Reliably define the execution environment"
-        />
-        <Feature
-          text="Click to copy"
-          icon={<CopyButtonIcon />}
-          description="Copy & paste commands and their output"
-        />
-        <Feature
-          text="Cloud-native notebooks"
-          icon={<CloudNativeNotebookIcon />}
-          description="Deeply integrated with your favorite cloud services"
-        />
       </div>
       <div className="w-full mt-12 lg:mt-24">
         <div className="w-full h-[320px] sm:h-[450px] lg:w-[1000px] lg:h-[580px] max-w-5xl mx-auto">
@@ -489,7 +414,7 @@ export function Documentation() {
             Add a{" "}
             <a
               href="/docs/configuration"
-              className="p-2 text-blue-600 border border-blue-600 border-solid rounded whitespace-nowrap lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 hover:text-[color:var(--ifm-color-primary)] rounded"
+              className="p-2 text-blue-600 border border-blue-600 border-solid rounded whitespace-nowrap lg:py-2 2xs:py-0 2xs:mx-0 lg:mx-2 hover:text-[color:var(--ifm-color-primary)]"
             >
               background
             </a>{" "}
