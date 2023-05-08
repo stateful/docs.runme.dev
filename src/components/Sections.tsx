@@ -96,7 +96,7 @@ export function Benefits() {
   return (
     <div className="max-w-[1440px] my-16 mx-auto px-12 py-6 flex flex-col items-center">
       <div className="space-y-4 text-center md:space-y-8">
-        <h2 className="text-5xl font-bold tracking-[0.03em]">
+        <h2 className="text-5xl font-bold tracking-[0.03em] h-[100px] sm:h-fit">
           Run your <TypeWriter sequence={sequence} />
         </h2>
 
