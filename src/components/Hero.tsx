@@ -75,7 +75,7 @@ export function Hero() {
 
           <a href="https://github.com/stateful/runme">
             <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purpleish-200 whitespace-nowrap">
-              View on Github
+              View on GitHub
             </div>
           </a>
         </div>

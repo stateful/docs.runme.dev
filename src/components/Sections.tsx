@@ -145,7 +145,7 @@ export function Benefits() {
           <a
             href="/docs/intro"
           >
-           <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200">Learn more about how it works! 👀</div>
+           <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200">Learn more about how it works 👀</div>
           </a>
           </div>
         </div>
