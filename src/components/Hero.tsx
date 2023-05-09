@@ -62,18 +62,22 @@ export function Hero() {
             for dev workflows.
           </h3>
           <div className="py-2 font-mono text-lg font-gray-200">
-            A markdown-native toolkit to express workflows for your apps & services.
+            A markdown-native toolkit to express workflows for your apps &
+            services.
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center py-4 space-y-3 md:space-x-4 md:flex-row md:space-y-0">
-          <a href="/docs/intro">
+        <div className="flex flex-col items-center justify-center w-full py-4 space-y-3 md:space-x-4 md:flex-row md:space-y-0">
+          <a href="/docs/intro" className="w-full sm:max-w-min">
             <div className="px-4 py-2 font-bold rounded-md bg-purpleish-100 hover:bg-purpleish-200 whitespace-nowrap">
               Documentation
             </div>
           </a>
 
-          <a href="https://github.com/stateful/runme">
+          <a
+            href="https://github.com/stateful/runme"
+            className="w-full sm:max-w-min"
+          >
             <div className="px-4 py-2 font-bold border-2 rounded-md border-purpleish-100 hover:border-purpleish-200 whitespace-nowrap">
               View on GitHub
             </div>
@@ -90,9 +94,7 @@ export function Hero() {
           >
             Runme for VS Code
           </a>
-     
         </div>
-  
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[900px] 2xl:max-w-[1000px]">
         <video autoPlay loop muted playsInline>
