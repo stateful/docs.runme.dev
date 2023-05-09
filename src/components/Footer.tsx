@@ -155,7 +155,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-sm md:absolute bottom-12">
-            &copy; 2021-2022 Stateful Inc. All rights reserved.
+            &copy; 2021-2023 Stateful Inc. All rights reserved.
           </div>
         </div>
       </div>
