@@ -97,7 +97,7 @@ export function Hero() {
         </div>
       </div>
       <div className="mt-12 w-4/5 md:w-3/4 mx-auto lg:max-w-[800px] xl:max-w-[900px] 2xl:max-w-[1000px]">
-        <video autoPlay loop muted playsInline>
+        <video autoPlay loop muted playsInline controls>
           <source src="/videos/intro.mp4" type="video/mp4" />
           <source src="/videos/intro.webm" type="video/webm" />
         </video>
