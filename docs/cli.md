@@ -27,6 +27,13 @@ Install runme
 $ brew install stateful/tap/runme
 ```
 
+On Windows, we distribute the binary through [Scoop.sh](https://scoop.sh/):
+
+```sh
+$ scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
+$ scoop install stateful/runme
+```
+
 Alternatively, check out runme's [releases](https://github.com/stateful/runme/releases) and select a binary for your operating system. Let us know [on Discord](https://discord.gg/runme) if you have a different preferred distribution mechanism.
 
 If you have Go developer tools installed, you can install it with go install:
