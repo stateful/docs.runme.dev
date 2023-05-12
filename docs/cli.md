@@ -69,24 +69,42 @@ This allows you to quickly execute any script present in the README.
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
 
 ```sh
-    runme --help
-    Parses commands directly from a README (best-effort) to make them executable under a unique name.
+Parses commands directly from a markdown (e.g. README) to make them executable.
 
-    Usage:
-     runme [command]
+Usage:
+  runme [flags]
+  runme [command]
 
-    Available Commands:
-     completion  Generate the autocompletion script for the specified shell
-     help        Help about any command
-     list        List available commands.
-     print       Print a selected snippet.
-     run         Run a selected command.
+Available Commands:
+  branch      Suggest a branch name (aka branchGPT)
+  completion  Generate the autocompletion script for the specified shell
+  fmt         Format a Markdown file into canonical format
+  help        Help about any command
+  list        List available commands
+  login       Log in to Runme
+  logout      Log out from Runme
+  print       Print a selected snippet
+  run         Run a selected command
+  suggest     Use our suggestion engine to give contextual advice
+  tui         Run the interactive TUI
 
-    Flags:
-         --chdir string      Switch to a different working directory before executing the command. (default ".")
-         --filename string   A name of the README file. (default "README.md")
-     -h, --help              help for runme
-     -v, --version           version for runme
+Flags:
+      --allow-unknown     Display snippets without known executor (default true)
+      --background        Enable running background blocks as background processes
+      --chdir string      Switch to a different working directory before executing the command (default "/Users/sourishkrout/Projects/stateful/oss/vscode-runme")
+      --entries int       Number of entries to show in TUI (default 5)
+      --exit              Exit TUI after running a command
+      --filename string   Name of the README file (default "README.md")
+  -h, --help              Help for runme
+      --insecure          Run command in insecure-mode
+  -s, --server string     Server address to connect runner to
+      --tls string        Directory for TLS authentication (default "/Users/sourishkrout/Library/Application Support/runme/tls")
+  -v, --version           Version of runme
+
+Use "runme [command] --help" for more information about a command.
+
+Feedback:
+  For issues and questions join the Runme community at https://discord.gg/runme
 ```
 
 By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
