@@ -31,7 +31,8 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          wait-interval: 30 # seconds
+          check-name: 'Vercel'
+          wait-interval: 120 # seconds
           running-workflow-name: dependencies # wait for all checks except this one
           allowed-conclusions: success # all other checks must pass, being skipped or cancelled is not sufficient
 

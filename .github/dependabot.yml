@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "11:00"
+  open-pull-requests-limit: 10
+  versioning-strategy: increase-if-necessary
+  ignore:
+    # we want to update this package manually as it changes
+    # the minimum required VS Code version for this extension
+    # to run
+    - dependency-name: "@mdx-js/react"
