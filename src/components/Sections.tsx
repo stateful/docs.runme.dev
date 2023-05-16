@@ -111,9 +111,9 @@ export function Benefits() {
           description="Built on Markdown. Turn BUILD.md, DEV.md, README.md, etc into interactive control planes. No changes required and 100% compatible."
         />
         <Feature
-          text="Human-centric Developer Experience"
+          text="No Long Skip Over Intermediary Results"
           icon={<RunCommandIcon />}
-          description="Run command blocks while simultaneously following with documented steps with context; interoperably in a GUI or a CLI."
+          description="Run command blocks while simultaneously following documented steps with context; interoperably in a GUI or a CLI."
         />
         <Feature
           text="Colocated with Code"
