@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Install Extension
 ---
 
-Open the `Extensions Tab` in the VS Code sidebar and search for **"Runme"**.
+Open the `Extensions Tab` in the VS Code sidebar and search for **"Runme"**. The CLI is contained inside the extension.
 
 ![install runme gif](../static/img/install.gif)
 
@@ -11,7 +11,7 @@ Alternatively, you can go to the [VS Code Marketplace](https://marketplace.visua
 
 That's it. Now, any time you open a Markdown file (`*.md` or `*.mdx`) it will open as a Runme notebook.
 
-## What is Runme for VS Code
+## Runme for VS Code
 
 ![Overview of Runme for VS Code](../static/img/runme-for-vscode.png)
 
