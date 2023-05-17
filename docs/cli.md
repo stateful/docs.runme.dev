@@ -54,7 +54,7 @@ See [the doc page on the cli](https://runme-dev-mxsdev.vercel.app/docs/cli) for 
 
 Runme has a nice TUI that you can use simply like so:
 
-![Runme TUI Usage](https://user-images.githubusercontent.com/16108792/219203990-ffb860e7-5314-4a22-bf05-9d983e3876d0.gif)
+![Runme TUI Usage](../static/img/runme-tui.gif)
 
 ### Warning!
 
