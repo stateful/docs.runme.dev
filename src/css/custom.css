@@ -228,18 +228,6 @@ html[data-theme="dark"] {
   }
 }
 
-.navbar__items a,
-body p,
-body li,
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6 {
-  font-family: "Poppins", sans-serif;
-}
-
 .main h1,
 .main-wrapper h1 {
   color: var(--runme-heading-color);
