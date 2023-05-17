@@ -88,7 +88,10 @@ export function Hero() {
             </div>
           </a>
           <div>
-            <a href="https://twitter.com/runmedev">
+            <a
+              href="https://twitter.com/runmedev"
+              className="hover:brightness-75"
+            >
               <TwitterIcon />
             </a>
           </div>
