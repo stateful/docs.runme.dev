@@ -9,6 +9,8 @@ Runme bridges the gap between workflow documentation and task definitions requir
 
 Runme achieves this by making markdown (ubiquitous for docs inside repos) interactive. Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
+![Readme as Notebook and Markdown side-by-side](../static/img/sidebyside.png)
+
 ## What is Runme?
 
 Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that makes them interoperable. While all client inferfaces share core features, namely execution, they excel in different use cases.
@@ -18,16 +20,16 @@ Develop successfully irrespective of the environment: a local laptop, a VM, a De
 - Get ahead of docs bit-rot and project reverse-engineering directly where tasks are already described in the documentation: markdown inside your project's repo.
 - Increase portability of dev workflows by decoupling tasks from personal dotfiles or bash_history's without getting in the way.
 
+<Infobox type="sidenote" title="Skip Ahead">
+Learn how to <a href="/docs/install">install Runme</a> and get started.
+</Infobox>
+
 ## Getting Started
 
 Runme's primary interface is a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) that provides developers with the ability to navigate workflows centered around code repositories by making Readme markdown files interactive and smart. Runme consists of two major parts:
 
 - [Runme CLI](https://github.com/stateful/runme) and host of the kernel. It understands markdown, retains session state, and allows to discover and run command blocks.
 - [Runme for VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) integrates capabilities into VS Code and allows you to run markdown from the raw editor and through notebook UIs.
-
-<Infobox type="sidenote" title="Skip Ahead">
-Learn how to <a href="/docs/install">install Runme</a> and get started.
-</Infobox>
 
 ## Under Runme's hood
 
@@ -40,8 +42,6 @@ Architecturally Runme consists of the following parts:
 - A CLI client for the workflow runner
 - A notebook client (inside VS Code) for the workflow runner
 - A visual markdown viewer and editor (inside VS Code)
-
-![Readme as Notebook and Markdown side-by-side](../static/img/sidebyside.png)
 
 ## Known limitations
 

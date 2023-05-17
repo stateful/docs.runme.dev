@@ -11,7 +11,7 @@ Alternatively, you can go to the [VS Code Marketplace](https://marketplace.visua
 
 That's it. Now, any time you open a Markdown file (`*.md` or `*.mdx`) it will open as a Runme notebook.
 
-## What is Runme for VS Code
+## Runme for VS Code
 
 ![Overview of Runme for VS Code](../static/img/runme-for-vscode.png)
 
