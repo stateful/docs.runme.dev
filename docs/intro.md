@@ -9,16 +9,16 @@ Runme bridges the gap between workflow documentation and task definitions requir
 
 Runme achieves this by making markdown (ubiquitous for docs inside repos) interactive. Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
-# What is Runme?
+## What is Runme?
 
-Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that provides for interoperability. Unlock their unique benefits based on what your project and its contributors demand.
+Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that provides for interoperability. While all client inferfaces share core featuers, namely execution, they excel in different use cases.
 
-Develop successfully irrespective of the environment, a local laptop, a VM, a Devcontainer, or Cloud Development Environments:
+Develop successfully irrespective of the environment: a local laptop, a VM, a Devcontainer, or Cloud Development Environment, etc:
 - Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer.
 - Get ahead of docs bit-rot and project reverse-engineering directly where tasks are already described in the documentation: markdown inside your project's repo.
 - Increase portability of dev workflows by decoupling tasks from personal dotfiles or bash_history's without getting in the way.
 
-# Getting Started
+## Getting Started
 
 Runme's primary interface is a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) that provides developers with the ability to navigate workflows centered around code repositories by making Readme markdown files interactive and smart. Runme consists of two major parts:
 
