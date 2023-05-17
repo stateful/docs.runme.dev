@@ -11,7 +11,7 @@ Runme achieves this by making markdown (ubiquitous for docs inside repos) intera
 
 ## What is Runme?
 
-Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that provides for interoperability. While all client inferfaces share core featuers, namely execution, they excel in different use cases.
+Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that makes them interoperable. While all client inferfaces share core featuers, namely execution, they excel in different use cases.
 
 Develop successfully irrespective of the environment: a local laptop, a VM, a Devcontainer, or Cloud Development Environment, etc:
 - Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer.
