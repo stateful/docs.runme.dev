@@ -6,9 +6,9 @@ export interface TypeWriterProps {
   sequence: any[]
 }
 
-const DEFAULT_TEXT = 'Readme.md'
+const DEFAULT_TEXT = 'Tasks!'
 
-export default function TypeWriter (props: TypeWriterProps) {
+export default function TypeWriter(props: TypeWriterProps) {
   const ref = useRef<HTMLSpanElement>(null)
   useEffect(() => {
     if (!ref.current) {
