@@ -16,24 +16,28 @@ Runme achieves this by making markdown (ubiquitous for docs inside repos) intera
 Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that makes them interoperable. While all client inferfaces share core features, namely execution, they excel in different use cases.
 
 Develop successfully irrespective of the environment: a local laptop, a VM, a Devcontainer, or Cloud Development Environment, etc:
-- Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer.
-- Get ahead of docs bit-rot and project reverse-engineering directly where tasks are already described in the documentation: markdown inside your project's repo.
+
+- Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer. Guard-rails included.
+- Get ahead of docs bit-rot and repo reverse-engineering execute tasks directly where they are described: markdown docs inside your project's repo.
 - Increase portability of dev workflows by decoupling tasks from personal dotfiles or bash_history's without getting in the way.
 
-<Infobox type="sidenote" title="Skip Ahead">
-Learn how to <a href="/docs/install">install Runme</a> and get started.
+### Runme's UI
+
+Runme comes with a headless and a graphical user interface to author, run, and verify workflows centered around code. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of following parts:
+
+- **[Runme CLI](https://github.com/stateful/runme)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
+- **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
+- **[Runme for VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
+
+<Infobox type="sidenote" title="Try it now">
+
+Learn how to install Runme and <a href="/docs/install">get started</a>.
+
 </Infobox>
 
-## Getting Started
+## Under The Hood
 
-Runme's primary interface is a [VS Code extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) that provides developers with the ability to navigate workflows centered around code repositories by making Readme markdown files interactive and smart. Runme consists of two major parts:
-
-- [Runme CLI](https://github.com/stateful/runme) and host of the kernel. It understands markdown, retains session state, and allows to discover and run command blocks.
-- [Runme for VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) integrates capabilities into VS Code and allows you to run markdown from the raw editor and through notebook UIs.
-
-## Under Runme's hood
-
-Architecturally Runme consists of the following parts:
+Architecturally, Runme breaks down into the following parts:
 
 - A serializer that transforms markdown into executable tasks & workflows
 - A portable task runner interface that supports multimodal clients
@@ -48,12 +52,6 @@ Architecturally Runme consists of the following parts:
 - Runme currently only has rudimentary support for PowerShell. While PowerShell is not limited to Windows, it is its primary platform. We recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
 - Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter big or small to help us make Runme better.
 
-<Infobox type="sidenote" title="Join Runme community!">
-
-Make sure to [get in touch](https://discord.gg/runme) with us if you are missing a feature or have other ideas.
-
-</Infobox>
-
 ## Telemetry Information
 
 Please help making Runme better. Any information emitted by Runme is pseudo-anonymized (no PII whatsoever) and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to continuously improve the Runme experience for developers.
@@ -64,3 +62,9 @@ Telemetry collected includes:
 - Total cells and how many are being executed
 - Extension activation and deactivation
 - Notebook opened and saved (incl. metadata; file names are obfuscated)
+
+<Infobox type="sidenote" title="Join Runme community!">
+
+Make sure to [get in touch](https://discord.gg/runme) with us if you are missing a feature or have other ideas.
+
+</Infobox>
