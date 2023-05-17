@@ -19,7 +19,7 @@ Develop successfully irrespective of the environment: a local laptop, a VM, a De
 
 - Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer. Guard-rails included.
 - Get ahead of docs bit-rot and repo reverse-engineering execute tasks directly where they are described: markdown docs inside your project's repo.
-- Increase portability of dev workflows by decoupling tasks from personal dotfiles or bash_history's without getting in the way.
+- Increase portability of dev workflows by decoupling tasks from personal *dotfiles* or *bash_history's* without getting in the way.
 
 ### The User Interface
 
