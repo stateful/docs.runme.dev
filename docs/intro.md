@@ -54,7 +54,7 @@ Make sure to [get in touch](https://discord.gg/runme) with us if you are missing
 
 </Infobox>
 
-## Telemetry for improvements
+## Telemetry Information
 
 Please help making Runme better. Any information emitted by Runme is pseudo-anonymized (no PII whatsoever) and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to continuously improve the Runme experience for developers.
 
