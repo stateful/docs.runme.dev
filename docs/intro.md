@@ -5,7 +5,7 @@ title: Why Runme?
 
 import Infobox from "../src/components/Infobox.tsx"
 
-Runme bridges the gap between workflow documentation and task definitions required to develop locally or execute runbooks remotely. It allows project contributors to execute instructions step-by-step, checking intermediary results as they go, to ultimately complete and verify the desired results.
+Runme bridges the gap between workflow documentation and task definitions required to develop locally and execute runbooks remotely. It allows project contributors to execute instructions step-by-step, checking intermediary results as they go, to ultimately complete and verify the desired results.
 
 Runme achieves this by making markdown (ubiquitous for docs inside repos) interactive. Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
