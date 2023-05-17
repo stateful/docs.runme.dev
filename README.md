@@ -4,13 +4,13 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ### Installation
 
-```sh
+```sh { name=npm-install }
 $ npm install
 ```
 
 ### Local Development
 
-```sh { background=true }
+```sh { name=npm-run-start background=true }
 $ npm run start
 ```
 
@@ -18,7 +18,7 @@ This command starts a local development server and opens up a browser window. Mo
 
 ### Build
 
-```sh { name=npm-build }
+```sh { name=npm-run-build }
 $ npm run build
 ```
 
