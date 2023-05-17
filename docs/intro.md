@@ -21,7 +21,7 @@ Develop successfully irrespective of the environment: a local laptop, a VM, a De
 - Get ahead of docs bit-rot and repo reverse-engineering execute tasks directly where they are described: markdown docs inside your project's repo.
 - Increase portability of dev workflows by decoupling tasks from personal dotfiles or bash_history's without getting in the way.
 
-### Runme's UI
+### The User Interface
 
 Runme comes with a headless and a graphical user interface to author, run, and verify workflows centered around code. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of following parts:
 
