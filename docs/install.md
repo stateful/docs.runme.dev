@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Install Extension
 ---
 
-Open the `Extensions Tab` in the VS Code sidebar and search for **"Runme"**.
+Open the `Extensions Tab` in the VS Code sidebar and search for **"Runme"**. The CLI is contained inside the extension.
 
 ![install runme gif](../static/img/install.gif)
 
