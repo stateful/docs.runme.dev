@@ -101,7 +101,7 @@ export function Benefits() {
         </h2>
 
         <div className="text-xl">
-          Close the gap between workflow docs and task definitions required to develop locally or execute runbooks remotely
+          A better way to setup your local dev env for a repo.
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
