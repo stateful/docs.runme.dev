@@ -100,8 +100,8 @@ export function Benefits() {
           Run your <TypeWriter sequence={sequence} />
         </h2>
 
-        <div className="text-2xl">
-          Augment your scripts and makefiles with an experience made for humans.
+        <div className="text-xl">
+          Close the gap between workflow docs and task definitions required to develop locally or execute runbooks remotely
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
