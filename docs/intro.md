@@ -9,7 +9,10 @@ Runme bridges the gap between workflow documentation and task definitions requir
 
 Runme achieves this by making markdown (ubiquitous for docs inside repos) interactive. Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
-![Readme as Notebook and Markdown side-by-side](../static/img/sidebyside.png)
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-illustration.mp4" type="video/mp4" />
+  <source src="/videos/runme-illustration.webm" type="video/webm" />
+</video>
 
 ## What is Runme?
 
