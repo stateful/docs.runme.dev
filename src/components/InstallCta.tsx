@@ -14,7 +14,7 @@ const InstallCTA = () => {
 
         <a href="/docs/cli">
           <div className="px-4 py-3 text-xl font-bold text-white border rounded-md cursor-pointer bg-sky-700 hover:brightness-110 whitespace-nowrap">
-            Runme for the Terminal
+            Runme on the CLI
           </div>
         </a>
       </div>
