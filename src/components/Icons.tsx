@@ -352,9 +352,9 @@ const FuseDocsIcon = () => (
       height="22"
       rx="2"
       transform="rotate(-45 4 24)"
-      stroke-width="4"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       stroke="#3693FF"
     />
     <rect
@@ -364,9 +364,9 @@ const FuseDocsIcon = () => (
       height="20"
       rx="2"
       transform="rotate(-45 16 24)"
-      stroke-width="4"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       stroke="#42FCCC"
     />
   </svg>
@@ -522,7 +522,7 @@ const CiCdIcon = () => (
       d="M22,13H14a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V14A1,1,0,0,0,22,13Zm-1,8H15V15h6Z"
       className="clr-i-outline clr-i-outline-path-4"
     ></path>
-    <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+    <rect x="0" y="0" width="36" height="36" fillOpacity="0" />
   </svg>
 );
 
