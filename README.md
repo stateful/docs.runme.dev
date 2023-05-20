@@ -1,29 +1,34 @@
-# Website
+# Runme.dev Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repository contains several packages that make up the [`runme.dev`](https://runme.dev) website. In `workspaces` you find the following sub-projects:
 
-### Installation
+- __docs__: Docusaurus page serving Runme documentation
+- __frontpage__: Next.js marketing page
 
-```sh { name=npm-install }
-$ npm install
+## Setup
+
+After you have cloned the project, install the dependencies via:
+
+```sh { name=install }
+npm install
 ```
 
-### Local Development
+then, setup all workspaces via:
 
-```sh { name=npm-run-start background=true }
-$ npm run start
+```sh
+# tbd
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Development
 
-### Build
+In order to make changes in any of the workspaces, run:
 
-```sh { name=npm-run-build }
-$ npm run build
+```sh
+npm run watch
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This will create a watch task that will update files in distinguished places.
 
-### Deployment
+## Deployment
 
 This website is auto-deployed via Vercel's GitHub integration.

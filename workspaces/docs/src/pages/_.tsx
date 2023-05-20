@@ -12,7 +12,7 @@ export default function _() {
   return (
     <Layout>
       <Meta />
-      <h1 className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"></h1>
+      <h1 className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Runme</h1>
     </Layout>
   );
 }
