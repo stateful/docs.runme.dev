@@ -13,7 +13,6 @@ The Runme CLI is ideal for power users who want to run markdown documentation fr
 
 ![Runme CLI run commands from terminal](../static/img/terminal.png)
 
-
 ### On MacOS
 
 The easiest way on MacOS is to use Homebrew:
