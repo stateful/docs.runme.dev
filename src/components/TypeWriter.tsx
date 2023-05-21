@@ -6,7 +6,7 @@ export interface TypeWriterProps {
   sequence: any[]
 }
 
-const DEFAULT_TEXT = 'Tasks!'
+const DEFAULT_TEXT = 'Markdown!'
 
 export default function TypeWriter(props: TypeWriterProps) {
   const ref = useRef<HTMLSpanElement>(null)

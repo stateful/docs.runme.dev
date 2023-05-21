@@ -34,7 +34,7 @@ Runme comes with a headless and a graphical user interface to author, run, and v
 
 <Infobox type="sidenote" title="Try it now">
 
-Learn how to install Runme and <a href="/docs/install">get started</a>.
+Learn how to install Runme and get started.
 
 </Infobox>
 

@@ -16,20 +16,24 @@ import TypeWriter from "@site/src/components/TypeWriter";
 
 const sequence = [
   ["pauseFor", 500],
-  ["typeString", "Workflows!"],
-  ["pauseFor", 1500],
-  ["deleteAll"],
-  ["pauseFor", 2500],
-  ["typeString", "Docs!"],
-  ["pauseFor", 1500],
-  ["deleteAll"],
-  ["pauseFor", 2500],
-  ["typeString", "Readme.md!"],
-  ["pauseFor", 3000],
-  ["deleteAll"],
-  ["pauseFor", 1500],
   ["typeString", "Tasks!"],
-  ["pauseFor", 3000],
+  ["pauseFor", 2500],
+  ["deleteAll"],
+  ["pauseFor", 1500],
+  ["typeString", "Docs!"],
+  ["pauseFor", 2500],
+  ["deleteAll"],
+  ["pauseFor", 1500],
+  ["typeString", "Readme.md!"],
+  ["pauseFor", 2500],
+  ["deleteAll"],
+  ["pauseFor", 1500],
+  ["typeString", "Workflows!"],
+  ["pauseFor", 2500],
+  ["deleteAll"],
+  ["pauseFor", 1500],
+  ["typeString", "Markdown!"],
+  ["pauseFor", 2500],
   ["deleteAll"],
   ["pauseFor", 1500],
 ];
@@ -101,7 +105,7 @@ export function Benefits() {
         </h2>
 
         <div className="text-xl">
-          A better way to setup your local dev environment for a repo.
+          A better way to config your local dev environment for a repo.
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
