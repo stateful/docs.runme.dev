@@ -1,13 +1,15 @@
 ---
 sidebar_position: 1
-title: Why Runme?
+title: Home
 ---
 
 import Infobox from "../src/components/Infobox.tsx"
 
+# Why Runme?
+
 Runme bridges the gap between workflow documentation and task definitions required to develop locally and execute runbooks remotely. It allows project contributors to execute instructions step-by-step, checking intermediary results as they go, to ultimately complete and verify the desired results.
 
-Runme achieves this by making markdown (ubiquitous for docs inside repos) interactive. Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
+Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically Runme runs your fenced code blocks (shell, bash, zsh). Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-illustration.mp4" type="video/mp4" />
@@ -28,13 +30,14 @@ Develop successfully irrespective of the environment: a local laptop, a VM, a De
 
 Runme comes with a headless and a graphical user interface to author, run, and verify workflows centered around code. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of following parts:
 
-- **[Runme CLI](https://github.com/stateful/runme)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
+- **[Runme CLI](/docs/install#runme-cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
 - **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
-- **[Runme for VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
+- **[Runme for VS Code](/docs/install#runme-for-vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
+- **[Runme for Web](/docs/install#runme-for-web)** a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without having to run the IDE.
 
 <Infobox type="sidenote" title="Try it now">
 
-Learn how to install Runme and get started.
+Learn how to install Runme and [get started](/docs/getting-started).
 
 </Infobox>
 
@@ -50,7 +53,7 @@ Architecturally, Runme breaks down into the following parts:
 - A notebook client (inside VS Code) for the workflow runner
 - A visual markdown viewer and editor (inside VS Code)
 
-## Known limitations
+## Known Limitations
 
 - Runme currently only has rudimentary support for PowerShell. While PowerShell is not limited to Windows, it is its primary platform. We recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
 - Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter big or small to help us make Runme better.

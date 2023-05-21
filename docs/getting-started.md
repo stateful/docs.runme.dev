@@ -7,11 +7,7 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Getting Started
 
-Copypasta menu is over.
-
-Ever wondered if there is a better way of experiencing READMEs; forget copy&pasting into terminals? Skip right to dessert, and enjoy Runme sweetness to streamline reading, running, and editing or markdown docs.
-
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our docs via Runme. Please don't be surprised if Runme's docs prompt you to use Runme. Learning by using is very effective.
+Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs. Please don't be surprised if Runme's docs prompt you to use Runme. Learning by using is very effective.
 
 # Your First Runme
 
@@ -25,7 +21,7 @@ Simply follow the instructions provided by VS Code to get started in seconds:
 
 Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
 
-If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/docs/cli)
+If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/docs/install#runme-cli)
 
 ## Running Scripts
 
@@ -167,7 +163,7 @@ In the VS Code settings, several configurable settings influence general Runme b
 
 Suppose that you have a script that intends to run in the background (like a dev watcher). To simulate this now, we'll use the script `sleep 10000`.
 
-You _could_ run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
+You *could* run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
