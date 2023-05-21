@@ -13,7 +13,7 @@ Runme strives to provide a great experience right out of the box. Please continu
 
 You can get started in one click with the following badge:
 
-[![Run Locally via Runme](https://badgen.net/badge/Run%20this/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md)
+[![Run Locally via Runme](https://badgen.net/badge/Run%20this/Tutorial/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md)
 
 Simply follow the instructions provided by VS Code to get started in seconds:
 
