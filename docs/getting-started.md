@@ -7,7 +7,7 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Getting Started
 
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](/docs/install) first before proceeding.
+Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](/docs/install) before proceeding.
 
 # Your First Runme
 
