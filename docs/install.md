@@ -59,11 +59,16 @@ See [the doc page on the cli](https://runme-dev-mxsdev.vercel.app/docs/cli) for 
 
 Runme has a nice TUI that you can use simply like so:
 
+```sh
+# short for "runme tui"
+$ runme
+```
+
 ![Runme TUI Usage](../static/img/runme-tui.gif)
 
 This allows you to quickly execute any script present in the README.
 
-<Infobox type="sidenote" title="Warning!">
+<Infobox type="warning" title="Warning!">
 
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
@@ -186,6 +191,12 @@ Extension host agent listening on 8000
 Web UI available at http://localhost:8000/?tkn=6e6560a2-75ff-4cda-aad1-1bf68e188c6f
 [12:43:29] Extension host agent started.
 ```
+
+<Infobox type="sidenote" title="Coming soon">
+
+We are working on providing a single command option to install and run Runme for Web from the CLI.
+
+</Infobox>
 
 ### How It Works
 
