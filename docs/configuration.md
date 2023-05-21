@@ -64,7 +64,7 @@ If possible, always specify the language [according to the markdown standard](ht
 
 Out of the box, Runme will leverage the [Guesslang](https://github.com/yoeo/guesslang) ML/AI model with a bias towards Shell to detect the languages for unidentified code blocks.
 
-While this works well in a lot of cases, the accuracy is nowhere near 100%!
+While this works well in a lot of cases, the accuracy is not perfect.
 
 </Infobox>
 
