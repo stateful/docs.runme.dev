@@ -1,13 +1,15 @@
 ---
 sidebar_position: 1
-title: Why Runme?
+title: Home
 ---
 
 import Infobox from "../src/components/Infobox.tsx"
 
+# Why Runme?
+
 Runme bridges the gap between workflow documentation and task definitions required to develop locally and execute runbooks remotely. It allows project contributors to execute instructions step-by-step, checking intermediary results as they go, to ultimately complete and verify the desired results.
 
-Runme achieves this by making markdown (ubiquitous for docs inside repos) interactive. Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
+Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically Runme runs your fenced code blocks (shell, bash, zsh). Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-illustration.mp4" type="video/mp4" />
@@ -34,7 +36,7 @@ Runme comes with a headless and a graphical user interface to author, run, and v
 
 <Infobox type="sidenote" title="Try it now">
 
-Learn how to install Runme and get started.
+Learn how to install Runme and [get started](/docs/getting-started).
 
 </Infobox>
 
