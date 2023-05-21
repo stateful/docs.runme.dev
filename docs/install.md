@@ -167,7 +167,6 @@ Just run following command to install `code-server`:
 
 ```sh
 $ wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
-$ code-server serve-local --install-extension stateful.runme --start-server
 ```
 
 Followed by launching Runme inside of it:
