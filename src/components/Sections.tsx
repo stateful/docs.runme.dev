@@ -105,7 +105,7 @@ export function Benefits() {
         </h2>
 
         <div className="text-xl">
-          A better way to config your local dev environment for a repo.
+          A better way to configure your local dev environment for a repo.
         </div>
       </div>
       <div className="flex flex-col w-full grid-cols-2 gap-4 mt-12 lg:grid 2xl:gap-1">
