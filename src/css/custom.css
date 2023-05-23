@@ -26,6 +26,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-color-content-secondary: #f62459;
+  --ifm-navbar-height: 4.55rem;
 
   --runme-font-size-base: 1rem;
   --runme-font-size-sm: 0.875rem;
@@ -74,16 +75,24 @@ html[data-theme="dark"] {
   --runme-nav-background: #161821;
 }
 
+#__docusaurus {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.navbar--fixed-top {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
 .docs-doc-page h1.runmeLogo {
   font-size: 1.5rem!important;
   line-height: 2rem;
   font-weight: bold;
   letter-spacing: -.5px;
   transform: translateX(-12px);
-}
-
-[data-theme="dark"] .navbar--fixed-top {
-  border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
 /* blog  start*/
@@ -113,6 +122,7 @@ h1.text-white {
   position: sticky;
   background-color: var(--runme-nav-background);
   z-index: 100;
+  box-shadow: none
 }
 
 .navbar__brand {
@@ -357,10 +367,4 @@ video {
 
 .notfound {
   width: 100%;
-}
-.notfound .navbar h1 a {
-  font-size: .75em;
-}
-.notfound .navbar__logo {
-  margin-right: 0;
 }
