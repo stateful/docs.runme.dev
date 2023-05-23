@@ -24,20 +24,20 @@ Develop successfully irrespective of the environment: a local laptop, a VM, a De
 
 - Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer. Guard-rails included.
 - Get ahead of docs bit-rot and repo reverse-engineering executing tasks directly where they are described: markdown docs inside your project's repo.
-- Increase portability of dev workflows by decoupling tasks from personal *dotfiles* or *bash_history's* without getting in the way.
+- Increase portability of dev workflows by decoupling tasks from personal _dotfiles_ or _bash_history's_ without getting in the way.
 
 ## The User Interface
 
 Runme comes with a headless and a graphical user interface to author, run, and verify workflows centered around code. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of following parts:
 
-- **[Runme CLI](/docs/install#runme-cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
+- **[Runme CLI](/install#runme-cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
 - **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
-- **[Runme for VS Code](/docs/install#runme-for-vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
-- **[Runme for Web](/docs/install#runme-for-web)** a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without having to run the IDE.
+- **[Runme for VS Code](/install#runme-for-vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
+- **[Runme for Web](/install#runme-for-web)** a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without having to run the IDE.
 
 <Infobox type="sidenote" title="Try it now">
 
-Learn how to install Runme and [get started](/docs/getting-started).
+Learn how to install Runme and [get started](/getting-started).
 
 </Infobox>
 
