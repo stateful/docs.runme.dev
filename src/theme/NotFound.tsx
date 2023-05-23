@@ -1,23 +1,25 @@
 import React from 'react';
-import BrowserOnly from '@docusaurus/BrowserOnly'
 import { PageMetadata } from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 
 export default function NotFound() {
+  const css = /*css*/`
+    body {
+      display: flex
+    }
+    body #__docusaurus {
+      width: 100%
+    }
+  `
   return (
     <>
-      <BrowserOnly>
-        {/* This is needed to apply correct styles to the header */}
-        {() => {
-          document.querySelector('#__docusaurus').setAttribute('class', 'docs-doc-page notfound')
-          return (<></>)
-        }}
-      </BrowserOnly>
-      <PageMetadata title='Page Not Found' />
+      <PageMetadata title='Page Not Found'>
+        <style>{css}</style>
+      </PageMetadata>
       <Layout>
         <main className="container margin-vert--xl w-full h-full">
           <div className="row">
-            <div className="col col--6 col--offset-3">
+            <div className="col col--6 col--offset-3 text-center">
               <h1 className="hero__title mb-4">
                 Ouch, something didn't <b>Run</b> well 🐛
               </h1>

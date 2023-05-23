@@ -142,7 +142,7 @@ const config = {
           {
             type: "html",
             position: "left",
-            value: /*html*/ `<h1 class="font-bold text-4xl bg-clip-text ">
+            value: /*html*/ `<h1 class="runmeLogo">
               <a href="${prodUrl}">RUNME</a>
             </h1>`,
           },
@@ -154,16 +154,22 @@ const config = {
             className: "docsLink",
           },
           {
+            href: "https://runme.dev/community",
+            label: "Community",
+            position: "right",
+            className: "discordLink",
+          },
+          {
+            href: "https://runme.dev/blog",
+            label: "Blog",
+            position: "right",
+            className: "discordLink",
+          },
+          {
             href: "https://github.com/stateful/runme",
             label: "GitHub",
             position: "right",
             className: "githubLink",
-          },
-          {
-            href: "https://runme.dev/community",
-            label: "Join our Community",
-            position: "right",
-            className: "discordLink",
           },
         ],
       },
