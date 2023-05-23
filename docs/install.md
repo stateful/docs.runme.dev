@@ -52,7 +52,7 @@ If you don't have go developer tools installed and still want to use this method
 
 You can find a binary for your OS/arch on our [releases page](https://github.com/stateful/runme/releases). Let us know on [Discord](https://discord.com/invite/BQm8zRCBUY) if you have a preferred distribution mechanism.
 
-See [the doc page on the cli](https://runme-dev-mxsdev.vercel.app/docs/cli) for installation instructions.
+See [the doc page on the cli](https://docs.runme.dev/cli) for installation instructions.
 
 ### Basic Usage
 
@@ -198,4 +198,4 @@ We are working on providing a single command option to install and run Runme for
 
 ### How It Works
 
-Runme's functionality when run as a web app mirrors VS Code's UX. Go ahead and check out [Getting Started](/docs/getting-started) for next steps.
+Runme's functionality when run as a web app mirrors VS Code's UX. Go ahead and check out [Getting Started](/getting-started) for next steps.

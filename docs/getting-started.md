@@ -7,7 +7,7 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Getting Started
 
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](/docs/install) before proceeding.
+Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](/install) before proceeding.
 
 # Your First Runme
 
@@ -21,7 +21,7 @@ Simply follow the instructions provided by VS Code to get started in seconds:
 
 Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
 
-If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/docs/install#runme-cli)
+If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/install#runme-cli)
 
 ## Running Scripts
 
@@ -163,7 +163,7 @@ In the VS Code settings, several configurable settings influence general Runme b
 
 Suppose that you have a script that intends to run in the background (like a dev watcher). To simulate this now, we'll use the script `sleep 10000`.
 
-You *could* run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
+You _could_ run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
@@ -207,7 +207,7 @@ Be sure not to strip this data if you want to use it!
 
 Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
 
-Please see the [integrations section](/docs/integrations) to see more sophisticated use-cases of Runme or learn about all the [cell configuration options](/docs/configuration) available to streamline the reading and running experience.
+Please see the [integrations section](/integrations) to see more sophisticated use-cases of Runme or learn about all the [cell configuration options](/configuration) available to streamline the reading and running experience.
 
 ## Useful Tips & Tricks
 
