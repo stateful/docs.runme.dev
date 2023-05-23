@@ -10,6 +10,7 @@ export default function NotFound() {
         {/* This is needed to apply correct styles to the header */}
         {() => {
           document.querySelector('#__docusaurus').setAttribute('class', 'docs-doc-page notfound')
+          document.querySelector('body').style.display = 'flex'
           return (<></>)
         }}
       </BrowserOnly>
@@ -17,7 +18,7 @@ export default function NotFound() {
       <Layout>
         <main className="container margin-vert--xl w-full h-full">
           <div className="row">
-            <div className="col col--6 col--offset-3">
+            <div className="col col--6 col--offset-3 text-center">
               <h1 className="hero__title mb-4">
                 Ouch, something didn't <b>Run</b> well 🐛
               </h1>
