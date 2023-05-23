@@ -260,9 +260,9 @@ h1.text-white {
   margin-right: 0;
 }
 
-.navbar__items--right {
+/* .navbar__items--right {
   margin-top: 10px;
-}
+} */
 
 .navbar__items--right a {
   margin: 0px 30px;

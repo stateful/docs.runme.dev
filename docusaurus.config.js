@@ -142,7 +142,7 @@ const config = {
           {
             type: "html",
             position: "left",
-            value: /*html*/ `<h1 class="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            value: /*html*/ `<h1 class="font-bold text-4xl bg-clip-text ">
               <a href="${prodUrl}">RUNME</a>
             </h1>`,
           },
