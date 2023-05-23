@@ -4,7 +4,9 @@
 name: Auto-merge
 
 # `pull_request_target` means this uses code in the base branch, not the PR.
-on: pull_request_target
+# on: pull_request_target
+on: [push, pull_request]
+
 
 # Dependabot PRs' tokens have read permissions by default and thus we must enable write permissions.
 permissions:
