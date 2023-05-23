@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://docs.runme.dev
+
+# Sitemaps
+Sitemap: https://docs.runme.dev/sitemap.xml
