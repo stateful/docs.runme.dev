@@ -21,10 +21,9 @@ const keywords = [
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Runme",
-  tagline:
-    "Everything a markdown file can do and way more. No changes required.",
-  url: "https://runme.dev",
+  title: "RUNME",
+  tagline: "Documentation for the RUNME project.",
+  url: "https://docs.runme.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -91,7 +90,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -135,7 +134,7 @@ const config = {
       ],
       navbar: {
         logo: {
-          alt: "Runme Logo",
+          alt: "RUNME Logo",
           src: "img/logo.svg",
           href: "/",
         },
@@ -144,7 +143,7 @@ const config = {
             type: "html",
             position: "left",
             value: /*html*/ `<h1 class="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-              <a href="/">runme</a>
+              <a href="/">RUNME</a>
             </h1>`,
           },
           {
@@ -176,15 +175,15 @@ const config = {
        * credentials available in 1password
        */
       ...(process.env.ALGOLIA_API_KEY &&
-        process.env.ALGOLIA_INDEX_NAME &&
-        process.env.ALGOLIA_APP_ID
+      process.env.ALGOLIA_INDEX_NAME &&
+      process.env.ALGOLIA_APP_ID
         ? {
-          algolia: {
-            apiKey: process.env.ALGOLIA_API_KEY,
-            indexName: process.env.ALGOLIA_INDEX_NAME,
-            appId: process.env.ALGOLIA_APP_ID,
-          },
-        }
+            algolia: {
+              apiKey: process.env.ALGOLIA_API_KEY,
+              indexName: process.env.ALGOLIA_INDEX_NAME,
+              appId: process.env.ALGOLIA_APP_ID,
+            },
+          }
         : {}),
     }),
 };
