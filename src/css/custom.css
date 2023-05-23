@@ -179,23 +179,6 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar__link {
-  color: var(--ifm-color-primary-even-more-lightest);
-}
-
-.navbar__link:hover,
-.navbar__link--active {
-  color: var(--ifm-color-primary-even-more-lightest);
-}
-
-.main .navbar__link {
-  color: var(--ifm-color-primary-even-more-lightest);
-}
-
-.clean-btn {
-  color: var(--ifm-color-primary-even-more-lightest);
-}
-
 .mdx-page .navbar__link,
 .mdx-page .clean-btn,
 .navbar__link,
