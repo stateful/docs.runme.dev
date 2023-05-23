@@ -87,7 +87,7 @@ html[data-theme="dark"] {
   border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
-.docs-doc-page h1.runmeLogo {
+h1.runmeLogo {
   font-size: 1.5rem!important;
   line-height: 2rem;
   font-weight: bold;
@@ -198,8 +198,8 @@ a:hover {
 
 .mdx-page .navbar__link,
 .mdx-page .clean-btn,
-.docs-doc-page .navbar__link,
-.docs-doc-page .clean-btn {
+.navbar__link,
+.clean-btn {
   color: var(--ifm-navbar-link-color);
 }
 
@@ -245,7 +245,7 @@ p {
   color: var(--ifm-heading-color);
 }
 
-.docs-doc-page strong {
+strong {
   color: var(--ifm-color-primary);
 }
 
