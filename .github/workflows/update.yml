@@ -14,7 +14,7 @@ permissions:
 jobs:
   dependencies:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
+    if: github.actor == 'christian-bromann'
 
     steps:
       - name: Fetch PR metadata
