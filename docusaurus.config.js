@@ -91,16 +91,17 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/stateful/runme.dev/edit/main",
+          editUrl: "https://github.com/stateful/docs.runme.dev/edit/main",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/stateful/runme.dev/edit/main",
+          editUrl: "https://github.com/stateful/docs.runme.dev/edit/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -148,7 +149,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "intro",
+            docId: "index",
             position: "right",
             label: "Documentation",
             className: "docsLink",
