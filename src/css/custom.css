@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 @import url("./normalize.css");
 @import url("./mobile.css");
 
@@ -73,6 +72,12 @@ html[data-theme="dark"] {
   --runme-code-border: #737ea5;
   --runme-code-background: #33384d;
   --runme-nav-background: #161821;
+}
+
+body {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #vscode-bolt::after {
