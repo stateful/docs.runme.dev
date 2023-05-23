@@ -1,18 +1,19 @@
 import React from 'react';
-import Translate, { translate } from '@docusaurus/Translate';
+import BrowserOnly from '@docusaurus/BrowserOnly'
 import { PageMetadata } from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 
 export default function NotFound() {
-  document.querySelector('#__docusaurus').setAttribute('class', 'docs-doc-page notfound')
   return (
     <>
-      <PageMetadata
-        title={translate({
-          id: 'theme.NotFound.title',
-          message: 'Page Not Found',
-        })}
-      />
+      <BrowserOnly>
+        {/* This is needed to apply correct styles to the header */}
+        {() => {
+          document.querySelector('#__docusaurus').setAttribute('class', 'docs-doc-page notfound')
+          return (<></>)
+        }}
+      </BrowserOnly>
+      <PageMetadata title='Page Not Found' />
       <Layout>
         <main className="container margin-vert--xl w-full h-full">
           <div className="row">
