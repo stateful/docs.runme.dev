@@ -11,10 +11,7 @@ Runme bridges the gap between workflow documentation and task definitions requir
 
 Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically Runme runs your fenced code blocks (shell, bash, zsh). Keep using your language platform's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc), let Runme worry about how to execute them.
 
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/runme-illustration.mp4" type="video/mp4" />
-  <source src="/videos/runme-illustration.webm" type="video/webm" />
-</video>
+![What is Runme](../static/img/venn.png)
 
 ## What is Runme?
 
@@ -52,6 +49,11 @@ Architecturally, Runme breaks down into the following parts:
 - A CLI client for the workflow runner
 - A notebook client (inside VS Code) for the workflow runner
 - A visual markdown viewer and editor (inside VS Code)
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-illustration.mp4" type="video/mp4" />
+  <source src="/videos/runme-illustration.webm" type="video/webm" />
+</video>
 
 ## Known Limitations
 
