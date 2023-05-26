@@ -11,6 +11,7 @@ $ npm install
 ### Local Development
 
 ```sh { name=npm-run-start background=true }
+$ rm -rf build/
 $ npm run start
 ```
 

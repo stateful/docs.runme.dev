@@ -167,7 +167,7 @@ const config = {
           },
           {
             href: "https://github.com/stateful/runme",
-            label: "GitHub",
+            label: "Open Source",
             position: "right",
             className: "githubLink",
           },
