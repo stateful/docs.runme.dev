@@ -332,9 +332,9 @@ ol {
   border: 1px solid var(--runme-color-lila-dark-opac);
 }
 
-.markdown a {
+/* .markdown a {
   color: var(--ifm-color-content-secondary);
-}
+} */
 
 html[data-theme="dark"] .markdown a {
   color: var(--ifm-color-primary);
