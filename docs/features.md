@@ -95,3 +95,11 @@ Which will result in:
 * Control whether or not a cell's terminal should remain open after successful execution
 * Use language identifiers in fenced code blocks to forgo language detection and higher reliability
 * Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways
+
+## Runme Cells
+
+### Chain Cell Output
+
+With the `$__` parameter you can transfer the stdout result of a previous cell into your next execution:
+
+![split view in vs code](../static/img/last-cell-result.gif)
