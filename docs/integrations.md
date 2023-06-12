@@ -47,7 +47,7 @@ Now, you can define what should be done for building and testing your project in
 
 ## Fresh App on Deno Cloud
 
-The first example is in the `fresh` folder and sets up a fresh service with deno.
+The first example is in the `fresh` folder and sets up a fresh service with deno. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Ffresh%2FREADME.md).
 
 ### Local Environment
 
@@ -81,7 +81,7 @@ For a deploy script, such as the one below, running as a Background task is a gr
 
 ## Next.js App on Vercel
 
-This example can be found in the `vercel` sub-folder.
+This example can be found in the `vercel` sub-folder. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Fvercel%2FREADME.md).
 
 ### Setup/Environment
 
