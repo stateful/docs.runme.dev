@@ -85,7 +85,7 @@ In this case, this can be used to get a list of the user's current registered pr
 
 ![run hello world in vs code](../static/img/run-hello-world.gif)
 
-## GitHub Actions
+## Embedding GitHub Actions
 
 [GitHub Actions](https://docs.github.com/en/actions) provides a robust and flexible continuous integration and continuous delivery (CI/CD) platform for automating various tasks within your development lifecycle (build, test and deployment), ultimately empowering you to focus more on writing code and less on repetitive manual processes.
 One building block of GitHub actions is [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows), a YAML file describing an automated process that will run one or more jobs.
@@ -203,6 +203,6 @@ If you click Open workflow run, a browser window will be opened with the detaile
 
 <Infobox type="sidenote">
 
-In a future version of Runme, we plan to display workflow run details in real-time. We think Runme is a great companion of the official [GitHub Actions extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions)
+In a future version of Runme, we plan to display workflow run details in real-time. We think Runme is a great companion of the official [GitHub Actions extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions).
 
 </Infobox>
