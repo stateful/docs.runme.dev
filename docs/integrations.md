@@ -181,7 +181,7 @@ jobs:
 
 The above YAML file, specifies a simple manual triggered workflow file with inputs: releaseVersion, releaseType, releaseChannel, publishMarketplace, publishOpenVSX, and a job that prints the values for each input in JSON format.
 
-#### Use Runme to trigger a manual workflow
+### Use Runme to trigger a manual workflow
 
 Currently, there are two ways to indicate Runme to run a GitHub Action:
 
