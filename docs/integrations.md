@@ -87,7 +87,11 @@ In this case, this can be used to get a list of the user's current registered pr
 
 ## Embedding GitHub Actions
 
-[GitHub Actions](https://docs.github.com/en/actions) provides a robust and flexible continuous integration and continuous delivery (CI/CD) platform for automating various tasks within your development lifecycle (build, test and deployment), ultimately empowering you to focus more on writing code and less on repetitive manual processes.
+> 💡 Be sure to install [RUNME for VS Code](/install#runme-for-vs-code) first
+
+<br/>
+
+GitHub Actions provides a robust and flexible continuous integration and continuous delivery (CI/CD) platform for automating various tasks within your development lifecycle (build, test and deployment), ultimately empowering you to focus more on writing code and less on repetitive manual processes.
 One building block of GitHub actions is [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows), a YAML file describing an automated process that will run one or more jobs.
 
 <video className="rounded-md" autoPlay loop muted playsInline controls>
