@@ -7,21 +7,47 @@ import Infobox from "../src/components/Infobox.tsx"
 
 Previously, you learned the basic editing tools for creating and editing README files.
 
-In this guide, you'll be exposed to a few examples of usages for Runme. Hopefully, this helps inspire you to use Runme in interesting and useful ways!
+In this guide, you'll be exposed to a few ways you can integrate Runme with different environment or 3rd party services.
 
-## Setup
+## GitHub Action
 
-Go ahead and clone the `stateful/vscode-runme` repo:
+Runme provides a GitHub action that allows you to seamlessly use the tool in CI/CD. It enables to re-use the workflows that your contributor use in CI/CD and therefore verifies that your contributing guidelines are still up to date.
 
-```sh
-git clone https://github.com/stateful/vscode-runme
+### Setup
+
+In `.github/workflows/test.yaml` create a new file with the following contents:
+
+```yaml
+name: Test Changes
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Setup Node version
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm ci
+      # execute workflows through Runme
+      - name: Build / Test Project
+        uses: stateful/runme-action@v2
+        with:
+          workflows: |
+            build
+            test
 ```
 
-These examples are from the `examples` [sub-folder](https://github.com/stateful/vscode-runme/tree/main/examples)!
+Now, you can define what should be done for building and testing your project in e.g. a `CONTRIBUTING.md` and have your contributors be able to run the same flows through the CLI, e.g. via: `runme run build tes`.
 
 ## Fresh App on Deno Cloud
 
-The first example is in the `fresh` folder and sets up a fresh service with deno.
+The first example is in the `fresh` folder and sets up a fresh service with deno. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Ffresh%2FREADME.md).
 
 ### Local Environment
 
@@ -55,7 +81,7 @@ For a deploy script, such as the one below, running as a Background task is a gr
 
 ## Next.js App on Vercel
 
-This example can be found in the `vercel` sub-folder.
+This example can be found in the `vercel` sub-folder. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Fvercel%2FREADME.md).
 
 ### Setup/Environment
 
