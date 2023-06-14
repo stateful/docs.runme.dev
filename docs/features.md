@@ -59,10 +59,6 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ![confirm run all commands](../static/img/confirm-run-all.png)
 
-### Split view of markdown and notebook
-
-It’s easy to get from notebook to markdown and vice versa.
-
 ### Run with Runme Deep Linking
 
 You can use Runme to on-board developers with a simple click on a button. It will trigger VS Code to clone a repository and open it for the user with a specific markdown file opened, e.g. an onboarding markdown file to have the user get started with the project:
@@ -99,3 +95,11 @@ Which will result in:
 * Control whether or not a cell's terminal should remain open after successful execution
 * Use language identifiers in fenced code blocks to forgo language detection and higher reliability
 * Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways
+
+## Runme Cells
+
+### Chain Cell Output
+
+With the `$__` parameter you can transfer the stdout result of a previous cell into your next execution:
+
+![split view in vs code](../static/img/last-cell-result.gif)
