@@ -87,7 +87,7 @@ In this case, this can be used to get a list of the user's current registered pr
 
 ## Embedding GitHub Actions
 
-> 💡 Be sure to install [RUNME for VS Code](/install#runme-for-vs-code) first
+> 💡 Be sure to install [Runme for VS Code](/install#runme-for-vs-code) first
 
 <br/>
 
