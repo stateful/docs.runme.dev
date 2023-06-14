@@ -99,7 +99,7 @@ One building block of GitHub actions is [Workflows](https://docs.github.com/en/a
   <source src="videos/embed.webm" type="video/webm" />
 </video>
 
-#### Workflow types
+### Workflow types
 
 - Events that occur in your workflow's repository
 - Events that occur outside of GitHub and trigger a repository_dispatch event on GitHub
@@ -117,7 +117,7 @@ Currently, Runme only supports manual workflows; they are helpful to trigger job
 
 In general, being able to run a GitHub Action manually gives you control over workflows by adding an extra layer of flexibility to your CI/CD and automation processes.
 
-#### How to use it
+### How to use it
 
 Use the __workflow_dispatch__ event to specify your manually triggered workflow, you can optionally specify inputs that are passed to the workflow. The triggered workflow receives the inputs in the [inputs context](https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context)
 
