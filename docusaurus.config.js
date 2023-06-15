@@ -25,6 +25,7 @@ const config = {
   tagline: "Documentation for the RUNME project.",
   url: "https://docs.runme.dev",
   baseUrl: "/",
+  titleDelimiter: ' • ',
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
