@@ -9,13 +9,13 @@ import Infobox from "../src/components/Infobox.tsx"
 
 Runme is a tool that makes runbooks actually *runnable*, making it easier to follow step-by-step instructions. Users can execute instructions, check intermediate results, and ensure the desired outputs are achieved. Authors can create predefined golden paths and share them with others. Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on.
 
-Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc). Runme persists your runbooks in markdown which your docs are likely already using.
+Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc.). Runme persists your runbooks in markdown, which your docs are likely already using.
 
 ![What is Runme](../static/img/venn.png)
 
 ## What is Runme?
 
-Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that makes them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
+Runme has interfaces for terminal, editor, and notebooks attached to a kernel, making them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
 
 > 💡 Runme is like Jupyter but with a Shell/Bash Kernel and no dependencies.
 
@@ -28,12 +28,12 @@ Runme runs your runbooks everywhere, irrespective of the environment: a local la
 
 ## The User Interface
 
-Runme comes with a headless and graphical user interface to author, run, and verify runbooks. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
+Runme has a headless and graphical user interface to author, run, and verify runbooks. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
 
 - **[Runme CLI](/install#runme-cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
 - **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
 - **[Runme for VS Code](/install#runme-for-vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
-- **[Runme for Web](/install#runme-for-web)** a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without having to run the IDE.
+- **[Runme for Web](/install#runme-for-web)** is a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without running the IDE.
 
 <Infobox type="sidenote" title="Try it now">
 
@@ -65,7 +65,7 @@ Architecturally, Runme breaks down into the following parts:
 
 ## Telemetry Information
 
-Please help to make Runme better. Any information emitted by Runme is pseudo-anonymized (no PII whatsoever), and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to continuously improve the Runme experience for developers.
+Please help to make Runme better. Any information emitted by Runme is pseudo-anonymized (no PII whatsoever), and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to improve the Runme experience for developers continuously.
 
 Telemetry collected includes:
 
