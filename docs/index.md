@@ -7,9 +7,9 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
-Runme bridges the gap between workflow documentation and task definitions required to execute runbook-like sequences of instructions. It allows users to execute instructions step-by-step, checking intermediary results as they go, to complete and verify the desired outputs. Authors can define golden paths and easily share them with others. Runme combines the guardrails of a pipeline with the flexibility of "scripting" and progressive execution.
+Runme is a tool that makes runbooks actually *runnable*, making it easier to follow step-by-step instructions. Users can execute instructions, check intermediate results, and ensure the desired outputs are achieved. Authors can create predefined golden paths and share them with others. Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on.
 
-Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It is also 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc); let Runme worry about how to execute them and surface outputs.
+Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc). Runme persists your runbooks in markdown which your docs are likely already using.
 
 ![What is Runme](../static/img/venn.png)
 
@@ -17,15 +17,18 @@ Runme achieves this by literally running markdown (ubiquitous for docs inside re
 
 Runme comes with interfaces for terminal, editor, and notebooks attached to a kernel that makes them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
 
-Develop successfully irrespective of the environment: a local laptop, a VM, a Devcontainer, or Cloud Development Environment, etc.:
+> 💡 Runme is like Jupyter but with a Shell/Bash Kernel and no dependencies.
+
+<br/>
+Runme runs your runbooks everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, or Cloud Development Environment, etc.:
 
 - Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer. Guard-rails included.
 - Get ahead of docs bit-rot and repo reverse-engineering executing tasks directly where they are described: markdown docs inside your project's repo.
-- Increase portability of dev workflows by decoupling tasks from personal *dotfiles* or *bash_history's* without getting in the way.
+- Increase portability of dev workflows by decoupling tasks from personal _dotfiles_ or _bash_history's_ without getting in the way.
 
 ## The User Interface
 
-Runme comes with a headless and graphical user interface to author, run, and verify workflows centered around code. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
+Runme comes with a headless and graphical user interface to author, run, and verify runbooks. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
 
 - **[Runme CLI](/install#runme-cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
 - **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
