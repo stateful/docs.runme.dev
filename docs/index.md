@@ -21,10 +21,13 @@ Runme has interfaces for terminal, editor, and notebooks attached to a kernel, m
 
 <br/>
 Runme runs your runbooks everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
+<br/>
+<br/>
 
-- Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer. Guard-rails included.
-- Get ahead of docs bit-rot and repo reverse-engineering executing tasks directly where they are described: markdown docs inside your project's repo.
-- Increase portability of dev workflows by decoupling tasks from personal _dotfiles_ or _bash_history's_ without getting in the way.
+- Split loose scripts into runbooks with separate cells, intermediate outputs, and controls to check before moving on.
+- Get ahead of bit-rot and reverse-engineering runbooks executing them directly from markdown inside your project's repo.
+- Increase shareability of runbooks by decoupling them from personal _dotfiles_ or _bash_history's_ without getting in the way.
+- Codify golden paths without overly restricting the flexibility of "scripting".
 
 ## The User Interface
 
@@ -45,12 +48,12 @@ Learn how to install Runme and [get started](/getting-started).
 
 Architecturally, Runme breaks down into the following parts:
 
-- A serializer that transforms markdown into executable tasks & workflows
-- A portable task runner interface that supports multimodal clients
+- A serializer that transforms markdown into executable cells with input and output
+- A portable runner interface that supports multimodal clients
 - A kernel that retains state across execution in sessions akin to a terminal
-- A raw-markdown editor (inside VS Code) client for the workflow runner
-- A CLI client for the workflow runner
-- A notebook client (inside VS Code) for the workflow runner
+- A raw-markdown editor (inside VS Code) client for the runner
+- A CLI client for the runner
+- A notebook client (inside VS Code) for the runner
 - A visual markdown viewer and editor (inside VS Code)
 
 <video autoPlay loop muted playsInline controls>
