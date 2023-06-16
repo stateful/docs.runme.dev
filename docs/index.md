@@ -20,7 +20,7 @@ Runme has interfaces for terminal, editor, and notebooks attached to a kernel, m
 > 💡 Runme is like Jupyter but with a Shell/Bash Kernel and no dependencies.
 
 <br/>
-Runme runs your runbooks everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, or Cloud Development Environment, etc.:
+Runme runs your runbooks everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
 
 - Narrow down on a small set of tasks, describe their purpose alongside the use case, and make execution a no-brainer. Guard-rails included.
 - Get ahead of docs bit-rot and repo reverse-engineering executing tasks directly where they are described: markdown docs inside your project's repo.
