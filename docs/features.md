@@ -71,7 +71,7 @@ You can create such a link using the following structure:
 
 <Infobox type="sidenote">
 
-Please note that you can use **SSH** or **HTTPS** notations for the repository parameter. In above's example just replace `git@github.com:stateful/blog-examples.git` with `https://github.com/stateful/blog-examples` respectively.
+Please note that you can use **SSH** or **HTTPS** notations for the repository parameter. In the above's example just replace `git@github.com:stateful/blog-examples.git` with `https://github.com/stateful/blog-examples.git` respectively.
 
 </Infobox>
 
