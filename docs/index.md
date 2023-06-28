@@ -7,11 +7,13 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
-Runme is a tool that makes runbooks actually *runnable*, making it easier to follow step-by-step instructions. Users can execute instructions, check intermediate results, and ensure the desired outputs are achieved. Authors can create predefined golden paths and share them with others. Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on.
+Runme is a tool that makes runbooks actually _runnable_, making it easier to follow step-by-step instructions. Users can execute instructions, check intermediate results, and ensure the desired outputs are achieved. Authors can create predefined golden paths and share them with others. Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on.
 
 Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc.). Runme persists your runbooks in markdown, which your docs are likely already using.
 
-![What is Runme](../static/img/venn.png)
+<!-- ![What is Runme](../static/img/venn.png) -->
+<br />
+<img src="/img/venn.png" style={{width: "70%"}} alt="What is runme"/>
 
 ## What is Runme?
 
