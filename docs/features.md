@@ -3,6 +3,8 @@ sidebar_position: 7
 title: Key Features
 ---
 
+import Infobox from "../src/components/Infobox.tsx"
+
 ## Runme UX
 
 Easily switch between different views.
@@ -59,13 +61,19 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ![confirm run all commands](../static/img/confirm-run-all.png)
 
-### Run with Runme Deep Linking
+## Run with Runme Deep Linking
 
 You can use Runme to on-board developers with a simple click on a button. It will trigger VS Code to clone a repository and open it for the user with a specific markdown file opened, e.g. an onboarding markdown file to have the user get started with the project:
 
 You can create such a link using the following structure:
 
 ![Runme URL Schema Structure](../static/img/run-with-runme.png)
+
+<Infobox type="sidenote">
+
+Please note that you can use **SSH** or **HTTPS** notations for the repository parameter. In above's example just replace `git@github.com:stateful/blog-examples.git` with `https://github.com/stateful/blog-examples` respectively.
+
+</Infobox>
 
 You can put this as HTML link on any website, e.g.:
 
@@ -85,7 +93,15 @@ Which will result in:
 
 [![](https://badgen.net/badge/Run%20this%20/README/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git%40github.com%3Astateful%2Frunme.git)
 
-### Summary
+## Runme Cells
+
+### Chain Cell Output
+
+With the `$__` parameter you can transfer the stdout result of a previous cell into your next execution:
+
+![split view in vs code](../static/img/last-cell-result.gif)
+
+## Summary
 
 * Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
 * Leverage placeholder and prompts to have readers interactively complete ENV VARs
@@ -95,11 +111,3 @@ Which will result in:
 * Control whether or not a cell's terminal should remain open after successful execution
 * Use language identifiers in fenced code blocks to forgo language detection and higher reliability
 * Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways
-
-## Runme Cells
-
-### Chain Cell Output
-
-With the `$__` parameter you can transfer the stdout result of a previous cell into your next execution:
-
-![split view in vs code](../static/img/last-cell-result.gif)
