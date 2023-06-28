@@ -25,6 +25,7 @@ const config = {
   tagline: "Documentation for the RUNME project.",
   url: "https://docs.runme.dev",
   baseUrl: "/",
+  titleDelimiter: ' • ',
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -180,17 +181,17 @@ const config = {
       /**
        * credentials available in 1password
        */
-      // ...(process.env.ALGOLIA_API_KEY &&
-      // process.env.ALGOLIA_INDEX_NAME &&
-      // process.env.ALGOLIA_APP_ID
-      //   ? {
-      //       algolia: {
-      //         apiKey: process.env.ALGOLIA_API_KEY,
-      //         indexName: process.env.ALGOLIA_INDEX_NAME,
-      //         appId: process.env.ALGOLIA_APP_ID,
-      //       },
-      //     }
-      //   : {}),
+      ...(process.env.ALGOLIA_API_KEY &&
+      process.env.ALGOLIA_INDEX_NAME &&
+      process.env.ALGOLIA_APP_ID
+        ? {
+            algolia: {
+              apiKey: process.env.ALGOLIA_API_KEY,
+              indexName: process.env.ALGOLIA_INDEX_NAME,
+              appId: process.env.ALGOLIA_APP_ID,
+            },
+          }
+        : {}),
     }),
 };
 
