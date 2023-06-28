@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 const siteName = "Runme.dev";
 const twitterHandle = "@statefulhq";
@@ -25,7 +25,7 @@ const config = {
   tagline: "Documentation for the RUNME project.",
   url: "https://docs.runme.dev",
   baseUrl: "/",
-  titleDelimiter: ' • ',
+  titleDelimiter: " • ",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
