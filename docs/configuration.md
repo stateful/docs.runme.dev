@@ -177,6 +177,24 @@ JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeT
 
 See below for the list of supported MIME types!
 
+### Run All Cells by Category
+
+If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as cell option. A cell can have one or multiple categories that are comma seperated.
+
+**Default:** `""`
+
+**Example**
+
+    ```sh { category=build }
+    # Do something here
+    ```
+
+    ```sh { category=build,deployment }
+    # Do something here
+    ```
+
+![Run by category](../static/img/categories.gif)
+
 ## Reference
 
 Everything in one place.
@@ -197,12 +215,14 @@ Metadata inside markdown's fenced code blocks.
 | Configuration          | Description                                                    | Default value  |
 | ---------------------- | -------------------------------------------------------------- | -------------- |
 | background             | Indicates if the cell should be runned as a background process | false          |
-| interactive            | Indicates if run should allow interactive input                | false          |
 | closeTerminalOnSuccess | Hide Terminal after cell successful execution                  | true           |
+| category               | Execute this code cell within a category                       | [empty]        |
+| cwd                    | Modify current working directory for cell execution            | [empty]        |
+| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation     | false          |
+| interactive            | Indicates if run should allow interactive input                | false          |
 | mimeType               | Cell’s output content MIME type                                | text/plain     |
 | name                   | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
 | promptEnv              | Prompt user to set exported environment vars                   | true           |
-| cwd                    | Modify current working directory for cell execution            | [empty]        |
 
 ### Supported MIME types
 
