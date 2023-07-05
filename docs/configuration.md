@@ -177,6 +177,18 @@ JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeT
 
 See below for the list of supported MIME types!
 
+### Exclude Cell from Run All
+
+Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the "Run All" button to get set-up and running. However sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option you can configure this behavior.
+
+**Default:** `false`
+
+**Example**
+
+    ```sh { excludeFromRunAll=true }
+    # Do something optional here
+    ```
+
 ## Reference
 
 Everything in one place.
@@ -199,6 +211,7 @@ Metadata inside markdown's fenced code blocks.
 | background             | Indicates if the cell should be runned as a background process | false          |
 | interactive            | Indicates if run should allow interactive input                | false          |
 | closeTerminalOnSuccess | Hide Terminal after cell successful execution                  | true           |
+| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation     | false          |
 | mimeType               | Cell’s output content MIME type                                | text/plain     |
 | name                   | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
 | promptEnv              | Prompt user to set exported environment vars                   | true           |
