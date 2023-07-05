@@ -212,7 +212,7 @@ Frontmatter in yaml, json, or toml on top of markdown document.
 
 Metadata inside markdown's fenced code blocks.
 
-| Configuration          | Description                                                    | Default value  |
+| Configuration           | Description                                                    | Default value  |
 | ---------------------- | -------------------------------------------------------------- | -------------- |
 | background             | Indicates if the cell should be runned as a background process | false          |
 | closeTerminalOnSuccess | Hide Terminal after cell successful execution                  | true           |
