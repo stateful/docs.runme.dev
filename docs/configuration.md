@@ -203,10 +203,10 @@ Everything in one place.
 
 Frontmatter in yaml, json, or toml on top of markdown document.
 
-| Configuration | Description                              | Default value             |
-| ------------- | ---------------------------------------- | ------------------------- |
+| Configuration  | Description                              | Default value            |
+| ------------- | ---------------------------------------- | ------------------------ |
 | cwd           | Overwrites the default working directory | [markdown file's basedir] |
-| shell         | Overwrites shell with custom preference  | [system/user default]     |
+| shell         | Overwrites shell with custom preference  | [system/user default]    |
 
 ### Cell Options
 
