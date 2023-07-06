@@ -177,6 +177,18 @@ JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeT
 
 See below for the list of supported MIME types!
 
+### Exclude Cell from Run All
+
+Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the "Run All" button to get set-up and running. However sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option you can configure this behavior.
+
+**Default:** `false`
+
+**Example**
+
+    ```sh { excludeFromRunAll=true }
+    # Do something optional here
+    ```
+
 ### Run All Cells by Category
 
 If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as cell option. A cell can have one or multiple categories that are comma seperated.
@@ -203,16 +215,16 @@ Everything in one place.
 
 Frontmatter in yaml, json, or toml on top of markdown document.
 
-| Configuration  | Description                              | Default value            |
-| ------------- | ---------------------------------------- | ------------------------ |
-| cwd           | Overwrites the default working directory | [markdown file's basedir] |
-| shell         | Overwrites shell with custom preference  | [system/user default]    |
+| Configuration  | Description                              | Default value             |
+| ------------- | ----------------------------------------- | ------------------------- |
+| cwd           | Overwrites the default working directory  | [markdown file's basedir] |
+| shell         | Overwrites shell with custom preference   | [system/user default]     |
 
 ### Cell Options
 
 Metadata inside markdown's fenced code blocks.
 
-| Configuration           | Description                                                    | Default value  |
+| Configuration          | Description                                                    | Default value  |
 | ---------------------- | -------------------------------------------------------------- | -------------- |
 | background             | Indicates if the cell should be runned as a background process | false          |
 | closeTerminalOnSuccess | Hide Terminal after cell successful execution                  | true           |
