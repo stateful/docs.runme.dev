@@ -24,7 +24,7 @@ $ brew update
 Install runme
 
 ```sh
-$ brew install stateful/tap/runme
+$ brew install runme
 ```
 
 ### On Windows
