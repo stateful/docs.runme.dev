@@ -157,45 +157,6 @@ You can also switch by just doing a right-click on the file and go to `"Open Wit
 
 ![Find runme in vs code](../static/img/switch-notebook-viewers.gif)
 
-## Runme for Web
-
-Runme can run as a self-contained web app. Since Runme's notebook UX is built on top of the VS Code platform, we can leverage the [code-server](https://code.visualstudio.com/blogs/2022/07/07/vscode-server) binary to run it as a local self-contained web app.
-
-![Runme for Web](../static/img/runme-for-web.png)
-
-Just run following command to install `code-server`:
-
-```sh
-$ wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
-```
-
-Followed by launching Runme inside of it:
-
-```sh
-$ code-server serve-local --install-extension stateful.runme --start-server
-```
-
-Just follow the link in the logs to launch into the web app.
-
-```text
-[2023-05-21 12:43:29] info Found existing installation at /Users/sourishkrout/.vscode-cli/server-stable-web/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435
-[2023-05-21 12:43:29] info Starting server...
-*
-* Visual Studio Code Server
-*
-Server bound to 127.0.0.1:8000 (IPv4)
-Extension host agent listening on 8000
-[12:43:29] Installing extensions...
-Web UI available at http://localhost:8000/?tkn=6e6560a2-75ff-4cda-aad1-1bf68e188c6f
-[12:43:29] Extension host agent started.
-```
-
-<Infobox type="sidenote" title="Coming soon">
-
-We are working on providing a single command option to install and run Runme for Web from the CLI.
-
-</Infobox>
-
 ### How It Works
 
 Runme's functionality when run as a web app mirrors VS Code's UX. Go ahead and check out [Getting Started](/getting-started) for next steps.
