@@ -1,11 +1,11 @@
 ---
-sidebar_position: 2
 title: Installation
+sidebar_position: 2
 ---
 
 import Infobox from "../src/components/Infobox.tsx"
 
-Runme comes with multiple client to interface with its kernel; CLI for the terminal, notebook and editor integration in VS Code, and a self-hosted web app version with the same features for the browser. Here's how to intall them:
+Runme comes with multiple clients to interface with its kernel; CLI for the terminal, notebook, and editor integration in VS Code, and a self-hosted web app version with the same features for the browser. Here's how to install them:
 
 ## Runme CLI
 
