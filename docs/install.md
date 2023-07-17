@@ -1,6 +1,6 @@
 ---
 title: Installation
-unlisted: true
+sidebar_position: 2
 ---
 
 import Infobox from "../src/components/Infobox.tsx"
