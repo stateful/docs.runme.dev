@@ -234,6 +234,7 @@ Metadata inside markdown's fenced code blocks.
 | interactive            | Indicates if run should allow interactive input                | false          |
 | mimeType               | Cell’s output content MIME type                                | text/plain     |
 | name                   | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
+| terminalRows           | Number of rows to display in the notebook terminal             | auto-set       |
 | promptEnv              | Prompt user to set exported environment vars                   | true           |
 
 ### Supported MIME types
