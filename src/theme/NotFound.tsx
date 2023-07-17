@@ -73,7 +73,7 @@ export default function NotFound() {
                     <a href="https://docs.runme.dev">Installation</a>
                   </div>
                   <div className="text-[color:var(--ifm-navbar-link-color)] hover:underline">
-                    <a href="https://docs.runme.dev/getting-started/choose-your-environment">
+                    <a href="https://docs.runme.dev/getting-started">
                       Getting started
                     </a>
                   </div>

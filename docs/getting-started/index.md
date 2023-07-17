@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: Choose your environment
+sidebar_position: 2
+title: Getting started
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"

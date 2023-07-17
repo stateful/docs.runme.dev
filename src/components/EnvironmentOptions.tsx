@@ -4,12 +4,12 @@ import { TerminalIcon, VSCodeIcon } from "./Icons";
 const options = [
   {
     title: "Runme VS Code extension",
-    href: "/getting started/getting-started-vs-code",
+    href: "/getting-started/vs-code",
     icon: VSCodeIcon,
   },
   {
     title: "Runme CLI",
-    href: "/getting started/getting-started-cli",
+    href: "/getting-started/cli",
     icon: TerminalIcon,
   },
 ];

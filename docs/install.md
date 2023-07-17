@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
 title: Installation
+unlisted: true
 ---
 
 import Infobox from "../src/components/Infobox.tsx"
@@ -159,4 +159,4 @@ You can also switch by just doing a right-click on the file and go to `"Open Wit
 
 ### How It Works
 
-Runme's functionality when run as a web app mirrors VS Code's UX. Go ahead and check out [Getting Started](/getting started/choose-your-environment) for next steps.
+Runme's functionality when run as a web app mirrors VS Code's UX. Go ahead and check out [Getting Started](/getting-started) for next steps.
