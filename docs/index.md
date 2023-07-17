@@ -42,7 +42,7 @@ Runme has a headless and graphical user interface to author, run, and verify run
 
 <Infobox type="sidenote" title="Try it now">
 
-Learn how to install Runme and [get started](/getting-started).
+Learn how to install Runme and [get started](/getting started/choose-your-environment).
 
 </Infobox>
 
