@@ -351,3 +351,7 @@ video {
 .notfound {
   width: 100%;
 }
+
+.menu__list-item-collapsible {
+  text-transform: capitalize;
+}
