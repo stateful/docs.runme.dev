@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Getting started with Runme CLI
+title: Runme CLI
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"

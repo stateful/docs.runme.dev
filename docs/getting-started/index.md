@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Getting started
+title: Getting Started
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"

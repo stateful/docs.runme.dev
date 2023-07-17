@@ -3,7 +3,7 @@ import { TerminalIcon, VSCodeIcon } from "./Icons";
 
 const options = [
   {
-    title: "Runme VS Code extension",
+    title: "Runme VS Code Extension",
     href: "/getting-started/vs-code",
     icon: VSCodeIcon,
   },
@@ -20,7 +20,7 @@ export default function EnvironmentOptions() {
       {options.map(({ href, title, icon }) => {
         return (
           <a
-            className="text-center shadow-md p-2 min-w-fit rounded"
+            className="text-center shadow-md p-2 m-4 min-w-[200px] rounded"
             href={href}
             title={title}
             target="_self"
