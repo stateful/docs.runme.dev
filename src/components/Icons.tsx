@@ -867,6 +867,22 @@ const TerminalIcon = ({ className }: { className: string }) => {
   );
 };
 
+const GlobeIcon = ({ className }: { className: string }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="420"
+      height="420"
+      id="svg2"
+      className={clsx("w-24 h-24", className)}
+      version="1.1">
+      <path
+        style={{ fill: 'none', stroke: 'currentColor', strokeWidth: 20, strokeMiterlimit: 4, strokeOpacity: 1, strokeDasharray: 'none', transform: 'scale(0.2) translateX(30px)' }}
+        d="m 226.19946,16.656571 a 473.96004,333.37897 0 0 1 0,387.232509 M 59,333.21514 a 260,260 0 0 1 302,0 M 197.17143,14.79354 a 477.24462,335.68933 0 0 0 0,389.91607 M 209,15 a 195,195 0 1 0 2,0 z m 1,0 V 405 M 405,210 H 15 M 59,92.669492 a 260,260 0 0 0 302,0 M 361,330" />
+    </svg>
+  );
+};
+
 export {
   ApacheIcon,
   Bar3Icon,
@@ -888,4 +904,5 @@ export {
   FuseDocsIcon,
   VSCodeIcon,
   TerminalIcon,
+  GlobeIcon
 };
