@@ -1,5 +1,5 @@
 import React from "react";
-import { TerminalIcon, VSCodeIcon } from "./Icons";
+import { TerminalIcon, VSCodeIcon, GlobeIcon } from "./Icons";
 
 const options = [
   {
@@ -11,6 +11,11 @@ const options = [
     title: "Runme CLI",
     href: "/getting-started/cli",
     icon: TerminalIcon,
+  },
+  {
+    title: "Runme Web",
+    href: "/getting-started/web",
+    icon: GlobeIcon,
   },
 ];
 

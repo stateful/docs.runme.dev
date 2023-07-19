@@ -12,5 +12,4 @@ Runme strives to provide a great experience right out of the box. Please continu
 
 In which environment do you like to work the most?
 
-<EnvironmentOptions>
-</EnvironmentOptions>
+<EnvironmentOptions />

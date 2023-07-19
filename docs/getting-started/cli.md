@@ -4,7 +4,6 @@ title: Runme CLI
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"
-import EnvironmentOptions from "../../src/components/EnvironmentOptions.tsx"
 
 # Getting started with Runme CLI
 
