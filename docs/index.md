@@ -12,6 +12,7 @@ Runme is a tool that makes runbooks actually _runnable_, making it easier to fol
 Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc.). Runme persists your runbooks in markdown, which your docs are likely already using.
 
 <!-- ![What is Runme](../static/img/venn.png) -->
+
 <br />
 <img src="/img/venn.png" style={{width: "70%"}} alt="What is runme"/>
 
@@ -19,7 +20,7 @@ Runme achieves this by literally running markdown (ubiquitous for docs inside re
 
 Runme has interfaces for terminal, editor, and notebooks attached to a kernel, making them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
 
-> 💡 Runme is like Jupyter but with a Shell/Bash Kernel and no dependencies.
+> 💡 Runme is like Jupyter but with a Shell/Bash Kernel and lightweight dependencies.
 
 <br/>
 Runme runs your runbooks everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
