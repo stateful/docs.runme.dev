@@ -224,18 +224,19 @@ Frontmatter in yaml, json, or toml on top of markdown document.
 
 Metadata inside markdown's fenced code blocks.
 
-| Configuration          | Description                                                    | Default value  |
-| ---------------------- | -------------------------------------------------------------- | -------------- |
-| background             | Indicates if the cell should be runned as a background process | false          |
-| closeTerminalOnSuccess | Hide Terminal after cell successful execution                  | true           |
-| category               | Execute this code cell within a category                       | [empty]        |
-| cwd                    | Modify current working directory for cell execution            | [empty]        |
-| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation     | false          |
-| interactive            | Indicates if run should allow interactive input                | false          |
-| mimeType               | Cell’s output content MIME type                                | text/plain     |
-| name                   | Cell’s canonical name useful for referencing the cell via CLI  | auto-generated |
-| terminalRows           | Number of rows to display in the notebook terminal             | auto-set       |
-| promptEnv              | Prompt user to set exported environment vars                   | true           |
+| Configuration          | Description                                                     | Default value            |
+| ---------------------- | --------------------------------------------------------------- | ------------------------ |
+| background             | Indicates if the cell should be runned as a background process  | false                    |
+| closeTerminalOnSuccess | Hide Terminal after cell successful execution                   | true                     |
+| category               | Execute this code cell within a category                        | [empty]                  |
+| cwd                    | Modify current working directory for cell execution             | [empty]                  |
+| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation      | false                    |
+| interactive            | Indicates if run should allow interactive input                 | false                    |
+| interpreter            | The program or command line inserted into shebang (aka #!) line | inferred from languageId |
+| mimeType               | Cell’s output content MIME type                                 | text/plain               |
+| name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
+| terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
+| promptEnv              | Prompt user to set exported environment vars                    | true                     |
 
 ### Supported MIME types
 
