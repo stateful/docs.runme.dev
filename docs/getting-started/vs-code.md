@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Runme VS Code Extension
+title: Runme for VS Code
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"
