@@ -36,7 +36,7 @@ You can use the `--chdir` flag to alter the working directory or `--filename` to
 
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
 
-```sh
+```text
 Runme executes commands inside your runbooks, docs, and READMEs. Parses commands
 directly from markdown files to make them executable.
 
@@ -86,7 +86,13 @@ Flags:
 By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
 
 ```sh
-runme ls --filename SUPPORT.md --chdir ./.github
+runme ls --filename README.md --chdir ../..
+```
+
+You can also specify a full path in `filename`:
+
+```sh
+runme ls --filename ../../README.md
 ```
 
 ### Running Commands Directly
