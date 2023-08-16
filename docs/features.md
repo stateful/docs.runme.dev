@@ -97,9 +97,15 @@ Which will result in:
 
 ### Chain Cell Output
 
-With the `$__` parameter you can transfer the stdout result of a previous cell into your next execution:
+With the `$__` parameter you can transfer the stdout result of the last execution into your next execution:
 
 ![split view in vs code](../static/img/last-cell-result.gif)
+
+<Infobox type="sidenote">
+
+Please be aware that if the execution of a cell depends on the standard output (stdout) of a preceding cell, it is imperative to execute these cells sequentially. Failure to adhere to this sequence could lead to unintended and unpredictable behavior.
+
+</Infobox>
 
 ## Summary
 
