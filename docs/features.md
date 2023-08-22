@@ -21,7 +21,7 @@ Easily switch between different views.
 
 ### Run a command block
 
-It's straightforward to run one-time command blocks directly from the raw markdown. And, what's even more convenient is that any changes made to the environment stay even when switching between markdown and notebook views.
+It's straightforward to run one-time command blocks directly from the raw markdown using VS Code's CodeLense feature. And, what's even more convenient is that any changes made to the environment stay even when switching between markdown and notebook views.
 
 ![run a command in vs code](../static/img/runme-editor-run.png)
 
