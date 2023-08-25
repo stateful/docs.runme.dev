@@ -36,10 +36,10 @@ Runme runs your runbooks everywhere, irrespective of the environment: a local la
 
 Runme has a headless and graphical user interface to author, run, and verify runbooks. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
 
-- **[Runme CLI](/install#runme-cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
+- **[Runme CLI](/getting-started/cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
 - **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
-- **[Runme for VS Code](/install#runme-for-vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
-- **[Runme for Web](/install#runme-for-web)** is a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without running the IDE.
+- **[Runme for VS Code](/getting-started/vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
+- **[Runme for Web](/getting-started/web)** is a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without running the IDE.
 
 <Infobox type="sidenote" title="Try it now">
 
