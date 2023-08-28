@@ -71,14 +71,14 @@ You can create such a link using the following structure:
 
 <Infobox type="sidenote">
 
-Please note that you can use **SSH** or **HTTPS** notations for the repository parameter. In the above's example just replace `git@github.com:stateful/blog-examples.git` with `https://github.com/stateful/blog-examples.git` respectively.
+Please note that you can use **SSH** or **HTTPS** notations for the repository parameter. In the above's example just replace `https://github.com/stateful/blog-examples.git` with `https://github.com/stateful/blog-examples.git` respectively.
 
 </Infobox>
 
 You can put this as HTML link on any website, e.g.:
 
 ```html
-<a href="vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md">Getting onboarded to Project</a>
+<a href="vscode://stateful.runme?command=setup&repository=https://github.com/stateful/blog-examples.git&fileToOpen=node-streams/README.md">Getting onboarded to Project</a>
 ```
 
 You can also just have Runme check out any arbitrary markdown file accessible from the internet. This can be useful when designing tutorials for user to go through or if your documentation is not connected to any code. For this use case rmeove the `repository` parameter and have `fileToOpen` be an url to a raw markdown file that is publicly accessible.
