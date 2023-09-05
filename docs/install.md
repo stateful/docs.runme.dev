@@ -18,13 +18,13 @@ The Runme CLI is ideal for power users who want to run markdown documentation fr
 The easiest way on MacOS is to use Homebrew:
 
 ```sh
-$ brew update
+brew update
 ```
 
 Install runme
 
 ```sh
-$ brew install runme
+brew install runme
 ```
 
 ### On Windows
@@ -32,8 +32,8 @@ $ brew install runme
 On Windows, we distribute the binary through [Scoop.sh](https://scoop.sh/):
 
 ```sh
-$ scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
-$ scoop install stateful/runme
+scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
+scoop install stateful/runme
 ```
 
 #### Other Platforms
@@ -43,7 +43,7 @@ Alternatively, check out runme's [releases](https://github.com/stateful/runme/re
 If you have Go developer tools installed, you can install it with go install:
 
 ```sh
-$ go install github.com/stateful/runme@latest
+go install github.com/stateful/runme@latest
 ```
 
 If you don't have go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
@@ -60,7 +60,7 @@ Runme has a nice TUI that you can use simply like so:
 
 ```sh
 # short for "runme tui"
-$ runme
+runme
 ```
 
 ![Runme TUI Usage](../static/img/runme-tui.gif)
