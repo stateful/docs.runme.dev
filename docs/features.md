@@ -21,11 +21,17 @@ Easily switch between different views.
 
 Runme supports a set of different interpreter for you to run cells in. To define an interpreter you can either:
 
+- set a language id for the fenced code block
+  ````md
+  ```rb
+  puts 'Hello World'
+  ```
+  ````
 - set a shebang for the cell
   ```py
   #!/usr/bin/python3
   print('Hello World!')
-  ````
+  ```
 - set cell `interpreter` cell property as frontmatter
   ````md
   ```js { "interpreter": "node" }
