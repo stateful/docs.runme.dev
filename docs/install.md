@@ -160,3 +160,17 @@ You can also switch by just doing a right-click on the file and go to `"Open Wit
 ### How It Works
 
 Runme's functionality when run as a web app mirrors VS Code's UX. Go ahead and check out [Getting Started](/getting-started) for next steps.
+
+## Runme with Docker
+
+There are Docker images available on [Docker Hub](https://hub.docker.com/r/statefulhq/runme) for every Runme version that gets released. You can pull the latest version via:
+
+```sh
+docker pull statefulhq/runme:latest
+```
+
+In your project directory you can then use the CLI, e.g. via:
+
+```sh
+docker run -it --volume $(pwd):/home/project statefulhq/runme ls
+```
