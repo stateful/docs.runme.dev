@@ -89,7 +89,7 @@ If possible, always specify the language [according to the markdown standard](ht
 
 ```sh
     ```sh
-    $ echo "language identifier in fenced code block"
+    echo "language identifier in fenced code block"
     ```
 ```
 

@@ -17,7 +17,7 @@ Runme has a nice TUI that you can use simply like so:
 
 ```sh
 # short for "runme tui"
-$ runme
+runme
 ```
 
 ![Runme TUI Usage](../../static/img/runme-tui.gif)

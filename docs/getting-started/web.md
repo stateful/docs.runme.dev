@@ -18,7 +18,7 @@ Runme can run as a self-contained web app. Since Runme's notebook UX is built on
 Just run following command:
 
 ```sh
-$ runme open
+runme open
 ```
 
 Runme will download and setup `code-server` for you and VS Code should be automatically opened in your default browser.
