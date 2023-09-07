@@ -17,6 +17,44 @@ Easily switch between different views.
 
 ![markdown version](../static/img/markdown-version.png)
 
+## Interpreter
+
+Runme supports a set of different interpreter for you to run cells in. To define an interpreter you can either:
+
+- set a language id for the fenced code block
+  ````md
+  ```rb
+  puts 'Hello World'
+  ```
+  ````
+- set a shebang for the cell
+  ```py
+  #!/usr/bin/python3
+  print('Hello World!')
+  ```
+- set cell `interpreter` cell property as frontmatter
+  ````md
+  ```js { "interpreter": "node" }
+  console.log('Hello World!')
+  ```
+  ````
+  or via VS Code cell option:
+  ![set cell interpreter](../static/img/interpreter.png)
+
+### Supported Interpreter
+
+Runme supports the following interpreter, if installed, out of the box:
+
+- `python`
+- `python2`
+- `python3`
+- `node`
+- `deno`
+- `ts-node` (install globally via `npm i -g ts-node`)
+- `ruby`
+- `bash`
+- Missing a language? Please [raise an issue](https://github.com/stateful/runme/issues/new).
+
 ## Markdown Editor
 
 ### Run a command block
