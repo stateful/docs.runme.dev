@@ -6,16 +6,18 @@ title: FAQ
 ## What differentiates Runme from a common Jupyter Notebook?
 
 - Runme should execute cells written in many programming languages out of the box (see [supported languages](/features#supported-interpreter))
-- Runme is committed to markdown as the format / standard
-- The parser / execution engine should be a service that produces the same results regardless of where you are running code/commands
-- Runme provides a great CLI and VS Code experience, including the web permutations
-- Runme integrates with services and platforms that operators use to provide an enhanced DX (workflow.yaml for example)
-- Runme is made for CI/CD (cli/action, docker img) to provide a test automation component to your development workflow
+- Runme notebooks/runbooks are being stored in 100%-compatible markdown
+- Runme kernel exposes services that produces consistent results regardless of what client (CLI, Extension, CI/CD) is being used
+- Runme aims to provide a great CLI and VS Code experience, including the web permutations
+- Runme fosters an ecosystem that aims to integrate with popular platforms & ISPs unlocking enhanced DX (workflow.yaml for example)
+- Runme is made for CI/CD (CLI/GH Action, docker images) to provide a test automation component to your development workflow
 
 ## Do you aim for compatibility with incumbent Notebook formats?
 
-We don't currently have any plans to interop with other Notebook formats, we think that Markdown is the one true notebook format that works across all tech stacks. Runme stores configuration as a superset of markdown that makes sure that markdown files continue to work as intended anywhere they aren't being parsed by Runme. I can imagine a world where there is technology that helps migrate other notebook formats to runme, for teams that want to consolidate their tools to use one standard format for all their docs/runbooks.
+We currently don't plan to interop with other notebook formats (e.g. ipynb). We believe Markdown is ubiquitous for all things documentation across all tech stacks. Runme stores configuration as a valid superset of markdown which ensures files will continue to work with existing markdown viewers and tooling. While we don't have concrete plans, it's conceivable to provide tools to helps migrate from other notebook formats to Runme, for teams looking to consolidate their tools and leverage open standards to do so.
 
-## How do you plan to sustain your business monetarily? Do you plan to introduce enterprise/support tier pricing or monetising user data?
+## How do you plan to sustain your business monetarily? Do you plan to introduce enterprise/support tier pricing or monetizing user data?
 
-We don't have a concrete plan, we are a venture backed startup and have started with the technology and are working our way up. We do know that the open source runme code/project will not be monetized. We want to build a community around solving this docs/runbooks problem and intend to maintain that trust relationship with our users. We certainly will not be monetizing by selling users data. It seems likely that monetization will come from offering value add in terms of team collaboration, runbook discoverability or auditing for companies using Runme with private repositories. It will never be made a requirement to use a SaaS to use Runme to execute runbooks.
+We don't have concrete plans to charge for Runme currently available under the open source APL-2.0 license. Runme is being developed by the venture-backed company [Stateful, Inc](https://stateful.com/) starting by building open technology to address the unsolved problem of bitrot and out-dated developer/operator documentation. The team believes in open source software and intends for Runme to continue to be offered as such to deliver a powerful solution to the community.
+
+We are working to build a community around solving this docs/runbooks problem and intend to maintain that trust relationship with our users. We will not - under no circumstances - be monetizing selling users' data. We believe opportunties for monetization will likely come from offering value-add in terms of team management/collaboration, discoverability, or auditing for companies etc using Runme with internal repositories. Runme core will continue to provide core functionality such as executing runbooks without the need to use a proprietary product offered by Runme, Stateful, or third parties.
