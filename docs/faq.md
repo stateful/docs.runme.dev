@@ -21,3 +21,7 @@ We currently don't plan to interop with other notebook formats (e.g. ipynb). We 
 We don't have concrete plans to charge for Runme currently available under the open source APL-2.0 license. Runme is being developed by the venture-backed company [Stateful, Inc](https://stateful.com/) starting by building open technology to address the unsolved problem of bitrot and out-dated developer/operator documentation. The team believes in open source software and intends for Runme to continue to be offered as such to deliver a powerful solution to the community.
 
 We are working to build a community around solving this docs/runbooks problem and intend to maintain that trust relationship with our users. We will not - under no circumstances - be monetizing selling users' data. We believe opportunties for monetization will likely come from offering value-add in terms of team management/collaboration, discoverability, or auditing for companies etc using Runme with internal repositories. Runme core will continue to provide core functionality such as executing runbooks without the need to use a proprietary product offered by Runme, Stateful, or third parties.
+
+## How to switch back from the Runme Notebook view to the markdown text document?
+
+You can easily switch between Runme's notebook UI and the standard markdown text editing experience. Read more on that in the [Runme UX documentation](features#runme-ux).
