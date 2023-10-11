@@ -157,6 +157,21 @@ Please note that the Runme team is currently working on making output in both no
 
 </Infobox>
 
+### Set environment variables
+
+If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
+
+![prompt user in vs code](../static/img/interactive-prompt.png)
+
+**Default:** `true`
+
+**Example**
+
+    ```sh { promptEnv=true }
+    export SLEEP_SECS=0
+    sleep $SLEEP_SECS
+    ```
+
 ### Terminal visibility post-execution
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
