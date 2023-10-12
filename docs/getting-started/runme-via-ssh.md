@@ -52,7 +52,7 @@ gcloud compute ssh --zone "us-central1-a" "linux-instance"  --project "developme
 gcloud compute ssh --zone "us-central1-a" "linux-instance"  --project "development" --command " cd runme"
 ```
 
-### Key-Based Authentication
+ ### Remote-ssh via Key-Based Authentication 
 
 Enhance security by using SSH keys for authentication, eliminating the need for password transmission and reducing the risk of brute-force attacks.
 
