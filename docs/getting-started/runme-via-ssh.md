@@ -5,6 +5,7 @@ Runme is committed to delivering an exceptional experience right from the start.
 ### Executing Commands With Runme
 
 Currently, Runme only runs executable commands. To use it effectively, please follow these guidelines:
+
 * Specify File Path: Ensure to provide the accurate file path to the executable command.
 * Connection Details: Include the necessary SSH connection details, such as username and host.
 * Sequential Execution of Multiple Commands: To execute multiple commands in a sequence, utilize the `&&` logical operator. This ensures that subsequent commands are executed only if the preceding command succeeds.
@@ -15,13 +16,13 @@ Example:
  ssh username@your_server_ip 'mkdir runme'
 ```
 
-Yes, you can run multiple commands at a time using Runme. You can use any script tool that you are comfortable with to execute multiple commands. Simply follow the guidelines mentioned in the previous section to ensure that your commands are executed sequentially and accurately 
+Yes, you can run multiple commands at a time using Runme. You can use any script tool that you are comfortable with to execute multiple commands. Simply follow the guidelines mentioned in the previous section to ensure that your commands are executed sequentially and accurately
 
 ```sh
 ssh username@your_server_ip 'chmod +x ./install.sh && ./install.sh'
 ```
 
-Another convenient way to use Runme is by integrating it with VS Code Remote Development 
+Another convenient way to use Runme is by integrating it with VS Code Remote Development
 
 ### VS Code Remote Development
 
@@ -31,11 +32,11 @@ Using runme on a remote server with VSCode enhances efficiency by streamlining t
 
 1. Setup [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) configuration.
 2. Remote host you want to connect to
-3. Have [Visual Studio Code](https://code.visualstudio.com/download) Installed 
-4. Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) 
+3. Have [Visual Studio Code](https://code.visualstudio.com/download) Installed
+4. Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme)
 5. Ssh into remote host using [Visual Studio Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh)
-6. Instal [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) on the Remote Server and leverage the notebook UX to excute what you want   
-7. Create a block of code `command` to excute 
+6. Install [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) on the Remote Server and leverage the notebook UX to excute what you want
+7. Create a block of code `command` to excute
 
 Example
 
@@ -48,7 +49,6 @@ touch example.txt
 ![ssh with Vsc](https://i.imgur.com/UgU9ypj.png)
 
 ### Key-Based Authentication
-
 
 To enhance security when using Runme, it is recommended to use [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for authentication. This eliminates the need for password transmission and reduces the risk of brute-force attacks.
 
@@ -122,11 +122,12 @@ Here are the steps to use `sshpass` with an environment variable for password au
 1. Install `sshpass`: If it is not already installed on your machine, install `sshpass` using the appropriate package manager for your operating system.
 2. Set up environment variable: Set an environment variable with the name `SSHPASS` and the value of your SSH password. Here is an example command:
 
-```
+```sh
 export SSHPASS=mypassword
 ```
 
 Replace `mypassword` with your actual SSH password.
+
 3. Create a Markdown file: Create a `.md` file that will connect to the remote server and execute the desired commands.
 4. Create a block of code: In the `.md` file, create a block of code that uses the `sshpass` command to connect to the remote server and execute the desired command. Here is an example:
 
