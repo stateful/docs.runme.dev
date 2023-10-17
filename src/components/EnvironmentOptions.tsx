@@ -1,5 +1,5 @@
 import React from "react";
-import { TerminalIcon, VSCodeIcon, GlobeIcon } from "./Icons";
+import { TerminalIcon, VSCodeIcon, GlobeIcon, SSHIcon } from "./Icons";
 
 const options = [
   {
@@ -16,6 +16,11 @@ const options = [
     title: "Runme Web",
     href: "/getting-started/web",
     icon: GlobeIcon,
+  },
+  {
+    title: "Runme via SSH",
+    href: "/getting-started/runme-via-ssh",
+    icon: SSHIcon,
   },
 ];
 
