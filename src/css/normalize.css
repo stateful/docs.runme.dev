@@ -24,6 +24,7 @@ code {
   color: var(--runme-code-color);
   border: 1px solid var(--runme-code-border);
   background: var(--runme-code-background);
+  flex-wrap: wrap;
 }
 
 body pre code {
