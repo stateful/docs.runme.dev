@@ -26,7 +26,7 @@ const options = [
 
 export default function EnvironmentOptions() {
   return (
-    <div className="flex gap-1.5 justify-center items-center flex-row p-2 m-2">
+    <div className="flex gap-1.5 justify-center items-center flex-row p-2 m-2 flex-wrap">
       {options.map(({ href, title, icon }) => {
         return (
           <a
