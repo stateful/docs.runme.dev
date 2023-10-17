@@ -890,7 +890,7 @@ const SSHIcon = ({ className }: { className: string }) => {
       fill="none"
       stroke-width="1.5"
       stroke="currentColor"
-      className={clsx("w-24 h-24", className)}
+      className={clsx("w-80 h-80", className)}
     >
       <path
         style={{ fill: 'none', stroke: 'currentColor', strokeWidth: 20, strokeMiterlimit: 4, strokeOpacity: 1, strokeDasharray: 'none', transform: 'scale(0.2) translateX(30px)' }}
