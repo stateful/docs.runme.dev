@@ -901,7 +901,7 @@ const SSHIcon = ({ className }: { className: string }) => {
     //     d="M14 1v2h3v16h-3v2h5V1h-5zM1 12h6v2H1v-2zm2-5.29L6.29 9 5 10.29V6.71zm0 7.58V13.7L6.29 13 5 12.71zM1 4h6v2H1V4zm7 0h7v2H8V4zm8 5h6v2h-6V9zm2 3.29L21.29 15 20 16.29v-2.58zm0 5.42v-2.58L21.29 19 20 20.29zM8 20h7v2H8v-2zm9-6h3v2h-3v-2zm0-3h3v2h-3v-2zm0-3h3v2h-3v-2z" />
     // </svg>
 
-<svg fill="#000000" width="800px" height="800px" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg fill="#000000" width="420" height="420" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className={clsx("w-24 h-24", className)}>
 <title>terminal</title>
 <path d="M0 24.344v-16.25h21.25v16.25h-21.25zM1.844 13.625l3.781-1.469v-0.844l-3.781-1.5v0.938l2.688 0.969-2.688 1v0.906zM5.969 14.719h3.719v-0.938h-3.719v0.938z"></path>
 </svg>
