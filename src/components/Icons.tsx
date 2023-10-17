@@ -895,7 +895,7 @@ const SSHIcon = ({ className }: { className: string }) => {
       <path
         stroke-linecap="round"
         stroke-linejoin="round"
-        d="M7.41 5.41L6 4l-6 6 6 6 1.41-1.41L3.83 10H16v4H3.83l3.58-3.59zM20 19h2v2h-2zm-2-4h2v2h-2z" />
+        d="M10.418 14.5833L20.8346 24.9999L10.418 35.4166" />
     </svg>
   );
 };
