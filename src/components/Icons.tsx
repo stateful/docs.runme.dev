@@ -893,9 +893,10 @@ const SSHIcon = ({ className }: { className: string }) => {
       className={clsx("w-24 h-24", className)}
     >
       <path
+        style={{ fill: 'none', stroke: 'currentColor', strokeWidth: 20, strokeMiterlimit: 4, strokeOpacity: 1, strokeDasharray: 'none', transform: 'scale(0.2) translateX(30px)' }}
         stroke-linecap="round"
         stroke-linejoin="round"
-        d="M10.418 14.5833L20.8346 24.9999L10.418 35.4166" />
+        d="M14 1v2h3v16h-3v2h5V1h-5zM1 12h6v2H1v-2zm2-5.29L6.29 9 5 10.29V6.71zm0 7.58V13.7L6.29 13 5 12.71zM1 4h6v2H1V4zm7 0h7v2H8V4zm8 5h6v2h-6V9zm2 3.29L21.29 15 20 16.29v-2.58zm0 5.42v-2.58L21.29 19 20 20.29zM8 20h7v2H8v-2zm9-6h3v2h-3v-2zm0-3h3v2h-3v-2zm0-3h3v2h-3v-2z" />
     </svg>
   );
 };
