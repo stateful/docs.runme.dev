@@ -15,7 +15,19 @@ To set up your SSH key configuration, follow the steps below:
 3. Ensure that you have [Visual Studio Code](https://code.visualstudio.com/download) installed on your local machine.
 4. Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in Visual Studio Code.
 5. Use the [Visual Studio Code Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) extension to connect to the remote host via SSH.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/ssh-into-server.mp4" type="video/mp4" />
+  <source src="/videos/runme-illustration.webm" type="video/webm" />
+</video>
+
 6. Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) on the remote server and leverage the notebook UX to execute what you want.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/install-runme-on-server.mp4" type="video/mp4" />
+  <source src="/videos/install-runme-on-server.webm" type="video/webm" />
+</video>
+
 7. Create a block of code called `command` to execute the desired actions on the remote host.
 
 ### Example:
