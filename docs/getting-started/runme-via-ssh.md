@@ -21,12 +21,17 @@ To set up your SSH key configuration, follow the steps below:
   <source src="/videos/runme-illustration.webm" type="video/webm" />
 </video>
 
+
+
 6. Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) on the remote server and leverage the notebook UX to execute what you want.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/install-runme-on-server.mp4" type="video/mp4" />
   <source src="/videos/install-runme-on-server.webm" type="video/webm" />
 </video>
+
+
+
 
 7. Create a block of code called `command` to execute the desired actions on the remote host.
 
@@ -49,7 +54,7 @@ To execute commands on a remote server using Runme, follow these steps:
 1. Set up your SSH key configuration by following the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 2. Remote server: Make sure you have access to the remote server and the necessary permissions to execute commands.
 3. Create a Markdown file: Create a `.md` file that will connect to the remote server and execute the desired commands.
-4. In the `.md` file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command. 
+4. In the `.md` file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command.
 
 ### Example:
 
