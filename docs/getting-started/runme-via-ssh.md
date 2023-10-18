@@ -83,6 +83,6 @@ scp /path/to/bash/script user@host:/path/on/remote/server
 ssh user@host 'bash /path/on/remote/server/script.sh'
 ```
 
-***This is an example of running bash script in a server***
+***This is an example of running bash script in a server.***
 
 ![Bash](https://i.imgur.com/nizv2CB.png)
