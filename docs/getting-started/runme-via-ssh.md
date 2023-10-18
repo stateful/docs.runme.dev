@@ -45,7 +45,7 @@ touch example.txt
 
 ![ssh with Vsc](https://i.imgur.com/91ImVIz.png)
 
-### Key-Based Authentication
+## Key-Based Authentication
 
 To enhance security when using Runme, it is recommended to use [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for authentication. This eliminates the need for password transmission and reduces the risk of brute-force attacks.
 
