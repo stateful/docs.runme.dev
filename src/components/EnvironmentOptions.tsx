@@ -1,5 +1,5 @@
 import React from "react";
-import { TerminalIcon, VSCodeIcon, GlobeIcon } from "./Icons";
+import { TerminalIcon, VSCodeIcon, GlobeIcon, SSHIcon } from "./Icons";
 
 const options = [
   {
@@ -17,11 +17,16 @@ const options = [
     href: "/getting-started/web",
     icon: GlobeIcon,
   },
+  {
+    title: "Runme via SSH",
+    href: "/getting-started/runme-via-ssh",
+    icon: SSHIcon,
+  },
 ];
 
 export default function EnvironmentOptions() {
   return (
-    <div className="flex gap-1.5 justify-center items-center flex-row p-2 m-2">
+    <div className="flex gap-1.5 justify-center items-center flex-row p-2 m-2 flex-wrap">
       {options.map(({ href, title, icon }) => {
         return (
           <a
