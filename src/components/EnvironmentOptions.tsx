@@ -13,14 +13,14 @@ const options = [
     icon: TerminalIcon,
   },
   {
-    title: "Runme Web",
-    href: "/getting-started/web",
-    icon: GlobeIcon,
-  },
-  {
     title: "Runme via SSH",
     href: "/getting-started/runme-via-ssh",
     icon: SSHIcon,
+  },
+  {
+    title: "Runme Web",
+    href: "/getting-started/web",
+    icon: GlobeIcon,
   },
 ];
 
