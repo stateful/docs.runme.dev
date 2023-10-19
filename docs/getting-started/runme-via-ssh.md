@@ -35,7 +35,7 @@ To set up your SSH key configuration, follow the steps below:
 
 7. Create a block of code called `command` to execute the desired actions on the remote host.
 
-### Example:
+### Example: how to use Runme attached to SSH host
 
 ```sh
 mkdir Vsc
@@ -56,7 +56,7 @@ To execute commands on a remote server using Runme, follow these steps:
 3. Create a Markdown file: Create a `.md` file that will connect to the remote server and execute the desired commands.
 4. In the `.md` file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command.
 
-### Example:
+### Example: how to use ssh inside of notebooks
 
 ```sh
 ssh user@remote.server.com 'bash -s' < script.sh
@@ -77,7 +77,7 @@ runme
 
 ![runme](https://i.imgur.com/5CGxKCZ.png)
 
-### Example 2:
+### Example: how ssh into remote hosts from a notebook
 
 If you need to securely copy files between your local machine and the remote server, you can install [SCP](https://www.geeksforgeeks.org/scp-command-in-linux-with-examples/) on your machine.
 
