@@ -4,6 +4,7 @@ title: Integrations
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"
+import EnvironmentOptions from "../../src/components/EnvironmentOptions.tsx"
 
 Previously, you learned the basic editing tools for creating and editing README files.
 
