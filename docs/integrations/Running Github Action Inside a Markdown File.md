@@ -1,7 +1,5 @@
 import Infobox from "../../src/components/Infobox.tsx"
 
-## Running Github Actions Inside a Markdown File
-
 > 💡 Be sure to install [Runme for VS Code](/install#runme-for-vs-code) first
 
 GitHub Actions provides a robust and flexible continuous integration and continuous delivery (CI/CD) platform for automating various tasks within your development lifecycle (build, test and deployment), ultimately empowering you to focus more on writing code and less on repetitive manual processes.
