@@ -1,3 +1,5 @@
+import Infobox from "../../src/components/Infobox.tsx"
+
 ## Running CLI in Github Actions Workflow
 
 Runme provides a GitHub action that allows you to seamlessly use the tool in CI/CD. It enables to re-use the workflows that your contributor use in CI/CD and therefore verifies that your contributing guidelines are still up to date.
