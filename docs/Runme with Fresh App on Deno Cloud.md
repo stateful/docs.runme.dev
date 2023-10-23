@@ -1,4 +1,4 @@
-import Infobox from "../../src/components/Infobox.tsx"
+import Infobox from "../src/components/Infobox.tsx"
 
 ## Fresh App on Deno Cloud
 
