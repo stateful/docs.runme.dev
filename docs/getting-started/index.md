@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Getting Started
 ---
 
-import Infobox from "../components/Infobox.tsx"
+import Infobox from "../../src/components/Infobox.tsx"
 import EnvironmentOptions from "../../src/components/EnvironmentOptions.tsx"
 
 # Getting Started
