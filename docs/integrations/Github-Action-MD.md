@@ -1,19 +1,6 @@
----
-sidebar_position: 6
-title: Integrations
----
-
-import Infobox from "../src/components/Infobox.tsx"
-
-Previously, you learned the basic editing tools for creating and editing README files.
-
-In this guide, you'll be exposed to a few ways you can integrate Runme with different environment or 3rd party services.
-
-## Embedding GitHub Actions
+## Running Github Actions Inside a Markdown File
 
 > 💡 Be sure to install [Runme for VS Code](/install#runme-for-vs-code) first
-
-<br/>
 
 GitHub Actions provides a robust and flexible continuous integration and continuous delivery (CI/CD) platform for automating various tasks within your development lifecycle (build, test and deployment), ultimately empowering you to focus more on writing code and less on repetitive manual processes.
 One building block of GitHub actions is [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows), a YAML file describing an automated process that will run one or more jobs.
@@ -47,7 +34,7 @@ Use the __workflow_dispatch__ event to specify your manually triggered workflow,
 
 See an example of a manually triggered workflow:
 
-```yaml
+```sh
 name: My manual worfklow
 on:
   workflow_dispatch:
@@ -100,7 +87,6 @@ jobs:
       - name: Print inputs
         run: |
           echo "${{ toJSON(github.event.inputs) }}"
-
 ```
 
 The above YAML file, specifies a simple manual triggered workflow file with inputs: releaseVersion, releaseType, releaseChannel, publishMarketplace, publishOpenVSX, and a job that prints the values for each input in JSON format.
@@ -123,121 +109,15 @@ To execute the action, you need access to the repository and sign in using your 
 
 Once you are authenticated, you should be able to see the workflow file like the following:
 
-![paste GitHub action URL](../static/img/github-1.png)
+![paste GitHub action URL](../../static/img/github-1.png)
 
 In the above example, we have a workflow action with inputs, once you specify them, you can click Run Workflow to trigger the action.
 Once you trigger the action, you will see in real-time the status of the execution of the workflow, just like the original GitHub action interface.
 
-![trigger github action](../static/img/github-2.png)
+![trigger github action](../../static/img/github-2.png)
 
 If you click Open workflow run, a browser window will be opened with the detailed logs of the triggered workflow
 
-![trigger github action](../static/img/github-3.png)
-
-<Infobox type="sidenote">
+![trigger github action](../../static/img/github-3.png)
 
 In a future version of Runme, we plan to display workflow run details in real-time. We think Runme is a great companion of the official [GitHub Actions extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions).
-
-</Infobox>
-
-## Fresh App on Deno Cloud
-
-The first example is in the `fresh` folder and sets up a fresh service with deno. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Ffresh%2FREADME.md).
-
-### Local Environment
-
-Runme makes setting up your local environment a breeze! Here, you can see a few install scripts that will set everything up:
-
-![Runme Local Environment](../static/img/runme-local-enviroment.png)
-
-<Infobox type="sidenote">
-
-In a future version of Runme, we plan on only showing installers relevant to your current operating system/environment. Stay tuned!
-
-</Infobox>
-
-### Environment Variables
-
-Runme can also be used to establish local environment variables for the current session.
-
-![establish environmental variables in vs code](../static/img/environmental-variables-vs-code.png)
-
-<Infobox type="warning">
-
-Environment variable support in Runme is currently a work in progress. We have a lot planned for supporting the environment/secrets in the future, so stay tuned!
-
-</Infobox>
-
-### Deploying
-
-For a deploy script, such as the one below, running as a Background task is a great idea, since it is a long-running script.
-
-![deploy script in vs code](../static/img/deploying-a-script.png)
-
-## Next.js App on Vercel
-
-This example can be found in the `vercel` sub-folder. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Fvercel%2FREADME.md).
-
-### Setup/Environment
-
-Similar to the last example, we can do our setup, starting, and opening of the web browser using Runme:
-
-![setup environment in vs code](../static/img/setup-environment.png)
-
-<Infobox type="sidenote">
-
-In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
-
-</Infobox>
-
-### Authentication
-
-Interactive terminals are perfect for providing a CLI login to the user:
-
-![deploy application in vercel](../static/img/deploy-in-vercel.png)
-
-### List Projects
-
-Remember, cells can capture the output of commands in non-interactive mode!
-
-In this case, this can be used to get a list of the user's current registered projects with the Vercel platform.
-
-![list projects in vercel](../static/img/list-projects-vercel.png)
-
-![run hello world in vs code](../static/img/run-hello-world.gif)
-
-## GitHub Action for Workflows
-
-Runme provides a GitHub action that allows you to seamlessly use the tool in CI/CD. It enables to re-use the workflows that your contributor use in CI/CD and therefore verifies that your contributing guidelines are still up to date.
-
-### Setup
-
-In `.github/workflows/test.yaml` create a new file with the following contents:
-
-```yaml
-name: Test Changes
-
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clone Repository
-        uses: actions/checkout@v2
-      - name: Setup Node version
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18.x
-      - name: Install dependencies
-        run: npm ci
-      # execute workflows through Runme
-      - name: Build / Test Project
-        uses: stateful/runme-action@v2
-        with:
-          workflows: |
-            build
-            test
-```
-
-Now, you can define what should be done for building and testing your project in e.g. a `CONTRIBUTING.md` and have your contributors be able to run the same flows through the CLI, e.g. via: `runme run build test`.

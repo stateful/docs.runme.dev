@@ -14,14 +14,14 @@ The web extension adds Runme links to the following places:
 
 ### Local Clone Section
 
-![Runme Link in Local Clone Section](../static/img/web-extension/list.png)
+![Runme Link in Local Clone Section](../../static/img/web-extension/list.png)
 
 ### Markdown Title Header
 
-![Runme Link in Markdown Title Header](../static/img/web-extension/markdown.png)
+![Runme Link in Markdown Title Header](../../static/img/web-extension/markdown.png)
 
 ### Code Sections
 
-![Runme Link in Code Sections](../static/img/web-extension/code.png)
+![Runme Link in Code Sections](../../static/img/web-extension/code.png)
 
 You can find more information about the development of this web-extension at [`stateful/runme-web-extension`](https://github.com/stateful/runme-web-extension). Feel free to provide feedback and suggestions at any time.
