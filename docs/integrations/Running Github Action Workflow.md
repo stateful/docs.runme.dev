@@ -1,4 +1,4 @@
-import Infobox from "../src/components/Infobox.tsx"
+import Infobox from "../../src/components/Infobox.tsx"
 
 ## Running CLI in Github Actions Workflow
 
