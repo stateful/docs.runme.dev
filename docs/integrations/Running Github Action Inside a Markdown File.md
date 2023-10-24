@@ -2,15 +2,15 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 > 💡 Be sure to install [Runme for VS Code](/install#runme-for-vs-code) first
 
-GitHub Actions provides a robust and flexible continuous integration and continuous delivery (CI/CD) platform for automating various tasks within your development lifecycle (build, test and deployment), ultimately empowering you to focus more on writing code and less on repetitive manual processes.
-One building block of GitHub actions is [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows), a YAML file describing an automated process that will run one or more jobs.
+
+GitHub Actions provide a robust CI/CD platform for automating development tasks. Runme supports only manual workflows in GitHub Actions, allowing on-demand tasks like targeted releases and incident responses. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs, and after inputting the required parameters, they can execute the workflow directly.
 
 <video className="rounded" autoPlay loop muted playsInline controls>
   <source src="videos/embed.mp4" type="video/mp4" />
   <source src="videos/embed.webm" type="video/webm" />
 </video>
 
-### Workflow types
+### Workflow Types
 
 - Events that occur in your workflow's repository
 - Events that occur outside of GitHub and trigger a repository_dispatch event on GitHub
@@ -28,7 +28,7 @@ Currently, Runme only supports manual workflows; they are helpful to trigger job
 
 In general, being able to run a GitHub Action manually gives you control over workflows by adding an extra layer of flexibility to your CI/CD and automation processes.
 
-### How to use it
+### How To Use It
 
 Use the __workflow_dispatch__ event to specify your manually triggered workflow, you can optionally specify inputs that are passed to the workflow. The triggered workflow receives the inputs in the [inputs context](https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context)
 
@@ -91,7 +91,7 @@ jobs:
 
 The above YAML file, specifies a simple manual triggered workflow file with inputs: releaseVersion, releaseType, releaseChannel, publishMarketplace, publishOpenVSX, and a job that prints the values for each input in JSON format.
 
-### Use Runme to trigger a manual workflow
+### Use Runme To Trigger A Manual Workflow
 
 Currently, there are two ways to indicate Runme to run a GitHub Action:
 
