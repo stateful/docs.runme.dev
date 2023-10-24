@@ -126,7 +126,7 @@ In most cases, you probably want to set the current working directory at the doc
     ```sh { cwd=.. }
     npm run watch #relative path
     ```
-
+    
     ```sh { cwd=/tmp }
     echo "absolute path" > dummy_file
     ```
@@ -215,7 +215,7 @@ If you have multiple workflows in a single markdown file you can categorize them
     ```sh { category=build }
     # Do something here
     ```
-
+    
     ```sh { category=build,deployment }
     # Do something here
     ```
@@ -234,6 +234,7 @@ Frontmatter in yaml, json, or toml on top of markdown document.
 | ------------- | ----------------------------------------- | ------------------------- |
 | cwd           | Overwrites the default working directory  | [markdown file's basedir] |
 | shell         | Overwrites shell with custom preference   | [system/user default]     |
+| skipPrompts   | Bypasses interactive prompts              | [system/user default]     |
 
 ### Cell Options
 
@@ -252,6 +253,7 @@ Metadata inside markdown's fenced code blocks.
 | name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
 | terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
 | promptEnv              | Prompt user to set exported environment vars                    | true                     |
+| skipPrompts            | Bypasses interactive [prompts](https://docs.runme.dev/configuration#cell-options) that require inputting environment vars or authentication confirmations. |false     |
 
 ### Supported MIME types
 
