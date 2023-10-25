@@ -3,11 +3,6 @@ sidebar_position: 6
 title: Integrations
 ---
 
----
-title: Integrations
-sidebar_position: 6
----
-
 import Infobox from "../../src/components/Infobox.tsx"
 import EnvironmentOptions from "../../src/components/EnvironmentOptions.tsx"
 
