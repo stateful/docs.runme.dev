@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Runme with Fresh App on Deno Cloud
 ---
 
-### Runme with Fresh App on Deno Cloud
+# Runme with Fresh App on Deno Cloud
 
 The first example is in the `fresh` folder and sets up a fresh service with deno. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Ffresh%2FREADME.md).
 

@@ -5,7 +5,7 @@ title: Running
 
 import Infobox from "../../src/components/Infobox.tsx"
 
-### Running Github Action Inside a Markdown File
+# Running Github Action Inside a Markdown File
 
 > 💡 Be sure to install [Runme for VS Code](/install#runme-for-vs-code) first
 
