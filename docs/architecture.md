@@ -13,7 +13,7 @@ Under the hood, much like other Notebook technologies such as Jupyter, Runme bre
 - A notebook client (inside VS Code) for the runner
 - A visual markdown viewer and editor (inside VS Code)
 
-This allows Runme to be seamlessly embedded into various User Interface technologies (notebook, editor, webapp, CLI) as well as headless excution as part of CI/CD pipelines.
+The kernel architecture allows Runme to be seamlessly embedded into various User Interface technologies (notebook, editor, webapp, CLI) as well as headless excution as part of CI/CD pipelines.
 
 <br />
 <img src="/img/venn.png" style={{width: "60%", display: "inline"}} alt="What is runme"/>
