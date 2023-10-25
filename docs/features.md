@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: Key Features
 ---
 
@@ -147,11 +147,11 @@ Please be aware that if the execution of a cell depends on the standard output (
 
 ## Summary
 
-* Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
-* Leverage placeholder and prompts to have readers interactively complete ENV VARs
-* Fine-tune your doc's executable notebook cells to streamline the execution experience for others
-* Run watchers for compilation/bundling in as background tasks
-* Capture non-interactive output directly inside the respective notebook's cell output
-* Control whether or not a cell's terminal should remain open after successful execution
-* Use language identifiers in fenced code blocks to forgo language detection and higher reliability
-* Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways
+- Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
+- Leverage placeholder and prompts to have readers interactively complete ENV VARs
+- Fine-tune your doc's executable notebook cells to streamline the execution experience for others
+- Run watchers for compilation/bundling in as background tasks
+- Capture non-interactive output directly inside the respective notebook's cell output
+- Control whether or not a cell's terminal should remain open after successful execution
+- Use language identifiers in fenced code blocks to forgo language detection and higher reliability
+- Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways

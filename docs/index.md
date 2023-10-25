@@ -7,23 +7,36 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
-Runme is a tool that makes runbooks actually _runnable_, making it easier to follow step-by-step instructions. Users can execute instructions, check intermediate results, and ensure the desired outputs are achieved. Authors can create predefined golden paths and share them with others. Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on.
+Runme makes runbooks _actually runnable_, making it effortless to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and much less susceptible to bitrot.
 
-Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc.). Runme persists your runbooks in markdown, which your docs are likely already using.
+## Reliable Knowledge Sharing 🤝
 
-<!-- ![What is Runme](../static/img/venn.png) -->
+Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors can maintain golden paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
+
+In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells's output into successive cells.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-illustration.mp4" type="video/mp4" />
+  <source src="/videos/runme-illustration.webm" type="video/webm" />
+</video>
 
 <br />
-<img src="/img/venn.png" style={{width: "70%"}} alt="What is runme"/>
+<Infobox type="sidenote" title="Try it now">
+
+Learn how to install Runme and [get started](/getting-started).
+
+</Infobox>
 
 ## What is Runme?
+
+Runme literally runs ubiquitous Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh but also Ruby, Python, etc). It's 100% compatible with CommonMark (the standard) and won't interfere with existing markdown documentation or tooling you're already using.
 
 Runme has interfaces for terminal, editor, and notebooks attached to a kernel, making them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
 
 > 💡 Runme is like Jupyter but with a Shell/Bash Kernel and lightweight dependencies.
 
 <br/>
-Runme runs your runbooks everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
+Runme runs everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
 <br/>
 <br/>
 
@@ -32,7 +45,9 @@ Runme runs your runbooks everywhere, irrespective of the environment: a local la
 - Increase shareability of runbooks by decoupling them from personal _dotfiles_ or _bash_history's_ without getting in the way.
 - Codify golden paths without overly restricting the flexibility of "scripting".
 
-## The User Interface
+Learn more about Runme's [Kernel Architecture](/architecture) to understand what powers Runme's portability.
+
+## User Interfaces
 
 Runme has a headless and graphical user interface to author, run, and verify runbooks. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
 
@@ -40,29 +55,6 @@ Runme has a headless and graphical user interface to author, run, and verify run
 - **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
 - **[Runme for VS Code](/getting-started/vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
 - **[Runme for Web](/getting-started/web)** is a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without running the IDE.
-
-<Infobox type="sidenote" title="Try it now">
-
-Learn how to install Runme and [get started](/getting-started).
-
-</Infobox>
-
-## Under The Hood
-
-Architecturally, Runme breaks down into the following parts:
-
-- A serializer that transforms markdown into executable cells with input and output
-- A portable runner interface that supports multimodal clients
-- A kernel that retains state across execution in sessions akin to a terminal
-- A raw-markdown editor (inside VS Code) client for the runner
-- A CLI client for the runner
-- A notebook client (inside VS Code) for the runner
-- A visual markdown viewer and editor (inside VS Code)
-
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/runme-illustration.mp4" type="video/mp4" />
-  <source src="/videos/runme-illustration.webm" type="video/webm" />
-</video>
 
 ## Known Limitations
 
