@@ -7,13 +7,13 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
-Runme makes runbooks _actually runnable_, making it effortless to complete step-by-step instructions. This makes it a great solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally. Making operational docs reliable and much less susceptible to bitrot.
+Runme makes runbooks _actually runnable_, making it effortless to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and much less susceptible to bitrot.
 
 ## Reliable Knowledge Sharing 🤝
 
-Using the notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expecations to complete the steps with confidence. Authors can maintain golden paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with with teammates.
+Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors can maintain golden paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
 
-In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution and it is possible to pipe previous cell's output into successive cells.
+In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells's output into successive cells.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-illustration.mp4" type="video/mp4" />
