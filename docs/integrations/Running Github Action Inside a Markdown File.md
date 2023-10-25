@@ -4,6 +4,11 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 GitHub Actions provide a robust CI/CD platform for automating development tasks. Runme supports only manual workflows in GitHub Actions, allowing on-demand tasks like targeted releases and incident responses. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs, and after inputting the required parameters, they can execute the workflow directly.
 
+<video className="rounded" autoPlay loop muted playsInline controls>
+  <source src="videos/embed.mp4" type="video/mp4" />
+  <source src="videos/embed.webm" type="video/webm" />
+</video>
+
 ### Workflow Types
 
 - Events that occur in your workflow's repository
