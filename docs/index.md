@@ -9,7 +9,7 @@ import Infobox from "../src/components/Infobox.tsx"
 
 Runme makes runbooks _actually runnable_, making it effortless to complete step-by-step instructions. This makes it a great solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally. Making operational docs reliable and much less susceptible to bitrot.
 
-## Reliable Knowledge Sharing
+## Reliable Knowledge Sharing 🤝
 
 Using the notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expecations to complete the steps with confidence. Authors can maintain golden paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with with teammates.
 
