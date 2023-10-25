@@ -240,6 +240,8 @@ Frontmatter in yaml, json, or toml on top of markdown document.
 
 Metadata inside markdown's fenced code blocks.
 
+> **InfoBox**: This feature can be used to prevent prompting when exporting an environment variable. By configuring the cell options appropriately, you can streamline your workflow and make your environment setup more efficient.
+
 | Configuration          | Description                                                     | Default value            |
 | ---------------------- | --------------------------------------------------------------- | ------------------------ |
 | background             | Indicates if the cell should be runned as a background process  | false                    |
@@ -253,7 +255,7 @@ Metadata inside markdown's fenced code blocks.
 | name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
 | terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
 | promptEnv              | Prompt user to set exported environment vars                    | true                     |
-| skipPrompts            | Bypasses interactive [prompts](https://docs.runme.dev/configuration#cell-options) that require inputting environment vars or authentication confirmations. |false     |
+| skipPrompts            | Bypasses interactive [prompts](../docs/configuration.md#cell-options) that require inputting environment vars or authentication confirmations. |false     |
 
 ### Supported MIME types
 
