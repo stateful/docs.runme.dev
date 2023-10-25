@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Running Github Action Inside a Markdown File
+title: Running 
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"
