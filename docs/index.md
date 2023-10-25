@@ -7,16 +7,18 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
-Runme is a tool that makes runbooks actually _runnable_, making it easier to follow step-by-step instructions. Users can execute instructions, check intermediate results, and ensure the desired outputs are achieved. Authors can create predefined golden paths and share them with others. Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on.
+Runme is a tool that makes runbooks actually _runnable_, making it easier to follow step-by-step instructions. This makes it a great solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally. Making it less susceptible to bitrot.
 
-Runme achieves this by literally running markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible with your programming language's task definitions (Makefile, Gradle, Grunt, NPM scripts, Pipfile or Deno tasks, etc.). Runme persists your runbooks in markdown, which your docs are likely already using.
+Using the notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expecations to complete the steps with confidence. Authors can maintain golden paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve them and effectively share them with with teammates.
 
-<!-- ![What is Runme](../static/img/venn.png) -->
+In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution and it is possible to pipe previous cell's output into successive cells.
 
 <br />
 <img src="/img/venn.png" style={{width: "70%"}} alt="What is runme"/>
 
 ## What is Runme?
+
+Runme literally runs markdown (ubiquitous for docs inside repos). More specifically, Runme runs your commands inside your fenced code blocks (shell, bash, zsh). It's 100% compatible CommonMark (the standard) and as a result won't interfere with existing markdown documentation and tooling you're already using.
 
 Runme has interfaces for terminal, editor, and notebooks attached to a kernel, making them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
 
