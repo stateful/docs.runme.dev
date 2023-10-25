@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: Browser Extension
+title: Runme via Browser Extension
 ---
 
 # Runme Browser Extension
