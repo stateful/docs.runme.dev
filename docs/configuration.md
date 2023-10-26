@@ -255,7 +255,7 @@ Metadata inside markdown's fenced code blocks.
 | name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
 | terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
 | promptEnv              | Prompt user to set exported environment vars                    | true                     |
-| skipPrompts            | Bypasses interactive [prompts](/configuration) that require inputting environment vars or authentication confirmations. |false     |
+| skipPrompts            | Bypasses interactive [prompts](/configuration#cell-options) that require inputting environment vars or authentication confirmations. |false     |
 
 ### Supported MIME types
 
