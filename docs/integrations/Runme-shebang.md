@@ -32,7 +32,7 @@ Follow the steps below to set up Shebang in VSCode:
 ![shebang-advance](../../static/img/shebang-advanced.png)
 
 4. Set the path to the interpreter
-   ![shebang-interpreter](../static/img/shebang-interpreters.png)
+   ![shebang-interpreter](../../static/img/shebang-interpreters.png)
 5. close the modular
 6. Execute the Runme command:
 
