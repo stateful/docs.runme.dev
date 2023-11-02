@@ -18,25 +18,22 @@ Visual Studio Code (VSCode) provides a user-friendly interface for configuring S
 
 You can switch to the programming language using the feature for selecting a language interpreter that allows users to configure the environment for running code directly within the editor
 
-![shebang-language-mood](../static/img/shebang-language-mood.png)
-
+![shebang-language-mood](../../static/img/shebang-language-mood.png)
 
 Follow the steps below to set up Shebang in VSCode:
 
 1. Open your script (markdown file) in VSCode
-2. Click on "Configure" menu 
+2. Click on "Configure" menu
 
-![shebang-configure](../static/img/shebang-configure.png)
+![shebang-configure](../../static/img/shebang-configure.png)
 
+3. Click on "Advance"
 
-3. Click on "Advance" 
-
-![shebang-advance](../static/img/shebang-advanced.png)
+![shebang-advance](../../static/img/shebang-advanced.png)
 
 4. Set the path to the interpreter
-![shebang-interpreter](../static/img/shebang-interpreters.png)
-
-5. close the modular 
+   ![shebang-interpreter](../static/img/shebang-interpreters.png)
+5. close the modular
 6. Execute the Runme command:
 
 ```sh
@@ -44,7 +41,7 @@ Follow the steps below to set up Shebang in VSCode:
 runme
 ```
 
-![shebang-output](../static/img/shebang-output.png)
+![shebang-output](../../static/img/shebang-output.png)
 
 ## Setting Up Shebang Using CLI
 
