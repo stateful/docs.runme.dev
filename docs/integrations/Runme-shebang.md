@@ -1,14 +1,18 @@
-### Runme Integrated With Shebang
+---
+sidebar_position: 7
+---
+
+## Runme Integrated With Shebang
 
 Runme revolutionizes the execution of runbooks by transforming them into executable documents, streamlining the process of following step-by-step instructions. This innovation ensures that operational documents, such as runbooks, playbooks, and procedural guides, remain reliable and are less prone to becoming outdated or incorrect over time.
 
 Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
 
-### Prerequisites
+## Prerequisites
 
 Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly installed on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
-### Configuring Shebang in Visual Studio Code
+## Configuring Shebang in Visual Studio Code
 
 Visual Studio Code (VSCode) provides a user-friendly interface for configuring Shebang. Follow the steps below to set up Shebang in VSCode.
 
@@ -42,7 +46,7 @@ runme
 
 ![shebang-output](../static/img/shebang-output.png)
 
-### Setting Up Shebang Using CLI
+## Setting Up Shebang Using CLI
 
 Shebang can be easily configured for different scripting languages using the command line interface (CLI). Below is an example of how to set up Shebang for a Bash script:
 
