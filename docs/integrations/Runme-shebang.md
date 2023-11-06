@@ -8,9 +8,12 @@ Runme revolutionizes the execution of runbooks by transforming them into executa
 
 Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
 
+### Why are Shebangs Important?
+Including a shebang line is crucial for specifying the interpreter for each code block. This allows for seamless execution of mixed-language scripts. The shebang line dictates to the platform which environment to use, ensuring that the code runs correctly and efficiently within the interface provided.
+
 ## Prerequisites
 
-Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly installed on your system. This is a crucial step to guarantee the smooth execution of your runbooks
+Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly [installed](/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
 ## Configuring Shebang in Visual Studio Code
 
@@ -74,6 +77,7 @@ print("RUNME !!")
 ```
 
 ### Output:
+
 ![shebang-python](../../static/img/Shebang-python.png)
 
 ### Bash
@@ -86,6 +90,7 @@ echo "RUNME !!"
 ```
 
 ### Output:
+
 ![Bash](../../static/img/shebang-bash.png)
 
 ### Ruby
@@ -98,6 +103,7 @@ puts "RUNME !!"
 ```
 
 ### Output:
+
 ![shebang-ruby](../../static/img/shebang-ruby.png)
 
 ### PHP
@@ -112,6 +118,7 @@ echo "RUNME !!";
 ```
 
 ### Output:
+
 ![shebang-php](../../static/img/shebang-php.png)
 
 ### Node
@@ -124,8 +131,10 @@ console.log("RUNME !!");
 ```
 
 ### Output:
+
 ![shebang-node](../../static/img/shebang-node.png)
 
 ## Combining Multiple Languages in Your Notebook
+
 It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
 
