@@ -9,6 +9,7 @@ Runme revolutionizes the execution of runbooks by transforming them into executa
 Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
 
 ### Why are Shebangs Important?
+
 Including a shebang line is crucial for specifying the interpreter for each code block. This allows for seamless execution of mixed-language scripts. The shebang line dictates to the platform which environment to use, ensuring that the code runs correctly and efficiently within the interface provided.
 
 ## Prerequisites
@@ -69,46 +70,34 @@ Replace test.md with the name of your script file.
 
 ### Python
 
-To run the Python code, use the shebang line with the path to the Python interpreter ***/usr/bin/python3***
+To run the Python code, you need to set the path to the Python interpreter, which is ***/usr/bin/python3***, in the advanced section of your configuration in your code block.
 
 ```python
-# This Python script prints "RUNME !!"
+# This Python code prints "RUNME !!"
 print("RUNME !!")
 ```
 
-### Output:
-
-![shebang-python](../../static/img/Shebang-python.png)
-
 ### Bash
 
-For Bash, the shebang line points to the Bash interpreter ***/usr/bin/bash***
+To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is ***/usr/bin/bash***, in the advanced section of your configuration in your code block.
 
 ```sh
 # This Bash script echoes "RUNME !!"
 echo "RUNME !!"
 ```
 
-### Output:
-
-![Bash](../../static/img/shebang-bash.png)
-
 ### Ruby
 
-Ruby require the path to the Ruby interpreter in the shebang line ***/usr/bin/ruby***
+To use Ruby, you need to add the path to the Ruby interpreter, which is ***/usr/bin/ruby***, in the advanced section of your configuration in your code block.
 
 ```sh
-# This Ruby script outputs "RUNME !!"
+# This Ruby code outputs "RUNME !!"
 puts "RUNME !!"
 ```
 
-### Output:
-
-![shebang-ruby](../../static/img/shebang-ruby.png)
-
 ### PHP
 
-PHP start with a shebang line pointing to the PHP interpreter ***/usr/bin/php***
+To use PHP, you need to add the path to the PHP interpreter, which is ***/usr/bin/php***, in the advanced section of your configuration in your code block..
 
 ```sh
 <?php
@@ -117,22 +106,14 @@ echo "RUNME !!";
 ?>
 ```
 
-### Output:
-
-![shebang-php](../../static/img/shebang-php.png)
-
 ### Node
 
-Node.js use the shebang line to specify the Node interpreter ***/usr/bin/node***
+To use Node.js, you need to add the path to the node interpreter, which is ***/usr/bin/node***, in the advanced section of your configuration in your code block.
 
 ```sh
 // This Node.js logs "RUNME !!"
 console.log("RUNME !!");
 ```
-
-### Output:
-
-![shebang-node](../../static/img/shebang-node.png)
 
 ## Combining Multiple Languages in Your Notebook
 
