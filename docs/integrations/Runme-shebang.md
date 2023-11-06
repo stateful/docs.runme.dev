@@ -126,6 +126,6 @@ console.log("RUNME !!");
 ### Output:
 ![shebang-node](../../static/img/shebang-node.png)
 
-### Combining Multiple Languages in Your Notebook
+## Combining Multiple Languages in Your Notebook
 It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
 
