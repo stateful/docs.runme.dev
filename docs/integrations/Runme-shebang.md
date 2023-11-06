@@ -27,16 +27,12 @@ You can switch to the programming language using the feature for selecting a lan
 Follow the steps below to set up Shebang in VSCode:
 
 1. Open your script (markdown file) in VSCode
-2. Click on "Configure" menu
-
-![shebang-configure](../../static/img/shebang-configure.png)
-
+2. Click on "Configure" menu at the buttom right of your code block
 3. Click on "Advance"
-
-![shebang-advance](../../static/img/shebang-advanced.png)
-
 4. Set the path to the interpreter
-   ![shebang-interpreter](../../static/img/shebang-interpreters.png)
+
+
+![shebang-interpreter](../../static/img/shebang-interpreters.png)
 5. close the modular
 6. Execute the Runme command:
 
