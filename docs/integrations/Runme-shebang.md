@@ -61,3 +61,72 @@ runme run test.md
 ```
 
 Replace test.md with the name of your script file.
+
+### Examples of Shebang Lines for Different Languages
+
+### Python
+
+To run the Python code, use the shebang line with the path to the Python interpreter ***/usr/bin/python3***
+
+```python
+# This Python script prints "RUNME !!"
+print("RUNME !!")
+```
+
+### Output:
+![shebang-python](../../static/img/Shebang-python.png)
+
+### Bash
+
+For Bash, the shebang line points to the Bash interpreter ***/usr/bin/bash***
+
+```sh
+# This Bash script echoes "RUNME !!"
+echo "RUNME !!"
+```
+
+### Output:
+![Bash](../../static/img/shebang-bash.png)
+
+### Ruby
+
+Ruby require the path to the Ruby interpreter in the shebang line ***/usr/bin/ruby***
+
+```sh
+# This Ruby script outputs "RUNME !!"
+puts "RUNME !!"
+```
+
+### Output:
+![shebang-ruby](../../static/img/shebang-ruby.png)
+
+### PHP
+
+PHP start with a shebang line pointing to the PHP interpreter ***/usr/bin/php***
+
+```sh
+<?php
+# This PHP script will print "RUNME !!"
+echo "RUNME !!";
+?>
+```
+
+### Output:
+![shebang-php](../../static/img/shebang-php.png)
+
+### Node
+
+Node.js use the shebang line to specify the Node interpreter ***/usr/bin/node***
+
+```sh
+// This Node.js logs "RUNME !!"
+console.log("RUNME !!");
+```
+
+### Output:
+![shebang-node](../../static/img/shebang-node.png)
+
+### Combining Multiple Languages in Your Notebook
+
+It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
+
