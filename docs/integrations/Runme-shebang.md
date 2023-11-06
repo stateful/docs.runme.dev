@@ -62,7 +62,7 @@ runme run test.md
 
 Replace test.md with the name of your script file.
 
-### Examples of Shebang Lines for Different Languages
+## Examples of Shebang Lines for Different Languages
 
 ### Python
 
