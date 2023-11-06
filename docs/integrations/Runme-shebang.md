@@ -41,7 +41,7 @@ Follow the steps below to set up Shebang in VSCode:
 runme
 ```
 
-![shebang-output](../../static/img/shebang-output.png)
+![shebang-output](../../static/img/shebang-outputt.png)
 
 ## Setting Up Shebang Using CLI
 
