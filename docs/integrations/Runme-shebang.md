@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Runme Integrated With Shebang
 
-Runme revolutionizes the execution of runbooks by transforming them into executable documents, streamlining the process of following step-by-step instructions. This innovation ensures that operational documents, such as runbooks, playbooks, and procedural guides, remain reliable and are less prone to becoming outdated or incorrect over time.
+Runme enables users to complete step-by-step instructions with ease, making runbooks actually runnable. This makes it an ideal solution for runbooks, playbooks, and any documentation that requires users to complete runnable steps incrementally. Operational docs become more reliable and less susceptible to bitrot with the help of Runme.
 
 Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
 
@@ -43,25 +43,6 @@ runme
 
 ![shebang-output](../../static/img/shebang-outputt.png)
 
-## Setting Up Shebang Using CLI
-
-Shebang can be easily configured for different scripting languages using the command line interface (CLI). Below is an example of how to set up Shebang for a Bash script:
-
-```sh
-#!/bin/bash
-echo "Hello, World!"
-```
-
-In this example, the **#!/bin/bash** line tells the system to use Bash as the interpreter for the code. You can replace /bin/bash with the path to the interpreter for the scripting language of your choice.
-
-To execute the code using Runme CLI, simply navigate to the directory containing your code and run the following command:
-
-```sh
-runme run test.md
-```
-
-Replace test.md with the name of your script file.
-
 ## Examples of Shebang Lines for Different Languages
 
 ### Python
@@ -69,8 +50,30 @@ Replace test.md with the name of your script file.
 To run the Python code, you need to set the path to the Python interpreter, which is ***/usr/bin/python3***, in the advanced section of your configuration in your code block.
 
 ```python
-# This Python code prints "RUNME !!"
-print("RUNME !!")
+# List comprehension to create a list of squares of even numbers from 0 to 9
+squares_of_even_numbers = [x**2 for x in range(10) if x % 2 == 0]
+
+# Dictionary comprehension to create a dictionary where the key is a number and the value is its square
+squares_dict = {x: x**2 for x in range(5)}
+
+# Tuple unpacking to swap values
+a, b = 1, 2
+b, a = a, b
+
+# Using the walrus operator to assign and print at the same time (Python 3.8+)
+print(f"The squares of even numbers: {(squares := [x**2 for x in range(10) if x % 2 == 0])}")
+
+# Print the results
+print(f"Squares of even numbers: {squares_of_even_numbers}")
+print(f"Dictionary of squares: {squares_dict}")
+print(f"Values after swapping: a = {a}, b = {b}")
+
+# A function that uses type hints (Python 3.5+)
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+# Call the function and print the greeting
+print(greet("Pythonista"))
 ```
 
 ### Bash
@@ -87,15 +90,26 @@ echo "RUNME !!"
 To use Ruby, you need to add the path to the Ruby interpreter, which is ***/usr/bin/ruby***, in the advanced section of your configuration in your code block.
 
 ```sh
-# This Ruby code outputs "RUNME !!"
-puts "RUNME !!"
+
+# Open up the String class to add a new method
+class String
+  # Define a new method to reverse the words in a string
+  def reverse_words
+    self.split(' ').reverse.join(' ')
+  end
+end
+
+# Use the new method on a string
+sentence = "Hello Ruby world"
+puts "Original sentence: #{sentence}"
+puts "Reversed words: #{sentence.reverse_words}"
 ```
 
 ### PHP
 
 To use PHP, you need to add the path to the PHP interpreter, which is ***/usr/bin/php***, in the advanced section of your configuration in your code block..
 
-```sh
+```php
 <?php
 # This PHP script will print "RUNME !!"
 echo "RUNME !!";
