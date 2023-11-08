@@ -31,7 +31,6 @@ Follow the steps below to set up Shebang in VSCode:
 3. Click on "Advance"
 4. Set the path to the interpreter
 
-
 ![shebang-interpreter](../../static/img/shebang-interpreters.png)
 5. close the modular
 6. Execute the Runme command:
@@ -109,10 +108,21 @@ puts "Reversed words: #{sentence.reverse_words}"
 
 To use PHP, you need to add the path to the PHP interpreter, which is ***/usr/bin/php***, in the advanced section of your configuration in your code block..
 
-```php
+```php { interpreter=/opt/homebrew/bin/php }
 <?php
-# This PHP script will print "RUNME !!"
-echo "RUNME !!";
+// PHP Script Example: Greeting with Date and Time
+
+// Define a variable for the greeting
+$greeting = "Hello, World!";
+
+// Get the current date and time
+$currentDateTime = date('Y-m-d H:i:s');
+
+// Concatenate the greeting with the current date and time
+$fullGreeting = $greeting . " It's now " . $currentDateTime;
+
+// Output the full greeting
+echo $fullGreeting;
 ?>
 ```
 
