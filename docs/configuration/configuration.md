@@ -51,7 +51,7 @@ Not all commands are equal, and expectations of how execution works can differ! 
 
 Just click "Configure" on the respective cell to make modifications to the cell execution behavior:
 
-![Configure Cell's Execution in vs code](../static/img/configure-cell-execution.gif)
+![Configure Cell's Execution in vs code](../../static/img/configure-cell-execution.gif)
 
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
 
@@ -107,7 +107,7 @@ It is very common to use file-watcher enabled compilers/bundlers (`npm start dev
 
 For any cell containing an instance of these commands be sure to tick the "background" cell setting. This will prevent execution from permanently blocking the notebook UX.
 
-![background task process in vs code](../static/img/background-task-process.png)
+![background task process in vs code](../../static/img/background-task-process.png)
 
 Once ticked notice the "Background Task" label shows up in the cell status bar!
 
@@ -141,7 +141,7 @@ Please note that if both `cwd` are set for doc-level and cell they don't overwri
 
 If a cell's commands do not require any input from a reader it might be a good fit to include the cell's output inside the notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for, and it defaults to *true*.
 
-![interactive execution in vs code](../static/img/interactive-execution.png)
+![interactive execution in vs code](../../static/img/interactive-execution.png)
 
 **Default:** `true`
 
@@ -161,7 +161,7 @@ Please note that the Runme team is currently working on making output in both no
 
 If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
 
-![prompt user in vs code](../static/img/interactive-prompt.png)
+![prompt user in vs code](../../static/img/interactive-prompt.png)
 
 **Default:** `true`
 
@@ -188,7 +188,7 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 
 JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The MIME type defaults to *text/plain*.
 
-![Human-centric output](../static/img/human-centric-output.png)
+![Human-centric output](../../static/img/human-centric-output.png)
 
 See below for the list of supported MIME types!
 
@@ -220,7 +220,7 @@ If you have multiple workflows in a single markdown file you can categorize them
     # Do something here
     ```
 
-![Run by category](../static/img/categories.gif)
+![Run by category](../../static/img/categories.gif)
 
 ## Reference
 
