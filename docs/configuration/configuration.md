@@ -3,41 +3,13 @@ sidebar_position: 4
 title: Configuration
 ---
 
-import Infobox from "../src/components/Infobox.tsx"
+import Infobox from "../../src/components/Infobox.tsx"
 
 # Configuration
 
 To get the best of RUNME, and to offer a fantastic README experience, RUNME has a cell configuration option which allows you to indicate how the cell will be executed.
 
-## Document-level Options
 
-RUNME does not just retain frontmatter, it supports top-level settings that will affect all cells in the document.
-
-### Set custom shell
-
-RUNME will default to the system's default shell unless specified in the frontmatter. Both relative (be sure shell is included in `$PATH`) and absolute paths work. This is useful when notebooks are being shared amongst users with different shell setups.
-
-```yaml
----
-shell: bash
-# or
-shell: zsh
-# or
-shell: /bin/ksh
----
-```
-
-### Current working directory
-
-It is not unusual to store docs in a, e.g. `docs/` sub-directory. It's often times implied that commands need running from the base directory. To reliably execute commands in this case it's handy to set explicitly set a working directory in the frontmatter.
-
-```yaml
----
-# relative for file inside of `docs/`
-cwd: ..
-# absolute works too, however, less commonplace
-cwd: /tmp
----
 ```
 
 ## Cell-level Options
@@ -222,63 +194,3 @@ If you have multiple workflows in a single markdown file you can categorize them
 
 ![Run by category](../../static/img/categories.gif)
 
-## Reference
-
-Everything in one place.
-
-### Document Options
-
-Frontmatter in yaml, json, or toml on top of markdown document.
-
-| Configuration  | Description                              | Default value             |
-| ------------- | ----------------------------------------- | ------------------------- |
-| cwd           | Overwrites the default working directory  | [markdown file's basedir] |
-| shell         | Overwrites shell with custom preference   | [system/user default]     |
-| skipPrompts   | Bypasses interactive prompts              | [system/user default]     |
-
-### Cell Options
-
-Metadata inside markdown's fenced code blocks.
-
-| Configuration          | Description                                                     | Default value            |
-| ---------------------- | --------------------------------------------------------------- | ------------------------ |
-| background             | Indicates if the cell should be runned as a background process  | false                    |
-| closeTerminalOnSuccess | Hide Terminal after cell successful execution                   | true                     |
-| category               | Execute this code cell within a category                        | [empty]                  |
-| cwd                    | Modify current working directory for cell execution             | [empty]                  |
-| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation      | false                    |
-| interactive            | Indicates if run should allow interactive input                 | false                    |
-| interpreter            | The program or command line inserted into shebang (aka #!) line | inferred from languageId |
-| mimeType               | Cell’s output content MIME type                                 | text/plain               |
-| name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
-| terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
-| promptEnv              | Prompt user to set exported environment vars                    | true                     |
-| skipPrompts            | Bypasses interactive [prompts](/configuration#cell-options) that require inputting environment vars or authentication confirmations. |false     |
-
-<Infobox type="sidenote" title="SkipPrompts">
-
-This feature can be used to prevent [prompting](/configuration#document-options) when exporting an environment variable. By configuring the [cell options](/configuration#cell-options) appropriately, you can streamline your workflow and make your environment setup more efficient.
-
-</Infobox>
-
-### Supported MIME types
-
-Runme supports the standard VS Code MIME types alongside custom Runme MIME types.
-
-**Standard VS Code MIME types**
-
-- text/plain
-- application/javascript
-- text/html
-- image/svg+xml
-- text/markdown
-- image/png
-- image/jpeg
-
-**MIME types for rendering code**
-
-- text/x-json
-- text/x-javascript
-- text/x-html
-- text/x-rust
-- text/x-LANGUAGE_ID for any other built-in or installed languages.
