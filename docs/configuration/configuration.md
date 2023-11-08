@@ -3,14 +3,6 @@ sidebar_position: 4
 title: Configuration
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
-
-# Configuration
-
-To get the best of RUNME, and to offer a fantastic README experience, RUNME has a cell configuration option which allows you to indicate how the cell will be executed.
-
-
-```
 
 ## Cell-level Options
 
@@ -27,6 +19,7 @@ Just click "Configure" on the respective cell to make modifications to the cell 
 
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
 
+```md
 ```sh
 ```sh { interactive=false name=echo-hello-world }
 echo hello world
