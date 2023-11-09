@@ -3,7 +3,6 @@ sidebar_position: 4
 title: Cell level Options
 ---
 
-
 # Cell-level Options
 
 Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be to be:
@@ -15,7 +14,7 @@ Not all commands are equal, and expectations of how execution works can differ! 
 
 Just click "Configure" on the respective cell to make modifications to the cell execution behavior:
 
-![Configure Cell's Execution in vs code](../../static/img/configure-cell-execution.gif)
+<video src="../../static/videos/configure-cell-execution.mp4" controls title="Configure Cell's Execution in vs code"></video>
 
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
 
