@@ -14,7 +14,10 @@ Not all commands are equal, and expectations of how execution works can differ! 
 
 Just click "Configure" on the respective cell to make modifications to the cell execution behavior:
 
-<video src="../../static/videos/configure-cell-execution.mp4" controls title="Configure Cell's Execution in vs code"></video>
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/configure-cell-execution.mp4" type="video/mp4" />
+  <source src="/videos/configure-cell-execution.webm" type="video/webm" />
+</video>
 
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
 
