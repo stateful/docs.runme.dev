@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Runme Integrated With Shebang
+# Shebang RunMe Toolkit
 
 Runme enables users to complete step-by-step instructions with ease, making runbooks actually runnable. This makes it an ideal solution for runbooks, playbooks, and any documentation that requires users to complete runnable steps incrementally. Operational docs become more reliable and less susceptible to bitrot with the help of Runme.
 

@@ -1,4 +1,4 @@
-## Reference
+# Reference
 
 Everything in one place.
 
