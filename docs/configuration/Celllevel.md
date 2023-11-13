@@ -43,6 +43,8 @@ The entire configuration schema as an example
 echo hello world ```
 ```
 
+<Infobox type="sidenote">
+
 Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/main/examples) available inside the VS Code extension repo for a reference on how to apply these code block attributes in different use cases!
 
 </Infobox>
