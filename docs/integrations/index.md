@@ -12,7 +12,7 @@ This guide exposes a few ways to integrate Runme with different environments or 
 
 Here are some examples
 
-* Runme with Fresh App on Deno Cloud
-* Runme with Next.js App on Vercel
-* Running Runme CLI in Github Action
-* Running Github Action Inside a Markdown File
+* [Runme with Fresh App on Deno Cloud](Runme-with-Fresh-App-on-Deno-Cloud)
+* [Runme with Next.js App on Vercel](Runme-with-Next.js-App-on-Vercel)
+* [Running Runme CLI in Github Action](Running-CLI-in-Github-Actions-Workflow)
+* [Running Github Action Inside a Markdown File](Running-Github-Action-Inside-a-Markdown-File)
