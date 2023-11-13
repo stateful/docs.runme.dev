@@ -45,35 +45,26 @@ runme
 
 ## Examples of Shebang Lines for Different Languages
 
+Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("Hello, World!"), obtain the current date and time, and then concatenate these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
+
 ### Python
 
 To run the Python code, you need to set the path to the Python interpreter, which is ***/usr/bin/python3***, in the advanced section of your configuration in your code block.
 
 ```python
-# List comprehension to create a list of squares of even numbers from 0 to 9
-squares_of_even_numbers = [x**2 for x in range(10) if x % 2 == 0]
+import datetime
 
-# Dictionary comprehension to create a dictionary where the key is a number and the value is its square
-squares_dict = {x: x**2 for x in range(5)}
+# Define a variable for the greeting
+greeting = "Hello, World!"
 
-# Tuple unpacking to swap values
-a, b = 1, 2
-b, a = a, b
+# Get the current date and time
+currentDateTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-# Using the walrus operator to assign and print at the same time (Python 3.8+)
-print(f"The squares of even numbers: {(squares := [x**2 for x in range(10) if x % 2 == 0])}")
+# Concatenate the greeting with the current date and time
+fullGreeting = greeting + " It's now " + currentDateTime
 
-# Print the results
-print(f"Squares of even numbers: {squares_of_even_numbers}")
-print(f"Dictionary of squares: {squares_dict}")
-print(f"Values after swapping: a = {a}, b = {b}")
-
-# A function that uses type hints (Python 3.5+)
-def greet(name: str) -> str:
-    return f"Hello, {name}!"
-
-# Call the function and print the greeting
-print(greet("Pythonista"))
+# Output the full greeting
+print(fullGreeting)
 ```
 
 ### Bash
@@ -81,8 +72,19 @@ print(greet("Pythonista"))
 To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is ***/usr/bin/bash***, in the advanced section of your configuration in your code block.
 
 ```sh
-# This Bash script echoes "RUNME !!"
-echo "RUNME !!"
+#!/bin/bash
+
+# Define a variable for the greeting
+greeting="Hello, World!"
+
+# Get the current date and time
+currentDateTime=$(date '+%Y-%m-%d %H:%M:%S')
+
+# Concatenate the greeting with the current date and time
+fullGreeting="$greeting It's now $currentDateTime"
+
+# Output the full greeting
+echo $fullGreeting
 ```
 
 ### Ruby
@@ -90,19 +92,17 @@ echo "RUNME !!"
 To use Ruby, you need to add the path to the Ruby interpreter, which is ***/usr/bin/ruby***, in the advanced section of your configuration in your code block.
 
 ```sh
+# Define a variable for the greeting
+greeting = "Hello, World!"
 
-# Open up the String class to add a new method
-class String
-  # Define a new method to reverse the words in a string
-  def reverse_words
-    self.split(' ').reverse.join(' ')
-  end
-end
+# Get the current date and time
+currentDateTime = Time.now.strftime("%Y-%m-%d %H:%M:%S")
 
-# Use the new method on a string
-sentence = "Hello Ruby world"
-puts "Original sentence: #{sentence}"
-puts "Reversed words: #{sentence.reverse_words}"
+# Concatenate the greeting with the current date and time
+fullGreeting = "#{greeting} It's now #{currentDateTime}"
+
+# Output the full greeting
+puts fullGreeting
 ```
 
 ### PHP
@@ -132,8 +132,17 @@ echo $fullGreeting;
 To use Node.js, you need to add the path to the node interpreter, which is ***/usr/bin/node***, in the advanced section of your configuration in your code block.
 
 ```sh
-// This Node.js logs "RUNME !!"
-console.log("RUNME !!");
+// Define a variable for the greeting
+const greeting = "Hello, World!";
+
+// Get the current date and time
+const currentDateTime = new Date().toISOString().replace('T', ' ').substring(0, 19);
+
+// Concatenate the greeting with the current date and time
+const fullGreeting = `${greeting} It's now ${currentDateTime}`;
+
+// Output the full greeting
+console.log(fullGreeting);
 ```
 
 ## Combining Multiple Languages in Your Notebook
