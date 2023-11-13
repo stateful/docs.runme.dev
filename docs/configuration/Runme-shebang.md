@@ -72,7 +72,6 @@ print(fullGreeting)
 To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is ***/usr/bin/bash***, in the advanced section of your configuration in your code block.
 
 ```sh
-#!/bin/bash
 
 # Define a variable for the greeting
 greeting="Hello, World!"
