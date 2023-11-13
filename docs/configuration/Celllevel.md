@@ -5,7 +5,7 @@ title: Cell level Options
 
 # Cell-level Options
 
-Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be to be:
+Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be:
 
 1. File-watchers for compilers & bundlers should run as background tasks
 2. Executors for Interactive and Non-interactive programs & scripts
