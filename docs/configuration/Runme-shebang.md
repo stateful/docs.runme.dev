@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 2
 ---
 
 # Shebang RunMe Toolkit
@@ -20,7 +20,7 @@ Before proceeding with the integration of Shebang in [Runme](/install#runme-cli)
 
 Visual Studio Code (VS Code) provides a user-friendly interface for configuring Shebang. Follow the steps below to set up Shebang in VS Code.
 
-You can switch to the programming language using the feature for selecting a language interpreter that allows users to configure the environment for running code directly within the editor
+You can switch to the programming language of your choice using the feature that selects a language interpreter that allows users to configure the environment for running code directly within the editor
 
 ![shebang-language-mood](../../static/img/shebang-language-mood.png)
 
@@ -32,6 +32,7 @@ Follow the steps below to set up Shebang in VS Code:
 4. Set the path to the interpreter
 
 ![shebang-interpreter](../../static/img/shebang-interpreters.png)
+
 5. close the modular
 6. Execute the Runme command:
 

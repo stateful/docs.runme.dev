@@ -1,6 +1,5 @@
 ---
-sidebar_position: 4
-title: Configuration
+sidebar_position: 1
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"
