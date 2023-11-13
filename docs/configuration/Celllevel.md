@@ -19,7 +19,7 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../configuration/reference.md):
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../../configuration/reference):
 
 ```md
 ```sh { interactive=false name=echo-hello-world }
@@ -36,7 +36,7 @@ Try out the previous command
 echo hello world ```
 ```
 
-The entire [configuration schema](../configuration/reference.md) as an example
+The entire [configuration schema](../configuration/reference) as an example
 
 ```sh
 ```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
