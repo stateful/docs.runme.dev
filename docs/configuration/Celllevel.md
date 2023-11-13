@@ -36,7 +36,7 @@ Try out the previous command
 echo hello world ```
 ```
 
-The entire [configuration schema](/reference) as an example
+The entire [configuration schema](/reference#Cell-Options) as an example
 
 ```sh
 ```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
