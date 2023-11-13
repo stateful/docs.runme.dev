@@ -12,37 +12,36 @@ Not all commands are equal, and expectations of how execution works can differ! 
 3. Human-centric output: JSON, text, images, etc
 4. Terminal visibility when no errors occur
 
-Just click "Configure" on the respective cell to make modifications to the cell execution behavior:
+To modify the cell execution behavior, simply click "Configure" on the respective cell.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/configure-cell-execution.mp4" type="video/mp4" />
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options schema:
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../configuration/reference.md):
 
 ```md
-```sh
 ```sh { interactive=false name=echo-hello-world }
-echo hello world
+echo hello world ```
 ```
+
+The above example uses the echo command to display the text "hello world" on the terminal. The context { interactive=false name=echo-hello-world } indicates that the command is intended for non-interactive execution and has been labeled accordingly.
 
 ```sh
 
 Try out the previous command
 
 ```sh
-echo hello world
+echo hello world ```
 ```
 
-The entire configuration schema as an example
+The entire [configuration schema](../configuration/reference.md) as an example
 
 ```sh
 ```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
 echo hello world ```
 ```
-
-<Infobox type="sidenote">
 
 Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/main/examples) available inside the VS Code extension repo for a reference on how to apply these code block attributes in different use cases!
 
