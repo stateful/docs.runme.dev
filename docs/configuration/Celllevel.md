@@ -188,5 +188,9 @@ If you have multiple workflows in a single markdown file you can categorize them
     # Do something here
     ```
 
-![Run by category](../../static/img/categories.gif)
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/categories.mp4" type="video/mp4" />
+  <source src="/videos/categories.webm" type="video/webm" />
+</video>
 
