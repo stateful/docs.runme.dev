@@ -223,7 +223,7 @@ It’s easy. Open your project README file and see it is now opened as a Noteboo
 
 ### How to open a README file as a markdown file?
 
-Sometimes, you will want to see the file as a regular markdown file, and you don’t need to disable or uninstall RUNME. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or markdown preview for such cases.
+Sometimes, you will want to see the file as a regular markdown file, and you don’t need to disable or uninstall Runme. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or markdown preview for such cases.
 
 ![open a README file as a markdown file](../../static/img/open-readme-file.gif)
 
