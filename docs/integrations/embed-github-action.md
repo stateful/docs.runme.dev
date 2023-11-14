@@ -5,9 +5,9 @@ title: Running Github Action Inside a Markdown File
 
 import Infobox from "../../src/components/Infobox.tsx"
 
-# Running Github Action Inside a Markdown File
-
 > 💡 Be sure to install [Runme for VS Code](/install#runme-for-vs-code) first
+
+<br/>
 
 GitHub Actions provide a robust CI/CD platform for automating development tasks. Runme supports only manual workflows in GitHub Actions, allowing on-demand tasks like targeted releases and incident responses. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs, and after inputting the required parameters, they can execute the workflow directly.
 
