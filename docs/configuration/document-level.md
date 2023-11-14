@@ -1,15 +1,13 @@
 ---
-sidebar_position: 5
-title: Document level Options
+sidebar_position: 2
+title: Document-level Options
 ---
 
-# Document level Options
-
-RUNME does not just retain frontmatter, it supports top-level settings that will affect all cells in the document.
+Runme does not just retain frontmatter, it supports top-level settings that will affect all cells in the document.
 
 ### Set custom shell
 
-RUNME will default to the system's default shell unless specified in the frontmatter. Both relative (be sure shell is included in `$PATH`) and absolute paths work. This is useful when notebooks are being shared amongst users with different shell setups.
+Runme will default to the system's default shell unless specified in the frontmatter. Both relative (be sure shell is included in `$PATH`) and absolute paths work. This is useful when notebooks are being shared amongst users with different shell setups.
 
 ```yaml
 ---
