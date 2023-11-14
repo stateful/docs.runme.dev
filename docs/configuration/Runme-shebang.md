@@ -1,12 +1,13 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
+title: Shebang Support
 ---
-
-# Shebang RunMe Toolkit
 
 Runme enables users to complete step-by-step instructions with ease, making runbooks actually runnable. This makes it an ideal solution for runbooks, playbooks, and any documentation that requires users to complete runnable steps incrementally. Operational docs become more reliable and less susceptible to bitrot with the help of Runme.
 
 Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
+
+![Runme Shebang in Action](../../static/img/runme-shebang.png)
 
 ### Why are Shebangs Important?
 
@@ -16,7 +17,7 @@ Including a shebang line is crucial for specifying the interpreter for each code
 
 Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly [installed](/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
-## Configuring Shebang in Visual Studio Code
+## Configuring Shebang in VS Code
 
 Visual Studio Code (VS Code) provides a user-friendly interface for configuring Shebang. Follow the steps below to set up Shebang in VS Code.
 
@@ -144,7 +145,97 @@ const fullGreeting = `${greeting} It's now ${currentDateTime}`;
 console.log(fullGreeting);
 ```
 
+## List of Auto-Detected Language Runtimes
+
+Runme auto-detects runtimes based on the language selection per cell.
+
+<table class="text-left">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>LanguageIDs</th>
+      <th>Runtime (first match wins)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a target="_blank" href="https://www.gnu.org/software/bash/">Bash Shell</a></td>
+      <td>bash</td>
+      <td>bash</td>
+    </tr>
+    <tr>
+      <td>Windows <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd">cmd.exe</a></td>
+      <td>cmd</td>
+      <td>cmd</td>
+    </tr>
+    <tr>
+      <td>Windows <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd">cmd.exe</a></td>
+      <td>dos</td>
+      <td>cmd</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://fishshell.com/">Fish Shell</a></td>
+      <td>fish</td>
+      <td>fish</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a></td>
+      <td>javascript, js, jsx, javascriptreact</td>
+      <td>node</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="http://kornshell.com/">Korn Shell</a></td>
+      <td>ksh</td>
+      <td>ksh</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.lua.org/">Lua</a></td>
+      <td>lua</td>
+      <td>lua</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.perl.org/">Perl</a></td>
+      <td>perl</td>
+      <td>perl</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.php.net/">PHP</a></td>
+      <td>php</td>
+      <td>php</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://learn.microsoft.com/en-us/powershell/scripting/overview">PowerShell</a></td>
+      <td>powershell</td>
+      <td>powershell</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.python.org/">Python</a></td>
+      <td>python, py</td>
+      <td>python3, python</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.ruby-lang.org/en/">Ruby</a></td>
+      <td>ruby, rb</td>
+      <td>ruby</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Unix_shell">Unix Shell</a></td>
+      <td>shell, sh</td>
+      <td>bash, sh</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.typescriptlang.org/">Typescript</a></td>
+      <td>typescript, ts, tsx, typescriptreact</td>
+      <td>ts-node, deno, bun</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://www.zsh.org/">Z Shell</a></td>
+      <td>zsh</td>
+      <td>zsh</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Combining Multiple Languages in Your Notebook
 
 It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
-

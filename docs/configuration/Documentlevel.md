@@ -1,9 +1,7 @@
 ---
-sidebar_position: 5
-title: Document level Options
+sidebar_position: 2
+title: Document-level Options
 ---
-
-# Document level Options
 
 RUNME does not just retain frontmatter, it supports top-level settings that will affect all cells in the document.
 

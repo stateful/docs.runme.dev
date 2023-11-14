@@ -1,9 +1,7 @@
 ---
-sidebar_position: 4
-title: Cell level Options
+sidebar_position: 1
+title: Cell-level Options
 ---
-
-# Cell level Options
 
 Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be:
 
