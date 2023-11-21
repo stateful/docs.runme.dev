@@ -6,7 +6,7 @@ sidebar_position: 3
 title: Auto-Save feature
 ---
 
-The Auto-Save feature in RunMe provides a seamless and efficient way to ensure your work is continuously saved without manual intervention. This feature is handy in scenarios where consistent data preservation is crucial.
+The Auto-Save feature in Runme provides a seamless and efficient way to ensure your work is continuously saved without manual intervention. This feature is handy in scenarios where consistent data preservation is crucial.
 
 ### How to Enable Auto-Save
 
@@ -14,13 +14,13 @@ The Auto-Save feature in RunMe provides a seamless and efficient way to ensure y
 
 ![extn](../../static/img/autosaveextension.png)
 
-2. **Activate Auto-Save:** Within the settings, you will find an option for Auto-Save. Click on “Yes” to enable the feature. This action configures the system to automatically save the output of each cell execution.
-
-![autosave-yes](../../static/img/autosave-yes.png)
-
-3. **Toggle Auto-Save On/Off:** Once enabled, you have the flexibility to quickly turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
+2. **Toggle Auto-Save On/Off:** You have the flexibility to quickly turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
 
 ![autosave-on/off](../../static/img/autosave-on:off.png)
+
+(Optional) **Activate Auto-Save as a default:** Within the settings, you will find an option for Auto-Save. Click on “Yes” to enable this feature as a default. This action configures the system to automatically save the output of each cell execution.
+
+![autosave-yes](../../static/img/autosave-yes.png)
 
 ### Storage and Accessibility
 
