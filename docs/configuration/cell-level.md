@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HFPW3ES358GNC1Z633JB8JYR
+  version: v2.0
 sidebar_position: 1
 title: Cell-level Options
 ---
@@ -19,14 +22,14 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
 
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
 
-```md
+```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh { interactive=false name=echo-hello-world }
 echo hello world ```
 ```
 
 The above example uses the echo command to display the text "hello world" on the terminal. The context { interactive=false name=echo-hello-world } indicates that the command is intended for non-interactive execution and has been labeled accordingly.
 
-```sh
+```sh {"id":"01HFPW3ES2Y7TXV064BQ7338JD"}
 
 Try out the previous command
 
@@ -36,7 +39,7 @@ echo hello world ```
 
 The entire [configuration schema](reference#Cell-Options): as an example
 
-```sh
+```sh {"id":"01HFPW3ES2Y7TXV064BT5F58VH"}
 ```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
 echo hello world ```
 ```
@@ -53,7 +56,7 @@ Runme, just like most Markdown viewers, will work best when a script's language 
 
 If possible, always specify the language [according to the markdown standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) as is illustrated below:
 
-```sh
+```sh {"id":"01HFPW3ES2Y7TXV064BVXNCD12"}
     ```sh
     echo "language identifier in fenced code block"
     ```
@@ -185,7 +188,6 @@ If you have multiple workflows in a single markdown file you can categorize them
     ```sh { category=build,deployment }
     # Do something here
     ```
-
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/categories.mp4" type="video/mp4" />
