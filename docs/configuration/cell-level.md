@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HFPW3ES358GNC1Z633JB8JYR
+  version: v2.0
 sidebar_position: 1
 title: Cell-level Options
 ---
@@ -19,14 +22,14 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
 
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
 
-```md
+```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh { interactive=false name=echo-hello-world }
 echo hello world ```
 ```
 
 The above example uses the echo command to display the text "hello world" on the terminal. The context { interactive=false name=echo-hello-world } indicates that the command is intended for non-interactive execution and has been labeled accordingly.
 
-```sh
+```sh {"id":"01HFPW3ES2Y7TXV064BQ7338JD"}
 
 Try out the previous command
 
@@ -36,7 +39,7 @@ echo hello world ```
 
 The entire [configuration schema](reference#Cell-Options): as an example
 
-```sh
+```sh {"id":"01HFPW3ES2Y7TXV064BT5F58VH"}
 ```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
 echo hello world ```
 ```
@@ -53,7 +56,7 @@ Runme, just like most Markdown viewers, will work best when a script's language 
 
 If possible, always specify the language [according to the markdown standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) as is illustrated below:
 
-```sh
+```sh {"id":"01HFPW3ES2Y7TXV064BVXNCD12"}
     ```sh
     echo "language identifier in fenced code block"
     ```
@@ -186,9 +189,31 @@ If you have multiple workflows in a single markdown file you can categorize them
     # Do something here
     ```
 
-
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/categories.mp4" type="video/mp4" />
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
+
+## Auto-save 
+
+The Auto-Save feature in RunMe provides a seamless and efficient way to ensure your work is continuously saved without manual intervention. This feature is handy in scenarios where consistent data preservation is crucial.
+
+### How to Enable Auto-Save
+
+1. **Access Extension Settings:** Begin by navigating to the extension settings in the RunMe interface. This is typically found in the toolbar or under a settings menu.
+
+![extn](../../static/img/autosaveextension.png)
+
+2. **Activate Auto-Save:** Within the settings, you will find an option for Auto-Save. Click on “Yes” to enable the feature. This action configures the system to automatically save the output of each cell execution.
+
+![autosave-yes](../../static/img/autosave-yes.png)
+
+3. **Toggle Auto-Save On/Off:** Once enabled, you have the flexibility to quickly turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
+
+![autosave-on/off](../../static/img/autosave-on:off.png)
+
+### Storage and Accessibility
+
+- **Cloud Storage:** All auto-saved content is securely stored in a dedicated cell on the RunMe Cloud. This ensures that your data is not only saved in real-time but is also accessible from any location, provided you have internet access.
+- **Data Integrity and Security:** The Auto-Save feature is designed with data integrity and security in mind. Your work is saved in a consistent state, reducing the risk of data loss due to unexpected interruptions.
 
