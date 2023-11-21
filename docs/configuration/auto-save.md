@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HFRZ3233HSQ0NVJB9BE682G5
+  version: v2.0
 sidebar_position: 3
 title: Auto-Save feature
 ---
@@ -23,3 +26,5 @@ The Auto-Save feature in RunMe provides a seamless and efficient way to ensure y
 
 - **Cloud Storage:** All auto-saved content is securely stored in a dedicated cell on the RunMe Cloud. This ensures that your data is not only saved in real-time but is also accessible from any location, provided you have internet access.
 - **Data Integrity and Security:** The Auto-Save feature is designed with data integrity and security in mind. Your work is saved in a consistent state, reducing the risk of data loss due to unexpected interruptions.
+
+![auto-save](../../static/img/runme-cloud.png)
