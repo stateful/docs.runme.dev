@@ -10,7 +10,7 @@ The Auto-Save feature in Runme provides a seamless and efficient way to ensure y
 
 ### How to Enable Auto-Save
 
-1. **Access Extension Settings:** Begin by navigating to the extension settings in the RunMe interface. This is typically found in the toolbar or under a settings menu.
+1. **Access Extension Settings:** Begin by navigating to the extension settings in the Runme interface. This is typically found in the toolbar or under a settings menu.
 
 ![extn](../../static/img/autosaveextension.png)
 
@@ -24,7 +24,7 @@ The Auto-Save feature in Runme provides a seamless and efficient way to ensure y
 
 ### Storage and Accessibility
 
-- **Cloud Storage:** All auto-saved content is securely stored in a dedicated cell on the RunMe Cloud. This ensures that your data is not only saved in real-time but is also accessible from any location, provided you have internet access.
+- **Cloud Storage:** All auto-saved content is securely stored in a dedicated cell on the Runme Cloud. This ensures that your data is not only saved in real-time but is also accessible from any location, provided you have internet access.
 - **Data Integrity and Security:** The Auto-Save feature is designed with data integrity and security in mind. Your work is saved in a consistent state, reducing the risk of data loss due to unexpected interruptions.
 
 ![auto-save](../../static/img/runme-cloud.png)
