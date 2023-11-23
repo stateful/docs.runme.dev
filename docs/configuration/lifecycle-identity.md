@@ -8,13 +8,13 @@ runme:
 
 ### Overview
 
-Runme introduces a powerful new feature: Lifecycle Identity. This feature allows users to assign unique identifiers and versioning to their markdown files, documents, or even cell phones. By embedding a lifecycle identity, users can track changes, versions, and the history of their documents more efficiently.
-
+Runme introduces a powerful new feature: Lifecycle Identity. This feature allows users to assign unique id and versioning of Runme to the cell, or the whole makrdown file. By embedding a lifecycle identity, users can track changes, versions, and the history of their documents more efficiently.
 
 ### Configuration
+
 To activate the Lifecycle Identity feature in Runme, follow these steps:
 
-***Access Runme Extension Settings:*** Navigate to the settings section of the Runme extension.
+**Access Runme Extension Settings:** Navigate to the settings section of the Runme extension.
 
 ***Enable Lifecycle Identity Tracking:*** Turn on the feature to set the level of identity tracking you desire. There are different levels of tracking available:
 
@@ -24,16 +24,15 @@ Document Level:  Monitors the entire document for any modifications or version c
 
 All: Applies tracking to all levels, including both cell and document levels.
 
-
 ### Usage
+
 Once the Lifecycle Identity has been configured, it will add the following metadata to your markdown file :
 
 runme:
-  id: [Unique Identifier]
+id: [Unique Identifier]
 
-  version: [Version Number]
+version: [Version Number]
 
-  
 ***Unique Identifier:*** A unique code that represents the specific instance of your document or cell.
 
 ***Version Number:*** The current version of your document or cell, which can be incremented as changes are made.
@@ -41,12 +40,11 @@ runme:
 Example
 Here's an example of how to embed a lifecycle identity into a markdown file:
 
-```sh
+```sh {"id":"01HFYHDGTT1BNMZD3CBCKHQGG0"}
 runme:
   id: 01HFY0VFSB5F1PF7C28BW2YSVT
   version: v2.0
 ```
-
 
 Note
 The changes will apply on each reload of the document or cell.
