@@ -41,7 +41,7 @@ Metadata inside markdown's fenced code blocks.
 
 <Infobox type="sidenote" title="SkipPrompts">
 
-This feature can be used to prevent [prompting](../configuration/cell-level) when exporting an environment variable. By configuring the [cell options](../configuration/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
+This feature can be used to prevent [prompting](../configuration/document-level) when exporting an environment variable. By configuring the [cell options](../configuration/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
 
 </Infobox>
 
