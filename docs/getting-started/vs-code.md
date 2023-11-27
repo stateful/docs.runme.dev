@@ -38,7 +38,11 @@ Runme automatically converts all bash codeblocks in your README into runnable sc
 
 To run a script, click the Run button on its left-hand side. Start by running the first script under "Prerequisites":
 
-![run scripts in vs code](../../static/img/run-script-vscode.gif)
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/run-scripting-vscode.mp4" type="video/mp4" />
+  <source src="/videos/run-scripting-vscode.webm" type="video/webm" />
+</video>
 
 As you can see, we have downloaded the `business_data.csv` file, which contains business statistics about New Zealand in the years 2000-2021. It's a pretty big file!
 
@@ -54,7 +58,7 @@ Scroll down to the "Examples" section of the notebook. From there, try running S
 
 If everything goes right, you should get an output like the following:
 
-![Command output vs code](../../static/img/command-output-vscodes.png)
+![Command output vs code](../../static/img/command-output-vscodess.png)
 
 Great! You can see the terminal output from each command beneath its respective cell. Our Node.JS script was able to parse that massive file with no problems!
 
