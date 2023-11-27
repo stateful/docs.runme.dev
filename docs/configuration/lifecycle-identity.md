@@ -2,7 +2,7 @@
 runme:
   id: 01HFY0VFSB5F1PF7C28BW2YSVT
   version: v2.0
-sidebar_position: 5
+sidebar_position: 3
 title: Lifecycle Identity in Runme
 ---
 
