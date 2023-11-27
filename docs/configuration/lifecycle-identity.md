@@ -2,9 +2,10 @@
 runme:
   id: 01HFY0VFSB5F1PF7C28BW2YSVT
   version: v2.0
+sidebar_position: 5
+title: Lifecycle Identity in Runme
 ---
 
-# Lifecycle Identity in Runme
 
 Runmen introduces a powerful new feature known as Lifecycle Identity. This feature assigns unique identifiers and versions to either a cell or your entire markdown file. By adding a lifecycle identity, you can track changes, versions and the history of your documents.  Stay organized and in control of your files within Runme! 🚀
 
@@ -14,11 +15,11 @@ To activate the Lifecycle Identity feature in Runme, follow these steps:
 
 * Access Runme Extension Settings On the **Runme Runs Markdown** extension, click on the “settings” icon and select “Extension Settings”. The Runme Runs Markdown extension can be found in the extension toolbar at the left side on your screen.
 
-* **Select the Tracking Level**:  Navigate to the “Lifecycle Identity” feature and select the document you wish to enable lifecycle identity tracking. 
+* **Select the Tracking Level**:  Navigate to the “Lifecycle Identity” feature and select the document you wish to enable lifecycle identity tracking.
 
 ![lifecycle](../../static/img/lifecycle-identity1.png)
 
-As shown in the image above, there are three levels of tracking available: 
+As shown in the image above, there are three levels of tracking available:
 
 * Cell level: Tracks changes within each individual cell in a document.
 * Document level: Monitors the entire document for any modifications or version changes.
