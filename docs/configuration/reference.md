@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HG8G0PEA62Y82EQD0BY2SRJW
+  version: v2.0
 sidebar_position: 4
 title: Reference
 ---
@@ -34,11 +37,11 @@ Metadata inside markdown's fenced code blocks.
 | name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
 | terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
 | promptEnv              | Prompt user to set exported environment vars                    | true                     |
-| skipPrompts            | Bypasses interactive [prompts](/configuration#cell-options) that require inputting environment vars or authentication confirmations. |false     |
+| skipPrompts            | Bypasses interactive [prompts](/Cell-level-Options) that require inputting environment vars or authentication confirmations. |false     |
 
 <Infobox type="sidenote" title="SkipPrompts">
 
-This feature can be used to prevent [prompting](/configuration#document-options) when exporting an environment variable. By configuring the [cell options](/configuration#cell-options) appropriately, you can streamline your workflow and make your environment setup more efficient.
+This feature can be used to prevent [prompting](/document-level) when exporting an environment variable. By configuring the [cell options](/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
 
 </Infobox>
 
