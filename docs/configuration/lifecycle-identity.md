@@ -16,9 +16,6 @@ To activate the Lifecycle Identity feature in Runme, follow these steps:
 
 * **Select the Tracking Level**:  Navigate to the “Lifecycle Identity” feature and select the document you wish to enable lifecycle identity tracking. 
 
-
-**Enable Lifecycle Identity Tracking:** Set the level of identity tracking you desire. There are different levels of tracking available:
-
 ![lifecycle](../../static/img/lifecycle-identity1.png)
 
 As shown in the image above, there are three levels of tracking available: 
