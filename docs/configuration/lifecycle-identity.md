@@ -31,16 +31,16 @@ All: Applies tracking to all levels, including both cell and document levels.
 Once the Lifecycle Identity has been configured, it will add the following metadata to your markdown file :
 
 runme:
+
 id: [Unique Identifier]
 
 version: [Version Number]
 
-***Unique Identifier:*** A unique code that represents the specific instance of your document or cell.
+Unique Identifier: A unique code that represents the specific instance of your document or cell.
 
-***Version Number:*** The current version of your document or cell, which can be incremented as changes are made.
+Version Number: The current version of your document or cell, which can be incremented as changes are made.
 
-Example
-Here's an example of how to embed a lifecycle identity into a markdown file:
+Here's an example of what the lifecycle identity looks like :
 
 ```sh {"id":"01HFYHDGTT1BNMZD3CBCKHQGG0"}
 runme:
