@@ -10,15 +10,11 @@ The Auto-Save feature in Runme provides a seamless and efficient way to ensure y
 
 ### How to Enable Auto-Save
 
-1. #### Access Extension Settings:
-
-Begin by navigating to the extension settings in the Runme interface. This is typically found in the toolbar or under a settings menu.
+1. **Access Extension Settings:** Begin by navigating to the extension settings in the Runme interface. This is typically found in the toolbar or under a settings menu.
 
 ![extn](../../static/img/autosaveextension.png)
 
-2. #### Toggle Auto-Save On/Off:
-
-You have the flexibility to quickly turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
+2. **Toggle Auto-Save On/Off:** You have the flexibility to quickly turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
 
 ![autosave-on/off](../../static/img/autosave-on:off.png)
 
