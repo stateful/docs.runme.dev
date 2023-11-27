@@ -54,7 +54,6 @@ Scroll down to the "Examples" section of the notebook. From there, try running S
 
 If everything goes right, you should get an output like the following:
 
-
 ![Command output vs code](../../static/img/command-output-vscodes.png)
 
 Great! You can see the terminal output from each command beneath its respective cell. Our Node.JS script was able to parse that massive file with no problems!
@@ -91,19 +90,21 @@ Runme combines running, viewing, and editing into one experience.
 
 Start by initializing a new project and adding a new `README.md` file. Alternatively you can select `Runme Notebook` from the `File->New File` menu. When you open it, you should get an empty canvas, like so:
 
-
 ![start readme project](../../static/img/start-readme-projects.png)
 
 ## Adding Markdown
 
 To add a new Markdown section, click the "+ Markdown" button in the top left or center:
 
-
 ![add markdown vs code](../../static/img/add-markdown-vscodes.png)
 
 You can then edit the markdown block directly:
 
-![edit the markdown block](../../static/img/edit-markdown-block.gif)
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/edit-markdown-block.mp4" type="video/mp4" />
+  <source src="/videos/edit-markdown-block.webm" type="video/webm" />
+</video>
 
 As shown in the video, once you're done editing a block, use the "Stop Editing Cell" button (the one with the checkmark):
 
@@ -114,7 +115,6 @@ If you ever want to edit the cell again, use the "Edit Cell" button:
 ![start editing markdown in vs code](../../static/img/starting-editing-vscodes.png)
 
 Finally, you can remove a cell at any time using the "Remove Cell" button:
-
 
 ![remove cell in markdown](../../static/img/delete-markdown-cells.png)
 
@@ -136,12 +136,11 @@ Code cell blocks work similarly to Markdown blocks, and can be edited/saved/dele
 
 To create a new code block, use the "+ Code" button in the top left or center:
 
-
 ![add new code block vs code](../../static/img/add-code-vscodes.png)
 
 You can then freely add runnable code:
 
-![run hello world from vs code](../../static/img/echo-hello-world.gif)
+![run hello world from vs code](../../static/img/echo-hello-world.png)
 
 ## Interactive Mode
 
@@ -151,15 +150,16 @@ This is great for, as the name implies, interactive scripts. Our script, however
 
 If we just try to run this as-is, we will experience the following:
 
-![run hello world in vs code](../../static/img/hello-world-vscode-error.gif)
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/hello-world-vscode-error.mp4" type="video/mp4" />
+  <source src="/videos/hello-world-vscode-error.webm" type="video/webm" />
+</video>
 
 To fix this easily, we'll need to access the Configure foldout by clicking on the Configure button:
-
 
 ![configure vs code](../../static/img/configure-vs-codes.png)
 
 From here, we can easily disable interactive mode:
-
 
 ![disable interactive vs cose](../../static/img/disable-interactives.png)
 
@@ -173,7 +173,6 @@ And our code block will now display its output exactly as in the previous guide:
 
 In the VS Code settings, several configurable settings influence general Runme behavior and enable experimental functionality.
 
-
 ![Runme Configuration for VS Code](../../static/img/runme-configuration-vs-codes.png)
 
 ### Background Processes
@@ -183,7 +182,6 @@ Suppose that you have a script that intends to run in the background (like a dev
 You _could_ run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
 
 You can enable Background mode in the same foldout you configured Interactive mode:
-
 
 ![Background Processes in vs code](../../static/img/background-process-vs-codes.png)
 
@@ -195,14 +193,18 @@ Background mode only works in tandem with Interactive mode!
 
 Now, when you run the script, it will be part of a long-running terminal session:
 
-![background mode vs code](../../static/img/background-mode.gif)
+
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/background-mode.mp4" type="video/mp4" />
+  <source src="/videos/background-mode.webm" type="video/webm" />
+</video>
 
 As is demonstrated by the previous video, background tasks are delineated by the "Background Task" label:
 
 ![background task vs code](../../static/img/background-tasks.png)
 
 Background Tasks also get a "Stop Task" button to end their execution long after starting:
-
 
 ![stop task in background in vs code](../../static/img/background-stop-tassk.png)
 
@@ -247,4 +249,4 @@ Sometimes, you will want to see the file as a regular markdown file, and you don
 To help you navigate the markdown files in your project, Runme adds a super handy "Runme Notebooks" panel. Clicking any markdown file will open it in your code editor view:
 
 
-![notebook explorer](../../static/img/runme-notebook.png)
+![notebook explorer](../../static/img/runme-noteboooks.png)
