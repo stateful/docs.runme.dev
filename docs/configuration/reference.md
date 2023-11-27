@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
+  version: v2.0
 sidebar_position: 4
 title: Reference
 ---
@@ -39,6 +42,10 @@ Metadata inside markdown's fenced code blocks.
 <Infobox type="sidenote" title="SkipPrompts">
 
 This feature can be used to prevent [prompting](/configuration#document-options) when exporting an environment variable. By configuring the [cell options](/configuration#cell-options) appropriately, you can streamline your workflow and make your environment setup more efficient.
+
+```sh
+
+```
 
 </Infobox>
 

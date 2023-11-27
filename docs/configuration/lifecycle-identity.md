@@ -16,7 +16,9 @@ To activate the Lifecycle Identity feature in Runme, follow these steps:
 
 **Access Runme Extension Settings:** Navigate to the settings section of the Runme extension.
 
-***Enable Lifecycle Identity Tracking:*** Turn on the feature to set the level of identity tracking you desire. There are different levels of tracking available:
+***Enable Lifecycle Identity Tracking:*** Set the level of identity tracking you desire. There are different levels of tracking available:
+
+![lifecycle](../../static/img/lifecycle-identity.png)
 
 Cell Level: Tracks changes at the individual cell level within a document.
 
