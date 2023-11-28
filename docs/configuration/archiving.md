@@ -41,10 +41,3 @@ Runme is Integrated into [VS code](../getting-started/vs-code), Click on the Run
 2. Confirm the action to archive the cell.
 
 ![vscode-archiving](../../static/img/vscode-archiving.png)
-
-> Click the checkbox besides `Archived Only` ☑️ to view all archived cells.
-
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/Archiving-runme.mp4" type="video/mp4" />
-  <source src="/videos/Archiving-runme.webm" type="video/webm" />
-</video>
