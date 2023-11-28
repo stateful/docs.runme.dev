@@ -194,5 +194,3 @@ If you have multiple workflows in a single markdown file you can categorize them
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
 
-## Lifecycle Identity  
-
