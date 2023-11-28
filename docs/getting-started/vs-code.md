@@ -38,7 +38,6 @@ Runme automatically converts all bash codeblocks in your README into runnable sc
 
 To run a script, click the Run button on its left-hand side. Start by running the first script under "Prerequisites":
 
-
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/run-scripting-vscode.mp4" type="video/mp4" />
   <source src="/videos/run-scripting-vscode.webm" type="video/webm" />
@@ -103,7 +102,6 @@ To add a new Markdown section, click the "+ Markdown" button in the top left or 
 ![add markdown vs code](../../static/img/add-markdown-vscodes.png)
 
 You can then edit the markdown block directly:
-
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/edit-markdown-block.mp4" type="video/mp4" />
@@ -197,11 +195,9 @@ Background mode only works in tandem with Interactive mode!
 
 Now, when you run the script, it will be part of a long-running terminal session:
 
-
-
 <video autoPlay loop muted playsInline controls>
-  <source src="/videos/background-mode.mp4" type="video/mp4" />
-  <source src="/videos/background-mode.webm" type="video/webm" />
+  <source src="/videos/background-modes.mp4" type="video/mp4" />
+  <source src="/videos/background-modes.webm" type="video/webm" />
 </video>
 
 As is demonstrated by the previous video, background tasks are delineated by the "Background Task" label:
@@ -251,6 +247,5 @@ Sometimes, you will want to see the file as a regular markdown file, and you don
 ### Notebook Explorer
 
 To help you navigate the markdown files in your project, Runme adds a super handy "Runme Notebooks" panel. Clicking any markdown file will open it in your code editor view:
-
 
 ![notebook explorer](../../static/img/runme-noteboooks.png)
