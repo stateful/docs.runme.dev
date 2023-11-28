@@ -2,9 +2,10 @@
 runme:
   id: 01HGAP763P40ATQQN75RMGW6XJ
   version: v2.0
+sidebar_position: 3
+title: Archiving Feature
 ---
 
-# Archiving Feature
 
 The archiving feature in Runme is designed to allow users store and manage the outputs generated from executed markdown shells. This feature is essential for preserving outputs for future reference or as historical data points. It leverages the [Runme Cloud](https://app.runme.dev/welcome), ensuring secure and accessible storage. The data stored is end to end encrypt.
 
@@ -12,9 +13,9 @@ The archiving feature in Runme is designed to allow users store and manage the o
 
 **Auto-Save or Manual Save**: To archive outputs in Runme, the outputs generated need to be saved. Clicking the Save icon saves the outputs manually. You can also enable [Auto-Save](../configuration/auto-save) to remove the manual saving.
 
-The archiving feature is available for both Runme cloud web and Runme vscode extension. 
+The archiving feature is available for both Runme cloud web and Runme vscode extension.
 
-##  Archiving Feature Runme Cloud Web 
+##  Archiving Feature Runme Cloud Web
 
 Accessing Saved Outputs: After the shell outputs are saved to the cloud, navigate to the Runme Cloud Web interface.
 
@@ -32,7 +33,7 @@ Accessing Saved Outputs: After the shell outputs are saved to the cloud, navigat
 
 ## Archiving in the Runme via VS code
 
-Runme is Integrated into [VS code](../getting-started/vs-code), Click on the Runme icon. a view will pop-up 
+Runme is Integrated into [VS code](../getting-started/vs-code), Click on the Runme icon. a view will pop-up
 
 ### Initiating Archiving
 
@@ -47,6 +48,6 @@ Runme is Integrated into [VS code](../getting-started/vs-code), Click on the Run
 > Click the checkbox besided `Archived Only` ☑️ to view all archived cells.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="/videos/archiving.mp4" type="video/mp4" />
-  <source src="/videos/archiving.webm" type="video/webm" />
+  <source src="/videos/Archiving-runme.mp4" type="video/mp4" />
+  <source src="/videos/Archiving-runme.webm" type="video/webm" />
 </video>
