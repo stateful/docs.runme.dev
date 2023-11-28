@@ -4,25 +4,25 @@ runme:
   version: v2.0
 ---
 
-# Archiving Feature in Runme
+# Archiving Feature
 
-The Archiving feature in Runme is designed to provide a robust solution for storing and managing the outputs generated from markdown shells. This feature is essential for preserving outputs for future reference or as historical data points. It leverages the Runme Cloud, ensuring secure and accessible storage.
+The archiving feature in Runme is designed to allow users store and manage the outputs generated from executed markdown shells. This feature is essential for preserving outputs for future reference or as historical data points. It leverages the [Runme Cloud](https://app.runme.dev/welcome), ensuring secure and accessible storage. The data stored is end to end encrypt.
 
 ## How to Utilize the Archiving Feature
 
-### Prerequisites
-**Auto-Save or Manual Save**: Ensure that the outputs you wish to archive are either saved automatically (if the [Auto-Save](../configuration/auto-save) feature is enabled) or manually saved to the RunMe Cloud.
+**Auto-Save or Manual Save**: To archive outputs in Runme, the outputs generated need to be saved. Clicking the Save icon saves the outputs manually. You can also enable [Auto-Save](../configuration/auto-save) to remove the manual saving.
 
-## Archiving in the Runme Cloud Web Experience
+The archiving feature is available for both Runme cloud web and Runme vscode extension. 
+
+##  Archiving Feature Runme Cloud Web 
+
 Accessing Saved Outputs: After the shell outputs are saved to the cloud, navigate to the Runme Cloud Web interface.
 
-![share button](../../static/img/share-button-runme.png)
-
-Please share link with caution. Anyone with the link has access. Click "Open" to toggle visibility.
+> Please share link with caution. Anyone with the link has access. Click "Open" to toggle visibility.
 
 ### Initiating Archiving
 
-1. Locate the “Archived Cells” option
+1. First ensure  your shell outputs are saved.
 
 ![archiving](../../static/img/archive-cells.png)
 
@@ -30,38 +30,22 @@ Please share link with caution. Anyone with the link has access. Click "Open" to
 
 ![confirm-archiving](../../static/img/confirm-archiving.png)
 
-3. Confirm the action to archive the cell.
+3. You will see a popup stating whether you want to archive the cell or not. Select 'Yes' to archive the cell.
 
 ![success-archiving](../../static/img/success-archiving.png)
 
+## Archiving in the Runme via VS code
 
-### Archiving in the Runme via VS code
-
-Runme is Integrated into [VS code](../getting-started/vs-code), navigate to the Runme Cloud section. Click on the Runme icon.
-
-![cloud-icon](../../static/img/runme-cloud-archiving.png)
-
+Runme is Integrated into [VS code](../getting-started/vs-code), Click on the Runme icon. a view will pop-up 
 
 ### Initiating Archiving
 
-1. Locate the “Archived Cells” option
-
-
-   ![archving-vscode](../../static/img/runme-cloud-archiving.png)
-
-2. Click on the specific cell you wish to archive. Within the Runme cloud section, select the designated archive option.
-
+1. Click on the specific cell you wish to archive. Within the view, select the designated archive option.
 
    ![confirm-archving](../../static/img/vscode-confirm-archiving.png)
 
-
-3. Confirm the action to archive the cell.
-
+2. Confirm the action to archive the cell.
 
 ![vscode-archiving](../../static/img/vscode-archiving.png)
 
-
-
-You can view all the archiving by clicking on the `Archived Only` in the Runme:cloud
-
-   ![vscode-archived](../../static/img/vscode-archived.png)
+> Click the checkbox besided `Archived Only` ☑️ to view all archived cells.
