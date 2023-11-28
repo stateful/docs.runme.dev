@@ -24,11 +24,7 @@ Accessing Saved Outputs: After the shell outputs are saved to the cloud, navigat
 
 1. First ensure  your shell outputs are saved.
 
-![archiving](../../static/img/archive-cells.png)
-
 2. Click on the specific cell you wish to archive. Within the cell options, select the designated archive option.
-
-![confirm-archiving](../../static/img/confirm-archiving.png)
 
 3. You will see a popup stating whether you want to archive the cell or not. Select 'Yes' to archive the cell.
 
