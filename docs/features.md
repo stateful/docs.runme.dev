@@ -17,7 +17,7 @@ Easily switch between different views.
 
 ![markdown version](../static/img/markdown-version.png)
 
-## Interpreter
+## Shebang Support (via `interpreter`)
 
 Runme supports a set of different interpreter for you to run cells in. To define an interpreter you can either:
 
