@@ -6,7 +6,7 @@ sidebar_position: 3
 title: Archiving Feature
 ---
 
-The archiving feature in Runme is designed to allow users store and manage the outputs generated from executed markdown shells. This feature is essential for preserving outputs for future reference or as historical data points. It leverages the [Runme Cloud](https://app.runme.dev/welcome), ensuring secure and accessible storage. The data stored is end to end encrypted.
+The archiving feature in Runme allows users to hide outputs generated from markdown cells, reducing clutter and preserving outputs for future reference. It leverages the [Runme Cloud](https://app.runme.dev/welcome), ensuring secure and accessible storage. The data stored is end-to-end encrypted. 
 
 ## How to Utilize the Archiving Feature
 
