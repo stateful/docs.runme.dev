@@ -43,17 +43,7 @@ Runme supports a set of different interpreter for you to run cells in. To define
 
 ### Supported Interpreter
 
-Runme supports the following interpreter, if installed, out of the box:
-
-- `python`
-- `python2`
-- `python3`
-- `node`
-- `deno`
-- `ts-node` (install globally via `npm i -g ts-node`)
-- `ruby`
-- `bash`
-- Missing a language? Please [raise an issue](https://github.com/stateful/runme/issues/new).
+Check the list of [auto-detected interpreters](https://docs.runme.dev/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
 
 ## Markdown Editor
 

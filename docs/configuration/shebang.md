@@ -236,6 +236,8 @@ Runme auto-detects runtimes based on the language selection per cell.
   </tbody>
 </table>
 
+Missing a language? Please [raise an issue](https://github.com/stateful/runme/issues/new).
+
 ## Combining Multiple Languages in Your Notebook
 
 It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
