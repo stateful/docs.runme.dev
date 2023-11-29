@@ -41,9 +41,9 @@ Runme supports a set of different interpreter for you to run cells in. To define
   or via VS Code cell option:
   ![set cell interpreter](../static/img/interpreter.png)
 
-### Supported Interpreter
+### Supported Interpreters
 
-Check the list of [auto-detected interpreters](https://docs.runme.dev/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
+Check the list of [auto-detected interpreters](/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
 
 ## Markdown Editor
 
