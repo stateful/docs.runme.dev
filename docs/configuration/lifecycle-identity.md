@@ -12,7 +12,7 @@ Runme introduces a powerful new feature known as Lifecycle Identity. This featur
 
 To activate the Lifecycle Identity feature in Runme, follow these steps:
 
-* Navigate to Runme's Extension Settings on the Runme extension page, click on the “settings” icon and select “Extension Settings”. The Runme extension can be found in the extension toolbar at the left side on your screen.
+* Navigate to Runme's [Extension Settings](../getting-started/vs-code#runme-settings-for-vs-code) on the your [VS code](../install#runme-for-vs-code). click on the “settings” icon and select “Extension Settings”. The Runme extension can be found in the extension toolbar at the left side on your screen.
 * **Select the Tracking Level**:  Navigate to the “Lifecycle Identity” feature and select the document you wish to enable lifecycle identity tracking.
 
 ![lifecycle](../../static/img/lifecycle-identity1.png)
