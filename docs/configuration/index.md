@@ -6,10 +6,11 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 # Configuration
 
-To get the best of Runme, and to offer a fantastic README experience, Runme has a cell configuration option which allows you to indicate how the cell will be executed:
+Maximize your README's potential with Runme by exploring these configuration options. Each setting is designed to enhance the functionality and user experience of your document. Some of the options available are:
 
 1. Cell-level Options
 2. Document-level Options
-
-<br/>
-Furthermore, Runme supports shebang to run all sorts of languages.
+3. Auto-save feature
+4. Archiving feature
+5. Lifecycle-identity 
+6. Shebang Support 
