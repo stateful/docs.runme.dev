@@ -6,13 +6,12 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 # Configuration
 
-Runme  allows you to set how your markdown files should be executed using the configuration option. With this configuration, you can handle and manage your Runme execution and experience a smoother experience. 
+Runme  allows you to set how your markdown files should be executed using the configuration option. With this configuration, you can handle and manage your Runme execution and experience a smoother experience.
 
-These configuration option includes: 
+These configuration option includes:
 
 1. [Cell-level Options](../configuration/cell-level)
 2. [Document-level Options](../configuration/document-level)
-
 
 You can change the configuration option at anytime, by making the desired change at the cell or document level (depends on the configuration you want to set)
 
