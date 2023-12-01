@@ -14,8 +14,6 @@ These configuration option includes:
 2. [Document-level Options](../configuration/document-level)
 
 
-h
-
 
 You can change the configuration option at anytime, by making the desired change at the cell or document level (depends on the configuration you want to set)
 
