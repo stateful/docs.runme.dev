@@ -51,6 +51,6 @@ Cell Run Grouping is a crucial feature that works with the lifecycle identity in
 When a user saves the output of a cell or an entire markdown file to the Runme Cloud, Runme assigns a unique identity to that file or cell. This identity is important for the cell run grouping process. It ensures that any subsequent iterations or runs of that file or cell are recorded and grouped together under the same identity in the cloud.
 
 This grouping is not just a simple collection of runs; it is an organized, time-stamped record of each run.
-Every time the code is executed, the output is stored in the same group as the previous runs, with the exact time of each run clearly stated. This chronological arrangement of run data provides a comprehensive view of the code's evolution and performance over time.
+Every time the code is ran, the output is stored in the same group as the previous runs, with the exact time of each run clearly stated. This chronological arrangement of run data provides a comprehensive view of the code's evolution and performance over time.
 
 ![cell-run-grouping](../../static/img/cell-run-grouping.png)
