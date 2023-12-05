@@ -12,7 +12,7 @@ The archiving feature in Runme allows users to hide outputs generated from markd
 
 **Auto-Save or Manual Save**: To archive outputs in Runme, the outputs generated need to be saved. Clicking the Save icon saves the outputs manually. You can also enable [Auto-Save](../configuration/auto-save) to remove the manual saving.
 
-The archiving feature is available via VS code extension and Web.
+The archiving feature is available via the VS code extension and the Web.
 
 ## Archiving via Web
 
@@ -32,13 +32,13 @@ To access [saved](../configuration/auto-save) cells, click on the [share button]
 
 ## Archiving via VS code Extension
 
-To access the saved cells you want to archive via [VS code](../getting-started/vs-code), Click on the Runme icon. a view will pop-up to access the Runme cloud.
+To access the saved cells you want to archive via [VS code](../getting-started/vs-code), Click on the Runme icon. a view will pop-up to access the Runme Cloud.
 
 ### Initiating Archiving
 
 1. Click on the specific cell you wish to archive. Within the view, select the designated archive option.
 
-   ![confirm-archving](../../static/img/Archiving-Runme-cloud.png)
+   ![confirm-archving](../../static/img/archiving-runme-cloud.png)
 
 2. Confirm the action to archive the cell.
 
