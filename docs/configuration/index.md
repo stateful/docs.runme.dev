@@ -6,15 +6,11 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 # Configuration
 
-Runme  allows you to set how your markdown files should be executed using the configuration option. With this configuration, you can handle and manage your Runme execution and experience a smoother experience.
+Runme provides configurations that improve your ReadME experience and workflow on Runme. These configuration includes options which allows you to define how your markdown files should be executed, either using:
 
-These configuration option includes:
+* [Cell-level Options](../configuration/cell-level)
+* [Document-level Options](../configuration/document-level)
 
-1. [Cell-level Options](../configuration/cell-level)
-2. [Document-level Options](../configuration/document-level)
+In addition, you can customize your README process by adding features such as [archiving](../configuration/archiving), [autosave](../configuration/auto-save), etc., according to your preferred settings.
 
-
-
-You can change the configuration option at anytime, by making the desired change at the cell or document level (depends on the configuration you want to set)
-
-In addition, Runme supports shebang to run all sorts of languages, allowing you to execute a wide range of languages. So whether you are working with Python, Bash or any executable language command, it executes your command.
+Important: Runme supports shebang to run various languages, enabling you to execute a diverse range of languages. Whether you're working with Python, Bash, or any executable language command, shebang executes your commands easily.
