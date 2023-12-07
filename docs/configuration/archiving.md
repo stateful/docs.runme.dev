@@ -38,7 +38,7 @@ To access the saved cells you want to archive via [VS code](../getting-started/v
 
 1. Click on the specific cell you wish to archive. Within the view, select the designated archive option.
 
-   ![confirm-archving](../../static/img/archiving-runme-cloud.png)
+   ![confirm-archving](../../static/img/Archiving-runme-cloud.png)
 
 2. Confirm the action to archive the cell.
 
