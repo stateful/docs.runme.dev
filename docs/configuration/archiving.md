@@ -44,7 +44,7 @@ To access the saved cells you want to archive via [VS code](../getting-started/v
 
 ![vscode-archiving](../../static/img/vscode-archiving.png)
 
-# Un-Archiving
+## Un-Archiving
 
 If you have previously archived a cell and wish to restore it to your active dashboard, you can easily un-archive it. You can follow these steps:
 
@@ -53,7 +53,7 @@ If you have previously archived a cell and wish to restore it to your active das
 3. Initiate Un-Archiving: Click on the "Un-Archive" button. This button is on the right-hand side of your dashboard.
 4. Confirm Un-Archiving: The feature will be restored to your active dashboard once confirmed.
 
-# Delete Cell Permanently
+## Delete Cell Permanently
 
 You can delete an archived cell, which deletes it permanently. Please note that this action is irreversible. Follow these steps to delete an archived cell permanently:
 
