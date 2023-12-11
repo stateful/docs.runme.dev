@@ -12,7 +12,7 @@ We are committed to building Runme in the open and hope you get involved. Runme'
 Runme lives in three repositories on Github:
 
 - The project's website at [runme.dev](https://runme.dev)
-- The [Runme repo (CLI and execution engine)](https://github.com/stateful/runme)
+- The [Runme repo (CLI and kernel server)](https://github.com/stateful/runme)
 - The [Runme VS Code extension](https://github.com/stateful/vscode-runme)
 
 ## Getting help
