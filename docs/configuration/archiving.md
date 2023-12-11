@@ -39,8 +39,25 @@ To access the saved cells you want to archive via [VS code](../getting-started/v
 1. Click on the specific cell you wish to archive. Within the view, select the designated archive option.
 
    ![confirm-archving](../../static/img/Archiving-Runme-clouds.png)
-   
 
 2. Confirm the action to archive the cell.
 
 ![vscode-archiving](../../static/img/vscode-archiving.png)
+
+## Un-Archiving
+
+If you have previously archived a cell and wish to restore it to your active dashboard, you can easily un-archive it. You can follow these steps:
+
+1. Navigate to the Archived Cell: Go to your dashboard and click on the archive button; it take you to the section where your archived cells are listed.
+2. Select the Cell to Un-Archive: Find the cell you wish to un-archive. Ensure you have selected the correct cell to avoid any unintended modifications.
+3. Initiate Un-Archiving: Click on the "Un-Archive" button. This button is on the right-hand side of your dashboard.
+4. Confirm Un-Archiving: The feature will be restored to your active dashboard once confirmed.
+
+## Delete Cell Permanently
+
+You can delete an archived cell, which deletes it permanently. Please note that this action is irreversible. Follow these steps to delete an archived cell permanently:
+
+1. Access Archived Features: Navigate to the section on your dashboard where archived features are displayed. Click the archive button.
+2. Select the Feature to Delete: Carefully choose the feature you intend to delete permanently. Double-check to ensure it is the correct one.
+3. Choose to Delete Permanently: Click on the "Delete" option. This option is found alongside the Un-Archive button.
+4. Confirm Deletion: A warning prompt will appear, asking you to confirm the permanent deletion. Once you confirm, the feature will be irreversibly removed from the archive and cannot be recovered.
