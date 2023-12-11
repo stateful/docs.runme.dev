@@ -6,11 +6,11 @@ sidebar_position: 3
 title: Lifecycle Identity in Runme
 ---
 
-Runme introduces a powerful new feature known as Lifecycle Identity. This feature assigns unique identifiers and versions to a cell, your entire markdown file, or both. You can track changes, versions and the history of your documents.
+Runme introduces a powerful new feature known as Lifecycle Identity. This feature assigns unique identifiers and versions to a cell, your markdown file, or both. You can track changes, versions and the history of your documents.
 
 Stay organized and in control of your files within Runme! 🚀
 
-> The default setting assigns a unique identifier to the entire markdown file.
+> The default setting assigns a unique identifier to the cells and the markdown file.
 
 ### Configuration
 
