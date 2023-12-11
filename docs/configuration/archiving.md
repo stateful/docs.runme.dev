@@ -55,7 +55,7 @@ If you have previously archived a cell and wish to restore it to your active das
 
 ## Delete a cell permanently
 
-You can delete an archived cell, which deletes it permanently. Please note that this action is irreversible. Follow these steps to delete an archived cell permanently:
+You can delete an archived cell at any time. Note: This action is irreversible, once a cell is deleted it cannot be undone
 
 1. Access Archived Features: Navigate to the section on your dashboard where archived features are displayed. Check the "Archived" box.
 2. Select the Feature to Delete: Carefully choose the feature you intend to delete permanently. Double-check to ensure it is the correct one.
