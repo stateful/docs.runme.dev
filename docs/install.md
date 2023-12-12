@@ -1,11 +1,16 @@
 ---
-title: Installation
 sidebar_position: 2
+title: Installation
 ---
 
 import Infobox from "../src/components/Infobox.tsx"
 
-Runme comes with multiple clients to interface with its kernel; CLI for the terminal, notebook, and editor integration in VS Code, and a self-hosted web app version with the same features for the browser. Here's how to install them:
+Runme comes with multiple clients to interface with its kernel; 
+* CLI for the terminal, notebook, 
+* Editor integration in VS Code, 
+* A self-hosted web app version 
+
+In this section, we will guide you through install Runme using any interface of your choice. Here's how to install them:
 
 ## Runme CLI
 
@@ -15,7 +20,7 @@ The Runme CLI is ideal for power users who want to run markdown documentation fr
 
 ### On MacOS
 
-The easiest way on MacOS is to use Homebrew:
+The easiest way on MacOS is to use [Homebrew](https://brew.sh/):
 
 ```sh
 brew update
@@ -36,7 +41,7 @@ scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
 scoop install stateful/runme
 ```
 
-#### Other Platforms
+### Other Platforms
 
 Alternatively, check out runme's [releases](https://github.com/stateful/runme/releases) and select a binary for your operating system. Let us know [on Discord](https://discord.gg/runme) if you have a different preferred distribution mechanism.
 
