@@ -24,11 +24,7 @@ To access [saved](../configuration/auto-save) cells, click on the [share button]
 
 1. First, ensure your cell executions are [saved](../configuration/auto-save)
 2. Click on the specific cell you wish to archive. Within the cell options, select the designated archive option.
-3. You will see a popup stating whether you want to archive the cell or not. Select 'Yes' to archive the cell.
-
-![success-archiving](../../static/img/success-archiving.png)
-
-> The above image shows that the cell has been archived successfully
+3. You will see a popup stating whether you want to archive the cell or not. Click on the buttom `Archive` and the cell will be archived.
 
 ## Archiving via VS code Extension
 
@@ -39,8 +35,25 @@ To access the saved cells you want to archive via [VS code](../getting-started/v
 1. Click on the specific cell you wish to archive. Within the view, select the designated archive option.
 
    ![confirm-archving](../../static/img/Archiving-Runme-clouds.png)
-   
 
 2. Confirm the action to archive the cell.
 
 ![vscode-archiving](../../static/img/vscode-archiving.png)
+
+## Un-Archiving
+
+If you have previously archived a cell and wish to restore it to your active dashboard,  you can easily un-archive it using the Runme Cloud web dashboard.
+
+1. Navigate to the Archived Cell: Go to your dashboard and check on the "Archived" box. It will take you to the section where your archived cells are listed.
+2. Select the Cell to Un-archive: Find the cell you wish to un-archive. Ensure you have selected the correct cell to avoid any unintended modifications.
+3. Initiate Un-archiving: Click on the "Un-archive" button. This button is on the right-hand side of your dashboard.
+4. Confirm Un-archiving: The feature will be restored to your active dashboard once confirmed.
+
+## Delete a cell permanently
+
+You can delete a cell at any time. Note: This action is irreversible, once a cell is deleted it cannot be undone
+
+
+1. Select the cell to Delete: Carefully choose the cell you intend to delete permanently. Double-check to ensure it is the correct one.
+2. Choose to Delete Permanently: Click on the "Delete" option. This option is found alongside the un-archive button on the right-hand of your Runme Cloud web dashboard.
+3. Confirm Deletion: A warning prompt will appear, asking you to confirm the permanent deletion. Once you confirm, the feature will be irreversibly removed from the archive and cannot be recovered.
