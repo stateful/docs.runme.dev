@@ -24,11 +24,7 @@ To access [saved](../configuration/auto-save) cells, click on the [share button]
 
 1. First, ensure your cell executions are [saved](../configuration/auto-save)
 2. Click on the specific cell you wish to archive. Within the cell options, select the designated archive option.
-3. You will see a popup stating whether you want to archive the cell or not. Select 'Yes' to archive the cell.
-
-![success-archiving](../../static/img/success-archiving.png)
-
-> The above image shows that the cell has been archived successfully
+3. You will see a popup stating whether you want to archive the cell or not. Click on the buttom `Archive` and the cell will be archived.
 
 ## Archiving via VS code Extension
 
@@ -55,9 +51,9 @@ If you have previously archived a cell and wish to restore it to your active das
 
 ## Delete a cell permanently
 
-You can delete an archived cell at any time. Note: This action is irreversible, once a cell is deleted it cannot be undone
+You can delete a cell at any time. Note: This action is irreversible, once a cell is deleted it cannot be undone
 
-1. Access Archived Features: Navigate to the section on your dashboard where archived features are displayed. Check the "Archived" box.
-2. Select the Feature to Delete: Carefully choose the feature you intend to delete permanently. Double-check to ensure it is the correct one.
-3. Choose to Delete Permanently: Click on the "Delete" option. This option is found alongside the un-archive button.
-4. Confirm Deletion: A warning prompt will appear, asking you to confirm the permanent deletion. Once you confirm, the feature will be irreversibly removed from the archive and cannot be recovered.
+
+1. Select the cell to Delete: Carefully choose the cell you intend to delete permanently. Double-check to ensure it is the correct one.
+2. Choose to Delete Permanently: Click on the "Delete" option. This option is found alongside the un-archive button on the right-hand of your Runme Cloud web dashboard.
+3. Confirm Deletion: A warning prompt will appear, asking you to confirm the permanent deletion. Once you confirm, the feature will be irreversibly removed from the archive and cannot be recovered.
