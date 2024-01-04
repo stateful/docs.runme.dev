@@ -121,39 +121,6 @@ You can integrate other platforms and, for example, trigger GitHub Actions to ru
 
 GitHub Actions provide a robust CI/CD platform for automating development tasks. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs. Once the cell’s executed a form to input the required parameters displays, which lets users dispatch the workflow with a single click.
 
-```py {"id":"01HKB0WPVHXGTHQ9JREWA40YJ7"}
-#!/usr/bin/python3
-print('Hello World!')
-```
-
-- set cell `interpreter` cell property as frontmatter
-
-```md {"id":"01HKB0WPVHQFSMKGZTHVRXA1SV"}
-```js { "interpreter": "node" }
-console.log('Hello World!')
-```
-
-```md {"id":"01HKB47ANET3278J96WG7X9VT2"}
-
-or via VS Code cell option:
-![set cell interpreter](../static/img/interpreter.png)
-
-### Supported Interpreters
-
-Check the list of [auto-detected interpreters](/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
-
-## **Bridge the gaps between the terminal, editor, and browser**
-
-**All inside markdown:**
-
-The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within markdown. On top of that, you can even see images, tables, and more!
-
-## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown:**
-
-You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
-
-GitHub Actions provide a robust CI/CD platform for automating development tasks. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs. Once the cell’s executed a form to input the required parameters displays, which lets users dispatch the workflow with a single click.
-
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/release-github-action.mp4" type="video/mp4" />
   <source src="/videos/release-github-action.webm" type="video/webm" />
@@ -173,7 +140,7 @@ To cut down on boilerplate, we've put together this handy **[GitHub Action](htt
 
 ![githubaction-template](../static/img/github-action-template.png)
 
-That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in CI/CD.
+That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in [CI/CD](https://runme.dev/blog/guide-to-onboarding-docs-in-ci).
 
 ## Runme Cells
 
@@ -195,4 +162,3 @@ Please be aware that if the execution of a cell depends on the standard output (
 - Start a session in the editor, complete environment variables in the notebook, and finish up a workflow in the terminal — all sharing the same session.
 - Open tech and open formats at the core (e.g. VS Code Platform and Markdown)
 - Compatible with existing task management (Makefile, Docker, NPM/Pipfile, Rake, etc)
-```
