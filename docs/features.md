@@ -160,5 +160,5 @@ Please be aware that if the execution of a cell depends on the standard output (
 - Persistent environment variables across cell and session runs.
 - Single-click experiences to accomplish subsets of steps inside larger workflows, like setting up an environment, cleaning up stale EC2 instances, or deploying to staging.
 - Start a session in the editor, complete environment variables in the notebook, and finish up a workflow in the terminal — all sharing the same session.
-- Open tech and open formats at the core (e.g. VS Code Platform and Markdown)
-- Compatible with existing task management (Makefile, Docker, NPM/Pipfile, Rake, etc)
+- Open tech and open formats at the core (e.g. VS Code Platform and Markdown).
+- Compatible with existing task management (Makefile, Docker, NPM/Pipfile, Rake, etc).
