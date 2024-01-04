@@ -5,59 +5,7 @@ title: Key Features
 
 import Infobox from "../src/components/Infobox.tsx"
 
-## Runme UX
-
-Easily switch between different views.
-
-### Open the notebook version
-
-![split view in vs code](../static/img/split-view.png)
-
-### Open the markdown version
-
-![markdown version](../static/img/markdown-version.png)
-
-## Shebang Support (via `interpreter`)
-
-Runme supports a set of different interpreter for you to run cells in. To define an interpreter you can either:
-
-- set a language id for the fenced code block
-  ````md
-  ```rb
-  puts 'Hello World'
-  ```
-  ````
-- set a shebang for the cell
-  ```py
-  #!/usr/bin/python3
-  print('Hello World!')
-  ```
-- set cell `interpreter` cell property as frontmatter
-  ````md
-  ```js { "interpreter": "node" }
-  console.log('Hello World!')
-  ```
-  ````
-  or via VS Code cell option:
-  ![set cell interpreter](../static/img/interpreter.png)
-
-### Supported Interpreters
-
-Check the list of [auto-detected interpreters](/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
-
-## Markdown Editor
-
-### Run a command block
-
-It's straightforward to run one-time command blocks directly from the raw markdown using VS Code's CodeLense feature. And, what's even more convenient is that any changes made to the environment stay even when switching between markdown and notebook views.
-
-![run a command in vs code](../static/img/runme-editor-run.png)
-
-### Open block in notebook
-
-Jump right into your Markdown's notebook view at the respective block from your editor view.
-
-![run a command in vs code](../static/img/runme-open-in-notebook.png)
+Runme lets you execute interactive runbooks built with markdown. Some of the key features include:
 
 ## Runme Notebook
 
@@ -65,11 +13,11 @@ Jump right into your Markdown's notebook view at the respective block from your 
 
 To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
 
-![run a command in vs code](../static/img/run-a-command.png)
+![npm-install](../static/img/npm-install.png)
 
 A succeeding exit code will be indicated with the small green checkbox seen below:
 
-![checkmark when running a command](../static/img/check-mark-success.png)
+![npm-install-result](../static/img/npm-install-result.png)
 
 You can also open the terminal that did the execution by clicking the “Open Terminal” button as shown above with its PID.
 
@@ -77,71 +25,174 @@ You can also open the terminal that did the execution by clicking the “Open Te
 
 Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a markdown file to paste into your terminal.
 
-![copy paste in runme](../static/img/feature-copy.png)
+![copyandpaste](../static/img/copyandpaste.png)
 
 ### Run all command blocks
 
 To run all the commands in the notebook in the order they are found, you can click the “Run All” button.
 
-![runn all commands with runme](../static/img/run-all.png)
+![runallcommandblock](../static/img/runallcomandblocks.png)
 
 To be extra safe, you will be prompted before each step to confirm your intentions unless you select “Skip Prompt and run all”.
 
-![confirm run all commands](../static/img/confirm-run-all.png)
+![skippromptandrunall](../static/img/skippromptandrunall.png)
 
-## Run with Runme Deep Linking
+## Environment Variable Prompts
 
-You can use Runme to on-board developers with a simple click on a button. It will trigger VS Code to clone a repository and open it for the user with a specific markdown file opened, e.g. an onboarding markdown file to have the user get started with the project:
+**To keep generic notebooks/runbooks for your users:**
 
-You can create such a link using the following structure:
+If you are using environment variables within your runs, you can configure them within each cell and even make them interactive according to your particular needs. For example, we can configure the SLEEP_SECS environment variable to 10 seconds. Tremendously helpful whenever your runbooks require user-specific values.
 
-![Runme URL Schema Structure](../static/img/run-with-runme.png)
+![environmentvariableprompt](../static/img/envvarprompts.png)
 
-<Infobox type="sidenote">
+## **Render images, CSV tables, and terminals inside markdown**
 
-Please note that you can use **SSH** or **HTTPS** notations for the repository parameter. In the above's example just replace `https://github.com/stateful/blog-examples.git` with `git@github.com:stateful/blog-examples.git` respectively.
+**While allowing background tasks to run seamlessly :**
 
-</Infobox>
+Each cell can be configured to be run in different manners. The idea is to give you more control over what you expect a user to modify vs. the parts you don't, and provide you with the output in a way that suits most.
 
-You can put this as HTML link on any website, e.g.:
+You don’t need to wait for a run to finish? Just turn on background mode, and continue running following cells.
 
-```html
-<a href="vscode://stateful.runme?command=setup&repository=https://github.com/stateful/blog-examples.git&fileToOpen=node-streams/README.md">Getting onboarded to Project</a>
+![backgroundtaskbar](../static/img/backgroundtaskbar.png)
+
+Do you need to prevent inputs in the terminal? Turn off interactive mode.
+
+![interactiveblock](../static/img/interactivecblock.png)
+
+Do you need other MIME types to render images or CSV-based tables? You can configure it in the following cell option!
+
+![mimetypes](../static/img/mimetypes.png)
+
+Including the following
+
+- text/x-json
+- text/x-javascript
+- text/x-html
+- image/png
+- image/svg+xml
+- text/csv
+
+## Shebang support
+
+**Call into libraries or APIs to describe tasks with the programming language that’s most natural:**
+
+you can now run all sorts of programming languages inside your notebooks, including PHP, Ruby, Python, Lua, and more.
+
+By default, Runme can run languages that are installed on your machine.
+
+Runme supports a set of different interpreter for you to run cells in. To define an interpreter you can either:
+
+- set a language id for the fenced code block
+
+```md {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
+rb
+puts 'Hello World'
 ```
 
-You can also just have Runme check out any arbitrary markdown file accessible from the internet. This can be useful when designing tutorials for user to go through or if your documentation is not connected to any code. For this use case rmeove the `repository` parameter and have `fileToOpen` be an url to a raw markdown file that is publicly accessible.
+- set a shebang for the cell
 
-![Runme URL Schema Structure](../static/img/run-with-runme-gist.png)
+```md {"id":"01HKB2MAZNC8J9DYVZSGPQ4AS1"}
+#!/usr/bin/python3
+print('Hello World!')
+```
 
-By adding the following badge to your `Readme.md`, developers will be able to check out your project with a simple click:
+- set cell interpreter cell property as frontmatteror via VS Code cell option:
 
-    [![](https://badgen.net/badge/Run%20this%20/README/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git%40github.com%3Astateful%2Frunme.git)
+```md {"id":"01HKB2N47GFSSPVZBTMK3X89W5"}
+js { "interpreter": "node" }
+console.log('Hello World!')
+```
 
-Which will result in:
+![interpreter-output](../static/img/interpreter-output.png)
 
-[![](https://badgen.net/badge/Run%20this%20/README/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git%40github.com%3Astateful%2Frunme.git)
+### Supported Interpreters
+
+Check the list of [auto-detected interpreters](https://docs.runme.dev/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
+
+## **Bridge the gaps between the terminal, editor, and browser**
+
+**All inside markdown:**
+
+The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within markdown. On top of that, you can even see images, tables, and more!
+
+## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown:**
+
+You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
+
+GitHub Actions provide a robust CI/CD platform for automating development tasks. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs. Once the cell’s executed a form to input the required parameters displays, which lets users dispatch the workflow with a single click.
+
+```py {"id":"01HKB0WPVHXGTHQ9JREWA40YJ7"}
+#!/usr/bin/python3
+print('Hello World!')
+```
+
+- set cell `interpreter` cell property as frontmatter
+
+```md {"id":"01HKB0WPVHQFSMKGZTHVRXA1SV"}
+```js { "interpreter": "node" }
+console.log('Hello World!')
+```
+
+```md {"id":"01HKB47ANET3278J96WG7X9VT2"}
+
+or via VS Code cell option:
+![set cell interpreter](../static/img/interpreter.png)
+
+### Supported Interpreters
+
+Check the list of [auto-detected interpreters](/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
+
+## **Bridge the gaps between the terminal, editor, and browser**
+
+**All inside markdown:**
+
+The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within markdown. On top of that, you can even see images, tables, and more!
+
+## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown:**
+
+You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
+
+GitHub Actions provide a robust CI/CD platform for automating development tasks. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs. Once the cell’s executed a form to input the required parameters displays, which lets users dispatch the workflow with a single click.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/release-github-action.mp4" type="video/mp4" />
+  <source src="/videos/release-github-action.webm" type="video/webm" />
+</video>
+
+**Ensure your runbooks/notebooks work consistently by integrating them with the dedicated GitHub Action or using the CLI:**
+
+Runme offers a convenient GitHub Action that seamlessly integrates with your CI/CD pipeline. By re-using the notebook’s workflows in your CI/CD pipeline, you can ensure that your instructions never go out of date and remain relevant.
+
+Let’s see the following `CONTRIBUTING.md` file:
+
+![contributingmd](../static/img/contributingmd.png)
+
+Pretty standard. Note the name tags in the code blocks, which help us to uniquely reference the command block via the **[Runme CLI](https://docs.runme.dev/install#runme-cli)**. All we really need to do now is to run your CI/CD pipeline the same step a human contributor would; command-by-command following the documentation.
+
+To cut down on boilerplate, we've put together this handy **[GitHub Action](https://github.com/stateful/runme-action/)** for you to use inside your workflows like so:
+
+![githubaction-template](../static/img/github-action-template.png)
+
+That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in CI/CD.
 
 ## Runme Cells
 
 ### Chain Cell Output
 
-With the `$__` parameter you can transfer the stdout result of the last execution into your next execution:
+With the `$__` parameter you can transfer the stdout result of the last execution into your next execution:
 
 ![split view in vs code](../static/img/last-cell-result.gif)
 
-<Infobox type="sidenote">
+### **Sidenote**
 
 Please be aware that if the execution of a cell depends on the standard output (stdout) of a preceding cell, it is imperative to execute these cells sequentially. Failure to adhere to this sequence could lead to unintended and unpredictable behavior.
 
-</Infobox>
+## Other key features
 
-## Summary
-
-- Execute command blocks via a simple ️⏯ play button instead of copy&paste-ing into your terminal
-- Leverage placeholder and prompts to have readers interactively complete ENV VARs
-- Fine-tune your doc's executable notebook cells to streamline the execution experience for others
-- Run watchers for compilation/bundling in as background tasks
-- Capture non-interactive output directly inside the respective notebook's cell output
-- Control whether or not a cell's terminal should remain open after successful execution
-- Use language identifiers in fenced code blocks to forgo language detection and higher reliability
-- Set a cell's output MIME type to render images, JSON, or any other format in human-compatible ways
+- Installs in seconds. No external dependencies are required.
+- Persistent environment variables across cell and session runs.
+- Single-click experiences to accomplish subsets of steps inside larger workflows, like setting up an environment, cleaning up stale EC2 instances, or deploying to staging.
+- Start a session in the editor, complete environment variables in the notebook, and finish up a workflow in the terminal — all sharing the same session.
+- Open tech and open formats at the core (e.g. VS Code Platform and Markdown)
+- Compatible with existing task management (Makefile, Docker, NPM/Pipfile, Rake, etc)
+```

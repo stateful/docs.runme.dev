@@ -19,8 +19,8 @@ Using notebook-based technology, users can execute instructions, check intermedi
 In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells's output into successive cells.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="/videos/runme-illustration.mp4" type="video/mp4" />
-  <source src="/videos/runme-illustration.webm" type="video/webm" />
+  <source src="/videos/Key-features-v2.mp4" type="video/mp4" />
+  <source src="/videos/Key-features-v2.webm" type="video/webm" />
 </video>
 
 <br />
