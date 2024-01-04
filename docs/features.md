@@ -39,15 +39,15 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ## Environment Variable Prompts
 
-**To keep generic notebooks/runbooks for your users:**
+### To keep generic notebooks/runbooks for your users:
 
 If you are using environment variables within your runs, you can configure them within each cell and even make them interactive according to your particular needs. For example, we can configure the SLEEP_SECS environment variable to 10 seconds. Tremendously helpful whenever your runbooks require user-specific values.
 
 ![environmentvariableprompt](../static/img/envvarprompts.png)
 
-## **Render images, CSV tables, and terminals inside markdown**
+## Render images, CSV tables, and terminals inside markdown
 
-**While allowing background tasks to run seamlessly :**
+### While allowing background tasks to run seamlessly :
 
 Each cell can be configured to be run in different manners. The idea is to give you more control over what you expect a user to modify vs. the parts you don't, and provide you with the output in a way that suits most.
 
@@ -74,7 +74,7 @@ Including the following
 
 ## Shebang support
 
-**Call into libraries or APIs to describe tasks with the programming language that’s most natural:**
+### Call into libraries or APIs to describe tasks with the programming language that’s most natural:
 
 you can now run all sorts of programming languages inside your notebooks, including PHP, Ruby, Python, Lua, and more.
 
@@ -109,13 +109,13 @@ console.log('Hello World!')
 
 Check the list of [auto-detected interpreters](https://docs.runme.dev/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
 
-## **Bridge the gaps between the terminal, editor, and browser**
+## Bridge the gaps between the terminal, editor, and browser
 
-**All inside markdown:**
+All inside markdown:
 
 The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within markdown. On top of that, you can even see images, tables, and more!
 
-## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown:**
+## Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown:
 
 You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
 
@@ -126,7 +126,7 @@ GitHub Actions provide a robust CI/CD platform for automating development tasks.
   <source src="/videos/release-github-action.webm" type="video/webm" />
 </video>
 
-**Ensure your runbooks/notebooks work consistently by integrating them with the dedicated GitHub Action or using the CLI:**
+Ensure your runbooks/notebooks work consistently by integrating them with the dedicated GitHub Action or using the CLI:
 
 Runme offers a convenient GitHub Action that seamlessly integrates with your CI/CD pipeline. By re-using the notebook’s workflows in your CI/CD pipeline, you can ensure that your instructions never go out of date and remain relevant.
 
@@ -150,7 +150,7 @@ With the `$__` parameter you can transfer the stdout result of the last execut
 
 ![split view in vs code](../static/img/last-cell-result.gif)
 
-### **Sidenote**
+### Sidenote
 
 Please be aware that if the execution of a cell depends on the standard output (stdout) of a preceding cell, it is imperative to execute these cells sequentially. Failure to adhere to this sequence could lead to unintended and unpredictable behavior.
 
