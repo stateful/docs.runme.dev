@@ -91,16 +91,18 @@ puts 'Hello World'
 ```
 ```
 
+![set-annotation](../static/img/Set-annotation.png)
+
 - set a shebang for the cell.
 
-```md {"id":"01HKDEYCV6RBDRVPSW4DP96ZVY"}
+```sh {"id":"01HKDEYCV6RBDRVPSW4DP96ZVY"}
 #!/usr/bin/python3
 print('Hello World!')
 ```
 
 - set cell interpreter cell property as frontmatteror via VS Code cell option:
 
-```md {"id":"01HKB2N47GFSSPVZBTMK3X89W5"}
+```sh {"id":"01HKB2N47GFSSPVZBTMK3X89W5"}
 import sys
 
 print("Python Version:", sys.version)
