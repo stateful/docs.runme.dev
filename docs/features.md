@@ -91,9 +91,11 @@ puts 'Hello World'
 ```
 ```
 
+![set-annotation](../static/img/Set-annotation.png)
+
 - set a shebang for the cell.
 
-```md {"id":"01HKB2MAZNC8J9DYVZSGPQ4AS1"}
+```md {"id":"01HKDECTVZX6G67HZR8KV2RD5R"}
 #!/usr/bin/python3
 print('Hello World!')
 ```
