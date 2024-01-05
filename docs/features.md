@@ -95,11 +95,6 @@ puts 'Hello World'
 
 - set a shebang for the cell.
 
-```md {"id":"01HKDECTVZX6G67HZR8KV2RD5R"}
-#!/usr/bin/python3
-print('Hello World!')
-```
-
 - set cell interpreter cell property as frontmatteror via VS Code cell option:
 
 ```md {"id":"01HKB2N47GFSSPVZBTMK3X89W5"}
