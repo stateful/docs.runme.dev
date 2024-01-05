@@ -39,7 +39,7 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ## Environment Variable Prompts
 
-### To keep generic notebooks/runbooks for your users:
+ To keep generic notebooks/runbooks for your users:
 
 If you are using environment variables within your runs, you can configure them within each cell and even make them interactive according to your particular needs. For example, we can configure the SLEEP_SECS environment variable to 10 seconds. Tremendously helpful whenever your runbooks require user-specific values.
 
@@ -47,7 +47,7 @@ If you are using environment variables within your runs, you can configure them 
 
 ## Render images, CSV tables, and terminals inside markdown
 
-### While allowing background tasks to run seamlessly :
+ While allowing background tasks to run seamlessly :
 
 Each cell can be configured to be run in different manners. The idea is to give you more control over what you expect a user to modify vs. the parts you don't, and provide you with the output in a way that suits most.
 
@@ -74,7 +74,7 @@ Including the following
 
 ## Shebang support
 
-### Call into libraries or APIs to describe tasks with the programming language that’s most natural:
+ Call into libraries or APIs to describe tasks with the programming language that’s most natural:
 
 you can now run all sorts of programming languages inside your notebooks, including PHP, Ruby, Python, Lua, and more.
 
@@ -85,9 +85,13 @@ Runme supports a set of different interpreter for you to run cells in. To define
 - set a language id for the fenced code block
 
 ```md {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
-rb
+```ruby
 puts 'Hello World'
+
 ```
+```
+
+![set-annotation](../static/img/Set-annotation.png)
 
 - set a shebang for the cell
 
@@ -99,8 +103,9 @@ print('Hello World!')
 - set cell interpreter cell property as frontmatteror via VS Code cell option:
 
 ```md {"id":"01HKB2N47GFSSPVZBTMK3X89W5"}
-js { "interpreter": "node" }
-console.log('Hello World!')
+import sys
+
+print("Python Version:", sys.version)
 ```
 
 ![interpreter-output](../static/img/interpreter-output.png)
