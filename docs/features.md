@@ -9,7 +9,7 @@ Runme lets you execute interactive runbooks built with markdown. Some of the key
 
 ## Runme Notebook
 
-### Run a command block
+ **Run a command block**
 
 To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
 
@@ -21,13 +21,13 @@ A succeeding exit code will be indicated with the small green checkbox seen belo
 
 You can also open the terminal that did the execution by clicking the “Open Terminal” button as shown above with its PID.
 
-### Copy & paste
+**Copy & Paste**
 
 Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a markdown file to paste into your terminal.
 
 ![copyandpaste](../static/img/copyandpaste.png)
 
-### Run all command blocks
+**Run all command blocks**
 
 To run all the commands in the notebook in the order they are found, you can click the “Run All” button.
 
