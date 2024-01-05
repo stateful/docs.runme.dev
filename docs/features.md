@@ -84,7 +84,7 @@ Runme supports a set of different interpreter for you to run cells in. To define
 
 - set a language id for the fenced code block
 
-```md {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
+```sh {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
 ```ruby
 puts 'Hello World'
 
