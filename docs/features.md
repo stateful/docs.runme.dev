@@ -9,7 +9,7 @@ Runme lets you execute interactive runbooks built with markdown. Some of the key
 
 ## Runme Notebook
 
- **Run a command block**
+**Run a command block**
 
 To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
 
@@ -39,7 +39,7 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ## Environment Variable Prompts
 
- To keep generic notebooks/runbooks for your users:
+To keep generic notebooks/runbooks for your users:
 
 If you are using environment variables within your runs, you can configure them within each cell and even make them interactive according to your particular needs. For example, we can configure the SLEEP_SECS environment variable to 10 seconds. Tremendously helpful whenever your runbooks require user-specific values.
 
@@ -47,7 +47,7 @@ If you are using environment variables within your runs, you can configure them 
 
 ## Render images, CSV tables, and terminals inside markdown
 
- While allowing background tasks to run seamlessly :
+While allowing background tasks to run seamlessly :
 
 Each cell can be configured to be run in different manners. The idea is to give you more control over what you expect a user to modify vs. the parts you don't, and provide you with the output in a way that suits most.
 
@@ -74,7 +74,7 @@ Including the following
 
 ## Shebang support
 
- Call into libraries or APIs to describe tasks with the programming language that’s most natural:
+Call into libraries or APIs to describe tasks with the programming language that’s most natural:
 
 you can now run all sorts of programming languages inside your notebooks, including PHP, Ruby, Python, Lua, and more.
 
@@ -87,7 +87,6 @@ Runme supports a set of different interpreter for you to run cells in. To define
 ```sh {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
 ```ruby
 puts 'Hello World'
-
 ```
 ```
 
@@ -95,7 +94,7 @@ puts 'Hello World'
 
 - set a shebang for the cell.
 
-```sh {"id":"01HKDEYCV6RBDRVPSW4DP96ZVY"}
+```sh {"id":"01HKMCNEJFN01DA4WRC187AYYK"}
 #!/usr/bin/python3
 print('Hello World!')
 ```
