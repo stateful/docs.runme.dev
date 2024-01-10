@@ -6,7 +6,7 @@ sidebar_position: 2
 title: Runme for VS Code
 ---
 
-import Infobox from "../../../src/components/Infobox.tsx"
+import Infobox from "../../src/components/Infobox.tsx"
 
 # Getting Started
 
