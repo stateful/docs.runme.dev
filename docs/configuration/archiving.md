@@ -40,20 +40,19 @@ To access the saved cells you want to archive via [VS code](../getting-started/v
 
 ![vscode-archiving](../../static/img/vscode-archiving.png)
 
-## Un-Archiving
+## Restore
 
-If you have previously archived a cell and wish to restore it to your active dashboard,  you can easily un-archive it using the Runme Cloud web dashboard.
+If you have previously archived a cell and wish to restore it to your active dashboard,  you can easily restore it using the Runme Cloud web dashboard.
 
 1. Navigate to the Archived Cell: Go to your dashboard and check on the "Archived" box. It will take you to the section where your archived cells are listed.
-2. Select the Cell to Un-archive: Find the cell you wish to un-archive. Ensure you have selected the correct cell to avoid any unintended modifications.
-3. Initiate Un-archiving: Click on the "Un-archive" button. This button is on the right-hand side of your dashboard.
-4. Confirm Un-archiving: The feature will be restored to your active dashboard once confirmed.
+2. Select the Cell to Restore: Find the cell you wish to restore. Ensure you have selected the correct cell to avoid any unintended modifications.
+3. Initiate Restore: Click on the "Restore" button. This button is on the right-hand side of your dashboard.
+4. Confirm Restore: The feature will be restored to your active dashboard once confirmed.
 
 ## Delete a cell permanently
 
 You can delete a cell at any time. Note: This action is irreversible, once a cell is deleted it cannot be undone
 
-
 1. Select the cell to Delete: Carefully choose the cell you intend to delete permanently. Double-check to ensure it is the correct one.
-2. Choose to Delete Permanently: Click on the "Delete" option. This option is found alongside the un-archive button on the right-hand of your Runme Cloud web dashboard.
+2. Choose to Delete Permanently: Click on the "Delete" option. This option is found alongside the restore button on the right-hand of your Runme Cloud web dashboard.
 3. Confirm Deletion: A warning prompt will appear, asking you to confirm the permanent deletion. Once you confirm, the feature will be irreversibly removed from the archive and cannot be recovered.
