@@ -22,9 +22,9 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
 
 ## Unnamed vs Named cells
 
- On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS code extension to name the file in the configuration settings.
+On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS code extension to name the file in the configuration settings.
 
-![cells-name](../../static/img/cells-name.png)
+![cell-naming](../../static/img/cell-naming.png)
 
 These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
 
