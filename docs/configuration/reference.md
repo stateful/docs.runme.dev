@@ -43,10 +43,6 @@ Metadata inside markdown's fenced code blocks.
 
 This feature can be used to prevent [prompting](../configuration/document-level) when exporting an environment variable. By configuring the [cell options](../configuration/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
 
-```sh
-
-```
-
 </Infobox>
 
 ### Supported MIME types

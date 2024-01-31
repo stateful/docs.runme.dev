@@ -20,6 +20,14 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
 
+## Unnamed vs Named cells
+
+On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS code extension to name the file in the configuration settings.
+
+![cell-naming](../../static/img/cell-naming.png)
+
+These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
+
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
 
 ```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
