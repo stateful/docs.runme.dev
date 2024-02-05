@@ -20,7 +20,7 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
 
-## Unnamed vs Named cells
+### Unnamed vs Named cells
 
 On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS code extension to name the file in the configuration settings.
 
@@ -168,6 +168,30 @@ JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeT
 ![Human-centric output](../../static/img/human-centric-output.png)
 
 See below for the list of supported MIME types!
+
+### Terminal Row
+
+On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row. 
+Terminal row allows you to set the number of rows with which your output should be displayed under a cell.
+Where the terminal row is not set or defined, Runme displayed the output in 10 rows by default. 
+
+
+#### How to set up terminal row
+
+The terminal row is a Runme VScode feature. Therefore, you can set up using your code editor. If you haven’t installed Runme on your Vscode yet, see our installation guide to install Runme in your Vscode editor. 
+
+To set up the terminal row on your code editor, follow the steps below: 
+1. In your `.md` file, click on the “Configure” button at the bottom left of the file. 
+
+![terminalrow-1](../../static/img/terminalrow-1.png)
+
+We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your markdown is executed on your code editor using these settings. 
+
+2. Navigate to “Advanced” > `terminalrow`. 
+
+![terminalrow-2](../../static/img/terminalrow-2.png)
+
+3. Lastly, set the number of rows you wish your output to be rendered in. 
 
 ### Exclude Cell from Run All
 
