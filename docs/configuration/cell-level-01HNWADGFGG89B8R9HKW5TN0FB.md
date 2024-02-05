@@ -1,7 +1,12 @@
 ---
 runme:
   id: 01HFPW3ES358GNC1Z633JB8JYR
-  version: v2.0
+  version: v2.2
+  document:
+    relativePath: cell-level.md
+  session:
+    id: 01HNWADGFGG89B8R9HKW5TN0FB
+    updated: 2024-02-05 11:09:50+01:00
 sidebar_position: 1
 title: Cell-level Options
 ---
