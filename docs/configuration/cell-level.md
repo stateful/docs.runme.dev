@@ -171,27 +171,27 @@ See below for the list of supported MIME types!
 
 ### Terminal Row
 
-On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row. 
+On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row.
 Terminal row allows you to set the number of rows with which your output should be displayed under a cell.
-Where the terminal row is not set or defined, Runme displayed the output in 10 rows by default. 
+Where the terminal row is not set or defined, Runme displayed the output in 10 rows by default.
 
+#### How To Set Up Terminal Row
 
-#### How to set up terminal row
+The terminal row is a Runme VS Code feature. Therefore, you can set up using your code editor. If you haven’t installed Runme on your VS Code yet, see our installation guide to install Runme in your VS Code editor.
 
-The terminal row is a Runme VScode feature. Therefore, you can set up using your code editor. If you haven’t installed Runme on your Vscode yet, see our installation guide to install Runme in your Vscode editor. 
+To set up the terminal row on your code editor, follow the steps below:
 
-To set up the terminal row on your code editor, follow the steps below: 
-1. In your `.md` file, click on the “Configure” button at the bottom left of the file. 
+1. In your `.md` file, click on the “Configure” button at the bottom left of the file.
 
 ![terminalrow-1](../../static/img/terminalrow-1.png)
 
-We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your markdown is executed on your code editor using these settings. 
+We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your markdown is executed on your code editor using these settings.
 
-2. Navigate to “Advanced” > `terminalrow`. 
+2. Navigate to “Advanced” > `terminalrow`.
 
 ![terminalrow-2](../../static/img/terminalrow-2.png)
 
-3. Lastly, set the number of rows you wish your output to be rendered in. 
+3. Lastly, set the number of rows you wish your output to be rendered in.
 
 ### Exclude Cell from Run All
 
