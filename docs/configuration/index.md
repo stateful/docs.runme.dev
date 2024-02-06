@@ -6,7 +6,7 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 # Configuration
 
-Runme provides configurations that improve your ReadME experience and workflow on Runme. These configuration includes options which allows you to define how your markdown files should be executed, either using:
+Runme provides configurations that improve your README experience and workflow on Runme. These configuration includes options which allows you to define how your markdown files should be executed, either using:
 
 * [Cell-level Options](../configuration/cell-level)
 * [Document-level Options](../configuration/document-level)
