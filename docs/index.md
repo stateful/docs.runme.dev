@@ -10,13 +10,14 @@ import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
-Runme makes runbooks _actually runnable_, making it effortless to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and much less susceptible to bitrot.
+Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
 
 ## Reliable Knowledge Sharing 🤝
 
-Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors can maintain golden paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
+Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors, on the other hand, can define reliable paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
 
-In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells's output into successive cells.
+In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells' output into successive cells.
+
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/Key-feature-v2.mp4" type="video/mp4" />
@@ -32,9 +33,11 @@ Learn how to install Runme and [get started](/how-runme-works).
 
 ## What is Runme?
 
-Runme literally runs ubiquitous Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh but also Ruby, Python, etc). It's 100% compatible with CommonMark (the standard) and won't interfere with existing markdown documentation or tooling you're already using.
+Runme enables you to execute interactive runbooks using markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
 
-Runme has interfaces for terminal, editor, and notebooks attached to a kernel, making them interoperable. While all client interfaces share core features, namely execution, they excel in different use cases.
+We have designed a comprehensive set of tools and configurations that are 100% compatible with CommonMark, the standard for markdown. Through this, your integration with Runme does not interfere with your existing markdown documentation or tooling.
+
+Alongside, we provide interfaces for terminal, editor, and notebooks all attached to a kernel, making them interoperable. While these interfaces share core features, each interface excels in different use cases.
 
 > 💡 Runme is like Jupyter but with a Shell/Bash Kernel and lightweight dependencies.
 
@@ -64,16 +67,9 @@ Runme has a headless and graphical user interface to author, run, and verify run
 - Runme currently only has rudimentary support for PowerShell. While PowerShell is not limited to Windows, it is its primary platform. We recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
 - Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter, big or small, to help us make Runme better.
 
-## Telemetry Information
+### Communication & Support
 
-Please help to make Runme better. Any information emitted by Runme is pseudo-anonymized (no PII whatsoever), and the emitter will respect VS Code's global "send no telemetry" (id: `telemetry.telemetryLevel`) setting. The purpose of collecting this information is to improve the Runme experience for developers continuously.
-
-Telemetry collected includes:
-
-- Buttons clicked & commands triggered
-- Total cells and how many are being executed
-- Extension activation and deactivation
-- Notebook opened and saved (incl. metadata; file names are obfuscated)
+Need assistance in getting started? Get in touch with our support team to provide answers to your questions and provide you with all the necessary details to get you started with Runme.
 
 <Infobox type="sidenote" title="Join Runme community!">
 
