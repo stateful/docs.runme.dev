@@ -135,7 +135,7 @@ Runme offers a convenient GitHub Action that seamlessly integrates with your CI/
 
 Let’s see the following `CONTRIBUTING.md` file:
 
-![contributingmd](../static/img/contributingmd.png)
+![contributingmd](../../static/img/contributingmd.png)
 
 Pretty standard. Note the name tags in the code blocks, which help us to uniquely reference the command block via the **[Runme CLI](https://docs.runme.dev/install#runme-cli)**. All we really need to do now is to run your CI/CD pipeline the same step a human contributor would; command-by-command following the documentation.
 
