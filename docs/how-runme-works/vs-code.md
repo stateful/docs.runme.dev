@@ -30,7 +30,7 @@ Simply follow the instructions provided by VS Code to get started in seconds:
 
 Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
 
-If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/install#runme-cli)
+If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](https://docs-runme-pzn34h35g-stateful.vercel.app/Installation/runmecli)
 
 ## Running Scripts
 
