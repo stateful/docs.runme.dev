@@ -26,7 +26,7 @@ In a nutshell, Runme combines the guardrails of a pipeline with the flexibility 
 <br />
 <Infobox type="sidenote" title="Try it now">
 
-Learn how to install Runme and [get started](/getting-started).
+Learn how to install Runme and [get started](/how-runme-works).
 
 </Infobox>
 
