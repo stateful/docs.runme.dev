@@ -74,7 +74,7 @@ export default function NotFound() {
                   </div>
                   <div className="text-[color:var(--ifm-navbar-link-color)] hover:underline">
                     <a href="https://docs.runme.dev/how-runme-works">
-                      Getting started
+                      how-runme-works
                     </a>
                   </div>
                   <div className="text-[color:var(--ifm-navbar-link-color)] hover:underline">
