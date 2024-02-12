@@ -2,6 +2,8 @@
 runme:
   id: 01HMXW1YSWS6A62VJ0CQPD38C9
   version: v2.2
+sidebar_position: 2
+title: Installation
 ---
 
 # Installation
@@ -14,7 +16,7 @@ Runme provides multiple client interfaces that enable users to interact with Run
 - editor integration in VS Code,
 - self-hosted web app version
 
-Whether you are a beginner getting started or an experienced user looking to set up Runme for your workflow, this section will provide you with step-by-step instructions and best practices to ensure a smooth installation process. 
+Whether you are a beginner getting started or an experienced user looking to set up Runme for your workflow, this section will provide you with step-by-step instructions and best practices to ensure a smooth installation process.
 
 ## Requirement
 

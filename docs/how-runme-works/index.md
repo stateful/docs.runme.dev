@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Getting Started
+title: How Runme Works
 ---
 
 import Infobox from "../../src/components/Infobox.tsx"
