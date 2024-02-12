@@ -4,22 +4,22 @@ import { TerminalIcon, VSCodeIcon, GlobeIcon, SSHIcon } from "./Icons";
 const options = [
   {
     title: "Runme VS Code Extension",
-    href: "/getting-started/vs-code",
+    href: "/how-runme-works-/vs-code",
     icon: VSCodeIcon,
   },
   {
     title: "Runme CLI",
-    href: "/getting-started/cli",
+    href: "/how-runme-works/cli",
     icon: TerminalIcon,
   },
   {
     title: "Runme via SSH",
-    href: "/getting-started/runme-via-ssh",
+    href: "/how-runme-works/runme-via-ssh",
     icon: SSHIcon,
   },
   {
     title: "Runme Web",
-    href: "/getting-started/web",
+    href: "/how-runme-works/web",
     icon: GlobeIcon,
   },
 ];
