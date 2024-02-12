@@ -6,12 +6,20 @@ sidebar_position: 1
 title: Cell-level Options
 ---
 
+In this section, we will give you a step-by-step guide on how to run your Markdown file by each cell rather than execute your entire file at once.
+
+***Let’s dive in!***
+
 Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be:
 
-1. File-watchers for compilers & bundlers should run as background tasks
-2. Executors for Interactive and Non-interactive programs & scripts
-3. Human-centric output: JSON, text, images, etc
-4. Terminal visibility when no errors occur
+1. File-watchers for compilers & bundlers should run as background tasks.
+2. Executors for Interactive and Non-interactive programs & scripts.
+3. Human-centric output: JSON, text, images, etc.
+4. Terminal visibility when no errors occur.
+
+To modify the cell execution behavior, simply click Configure on the respective cell.
+
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](https://docs.runme.dev/configuration/reference#Cell-Options):
 
 To modify the cell execution behavior, simply click "Configure" on the respective cell.
 
@@ -19,6 +27,8 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.mp4" type="video/mp4" />
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
+
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
 
 ### Unnamed vs Named cells
 
@@ -103,7 +113,7 @@ In most cases, you probably want to set the current working directory at the doc
     ```sh { cwd=.. }
     npm run watch #relative path
     ```
-    
+
     ```sh { cwd=/tmp }
     echo "absolute path" > dummy_file
     ```
@@ -163,7 +173,7 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 
 ### Human-friendly output
 
-JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The MIME type defaults to *text/plain*.
+JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
 
 ![Human-centric output](../../static/img/human-centric-output.png)
 
@@ -195,7 +205,7 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 ### Exclude Cell from Run All
 
-Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the "Run All" button to get set-up and running. However sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option you can configure this behavior.
+Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the Run All button to get set up and running. However, sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option, you can configure this behavior.
 
 **Default:** `false`
 
@@ -207,7 +217,7 @@ Every VS Code notebook allows to run all available cells. This can be useful if 
 
 ### Run All Cells by Category
 
-If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as cell option. A cell can have one or multiple categories that are comma seperated.
+If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
 
 **Default:** `""`
 
@@ -216,7 +226,7 @@ If you have multiple workflows in a single markdown file you can categorize them
     ```sh { category=build }
     # Do something here
     ```
-    
+
     ```sh { category=build,deployment }
     # Do something here
     ```
@@ -225,4 +235,3 @@ If you have multiple workflows in a single markdown file you can categorize them
   <source src="/videos/categories.mp4" type="video/mp4" />
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
-

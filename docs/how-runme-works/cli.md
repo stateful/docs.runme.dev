@@ -5,7 +5,7 @@ title: Runme for CLI
 
 import Infobox from "../../src/components/Infobox.tsx"
 
-# Getting started with Runme CLI
+# How Runme CLI Works
 
 <Infobox type="sidenote" title="Install Runme">
 
@@ -22,13 +22,13 @@ runme
 
 ![Runme TUI Usage](../../static/img/runme-tui.gif)
 
-This allows you to quickly execute any script present in the README.
+his allows you to quickly execute any script present in the README.
 
 <Infobox type="warning" title="Warning!">
 
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
-You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
+You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
 
 </Infobox>
 
@@ -83,7 +83,7 @@ Flags:
 
 ### Run a markdown file
 
-By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
+By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
 
 ```sh
 runme ls --filename README.md --chdir ../..

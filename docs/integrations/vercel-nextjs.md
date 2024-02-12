@@ -9,11 +9,11 @@ This example can be found in the `vercel` sub-folder. You can manually check out
 
 ### Setup/Environment
 
-Similar to the last example, we can do our setup, starting, and opening of the web browser using Runme:
+Similar to the [previous section](https://docs.runme.dev/integrations/deno-fresh), we can do our setup, starting, and opening of the web browser using Runme:
 
 ![setup environment in vs code](../../static/img/setup-environment.png)
 
-In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
+Runme supports Cell Run Grouping which allows you to execute all the scripts at a go! This can be used in the script above.
 
 ### Authentication
 
@@ -30,3 +30,4 @@ In this case, this can be used to get a list of the user's current registered pr
 ![list projects in vercel](../../static/img/list-projects-vercel.png)
 
 ![run hello world in vs code](../../static/img/run-hello-world.gif)
+
