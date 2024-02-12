@@ -141,7 +141,7 @@ Pretty standard. Note the name tags in the code blocks, which help us to uniquel
 
 To cut down on boilerplate, we've put together this handy **[GitHub Action](https://github.com/stateful/runme-action/)** for you to use inside your workflows like so:
 
-![githubaction-template](../static/img/github-action-template.png)
+![githubaction-template](../../static/img/github-action-template.png)
 
 That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in [CI/CD](https://runme.dev/blog/guide-to-onboarding-docs-in-ci).
 
