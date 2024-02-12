@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HMY6TCGD7Z3DN55TPTDWGK9R
+  version: v2.2
 sidebar_position: 5
 title: Runme CLI in Github Actions Workflows
 ---
@@ -11,7 +14,7 @@ Runme offers a convenient GitHub action that seamlessly integrates the tool into
 
 In `.github/workflows/test.yaml` create a new file with the following contents:
 
-```sh
+```sh {"id":"01HMY6TCGC39ANHPSC5941WVJV"}
 name: Test Changes
 
 on: [push, pull_request]
@@ -37,4 +40,4 @@ jobs:
             test
 ```
 
-Now, you can define what should be done for building and testing your project in e.g. a `CONTRIBUTING.md` and have your contributors be able to run the same flows through the CLI, e.g. via: `runme run build test`.
+Now, you can define what should be done for building and testing your project for example a `CONTRIBUTING.md`, and have your contributors be able to run the same flows through the CLI, for example, using: `runme run build test`.

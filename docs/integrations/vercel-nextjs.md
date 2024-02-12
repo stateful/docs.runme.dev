@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HMY5TMCXZS9KM5NJFM75GGFE
+  version: v2.2
 sidebar_position: 4
 title: Runme with Next.js App on Vercel
 ---
@@ -9,11 +12,11 @@ This example can be found in the `vercel` sub-folder. You can manually check out
 
 ### Setup/Environment
 
-Similar to the last example, we can do our setup, starting, and opening of the web browser using Runme:
+Similar to the [previous section](https://docs.runme.dev/integrations/deno-fresh), we can do our setup, starting, and opening of the web browser using Runme:
 
 ![setup environment in vs code](../../static/img/setup-environment.png)
 
-In a future version of Runme, we'd like to support "execution groups," so that you can execute all of the above scripts in one go!
+Runme supports Cell Run Grouping which allows you to execute all the scripts at a go! This can be used in the script above.
 
 ### Authentication
 

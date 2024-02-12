@@ -5,8 +5,7 @@ runme:
 sidebar_position: 3
 title: Auto-Save feature
 ---
-
-The Auto-Save feature in Runme provides a seamless and efficient way to ensure your work is continuously saved without manual intervention. This feature is handy in scenarios where consistent data preservation is crucial.
+The Auto-Save feature offers an easy and efficient way to automatically save your output without manual intervention. This feature is more essential in scenarios where data is required to be consistently stored. 
 
 ### How to Enable Auto-Save
 
@@ -14,17 +13,22 @@ The Auto-Save feature in Runme provides a seamless and efficient way to ensure y
 
 ![extn](../../static/img/autosaveextension.png)
 
-2. **Toggle Auto-Save On/Off:** You have the flexibility to quickly turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
+2. **Toggle Auto-Save On/Off:** You have the flexibility to quickly switch the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
 
 ![autosave-on/off](../../static/img/autosave-on:off.png)
 
-(Optional) **Activate Auto-Save as a default:** Within the settings, you will find an option for Auto-Save. Click on “Yes” to enable this feature as a default. This action configures the system to automatically save the output of each cell execution.
+(**Optional**) **Activate Auto-Save as a default:** Within the settings, you will find an option for Auto-Save. Click on “**Yes”** to enable this feature as a default. 
+
+This action configures the system to automatically save the output of each executed cell.
 
 ![autosave-yes](../../static/img/autosave-yes.png)
 
 ### Storage and Accessibility
 
-- **Cloud Storage:** All auto-saved content is securely stored in a dedicated cell on the Runme Cloud. This ensures that your data is not only saved in real-time but is also accessible from any location, provided you have internet access.
-- **Data Integrity and Security:** The Auto-Save feature is designed with data integrity and security in mind. Your work is saved in a consistent state, reducing the risk of data loss due to unexpected interruptions.
+- **Cloud Storage:** All auto-saved content is securely stored in a dedicated cell on the Runme Cloud. This ensures that your data is not only saved in real-time but is also accessible from any location, provided you have internet access.
+- **Data Integrity and Security:** The Auto-Save feature is designed with data integrity and security in mind. Your work is saved in a consistent state, reducing the risk of data loss due to unexpected interruptions.
+
+
 
 ![auto-save](../../static/img/runme-cloud.png)
+

@@ -1,14 +1,14 @@
 ---
 runme:
   id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
-  version: v2.0
+  version: v2.2
 sidebar_position: 4
 title: Reference
 ---
 
 # Reference
 
-Everything in one place.
+Everything you need to utilize the value of Runme all in one place.
 
 ### Document Options
 
