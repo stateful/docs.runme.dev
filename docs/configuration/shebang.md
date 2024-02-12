@@ -8,7 +8,7 @@ Shebang is a versatile tool designed to execute scripts written in various scrip
 
 ## Prerequisites
 
-Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly [installed](/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
+Before proceeding with the integration of Shebang in [Runme](/installation/runmecli), ensure that Runme is properly [installed](/installation/runmecli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
 ## Run your Code with Runme in VS Code Using Shebang
 
