@@ -6,7 +6,7 @@ sidebar_position: 1
 title: Home
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
+import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
