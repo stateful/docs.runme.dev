@@ -13,11 +13,11 @@ Runme lets you execute interactive runbooks built with markdown. Some of the key
 
 To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
 
-![npm-install](../static/img/npm-install.png)
+![npm-install](../../static/img/npm-install.png)
 
 A succeeding exit code will be indicated with the small green checkbox seen below:
 
-![npm-install-result](../static/img/npm-install-result.png)
+![npm-install-result](../../static/img/npm-install-result.png)
 
 You can also open the terminal that did the execution by clicking the “Open Terminal” button as shown above with its PID.
 
@@ -25,17 +25,17 @@ You can also open the terminal that did the execution by clicking the “Open Te
 
 Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a markdown file to paste into your terminal.
 
-![copyandpaste](../static/img/copyandpaste.png)
+![copyandpaste](../../static/img/copyandpaste.png)
 
 **Run all command blocks**
 
 To run all the commands in the notebook in the order they are found, you can click the “Run All” button.
 
-![runallcommandblock](../static/img/runallcomandblocks.png)
+![runallcommandblock](../../static/img/runallcomandblocks.png)
 
 To be extra safe, you will be prompted before each step to confirm your intentions unless you select “Skip Prompt and run all”.
 
-![skippromptandrunall](../static/img/skippromptandrunall.png)
+![skippromptandrunall](../../static/img/skippromptandrunall.png)
 
 ## Environment Variable Prompts
 
@@ -43,7 +43,7 @@ To keep generic notebooks/runbooks for your users:
 
 If you are using environment variables within your runs, you can configure them within each cell and even make them interactive according to your particular needs. For example, we can configure the SLEEP_SECS environment variable to 10 seconds. Tremendously helpful whenever your runbooks require user-specific values.
 
-![environmentvariableprompt](../static/img/envvarprompts.png)
+![environmentvariableprompt](../../static/img/envvarprompts.png)
 
 ## Render images, CSV tables, and terminals inside markdown
 
@@ -53,15 +53,15 @@ Each cell can be configured to be run in different manners. The idea is to give 
 
 You don’t need to wait for a run to finish? Just turn on background mode, and continue running following cells.
 
-![backgroundtaskbar](../static/img/backgroundtaskbar.png)
+![backgroundtaskbar](../../static/img/backgroundtaskbar.png)
 
 Do you need to prevent inputs in the terminal? Turn off interactive mode.
 
-![interactiveblock](../static/img/interactivecblock.png)
+![interactiveblock](../../static/img/interactivecblock.png)
 
 Do you need other MIME types to render images or CSV-based tables? You can configure it in the following cell option!
 
-![mimetypes](../static/img/mimetypes.png)
+![mimetypes](../../static/img/mimetypes.png)
 
 Including the following
 
@@ -88,7 +88,7 @@ Runme supports a set of different interpreter for you to run cells in. To define
 puts 'Hello World'
 ```
 
-![set-annotation](../static/img/interpreterruby.png)
+![set-annotation](../../static/img/interpreterruby.png)
 
 - set a shebang for the cell.
 
@@ -105,7 +105,7 @@ import sys
 print("Python Version:", sys.version)
 ```
 
-![interpreter-output](../static/img/interpreter-output.png)
+![interpreter-output](../../static/img/interpreter-output.png)
 
 ### Supported Interpreters
 
@@ -134,13 +134,13 @@ Runme offers a convenient GitHub Action that seamlessly integrates with your CI/
 
 Let’s see the following `CONTRIBUTING.md` file:
 
-![contributingmd](../static/img/contributingmd.png)
+![contributingmd](../../static/img/contributingmd.png)
 
 Pretty standard. Note the name tags in the code blocks, which help us to uniquely reference the command block via the **[Runme CLI](https://docs.runme.dev/install#runme-cli)**. All we really need to do now is to run your CI/CD pipeline the same step a human contributor would; command-by-command following the documentation.
 
 To cut down on boilerplate, we've put together this handy **[GitHub Action](https://github.com/stateful/runme-action/)** for you to use inside your workflows like so:
 
-![githubaction-template](../static/img/github-action-template.png)
+![githubaction-template](../../static/img/github-action-template.png)
 
 That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in [CI/CD](https://runme.dev/blog/guide-to-onboarding-docs-in-ci).
 
@@ -150,7 +150,7 @@ That's it! Instead of calling Makefiles targets or NPM scripts that remain undoc
 
 With the `$__` parameter you can transfer the stdout result of the last execution into your next execution:
 
-![split view in vs code](../static/img/last-cell-result.gif)
+![split view in vs code](../../static/img/last-cell-result.gif)
 
 ### Sidenote
 
