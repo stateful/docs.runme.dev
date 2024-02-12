@@ -9,7 +9,7 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 <Infobox type="sidenote" title="Install Runme">
 
-If you haven't already installed Runme CLI, please complete the steps in[installation](/install) before proceeding.
+If you haven't already installed Runme CLI, please complete the steps in[installation](/installation/runmecli) before proceeding.
 
 </Infobox>
 
