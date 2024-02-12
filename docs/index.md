@@ -41,26 +41,16 @@ Alongside, we provide interfaces for terminal, editor, and notebooks all attache
 
 > 💡 Runme is like Jupyter but with a Shell/Bash Kernel and lightweight dependencies.
 
-<br/>
+## **Usability**
+
 Runme runs everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
-<br/>
-<br/>
 
 - Split loose scripts into runbooks with separate cells, intermediate outputs, and controls to check before moving on.
 - Get ahead of bit-rot and reverse-engineering runbooks executing them directly from markdown inside your project's repo.
-- Increase shareability of runbooks by decoupling them from personal _dotfiles_ or _bash_history's_ without getting in the way.
+- Increase the shareability of runbooks by decoupling them from personal *dotfiles* or *bash_history's* without getting in the way.
 - Codify golden paths without overly restricting the flexibility of "scripting".
 
-Learn more about Runme's [Kernel Architecture](/architecture) to understand what powers Runme's portability.
-
-## User Interfaces
-
-Runme has a headless and graphical user interface to author, run, and verify runbooks. It achieves this by making markdown files containing your documentation interactive and intelligent. Runme consists of the following parts:
-
-- **[Runme CLI](/how-runme-works/cli)**. Understands markdown, discovers command blocks, and offers a guided terminal UI to execute command blocks and individual subcommands for power usage and CI/CD.
-- **Runme Kernel**. Much like Jupyter's, it shares session state across clients inter-operably. Kernel and CLI are bundled inside the [same binary](https://github.com/stateful/runme) for ease of use and distribution.
-- **[Runme for VS Code](/how-runme-works/vs-code)** first-party integration into VS Code. Allows execution of command blocks from code editor and notebook UI. The notebook UI offers a rich viewing, execution, and authoring experience leveraging web-app-like features.
-- **[Runme for Web](/how-runme-works/web)** is a self-contained web app version of Runme you can run locally. Mirrors VS Code's Notebook & Editor UX without running the IDE.
+Learn more about Runme's [Kernel Architecture](https://docs.runme.dev/architecture) to understand what powers Runme's portability.
 
 ## Known Limitations
 
