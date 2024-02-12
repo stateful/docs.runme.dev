@@ -5,7 +5,7 @@ title: FAQ
 
 ## What differentiates Runme from a common Jupyter Notebook?
 
-- Runme should execute cells written in many programming languages out of the box (see [supported languages](/features#supported-interpreter))
+- Runme should execute cells written in many programming languages out of the box (see [supported languages](home/features#supported-interpreter))
 - Runme notebooks/runbooks are being stored in 100%-compatible markdown
 - Runme kernel exposes services that produces consistent results regardless of what client (CLI, Extension, CI/CD) is being used
 - Runme aims to provide a great CLI and VS Code experience, including the web permutations
@@ -24,4 +24,4 @@ We are working to build a community around solving this docs/runbooks problem an
 
 ## How to switch back from the Runme Notebook view to the markdown text document?
 
-You can easily switch between Runme's notebook UI and the standard markdown text editing experience. Read more on that in the [Runme UX documentation](features#runme-ux).
+You can easily switch between Runme's notebook UI and the standard markdown text editing experience. Read more on that in the [Runme UX documentation](/home/features#runme-ux).

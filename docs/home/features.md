@@ -3,7 +3,7 @@ sidebar_position: 8
 title: Key Features
 ---
 
-import Infobox from "../src/components/Infobox.tsx"
+import Infobox from "../../src/components/Infobox.tsx"
 
 Runme lets you execute interactive runbooks built with markdown. Some of the key features include:
 
@@ -87,7 +87,6 @@ Runme supports a set of different interpreter for you to run cells in. To define
 ```sh {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
 puts 'Hello World'
 ```
-
 
 ![set-annotation](../static/img/interpreterruby.png)
 
