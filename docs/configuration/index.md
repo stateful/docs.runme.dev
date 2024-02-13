@@ -14,7 +14,3 @@ Runme provides configurations that improve your README experience and workflow o
 In addition, you can customize your README process by adding features such as [archiving](../configuration/archiving), [autosave](../configuration/auto-save), etc., according to your preferred settings.
 
 Important: Runme supports shebang to run various languages, enabling you to execute a diverse range of languages. Whether you're working with Python, Bash, or any executable language command, shebang executes your commands easily.
-
-```sh {"id":"01HPGTK1X1BMPYW4QYV97XD8JQ"}
-echo "hello world"
-```
