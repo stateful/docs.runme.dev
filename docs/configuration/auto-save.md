@@ -17,11 +17,11 @@ Runme autosave feature goes beyond saving commands and running shell scripts. It
 
 When auto-save is enabled,that is turned on, Runme captures a complete copy of the original Markdown document along with all cell outputs generated during the notebook's execution using the “Runme Session Outputs”.
 
-
-
 ![autosave-output-session](../../static/img/Autosave-output.png)
 
 The information includes when each cell was ran, the time it took, and exit codes. Additional contextual metadata like hostname and username are also saved to the Session Outputs file. Runme also captures non-text mime types like images (base64 encoded) outside of textual output produced by terminals.
+
+see an example below:
 
 ```sh {"id":"01HPGQH3SV6HM949W7RHC4P563"}
 $ terraform workspace select staging
@@ -38,7 +38,7 @@ If there are more forms you like to be added, kindly let us know. We are open to
 
 ### How to Enable Auto-Save
 
-### Set Autosave as Default
+#### Set Autosave as Default
 
 By default, session output is turned off, indicated by the autosave button at the top bar displaying `off`. If you want to use the session output feature you can easily turn it on using the autosave button to toggle the feature `(on)` or `(off)`. Alternatively, you can change the session outputs default to be permanently `on` by adjusting the settings. This way, you won’t need to manually enable it every time.
 
@@ -59,6 +59,4 @@ You might wonder why we have chosen to create a separate Session Outputs file in
 3. **Enhance User Experience (UX)**: Session files with outputs are not directly opened in the notebook UX. After writing the output, Runme may struggle to distinguish between input and output parts of a cell. Instead, the UX will prompt you to open the original document (which requires colocation in the same folder) as a notebook or launch the markdown previewer to display the Session Outputs.
 
 While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the de-/serialization process.
-
-However, if and when this becomes a priority on Runme’s roadmap it will most likely be an optional feature. If you have thoughts or ideas about this, [please get in touch](https://discord.gg/runme).
 
