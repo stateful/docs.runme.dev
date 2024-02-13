@@ -36,7 +36,9 @@ The session outputs are written per Runme session, which is saved throughout the
 
 If there are more forms you like to be added, kindly let us know. We are open to incorporating your requests.
 
-### How to Enable Auto-Save
+## How to Enable Auto-Save
+
+### Set Autosave as Defaul
 
 By default, session output is turned off, indicated by the autosave button at the top bar displaying `off`. If you want to use the session output feature you can easily turn it on using the autosave button to toggle the feature `(on)` or `(off)`. Alternatively, you can change the session outputs default to be permanently `on` by adjusting the settings. This way, you won’t need to manually enable it every time.
 
