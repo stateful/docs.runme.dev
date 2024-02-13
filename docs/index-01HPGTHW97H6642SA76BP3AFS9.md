@@ -1,12 +1,17 @@
 ---
 runme:
   id: 01HGAW03Y6QJQASC1QM0XC76P3
-  version: v2.0
+  version: v2.2
+  document:
+    relativePath: index.md
+  session:
+    id: 01HPGTHW97H6642SA76BP3AFS9
+    updated: 2024-02-13 12:49:45+01:00
 sidebar_position: 1
 title: Home
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
+import Infobox from "../src/components/Infobox.tsx"
 
 # Why Runme?
 
