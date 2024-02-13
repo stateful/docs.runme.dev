@@ -58,7 +58,7 @@ See the image below to adjust the autosave settings
 
 ![runme-auto-save](../../static/img/runme-auto-save.png)
 
-> If you’re logged into the Cloud (prompt whenever Auto-Save is toggled on) cells will both be stored locally in a Session Outputs file and securely stored in your dashboard for later review or sharing with others. This is completely optional and if desired can be turned off (follow “Open Settings” in prompt).
+> 💡 If you’re logged into the Cloud (prompt whenever Auto-Save is toggled on) cells will both be stored locally in a Session Outputs file and securely stored in your dashboard for later review or sharing with others. This is completely optional and if desired can be turned off (follow “Open Settings” in prompt).
 
 
 
