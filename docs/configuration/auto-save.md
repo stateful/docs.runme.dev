@@ -17,7 +17,9 @@ Runme autosave feature goes beyond saving commands and running shell scripts. It
 
 When auto-save is enabled,that is turned on, Runme captures a complete copy of the original Markdown document along with all cell outputs generated during the notebook's execution using the “Runme Session Outputs”.
 
-![session-output](../../static/img/session-outputs.png)
+
+
+![autosave-output-session](../../static/img/Autosave-output.png)
 
 The information includes when each cell was ran, the time it took, and exit codes. Additional contextual metadata like hostname and username are also saved to the Session Outputs file. Runme also captures non-text mime types like images (base64 encoded) outside of textual output produced by terminals.
 
