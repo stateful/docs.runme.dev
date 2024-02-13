@@ -1,7 +1,12 @@
 ---
 runme:
   id: 01HFRZ3233HSQ0NVJB9BE682G5
-  version: v2.0
+  version: v2.2
+  document:
+    relativePath: auto-save.md
+  session:
+    id: 01HPGTHW97H6642SA76BP3AFS9
+    updated: 2024-02-13 12:15:57+01:00
 sidebar_position: 3
 title: Auto-Save feature
 ---
