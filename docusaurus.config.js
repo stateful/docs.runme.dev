@@ -149,7 +149,7 @@ const config = {
           },
           {
             type: "doc",
-            docId: "/docs/gettiing-started/index",
+            docId: "/docs/gettiing-started/index.md",
             position: "right",
             label: "Documentation",
             className: "docsLink",
