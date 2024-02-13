@@ -38,8 +38,6 @@ If there are more forms you like to be added, kindly let us know. We are open to
 
 ### How to Enable Auto-Save
 
-#### Set Autosave as Default
-
 By default, session output is turned off, indicated by the autosave button at the top bar displaying `off`. If you want to use the session output feature you can easily turn it on using the autosave button to toggle the feature `(on)` or `(off)`. Alternatively, you can change the session outputs default to be permanently `on` by adjusting the settings. This way, you won’t need to manually enable it every time.
 
 To set it as default within the settings, go to the [runme extension settings](https://docs.runme.dev/getting-started/vs-code#runme-settings-for-vs-code), you will find an option for Auto-Save. Click on “Yes” to enable this feature as a default. This action configures the system to automatically save the output of each cell execution.
