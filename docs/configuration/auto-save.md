@@ -48,15 +48,26 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 ## How to Enable Auto-Save
 
+- Toggle Auto-Save On/Off: On your .md file, you have the flexibility to easily turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (.md) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
+
+![runme-autosave](../../static/img/runme-autosave.png)
+
+- Alternatively you can set autosave on as the default setting.This way, you won’t need to manually enable it every time.
+
 ### Set Autosave as Default
 
-By default, session output is turned off, indicated by the autosave button at the top bar displaying `off`. If you want to use the session output feature you can easily turn it on using the autosave button to toggle the feature `(on)` or `(off)`. Alternatively, you can change the session outputs default to be permanently `on` by adjusting the settings. This way, you won’t need to manually enable it every time.
+By default, session output is turned off, indicated by the autosave button at the top bar displaying `off`. If you want to use the session output feature you can easily turn it on using the autosave button to toggle the feature `(on)` or `(off)`. Alternatively, you can change the session outputs default to be permanently `on` by adjusting the settings. See the guide below to set the autosave on as the default settings
 
-To set it as default within the settings, go to the [runme extension settings](https://docs.runme.dev/getting-started/vs-code#runme-settings-for-vs-code), you will find an option for Auto-Save. Click on “Yes” to enable this feature as a default. This action configures the system to automatically save the output of each cell execution.
+- Begin by navigating to the extension settings in the Runme interface. This is typically found in the toolbar or under a settings menu.
 
-See the image below to adjust the autosave settings
+![runme-infra](../../static/img/runme-infra.png)
 
-![runme-auto-save](../../static/img/runme-auto-save.png)
+- You can search “autosave” to easily navigate to the Auto-save section.
+- To set it as default, select on “Yes” to enable this feature as a default.
+
+![autosave-defualt](../../static/img/runme-set-autosave-default.png)
+
+ This action configures the system to automatically save the output of each cell execution.
 
 > 💡 If you’re logged into the Cloud (prompt whenever Auto-Save is toggled on) cells will both be stored locally in a Session Outputs file and securely stored in your dashboard for later review or sharing with others. This is completely optional and if desired can be turned off (follow “Open Settings” in prompt).
 
