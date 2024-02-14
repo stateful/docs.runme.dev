@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Runme via SSH
 
-Runme is committed to delivering an exceptional experience right from the start. By using Runme, and [VS Code's native-SSH](https://code.visualstudio.com/docs/remote/ssh) capabilities you can easily connect to an instance and carry out specific instructions using markdown docs. Before exploring various ways to utilize Runme through SSH, it's important to make sure that you have installed Runme for [VS Code](/install#runme-for-vs-code) or [CLI](https://docs.runme.dev/getting-started/cli) by referring to the [installation](https://docs.runme.dev/getting-started/) guide, as well as ensuring that you have access to the remote server you need.
+Runme is committed to delivering an exceptional experience right from the start. By using Runme, and [VS Code's native-SSH](https://code.visualstudio.com/docs/remote/ssh) capabilities you can easily connect to an instance and carry out specific instructions using markdown docs. Before exploring various ways to utilize Runme through SSH, it's important to make sure that you have installed Runme for [VS Code](/installation/installrunme) or [CLI](https://docs.runme.dev/getting-started/cli) by referring to the [installation](https://docs.runme.dev/getting-started/) guide, as well as ensuring that you have access to the remote server you need.
 
 ## VS Code Remote Development
 
@@ -75,7 +75,7 @@ By following these steps and using SSH keys for authentication, you can enhance 
 5. Execute the Runme command:
 
 ```sh
-# short for "runme tui" is 
+# short for "runme tui" is
 runme
 ```
 
@@ -94,6 +94,3 @@ scp /path/to/bash/script user@host:/path/on/remote/server
 ssh user@host 'bash /path/on/remote/server/script.sh'
 ```
 
-***This is an example of running bash script in a server.***
-
-![Bash](https://i.imgur.com/nizv2CB.png)

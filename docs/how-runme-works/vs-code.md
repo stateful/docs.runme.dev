@@ -8,13 +8,13 @@ title: Runme for VS Code
 
 import Infobox from "../../src/components/Infobox.tsx"
 
-# Getting Started
+# Runme on Vscode
 
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs.
+Runme strives to provide a great experience right out of the box. In this section we we will guide you through making the most of your markdown docs with Runme.
 
 <Infobox type="sidenote" title="Install Runme VS Code extension">
 
-If you haven't already installed Runme for VS Code, please complete the steps in [installation](/install#runme-for-vs-code) before proceeding.
+If you haven't already installed Runme for VS Code, please complete the steps in [installation](/installation/installrunme) before proceeding.
 
 </Infobox>
 
@@ -22,7 +22,7 @@ If you haven't already installed Runme for VS Code, please complete the steps in
 
 You can get started in one click with the following badge:
 
-[![Run Locally via Runme](https://badgen.net/badge/Run%20this/Tutorial/5B3ADF?icon=https://runme.dev/img/logo.svg)](vscode://stateful.runme?command=setup&repository=https://github.com/stateful/blog-examples.git&fileToOpen=node-streams/README.md)
+
 
 Simply follow the instructions provided by VS Code to get started in seconds:
 
@@ -30,7 +30,7 @@ Simply follow the instructions provided by VS Code to get started in seconds:
 
 Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
 
-If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](/install#runme-cli)
+If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](https://docs-runme-pzn34h35g-stateful.vercel.app/Installation/runmecli)
 
 ## Running Scripts
 
@@ -47,13 +47,13 @@ As you can see, we have downloaded the `business_data.csv` file, which contains 
 
 <Infobox type="warning">
 
-In order for the set-up script to work, you'll need to have the `curl` and `unzip` utilities installed. The remainder of the scripts will also require `node.js` to be installed. In a future version of Runme, we plan to provide a solution to help you manage these dependencies from within the notebook. Stay tuned!
+For the set-up script to work, you'll need to have the `curl` and `unzip` utilities installed. The remaining scripts will also require `node.js` to be installed. In a future version of Runme, we plan to provide a solution to help you manage these dependencies from within the notebook. Stay tuned!
 
 </Infobox>
 
 ## Command Output
 
-Scroll down to the "Examples" section of the notebook. From there, try running Steps 1 and 2.
+Scroll down to the [**Examples**](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md) section of the notebook. From there, try running Steps 1 and 2.
 
 If everything goes right, you should get an output like the following:
 
@@ -71,7 +71,7 @@ If the command fails, it will be an "X" mark instead!
 
 ### Copying Output
 
-Runme provides a handy "Copy" button to easily copy the output of a command!
+Runme provides a handy "**Copy**" button to easily copy the output of a command!
 
 ![copy output vs code](../../static/img/copy-output-vscodes.png)
 
@@ -79,11 +79,11 @@ Runme provides a handy "Copy" button to easily copy the output of a command!
 
 Sometimes, the output of a command can clutter up the screen. To prevent this, use the "Clear Cell Outputs" menu option.
 
-Alternatively, select the output and use the Option+Delete shortcut.
+Alternatively, select the output and use the **Option+Delete shortcut**.
 
 ![clear output vs code](../../static/img/clear-output-vscodes.png)
 
-Hopefully, you've successfully run your first Runme notebook, and understand the basics of Runme! As you'll soon see, however, you've still barely scratched the surface of Runme's capabilities.
+Congratulations on running your first Runme notebook! 🎉While you've understood the basics, there's more to discover about Runme's powerful features. Let's get ready to dive deeper.
 
 # Runme Editing & Authoring
 
@@ -91,13 +91,13 @@ Runme combines running, viewing, and editing into one experience.
 
 ## From Scratch
 
-Start by initializing a new project and adding a new `README.md` file. Alternatively you can select `Runme Notebook` from the `File->New File` menu. When you open it, you should get an empty canvas, like so:
+Start by initializing a new project and adding a new `README.md` file. Alternatively, you can select `Runme Notebook` from the `File->New File` menu. When you open it, you should get an empty canvas, like this:
 
 ![start readme project](../../static/img/start-readme-projects.png)
 
 ## Adding Markdown
 
-To add a new Markdown section, click the "+ Markdown" button in the top left or center:
+To add a new Markdown section, click the "**+ Markdown"** button in the top left or center:
 
 ![add markdown vs code](../../static/img/add-markdown-vscodes.png)
 
@@ -108,19 +108,19 @@ You can then edit the markdown block directly:
   <source src="/videos/edit-markdown-block.webm" type="video/webm" />
 </video>
 
-As shown in the video, once you're done editing a block, use the "Stop Editing Cell" button (the one with the checkmark):
+As shown in the image below, once you're done editing a block, use the **Check** icon (the one with the checkmark):
 
 ![Stop Editing Cell vs code](../../static/img/checkmark-editing-vscodes.png)
 
-If you ever want to edit the cell again, use the "Edit Cell" button:
+To edit the cell again, use the **Edit Cell** icon:
 
 ![start editing markdown in vs code](../../static/img/starting-editing-vscodes.png)
 
-Finally, you can remove a cell at any time using the "Remove Cell" button:
+Finally, you can remove a cell at any time using the **Delete Cell** icon:
 
 ![remove cell in markdown](../../static/img/delete-markdown-cells.png)
 
-Note that the usual shortcuts (like Ctrl + Z) work perfectly in this environment too!
+Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
 <Infobox type="sidenote">
 
@@ -136,7 +136,7 @@ You can also use `CMD+Delete` to quickly remove a cell.
 
 Code cell blocks work similarly to Markdown blocks, and can be edited/saved/deleted in the same way.
 
-To create a new code block, use the "+ Code" button in the top left or center:
+To create a new code block, use the **+ Code** button in the top left or center:
 
 ![add new code block vs code](../../static/img/add-code-vscodes.png)
 
@@ -146,18 +146,20 @@ You can then freely add runnable code:
 
 ## Interactive Mode
 
-By default, our script will run in "Interactive Mode." This will run the script in a separate terminal window, rather than in the notebook itself.
+By default, our script will run in “Interactive Mode”. This will run the script in a separate terminal window, rather than in the notebook itself.
 
-This is great for, as the name implies, interactive scripts. Our script, however, just prints output and has no interactivity whatsoever. It would be great to see the output in the terminal!
+As the name implies, the interactive mode is great for interactive scripts. Our script, however, prints output and has no interactivity whatsoever.
 
-If we just try to run this as-is, we will experience the following:
+Wouldn’t it be great to see the output in the terminal?
+
+If we just try to run this as it is, we will experience the following:
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/hello-world-vscode-error.mp4" type="video/mp4" />
   <source src="/videos/hello-world-vscode-error.webm" type="video/webm" />
 </video>
 
-To fix this easily, we'll need to access the Configure foldout by clicking on the Configure button:
+To fix this easily, we'll need to access the Configure foldout by clicking on the **Configure** button:
 
 ![configure vs code](../../static/img/configure-vs-codes.png)
 
@@ -165,11 +167,11 @@ From here, we can easily disable interactive mode:
 
 ![disable interactive vs cose](../../static/img/disable-interactives.png)
 
-And our code block will now display its output exactly as in the previous guide:
+Our code block will now display its output exactly as below:
 
 ## Frontmatter
 
-[Frontmatter](https://jekyllrb.com/docs/front-matter/) is common occurrence in markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
+[Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
 
 ## Runme Settings for VS Code
 
@@ -179,9 +181,9 @@ In the VS Code settings, several configurable settings influence general Runme b
 
 ### Background Processes
 
-Suppose that you have a script that intends to run in the background (like a dev watcher). To simulate this now, we'll use the script `sleep 10000`.
+Suppose that you have a script that intends to run in the background (like a dev watcher). To simulate this, we'll use the script `sleep 10000`.
 
-You _could_ run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
+You *could* run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
@@ -204,7 +206,7 @@ As is demonstrated by the previous video, background tasks are delineated by the
 
 ![background task vs code](../../static/img/background-tasks.png)
 
-Background Tasks also get a "Stop Task" button to end their execution long after starting:
+Background Task also has a **Stop Task** button to end their execution long after starting:
 
 ![stop task in background in vs code](../../static/img/background-stop-tassk.png)
 
@@ -230,7 +232,7 @@ tets
 
 Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
 
-Please see the [integrations section](/integrations) to see more sophisticated use-cases of Runme or learn about all the [cell configuration options](/configuration) available to streamline the reading and running experience.
+Please see the [integrations section](/integrations) to see more sophisticated use cases of Runme or learn about all the[cell configuration options](/configuration) available to streamline the reading and running experience.
 
 ## Useful Tips & Tricks
 
@@ -246,6 +248,6 @@ Sometimes, you will want to see the file as a regular markdown file, and you don
 
 ### Notebook Explorer
 
-To help you navigate the markdown files in your project, Runme adds a super handy "Runme Notebooks" panel. Clicking any markdown file will open it in your code editor view:
+To help you navigate the Markdown files in your project, Runme adds a super handy **Runme Notebooks** panel. Clicking any markdown file will open it in your code editor view:
 
 ![notebook explorer](../../static/img/runme-noteboooks.png)
