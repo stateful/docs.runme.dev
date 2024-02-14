@@ -14,7 +14,9 @@ Runme strives to provide a great experience right out of the box. In this sectio
 
 <Infobox type="sidenote" title="Install Runme VS Code extension">
 
-If you haven't already installed Runme for VS Code, please complete the steps in [installation](/installation/installrunme) before proceeding.
+If you haven't already installed Runme for VS Code, please complete the steps in [installation](/install) before proceeding.
+
+/Users/macbookpro/Desktop/docs.runme.dev/docs/install.md
 
 </Infobox>
 
