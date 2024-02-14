@@ -37,4 +37,4 @@ jobs:
             test
 ```
 
-Now, you can define what should be done for building and testing your project in e.g. a `CONTRIBUTING.md` and have your contributors be able to run the same flows through the CLI, e.g. via: `runme run build test`.
+Now, you can define what should be done for building and testing your project for example a `CONTRIBUTING.md` and have your contributors be able to run the same flows through the CLI, for example, using: `runme run build test`.
