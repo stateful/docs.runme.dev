@@ -6,12 +6,20 @@ sidebar_position: 1
 title: Cell-level Options
 ---
 
+In this section, we will give you a step-by-step guide on how to run your Markdown file by each cell rather than execute your entire file at once.
+
+***Let’s dive in!***
+
 Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be:
 
-1. File-watchers for compilers & bundlers should run as background tasks
-2. Executors for Interactive and Non-interactive programs & scripts
-3. Human-centric output: JSON, text, images, etc
-4. Terminal visibility when no errors occur
+1. File-watchers for compilers & bundlers should run as background tasks.
+2. Executors for Interactive and Non-interactive programs & scripts.
+3. Human-centric output: JSON, text, images, etc.
+4. Terminal visibility when no errors occur.
+
+To modify the cell execution behavior, simply click Configure on the respective cell.
+
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](https://docs.runme.dev/configuration/reference#Cell-Options):
 
 To modify the cell execution behavior, simply click "Configure" on the respective cell.
 
@@ -19,6 +27,8 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.mp4" type="video/mp4" />
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
+
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
 
 ### Unnamed vs Named cells
 
@@ -31,9 +41,11 @@ These examples showcase improved ways you can use Runme in your documentation to
 If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
 
 ```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
-```sh { interactive=false name=echo-hello-world }
-echo hello world ```
+```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
+echo "hello world"
 ```
+
+```sh {"id":"01HPM6HZEJKM8PPG6T38RABV9A"}
 
 The above example uses the echo command to display the text "hello world" on the terminal. The context { interactive=false name=echo-hello-world } indicates that the command is intended for non-interactive execution and has been labeled accordingly.
 
@@ -48,8 +60,8 @@ echo hello world ```
 The entire [configuration schema](reference#Cell-Options): as an example
 
 ```sh {"id":"01HFPW3ES2Y7TXV064BT5F58VH"}
-```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }
-echo hello world ```
+```sh {"background":"false","closeTerminalOnSuccess":"false","id":"01HPM33PJFH2Q9R5SNAQX0HCSC","interactive":"true","name":"example"}
+echo "hello world"
 ```
 
 <Infobox type="sidenote">
@@ -84,7 +96,7 @@ It is very common to use file-watcher enabled compilers/bundlers (`npm start dev
 
 For any cell containing an instance of these commands be sure to tick the "background" cell setting. This will prevent execution from permanently blocking the notebook UX.
 
-![background task process in vs code](../../static/img/background-task-process.png)
+![background running task](../../static/img/backgroundrunme.png)
 
 Once ticked notice the "Background Task" label shows up in the cell status bar!
 
@@ -124,9 +136,9 @@ If a cell's commands do not require any input from a reader it might be a good f
 
 **Example**
 
-    ```sh { interactive=false }
-    openssl rand -base64 32
-    ```
+```sh {"id":"01HPM7GDWT2TW3BTCRYJT3BFFW","interactive":"false"}
+openssl rand -base64 32
+```
 
 <Infobox type="sidenote">
 
@@ -138,16 +150,16 @@ Please note that the Runme team is currently working on making output in both no
 
 If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
 
-![prompt user in vs code](../../static/img/interactive-prompt.png)
+![prompt user in vscode](../../static/img/promptenv-runme.png)
 
 **Default:** `true`
 
 **Example**
 
-    ```sh { promptEnv=true }
-    export SLEEP_SECS=0
-    sleep $SLEEP_SECS
-    ```
+```sh {"id":"01HPM880GBF2Y1SGKA92YF4WDZ","promptEnv":"true"}
+export SLEEP_SECS=0
+sleep $SLEEP_SECS
+```
 
 ### Terminal visibility post-execution
 
@@ -157,17 +169,18 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 
 **Example**
 
-    ```sh { closeTerminalOnSuccess=false }
-    docker ps | grep runme/demo:latest
-    ```
+```sh {"id":"01HPM835XP8SBJV14YGHQEEE3B"}
+  ```sh {"closeTerminalOnSuccess":"false","id":"01HPM7MC8MAJB2QCRVPVCN1FTT"}
+docker ps | grep runme/demo:latest
+```
 
 ### Human-friendly output
 
-JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them human friendly. The MIME type defaults to *text/plain*.
+JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
 
 ![Human-centric output](../../static/img/human-centric-output.png)
 
-See below for the list of supported MIME types!
+See in the [reference page](../configuration/reference.md) for the list of supported MIME types!
 
 ### Terminal Row
 
@@ -195,34 +208,35 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 ### Exclude Cell from Run All
 
-Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the "Run All" button to get set-up and running. However sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option you can configure this behavior.
+Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the Run All button to get set up and running. However, sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option, you can configure this behavior.
 
 **Default:** `false`
 
 **Example**
 
-    ```sh { excludeFromRunAll=true }
-    # Do something optional here
-    ```
+```sh {"id":"01HPM81V77G7ASW1F4BTFBX13C"}
+ ```sh {"excludeFromRunAll":"true","id":"01HPM7NRQYMD5T06M4KS6S2DWG"}
+ # Do something optional here
+```
 
 ### Run All Cells by Category
 
-If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as cell option. A cell can have one or multiple categories that are comma seperated.
+If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
 
 **Default:** `""`
 
 **Example**
 
-    ```sh { category=build }
+```sh {"id":"01HPM829M14ADVR9M6J7N9VF5Z"}
+  ```sh {"category":"build","id":"01HPM7Q4JQ5HVJ5KS2FJ7Q31SQ"}
     # Do something here
-    ```
-    
-    ```sh { category=build,deployment }
-    # Do something here
-    ```
+```
+
+```sh {"category":"deploy,build","id":"01HPM7SVZFS47KTGYDNVVVA711"}
+ls -la
+```
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/categories.mp4" type="video/mp4" />
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
-
