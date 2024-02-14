@@ -1,7 +1,12 @@
 ---
 runme:
   id: 01HFW523YXM0NQ9Z0ZZF87TBDV
-  version: v2.0
+  version: v3
+  document:
+    relativePath: vs-code.md
+  session:
+    id: 01HPKQ5TRA6XZ937MPVGZE83PF
+    updated: 2024-02-14 15:00:01+01:00
 sidebar_position: 2
 title: Runme for VS Code
 ---
