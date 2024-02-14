@@ -115,7 +115,7 @@ In most cases, you probably want to set the current working directory at the doc
     ```sh { cwd=.. }
     npm run watch #relative path
     ```
-    
+
     ```sh { cwd=/tmp }
     echo "absolute path" > dummy_file
     ```
@@ -180,7 +180,7 @@ JSON, text, images, etc. Not all cells’ output is plain text. Using the `mime
 
 ![Human-centric output](../../static/img/human-centric-output.png)
 
-See in the [reference page](../configuration/reference.md) for the list of supported MIME types!
+See in the [reference page](../configuration/reference) for the list of supported MIME types!
 
 ### Terminal Row
 
