@@ -3,34 +3,34 @@ sidebar_position: 3
 title: Shebang Support
 ---
 
-Runme enables users to complete step-by-step instructions with ease, making runbooks actually runnable. This makes it an ideal solution for runbooks, playbooks, and any documentation that requires users to complete runnable steps incrementally. Operational docs become more reliable and less susceptible to bitrot with the help of Runme.
 
-Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
-
-![Runme Shebang in Action](../../static/img/runme-shebang.png)
-
-### Why are Shebangs Important?
-
-Including a shebang line is crucial for specifying the interpreter for each code block. This allows for seamless execution of mixed-language scripts. The shebang line dictates to the platform which environment to use, ensuring that the code runs correctly and efficiently within the interface provided.
+Shebang is a versatile tool designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. Runme integrates Shebang to enable users to run the script of their choice directly from the markdown file in their preferred programming language.
 
 ## Prerequisites
 
-Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly [installed](/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
+Before proceeding with the integration of Shebang in [Runme](/installation/runmecli), ensure that Runme is properly [installed](/installation/runmecli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
-## Configuring Shebang in VS Code
+## Run your Code with Runme in VS Code Using Shebang
 
-Visual Studio Code (VS Code) provides a user-friendly interface for configuring Shebang. Follow the steps below to set up Shebang in VS Code.
+Runme gives you the power to run your code right inside your markdown file in VS Code without having to switch to a terminal. To do this, follow the steps below:
 
-You can switch to the programming language of your choice using the language interpreter feature in VS Code. This allows you to configure the environment for running code directly within the editor, making your coding experience much smoother and easier.
+1. Click on the **+Code icon.**
+2. Enter the script you would like to run.
+3. Click on the **Select Cell Language Mode** and select a language of your choice.
+4. Now click on **Execute Cell**
+
+## Configuring Shebang Custom Interpreter in VS Code
+
+Alternatively, if you would love to run your code using your specified interpreter version, you can achieve that using the custom interpreter feature. This allows you to configure the environment for running code directly within your editor, making your coding experience much smoother and easier.
 
 ![shebang-language-mood](../../static/img/shebang-language-mood.png)
 
-Follow the steps below to set up Shebang in VS Code:
+Follow the steps below to set up the Shebang custom interpreter in VS Code:
 
 1. Open your script (markdown file) in VS Code
-2. Click on "Configure" menu at the buttom right of your code block
-3. Click on "Advance"
-4. Set the path to the interpreter
+2. Click on **Configure** menu at the buttom right of your code block
+3. Click on **Advance**
+4. Set the path to the system interpreter of your choice.
 
 ![shebang-interpreter](../../static/img/shebang-interpreters.png)
 
@@ -38,7 +38,7 @@ Follow the steps below to set up Shebang in VS Code:
 6. Execute the Runme command:
 
 ```sh
-# short for "runme tui" is 
+# short for "runme tui" is
 runme
 ```
 
@@ -46,7 +46,9 @@ runme
 
 ## Examples of Shebang Lines for Different Languages
 
-Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("Hello, World!"), obtain the current date and time, and then concatenate these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
+We have attached some scripts in various languages as seen below to enable you to test how Runme works in your VS Code.
+
+Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("*Hello, World!*"), obtain the current date and time, and then combine these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
 
 ### Python
 
