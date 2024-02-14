@@ -79,7 +79,7 @@ If possible, always specify the language [according to the markdown standard](ht
   ```sh {"id":"01HPMBVRXTRHSD52YVAX4K648P"}
 echo "language identifier in fenced code block"
 ```
-```
+
 
 <Infobox type="warning">
 
@@ -115,7 +115,7 @@ In most cases, you probably want to set the current working directory at the doc
 
 ```sh {"id":"01HPMBQ04RSCN16GC0G96GVW67"}
 ```sh { cwd=.. "id":"01HP475WXX5PVV658023KQJFRE"}
-terraform init 
+terraform init
 terraform plan
 
 ```
@@ -123,10 +123,9 @@ terraform plan
 
 ```sh {"id":"01HPMBP1VR9D2VV9DQA1KD6K46"}
 ```sh { cwd=/tmp "id":"01HP475WXX5PVV658023KQJFRE"}
-terraform init 
+terraform init
 terraform plan
 
-```
 ```
 
 <Infobox type="warning">
@@ -241,9 +240,6 @@ If you have multiple workflows in a single markdown file you can categorize them
     # Do something here
 ```
 
-```sh {"category":"deploy,build","id":"01HPM7SVZFS47KTGYDNVVVA711"}
-ls -la
-```
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/categories.mp4" type="video/mp4" />
