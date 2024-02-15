@@ -7,6 +7,8 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 # How Runme CLI Works
 
+<Infobox type="sidenote" title="Install Runme">
+
 If you haven't already installed Runme CLI, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
 
 </Infobox>
@@ -20,7 +22,7 @@ runme
 
 ![Runme TUI Usage](../../static/img/runme-tui.gif)
 
-his allows you to quickly execute any script present in the README.
+This allows you to quickly execute any script present in the README.
 
 <Infobox type="warning" title="Warning!">
 
@@ -31,7 +33,7 @@ You can use the `--chdir` flag to alter the working directory or `--filename`
 </Infobox>
 
 ### Available commands
-
+e
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
 
 ```text {"id":"01HPPAVW5B3TBPS90ZE6EEXQ03"}
