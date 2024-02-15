@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: Getting Started
+title: Guide
 ---
 
 # Guide
