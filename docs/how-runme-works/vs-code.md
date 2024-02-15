@@ -108,25 +108,28 @@ You can then edit the markdown block directly:
 
 As shown in the image below, once you're done editing a block, use the **Check** icon (the one with the checkmark):
 
-![Stop Editing Cell vs code](../../static/img/checkmark-editing-vscodes.png)
+![Stop Editing Cell vs code](../../static/img/check-icon.png)
 
 To edit the cell again, use the **Edit Cell** icon:
 
-![start editing markdown in vs code](../../static/img/starting-editing-vscodes.png)
+
+![start editing markdown in vs code](../../static/img/editing-cell.png)
 
 Finally, you can remove a cell at any time using the **Delete Cell** icon:
 
-![remove cell in markdown](../../static/img/delete-markdown-cells.png)
+![remove cell in markdown](../../static/img/dell-cell.png)
 
 Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
-<Infobox type="sidenote">
+<Infobox type="Shortcuts">
 
-You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
 
-You can use Enter on its own to start editing a selected cell.
 
-You can also use `CMD+Delete` to quickly remove a cell.
+You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
+
+You can use `Enter` on its own to start editing a selected cell.
+
+You can also use `CMD+Delete` to quickly remove a cell.
 
 </Infobox>
 
@@ -136,7 +139,7 @@ Code cell blocks work similarly to Markdown blocks, and can be edited/saved/dele
 
 To create a new code block, use the **+ Code** button in the top left or center:
 
-![add new code block vs code](../../static/img/add-code-vscodes.png)
+![add new code block vs code](../../static/img/adding-code.png)
 
 You can then freely add runnable code:
 
@@ -167,6 +170,8 @@ From here, we can easily disable interactive mode:
 
 Our code block will now display its output exactly as below:
 
+![code-output-interactive](../../static/img/code-output-interactive.png)
+
 ## Frontmatter
 
 [Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
@@ -185,7 +190,8 @@ You *could* run this like other scripts, however, Runme supports a special "Ba
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
-![Background Processes in vs code](../../static/img/background-process-vs-codes.png)
+
+![Background Processes in vs code](../../static/img/background-process-vscode.png)
 
 <Infobox type="warning">
 
@@ -212,7 +218,7 @@ Background Task also has a **Stop Task** button to end their execution long afte
 
 Configuration fields like `background` and `interactive` are set using markdown's script metadata feature:
 
-![configuration of background vs code](../../static/img/config-background.png)
+![configuration of background vs code](../../static/img/runme-metedata.png)
 
 <Infobox type="warning">
 
