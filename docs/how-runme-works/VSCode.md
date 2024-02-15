@@ -65,7 +65,7 @@ Great! You can see the terminal output from each command beneath its respective 
 
 Wondering how you know when a command is finished executing? Look out for the checkmark in the bottom left:
 
-![checkmar in vs code](../../static/img/checkmark-vs-codes.jpg)
+![checkmar in vs code](../../static/img/check-icon.png)
 
 If the command fails, it will be an "X" mark instead!
 
@@ -114,11 +114,11 @@ As shown in the image below, once you're done editing a block, use the **Check**
 
 To edit the cell again, use the **Edit Cell** icon:
 
-![start editing markdown in vs code](../../static/img/starting-editing-vscodes.png)
+![start editing markdown in vs code](../../static/img/editing-cell.png)
 
 Finally, you can remove a cell at any time using the **Delete Cell** icon:
 
-![remove cell in markdown](../../static/img/delete-markdown-cells.png)
+![remove cell in markdown](../../static/img/dell-cell.png)
 
 Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
@@ -138,7 +138,7 @@ Code cell blocks work similarly to Markdown blocks, and can be edited/saved/dele
 
 To create a new code block, use the **+ Code** button in the top left or center:
 
-![add new code block vs code](../../static/img/add-code-vscodes.png)
+![add new code block vs code](../../static/img/adding-code.png)
 
 You can then freely add runnable code:
 
@@ -204,7 +204,8 @@ Now, when you run the script, it will be part of a long-running terminal session
 
 As is demonstrated by the previous video, background tasks are delineated by the "Background Task" label:
 
-![background task vs code](../../static/img/background-tasks.png)
+
+ ![background task vs code](../../static/img/backgroundrunme1.png)
 
 Background Task also has a **Stop Task** button to end their execution long after starting:
 
@@ -214,7 +215,7 @@ Background Task also has a **Stop Task** button to end their execution long afte
 
 Configuration fields like `background` and `interactive` are set using markdown's script metadata feature:
 
-![configuration of background vs code](../../static/img/config-background.png)
+![configuration of background vs code](../../static/img/runme-metedata.png)
 
 <Infobox type="warning">
 
