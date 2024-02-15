@@ -4,13 +4,13 @@ runme:
   version: v2.2
 ---
 
-# Install Runme on Vscode
+# Install Runme on VS Code
 
-In this section, we will guide you through installing Runme on Vscode.
+In this section, we will guide you through installing Runme on VS Code.
 
 Let's get started.
 
-## **Installing Runme on Vscode**
+## **Installing Runme on VS Code**
 
 To get started, open the `Extensions Tab` in your VS Code sidebar and search for **"Runme"**. The CLI is contained inside the extension.
 
@@ -84,4 +84,4 @@ You can also switch by just doing a right-click on the file and go to `"Open Wi
 
 ### **How it Works**
 
-When Runme is run as a web app, it replicates the user experience of VS Code. For the next steps, explore the [Getting Started](https://docs.runme.dev/getting-started) guide.
+When Runme is ran as a web app, it replicates the user experience of VS Code. For the next steps, explore the [Getting Started](https://docs.runme.dev/getting-started) guide.

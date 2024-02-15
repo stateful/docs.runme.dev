@@ -23,7 +23,7 @@ Whether you are a beginner getting started or an experienced user looking to set
 Before you dive right in, there are a few requirements needed to enable you install Runme.
 
 - Basic knowledge of Markdown
-- [Vscode](https://code.visualstudio.com/download) installed in your machine.
+- [VS Code](https://code.visualstudio.com/download) installed in your machine.
 - Basic knowledge of using the terminal
 
-These requirements are based on your preferred Runme client interface(CLI, Vscode or web)
+These requirements are based on your preferred Runme client interface(CLI, VS Code or web)
