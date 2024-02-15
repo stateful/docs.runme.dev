@@ -122,7 +122,9 @@ This command will prompt you to confirm the destruction of resources. Type **yes
 
 ## Terraform Workspaces
 
-Within your code cell you can set the directory structure of where you what your execute to be initiated from
+Within your code cell you can set the directory structure of where you whant your executable command to be initiated from
+
+![terraform structure](../../static/img/terraform-structure.png)
 
 - create workspace for production and staging:
 
@@ -131,12 +133,16 @@ Within your code cell you can set the directory structure of where you what your
 terraform workspace new production
 ```
 
+set your block to run from your `production` directory
+
 ```sh {"id":"01HPPVN5212VTQBJWMYWXX3NWE"}
 #staging
 terraform workspace new staging
 ```
 
-- Switch between workspaces:
+set your block to run from your `production` directory
+
+- Select between workspaces:
 
 ```sh {"id":"01HPPVN5219P79KAJ0ANQMRECT"}
 #production
@@ -167,4 +173,4 @@ terraform apply -var-file=terraform.tfvars
 
 **Conclusion:**
 
-Setting up Terraform to create an EC2 instance is a simple yet powerful way to manage your infrastructure as code. It provides repeatability and version control for your infrastructure, making it easier to manage and collaborate with others. Customize the Terraform configuration based on your specific requirements, and enjoy the benefits of automated infrastructure provisioning with Terraform.
+Terraform is a simple yet powerful way to manage your infrastructure as code. It provides repeatability and version control for your infrastructure, with runme it makes it easier to manage and collaborate with others. Customize the Terraform configuration based on your specific requirements, and enjoy the benefits of automated infrastructure provisioning with Terraform.
