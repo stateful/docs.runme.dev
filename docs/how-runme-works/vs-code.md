@@ -120,7 +120,7 @@ Finally, you can remove a cell at any time using the **Delete Cell** icon:
 
 Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
-<Infobox type="Shortcuts">
+<Infobox type="Sidenote">
 
 You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
 
