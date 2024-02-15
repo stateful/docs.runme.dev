@@ -15,7 +15,7 @@ Including a shebang line is crucial for specifying the interpreter for each code
 
 ## Prerequisites
 
-Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly [installed](/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
+Before proceeding with the integration of Shebang in [Runme](https://docs.runme.dev/install#runme-cli), ensure that Runme is properly [installed](https://docs.runme.dev/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
 ## Configuring Shebang in VS Code
 
@@ -38,7 +38,7 @@ Follow the steps below to set up Shebang in VS Code:
 6. Execute the Runme command:
 
 ```sh
-# short for "runme tui" is 
+# short for "runme tui" is
 runme
 ```
 
