@@ -28,5 +28,3 @@ Remember, cells can capture the output of commands in non-interactive mode!
 In this case, this can be used to get a list of the user's current registered projects with the Vercel platform.
 
 ![list projects in vercel](../../static/img/list-projects-vercel.png)
-
-![run hello world in vs code](../../static/img/run-hello-world.gif)
