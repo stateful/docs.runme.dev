@@ -1,7 +1,12 @@
 ---
 runme:
   id: 01HGAW03Y6QJQASC1QM0XC76P3
-  version: v2.0
+  version: v3
+  document:
+    relativePath: index.md
+  session:
+    id: 01HPNVHQQVNXPBQBXM3VTZ7BA7
+    updated: 2024-02-15 10:30:52+01:00
 sidebar_position: 1
 title: Home
 ---
