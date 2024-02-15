@@ -1,5 +1,4 @@
-
-
 # Getting Started
 
-Welcome to the Getting Started page! Whether you're new to our platform or looking to discover more about what runme offer, you've come to the right place. Our goal is to ensure you have a smooth and enjoyable experience, unlocking the full potential of our services from the get-go.
+
+Welcome to Runme! This is your starting line for a journey with us. Here, we'll guide you through the essentials, making sure you get the most out of our platform, easily and quickly. Let's dive in!
