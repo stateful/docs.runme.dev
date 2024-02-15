@@ -7,7 +7,7 @@ Alternatively, you can run the entire document in your Markdown file.
 
 > Runme does not just retain [Frontmatter](https://docs.runme.dev/getting-started/vs-code#frontmatter), it also supports top-level settings that will affect all cells in the document.
 
-### Set custom shell
+### **Set custom shell**
 
 ```yaml {"id":"01HPF4AYF8APQXC4YRBANMNA4H"}
 ---
@@ -19,7 +19,7 @@ shell: /bin/ksh
 ---
 ```
 
-### Current working directory
+### **Current working directory**
 
 It is not unusual to store docs in a sub-directory, e.g. `docs/`. It's often implied that commands need to run from the base directory. To reliably execute commands in this case it's handy to explicitly set a working directory in the frontmatter.
 

@@ -10,7 +10,7 @@ title: Reference
 
 Everything in one place.
 
-### Document Options
+### **Document Options**
 
 Frontmatter in yaml, json, or toml on top of markdown document.
 
@@ -20,7 +20,7 @@ Frontmatter in yaml, json, or toml on top of markdown document.
 | shell         | Overwrites shell with custom preference   | [system/user default]     |
 | skipPrompts   | Bypasses interactive prompts              | [system/user default]     |
 
-### Cell Options
+### **Cell Options**
 
 Metadata inside markdown's fenced code blocks.
 
@@ -45,7 +45,7 @@ This feature can be used to prevent [prompting](../configuration/document-level)
 
 </Infobox>
 
-### Supported MIME types
+### **Supported MIME types**
 
 Runme supports the standard VS Code MIME types alongside custom Runme MIME types.
 
