@@ -110,7 +110,8 @@ You can then edit the markdown block directly:
 
 As shown in the image below, once you're done editing a block, use the **Check** icon (the one with the checkmark):
 
-![Stop Editing Cell vs code](../../static/img/checkmark-editing-vscodes.png)
+![Stop Editing Cell vs code](../../static/img/check-icon.png)
+
 
 To edit the cell again, use the **Edit Cell** icon:
 
@@ -187,7 +188,8 @@ You *could* run this like other scripts, however, Runme supports a special "Ba
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
-![Background Processes in vs code](../../static/img/background-process-vs-codes.png)
+
+![background task vs code](../../static/img/backgroundrunme1.png)
 
 <Infobox type="warning">
 
