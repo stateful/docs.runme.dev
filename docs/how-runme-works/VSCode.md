@@ -22,8 +22,6 @@ If you haven't already installed Runme for VS Code, please complete the steps in
 
 You can get started in one click with the following badge:
 
-
-
 Simply follow the instructions provided by VS Code to get started in seconds:
 
 ![run commands in vs code](../../static/img/run-commands-vscode.gif)
@@ -65,7 +63,9 @@ Great! You can see the terminal output from each command beneath its respective 
 
 Wondering how you know when a command is finished executing? Look out for the checkmark in the bottom left:
 
-![checkmar in vs code](../../static/img/check-icon.png)
+
+
+![checkmar in vs code](../../static/img/checkmark-vs-codes.jpg)
 
 If the command fails, it will be an "X" mark instead!
 
@@ -111,7 +111,6 @@ You can then edit the markdown block directly:
 As shown in the image below, once you're done editing a block, use the **Check** icon (the one with the checkmark):
 
 ![Stop Editing Cell vs code](../../static/img/check-icon.png)
-
 
 To edit the cell again, use the **Edit Cell** icon:
 
@@ -188,7 +187,6 @@ You *could* run this like other scripts, however, Runme supports a special "Ba
 
 You can enable Background mode in the same foldout you configured Interactive mode:
 
-
 ![background task vs code](../../static/img/backgroundrunme1.png)
 
 <Infobox type="warning">
@@ -206,8 +204,7 @@ Now, when you run the script, it will be part of a long-running terminal session
 
 As is demonstrated by the previous video, background tasks are delineated by the "Background Task" label:
 
-
- ![background task vs code](../../static/img/backgroundrunme1.png)
+![background task vs code](../../static/img/backgroundrunme1.png)
 
 Background Task also has a **Stop Task** button to end their execution long after starting:
 
