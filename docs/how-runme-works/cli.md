@@ -3,7 +3,7 @@ runme:
   id: 01HMXY7YB2QZ7XVYMRXX0H1B8M
   version: v2.2
 ---
-import Infobox from "../../src/components/Infobox.tsx"
+
 # How Runme CLI Works
 
 <Infobox type="sidenote" title="Install Runme">
