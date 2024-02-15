@@ -3,8 +3,10 @@ runme:
   id: 01HFW523YXM0NQ9Z0ZZF87TBDV
   version: v2.0
 sidebar_position: 2
-title: Runme on Vscode
+title: Runme for Vscode
 ---
+
+import Infobox from "../../src/components/Infobox.tsx"
 
 # Runme on Vscode
 

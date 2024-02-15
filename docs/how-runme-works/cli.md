@@ -7,15 +7,13 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 # How Runme CLI Works
 
-<Infobox type="sidenote" title="Install Runme">
-
 If you haven't already installed Runme CLI, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
 
 </Infobox>
 
 Runme has a nice TUI that you can use simply like so:
 
-```sh
+```sh {"id":"01HPPAVW5BG0X6HD37WMG7AAQW"}
 # short for "runme tui"
 runme
 ```
@@ -36,7 +34,7 @@ You can use the `--chdir` flag to alter the working directory or `--filename`
 
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
 
-```text
+```text {"id":"01HPPAVW5B3TBPS90ZE6EEXQ03"}
 Runme executes commands inside your runbooks, docs, and READMEs. Parses commands
 directly from markdown files to make them executable.
 
@@ -85,13 +83,13 @@ Flags:
 
 By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
 
-```sh
+```sh {"id":"01HPPAVW5BXK8SRZR0AP79NDTJ"}
 runme ls --filename README.md --chdir ../..
 ```
 
 You can also specify a full path in `filename`:
 
-```sh
+```sh {"id":"01HPPAVW5BDRTV28XRY8Y3F8KC"}
 runme ls --filename ../../README.md
 ```
 
