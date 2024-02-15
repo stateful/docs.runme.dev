@@ -6,7 +6,7 @@ runme:
 
 # Install Runme on Vscode
 
-In this section, we will guide you through installing Runme on Vscode. 
+In this section, we will guide you through installing Runme on Vscode.
 
 Let's get started.
 
@@ -14,7 +14,8 @@ Let's get started.
 
 To get started, open the `Extensions Tab` in your VS Code sidebar and search for **"Runme"**. The CLI is contained inside the extension.
 
-!https://docs.runme.dev/assets/images/install-44dd79d42cdda47807552f51c15a8170.gif
+
+![install runme gif](../../static/img/install.gif)
 
 Alternatively, you can go to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and click the green `Install` button.
 
@@ -22,13 +23,14 @@ That's it!
 
 Now, whenever you open a Markdown file (**`*.md`** or **`*.mdx`**), it will open as a Runme notebook.
 
-!https://docs.runme.dev/assets/images/runme-for-vscode-397776f424a116b7869b61b389f12912.png
+![Overview of Runme for VS Code](../../static/img/runme-for-vscode.png)
 
 ### Bleeding Edge Features[](https://docs.runme.dev/install#bleeding-edge-features)
 
 A pre-release version of Runme is offered for curious developers who want to try our latest enhancements to the extension. Head to the extension configuration and click “**Switch to Pre-release Version**” to access it.
 
-!https://docs.runme.dev/assets/images/runme-in-vscode-57924fd289067e9d311951079afd66a0.png
+
+![Find runme in VS Codet](../../static/img/bleed-edge-feature.png)
 
 [](https://docs.runme.dev/install#default-markdown-viewer)
 
@@ -78,7 +80,7 @@ Now, when you open any `.md` or `.mdx` file, it will default to the Runme viewer
 
 You can also switch by just doing a right-click on the file and go to `"Open With ..."`, e.g.:
 
-!https://docs.runme.dev/assets/images/switch-notebook-viewers-c6af89c194bd0ac3a404069ed4634fdb.gif
+![Find runme in vs code](../../static/img/switch-notebook-viewers.gif)
 
 ### How it Works[](https://docs.runme.dev/install#how-it-works)
 

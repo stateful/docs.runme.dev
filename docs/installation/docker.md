@@ -4,7 +4,7 @@ runme:
   version: v2.2
 ---
 
-# Runme via Docker
+# # Install Runme with Docker
 
 If you prefer, you can run Runme using Docker. This will enable you containerize your application, which in this case is in a markdown format, and allows you to start up the application within your cloud computing platforms, [CI/CD pipeline](https://docs.runme.dev/integrations/github-actions-workflow) or test environment locally.
 
