@@ -8,7 +8,7 @@ import EnvironmentOptions from "../../src/components/EnvironmentOptions.tsx"
 
 # How Runme Works
 
-Runme strives to provide a great experience right out of the box. Please continue to learn how to get the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
+Runme aims to deliver an excellent experience from the very beginning. To learn how to make the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
 
 In which environment do you like to work the most?
 
