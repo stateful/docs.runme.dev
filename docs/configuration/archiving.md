@@ -28,7 +28,7 @@ To access [saved](../configuration/auto-save) cells, click on the [share button]
 
 ## Archiving via VS code Extension
 
-To access the saved cells you want to archive via [VS code](../getting-started/vs-code), Click on the Runme icon. a view will pop-up to access the Runme Cloud.
+To access the saved cells you want to archive via [VS code](https://docs.runme.dev/getting-started/vs-code), Click on the Runme icon. a view will pop-up to access the Runme Cloud.
 
 ### Initiating Archiving
 
