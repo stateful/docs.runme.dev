@@ -108,11 +108,11 @@ Once ticked notice the "Background Task" label shows up in the cell status bar!
 npm run watch
 ```
 
-```sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
-
 ### Cell's current working directory
 
 In most cases, you probably want to set the current working directory at the document-level, however, it is possible to set it per cell.
+
+```sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
 
 ```sh {"id":"01HPMBQ04RSCN16GC0G96GVW67"}
 ```sh { cwd=.. "id":"01HP475WXX5PVV658023KQJFRE"}
