@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: How Runme Works
 ---
 
@@ -8,7 +8,7 @@ import EnvironmentOptions from "../../src/components/EnvironmentOptions.tsx"
 
 # How Runme Works
 
-Runme aims to deliver an excellent experience from the very beginning. To learn how to make the most out of our markdown docs. If you haven't already installed Runme, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
+Experience the best markdown docs with Runme! To unlock the full potential of our markdown documentation, we invite you to explore the following guidance. If you haven't already installed Runme, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
 
 In which environment do you like to work the most?
 

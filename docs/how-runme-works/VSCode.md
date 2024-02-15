@@ -8,7 +8,7 @@ title: Runme for VS Code
 
 import Infobox from "../../src/components/Infobox.tsx"
 
-# Runme on Vscode
+# Runme on VS Code
 
 Runme strives to provide a great experience right out of the box. In this section we we will guide you through making the most of your markdown docs with Runme.
 

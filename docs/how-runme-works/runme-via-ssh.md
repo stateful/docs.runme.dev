@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Runme via SSH
+# Runme for VS Code Remote Development 
 
 Runme is committed to delivering an exceptional experience right from the start. By using Runme, and [VS Code's native-SSH](https://code.visualstudio.com/docs/remote/ssh) capabilities you can easily connect to an instance and carry out specific instructions using markdown docs. Before exploring various ways to utilize Runme through SSH, it's important to make sure that you have installed Runme for [VS Code](https://docs.runme.dev/install#runme-for-vs-code) or [CLI](https://docs.runme.dev/getting-started/cli) by referring to the [installation](https://docs.runme.dev/getting-started/) guide, as well as ensuring that you have access to the remote server you need.
 
@@ -27,8 +27,6 @@ To set up your SSH key configuration, follow the steps below:
   <source src="/videos/runme-illustration.webm" type="video/webm" />
 </video>
 
-
-
 6. Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) on the remote server and leverage the notebook UX to execute what you want.
 
 <video autoPlay loop muted playsInline controls>
@@ -36,14 +34,11 @@ To set up your SSH key configuration, follow the steps below:
   <source src="/videos/install-runme-on-server.webm" type="video/webm" />
 </video>
 
-
-
-
 7. Create a block of code called `command` to execute the desired actions on the remote host.
 
 ### Example: how to use Runme attached to SSH host
 
-```sh
+```sh {"id":"01HPQBHPSYHSX2F6SFBE7RCNT4"}
 mkdir Vsc
 cd Vsc
 touch example.txt
@@ -64,7 +59,7 @@ To execute commands on a remote server using Runme, follow these steps:
 
 ### Example: how to use ssh inside of notebooks
 
-```sh
+```sh {"id":"01HPQBHPSY79T1NSR3P7E27BER"}
 ssh user@remote.server.com 'bash -s' < script.sh
 ```
 
@@ -74,7 +69,7 @@ By following these steps and using SSH keys for authentication, you can enhance 
 
 5. Execute the Runme command:
 
-```sh
+```sh {"id":"01HPQBHPSYNE6C9RPE3KXC51P7"}
 # short for "runme tui" is
 runme
 ```
@@ -89,7 +84,7 @@ If you need to securely copy files between your local machine and the remote ser
 
 Setup [SSH Connection](https://docs-runme-56vudiq08-stateful.vercel.app/getting-started/runme-via-ssh#key-based-authentication)
 
-```sh
+```sh {"id":"01HPQBHPSYM2Z33GX8FR4RBGJ7"}
 scp /path/to/bash/script user@host:/path/on/remote/server
 ssh user@host 'bash /path/on/remote/server/script.sh'
 ```

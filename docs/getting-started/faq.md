@@ -19,9 +19,9 @@ Currently, we don't have specific plans to charge for Runme as it's available un
 
 Our goal is to create a community around addressing documentation challenges and maintaining a trusted relationship with our users. We want to assure you that we won't monetize or sell users' data under any circumstances. Potential monetization opportunities may arise from providing additional value in terms of team collaboration, discoverability, or auditing features for companies using Runme with internal repositories. The core functionality of Runme, such as running runbooks, will remain available without the need for proprietary products from Runme, Stateful, or third parties.
 
-## **What is Runme Default editor in Vscode?**
+## **What is Runme Default editor in VS Code?**
 
-VSCode is one of Runme's client interfaces for running your markdown files. To use Runme in VSCode, you need to install the Runme Extension, which allows you to create and manage interactive runbooks directly within your code editor. With this extension, you can perform a range of runbook operations, such as editing, saving output, creating and updating documents, selecting custom interpreters and supported languages, debugging, and more—all integrated into your VSCode environment. Once you have installed the Runme VSCode extension, every markdown file in your code editor will automatically be displayed as a runbook.
+VS Code is one of Runme's client interfaces for running your markdown files. To use Runme in VS Code, you need to install the Runme Extension, which allows you to create and manage interactive runbooks directly within your code editor. With this extension, you can perform a range of runbook operations, such as editing, saving output, creating and updating documents, selecting custom interpreters and supported languages, debugging, and more—all integrated into your VS Code environment. Once you have installed the Runme VS Code extension, every markdown file in your code editor will automatically be displayed as a runbook.
 
 ## **What differentiates Runme from a common Jupyter Notebook?**
 
