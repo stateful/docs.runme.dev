@@ -40,7 +40,7 @@ Use the __workflow_dispatch__ event to specify your manually triggered workflow,
 
 See an example of a manually triggered workflow:
 
-```sh
+```sh {"id":"01HPQF8GSXHVPD0MRARK0BY5EF"}
 name: My manual worfklow
 on:
   workflow_dispatch:
@@ -126,4 +126,4 @@ If you click Open workflow run, a browser window will be opened with the detaile
 
 ![trigger github action](../../static/img/github-3.png)
 
-In a future version of Runme, we plan to display workflow run details in real-time. We think Runme is a great companion of the official [GitHub Actions extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions).
+In the next Runme version release, we will display workflow run details in real-time. We believe Runme is a great companion to the official [GitHub Actions extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions).
