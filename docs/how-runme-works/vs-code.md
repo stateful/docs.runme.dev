@@ -6,8 +6,6 @@ sidebar_position: 2
 title: Runme on Vscode
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
-
 # Runme on Vscode
 
 Runme strives to provide a great experience right out of the box. In this section we we will guide you through making the most of your markdown docs with Runme.
@@ -112,7 +110,6 @@ As shown in the image below, once you're done editing a block, use the **Check**
 
 To edit the cell again, use the **Edit Cell** icon:
 
-
 ![start editing markdown in vs code](../../static/img/editing-cell.png)
 
 Finally, you can remove a cell at any time using the **Delete Cell** icon:
@@ -122,8 +119,6 @@ Finally, you can remove a cell at any time using the **Delete Cell** icon:
 Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
 <Infobox type="Shortcuts">
-
-
 
 You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
 
@@ -189,7 +184,6 @@ Suppose that you have a script that intends to run in the background (like a dev
 You *could* run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
 
 You can enable Background mode in the same foldout you configured Interactive mode:
-
 
 ![Background Processes in vs code](../../static/img/background-process-vscode.png)
 
