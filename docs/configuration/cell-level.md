@@ -57,9 +57,8 @@ echo hello world
 
 The entire [configuration schema](reference#Cell-Options): as an example
 
-```md {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
+```sh {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
 
-```sh {"id":"01HFPW3ES2Y7TXV064BT5F58VH"}
 ```sh {"background":"false","closeTerminalOnSuccess":"false","id":"01HPM33PJFH2Q9R5SNAQX0HCSC","interactive":"true","name":"example"}
 echo "hello world"
 ```
@@ -114,20 +113,15 @@ In most cases, you probably want to set the current working directory at the doc
 
 ```sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
 
-```sh {"id":"01HPMBQ04RSCN16GC0G96GVW67"}
 ```sh { cwd=.. "id":"01HP475WXX5PVV658023KQJFRE"}
 terraform init
-terraform plan
 
 ```
 
 ```sh {"id":"01HPPF1PRAWK6WV432SB6KVF6G"}
 
-```sh {"id":"01HPMBP1VR9D2VV9DQA1KD6K46"}
-```sh { cwd=/tmp "id":"01HP475WXX5PVV658023KQJFRE"}
-terraform init
+```sh {"cwd":"/tmp","id":"01HPQ8F2307NFJR3WV1EJRJ0B8"}
 terraform plan
-
 ```
 
 <Infobox type="warning">

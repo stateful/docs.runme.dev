@@ -92,7 +92,7 @@ echo $fullGreeting
 
 To use Ruby, you need to add the path to the Ruby interpreter, which is ***/usr/bin/ruby***, in the advanced section of your configuration in your code block.
 
-```sh {"id":"01HPPEWMR0WHY93Q0MVFQ4YHS8"}
+```ruby {"id":"01HPPEWMR0WHY93Q0MVFQ4YHS8"}
 # Define a variable for the greeting
 greeting = "Hello, World!"
 
@@ -132,7 +132,7 @@ echo $fullGreeting;
 
 To use Node.js, you need to add the path to the node interpreter, which is ***/usr/bin/node***, in the advanced section of your configuration in your code block.
 
-```sh {"id":"01HPPEWMR03X1RNX68H4G28T6A"}
+```json {"id":"01HPPEWMR03X1RNX68H4G28T6A"}
 // Define a variable for the greeting
 const greeting = "Hello, World!";
 
