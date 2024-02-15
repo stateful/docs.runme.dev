@@ -40,7 +40,7 @@ Use the __workflow_dispatch__ event to specify your manually triggered workflow,
 
 See an example of a manually triggered workflow:
 
-```sh {"id":"01HPQF8GSXHVPD0MRARK0BY5EF"}
+```sh {"id":"01HPP31Z4E96F3MPFKBZNXWKAM"}
 name: My manual worfklow
 on:
   workflow_dispatch:
