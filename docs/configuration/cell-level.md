@@ -55,9 +55,9 @@ Try out the previous command
 echo hello world
 ```
 
-```md {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
-
 The entire [configuration schema](reference#Cell-Options): as an example
+
+```md {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
 
 ```sh {"id":"01HFPW3ES2Y7TXV064BT5F58VH"}
 ```sh {"background":"false","closeTerminalOnSuccess":"false","id":"01HPM33PJFH2Q9R5SNAQX0HCSC","interactive":"true","name":"example"}
