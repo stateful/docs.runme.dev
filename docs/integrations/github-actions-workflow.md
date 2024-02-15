@@ -7,11 +7,11 @@ import Infobox from "../../src/components/Infobox.tsx"
 
 Runme offers a convenient GitHub action that seamlessly integrates the tool into your CI/CD pipeline. By re-using the workflows your contributors use in CI/CD, you can ensure that your contribution guidelines are up-to-date and still relevant.
 
-### Setup
+### **Setup**
 
 In `.github/workflows/test.yaml` create a new file with the following contents:
 
-```sh
+```sh {"id":"01HPP31K68R699TBAS603S57DG"}
 name: Test Changes
 
 on: [push, pull_request]
