@@ -8,7 +8,34 @@ title: Home
 
 import Infobox from "../src/components/Infobox.tsx"
 
-# **Why Runme?**
+# **Quick Start**
+
+If you are of the kind who likes to jump in head first. Below's a quick start guide to launch into Runme's self-hosted web UX.
+
+## **MacOS**
+
+```sh
+$ brew install runme && runme open
+```
+
+## **Linux & Windows**
+
+```sh
+$ npx runme open
+```
+
+Make sure to confirm the prompts and you should be dropped into the Runme web interface at `http://127.0.0.1:8080`. Go ahead and open any abitrary markdown document as notebook or open the terminal to test-drive the `runme` CLI. While the UI might remind you of VS Code, it's a self-hosted web app. More information please see [Runme for Web](/getting-started/web).
+
+![Runme for Web](../static/img/runme-web.png)
+
+<br />
+<Infobox type="sidenote" title="Keep going!">
+
+If you want to learn more about Runme and ideas behind, please continue reading below.
+
+</Infobox>
+
+## **Why Runme?**
 
 Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
 
