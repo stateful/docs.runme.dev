@@ -12,7 +12,7 @@ The Runme CLI is ideal for power users who want to run markdown documentation fr
 
 ![cli](https://docs.runme.dev/assets/images/terminal-5976b3d0a55401df67e53b88a6391886.png)
 
-### On MacOS[](https://docs.runme.dev/install#on-macos)
+### **On MacOS**
 
 The easiest way on MacOS is to use [Homebrew](https://brew.sh/):
 
@@ -26,7 +26,7 @@ Install Runme
 brew install runme
 ```
 
-### On Windows[](https://docs.runme.dev/install#on-windows)
+### **On Windows **
 
 On Windows, we distribute the binary through [Scoop.sh](https://scoop.sh/):
 
@@ -37,7 +37,7 @@ scoop install stateful/runme
 
 ```
 
-### Other Platforms[](https://docs.runme.dev/install#other-platforms)
+### **Other Platforms**
 
 Alternatively, check out Runme's [releases](https://github.com/stateful/runme/releases) and select a binary for your operating system. Let us know [on Discord](https://discord.gg/runme) if you have a different preferred distribution mechanism.
 
@@ -49,13 +49,13 @@ go install github.com/stateful/runme@latest
 
 If you don't have Go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
 
-### Download Binaries directly[](https://docs.runme.dev/install#download-binaries-directly)
+### **Download Binaries directly**
 
 You can find a binary for your `OS/arch` on our [releases page](https://github.com/stateful/runme/releases). Let us know on [Discord](https://discord.gg/runme) if you have a preferred distribution mechanism.
 
 See [the doc page on the cli](https://docs.runme.dev/install#runme-cli) for CLI installation instructions.
 
-### Basic Usage[](https://docs.runme.dev/install#basic-usage)
+### **Basic Usage**
 
 Runme has a nice TUI that you can use simply like so:
 
@@ -103,7 +103,7 @@ By default, Runme will try to open a `Readme.md` file in your current work dir
 runme ls --filename SUPPORT.md --chdir ./.github
 ```
 
-### Running Commands Directly[](https://docs.runme.dev/install#running-commands-directly)
+### **Running Commands Directly**
 
 The TUI is nice, but what if you just want to run a specific command quickly?
 

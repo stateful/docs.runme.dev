@@ -10,7 +10,7 @@ In this section, we will guide you through installing Runme on Vscode.
 
 Let's get started.
 
-## Installing Runme on Vscode
+## **Installing Runme on Vscode**
 
 To get started, open the `Extensions Tab` in your VS Code sidebar and search for **"Runme"**. The CLI is contained inside the extension.
 
@@ -25,7 +25,7 @@ Now, whenever you open a Markdown file (**`*.md`** or **`*.mdx`**), it will open
 
 ![Overview of Runme for VS Code](../../static/img/runme-for-vscode.png)
 
-### Bleeding Edge Features[](https://docs.runme.dev/install#bleeding-edge-features)
+### **Bleeding Edge Features**
 
 A pre-release version of Runme is offered for curious developers who want to try our latest enhancements to the extension. Head to the extension configuration and click “**Switch to Pre-release Version**” to access it.
 
@@ -36,7 +36,7 @@ A pre-release version of Runme is offered for curious developers who want to try
 
 If you don't see this option, make sure your VS Code is updated to at least version `1.63.0`.
 
-### Default Markdown Viewer
+### **Default Markdown Viewer**
 
 Installing the VS Code Runme extension just like every other VS Code extension, open any `.md` / `.mdx` file in VS Code with commands, then click to run them (and much more). Then go create your own custom runnable markdown files! If you like to use Runme as your default markdown file viewer in VS Code, follow these steps:
 
@@ -56,7 +56,7 @@ or set the following in your `.vscode/settings.json` file of your project:
 // ...
 ```
 
-### Default Markdown Viewer
+### **Default Markdown Viewer**
 
 To use Runme as your default markdown file viewer in VS Code, follow these steps:
 
@@ -82,6 +82,6 @@ You can also switch by just doing a right-click on the file and go to `"Open Wi
 
 ![Find runme in vs code](../../static/img/switch-notebook-viewers.gif)
 
-### How it Works[](https://docs.runme.dev/install#how-it-works)
+### **How it Works**
 
 When Runme is run as a web app, it replicates the user experience of VS Code. For the next steps, explore the [Getting Started](https://docs.runme.dev/getting-started) guide.
