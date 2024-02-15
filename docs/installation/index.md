@@ -12,9 +12,9 @@ title: Installation
 
 Runme provides multiple client interfaces that enable users to interact with Runme’s kernel. You can install Runme based on your preferred client interface. These client interfaces include:
 
-- CLI for the terminal, notebook,
-- editor integration in VS Code,
-- self-hosted web app version
+- [CLI for the terminal, notebook](https://docs.runme.dev/getting-started/cli),
+- [editor integration in VS Code](https://docs.runme.dev/getting-started/vs-code),
+- [self-hosted web app version](https://docs.runme.dev/getting-started/web)
 
 Whether you are a beginner getting started or an experienced user looking to set up Runme for your workflow, this section will provide you with step-by-step instructions and best practices to ensure a smooth installation process.
 
