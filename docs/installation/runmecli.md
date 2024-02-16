@@ -26,7 +26,7 @@ Install Runme
 brew install runme
 ```
 
-### **On Windows **
+### **On Windows**
 
 On Windows, we distribute the binary through [Scoop.sh](https://scoop.sh/):
 
