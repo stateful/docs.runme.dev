@@ -4,6 +4,16 @@
       "source": "/faq",
       "destination": "/getting-started/faq",
       "permanent": true
+    },
+    {
+      "source": "/features",
+      "destination": "/getting-started/features",
+      "permanent": true
+    },
+    {
+      "source": "/install",
+      "destination": "/installation",
+      "permanent": true
     }
   ]
 }
