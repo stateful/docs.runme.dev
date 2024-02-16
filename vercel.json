@@ -14,6 +14,36 @@
       "source": "/install",
       "destination": "/installation",
       "permanent": true
+    },
+    {
+      "source": "/Guide",
+      "destination": "/guide",
+      "permanent": true
+    },
+    {
+      "source": "/Guide/terraform",
+      "destination": "/guide/terraform",
+      "permanent": true
+    },
+    {
+      "source": "/Guide/devcontainer",
+      "destination": "/guide/devcontainer",
+      "permanent": true
+    },
+    {
+      "source": "/how-runme-works/vs-code",
+      "destination": "/how-runme-works/vscode",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/cli",
+      "destination": "/how-runme-works/cli",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/cli",
+      "destination": "/how-runme-works/cli",
+      "permanent": true
     }
   ]
 }
