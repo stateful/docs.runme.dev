@@ -5,7 +5,7 @@ title: FAQ
 
 # Frequently Asked Questions
 
-## **Runme and stateful**
+## **Runme and Stateful**
 
 Runme was developed by the venture-backed company Stateful, Inc. Runme ws built as an open source technology to to tackle the persistent issues of bitrot and outdated developer and operator documentation. Runme serves as an effective platform for running interactive runbooks in markdown files, supporting scripting and pipelines. We believe in open-source software and intend for Runme to continue to be offered as such to deliver a powerful solution to the community.
 
