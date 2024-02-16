@@ -230,7 +230,7 @@ tets
 
 ## Great work!
 
-Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
+Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/docs.runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
 
 Please see the [integrations section](/integrations) to see more sophisticated use cases of Runme or learn about all the[cell configuration options](/configuration) available to streamline the reading and running experience.
 

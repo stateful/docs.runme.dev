@@ -33,7 +33,7 @@ Runme's interactive documentation lets you easily integrate terraform commands i
    Install Terraform on your local machine. You can download the latest version from the [official Terraform website.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 3. Runme Installation:
-   Install runme on your local machine. You can install runme from the [official page](https://docs.runme.dev/install)
+   Install runme on your local machine. You can install runme from the [official page](https://docs.runme.dev/installation)
 
 here is an example of how to create an ec2 with terraform via runme
 

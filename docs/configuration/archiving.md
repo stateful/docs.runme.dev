@@ -30,7 +30,7 @@ As earlier mentioned, to archive an output it must first be saved. You can acces
 
 ## **Archiving via VS Code Extension**
 
-To access the saved cells you want to archive via [VS Code](https://docs.runme.dev/getting-started/vs-code), Click on the Runme icon. a view will pop-up to access the Runme Cloud.
+To access the saved cells you want to archive via [VS Code](https://docs.runme.dev/how-runme-works/vscode), Click on the Runme icon. a view will pop-up to access the Runme Cloud.
 
 1. Access the saved cells you want to archive via VS Code, Click on the Runme icon. A view will pop up to access the Runme Cloud.
 2. Within the view, select the designated archive option.

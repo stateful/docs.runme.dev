@@ -32,7 +32,7 @@ runme:
 
 To change the Lifecycle Identity feature in Runme, follow these steps:
 
-* Navigate to Runme's [Extension Settings](https://docs.runme.dev/getting-started/vs-code#runme-settings-for-vs-code) on the your [VS Code](https://docs.runme.dev/installation/installrunme). click on the “settings” icon and select “Extension Settings”. The Runme extension can be found in the extension toolbar at the left side on your screen.
+* Navigate to Runme's [Extension Settings](https://docs.runme.dev/how-runme-works/vscode#runme-settings-for-vs-code) on the your [VS Code](https://docs.runme.dev/installation/installrunme). click on the “settings” icon and select “Extension Settings”. The Runme extension can be found in the extension toolbar at the left side on your screen.
 * Next, choose the tracking level by selecting the document you wish to enable lifecycle identity tracking.
 
 ![lifecycle](../../static/img/lifecycle-identity1.png)
