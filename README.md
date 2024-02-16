@@ -1,12 +1,35 @@
+---
+runme:
+  id: 01HPS63DBFZ40KX2WT6H287DAC
+  version: v3
+---
+
 # docs.runme.dev
 
 This is the primary documentation website for Runme, located at docs.runme.dev. It primarily serves markdown using [Docusaurus 2](https://docusaurus.io/) to help runme users find installation, configuration, features, intergrations, faq and other information about using or contributing to Runme the open source project (runme.dev).
+
+### Check for broken links
+
+```sh {"id":"01HPS5X3F7947CR1D70Y6MHWH3"}
+$ npm install broken-link-checker -g
+```
+
+Run it against production site.
+
+```sh {"id":"01HPS5VV6PQV280R8XVCJWY9TH"}
+$ rm -f links.log; npx blc https://docs.runme.dev -ro > links.log 2>&1
+$ grep "HTTP_404" links.log
+```
+
+```sh {"id":"01HPS5ZD9VAJA60MJWEACJ04W5"}
+$ cat links.log | grep -v "https://github.com" | grep -v "https://marketplace" | grep "HTTP_404"
+```
 
 ### Installation
 
 Install all the dependencies using npm.
 
-```sh { name=npm-install }
+```sh {"id":"01HPS5TSQ0VYD6QXQZEPJPZ60A","name":"npm-install"}
 npm install
 ```
 
@@ -14,7 +37,7 @@ npm install
 
 When developing locally we remove the build directory to avoid any confusion and run the docusaurus server.
 
-```sh { name=npm-run-start background=true }
+```sh {"background":"true","id":"01HPS5TSQ00E1RC31EMBG5W9WE","name":"npm-run-start"}
 rm -rf build/
 npm run start
 ```
@@ -25,7 +48,7 @@ Most changes are reflected live without having to restart the server.
 
 To build the website locally, or to test/preview the build process that will run in CI.
 
-```sh { name=npm-run-build }
+```sh {"id":"01HPS5TSQ025AQBEY5C5R7BQK4","name":"npm-run-build"}
 npm run build
 ```
 
