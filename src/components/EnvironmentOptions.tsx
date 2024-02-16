@@ -4,7 +4,7 @@ import { TerminalIcon, VSCodeIcon, GlobeIcon, SSHIcon } from "./Icons";
 const options = [
   {
     title: "Runme VS Code Extension",
-    href: "/how-runme-works/vs-code",
+    href: "/how-runme-works/vscode",
     icon: VSCodeIcon,
   },
   {
