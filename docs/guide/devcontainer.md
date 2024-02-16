@@ -73,7 +73,7 @@ This will execute your Python app within the dev container.
 
 ## **Setting up Runme on VSCode**
 
-Installing Runme in your VS Code is one of the various ways you can utilize the awesome features of Runme. To set up Runme on VS Code, follow our [installation guide.](https://docs.runme.dev/install#runme-for-vs-code)
+Installing Runme in your VS Code is one of the various ways you can utilize the awesome features of Runme. To set up Runme on VS Code, follow our [installation guide.](https://docs.runme.dev/installation/installrunme)
 
 ## **Running development tasks using Runme within your container**
 
