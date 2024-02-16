@@ -47,9 +47,9 @@ You might wonder why we have chosen to create a separate Session Outputs file in
 While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the de-/serialization process.
 
 <br />
-<Infobox type="sidenote" title="Keep going!">
+<Infobox type="warning" title="output session">
 
-When the autosave feature is enabled, session outputs are automatically saved in a separate file. It is strongly recommended that you do not deploy these files to your version control. You can either manually delete the files during deployment or you can `.gitignore` the files to ensure that it doesn't get deployed.
+ It is strongly recommended that you do not deploy the session output files to your version control. You can either manually delete the files during deployment or you can `.gitignore` the files to ensure that it doesn't get deployed.
 
 </Infobox>
 
