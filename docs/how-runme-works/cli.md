@@ -8,7 +8,7 @@ runme:
 
 <Infobox type="sidenote" title="Install Runme">
 
-If you haven't already installed Runme CLI, please complete the steps in [installation](https://docs.runme.dev/install#runme-cli) before proceeding.
+If you haven't already installed Runme CLI, please complete the steps in [installation](https://docs.runme.dev/installation/runmecli) before proceeding.
 
 </Infobox>
 

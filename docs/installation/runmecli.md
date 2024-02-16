@@ -6,7 +6,7 @@ runme:
 
 # Install Runme on CLI
 
-## [](https://docs.runme.dev/install#runme-cli)
+## [](https://docs.runme.dev/installation/runmecli)
 
 The Runme CLI is ideal for power users who want to run markdown documentation from their terminal.
 
@@ -53,7 +53,7 @@ If you don't have Go developer tools installed and still want to use this method
 
 You can find a binary for your `OS/arch` on our [releases page](https://github.com/stateful/runme/releases). Let us know on [Discord](https://discord.gg/runme) if you have a preferred distribution mechanism.
 
-See [the doc page on the cli](https://docs.runme.dev/install#runme-cli) for CLI installation instructions.
+See [the doc page on the cli](https://docs.runme.dev/installation/runmecli) for CLI installation instructions.
 
 ### **Basic Usage**
 
