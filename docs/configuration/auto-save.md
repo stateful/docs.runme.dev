@@ -47,14 +47,11 @@ You might wonder why we have chosen to create a separate Session Outputs file in
 While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the de-/serialization process.
 
 <br />
-<Infobox type="sidenote" title="output session">
-It is strongly recommended that you do not deploy the session output files to your version control. you can .gitignore the files to ensure that it doesn't get deployed.
+<Infobox type="sidenote" title="session outputs">
+It is strongly recommended that you do not deploy the session output files to your version control. you can `.gitignore` the files to ensure that it doesn't get deployed.
 </Infobox>
 
-
 <Infobox type="sidenote" title="Join Runme community!">
-
-Make sure to [get in touch](https://discord.gg/runme) with us if you are missing a feature or have other ideas.
 
 </Infobox>
 
