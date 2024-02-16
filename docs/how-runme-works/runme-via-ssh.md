@@ -92,7 +92,3 @@ ssh user@host 'bash /path/on/remote/server/script.sh'
 ***This is an example of running bash script in a server.***
 
 ![Bash](https://i.imgur.com/nizv2CB.png)
-<<<<<<< HEAD:docs/how-runme-works/runme-via-ssh.md
-
-=======
->>>>>>> origin/main:docs/getting-started/runme-via-ssh.md

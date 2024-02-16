@@ -45,7 +45,7 @@ If you feel more comfortable editing the markdown file directly, you can do it b
 echo "hello world"
 ```
 
-The above example uses the echo command to display the text "hello world" on the terminal. The context { interactive=false name=echo-hello-world } indicates that the command is intended for non-interactive execution and has been labeled accordingly.
+The above example uses the echo command to display the text "hello world" on the terminal. The context `{"interactive":"false","name":"echo-hello-world"}` indicates that the command is intended for non-interactive execution and has been labeled accordingly.
 
 ```sh {"id":"01HPM6HZEJKM8PPG6T38RABV9A"}
 
