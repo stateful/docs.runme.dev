@@ -6,6 +6,8 @@ sidebar_position: 1
 title: Home
 ---
 
+Welcome to ▶️ Runme's docs. Thanks for stopping by.
+
 # **Quick Start ⚡️**
 
 If you are of the kind who likes to jump in head first. Below's a quick start guide to launch into Runme's self-hosted web UX.
