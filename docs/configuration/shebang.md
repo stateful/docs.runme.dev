@@ -132,7 +132,7 @@ echo $fullGreeting;
 
 To use Node.js, you need to add the path to the node interpreter, which is ***/usr/bin/node***, in the advanced section of your configuration in your code block.
 
-```json {"id":"01HPPEWMR03X1RNX68H4G28T6A"}
+```js {"id":"01HPPEWMR03X1RNX68H4G28T6A"}
 // Define a variable for the greeting
 const greeting = "Hello, World!";
 
