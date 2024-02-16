@@ -3,8 +3,6 @@ sidebar_position: 4
 title: Runme for Web
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
-
 # Getting started with Runme Web
 
 <Infobox type="sidenote" title="Install Runme">

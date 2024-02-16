@@ -3,8 +3,6 @@ sidebar_position: 8
 title: Key Features
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
-
 Runme lets you execute interactive runbooks built with markdown. Some of the key features include:
 
 ## Runme Notebook

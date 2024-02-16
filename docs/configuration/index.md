@@ -2,8 +2,6 @@
 sidebar_position: 5
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
-
 # Configuration
 
 Runme offers configurations designed to enable you improve your README experience and workflow on Runme. This configuration includes options that allow you to define how your markdown files should be executed, either using:
