@@ -8,7 +8,7 @@ Runme is committed to delivering an exceptional experience right from the start.
 
 ## VS Code Remote Development
 
-Using runme on a remote server with VSCode enhances efficiency by streamlining the execution of tasks. It minimizes the need for manual commands, automating repetitive tasks, thereby saving time and reducing errors. This approach also optimizes performance by ensuring consistent and reliable execution of scripts and processes, ultimately improving the development workflow.
+Using runme on a remote server with VS Code enhances efficiency by streamlining the execution of tasks. It minimizes the need for manual commands, automating repetitive tasks, thereby saving time and reducing errors. This approach also optimizes performance by ensuring consistent and reliable execution of scripts and processes, ultimately improving the development workflow.
 
 > 💡 Note: Runme harnesses VS Code's [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extensions to attach VS Code to remote SSH hosts.
 
