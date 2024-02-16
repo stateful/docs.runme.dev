@@ -1,6 +1,61 @@
 {
   "redirects": [
     {
+      "source": "/r/extension/background",
+      "destination": "https://docs.runme.dev/getting-started/vs-code#background-processes",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/interactive",
+      "destination": "https://docs.runme.dev/configuration/cell-level#interactive-vs-non-interactive-cells",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/closeTerminalOnSuccess",
+      "destination": "https://docs.runme.dev/configuration/cell-level#terminal-visibility-post-execution",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/promptEnv",
+      "destination": "https://docs.runme.dev/configuration/cell-level#set-environment-variables",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/mimeType",
+      "destination": "https://docs.runme.dev/configuration/reference#supported-mime-types",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/name",
+      "destination": "https://docs.runme.dev/configuration/cell-level#unnamed-vs-named-cells",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/cwd",
+      "destination": "https://docs.runme.dev/configuration/cell-level#cells-current-working-directory",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/interpreter",
+      "destination": "https://docs.runme.dev/configuration/shebang",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/category",
+      "destination": "https://docs.runme.dev/configuration/cell-level#run-all-cells-by-category",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/excludeFromRunAll",
+      "destination": "https://docs.runme.dev/configuration/cell-level#exclude-cell-from-run-all",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/terminalRows",
+      "destination": "https://docs.runme.dev/configuration/cell-level#terminal-row",
+      "permanent": false
+    },
+    {
       "source": "/faq",
       "destination": "/getting-started/faq",
       "permanent": true
