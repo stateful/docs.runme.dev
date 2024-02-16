@@ -32,7 +32,7 @@ If you feel more comfortable editing the markdown file directly, you can do it b
 
 ### **Unnamed vs Named cells**
 
-On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS code extension to name the file in the configuration settings.
+On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS Code extension to name the file in the configuration settings.
 
 ![cell-naming](../../static/img/cell-naming.png)
 

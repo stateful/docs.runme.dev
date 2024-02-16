@@ -81,7 +81,7 @@ Runme works perfectly  to automate processes and conduct development operations
 
 - Create and open your **READ.me** file in your VScode.
 - Click on the **+Code** icon and type in your code script.
-- Click on the **Remote Container** icon on the bottom left of your VS code.
+- Click on the **Remote Container** icon on the bottom left of your VS Code.
 
 ![remote icon](../../static/img/remote-container-icon.png)
 
