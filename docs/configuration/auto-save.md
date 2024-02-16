@@ -51,6 +51,13 @@ While we are contemplating the possibility of transparently opening Session Outp
 It is strongly recommended that you do not deploy the session output files to your version control. you can .gitignore the files to ensure that it doesn't get deployed.
 </Infobox>
 
+
+<Infobox type="sidenote" title="Join Runme community!">
+
+Make sure to [get in touch](https://discord.gg/runme) with us if you are missing a feature or have other ideas.
+
+</Infobox>
+
 ## **How to Enable Auto-Save**
 
 - Toggle Auto-Save On/Off: On your `.md` file, you have the flexibility to easily turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (`.md`) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
