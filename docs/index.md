@@ -31,7 +31,7 @@ Make sure to confirm the prompts and you should be dropped into the Runme web in
 <br />
 <Infobox type="sidenote" title="Keep going!">
 
-Learn more about Runme and ideas behind. Learn more below.
+Learn more about Runme and ideas behind below.
 
 </Infobox>
 
