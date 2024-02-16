@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/r/extension/background",
-      "destination": "https://docs.runme.dev/getting-started/vs-code#background-processes",
+      "destination": "https://docs.runme.dev/configuration/cell-level#handle-long-running-processes",
       "permanent": false
     },
     {
