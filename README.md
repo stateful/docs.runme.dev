@@ -18,8 +18,15 @@ Run it against production site.
 
 ```sh {"id":"01HPS5VV6PQV280R8XVCJWY9TH"}
 $ rm -f links.log; npx blc https://docs.runme.dev -ro > links.log 2>&1
+```
+
+All 404s.
+
+```sh {"id":"01HPS67YRQ942VG2C4QXA238QX"}
 $ grep "HTTP_404" links.log
 ```
+
+Ignore externals.
 
 ```sh {"id":"01HPS5ZD9VAJA60MJWEACJ04W5"}
 $ cat links.log | grep -v "https://github.com" | grep -v "https://marketplace" | grep "HTTP_404"
