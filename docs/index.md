@@ -8,7 +8,7 @@ title: Home
 
 import Infobox from "../src/components/Infobox.tsx"
 
-# **Quick Start**
+# **Quick Start ⚡️**
 
 If you are of the kind who likes to jump in head first. Below's a quick start guide to launch into Runme's self-hosted web UX.
 
@@ -31,7 +31,7 @@ Make sure to confirm the prompts and you should be dropped into the Runme web in
 <br />
 <Infobox type="sidenote" title="Keep going!">
 
-If you want to learn more about Runme and ideas behind, please continue reading below.
+Learn more about Runme and ideas behind. Learn more below.
 
 </Infobox>
 
