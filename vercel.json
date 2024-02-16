@@ -66,6 +66,21 @@
       "permanent": true
     },
     {
+      "source": "/getting-started/vs-code",
+      "destination": "https://docs.runme.dev/how-runme-works/vscode",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/web",
+      "destination": "https://docs.runme.dev/how-runme-works/web",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/runme-via-ssh",
+      "destination": "https://docs.runme.dev/how-runme-works/runme-via-ssh",
+      "permanent": true
+    },
+    {
       "source": "/install",
       "destination": "/installation",
       "permanent": true
