@@ -6,8 +6,6 @@ sidebar_position: 1
 title: Home
 ---
 
-import Infobox from "../src/components/Infobox.tsx"
-
 # **Quick Start ⚡️**
 
 If you are of the kind who likes to jump in head first. Below's a quick start guide to launch into Runme's self-hosted web UX.

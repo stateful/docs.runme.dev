@@ -3,8 +3,6 @@ sidebar_position: 4
 title: Runme with Next.js App on Vercel
 ---
 
-import Infobox from "../../src/components/Infobox.tsx"
-
 This example can be found in the `vercel` sub-folder. You can manually check out this example by [opening it with Runme](https://runme.dev/api/runme?repository=https%3A%2F%2Fgithub.com%2Fstateful%2Fvscode-runme.git&fileToOpen=examples%2Fvercel%2FREADME.md).
 
 ### **Setup/Environment**
