@@ -10,7 +10,7 @@ runme:
 
 The Runme CLI is ideal for power users who want to run markdown documentation from their terminal.
 
-![cli](https://docs.runme.dev/assets/images/terminal-5976b3d0a55401df67e53b88a6391886.png)
+![cli](../../static/img/terminal.png)
 
 ### **On MacOS**
 
