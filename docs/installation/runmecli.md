@@ -61,7 +61,12 @@ Runme has a nice TUI that you can use simply like so:
 
 `# short for "runme tui"runme`
 
-{{ Video example }}
+```sh {"id":"01HPSANP51Y6QYQKH1QRBEB17S"}
+# short for "runme tui"
+runme
+```
+
+![Runme TUI Usage](../../static/img/runme-tui.gif)
 
 This allows you to quickly execute any script present in the README.
 
