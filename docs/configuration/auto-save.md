@@ -48,7 +48,7 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 <br />
 <Infobox type="sidenote" title="output session">
-It is strongly recommended that you do not deploy the session output files to your version control. you can `.gitignore` the files to ensure that it doesn't get deployed.
+It is strongly recommended that you do not deploy the session output files to your version control. you can .gitignore the files to ensure that it doesn't get deployed.
 </Infobox>
 
 ## **How to Enable Auto-Save**
