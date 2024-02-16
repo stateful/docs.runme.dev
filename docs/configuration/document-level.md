@@ -5,7 +5,7 @@ title: Document-level Options
 
 Alternatively, you can run the entire document in your Markdown file.
 
-> Runme does not just retain [Frontmatter](https://docs.runme.dev/getting-started/how-runme-works/vscode#frontmatter), it also supports top-level settings that will affect all cells in the document.
+> Runme does not just retain [Frontmatter](https://docs.runme.devhow-runme-works/vscode#frontmatter), it also supports top-level settings that will affect all cells in the document.
 
 ### **Set custom shell**
 
