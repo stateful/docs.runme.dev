@@ -107,7 +107,7 @@ Once ticked notice the "Background Task" label shows up in the cell status bar!
 npm run watch
 ```
 
-### Cell's current working directory
+### **Cell's current working directory**
 
 In most cases, you probably want to set the current working directory at the document-level, however, it is possible to set it per cell.
 
