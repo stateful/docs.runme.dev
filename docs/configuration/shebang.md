@@ -19,6 +19,7 @@ Runme gives you the power to run your code right inside your markdown file in VS
 4. Now click on **Execute Cell**
 
 ## **Configuring Shebang Custom Interpreter in VS Code**
+Before proceeding with the integration of Shebang in [Runme](https://docs.runme.dev/install#runme-cli), ensure that Runme is properly [installed](https://docs.runme.dev/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
 Alternatively, if you would love to run your code using your specified interpreter version, you can achieve that using the custom interpreter feature. This allows you to configure the environment for running code directly within your editor, making your coding experience much smoother and easier.
 
