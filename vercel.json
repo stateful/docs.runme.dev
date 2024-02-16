@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/faq",
+      "destination": "/getting-started/faq",
+      "permanent": true
+    }
+  ]
+}
