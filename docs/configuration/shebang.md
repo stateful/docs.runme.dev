@@ -3,56 +3,58 @@ sidebar_position: 3
 title: Shebang Support
 ---
 
-Runme enables users to complete step-by-step instructions with ease, making runbooks actually runnable. This makes it an ideal solution for runbooks, playbooks, and any documentation that requires users to complete runnable steps incrementally. Operational docs become more reliable and less susceptible to bitrot with the help of Runme.
+Shebang is a versatile tool designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. Runme integrates Shebang to enable users to run the script of their choice directly from the markdown file in their preferred programming language.
 
-Shebang, on the other hand, is a versatile utility designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. The term 'Shebang' is derived from the '#!' symbol, which is used at the beginning of scripts to define the interpreter that should be used to run the script.
+## **Prerequisites**
 
-![Runme Shebang in Action](../../static/img/runme-shebang.png)
+Before proceeding with the integration of Shebang in [Runme](https://docs.runme.dev/install#runme-cli), ensure that Runme is properly [installed](https://docs.runme.dev/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
-### Why are Shebangs Important?
+## **Run your Code with Runme in VS Code Using Shebang**
 
-Including a shebang line is crucial for specifying the interpreter for each code block. This allows for seamless execution of mixed-language scripts. The shebang line dictates to the platform which environment to use, ensuring that the code runs correctly and efficiently within the interface provided.
+Runme gives you the power to run your code right inside your markdown file in VS Code without having to switch to a terminal. To do this, follow the steps below:
 
-## Prerequisites
+1. Click on the **+Code icon.**
+2. Enter the script you would like to run.
+3. Click on the **Select Cell Language Mode** and select a language of your choice.
+4. Now click on **Execute Cell**
 
-Before proceeding with the integration of Shebang in [Runme](/install#runme-cli), ensure that Runme is properly [installed](/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
+## **Configuring Shebang Custom Interpreter in VS Code**
+Before proceeding with the integration of Shebang in [Runme](https://docs.runme.dev/install#runme-cli), ensure that Runme is properly [installed](https://docs.runme.dev/install#runme-cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
-## Configuring Shebang in VS Code
-
-Visual Studio Code (VS Code) provides a user-friendly interface for configuring Shebang. Follow the steps below to set up Shebang in VS Code.
-
-You can switch to the programming language of your choice using the language interpreter feature in VS Code. This allows you to configure the environment for running code directly within the editor, making your coding experience much smoother and easier.
+Alternatively, if you would love to run your code using your specified interpreter version, you can achieve that using the custom interpreter feature. This allows you to configure the environment for running code directly within your editor, making your coding experience much smoother and easier.
 
 ![shebang-language-mood](../../static/img/shebang-language-mood.png)
 
-Follow the steps below to set up Shebang in VS Code:
+Follow the steps below to set up the Shebang custom interpreter in VS Code:
 
 1. Open your script (markdown file) in VS Code
-2. Click on "Configure" menu at the buttom right of your code block
-3. Click on "Advance"
-4. Set the path to the interpreter
+2. Click on **Configure** menu at the buttom right of your code block
+3. Click on **Advance**
+4. Set the path to the system interpreter of your choice.
 
 ![shebang-interpreter](../../static/img/shebang-interpreters.png)
 
 5. close the modular
 6. Execute the Runme command:
 
-```sh
-# short for "runme tui" is 
+```sh {"id":"01HPPEWMR0AQB8NA9BMNPDCNSP"}
+# short for "runme tui" is
 runme
 ```
 
 ![shebang-output](../../static/img/shebang-outputt.png)
 
-## Examples of Shebang Lines for Different Languages
+## **Examples of Shebang Lines for Different Languages**
 
-Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("Hello, World!"), obtain the current date and time, and then concatenate these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
+We have attached some scripts in various languages as seen below to enable you to test how Runme works in your VS Code.
 
-### Python
+Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("*Hello, World!*"), obtain the current date and time, and then combine these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
+
+### **Python**
 
 To run the Python code, you need to set the path to the Python interpreter, which is ***/usr/bin/python3***, in the advanced section of your configuration in your code block.
 
-```python
+```python {"id":"01HPPEWMR0YKCGMCXWPVHBDKVR"}
 import datetime
 
 # Define a variable for the greeting
@@ -68,11 +70,11 @@ fullGreeting = greeting + " It's now " + currentDateTime
 print(fullGreeting)
 ```
 
-### Bash
+### **Bash**
 
 To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is ***/usr/bin/bash***, in the advanced section of your configuration in your code block.
 
-```sh
+```sh {"id":"01HPPEWMR0PC5W41BZWYABPB47"}
 
 # Define a variable for the greeting
 greeting="Hello, World!"
@@ -87,11 +89,11 @@ fullGreeting="$greeting It's now $currentDateTime"
 echo $fullGreeting
 ```
 
-### Ruby
+### **Ruby**
 
 To use Ruby, you need to add the path to the Ruby interpreter, which is ***/usr/bin/ruby***, in the advanced section of your configuration in your code block.
 
-```sh
+```ruby {"id":"01HPPEWMR0WHY93Q0MVFQ4YHS8"}
 # Define a variable for the greeting
 greeting = "Hello, World!"
 
@@ -105,11 +107,11 @@ fullGreeting = "#{greeting} It's now #{currentDateTime}"
 puts fullGreeting
 ```
 
-### PHP
+### **PHP**
 
 To use PHP, you need to add the path to the PHP interpreter, which is ***/usr/bin/php***, in the advanced section of your configuration in your code block..
 
-```php { interpreter=/opt/homebrew/bin/php }
+```php {"id":"01HPPEWMR02F1ZNBJNNQGW9H29","interpreter":"/opt/homebrew/bin/php"}
 <?php
 // PHP Script Example: Greeting with Date and Time
 
@@ -127,11 +129,11 @@ echo $fullGreeting;
 ?>
 ```
 
-### Node
+### **Node**
 
 To use Node.js, you need to add the path to the node interpreter, which is ***/usr/bin/node***, in the advanced section of your configuration in your code block.
 
-```sh
+```js {"id":"01HPPEWMR03X1RNX68H4G28T6A"}
 // Define a variable for the greeting
 const greeting = "Hello, World!";
 
@@ -145,7 +147,7 @@ const fullGreeting = `${greeting} It's now ${currentDateTime}`;
 console.log(fullGreeting);
 ```
 
-## List of Auto-Detected Language Runtimes
+## **List of Auto-Detected Language Runtimes**
 
 Runme auto-detects runtimes based on the language selection per cell.
 
@@ -238,6 +240,6 @@ Runme auto-detects runtimes based on the language selection per cell.
 
 Missing a language? Please [raise an issue](https://github.com/stateful/runme/issues/new).
 
-## Combining Multiple Languages in Your Notebook
+## **Combining Multiple Languages in Your Notebook**
 
 It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
