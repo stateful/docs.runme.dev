@@ -23,7 +23,7 @@
     "@docusaurus/theme-classic": "^2.4.0",
     "@docusaurus/theme-search-algolia": "^2.3.1",
     "@mdx-js/react": "^1.6.22",
-    "clsx": "^2.0.0",
+    "clsx": "^2.1.0",
     "prism-react-renderer": "^2.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -39,7 +39,7 @@
     "tailwindcss": "^3.3.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2",
-    "vercel": "^33.1.0"
+    "vercel": "^33.5.1"
   },
   "browserslist": {
     "production": [
