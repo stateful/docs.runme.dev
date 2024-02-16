@@ -46,6 +46,13 @@ You might wonder why we have chosen to create a separate Session Outputs file in
 
 While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the de-/serialization process.
 
+<br />
+<Infobox type="sidenote" title="Keep going!">
+
+When the autosave feature is enabled, session outputs are automatically saved in a separate file. It is strongly recommended that you do not deploy these files to your version control. You can either manually delete the files during deployment or you can `.gitignore` the files to ensure that it doesn't get deployed.
+
+</Infobox>
+
 ## **How to Enable Auto-Save**
 
 - Toggle Auto-Save On/Off: On your `.md` file, you have the flexibility to easily turn the Auto-Save feature on or off. This can be done directly from the top of your Markdown (`.md`) file. A simple toggle switch allows for easy control, ensuring that you can activate or deactivate Auto-Save as per your workflow requirements.
