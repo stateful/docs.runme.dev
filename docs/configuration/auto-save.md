@@ -48,8 +48,7 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 <br />
 <Infobox type="warning" title="output session">
-
- It is strongly recommended that you do not deploy the session output files to your version control. You can either manually delete the files during deployment or you can `.gitignore` the files to ensure that it doesn't get deployed.
+It is strongly recommended that you do not deploy the session output files to your version control. You can either manually delete the files during deployment or you can `.gitignore` the files to ensure that it doesn't get deployed.
 
 </Infobox>
 
