@@ -126,7 +126,7 @@ terraform plan
 
 <Infobox type="warning">
 
-Please note that if both `cwd` are set for doc-level and cell they don't overwrite they combine. E.g. `cwd: /tmp/dummy` (doc) and `cwd: ..` (cell) will result in `/tmp`.
+Please note that if both `cwd` are set for doc-level and cell they do not overwrite they combine. E.g. `cwd: /tmp/dummy` (doc) and `cwd: ..` (cell) will result in `/tmp`.
 
 </Infobox>
 

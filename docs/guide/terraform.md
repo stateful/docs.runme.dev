@@ -22,11 +22,11 @@ Runme's interactive documentation lets you easily integrate terraform commands i
 
 ***Let’s dive right in !***
 
-**Prerequisites:**
+## **Prerequisites:**
 
 1. **Cloud Provider :**
 
-   Ensure that you have an AWS account (for the sake of this article we will be using AWS) and access key credentials. If you don't have an AWS account, you can create one [here](https://aws.amazon.com/).
+   Ensure that you have an AWS account (for the sake of this article we will be using AWS) and access key credentials. If you do not have an AWS account, you can create one [here](https://aws.amazon.com/).
 
 2. **Terraform Installation:**
 
@@ -37,7 +37,7 @@ Runme's interactive documentation lets you easily integrate terraform commands i
 
 here is an example of how to create an ec2 with terraform via runme
 
-**Setting Up Terraform for EC2 Instance:**
+## **Setting Up Terraform for EC2 Instance:**
 
 1. **Create a Project Directory:**
 
@@ -171,6 +171,6 @@ terraform workspace select production
 terraform apply -var-file=terraform.tfvars
 ```
 
-**Conclusion:**
+## **Conclusion:**
 
 Terraform is a simple yet powerful way to manage your infrastructure as code. It provides repeatability and version control for your infrastructure, with runme it makes it easier to manage and collaborate with others. Customize the Terraform configuration based on your specific requirements, and enjoy the benefits of automated infrastructure provisioning with Terraform.

@@ -47,7 +47,7 @@ If you have Go developer tools installed, you can install it with go install:
 go install github.com/stateful/runme@latest
 ```
 
-If you don't have Go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
+If you do not have Go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
 
 ### **Download Binaries directly**
 

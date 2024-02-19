@@ -10,17 +10,17 @@ Welcome to ▶️ Runme's docs. Thanks for stopping by.
 
 # **Quick Start ⚡️**
 
-If you are of the kind who likes to jump in head first. Below's a quick start guide to launch into Runme's self-hosted web UX.
+If you are of the kind who likes to jump in head first. Below is a quick start guide to launch into Runme's self-hosted web UX.
 
 ## **MacOS**
 
-```sh
+```sh {"id":"01HQ0JB6FJCYD1B5BBR4WD2QPX"}
 $ brew install runme && runme open
 ```
 
 ## **Linux & Windows**
 
-```sh
+```sh {"id":"01HQ0JB6FJV6AGANGQQ5PQ3GPA"}
 $ npx runme open
 ```
 

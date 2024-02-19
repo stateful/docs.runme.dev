@@ -34,7 +34,7 @@ A pre-release version of Runme is offered for curious developers who want to try
 
 [](https://docs.runme.dev/installation/installrunme#default-markdown-viewer)
 
-If you don't see this option, make sure your VS Code is updated to at least version `1.63.0`.
+If you do not see this option, make sure your VS Code is updated to at least version `1.63.0`.
 
 ### **Default Markdown Viewer**
 
