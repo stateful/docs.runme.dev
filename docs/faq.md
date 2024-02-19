@@ -7,7 +7,7 @@ title: FAQ
 
 ## **Runme and Stateful**
 
-Runme was developed by the venture-backed company Stateful, Inc. Runme ws built as an open source technology to to tackle the persistent issues of bitrot and outdated developer and operator documentation. Runme serves as an effective platform for running interactive runbooks in markdown files, supporting scripting and pipelines. We believe in open-source software and intend for Runme to continue to be offered as such to deliver a powerful solution to the community.
+Runme was developed by the venture-backed company Stateful, Inc. Runme was built as an open source technology to to tackle the persistent issues of bitrot and outdated developer and operator documentation. Runme serves as an effective platform for running interactive runbooks in markdown files, supporting scripting and pipelines. We believe in open-source software and intend for Runme to continue to be offered as such to deliver a powerful solution to the community.
 
 ## **Does Runme work with other notebook formats?**
 
@@ -15,7 +15,7 @@ Currently, we are focused on using Markdown, which is widely used for documentat
 
 ## **How do you plan to make money with Runme? Will you introduce paid enterprise or support plans, or consider monetizing user data?**
 
-Currently, we don't have specific plans to charge for Runme as it's available under the open-source APL-2.0 license. Stateful, Inc., the company behind Runme, is initially focusing on building open technology to tackle issues with outdated developer documentation. We're committed to keeping Runme as an open-source solution, delivering powerful features to the community.
+Currently, we do not have specific plans to charge for Runme as it's available under the open-source APL-2.0 license. Stateful, Inc., the company behind Runme, is initially focusing on building open technology to tackle issues with outdated developer documentation. We're committed to keeping Runme as an open-source solution, delivering powerful features to the community.
 
 Our goal is to create a community around addressing documentation challenges and maintaining a trusted relationship with our users. We want to assure you that we won't monetize or sell users' data under any circumstances. Potential monetization opportunities may arise from providing additional value in terms of team collaboration, discoverability, or auditing features for companies using Runme with internal repositories. The core functionality of Runme, such as running runbooks, will remain available without the need for proprietary products from Runme, Stateful, or third parties.
 
