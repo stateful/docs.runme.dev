@@ -130,7 +130,7 @@ terraform plan
 
 <Infobox type="warning">
 
-Please note that when cwd settings are applied at both the document level and the cell level, they are not overwritten but rather combined. For example, if you set `cwd: /tmp/dummy` at the document level and `cwd: ..` at the cell level, the resulting working directory will be `/tmp`, effectively combining the two paths.
+Please note that when cwd settings are added at both the document level and the cell level, none will be overwritten but rather combined. For example, if you set `cwd: /tmp/dummy` at the document level and `cwd: ..` at the cell level, the resulting working directory will be `/tmp`, effectively combining the two paths.
 
 </Infobox>
 
