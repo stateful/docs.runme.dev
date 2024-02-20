@@ -28,7 +28,7 @@ Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-ex
 
 If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](https://docs.runme.dev/installation/runmecli)
 
-## Running Scripts
+## **Running Scripts**
 
 Runme automatically converts all bash codeblocks in your README into runnable scripts. This makes getting started with a new project a breeze - say goodbye to annoying copy-and-pasting!
 
@@ -47,7 +47,7 @@ For the set-up script to work, you'll need to have the `curl` and `unzip` ut
 
 </Infobox>
 
-## Command Output
+## **Command Output**
 
 Scroll down to the [**Examples**](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md) section of the notebook. From there, try running Steps 1 and 2.
 
@@ -83,17 +83,18 @@ Alternatively, select the output and use the **Option+Delete shortcut**.
 
 Congratulations on running your first Runme notebook! 🎉While you've understood the basics, there's more to discover about Runme's powerful features. Let's get ready to dive deeper.
 
-# Runme Editing & Authoring
+
+## **Runme Editing & Authoring**
 
 Runme combines running, viewing, and editing into one experience.
 
-## From Scratch
+### From Scratch
 
 Start by initializing a new project and adding a new `README.md` file. Alternatively, you can select `Runme Notebook` from the `File->New File` menu. When you open it, you should get an empty canvas, like this:
 
 ![start readme project](../../static/img/start-readme-projects.png)
 
-## Adding Markdown
+### Adding Markdown
 
 To add a new Markdown section, click the "**+ Markdown"** button in the top left or center:
 
@@ -130,7 +131,7 @@ You can also use `CMD+Delete` to quickly remove a cell.
 
 </Infobox>
 
-## Adding Code
+### Adding Code
 
 Code cell blocks work similarly to Markdown blocks, and can be edited/saved/deleted in the same way.
 
@@ -142,7 +143,7 @@ You can then freely add runnable code:
 
 ![run hello world from vs code](../../static/img/echo-hello-world.png)
 
-## Interactive Mode
+## **Interactive Mode**
 
 By default, our script will run in “Interactive Mode”. This will run the script in a separate terminal window, rather than in the notebook itself.
 
@@ -167,11 +168,11 @@ From here, we can easily disable interactive mode:
 
 Our code block will now display its output exactly as below:
 
-## Frontmatter
+## **Frontmatter**
 
 [Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
 
-## Runme Settings for VS Code
+## **Runme Settings for VS Code**
 
 In the VS Code settings, several configurable settings influence general Runme behavior and enable experimental functionality.
 
@@ -226,13 +227,13 @@ tets
 
 <!-- (TODO: show how to change language; need issues fixed for this since language selection is broken at the moment) -->
 
-## Great work!
+## **Great work!**
 
 Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/docs.runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
 
 Please see the [integrations section](/integrations) to see more sophisticated use cases of Runme or learn about all the[cell configuration options](/configuration) available to streamline the reading and running experience.
 
-## Useful Tips & Tricks
+## **Useful Tips & Tricks**
 
 ### How to ensure Runme is working properly?
 

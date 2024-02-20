@@ -5,7 +5,7 @@ title: Key Features
 
 Runme lets you execute interactive runbooks built with markdown. Some of the key features include:
 
-## Runme Notebook
+## **Runme Notebook**
 
 **Run a command block**
 
@@ -35,7 +35,7 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ![skippromptandrunall](../../static/img/skippromptandrunall.png)
 
-## Environment Variable Prompts
+## **Environment Variable Prompts**
 
 To keep generic notebooks/runbooks for your users:
 
@@ -43,7 +43,7 @@ If you are using environment variables within your runs, you can configure them 
 
 ![environmentvariableprompt](../../static/img/envvarprompts.png)
 
-## Render images, CSV tables, and terminals inside markdown
+## **Render images, CSV tables, and terminals inside markdown**
 
 While allowing background tasks to run seamlessly :
 
@@ -70,7 +70,7 @@ Including the following
 - image/svg+xml
 - text/csv
 
-## Shebang support
+## **Shebang Support**
 
 Call into libraries or APIs to describe tasks with the programming language that’s most natural:
 
@@ -109,13 +109,13 @@ print("Python Version:", sys.version)
 
 Check the list of [auto-detected interpreters](https://docs.runme.dev/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
 
-## Bridge the gaps between the terminal, editor, and browser
+## **Bridge the gaps between the terminal, editor, and browser**
 
 All inside markdown:
 
 The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within markdown. On top of that, you can even see images, tables, and more!
 
-## Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown:
+## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown**:
 
 You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
 
@@ -142,7 +142,7 @@ To cut down on boilerplate, we've put together this handy **[GitHub Action](htt
 
 That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in [CI/CD](https://runme.dev/blog/guide-to-onboarding-docs-in-ci).
 
-## Runme Cells
+## **Runme Cells**
 
 ### Chain Cell Output
 
@@ -154,7 +154,7 @@ With the `$__` parameter you can transfer the stdout result of the last execut
 
 Please be aware that if the execution of a cell depends on the standard output (stdout) of a preceding cell, it is imperative to execute these cells sequentially. Failure to adhere to this sequence could lead to unintended and unpredictable behavior.
 
-## Other key features
+## **Other Key Features**
 
 - Installs in seconds. No external dependencies are required.
 - Persistent environment variables across cell and session runs.
