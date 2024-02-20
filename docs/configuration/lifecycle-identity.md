@@ -43,7 +43,7 @@ As shown in the image above, there are three levels of tracking available:
 * [Document level](../configuration/document-level): Monitors the entire document for any modifications or version changes.
 * All: Track changes made to both [Cell level](../configuration/cell-level) and [document](../configuration/document-level) levels.
 
-<Infobox type="sidenote" title="Warning">
+<Infobox type="warning" title="Warning">
 
 You can disable lifecycle identity from your repository by setting it to `none`.
 
