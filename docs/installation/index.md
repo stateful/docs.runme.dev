@@ -8,7 +8,7 @@ title: Installation
 
 # Installation
 
-## Overview
+## **Overview**
 
 Runme provides multiple client interfaces that enable users to interact with Runme’s kernel. You can install Runme based on your preferred client interface. These client interfaces include:
 
@@ -18,7 +18,7 @@ Runme provides multiple client interfaces that enable users to interact with Run
 
 Whether you are a beginner getting started or an experienced user looking to set up Runme for your workflow, this section will provide you with step-by-step instructions and best practices to ensure a smooth installation process.
 
-## Requirement
+## **Requirement**
 
 Before you dive right in, there are a few requirements needed to enable you install Runme.
 
