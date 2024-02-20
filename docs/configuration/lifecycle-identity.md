@@ -43,6 +43,12 @@ As shown in the image above, there are three levels of tracking available:
 * [Document level](../configuration/document-level): Monitors the entire document for any modifications or version changes.
 * All: Track changes made to both [Cell level](../configuration/cell-level) and [document](../configuration/document-level) levels.
 
+<Infobox type="warning" title="Warning">
+
+Cell and document IDs are provided by default. If you do want an `id` assigned to a cell or document, you can turn it off in your project by selecting `none`.
+
+</Infobox>
+
 ## **Cell Run Grouping**
 
 Cell Run Grouping is a important feature that works with the lifecycle identity in Runme. It improves the organization and tracking of code runs, especially when working with markdown files or individual cells within these files. This functionality works when outputs are saved to the [Runme Cloud](https://app.runme.dev/), as it allows for a more structured and insightful analysis of the code's performance over time.
