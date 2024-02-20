@@ -45,7 +45,7 @@ As shown in the image above, there are three levels of tracking available:
 
 <Infobox type="warning" title="Warning">
 
-Cell and document IDs are provided by default. If you do want an `id` assigned to a cell or document, you can turn it off in your repository by selecting `none`.
+Cell and document IDs are provided by default. If you do want an `id` assigned to a cell or document, you can turn it off in your project by selecting `none`.
 
 </Infobox>
 
