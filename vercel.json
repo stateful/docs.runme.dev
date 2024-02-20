@@ -56,6 +56,11 @@
       "permanent": false
     },
     {
+      "source": "/getting-started/faq",
+      "destination": "/faq",
+      "permanent": true
+    },
+    {
       "source": "/features",
       "destination": "/getting-started/features",
       "permanent": true
