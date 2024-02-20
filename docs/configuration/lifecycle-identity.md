@@ -45,7 +45,7 @@ As shown in the image above, there are three levels of tracking available:
 
 <Infobox type="warning" title="Warning">
 
-The lifecycle identity `id` is assigned to each cell and document by default. If you prefer not to see the cell or document ID, you can easily disable the lifecycle identity in your repository by setting it to `none`.
+Cell and document IDs are provided by default. If you do want an `id` assigned to a cell or document, you can turn it off in your repository by selecting `none`.
 
 </Infobox>
 
