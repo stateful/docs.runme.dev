@@ -111,6 +111,10 @@ npm run watch
 
 In most cases, you probably want to set the current working directory at the document-level, however, it is possible to set it per cell.
 
+Click on `configure` to change the current work directory `cwd`:
+
+![set working directory ](../../static/img/runme-cwd.png)
+
 ```sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
 
 ```sh { cwd=.. "id":"01HP475WXX5PVV658023KQJFRE"}
@@ -126,7 +130,7 @@ terraform plan
 
 <Infobox type="warning">
 
-Please note that if both `cwd` are set for doc-level and cell they do not overwrite they combine. E.g. `cwd: /tmp/dummy` (doc) and `cwd: ..` (cell) will result in `/tmp`.
+Please note that when cwd settings are applied at both the document level and the cell level, they are not overwritten but rather combined. For example, if you set `cwd: /tmp/dummy` at the document level and `cwd: ..` at the cell level, the resulting working directory will be `/tmp`, effectively combining the two paths.
 
 </Infobox>
 
@@ -209,18 +213,6 @@ We have provided a list of configuration settings to upgrade your experience usi
 ![terminalrow-2](../../static/img/terminalrow-2.png)
 
 3. Lastly, set the number of rows you wish your output to be rendered in.
-
-### **Chaging Working Directory**
-
-Easily execute code blocks in any specified directory by setting the `cwd` to the working directory of your choice. This approach enhances runbooks flexibility and organization, allowing direct interaction with files across different locations without permanently altering your runbook’s current working directory.
-
-Click on `configure` to change `cwd`
-
-![set working directory ](../../static/img/runme-cwd.png)
-
-**Example**:
-
-`../../Users/macbookpro/Desktop` example of how to set `cwd`
 
 ### **Exclude Cell from Run All**
 
