@@ -210,6 +210,18 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 3. Lastly, set the number of rows you wish your output to be rendered in.
 
+### **Chaging Working Directory**
+
+Easily execute code blocks in any specified directory by setting the `cwd` to the working directory of your choice. This approach enhances runbooks flexibility and organization, allowing direct interaction with files across different locations without permanently altering your runbook’s current working directory.
+
+Click on `configure` to change `cwd`
+
+![set working directory ](../../static/img/runme-cwd.png)
+
+**Example**:
+
+`../../Users/macbookpro/Desktop` example of how to set `cwd`
+
 ### **Exclude Cell from Run All**
 
 Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the Run All button to get set up and running. However, sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option, you can configure this behavior.
