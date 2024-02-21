@@ -111,6 +111,10 @@ npm run watch
 
 In most cases, you probably want to set the current working directory at the document-level, however, it is possible to set it per cell.
 
+Click on `configure` to change the current work directory `cwd`:
+
+![checking directory](../../static/img/runme-cwd.png)
+
 ```sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
 
 ```sh { cwd=.. "id":"01HP475WXX5PVV658023KQJFRE"}
@@ -126,7 +130,7 @@ terraform plan
 
 <Infobox type="warning">
 
-Please note that if both `cwd` are set for doc-level and cell they do not overwrite they combine. E.g. `cwd: /tmp/dummy` (doc) and `cwd: ..` (cell) will result in `/tmp`.
+Please note that when cwd settings are added at both the document level and the cell level, none will be overwritten but rather combined. For example, if you set `cwd: /tmp/dummy` at the document level and `cwd: ..` at the cell level, the resulting working directory will be `/tmp`, effectively combining the two paths.
 
 </Infobox>
 
