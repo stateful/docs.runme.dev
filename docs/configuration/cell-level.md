@@ -36,7 +36,7 @@ On Runme cells are unnamed by default. The idea of named cells is to make them e
 
 Unless a user names a cell manually, a dynamically generated name is provided for each cell to make referencable from the CLI (e.g. `runme list` or `runme run <cell-name>`).
 
-We recommend you ONLY name cells in CLI mode, if you do so consitently throught your notebook/markdown files. By default, the CLI will filter out all cells that are not named. This is to prevent the CLI from being cluttered with cells that are not immediately relevant to the user. However, both the TUI (`u` keyboard shortbut) and the `--allow-unnamed` flag can be used to consider all cells.
+We recommend you ONLY name cells in CLI mode, if you do so consitently throught your notebook/markdown files. By default, the CLI will filter out all cells that are not named. This is to prevent the CLI from being cluttered with cells that are not immediately relevant to the user. However, both the TUI (`u` keyboard shortcut) and the `--allow-unnamed` flag can be used to consider all cells.
 
 ![cell-naming](../../static/img/cell-naming.png)
 
