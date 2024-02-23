@@ -32,7 +32,11 @@ If you feel more comfortable editing the markdown file directly, you can do it b
 
 ### **Unnamed vs Named cells**
 
-On Runme cells are unnamed by default. Unless a user names a cell manually, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS Code extension to name the file in the configuration settings.
+On Runme cells are unnamed by default. The idea of named cells is to make them easily accessible and stand out. Prioritize cells that are relevant to "power users". Cells that you run frequently, like the "public interface" of your notebooks.
+
+Unless a user names a cell manually, a dynamically generated name is provided for each cell to make referencable from the CLI (e.g. `runme list` or `runme run <cell-name>`).
+
+We recommend you ONLY name cells in CLI mode, if you do so consitently throught your notebook/markdown files. By default, the CLI will filter out all cells that are not named. This is to prevent the CLI from being cluttered with cells that are not immediately relevant to the user. However, both the TUI (`u` keyboard shortbut) and the `--allow-unnamed` flag can be used to consider all cells.
 
 ![cell-naming](../../static/img/cell-naming.png)
 
