@@ -1,56 +1,42 @@
 # Terraform via Runme
 
-This is a toturial guide that helps us in setting up Terraform to create an EC2 instance is a straightforward process that involves defining your infrastructure as code. In this article, we'll walk through the steps to set up Terraform and create an EC2 instance on AWS.
+As a cloud infrastructure engineer imagine you are responsible for managing the infrastructure of a web application that runs in multiple environments this includes, development, staging, and production. This infrastructure is defined using Terraform. However, you are faced with a specific configuration challenge where each environment has specific configuration requirements in addition your team needs visibility during the application deployment process.
 
-## **Why Combine Terraform with Runme?**
+***This is where Runme comes in!***
 
-1. **Automation with Terrafrom:**
+Runme provides you with an interactive runbook where you can easily complete step-by-step instructions, execute runnable stables for operational docs, and through saved provide visibility to other team members.
 
-Terraform is a robust Infrastructure as Code (IaC) solution, enabling the automation of infrastructure provisioning, configuration management, and application deployment. Executing your Terraform code with precision ensures efficient automation, reduces manual intervention, and guarantees consistent infrastructure across different cloud platforms and on-premises environments.
+In this guide, we will help you understand how to set Terraform to create an EC2 instance on AWS and run this instance using Runme
 
-2. **Easy Interactive Runbooks:**
-
-Runme provides an interactive space for running terraform commands whenever you need. Combining Terraform with Runme simplifies complex deployment steps and makes tasks more accessible.
-
-3. **Consistency Across Environments**
-
-Terraform is great at maintaining consistent configurations across different environments. When paired with Rume, it establishes a reliable and repeatable setup, ensuring uniformity in infrastructure deployment and configuration management processes.
-
-4. **Documentation and Execution:**
-
-Runme's interactive documentation lets you easily integrate terraform commands into your documents. Experience a blend of documentation and execution, making it easier for teams to collaborate.
-
-***Let’s dive right in !***
+Before we proceed, there are a few requirements needed to get started
 
 ## **Prerequisites:**
 
 1. **Cloud Provider :**
 
-   Ensure that you have an AWS account (for the sake of this article we will be using AWS) and access key credentials. If you do not have an AWS account, you can create one [here](https://aws.amazon.com/).
+    For this guide, we will be using Amazon Web Services (AWS) as our cloud provider. Ensure you have an AWS account, with an account you will be able to access the AWS key credentials which will be used subsequently.
+
 
 2. **Terraform Installation:**
 
-   Install Terraform on your local machine. You can download the latest version from the [official Terraform website.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+    Install Terraform on your local machine. You can download the latest version from the [official Terraform website.](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 3. Runme Installation:
-   Install runme on your local machine. You can install runme from the [official page](https://docs.runme.dev/installation)
 
-here is an example of how to create an ec2 with terraform via runme
+    To get Runme available on your local machine or server, you are required to install the Runme. Runme has various client interfaces with which you can use Runme, this includes; [Vs Code editor](../installation/installrunme.md), [CLI](../installation/runmecli.md), and [web app](../how-runme-works/web.md). In this guide, we will use Runme for VS Code editor using the [Runme Notebook extension](../how-runme-works/vscode.md).
 
 ## **Setting Up Terraform for EC2 Instance:**
 
 1. **Create a Project Directory:**
 
-   Start by creating a new directory for your Terraform project. Navigate to this directory in your terminal.
+   Begin by creating a new directory for your Terraform project and navigate to the directory in your terminal.
 
 ```sh {"id":"01HPPVN521NV378FM42N6FA9B8"}
 mkdir terraform-ec2-instance
 cd terraform-ec2-instance
 ```
 
-**Create Terraform Configuration File:**
-
-Create a new file named **` main. tf`**  in your project directory. This file will contain the Terraform configuration for your EC2 instance.
+Next, create a new file named main.tf in your project directory. This file will contain the Terraform configuration for your EC2 instance.
 
 ```sh {"id":"01HPPVN521WAPSS4TR5EX0JZM0"}
 provider "aws" {
@@ -63,20 +49,33 @@ resource "aws_instance" "example" {
 }
 ```
 
-In this example, we are using the __`aws_instance`__  resource to define an EC2 instance. Replace the __ami__ with the desired Amazon Machine Image (AMI) ID for your region.
+In the code snippet above, we set the AWS region,
+- we set the AWS region(you can replace the region with your desired region).
+- Next, define the the Aws EC2 instance, example using the ”aws_instance”.
+- Specify the ami (Amazone Machine Image) ID for the instance.
+- Lastly, the instance_type to t2.micro” to indicate the instance a micro-sized instance.
 
-## Your Markdown file
+## Run your file with Runme
+
+In this section of the guide, we will creating a runbook with Runme which will be used to run the project.
+
+Runme has amazing functionalities that not only allows  you run your commands within your markdown file but also saves the output in a separate file through a feature knwn as session output.
+Through this you are not only running your command but your output is saved for future reference.
 
 **Initialize Terraform:**
-Create a code block to execute your commands
 
-Run the following command to initialize your Terraform configuration:
+To begin, first create a `.md` file within your project directory. With Runme installed, every markdown (`.md`) file created in your code editor will ipen with Markdown. Alteratieky you can set Runme as your [editor markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+
+
+In your markwon file, creating a code block to execute your command.
+
+Add your code to initialize Terraform
 
 ```sh {"id":"01HPPVN521G7D9D2TP25XQWKPQ"}
 terraform init
 ```
 
-Output:
+Run the above  command to initialize your Terraform configuration
 
 ![terraform init](../../static/img/terraform-init.png)
 
@@ -90,11 +89,11 @@ Before applying the changes, you can review the execution plan to ensure everyth
 terraform plan
 ```
 
-Output:
+You should get a similar output:
 
 ![terraform plan](../../static/img/terraform-plan.png)
 
-If everything looks good, apply the changes to create the EC2 instance:
+Once this is thoroughly checked for errors or misconfiguration, you can apply the changes to create the EC2 instance.
 
 ```sh {"id":"01HPPVN521WJGE2J9H910RNXNP"}
 terraform apply
@@ -104,11 +103,17 @@ output:
 
 ![terraform](../../static/img/terraform-apply.png)
 
-Terraform will prompt you to confirm the changes. Type **yes** and press Enter.
+Terraform will prompt you to confirm the changes. Type `yes` and press Enter. Once the apply process is complete, you can go to the AWS Management Console to verify that your EC2 instance has been created.
 
-1. **Verify EC2 Instance:**
+Save Output
+Runme allows you to save your output throughout your deployment process.  Whether it's running code or markdown, you can keep track of every activity that has taken place throughout your deployment process by saving the output
+This saved output is automatically stored in a new file which is created by default, so you can easily reference it at any time.
+ To use this feature, just toggle the "Autosave" option at the top of your code editor in your markdown file to turn “on” or “off”. It's that simple!
 
-Once the apply process is complete, you can go to the AWS Management Console to verify that your EC2 instance has been created.
+ {{images}}
+
+Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save]() feature for more information.
+
 
 **Cleaning Up:**
 
@@ -118,11 +123,11 @@ If you want to destroy the resources created by Terraform, you can run:
 terraform destroy
 ```
 
-This command will prompt you to confirm the destruction of resources. Type **yes** to proceed.
+This command will prompt you to confirm the destruction of resources. Type `yes` to proceed.
 
 ## Terraform Workspaces
 
-Within your code cell you can set the directory structure of where you whant your executable command to be initiated from
+Within your code cell you can set the directory structure of where you want your executable command to be initiated from
 
 ![terraform structure](../../static/img/terraform-structure.png)
 
@@ -140,7 +145,7 @@ set your block to run from your `production` directory
 terraform workspace new staging
 ```
 
-set your block to run from your `production` directory
+set your block to run from your `staging` directory
 
 - Select between workspaces:
 
@@ -157,7 +162,9 @@ or
 terraform workspace select staging
 ```
 
-Execution:
+Lastly based on your preferred workspace, execute the command by applying the terraform configuration t0 modify the infrastructure in the environment of your choice.
+
+For example, in production, run the command below:
 
 ```sh {"id":"01HPPVN521RJ1ZVZVVYGTYNNGJ"}
 # For production
@@ -171,6 +178,11 @@ terraform workspace select production
 terraform apply -var-file=terraform.tfvars
 ```
 
-## **Conclusion:**
+This will allow for the separation of configurations for different environments, making it easier to manage and apply changes to infrastructure in distinct contexts, such as development, testing, and production.
 
-Terraform is a simple yet powerful way to manage your infrastructure as code. It provides repeatability and version control for your infrastructure, with runme it makes it easier to manage and collaborate with others. Customize the Terraform configuration based on your specific requirements, and enjoy the benefits of automated infrastructure provisioning with Terraform.
+## Conclusion
+
+Using Runme with Terraform helps you to create an operational workflow that integrates Terraform commands within Runme’s automated runbook. ​​In this guide, we walked through running a Terraform within a Runme Notebook in our Vs Code editor. We covered how you can run your EC2 instance with Runme, review and apply your changes, set directory commands for each workspace, and save your output for future reference.
+We hope this tutorial was of help to you.
+Wish you a smooth operation!
+

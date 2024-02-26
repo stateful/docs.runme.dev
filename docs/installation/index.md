@@ -8,22 +8,17 @@ title: Installation
 
 # Installation
 
-## **Overview**
 
-Runme provides multiple client interfaces that enable users to interact with Runme’s kernel. You can install Runme based on your preferred client interface. These client interfaces include:
+In this section, you will find comprehensive instructions on how you can install Runme using the various installation options we have provided.
 
-- [CLI for the terminal, notebook](https://docs.runme.dev/installation/runmecli),
-- [editor integration in VS Code](https://docs.runme.dev/installation/installrunme),
-- [self-hosted web app version](https://docs.runme.dev/how-runme-works/web)
+The purpose of this section is to guide you through the installation process of Runme, ensuring you are well-equipped with the necessary information and dependencies required to start using Runme effectively.
 
-Whether you are a beginner getting started or an experienced user looking to set up Runme for your workflow, this section will provide you with step-by-step instructions and best practices to ensure a smooth installation process.
+Whether you are a beginner getting started with Runme or an experienced user looking to set up Runme for your workflow, this section will give you step-by-step instructions and best practices to guarantee a smooth installation
 
-## **Requirement**
+## Runme’s Client Interfaces
 
-Before you dive right in, there are a few requirements needed to enable you install Runme.
+Runme provides multiple client interfaces that enable you to interact with Runme’s kernel. You can install Runme based on your preferred client interface. These client interfaces include:
 
-- Basic knowledge of Markdown
-- [VS Code](https://code.visualstudio.com/download) installed in your machine.
-- Basic knowledge of using the terminal
-
-These requirements are based on your preferred Runme client interface(CLI, VS Code or web)
+- [CLI for the terminal, notebook](../installation/runmecli.md),
+- [Editor integration in VS Code](../installation/installrunme.md),
+- [Self-hosted web app version](../how-runme-works/web.md)
