@@ -164,13 +164,31 @@ If a cell has exported variables, the user will be prompted to set these variabl
 
 ![prompt user in vscode](../../static/img/promptenv-runme.png)
 
-**Default:** `true`
-
 **Example**
 
 ```sh {"id":"01HPM880GBF2Y1SGKA92YF4WDZ","promptEnv":"true"}
-export SLEEP_SECS=0
+export SLEEP_SECS="0"
 sleep $SLEEP_SECS
+```
+
+There are two prompt modes: using 1.) a placeholder or 2.) a prompt message. Here's the difference:
+
+1. **Using a Placeholder**:
+
+Using quotes or double-qoutes will prompt the use the confirm the placeholder value. This is convient when a valid default value is known ahead of time.
+
+```sh
+export PROJECT_ID="your-project-7f412a"
+cli make-call --project-id $PROJECT_ID describe
+```
+
+2. **Using a Prompt Message**:
+
+When you don't know the default value, you can instead use a prompt message to ask the user for the value. The key difference here is that the message does not act as value placeholder.
+
+```sh
+export PROJECT_ID=Enter a valid project ID
+cli make-call --project-id $PROJECT_ID describe
 ```
 
 ### **Terminal visibility post-execution**

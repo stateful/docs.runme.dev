@@ -13,10 +13,17 @@ Discover the various ways you can use Runme to run your code straight from your 
 Set and use environment variables in your code. For example:
 
 ```sh {"id":"01HMXTSA9MJMVAYNK01D3V7Z07"}
-export SLEEP_SECS=5
+export SLEEP_SECS="5"
 echo "Sleeping for $SLEEP_SECS seconds..."
 sleep $SLEEP_SECS
 echo "Awake now!"
+```
+
+There are two prompt modes: using 1.) a placeholder or 2.) a prompt message. Learn more about them at [Environment Variable Prompts](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
+
+```sh
+export PROJECT_ID=Enter a valid project ID
+cli make-call --project-id $PROJECT_ID describe
 ```
 
 ## **Advanced Usage of Piping and Variables**
