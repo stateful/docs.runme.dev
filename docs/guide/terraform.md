@@ -113,7 +113,7 @@ This saved output is automatically stored in a new file which is created by defa
 
  ![auto save](../../static/img/guide-page/runme-autosave.png)
 
-Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save]() feature for more information.
+Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save](../configuration/auto-save.md) feature for more information.
 
 
 **Cleaning Up:**
