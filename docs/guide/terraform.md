@@ -1,4 +1,4 @@
-# Terraform via Runme
+# Infrastructure automation with Terraform using Runme
 
 As a cloud infrastructure engineer imagine you are responsible for managing the infrastructure of a web application that runs in multiple environments this includes, development, staging, and production. This infrastructure is defined using Terraform. However, you are faced with a specific configuration challenge where each environment has specific configuration requirements in addition your team needs visibility during the application deployment process.
 
