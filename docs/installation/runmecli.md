@@ -137,4 +137,4 @@ Feedback:
   For issues and questions join the Runme community at https://discord.gg/runme
 ```
 
-Runme’s TUI is awesome however, if you want to run a specific command quickly, simply run a specific script by name using the runme run <command> subcommand.
+Runme’s TUI is awesome however, if you want to run a specific command quickly, simply run a specific script by name using the runme run `command` subcommand.
