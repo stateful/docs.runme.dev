@@ -105,12 +105,13 @@ output:
 
 Terraform will prompt you to confirm the changes. Type `yes` and press Enter. Once the apply process is complete, you can go to the AWS Management Console to verify that your EC2 instance has been created.
 
-Save Output
+## Save Output
+
 Runme allows you to save your output throughout your deployment process.  Whether it's running code or markdown, you can keep track of every activity that has taken place throughout your deployment process by saving the output
 This saved output is automatically stored in a new file which is created by default, so you can easily reference it at any time.
  To use this feature, just toggle the "Autosave" option at the top of your code editor in your markdown file to turn “on” or “off”. It's that simple!
 
- {{images}}
+ ![auto save](../../static/img/guide-page/runme-autosave.png)
 
 Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save]() feature for more information.
 
