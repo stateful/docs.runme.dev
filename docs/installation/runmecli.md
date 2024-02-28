@@ -12,7 +12,7 @@ Runme works effectively on the CLI. If you are a power user who enjoys running M
 
 Here, we will give you detailed instructions on how to install Runme on your CLI.
 
-## Install Runme On MacOS
+## **Install Runme On MacOS**
 
 To get started, one of the easiest ways to install Runme on MacOS is by using [Homebrew.](https://brew.sh/)
 
@@ -47,7 +47,7 @@ Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
 Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 ```
 
-## Installing Runme On Windows
+## **Installing Runme On Windows**
 
 For Windows users, you can conveniently install Runme using [Scoop.sh](https://scoop.sh/), a command-line installer for Windows.
 
@@ -60,7 +60,7 @@ scoop install stateful/runme
 
 ```
 
-## Other Platforms
+## **Other Platforms**
 
 Alternatively, you can explore Runme's [releases](https://github.com/stateful/runme/releases) and choose the binary that corresponds to your operating system.
 
@@ -106,7 +106,7 @@ go install github.com/stateful/runme/v3@v3
 
 If you don't have Go developer tools installed and still want to use this method, download and install Go.
 
-## Basic Usage with Runme TUI
+## **Basic Usage with Runme TUI**
 
 Runme provides a user-friendly text-based user interface (TUI) that allows users to interact with Runme through typed commands and responses displayed on their screen.
 
@@ -171,6 +171,6 @@ Feedback:
 
 Runme’s TUI is awesome however, if you want to run a specific command quickly, simply run a specific script by name using the `runme run <command>` subcommand.
 
-## Next Steps
+## **Next Steps**
 
 You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdwon files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)
