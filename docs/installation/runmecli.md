@@ -62,12 +62,46 @@ scoop install stateful/runme
 
 ## Other Platforms
 
-Alternatively, you can explore Runme's [releases](https://github.com/stateful/runme/releases) and choose the binary that corresponds to your operating system. If you have a different preferred distribution mechanism, feel free to inform us on [Discord](https://discord.gg/runme).
+Alternatively, you can explore Runme's [releases](https://github.com/stateful/runme/releases) and choose the binary that corresponds to your operating system.
+
+Example:
+
+You can use `curl` or `wget` to install the runme binary
+
+```bash
+wget https://download.stateful.com/runme/3.1.0-rc.0/runme_darwin_x86_64.tar.gz
+```
+
+Move the `runme` binary to **`/usr/local/bin`** (recommended) or **`/bin`** (as per your request)
+
+```bash
+sudo mv runme /usr/local/bin/ # or /bin/runme if you went that route
+```
+
+Verify the binary is in the path and executable.
+
+```bash
+which runme
+```
+
+This command should output the path to the binary, confirming it's in your system's PATH. To ensure it's executable, you can explicitly set executable permissions:
+
+```bash
+sudo chmod +x /usr/local/bin/runme  # or /bin/runme if you went that route
+```
+
+Run the binary by simply typing `runme`
+
+```bash
+runme
+```
+
+If you have a different preferred distribution mechanism, feel free to inform us on [Discord](https://discord.gg/runme).
 
 We have also provided an option for Go developers to install Runme. If you are a Go developer or you have Go developer tools installed, you can install Runme with `go install`  command. Use the command below to carry out this installation:
 
 ```sh {"id":"01HQK3RSC9YSH5NM2AE503GRB5"}
-go install github.com/stateful/runme@latest
+go install github.com/stateful/runme/v3@v3
 ```
 
 If you don't have Go developer tools installed and still want to use this method, download and install Go.
