@@ -6,29 +6,52 @@ runme:
 
 # Install Runme on CLI
 
-## [](https://docs.runme.dev/installation/runmecli)
-
-The Runme CLI is ideal for power users who want to run markdown documentation from their terminal.
+Runme works effectively on the CLI. If you are a power user who enjoys running Markdown files from the terminal of your local machine, this section is for you.
 
 ![cli](../../static/img/terminal.png)
 
-### **On MacOS**
+Here, we will give you detailed instructions on how to install Runme on your CLI.
 
-The easiest way on MacOS is to use [Homebrew](https://brew.sh/):
+## **Install Runme On MacOS**
 
-```sh {"id":"01HMXXFJFXWEN7ER7PSYKQNH3C"}
+To get started, one of the easiest ways to install Runme on MacOS is by using [Homebrew.](https://brew.sh/)
+
+Before you proceed, ensure you have the latest version of Homebrew on your local machine, use the command below to update if needed:
+
+```sh {"id":"01HMXXFJFXWEN7ER7PSYKQNH3C","name":"brew update"}
 brew update
 ```
 
-Install Runme
+Once you have the latest version of Homebrew, proceed with installing Runme. Use the command below to install:
 
 ```sh {"id":"01HMXXF11NA3BJNCDYQAED3654"}
 brew install runme
 ```
 
-### **On Windows**
+You should see a similar output if Runme is successfully installed.
 
-On Windows, we distribute the binary through [Scoop.sh](https://scoop.sh/):
+```sh {"id":"01HQK3K4B8AC82PPT9370P49FD"}
+==> Downloading https://ghcr.io/v2/homebrew/core/runme/manifests/3.0.2
+##################################################################################################################################################################################################### 100.0%
+==> Fetching runme
+==> Downloading https://ghcr.io/v2/homebrew/core/runme/blobs/sha256:c8fb6b6c6b3ee65fd8ee8b24fe9e85bec007afb89623f7fc40a83705d9e182de
+##################################################################################################################################################################################################### 100.0%
+==> Pouring runme--3.0.2.arm64_sonoma.bottle.tar.gz
+==> Caveats
+zsh completions have been installed to:
+ /opt/homebrew/share/zsh/site-functions
+==> Summary
+:beer: /opt/homebrew/Cellar/runme/3.0.2: 8 files, 21.9MB
+==> Running `brew cleanup runme`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+```
+
+## **Installing Runme On Windows**
+
+For Windows users, you can conveniently install Runme using [Scoop.sh](https://scoop.sh/), a command-line installer for Windows.
+
+Run the commands below on your terminal to install Runme:
 
 ```sh {"id":"01HMXWP6WJP70JQEBKRMZWR955"}
 
@@ -37,40 +60,63 @@ scoop install stateful/runme
 
 ```
 
-### **Other Platforms**
+## **Other Platforms**
 
-Alternatively, check out Runme's [releases](https://github.com/stateful/runme/releases) and select a binary for your operating system. Let us know [on Discord](https://discord.gg/runme) if you have a different preferred distribution mechanism.
+Alternatively, you can explore Runme's [releases](https://github.com/stateful/runme/releases) and choose the binary that corresponds to your operating system.
 
-If you have Go developer tools installed, you can install it with go install:
+Example:
 
-```sh {"id":"01HMXWNACJGQCWXQCBZA7ERQB5"}
-go install github.com/stateful/runme@latest
+You can use `curl` or `wget` to install the runme binary
+
+```bash
+wget https://download.stateful.com/runme/3.1.0-rc.0/runme_darwin_x86_64.tar.gz
 ```
 
-If you do not have Go developer tools installed and still want to use this method, [download and install go](https://go.dev/doc/install).
+Move the `runme` binary to **`/usr/local/bin`** (recommended) or **`/bin`** (as per your request)
 
-### **Download Binaries directly**
+```bash
+sudo mv runme /usr/local/bin/ # or /bin/runme if you went that route
+```
 
-You can find a binary for your `OS/arch` on our [releases page](https://github.com/stateful/runme/releases). Let us know on [Discord](https://discord.gg/runme) if you have a preferred distribution mechanism.
+Verify the binary is in the path and executable.
 
-See [the doc page on the cli](https://docs.runme.dev/installation/runmecli) for CLI installation instructions.
+```bash
+which runme
+```
 
-### **Basic Usage**
+This command should output the path to the binary, confirming it's in your system's PATH. To ensure it's executable, you can explicitly set executable permissions:
 
-Runme has a nice TUI that you can use simply like so:
+```bash
+sudo chmod +x /usr/local/bin/runme  # or /bin/runme if you went that route
+```
 
-`# short for "runme tui"runme`
+Run the binary by simply typing `runme`
 
-```sh {"id":"01HPSANP51Y6QYQKH1QRBEB17S"}
-# short for "runme tui"
+```bash
 runme
 ```
 
+If you have a different preferred distribution mechanism, feel free to inform us on [Discord](https://discord.gg/runme).
+
+We have also provided an option for Go developers to install Runme. If you are a Go developer or you have Go developer tools installed, you can install Runme with `go install`  command. Use the command below to carry out this installation:
+
+```sh {"id":"01HQK3RSC9YSH5NM2AE503GRB5"}
+go install github.com/stateful/runme/v3@v3
+```
+
+If you don't have Go developer tools installed and still want to use this method, download and install Go.
+
+## **Basic Usage with Runme TUI**
+
+Runme provides a user-friendly text-based user interface (TUI) that allows users to interact with Runme through typed commands and responses displayed on their screen.
+
+This TUI can be accessed using the command `runme tui` or just `runme` . These commands essentially allow you to quickly execute any script present in the README.
+
+The video below displays Runme’s TUI and how to access its features using the command.
+
 ![Runme TUI Usage](../../static/img/runme-tui.gif)
 
-This allows you to quickly execute any script present in the README.
-
-### **Warning!**
+### **Warning**
 
 Runme would not work if your current working directory does not contain a README file at the top level! You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
 
@@ -86,12 +132,10 @@ Usage:
 
 Available Commands:
   completion  Generate the autocompletion script for the specified shell
-  extension   Check your Stateful VS Code extension status
+  extension   Check your Runme VS Code extension status
   fmt         Format a Markdown file into canonical format
   help        Help about any command
   list        List available commands
-  login       Log in to Runme (optional)
-  logout      Log out from Runme
   open        Launch Runme in a headless web client
   print       Print a selected snippet
   run         Run a selected command
@@ -101,7 +145,7 @@ Flags:
       --allow-unknown                Display snippets without known executor (default true)
       --allow-unnamed                Allow scripts without explicit names
       --background                   Enable running background blocks as background processes
-      --chdir string                 Switch to a different working directory before executing the command (default "/Users/macbookpro/Desktop/ssh")
+      --chdir string                 Switch to a different working directory before executing the command (default "/Users/macbookpro")
       --entries int                  Number of entries to show in TUI (default 5)
       --env-order stringArray        List of environment files to load in order. (default [.env.local,.env])
       --exit                         Exit TUI after running a command
@@ -125,14 +169,8 @@ Feedback:
   For issues and questions join the Runme community at https://discord.gg/runme
 ```
 
-By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
+Runme’s TUI is awesome however, if you want to run a specific command quickly, simply run a specific script by name using the `runme run <command>` subcommand.
 
-```sh {"id":"01HMXWG5N41B5V7JKQG2FZDMC7"}
-runme ls --filename SUPPORT.md --chdir ./.github
-```
+## **Next Steps**
 
-### **Running Commands Directly**
-
-The TUI is nice, but what if you just want to run a specific command quickly?
-
-Simply run a specific script by name, using the `runme run <command>` subcommand.
+You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdwon files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)

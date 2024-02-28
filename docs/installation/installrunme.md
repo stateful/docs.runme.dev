@@ -6,46 +6,76 @@ runme:
 
 # Install Runme on VS Code
 
-In this section, we will guide you through installing Runme on VS Code.
+Runme can be easily installed on your VS Code editor.  This installation will give you access to all the features of Runme directly within your code editor. In VS Code, Runme works using the Runme Notebook extension, which is the primary component installed in your editor.
 
-Let's get started.
+With the extension you will be able to create and manage runbooks, as well as perform various runbook operations.
+The sections below will guide you through installing Runme on VS Code executing code command right inside your Markdown file.
 
 ## **Installing Runme on VS Code**
 
-To get started, open the `Extensions Tab` in your VS Code sidebar and search for **"Runme"**. The CLI is contained inside the extension.
+To get started, follow the steps below:
 
+1. Open up VS Code on your local machine.
+2. Navigate to the **`Extension`** tab, which can be located on the dashboard on your left.
+3. In your search bar, type "Runme". This will display the Runme Notebook extension.
+4. Now click on Install to install the Notebook extension
 
 ![install runme gif](../../static/img/install.gif)
 
-Alternatively, you can go to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and click the green `Install` button.
+## Installing Runme From the VS Code Marketplace
 
-That's it!
+Alternatively, you can install Runme from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme). To do this, follow the steps below.
 
-Now, whenever you open a Markdown file (**`*.md`** or **`*.mdx`**), it will open as a Runme notebook.
+1. Go to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme)
+2. Next, click on the **`Install`** button.
 
-![Overview of Runme for VS Code](../../static/img/runme-for-vscode.png)
-
-### **Bleeding Edge Features**
-
-A pre-release version of Runme is offered for curious developers who want to try our latest enhancements to the extension. Head to the extension configuration and click “**Switch to Pre-release Version**” to access it.
+![VS Code Marketplace](../../static/img/installation-page/VSCodemarketplace.png)
 
 
-![Find runme in VS Codet](../../static/img/bleed-edge-feature.png)
+You have successfully installed Runme! 🎉 
 
-[](https://docs.runme.dev/installation/installrunme#default-markdown-viewer)
+With Runme installed, every Markdown file you open on your VS Code editor, will open using Runme.
 
-If you do not see this option, make sure your VS Code is updated to at least version `1.63.0`.
 
-### **Default Markdown Viewer**
+## Full Display of Runme’s Action on a Markdown File in VS Code
 
-To use Runme as your default markdown file viewer in VS Code, follow these steps:
+After successfully installing Runme on your VS Code, you can open any Markdown file (**`*.md`** or **`*.mdx`**) with VS Code, and it will open as a Runme notebook.
 
-1. Right-click on any `.md` or `.mdx` file in the explorer window (in the directory file list, not under "Open Editors").
-2. Choose "Open With."
-3. Select "Configure Default Editor" at the bottom of the list.
-4. Choose "Run your [README.md](http://readme.md/) - Runme."
+Below is a full display of Runme’s action on a Markdown file in VS Code.
 
-Alternatively, you can set the following in your `.vscode/settings.json` file in your project:
+
+![VS Code Marketplace](../../static/img/installation-page/runme-for-vscode.png)
+
+1. **Notebooks Explorer:** You can easily access all your Markdown files using the Notebook Explorer. This will display all Markdown files existing in your project directory.
+
+2. **Cell Execution Status Indicator:** When a code block is executed, the status indicator displays an icon that indicates the status of the executed code. If the code fails, an “X” symbol is returned, indicating failure; however, if the code is successfully run, a symbol, as seen in the image above, is displayed.
+
+3. **Cell Execution Result:** View the executed cell result using the integrated VS Code terminal and prevent context switching using this terminal.
+
+4. **Run Cell Button:** Running code in Markdown files is now easier with just one click.
+
+5. **Cell Code Block:** Get a visual representation of commands to be executed with syntax highlighting.
+
+6. **Notebook Global Actions:** View common options that define your code input and execution in the context of the Notebook.
+
+7. **Cell Code Block Actions:** List of actions that define code block execution. This includes cell language, [configurations](../configuration/index.md) etc.
+
+8. **Cell Execution Result:**  Copy your generated output.
+
+## How to Set VS Code as Your Default Markdown Viewer
+
+We believe that at this point, you have become a fan of Runme. If you want to make Runme your default Markdown file viewer in your VS Code editor, follow the steps below:
+
+1. Right-click on any `.md` or `.mdx` file in the explorer window (in the directory file list, not under **Open Editors**).
+2. Select **Open With**
+3. Select **Configure default editor** at the bottom of the list
+4. Select **Run your README.md - Runme**
+
+Here is a visual representation of these steps:
+
+![Find runme in vs code](../../static/img/switch-notebook-viewers.gif)
+
+Alternatively, set the following in your .vscode/settings.json file of your project:
 
 ```javascript {"id":"01HMXWAXX8WA6KTQPG7QNR43MV"}
 // ...
@@ -56,12 +86,18 @@ Alternatively, you can set the following in your `.vscode/settings.json` file in
   // ...
 ```
 
-Now, when you open any `.md` or `.mdx` file, it will default to the Runme viewer.
+### **Bleeding Edge Features**
 
-You can also switch by just doing a right-click on the file and go to `"Open With ..."`, e.g.:
+Are you a curious developer who loves trying out new things? Runme has a pre-release version with every new update made to the extension. You can try out these new updates and additions firsthand. Follow these steps to access the pre-release version of Runme:
 
-![Find runme in vs code](../../static/img/switch-notebook-viewers.gif)
+1. Go to the Extension tab on VS Code
+2. Search for **Runme**
+3. Click **Switch to Pre-release Version** to access new pre-released updates.
 
-### **How it Works**
+If you don't see this option, make sure your VS Code is updated to at least version `1.63.0`.
 
-When Runme is ran as a web app, it replicates the user experience of VS Code. For the next steps, explore the [Getting Started](https://docs.runme.dev/getting-started) guide.
+![Find runme in VS Codet](../../static/img/bleed-edge-feature.png)
+
+### How Runme Works in VS Code
+
+Congratulations on successfully installing the Runme extension on VS Code. We have a lot in store for you. Explore how  [How Runme Works with VS Code](../how-runme-works/vscode.md) and all you can achieve with the Runme extension.
