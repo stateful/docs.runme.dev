@@ -1,7 +1,12 @@
 ---
 runme:
   id: 01HMXXHBVGVRWDENHJX7JDPXSM
-  version: v2.2
+  version: v3
+  document:
+    relativePath: docker.md
+  session:
+    id: 01HQWKYGVHCDS8HN2MC1PA7AYG
+    updated: 2024-03-01 12:08:40+01:00
 ---
 
 # Install Runme with Docker
