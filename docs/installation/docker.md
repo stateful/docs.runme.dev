@@ -40,7 +40,7 @@ docker run -it --volume /your/runbooks:/runbooks statefulhq/runme --project /run
 
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
 
-```sh {"id":"01HQW92KPTDZVX2173NY4K80JQ"}
+```dockerfile {"id":"01HQW92KPTDZVX2173NY4K80JQ"}
 # Stage 1: Build Stage
 FROM statefulhq/runme:latest as build
 WORKDIR /app
