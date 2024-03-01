@@ -6,7 +6,7 @@ runme:
 
 # Install Runme with Docker
 
-If you prefer, you can containerize your Runme notebook using Docker. This approach allows you to easily deploy the notebook in various environments, such as cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , or local test environments.
+You can containerize your Runme notebook using Docker. This approach allows you to easily deploy the notebook in various environments, such as cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , or local test environments.
 
 ## Docker Image
 
@@ -35,6 +35,28 @@ Passing the `--project` flag:
 ```sh {"id":"01HQW6213ANNPPVNWZBXM5605G"}
 docker run -it --volume /your/runbooks:/runbooks statefulhq/runme --project /runbooks
 ```
+
+Multi-Stage Build
+
+Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
+
+```sh {"id":"01HQW92KPTDZVX2173NY4K80JQ"}
+# Stage 1: Build Stage
+FROM statefulhq/runme:latest as build
+WORKDIR /app
+COPY your_dependency_file.txt .
+# Add any necessary commands to install dependencies
+RUN install_dependencies_command
+
+# Stage 2: Runme Stage
+FROM statefulhq/runme:latest
+WORKDIR /opt/var/runme
+COPY --from=build /app /opt/var/runme
+# Continue with your Runme configuration and usage
+CMD ["runme", "your_runme_command"]
+```
+
+In this example, the first stage is dedicated to installing dependencies, and the second stage builds upon the first, incorporating the necessary files and configurations for Runme.
 
 ## Additional Considerations
 
