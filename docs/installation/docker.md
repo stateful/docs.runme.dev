@@ -8,7 +8,7 @@ runme:
 
 You can containerize your Runme notebook using Docker. This approach allows you to easily deploy the notebook in various environments, such as cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , or local test environments.
 
-## Docker Image
+## **Docker Image**
 
 Docker images for each released version of Runme are available on [Docker Hub](https://hub.docker.com/r/statefulhq/runme). To get the latest version, use the following command:
 
@@ -16,7 +16,7 @@ Docker images for each released version of Runme are available on [Docker Hub](h
 docker pull statefulhq/runme:latest
 ```
 
-# Basic Usage
+## **Basic Usage**
 
 Use the default working directory:
 
@@ -36,7 +36,7 @@ Passing the `--project` flag:
 docker run -it --volume /your/runbooks:/runbooks statefulhq/runme --project /runbooks
 ```
 
-## Multi-Stage Build
+## **Multi-Stage Build**
 
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
 
@@ -58,7 +58,7 @@ CMD ["runme", "your_runme_command"]
 
 In this example, the first stage is dedicated to installing dependencies, and the second stage builds upon the first, incorporating the necessary files and configurations for Runme.
 
-## Additional Considerations
+## **Additional Considerations**
 
 **ARM64 Architecture**:
 If you are using an ARM64 architecture, include the `--platform=linux/arm64` flag:
