@@ -36,7 +36,7 @@ Passing the `--project` flag:
 docker run -it --volume /your/runbooks:/runbooks statefulhq/runme --project /runbooks
 ```
 
-Multi-Stage Build
+## Multi-Stage Build
 
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
 
