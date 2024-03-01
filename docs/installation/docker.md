@@ -36,6 +36,18 @@ Passing the `--project` flag:
 docker run -it --volume /your/runbooks:/runbooks statefulhq/runme --project /runbooks
 ```
 
+This is an example of containerizing your application
+
+```sh {"id":"01HQWT62G0DMDWH17QHK0KK3KS"}
+FROM statefulhq/runme:latest as build
+WORKDIR /app
+COPY example_runme.md .
+# Add any necessary commands to install dependencies
+RUN echo "Installing dependencies..."
+# Continue with your Runme configuration and usage
+ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
+```
+
 ## **Multi-Stage Build**
 
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
@@ -49,17 +61,13 @@ COPY your_dependency_file.txt .
 RUN install_dependencies_command
 
 # Stage 2: Runme Stage
-FROM statefulhq/runme:latest
-WORKDIR /opt/var/runme
-
-# Copy dependencies from the Dependency Stage
-COPY --from=dependency_stage /app /opt/var/runme
-
-# Copy Runme runbook (.md) from the host to the container
-COPY your_runme_runbook.md .
-
+FROM statefulhq/runme:latest as build
+WORKDIR /app
+COPY example_runme.md .
+# Add any necessary commands to install dependencies
+RUN echo "Installing dependencies..."
 # Continue with your Runme configuration and usage
-CMD ["runme", "your_runme_runbook.md"]
+ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"] 
 ```
 
 In this example, the first stage is dedicated to installing dependencies, and the second stage builds upon the first, incorporating the necessary files and configurations for Runme.
