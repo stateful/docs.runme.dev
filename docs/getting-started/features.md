@@ -41,10 +41,10 @@ Runme simplifies the use of environment variables in your notebooks by allowing 
 
 **How to Enable PromptEnv**
 
-- **click on  `configure ⚙️` in your code cell**
-- click `promptEnv` to set the condition you want the cell to run in
+- Click on  `configure ⚙️` in your code cell
+- Click `promptEnv` to set the condition you want the cell to run in
 
-![promptenv](../../static/img/getting-started/promptenv.png)
+![promptenv](../../static/img/getting-started/promptsenv.png)
 
 For instance, in the image below, we configure the SLEEP_SECS environment variable to 10 seconds with a single click on the run cell button. This feature is useful when your runbooks need user-specific values.
 
