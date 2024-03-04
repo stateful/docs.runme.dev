@@ -46,7 +46,7 @@ Runme simplifies the use of environment variables in your notebooks by allowing 
 
 ![promptenv](../../static/img/getting-started/promptsenv.png)
 
-For instance, in the image below, we configure the SLEEP_SECS environment variable to 10 seconds with a single click on the run cell button. This feature is useful when your runbooks need user-specific values.
+For instance, in the image below, we configure the `SLEEP_SECS` environment variable to 10 seconds with a single click on the run cell button. This feature is useful when your runbooks need user-specific values.
 
 ![ouput](../../static/img/getting-started/promptenv-output.png)
 
