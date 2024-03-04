@@ -106,7 +106,7 @@ go install github.com/stateful/runme/v3@v3
 
 <Infobox type="warning" title="Warning!">
 
-the displayed version may appear as “0.0.0”. This is an expected behavior and does not affect functionality
+The displayed version may appear as “0.0.0”. This is an expected behavior and does not affect functionality
 
 </Infobox>
 
