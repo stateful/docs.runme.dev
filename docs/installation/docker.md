@@ -8,6 +8,9 @@ runme:
 
 You can containerize your Runme notebook using Docker. This approach allows you to easily deploy the notebook in various environments, such as cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , or local test environments.
 
+Containerize your Runme notebook for enhanced portability across diverse environments. Improve DevOps operations, including backups and data import/export. Ensure compliance with standards by maintaining consistent execution in a containerized environment. Establish a well-documented DevOps process for transparent collaboration and reproducibility. Optimize workflows with Runme in containers for efficient, standardized, and compliant practices.
+
+
 ## **Docker Image**
 
 Docker images for each released version of Runme are available on [Docker Hub](https://hub.docker.com/r/statefulhq/runme). To get the latest version, use the following command:
@@ -15,6 +18,7 @@ Docker images for each released version of Runme are available on [Docker Hub](h
 ```sh {"id":"01HMXXHW2JRJ105X332JWKCZ8J"}
 docker pull statefulhq/runme:latest
 ```
+
 
 ## **Basic Usage**
 
@@ -48,6 +52,15 @@ RUN echo "Installing dependencies..."
 ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
 ```
 
+## **Additional Considerations**
+
+**ARM64 Architecture**:
+If you are using an ARM64 architecture, include the `--platform=linux/arm64` flag:
+
+```sh {"id":"01HQW86WFR37CZ0ESXPV8AFWZT"}
+docker run --platform=linux/arm64 -it --volume $(pwd):/opt/var/runme statefulhq/runme
+```
+
 ## **Multi-Stage Build**
 
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
@@ -67,19 +80,10 @@ COPY example_runme.md .
 # Add any necessary commands to install dependencies
 RUN echo "Installing dependencies..."
 # Continue with your Runme configuration and usage
-ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"] 
+ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
 ```
 
 In this example, the first stage is dedicated to installing dependencies, and the second stage builds upon the first, incorporating the necessary files and configurations for Runme.
-
-## **Additional Considerations**
-
-**ARM64 Architecture**:
-If you are using an ARM64 architecture, include the `--platform=linux/arm64` flag:
-
-```sh {"id":"01HQW86WFR37CZ0ESXPV8AFWZT"}
-docker run --platform=linux/arm64 -it --volume $(pwd):/opt/var/runme statefulhq/runme
-```
 
 <br />
 <Infobox type="sidenote" title="Keep going!">

@@ -37,11 +37,20 @@ To be extra safe, you will be prompted before each step to confirm your intentio
 
 ## **Environment Variable Prompts**
 
-To keep generic notebooks/runbooks for your users:
+Runme simplifies the use of environment variables in your notebooks by allowing dynamic settings within each cell block of your notebook. It provides interactive prompts in each cell, tailored to your users' needs. This ensures a smooth and user-friendly experience when incorporating real-time user interaction.
 
-If you are using environment variables within your runs, you can configure them within each cell and even make them interactive according to your particular needs. For example, we can configure the SLEEP_SECS environment variable to 10 seconds. Tremendously helpful whenever your runbooks require user-specific values.
+**How to Enable PromptEnv**
 
-![environmentvariableprompt](../../static/img/envvarprompts.png)
+- **click on  `configure ⚙️` in your code cell**
+- click `promptEnv` to set the condition you want the cell to run in
+
+![promptenv](../../static/img/getting-started/promptenv.png)
+
+For instance, in the image below, we configure the SLEEP_SECS environment variable to 10 seconds with a single click on the run cell button. This feature is useful when your runbooks need user-specific values.
+
+![ouput](../../static/img/getting-started/promptenv-output.png)
+
+This feature allows users to input values directly within the notebook environment, making task execution more efficient. Improve your workflow with the increased flexibility provided by promptEnv feature.
 
 ## **Render images, CSV tables, and terminals inside markdown**
 
