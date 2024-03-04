@@ -83,9 +83,15 @@ Shall we?
 4. Auto-save feature and separate session outputs
    The auto-save feature provides a uniform approach to task automation by ensuring that the history of the Markdown text and all cell output produced while running your file are preserved without manual intervention from you or your teammates.
 
+
 The auto-save feature incorporates a separate session output method that securely saves when each cell was run, the time it took, and exit codes.
 
-Note: When working with this feature, you are not to push the session outputs to git or any version control software as they have sensitive details.
+<br />
+<Infobox type="sidenote" title="Note">
+
+When working with this feature, you are not to push the session outputs to git or any version control software as they have sensitive details.
+
+</Infobox>
 
 By strategically incorporating these features into Bash scripts, SREs can enhance productivity, reliability, and scalability in managing infrastructure and ensuring service availability. Whether it's troubleshooting incidents, automating routine tasks, or optimizing system performance, Runme empowers SREs to tackle challenges with confidence and efficiency.
 
