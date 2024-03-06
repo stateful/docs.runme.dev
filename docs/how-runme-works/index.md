@@ -5,8 +5,8 @@ title: How Runme Works
 
 # How Runme Works
 
-Experience the best markdown docs with Runme! To unlock the full potential of our markdown documentation, we invite you to explore the following guidance. If you haven't already installed Runme, please complete the steps in [installation](https://docs.runme.dev/installation/runmecli) before proceeding.
+In this section, you will find comprehensive details about how Runme works on the various client interfaces.
 
-In which environment do you like to work the most?
+The purpose of this section is to equip you with all the information needed to start Runme from scratch using any of our client interfaces.
 
-<EnvironmentOptions />
+Whether you are a beginner getting started with Runme for the first time or an experienced user looking to get an in-depth understanding of how Runme works, this section will provide you with the information you need to execute your workflow seamlessly.
