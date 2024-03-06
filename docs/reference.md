@@ -2,21 +2,21 @@
 runme:
   id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
   version: v2.0
-sidebar_position: 4
+sidebar_position: 12
 title: Reference
 ---
 
-# Reference
+# **Reference**
 
 Runme executes commands inside your runbooks, documentation, and READMEs. It parses commands directly from Markdown files to make them executable.
 
-### NAME
+### **NAME**
 
 Runme [command]: Specific commands or actions in Runme to perform different tasks.
 
 Runme [flags]:  Optional configurations to modify the behaviour of our Runme runbook.
 
-### Runme Commands:
+### **Runme Commands**:
 
 Below are some available commands within Runme
 
@@ -46,7 +46,7 @@ Below are some available commands within Runme
 
 `tui` Run the interactive TUI
 
-### Runme Flags
+### **Runme Flags**
 
 Runme supported configuration flags.
 
