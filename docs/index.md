@@ -85,7 +85,8 @@ Learn more about Runme's [Kernel Architecture](https://docs.runme.dev/architectu
 
 ### **Communication & Support**
 
-Need assistance in getting started? Get in touch with our support team to provide answers to your questions and provide you with all the necessary details to get you started with Runme.
+Need assistance in getting started? Get in touch with members of our team via [Discord](https://discord.gg/runme) and get answers to your questions and all the necessary details to get you started with Runme.
+
 
 <Infobox type="sidenote" title="Join Runme community!">
 
