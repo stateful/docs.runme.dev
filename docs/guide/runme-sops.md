@@ -1,3 +1,7 @@
+# How to Encrypt Your Kubernetes Secrets with SOPS
+
+Here is a guide that will help you set up SOPS for encrypting confidential data.
+
 ## Installation of SOPS
 
 To use SOPS for encrypting and decrypting secrets, follow these installation steps:

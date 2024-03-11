@@ -1,4 +1,4 @@
-# Sealed Secret Runbook
+# Securing Secrets with Sealed Secrets
 
 This is a guide to setting up sealed secrets for encrypting confidential data.
 
