@@ -39,32 +39,4 @@ Verify the configuration by checking the contents of ~/.sops.yaml
 cat ~/.sops.yaml
 ```
 
-## Encrypt Your Secrets
-
-Encrypt your secrets using SOPS with AWS KMS.
-
-```sh {"id":"01HRQ8C1D77PYW52WETXV5C50K"}
-sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
-```
-
-## Decrypt Your Secrets
-
-Retrieve and decrypt your secrets when needed.
-
-```sh {"id":"01HRQ8D0KD158MVP57BR61D2X0"}
-kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 --decode
-```
-
-```sh {"id":"01HRQ8DDRA2FC1NBCSFQ08RQJX"}
-sops --decrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
-```
-
-Ensure to replace placeholders such as {region}, {account-id}, and {alias} with your actual AWS region, account ID, and alias. Customize the encryption and decryption commands based on your specific use case.
-
-# Apply Encrypted secret
-
-**Warning**: It's not advise to deploy the file directly, it should be part of your IAC or CI/CD process
-
-```sh {"id":"01HRQ8EGJ9NGKPQ8NZDBKXWJ8R"}
-sops -d runme-secrets-enc.yaml | kubectl apply -f -
 ```
