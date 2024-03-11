@@ -33,7 +33,7 @@ This will create a SealedSecret resource (`mysealedsecret.yaml`) containing the 
 ## Adding a new value to a sealed secret
 
 ```sh {"id":"01HRQ0NF7FTBQM6GTQH56FVZNX"}
-echo -n "my secret api key" \ kubectl create secret generic xxx --dry-run=client --from-file=api_key=/dev/stdin -o json | kubeseal --controller-namespace=kube-system --controller-name=sealed-secrets --format yaml --merge-into sealed-secret.yaml
+echo -n "my secret api key" | kubectl create secret generic xxx --dry-run=client --from-file=api_key=/dev/stdin -o json | kubeseal --controller-namespace=kube-system --controller-name=sealed-secrets --format yaml --merge-into sealed-secret.yaml
 ```
 
 ## Delete Sealed Secret
