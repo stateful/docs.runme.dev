@@ -30,7 +30,7 @@ Configure SOPS with your key and preferred settings. In this example, we are usi
 
 ```sh {"id":"01HRQ8AFJBJVENQ3NB8RM29H2J"}
 echo "creation_rules
-  - kms: arn:aws:kms:{region}:{account-id}:alias/{alias}" > ~/.sops.yaml
+  - kms: arn:aws:kms:us-east-1:001301279896:alias/test" > ~/.sops.yaml
 ```
 
 Verify the configuration by checking the contents of ~/.sops.yaml
