@@ -1,3 +1,5 @@
+# Sealed Secret Runbook
+
 This is a guide to setting up sealed secrets for encrypting confidential data.
 
 ## Pre-requiste
