@@ -59,7 +59,7 @@ kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 
 sops --decrypt --kms arn:aws:kms:us-east-1:001301279896:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
 ```
 
-Ensure to replace placeholders such as {region}, {account-id}, and {alias} with your actual AWS region, account ID, and alias. Customize the encryption and decryption commands based on your specific use case.
+Ensure to replace placeholders such as {test}, {account-id}, and {alias} with your actual AWS test, account ID, and alias. Customize the encryption and decryption commands based on your specific use case.
 
 # Apply Encrypted secret
 
