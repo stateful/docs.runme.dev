@@ -23,3 +23,19 @@ Step 3: Make the Binary Executable
 chmod +x /usr/local/bin/sops
 ```
 
+## Configure SOPS
+
+
+Configure SOPS with your key and preferred settings. In this example, we are using AWS KMS, learn how to create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
+
+```sh {"id":"01HRQ8AFJBJVENQ3NB8RM29H2J"}
+echo "creation_rules
+  - kms: arn:aws:kms:us-east-1:001301279896:alias/test" > ~/.sops.yaml
+```
+
+Verify the configuration by checking the contents of ~/.sops.yaml
+
+```sh {"id":"01HRQ8B3AKVMS82K79TX1Y94BP"}
+cat ~/.sops.yaml
+```
+
