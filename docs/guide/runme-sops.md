@@ -32,7 +32,7 @@ Configure SOPS with your key and preferred settings. In this example, we are usi
 
 ```sh {"id":"01HRQ8AFJBJVENQ3NB8RM29H2J"}
 echo "creation_rules
-  - kms: arn:aws:kms:{region}:{account-id}:alias/test" > ~/.sops.yaml
+  - kms: arn:aws:kms:{region}:{account-id}:alias/{alias}" > ~/.sops.yaml
 ```
 
 Verify the configuration by checking the contents of ~/.sops.yaml
@@ -46,7 +46,7 @@ cat ~/.sops.yaml
 Encrypt your secrets using SOPS with AWS KMS.
 
 ```sh {"id":"01HRQA75CJ96SFHC8HBTDC7YWS"}
-sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
+sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
 ```
 
 ## Decrypt Your Secrets
@@ -58,7 +58,7 @@ kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 
 ```
 
 ```sh {"id":"01HRQB2WR4YA4H90BB640VAMC5"}
-sops --decrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
+sops --decrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
 ```
 
 ## Apply Encrypted secret
