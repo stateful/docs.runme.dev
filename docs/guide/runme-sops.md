@@ -2,7 +2,6 @@
 
 To use SOPS for encrypting and decrypting secrets, follow these installation steps:
 
-
 Step 1: Download SOPS Binary
 
 ```sh {"id":"01HRQ889ED4XMYJ854F19AH21E"}
@@ -25,7 +24,6 @@ chmod +x /usr/local/bin/sops
 
 ## Configure SOPS
 
-
 Configure SOPS with your key and preferred settings. In this example, we are using AWS KMS, learn how to create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
 
 ```sh {"id":"01HRQ8AFJBJVENQ3NB8RM29H2J"}
@@ -39,4 +37,10 @@ Verify the configuration by checking the contents of ~/.sops.yaml
 cat ~/.sops.yaml
 ```
 
+## Encrypt Your Secrets
+
+Encrypt your secrets using SOPS with AWS KMS.
+
+```sh {"id":"01HRQA75CJ96SFHC8HBTDC7YWS"}
+sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
 ```
