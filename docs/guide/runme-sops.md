@@ -44,3 +44,16 @@ Encrypt your secrets using SOPS with AWS KMS.
 ```sh {"id":"01HRQA75CJ96SFHC8HBTDC7YWS"}
 sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
 ```
+
+## Decrypt Your Secrets
+
+Retrieve and decrypt your secrets when needed.
+
+```sh {"id":"01HRQB245GSRCAFWEVE8MWBS0D"}
+kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 --decode
+```
+
+```sh {"id":"01HRQB2WR4YA4H90BB640VAMC5"}
+sops --decrypt --kms arn:aws:kms:{region}:{account-id}:key/b3f4dd5b-a217-46b5-aef2-152fa66be8f4 --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
+```
+
