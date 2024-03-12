@@ -29,3 +29,40 @@ Embrace a visually appealing and clutter-free guide. Runme Notebook's clean inte
 ### **4. Centralized Knowledge Hub:**
 
 Runme Notebooks can function as your source of truth and execution ground. Runme serves as a centralized hub for all your documentation. Find everything related to securing Kubernetes secrets here.
+
+# **Securing Secrets with SOPS**
+
+To encrypt your Kubernetes secrets using SOPS, you need another level of security and access to your cloud provider; this is where you need to use a key management service (KMS). For this guide, we will be using an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys). This helps provide secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
+
+### Prerequisite
+
+- An AWS account with privileges to create an I[AM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a [KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
+- [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) installed and configured
+
+```sh {"id":"01HRSZWCJZ8PG0T0EWGAP2ZS1Q"}
+aws configure
+```
+
+- **Kubernetes Cluster**: Ensure you have a running Kubernetes cluster. for this guide we will be using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster
+
+```sh {"id":"01HRT007KXE45ESZTWN1JD6X5D"}
+brew install kind
+```
+
+- **[Kubectl](https://kubernetes.io/docs/tasks/tools/):** Install the Kubernetes command-line tool on your machine.
+
+```sh {"id":"01HRT011Y2QB3VFSW1XM2AGMFG"}
+brew install kubectl
+```
+
+## **Installation of SOPS**
+
+### Step 1: Download SOPS Binary
+
+```sh {"id":"01HRT025BNFHE30KGNSFES2M3Q"}
+curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-v3.8.1.linux.amd64
+```
+
+Replace {version} with the latest version of SOPS and {platform} with your platform (e.g., darwin for macOS, linux for Linux).
+
+For this guide, we are using a Linux engine.
