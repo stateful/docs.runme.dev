@@ -6,7 +6,7 @@ Before storing sensitive information as Kubernetes secrets, saving them as plain
 
 In this guide, we will show you how to secure Kubernetes secrets and automate this process using Runme and SOPS/Sealed Secrets, making your documentation the source of truth and saving you more time.
 
-## What is Runme?
+## **What is Runme?**
 
 Runme is a tool that helps you to execute interactive runbooks using Markdown files. It offers an interactive and user-friendly platform to walk you through the process of making secret encryption effortless.
 
@@ -22,7 +22,7 @@ Execute commands directly within the Runme Notebook environment. Witness the mag
 
 ### **3. Visually Appealing:**
 
-Embrace a visually appealing and clutter-free guide. Runme Notebook's clean interface enhances your learning experience, making it enjoyable and easy to digest.
+Embrace a visually appealing and clutter-free guide using runme via [VS Code](../how-runme-works/vscode.md). Runme Notebook's clean interface enhances your learning experience, making it enjoyable and easy to digest.
 
 ### **4. Centralized Knowledge Hub:**
 
@@ -58,8 +58,10 @@ brew install kubectl
 ### Step 1: Download SOPS Binary
 
 ```sh {"id":"01HRT266V4NSF3Y4PKRDQMZGT4"}
-curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{version}.linux.amd64
+curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{version}.{platform}
 ```
+
+Replace {version} with the latest version of SOPS and {platform} with your platform (e.g., darwin for macOS, linux for Linux).
 
 For this guide, we are using a Linux engine.
 
@@ -67,7 +69,7 @@ For this guide, we are using a Linux engine.
 
 ```sh {"id":"01HRT20X8V73M6KA66WPB156JR"}
 # Move the binary in to your PATH
-mv sops-{version}.linux.amd64 /usr/local/bin/sops
+mv sops-{version}.{platform} /usr/local/bin/sops
 ```
 
 ### Step 3: Make the Binary Executable
@@ -205,7 +207,7 @@ The Sealed Secrets controller will decrypt the SealedSecret and create a regular
 
 Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret.yaml`** with your actual secret and sealed secret filenames. Additionally, adjust controller-specific details such as the namespace and name according to your environment.
 
-## Challenges with Manual Execution
+## **Challenges with Manual Execution**
 
 While the above processes help you secure your Kubernetes key, manually carrying out these operations can be cumbersome and tiring. This is where Runme comes in.
 
