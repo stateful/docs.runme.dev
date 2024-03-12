@@ -57,6 +57,10 @@ brew install kubectl
 
 ### Step 1: Download SOPS Binary
 
+```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
+curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{version}.linux.amd64
+```
+
 For this guide, we are using a Linux engine.
 
 ### Step 2: Move the Binary to Your PATH
