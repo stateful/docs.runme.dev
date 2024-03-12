@@ -1,12 +1,10 @@
 # **Securing and Automating Kubernetes Secrets with Runme and SOPS/Sealed Secrets**
 
-As a DevOps or site reliability engineer, you have probably come across the need to store sensitive information such as API keys, passwords, and tokens within the Kubernetes cluster, and as such, you resorted to using Kubernetes secrets.
+Handling sensitive information and keys in itself is a risk, especially as DevOp and site reliability engineer tasked with not only to handling but storing sensitive data like API keys, passwords, or tokens within your Kubernetes cluster. If you are nodding along, then you have likely resorted to using Kubernetes secrets.
 
-Handling sensitive information and keys in itself is a risk, most often as DevOps and SRE engineers you have probably had not only to handle but store sensitive data like API keys, passwords, or tokens within your Kubernetes cluster. If you're nodding along, then you're likely resorted to using Kubernetes secrets.
+Before storing sensitive information as Kubernetes secrets, saving them as plain text is a huge risk, as they could easily get compromised leading to data breaches or unauthorized access. Therefore, we need to encrypt them before deploying them to the cluster.
 
-Before our sensitive information is stored as Kubernetes secrets, keeping them as plain text is a huge risk, as they could easily get compromised leading to data breaches or unauthorized access, so we need to encrypt them before deploying them to the cluster.
-
-In this guide, we will walk you through how you can secure Kubernetes secrets and also automate this process to create a source of truth and save more time using Runme and SOPS/Sealed Secrets.
+In this guide, we will show you how to secure Kubernetes secrets and automate this process using Runme and SOPS/Sealed Secrets, making your documentation the source of truth and saving you more time.
 
 ## What is Runme?
 
@@ -67,11 +65,6 @@ For this guide, we are using a Linux engine.
 
 ### Step 3: Make the Binary Executable
 
-```sh {"id":"01HRT07G9K6WR6PX9ZR3EAC1TH"}
-# Make the binary executable
-chmod +x /usr/local/bin/sops
-```
-
 ## **Create a KMS Key**
 
 Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS, this key will be used to encrypt and decrypt your secrets. Follow the steps below to create a KMS key:
@@ -92,13 +85,117 @@ Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest
 
 Configure SOPS effortlessly with your AWS KMS key
 
-```sh {"id":"01HRT0C3AXKJ7PJ6616BHT5R5D"}
-echo "creation_rules
-  - kms: arn:aws:kms:{region}:{account-id}:alias/{alias}" > ~/.sops.yaml
-```
-
 Verify the configuration by checking the contents of `~/.sops.yaml`
 
-```sh {"id":"01HRT0CW617Y7TTBJFGAYJ6YD0"}
-cat ~/.sops.yaml
+## **Encrypt Your Secrets**
+
+Encrypt your secrets seamlessly using SOPS and AWS KMS, no more cryptic commands; each step is laid out for you to follow along effortlessly.
+
+using rume cloud
+
+### **Decrypt Your Secrets**
+
+Retrieve and decrypt your secrets with confidence. Runme Notebook provides clear and concise instructions, ensuring that the decryption process is as smooth as encrypting.
+
+```sh {"id":"01HRSMKKZDA1MJMTEPK8CHS7YF"}
+kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 --decode
 ```
+
+### **Apply Encrypted Secret**
+
+```sh {"id":"01HRSMKKZDED03HJNEATG1D3W9"}
+sops -d runme-secrets-enc.yaml | kubectl apply -f -
+```
+
+# Securing Secrets with Sealed Secrets
+
+This guide provides step-by-step instructions on setting up Sealed Secrets for encrypting secrets in a Kubernetes cluster. Here's a breakdown of the key steps and commands:
+
+### **Prerequisites:**
+
+- Kubernetes Cluster**:** Ensure you have a running Kubernetes cluster. for this guide we will be using [`kind`](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster
+
+```bash {"id":"01HRSMKKZD5C28W9PK7C08SQH2"}
+brew install kind
+```
+
+- **[Kubectl](https://kubernetes.io/docs/tasks/tools/):** Install the Kubernetes command-line tool on your machine.
+
+```bash {"id":"01HRSMKKZDSPDPCCP2635VEAKN"}
+brew install kubectl
+```
+
+- **Kubeseal:** Install the Sealed Secrets Controller.
+
+### **Encrypt a Secret**
+
+- Create a Kubernetes Secret and use **`kubeseal`** to encrypt it:
+
+```sh {"id":"01HRSMKKZDHRFG7RMFFHDXWZAB"}
+kubectl create secret generic mysecret --from-literal=username=myuser --from-literal=password=mypassword --dry-run=client -o yaml | kubeseal > mysealedsecret.yaml
+```
+
+- Alternatively, you can encrypt a manifest file:
+
+```sh {"id":"01HRSMKKZD3YZ69HWSZNW9FRWP"}
+kubeseal < mysecret.yaml > mysealedsecret.yaml
+```
+
+- Use the sealed-secrets-controller installed in your cluster to encrypt a secret before deploying:
+
+```sh {"id":"01HRSMKKZDFC6E3DE7T5Z79GDT"}
+
+cat mysecret.yaml | kubeseal --controller-namespace kube-system --controller-name sealed-secrets-controller --format yaml > mysealedsecret.yaml
+```
+
+This creates a SealedSecret resource (**`mysealedsecret.yaml`**) containing the encrypted data.
+
+### **Add a New Value to a Sealed Secret**
+
+```sh {"id":"01HRSMKKZDQ3BAD5TMBMC994MY"}
+echo -n "my secret api key" | kubectl create secret generic xxx --dry-run=client --from-file=api_key=/dev/stdin -o json | kubeseal --controller-namespace=kube-system --controller-name=sealed-secrets --format yaml --merge-into sealed-secret.yaml
+```
+
+### **Delete Sealed Secret:**
+
+- To delete the secret, use the **`kubectl`** command:
+
+```sh {"id":"01HRSMKKZDEM5TGC0H49MCX158"}
+kubectl delete -f mysealedsecret.yaml
+```
+
+### **Deploy the Sealed Secret:**
+
+```sh {"id":"01HRSMKKZDFG16ASX22PJ26RP7"}
+kubectl apply -f mysealedsecret.yaml
+```
+
+The Sealed Secrets controller will decrypt the SealedSecret and create a regular Kubernetes Secret with the decrypted data.
+
+Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret.yaml`** with your actual secret and sealed secret filenames. Additionally, adjust controller-specific details such as the namespace and name according to your environment.
+
+## Challenges with Manual Execution
+
+While the above processes help you secure your Kubernetes key, manually carrying out these operations can be cumbersome and tiring. This is where Runme comes in.
+
+Runme is a READme documentation software that automates manual processes and gives you the time to jump right into a task, execute it and save time.
+
+You can easily eliminate the hassle of learning and implementing secret encryption in Kubernetes by automating these processes with Runme.
+
+## **Improve Documentation Experience with Runme Notebook**
+
+Previously, we have explored how you can secure your Kubernetes secrets using sealed secrets and SOPS. Now, we will walk you through how you can automate these processes in a single click right inside your Markdown file.
+
+1. Open VS Code on your local machine. Navigate to the extensions tab and search for “Runme”. Now, click Install.
+2. Create a READme file
+3. To execute each of your commands, all you need to do is paste them into the code block in Runme and click the run cell button beside the code block.
+
+The image below illustrates how easy it is to download SOPS binary using Runme.
+
+![runme using sops](../../static/img/runme-sops.png)
+
+You can also create code blocks for each of the steps required and execute them with a single click.
+
+To have a full view of these processes, you can clone this repo, open it with VS Code on your local machine and click on the run cell button to get your tasks done but ensure you have installed Runme first.
+
+Embrace the Runme Notebook experience to effortlessly secure your secrets and enhance your Kubernetes knowledge. Visit [Runme Documentation](https://docs.runme.dev/) to embark on a guided journey to a more secure Kubernetes environment.
