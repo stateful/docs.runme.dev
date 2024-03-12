@@ -83,13 +83,24 @@ Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest
 
 Configure SOPS effortlessly with your AWS KMS key
 
+```sh {"id":"01HRT1SF7YAP44WFT0WS08WST5"}
+echo "creation_rules
+  - kms: arn:aws:kms:{region}:{account-id}:alias/{alias}" > ~/.sops.yaml
+```
+
 Verify the configuration by checking the contents of `~/.sops.yaml`
+
+```sh {"id":"01HRT1S289XFGGR43ZFJSJN8G8"}
+cat ~/.sops.yaml
+```
 
 ## **Encrypt Your Secrets**
 
 Encrypt your secrets seamlessly using SOPS and AWS KMS, no more cryptic commands; each step is laid out for you to follow along effortlessly.
 
-using rume cloud
+```sh {"id":"01HRT1REM347HVT1YNEHNQ75M9"}
+sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
+```
 
 ### **Decrypt Your Secrets**
 
