@@ -59,20 +59,11 @@ brew install kubectl
 
 ### Step 1: Download SOPS Binary
 
-```sh {"id":"01HRT025BNFHE30KGNSFES2M3Q"}
-curl -
-```
-
 Replace {version} with the latest version of SOPS and {platform} with your platform (e.g., darwin for macOS, linux for Linux).
 
 For this guide, we are using a Linux engine.
 
 ### Step 2: Move the Binary to Your PATH
-
-```sh {"id":"01HRT06WMDDVNSD6Z5D8X20H4Z"}
-# Move the binary in to your PATH
-mv sops-v3.8.1.linux.amd64 /usr/local/bin/sops
-```
 
 ### Step 3: Make the Binary Executable
 
@@ -100,3 +91,14 @@ Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest
 ## **Configure SOPS**
 
 Configure SOPS effortlessly with your AWS KMS key
+
+```sh {"id":"01HRT0C3AXKJ7PJ6616BHT5R5D"}
+echo "creation_rules
+  - kms: arn:aws:kms:{region}:{account-id}:alias/{alias}" > ~/.sops.yaml
+```
+
+Verify the configuration by checking the contents of `~/.sops.yaml`
+
+```sh {"id":"01HRT0CW617Y7TTBJFGAYJ6YD0"}
+cat ~/.sops.yaml
+```
