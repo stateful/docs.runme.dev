@@ -1,4 +1,4 @@
-# **Securing and Automating Kubernetes Secrets with Runme and SOPS/Sealed Secrets**
+# Securing and Automating Kubernetes Secrets with Runme and SOPS/Sealed Secrets
 
 Handling sensitive information and keys in itself is a risk, especially as DevOp and site reliability engineer tasked with not only to handling but storing sensitive data like API keys, passwords, or tokens within your Kubernetes cluster. If you are nodding along, then you have likely resorted to using Kubernetes secrets.
 
@@ -57,8 +57,6 @@ brew install kubectl
 
 ### Step 1: Download SOPS Binary
 
-
-
 For this guide, we are using a Linux engine.
 
 ### Step 2: Move the Binary to Your PATH
@@ -97,8 +95,16 @@ using rume cloud
 
 Retrieve and decrypt your secrets with confidence. Runme Notebook provides clear and concise instructions, ensuring that the decryption process is as smooth as encrypting.
 
+To check and decode your kubernetes secret 
+
 ```sh {"id":"01HRSMKKZDA1MJMTEPK8CHS7YF"}
 kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 --decode
+```
+
+To decrypt your sops files:
+
+```sh {"id":"01HRT1HVC0JY2JH7WKD1PRXW3H"}
+sops --decrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
 ```
 
 ### **Apply Encrypted Secret**
@@ -107,13 +113,13 @@ kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 
 sops -d runme-secrets-enc.yaml | kubectl apply -f -
 ```
 
-# Securing Secrets with Sealed Secrets
+## **Securing Secrets with Sealed Secrets**
 
 This guide provides step-by-step instructions on setting up Sealed Secrets for encrypting secrets in a Kubernetes cluster. Here's a breakdown of the key steps and commands:
 
 ### **Prerequisites:**
 
-- Kubernetes Cluster**:** Ensure you have a running Kubernetes cluster. for this guide we will be using [`kind`](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster
+- **Kubernetes Cluster**: Ensure you have a running Kubernetes cluster. for this guide we will be using [`kind`](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster
 
 ```bash {"id":"01HRSMKKZD5C28W9PK7C08SQH2"}
 brew install kind
