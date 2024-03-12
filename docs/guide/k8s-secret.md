@@ -61,7 +61,17 @@ For this guide, we are using a Linux engine.
 
 ### Step 2: Move the Binary to Your PATH
 
+```sh {"id":"01HRT20X8V73M6KA66WPB156JR"}
+# Move the binary in to your PATH
+mv sops-v3.8.1.linux.amd64 /usr/local/bin/sops
+```
+
 ### Step 3: Make the Binary Executable
+
+```sh {"id":"01HRT1WPJ6E5N1HPFQ3F1ZBYFZ"}
+# Make the binary executable
+chmod +x /usr/local/bin/sops
+```
 
 ## **Create a KMS Key**
 
