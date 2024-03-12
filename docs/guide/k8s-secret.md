@@ -60,9 +60,43 @@ brew install kubectl
 ### Step 1: Download SOPS Binary
 
 ```sh {"id":"01HRT025BNFHE30KGNSFES2M3Q"}
-curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-v3.8.1.linux.amd64
+curl -
 ```
 
 Replace {version} with the latest version of SOPS and {platform} with your platform (e.g., darwin for macOS, linux for Linux).
 
 For this guide, we are using a Linux engine.
+
+### Step 2: Move the Binary to Your PATH
+
+```sh {"id":"01HRT06WMDDVNSD6Z5D8X20H4Z"}
+# Move the binary in to your PATH
+mv sops-v3.8.1.linux.amd64 /usr/local/bin/sops
+```
+
+### Step 3: Make the Binary Executable
+
+```sh {"id":"01HRT07G9K6WR6PX9ZR3EAC1TH"}
+# Make the binary executable
+chmod +x /usr/local/bin/sops
+```
+
+## **Create a KMS Key**
+
+Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS, this key will be used to encrypt and decrypt your secrets. Follow the steps below to create a KMS key:
+
+1. Sign in to the AWS Management Console and open the KMS console.
+2. Click on **Create key.**
+3. For "Alias," enter a name for your key. For example, "runme-sops-key".
+4. For "Key material origin," choose "AWS KMS generates the key material."
+5. Add the AWS users or roles to manage the key under "Key administrators."
+6. Click on **Next**.
+7. Choose the options that best suit your "Key usage permissions" needs.
+8. Click on **Next**.
+9. Review your key settings and click on **Finish**.
+
+![kms key](../../static/img/runme-kms-key.png)
+
+## **Configure SOPS**
+
+Configure SOPS effortlessly with your AWS KMS key
