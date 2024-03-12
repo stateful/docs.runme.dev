@@ -57,7 +57,7 @@ brew install kubectl
 
 ### Step 1: Download SOPS Binary
 
-Replace {version} with the latest version of SOPS and {platform} with your platform (e.g., darwin for macOS, linux for Linux).
+
 
 For this guide, we are using a Linux engine.
 
