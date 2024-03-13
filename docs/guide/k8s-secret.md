@@ -1,20 +1,20 @@
 # Securing and Automating Kubernetes Secrets with Runme and SOPS/Sealed Secrets
 
-Handling sensitive information and keys in itself is a risk, especially as DevOp and site reliability engineer tasked with not only to handling but storing sensitive data like API keys, passwords, or tokens within your Kubernetes cluster. If you are nodding along, then you have likely resorted to using Kubernetes secrets.
+Handling sensitive information and keys is a risk in itself, especially as a DevOps and site reliability engineer tasked with not only to handling but storing sensitive data like API keys, passwords, or tokens within your Kubernetes cluster. If you are nodding along, you likely resorted to using Kubernetes secrets.
 
-Before storing sensitive information as Kubernetes secrets, saving them as plain text is a huge risk, as they could easily get compromised leading to data breaches or unauthorized access. Therefore, we need to encrypt them before deploying them to the cluster.
+Before storing sensitive information such as Kubernetes secrets, saving it as plain text is a huge risk, as it could easily get compromised leading to data breaches or unauthorized access, therefore, we need to encrypt them before deploying them to the cluster.
 
-In this guide, we will show you how to secure Kubernetes secrets and automate this process using Runme and SOPS/Sealed Secrets, making your documentation the source of truth and saving you more time.
+This guide will show you how to secure Kubernetes secrets and automate this process using Runme and SOPS/Sealed Secrets, This will make your  documentation the source of truth and save you more time.
 
 ## **What is Runme?**
 
-Runme is a tool that helps you to execute interactive runbooks using Markdown files. It offers an interactive and user-friendly platform to walk you through the process of making secret encryption effortless.
+Runme is a tool for executing interactive runbooks using Markdown files. It offers an interactive and user-friendly platform to walk you through the process of effortlessly encrypting secrets.
 
 ## **Why Choose Runme?**
 
 ### **1. User-Friendly Interactive Documentation:**
 
-Runme Notebook transforms the learning process into an interactive adventure. You no longer need to worry about tedious text-based guides; as you can easily follow along and execute step-by-step.
+Runme Notebook transforms the learning process into an interactive adventure. You no longer need to worry about tedious text-based guides, as you can easily follow along and execute step-by-step.
 
 ### **2. Live Code Execution:**
 
@@ -26,7 +26,7 @@ Embrace a visually appealing and clutter-free guide using runme via [VS Code](..
 
 ### **4. Centralized Knowledge Hub:**
 
-Runme Notebooks can function as your source of truth and execution ground. Runme serves as a centralized hub for all your documentation. Find everything related to securing Kubernetes secrets here.
+Runme Notebooks can function as your source of truth and execution ground. Runme serves as a centralized hub for all your documentation. Here, you can find everything related to securing Kubernetes secrets.
 
 # **Securing Secrets with SOPS**
 
@@ -41,7 +41,7 @@ To encrypt your Kubernetes secrets using SOPS, you need another level of securit
 aws configure
 ```
 
-- **Kubernetes Cluster**: Ensure you have a running Kubernetes cluster. for this guide we will be using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster
+- **Kubernetes Cluster**: Ensure you have a running Kubernetes cluster. For this guide, we will be using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster.
 
 ```sh {"id":"01HRT007KXE45ESZTWN1JD6X5D"}
 brew install kind
@@ -66,7 +66,7 @@ For this guide, we are using a Linux engine.
 ### Step 2: Move the Binary to Your PATH
 
 ```sh {"id":"01HRT20X8V73M6KA66WPB156JR"}
-# Move the binary in to your PATH
+# Move the binary to your PATH
 mv sops-{version}.linux.amd64 /usr/local/bin/sops
 ```
 
@@ -79,10 +79,10 @@ chmod +x /usr/local/bin/sops
 
 ## **Create a KMS Key**
 
-Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS, this key will be used to encrypt and decrypt your secrets. Follow the steps below to create a KMS key:
+Next, you’ll need to create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS, which will be used to encrypt and decrypt your secrets. Follow the steps below to create a KMS key:
 
 1. Sign in to the AWS Management Console and open the KMS console.
-2. Click on **Create key.**
+2. Click on the **Create key.**
 3. For "Alias," enter a name for your key. For example, "runme-sops-key".
 4. For "Key material origin," choose "AWS KMS generates the key material."
 5. Add the AWS users or roles to manage the key under "Key administrators."
@@ -110,7 +110,7 @@ cat ~/.sops.yaml
 
 ## **Encrypt Your Secrets**
 
-Encrypt your secrets seamlessly using SOPS and AWS KMS, no more cryptic commands; each step is laid out for you to follow along effortlessly.
+Encrypt your secrets seamlessly using SOPS and AWS KMS; no more cryptic commands; each step is laid out for you to follow along effortlessly.
 
 ```sh {"id":"01HRT1REM347HVT1YNEHNQ75M9"}
 sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
@@ -118,9 +118,9 @@ sops --encrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-co
 
 ### **Decrypt Your Secrets**
 
-Retrieve and decrypt your secrets with confidence. Runme Notebook provides clear and concise instructions, ensuring that the decryption process is as smooth as encrypting.
+Retrieve and decrypt your secrets with confidence. Runme Notebook provides clear and concise instructions, ensuring the decryption process is as smooth as encrypting.
 
-To check and decode your kubernetes secret 
+To check and decode your Kubernetes secret
 
 ```sh {"id":"01HRSMKKZDA1MJMTEPK8CHS7YF"}
 kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 --decode
@@ -140,11 +140,11 @@ sops -d runme-secrets-enc.yaml | kubectl apply -f -
 
 ## **Securing Secrets with Sealed Secrets**
 
-This guide provides step-by-step instructions on setting up Sealed Secrets for encrypting secrets in a Kubernetes cluster. Here's a breakdown of the key steps and commands:
+This guide provides step-by-step instructions on setting up Sealed Secrets to encrypt secrets in a Kubernetes cluster. Here's a breakdown of the critical steps and commands:
 
 ### **Prerequisites:**
 
-- **Kubernetes Cluster**: Ensure you have a running Kubernetes cluster. for this guide we will be using [`kind`](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster
+- **Kubernetes Cluster**: Ensure you have a running Kubernetes cluster. For this guide, we will be using [`kind`](https://kind.sigs.k8s.io/docs/user/quick-start/) for my Kubernetes cluster.
 
 ```bash {"id":"01HRSMKKZD5C28W9PK7C08SQH2"}
 brew install kind
@@ -203,30 +203,30 @@ kubectl apply -f mysealedsecret.yaml
 
 The Sealed Secrets controller will decrypt the SealedSecret and create a regular Kubernetes Secret with the decrypted data.
 
-Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret.yaml`** with your actual secret and sealed secret filenames. Additionally, adjust controller-specific details such as the namespace and name according to your environment.
+Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret.yaml`** with your secret and sealed secret filenames. Adjust controller-specific details such as the namespace and name according to your environment.
 
 ## **Challenges with Manual Execution**
 
-While the above processes help you secure your Kubernetes key, manually carrying out these operations can be cumbersome and tiring. This is where Runme comes in.
+While the above processes help you secure your Kubernetes key, manually carrying out these operations can be take time and effort. This is where Runme comes in.
 
-Runme is a READme documentation software that automates manual processes and gives you the time to jump right into a task, execute it and save time.
+Runme is a READme documentation software that automates manual processes and gives you the time to jump right into a task, execute it, and save time.
 
-You can easily eliminate the hassle of learning and implementing secret encryption in Kubernetes by automating these processes with Runme.
+You can quickly eliminate the hassle of learning and implementing secret encryption in Kubernetes by automating these processes with Runme.
 
 ## **Improve Documentation Experience with Runme Notebook**
 
-Previously, we have explored how you can secure your Kubernetes secrets using sealed secrets and SOPS. Now, we will walk you through how you can automate these processes in a single click right inside your Markdown file.
+Previously, we explored securing your Kubernetes secrets using sealed secrets and SOPS. Now, we will walk you through how to automate these processes with a single click right inside your Markdown file.
 
-1. Open VS Code on your local machine. Navigate to the extensions tab and search for “Runme”. Now, click Install.
-2. Create a READme file
-3. To execute each of your commands, all you need to do is paste them into the code block in Runme and click the run cell button beside the code block.
+1. Open VS Code on your local machine. Navigate to the extensions tab and search for “Runme” Now, click Install.
+2. Create a READme file.
+3. To execute each of your commands, paste them into the code block in Runme and click the run cell button beside the code block.
 
-The image below illustrates how easy it is to download SOPS binary using Runme.
+The image below illustrates how easy it is to download the SOPS binary using Runme.
 
 ![runme using sops](../../static/img/runme-sops.png)
 
-You can also create code blocks for each of the steps required and execute them with a single click.
+You can also create code blocks for each step required and execute them with a single click.
 
-To have a full view of these processes, you can clone this repo, open it with VS Code on your local machine and click on the run cell button to get your tasks done but ensure you have installed Runme first.
+To have a full view of these processes, you can clone this repo, open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index) first.
 
-Embrace the Runme Notebook experience to effortlessly secure your secrets and enhance your Kubernetes knowledge. Visit [Runme Documentation](https://docs.runme.dev/) to embark on a guided journey to a more secure Kubernetes environment.
+Embrace the Runme Notebook experience to secure your secrets and effortlessly enhance your Kubernetes knowledge. Visit [Runme Documentation](https://docs.runme.dev/) to embark on a guided journey to a more secure Kubernetes environment.
