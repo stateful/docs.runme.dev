@@ -32,7 +32,7 @@ Runme Notebooks can function as your source of truth and execution ground. Runme
 
 To encrypt your Kubernetes secrets using SOPS, you need another level of security and access to your cloud provider; this is where you need to use a key management service (KMS). For this guide, we will be using an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys). This helps provide secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
 
-### Prerequisite
+### **Prerequisite**
 
 - An AWS account with privileges to create an I[AM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a [KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 - [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) installed and configured
@@ -55,7 +55,7 @@ brew install kubectl
 
 ## **Installation of SOPS**
 
-### Step 1: Download SOPS Binary
+### **Step 1: Download SOPS Binary**
 
 ```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
 curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{version}.linux.amd64
@@ -63,14 +63,14 @@ curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{versi
 
 For this guide, we are using a Linux engine.
 
-### Step 2: Move the Binary to Your PATH
+### **Step 2: Move the Binary to Your PATH**
 
 ```sh {"id":"01HRT20X8V73M6KA66WPB156JR"}
 # Move the binary to your PATH
 mv sops-{version}.linux.amd64 /usr/local/bin/sops
 ```
 
-### Step 3: Make the Binary Executable
+### **Step 3: Make the Binary Executable**
 
 ```sh {"id":"01HRT1WPJ6E5N1HPFQ3F1ZBYFZ"}
 # Make the binary executable
