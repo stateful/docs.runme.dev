@@ -1,4 +1,4 @@
-# Securing and Automating Kubernetes Secrets with Runme and SOPS/Sealed Secrets
+# How to Secure and Automate Kubernetes Secrets with Runme and SOPS/Sealed Secrets
 
 Handling sensitive information and keys is a risk in itself, especially as a DevOps and site reliability engineer tasked with not only to handling but storing sensitive data like API keys, passwords, or tokens within your Kubernetes cluster. If you are nodding along, you likely resorted to using Kubernetes secrets.
 
