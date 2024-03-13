@@ -227,6 +227,6 @@ The image below illustrates how easy it is to download the SOPS binary using Run
 
 You can also create code blocks for each step required and execute them with a single click.
 
-To have a full view of these processes, you can clone this repo, open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index) first.
+To have a full view of these processes, you can clone this repo, open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index.md) first.
 
 Embrace the Runme Notebook experience to secure your secrets and effortlessly enhance your Kubernetes knowledge. Visit [Runme Documentation](https://docs.runme.dev/) to embark on a guided journey to a more secure Kubernetes environment.
