@@ -19,7 +19,7 @@ Not all commands are equal, and expectations of how execution works can differ! 
 
 To modify the cell execution behavior, simply click Configure on the respective cell.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../reference#Cell-Options):
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
 
 To modify the cell execution behavior, simply click "Configure" on the respective cell.
 
@@ -28,7 +28,7 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../reference#Cell-Options):
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
 
 ### **Unnamed vs Named cells**
 
@@ -44,7 +44,7 @@ Where a cell is not named, a generated name is provided for each cell. We recomm
 
 These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../reference#Cell-Options):
+If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
 
 ```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
@@ -61,7 +61,7 @@ Try out the previous command
 echo hello world
 ```
 
-The entire [configuration schema](../reference#Cell-Options): as an example
+The entire [configuration schema](../Reference/configuration#Cell-Options): as an example
 
 ```sh {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
 
@@ -212,7 +212,7 @@ JSON, text, images, etc. Not all cells’ output is plain text. Using the `mime
 
 ![Human-centric output](../../static/img/human-centric-output.png)
 
-See in the [reference page](../reference) for the list of supported MIME types!
+See in the [reference page](../Reference/mime) for the list of supported MIME types!
 
 ### **Terminal Row**
 
