@@ -3,7 +3,7 @@ runme:
   id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
   version: v2.0
 sidebar_position: 12
-title: Reference
+title: Configuration Reference
 ---
 
 Executing code and commands in Runme can be done either at the [Document level](../configuration/document-level) or the [Cell level](../configuration/cell-level). This page is a reference for both features.
