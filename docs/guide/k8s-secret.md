@@ -34,8 +34,8 @@ curl -LO https://github.com/getsops/sops/releases/download/$version/sops-$versio
 
 By using the runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux).
 
-<Infobox type="Sidenote">
-
+<br />
+<Infobox type="sidenote" title="Note">
 
 You don’t need to input the environment variable again ones the values has been inputted, other code cell within the notebook can use, unless you reset the session.
 
@@ -89,7 +89,7 @@ Here is how your output will look like
         "Enabled": true,
         "Description": "runme-keys",
         "KeyUsage": "ENCRYPT_DECRYPT",
-       
+
  }
 ```
 
