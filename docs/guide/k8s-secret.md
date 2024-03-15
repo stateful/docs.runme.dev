@@ -28,7 +28,7 @@ Runme Notebooks can serve as your central source of truth and execution. It acts
 
 ## Prerequisites
 
-- An AWS account with privileges to create an [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a [KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
+- An AWS account with privileges to create an [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a KMS Key.
 - [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) installed and configured.
 - **Kubernetes Cluster:** A running Kubernetes cluster is required. For this guide, we will use `[kind](https://kind.sigs.k8s.io/docs/user/quick-start/)` for our Kubernetes cluster.
 - **[Kubectl](https://kubernetes.io/docs/tasks/tools/):** The Kubernetes command-line tool should be installed on your machine.
