@@ -8,85 +8,19 @@ title: Runme on VS Code
 
 # Runme on VS Code
 
-Runme strives to provide a great experience right out of the box. In this section we we will guide you through making the most of your Markdown docs with Runme.
+Get a great experience right out of the box with Runme on VS Code.  In this section, we will guide you through making the most of your Markdown documents with Runme.
 
 <Infobox type="sidenote" title="Install Runme VS Code extension">
 
-If you haven't already installed Runme for VS Code, please complete the steps in [installation](https://docs.runme.dev/installation/installrunme) before proceeding.
+To get started with Runme on VS Code, ensure you have the Runme Notebook extension installed on your code editor. See the step-by-step [installation](../installation/installrunme)  guide to install the Runme Notebook extension proceed.
 
 </Infobox>
 
-# Your First Runme
+## Your First Runme
 
-You can get started in one click with the following badge:
-
-Simply follow the instructions provided by VS Code to get started in seconds:
+If you would like to quickly understand how Runme works in VS Code, simply clone the [example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package; open its README file, and Runme will do the rest.
 
 ![run commands in vs code](../../static/img/run-commands-vscode.gif)
-
-Alternatively, clone into the [Example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package - simply open its README file and runme will do the rest.
-
-If you want to use Runme outside VS Code, you can install the CLI standalone. Learn about the [Runme CLI](https://docs.runme.dev/installation/runmecli)
-
-## **Running Scripts**
-
-Runme automatically converts all bash codeblocks in your README into runnable scripts. This makes getting started with a new project a breeze - say goodbye to annoying copy-and-pasting!
-
-To run a script, click the Run button on its left-hand side. Start by running the first script under "Prerequisites":
-
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/run-scripting-vscode.mp4" type="video/mp4" />
-  <source src="/videos/run-scripting-vscode.webm" type="video/webm" />
-</video>
-
-As you can see, we have downloaded the `business_data.csv` file, which contains business statistics about New Zealand in the years 2000-2021. It's a pretty big file!
-
-<Infobox type="warning">
-
-For the set-up script to work, you'll need to have the `curl` and `unzip` utilities installed. The remaining scripts will also require `node.js` to be installed. In a future version of Runme, we plan to provide a solution to help you manage these dependencies from within the notebook. Stay tuned!
-
-</Infobox>
-
-## **Command Output**
-
-Scroll down to the [**Examples**](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md) section of the notebook. From there, try running Steps 1 and 2.
-
-If everything goes right, you should get an output like the following:
-
-![Command output vs code](../../static/img/command-output-vscodess.png)
-
-Great! You can see the terminal output from each command beneath its respective cell. Our Node.JS script was able to parse that massive file with no problems!
-
-### Successful Execution
-
-Wondering how you know when a command is finished executing? Look out for the checkmark in the bottom left:
-
-
-
-![checkmar in vs code](../../static/img/checkmark-vs-codes.jpg)
-
-If the command fails, it will be an "X" mark instead!
-
-### Copying Output
-
-Runme provides a handy "**Copy**" button to easily copy the output of a command!
-
-![copy output vs code](../../static/img/copy-output-vscodes.png)
-
-### Clearing Output
-
-Sometimes, the output of a command can clutter up the screen. To prevent this, use the "Clear Cell Outputs" menu option.
-
-Alternatively, select the output and use the **Option+Delete shortcut**.
-
-![clear output vs code](../../static/img/clear-output-vscodes.png)
-
-Congratulations on running your first Runme notebook! 🎉While you've understood the basics, there's more to discover about Runme's powerful features. Let's get ready to dive deeper.
-
-
-## **Runme Editing & Authoring**
-
-Runme combines running, viewing, and editing into one experience.
 
 ### From Scratch
 
@@ -123,19 +57,19 @@ Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environme
 
 <Infobox type="sidenote">
 
-You can use `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
+Other shortcuts you can use are:
 
-You can use Enter on its own to start editing a selected cell.
-
-You can also use `CMD+Delete` to quickly remove a cell.
+1. `ESC` or `Ctrl+Enter` to quickly finish editing a cell.
+2. `Enter` on its own to start editing a selected cell.
+3. `CMD+Delete` to quickly remove a cell.
 
 </Infobox>
 
 ### Adding Code
 
-Code cell blocks work similarly to Markdown blocks, and can be edited/saved/deleted in the same way.
+Code cell blocks work similarly to Markdown blocks and can be edited, saved, or deleted in the same way.
 
-To create a new code block, use the **+ Code** button in the top left or center:
+To create a new code block, use the `+ Code` button in the top left or center:
 
 ![add new code block vs code](../../static/img/adding-code.png)
 
@@ -143,13 +77,67 @@ You can then freely add runnable code:
 
 ![run hello world from vs code](../../static/img/echo-hello-world.png)
 
+In this section, we will demonstrate how Runme displays command output when running code or commands. For this illustration, we will use a Node.js script in our repository under the **[Examples](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md)** section.
+
+<br />
+<Infobox type="sidenote" title="Note">
+
+Note that the Node.js example is entirely optional. You can use any script of your preference to print the output you want. However, if you decide to follow along with it, make sure you have [Node.js](https://nodejs.org/en/), [curl](https://curl.se/), and [unzip](https://infozip.sourceforge.net/UnZip.html) installed on your local machine.
+
+<Infobox />
+
+## **Running Scripts**
+
+Runme automatically converts all bash codeblocks in your README into runnable scripts. This makes getting started with a new project a breeze - say goodbye to annoying copy-and-pasting!
+
+To run a script, click the Run button on its left-hand side. Start by running the first script under "Prerequisites":
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/run-scripting-vscode.mp4" type="video/mp4" />
+  <source src="/videos/run-scripting-vscode.webm" type="video/webm" />
+</video>
+
+As you can see, we have downloaded the `business_data.csv` file, which contains business statistics about New Zealand in the years 2000-2021. It's a pretty big file!
+
+## **Command Output**
+
+Now, try running Steps 1 and 2 in the [Example Repo](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md).
+
+You should get an output like this:
+
+![Command output vs code](../../static/img/command-output-vscodess.png)
+
+Great! You can see the terminal output from each command beneath its respective cell. Our Node.JS script was able to parse that massive file with no problems!
+
+### Successful Execution
+
+Wondering how you know when a command is finished executing? Look out for the checkmark in the bottom left:
+
+![checkmar in vs code](../../static/img/checkmark-vs-codes.jpg)
+
+If the command fails, it will be an "X" mark instead!
+
+### Copying Output
+
+Runme provides a handy "**Copy**" button to easily copy the output of a command!
+
+![copy output vs code](../../static/img/copy-output-vscodes.png)
+
+### Clearing Output
+
+Sometimes, the output of a command can clutter up the screen. To prevent this, use the "Clear Cell Outputs" menu option.
+
+Alternatively, select the output and use the **Option+Delete shortcut**.
+
+![clear output vs code](../../static/img/clear-output-vscodes.png)
+
+Congratulations on running your first Runme notebook! 🎉. While you've understood the basics, there's more to discover about Runme's powerful features. Let's get ready to dive deeper.
+
 ## **Interactive Mode**
 
-By default, our script will run in “Interactive Mode”. This will run the script in a separate terminal window, rather than in the notebook itself.
+What is an interactive runbook without interaction?
 
-As the name implies, the interactive mode is great for interactive scripts. Our script, however, prints output and has no interactivity whatsoever.
-
-Wouldn’t it be great to see the output in the terminal?
+By default, our script will run in “Interactive Mode”. This mode enables you to interact with interactive scripts in the output terminal. It will run the script in a separate terminal window rather than in the notebook itself.
 
 If we just try to run this as it is, we will experience the following:
 
@@ -158,7 +146,7 @@ If we just try to run this as it is, we will experience the following:
   <source src="/videos/hello-world-vscode-error.webm" type="video/webm" />
 </video>
 
-To fix this easily, we'll need to access the Configure foldout by clicking on the **Configure** button:
+However, when you disable interactive mode from the configuration setting, you cannot interact with your scripts.
 
 ![configure vs code](../../static/img/configure-vs-codes.png)
 
@@ -172,19 +160,13 @@ Our code block will now display its output exactly as below:
 
 [Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in Markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
 
-## **Runme Settings for VS Code**
+## Awesome Runme Configurations for VS Code
 
-In the VS Code settings, several configurable settings influence general Runme behavior and enable experimental functionality.
-
-![Runme Configuration for VS Code](../../static/img/runme-configuration-vs-codes.png)
+In the VS Code settings, several configurable settings influence general Runme behavior and enable experimental functionality. They include:
 
 ### Background Processes
 
-Suppose that you have a script that intends to run in the background (like a dev watcher). To simulate this, we'll use the script `sleep 10000`.
-
-You *could* run this like other scripts, however, Runme supports a special "Background" mode for these kinds of tasks. This mode gives special tools to help manage them!
-
-You can enable Background mode in the same foldout you configured Interactive mode:
+This handles scripts that you will love to run in the background.
 
 ![background task vs code](../../static/img/backgroundrunme1.png)
 
@@ -203,7 +185,7 @@ Now, when you run the script, it will be part of a long-running terminal session
 
 As is demonstrated by the previous video, background tasks are delineated by the "Background Task" label:
 
-![background task vs code](../../static/img/backgroundrunme1.png)
+![run in the background](../../static/img/run-backgorund.png)
 
 Background Task also has a **Stop Task** button to end their execution long after starting:
 
@@ -221,25 +203,21 @@ Be sure not to strip this data if you want to use it!
 
 </Infobox>
 
-<!-- ### Changing Language -->
+## Feedback
 
-tets
+At this point, we believe you now feel comfortable creating and using Runme on VS Code! We would appreciate your feedback. You can send us feedback directly from VS Code, simply click “Send Feedback” button on your Markdown file in your code editor.
 
-<!-- (TODO: show how to change language; need issues fixed for this since language selection is broken at the moment) -->
-
-## **Great work!**
-
-Hopefully, you now feel comfortable making your own Runme notebooks! If you run into any issues please [file a ticket](https://github.com/stateful/docs.runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme).
-
-Please see the [integrations section](/integrations) to see more sophisticated use cases of Runme or learn about all the[cell configuration options](/configuration) available to streamline the reading and running experience.
+![feedback](../../static/img/feedback.png)
 
 ## **Useful Tips & Tricks**
 
+Here are some useful tips and tricks to enable you to use Runme in your VS Code editor without hassle.
+
 ### How to ensure Runme is working properly?
 
-It’s easy. Open your project README file and see it is now opened as a Notebook file! Check that shell commands are now rendered as runnable blocks. That’s pretty nice. Finally, you’re seeing the future of running your README files now. We bet you won’t want to return to plain Markdown viewers.
+It’s easy. Open your project README file and see it is now opened as a Notebook file! Check that shell commands are now rendered as runnable blocks. That’s pretty nice. Finally, you’re seeing the future of running your README files now. We bet you won’t want to return to plain markdown viewers.
 
-### How to open a README file as a Markdown file?
+### How to open a README file as a markdown file?
 
 Sometimes, you will want to see the file as a regular Markdown file, and you don’t need to disable or uninstall Runme. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or Markdown preview for such cases.
 
@@ -247,6 +225,16 @@ Sometimes, you will want to see the file as a regular Markdown file, and you don
 
 ### Notebook Explorer
 
-To help you navigate the Markdown files in your project, Runme adds a super handy **Runme Notebooks** panel. Clicking any Markdown file will open it in your code editor view:
+To help you navigate the Markdown files in your project, Runme adds a super handy `Runme Notebooks` panel. Clicking any Markdown file will open it in your code editor view:
 
 ![notebook explorer](../../static/img/runme-noteboooks.png)
+
+## Next Steps
+
+Congratulations!
+
+We believe, at this point, you have gotten an advanced understanding of how Runme works on VS Code. Now, it’s time to begin using Runme in VS Code for all your automation and documentation processes.
+
+We have provided an [FAQ page](https://docs.runme.dev/faq), which we constantly update to address common questions you may have about Runme.
+
+If you run into any issues kindly [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme). We are open to hearing your suggestions on how we can improve Runme.
