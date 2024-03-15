@@ -80,7 +80,7 @@ Runme has a `MimeType` feature that enables you to render images, CSV-based tabl
 
 You can configure to any of your choice in the cell configuration setting.
 
-{{image}}
+![mimetype](../../static/img/mimetype.png)
 
 ## **Shebang Support**
 
