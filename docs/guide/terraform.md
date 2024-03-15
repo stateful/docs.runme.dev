@@ -26,7 +26,7 @@ Before we proceed, there are a few requirements needed to get started
 
 ## **Setting Up Terraform for EC2 Instance**
 
-1. **Create a Project Directory:**
+**Create a Project Directory:**
 
    Begin by creating a new directory for your Terraform project and navigate to the directory in your terminal.
 
