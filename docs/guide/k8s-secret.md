@@ -1,12 +1,12 @@
 # How to Secure and Automate Kubernetes Secrets with Runme and SOPS/Sealed Secrets
+The default [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) are stored either as plaintext or base64 encoded. These secrets should not be sent to version control systems like git due to the security risk of exposing sensitive data such as API keys, passwords, or tokens.
 
-The default [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)  are either stored as plaintext or base64 encoded. Users can’t ship these secrets to a version control like git because revealing sensitive data like API keys, passwords, or tokens in version control in plaintext or base64 encoded poses a security risk.
+In cases where a developer or an infrastructure-focused engineer needs to add secrets to the cluster or to version control, they should use encryption-first tools. These tools securely share and push these secrets to version control. Tools like [sops](https://fluxcd.io/flux/guides/mozilla-sops/) and [sealed-secrets](https://archive.eksworkshop.com/beginner/200_secrets/installing-sealed-secrets/) are commonly used by DevOps and SREs.
 
-In situations where a developer, or an infra-focused engineer wants to add secrets to the cluster or to version control, they have to leverage encryption-first tools to securely share and push these secrets to version control. Tools such as [sops](https://fluxcd.io/flux/guides/mozilla-sops/) and [sealed-secrets](https://archive.eksworkshop.com/beginner/200_secrets/installing-sealed-secrets/) are the encryption-first tools used by DevOps and SREs in today’s world.
+With Runme, Platform Engineers can document how secrets are added to a Kubernetes cluster, ensuring the commands and guides are repeatable, consistent, and executable. Runme also enables engineers to create runbooks as documentation. This allows other team members, including new ones, to add and encrypt secrets correctly without leaking data and causing a significant security breach.
 
-With Runme, Platform Engineers can document how secrets are added to a Kubernetes cluster and ensure the commands/guides are repeatable, consistent and executable. Using Runme also allows engineers to pass off documentation as runbooks to enable other team members, including newer team members to add and encrypt secrets properly in the team without leaking the data and causing a significant security breach.
+The guide below explains how to use [Runme](https://github.com/stateful/blog-examples/tree/main/k8s-secret) as your central knowledge hub. It will make your documentation the go-to source for all infrastructure operations.
 
-The guide below would show how to use [Runme](https://github.com/stateful/blog-examples/tree/main/k8s-secret) has your central knowledge hub and make your documentation the source of truth for all infrastructure operations
 
 ## **Prerequisites**
 
