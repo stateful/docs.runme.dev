@@ -3,37 +3,59 @@ sidebar_position: 8
 title: Key Features
 ---
 
-Runme lets you execute interactive runbooks built with Markdown. Some of the key features include:
+Runme makes your runbooks runnable! This implies you can execute your code written in various languages directly within your markdown file. With built-in features, Runme enhances your automation processes, providing an interactive way to run your code and streamline your tasks.
+
+Some of the key features of Runme include:
 
 ## **Runme Notebook**
 
+With the Runme extension installed on your VS Code, you have access to several notebook features that make it easy for users to run code and commands. Some of these features include:
+
 **Run a command block**
 
-To run a command, simply click the run button (may require your mouse over the command in some themes). You will notice that this turns into a stop button for hung or long-running commands, which can be used to kill the terminal process.
+In the Runme notebook, you can easily run commands with a single click. To run a command, Runme provides a “run cell” button, identified by the icon below.
 
-![npm-install](../../static/img/npm-install.png)
+![runme npm install](../../static/img/runme-npm-install.png)
 
-A succeeding exit code will be indicated with the small green checkbox seen below:
+Once a command is run, you will notice that this turns into a stop button, indicating the command’s execution.
 
-![npm-install-result](../../static/img/npm-install-result.png)
+On completion, a succeeding exit status will be indicated with the small green check icon. As seen below:
 
-You can also open the terminal that did the execution by clicking the “Open Terminal” button as shown above with its PID.
+![npm install result](../../static/img/runme-npm.png)
+
+You can also open the terminal that did the execution by clicking the “Terminal” button as shown above.
 
 **Copy & Paste**
 
-Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a Markdown file to paste into your terminal.
+More than just running commands, you can quickly copy commands out of a markdown file to paste into your terminal with one click.
 
-![copyandpaste](../../static/img/copyandpaste.png)
+![copy and paste](../../static/img/runme-copy.png)
 
 **Run all command blocks**
 
-To run all the commands in the notebook in the order they are found, you can click the “Run All” button.
+Easily run all your code blocks at once! To run all the commands in the notebook in the order they are found, click the Run All button.
 
-![runallcommandblock](../../static/img/runallcomandblocks.png)
+![run-all](../../static/img/runme-run-all.png)
 
-To be extra safe, you will be prompted before each step to confirm your intentions unless you select “Skip Prompt and run all”.
+For added security, you will receive a prompt to confirm your actions before each step. You can skip the prompts and run all steps at once for a smoother process.
 
 ![skippromptandrunall](../../static/img/skippromptandrunall.png)
+
+### Background Task
+
+If you cannot wait for your code or command to finish execution and you want to run something else simultaneously, the background mode in Runme is the way to go.
+
+Runme has a **background** mode that enables you to run tasks in the background. To do this, you have to activate the background mode.
+
+![runme-background](../../static/img/runme-background.png)
+
+### Interactive Mode
+
+Do you love to interact with the inputs on your terminal as you execute commands and code?
+
+If yes, you will need to activate the interactive mode. Otherwise, you can toggle it off.
+
+![interatcive-mode](../../static/img/runme-interactive.png)
 
 ## **Environment Variable Prompts**
 
@@ -50,112 +72,37 @@ For instance, in the image below, we configure the `SLEEP_SECS` environment vari
 
 ![ouput](../../static/img/getting-started/promptenv-output.png)
 
-This feature allows users to input values directly within the notebook environment, making task execution more efficient. Improve your workflow with the increased flexibility provided by promptEnv feature.
+This feature allows users to input values directly within the notebook environment, making task execution more efficient. Improve your workflow with the increased flexibility provided by `promptEnv` feature.
 
-## **Render images, CSV tables, and terminals inside Markdown**
+### Render Images and CSV Tables In Your Markdown File
 
-While allowing background tasks to run seamlessly :
+Runme has a `MimeType` feature that enables you to render images, CSV-based tables, and other supported content type right inside your Markdown file. Runme supports a wide range of MimeTypes such as `text/x-json`, `text/x-javascript`, `text/x-html`, `image/png`, `image/svg+xml` and `text/csv`.
 
-Each cell can be configured to be run in different manners. The idea is to give you more control over what you expect a user to modify vs. the parts you don't, and provide you with the output in a way that suits most.
+You can configure to any of your choice in the cell configuration setting.
 
-You don’t need to wait for a run to finish? Just turn on background mode, and continue running following cells.
-
-![backgroundtaskbar](../../static/img/backgroundtaskbar.png)
-
-Do you need to prevent inputs in the terminal? Turn off interactive mode.
-
-![interactiveblock](../../static/img/interactivecblock.png)
-
-Do you need other MIME types to render images or CSV-based tables? You can configure it in the following cell option!
-
-![mimetypes](../../static/img/mimetypes.png)
-
-Including the following
-
-- text/x-json
-- text/x-javascript
-- text/x-html
-- image/png
-- image/svg+xml
-- text/csv
+{{image}}
 
 ## **Shebang Support**
 
-Call into libraries or APIs to describe tasks with the programming language that’s most natural:
-
-you can now run all sorts of programming languages inside your notebooks, including PHP, Ruby, Python, Lua, and more.
-
-By default, Runme can run languages that are installed on your machine.
-
-Runme supports a set of different interpreter for you to run cells in. To define an interpreter you can either:
-
-- set a language id for the fenced code block
-
-```sh {"id":"01HKB2KCYS7Y97X9A8K3CDP0Z1"}
-puts 'Hello World'
-```
+Runme gives you the flexibility of running your preferred programming language right inside your Markdown file. This is a result of our Shebang support.
 
 ![set-annotation](../../static/img/interpreterruby.png)
 
-- set a shebang for the cell.
-
-```sh {"id":"01HKMCNEJFN01DA4WRC187AYYK"}
-#!/usr/bin/python3
-print('Hello World!')
-```
-
-- set cell interpreter cell property as frontmatteror via VS Code cell option:
-
-```sh {"id":"01HKB2N47GFSSPVZBTMK3X89W5"}
-import sys
-
-print("Python Version:", sys.version)
-```
+Additionally, for those who would love to work with the interpreter of their local machine, we have made it possible for you to add your local interpreter.
 
 ![interpreter-output](../../static/img/interpreter-output.png)
 
-### Supported Interpreters
+## Smooth Integration With Other Platforms
 
-Check the list of [auto-detected interpreters](https://docs.runme.dev/configuration/shebang#list-of-auto-detected-language-runtimes) here for a complete list.
+Runme integrates easily with other platforms such as [Deno](https://docs.runme.dev/integrations/deno-fresh), [Vercel](https://docs.runme.dev/integrations/vercel-nextjs), and [GitHub Actions](https://docs.runme.dev/integrations/embed-github-action).
 
-## **Bridge the gaps between the terminal, editor, and browser**
+For example, Runme offers a convenient GitHub action that seamlessly integrates with your CI/CD pipeline. You can trigger workflows for GitHub actions in your notebook by pasting GitHub URLs.
 
-All inside Markdown:
+## Piping
 
-The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within Markdown. On top of that, you can even see images, tables, and more!
+By default, Runme prevents variables declared in one cell from being directly accessed in another cell. However, by using Piping, which is declared using `$__`, you can pass a variable declared in a previous execution to another in the same file.
 
-## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within Markdown**:
-
-You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
-
-GitHub Actions provide a robust CI/CD platform for automating development tasks. Users can trigger these [workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in Runme by pasting specific GitHub URLs. Once the cell’s executed a form to input the required parameters displays, which lets users dispatch the workflow with a single click.
-
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/release-github-action.mp4" type="video/mp4" />
-  <source src="/videos/release-github-action.webm" type="video/webm" />
-</video>
-
-Ensure your runbooks/notebooks work consistently by integrating them with the dedicated GitHub Action or using the CLI:
-
-Runme offers a convenient GitHub Action that seamlessly integrates with your CI/CD pipeline. By re-using the notebook’s workflows in your CI/CD pipeline, you can ensure that your instructions never go out of date and remain relevant.
-
-Let’s see the following `CONTRIBUTING.md` file:
-
-![contributingmd](../../static/img/contributingmd.png)
-
-Pretty standard. Note the name tags in the code blocks, which help us to uniquely reference the command block via the **[Runme CLI](https://docs.runme.dev/installation/runmecli)**. All we really need to do now is to run your CI/CD pipeline the same step a human contributor would; command-by-command following the documentation.
-
-To cut down on boilerplate, we've put together this handy **[GitHub Action](https://github.com/stateful/runme-action/)** for you to use inside your workflows like so:
-
-![githubaction-template](../../static/img/github-action-template.png)
-
-That's it! Instead of calling Makefiles targets or NPM scripts that remain undocumented and disconnected from your internal documentation, you can put your Markdown from and center of both humans and machines. Integration test onboarding and other workflows on every commit! Read more in the following blog: The Hitchhiking Contributor’s Guide to Onboarding Docs in [CI/CD](https://runme.dev/blog/guide-to-onboarding-docs-in-ci).
-
-## **Runme Cells**
-
-### Chain Cell Output
-
-With the `$__` parameter you can transfer the stdout result of the last execution into your next execution:
+The video below provides a visual representation of how Runme integrates with GitHub actions.
 
 ![split view in vs code](../../static/img/last-cell-result.gif)
 
@@ -164,6 +111,10 @@ With the `$__` parameter you can transfer the stdout result of the last execut
 Please be aware that if the execution of a cell depends on the standard output (stdout) of a preceding cell, it is imperative to execute these cells sequentially. Failure to adhere to this sequence could lead to unintended and unpredictable behavior.
 
 ## **Other Key Features**
+
+That’s not all!
+
+There are other features available on Runme that can help you improve your process. Some other key features include:
 
 - Installs in seconds. No external dependencies are required.
 - Persistent environment variables across cell and session runs.
