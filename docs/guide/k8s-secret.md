@@ -204,7 +204,7 @@ This creates a SealedSecret resource (**`mysealedsecret.yaml`**) containing the 
 
 ### Decrypt a Secret
 
-Decrypt the encrypted secret `mysealedsecret.yaml` into the original version before it was encrypted `runme-secrets.yaml`
+You can decrypt the encrypted secret `mysealedsecret.yaml` into the original version`runme-secrets.yaml`
 
 ```sh {"id":"01HS1JF6867W5ASTVZ86GC37N2"}
 kubectl get sealedsecret <mysealedsecret> -o yaml | kubeseal --raw > runme-secret.yaml
