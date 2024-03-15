@@ -42,8 +42,8 @@ You don’t need to input the environment variable again ones the values has bee
 </Infobox>
 
 <video autoPlay loop muted playsInline controls>
-  <source src="static/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
-  <source src="static/videos/runme-envprompt-k8s.webm" type="video/webm" />
+  <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
+  <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
 </video>
 
 For this guide, we are using a Linux operating system.
@@ -147,7 +147,6 @@ sops -d runme-secrets-enc.yaml | kubectl apply -f -
 ## **Securing Secrets with Sealed Secrets**
 
 [Sealed Secrets](https://archive.eksworkshop.com/beginner/200_secrets/installing-sealed-secrets/) is an open-source project initiated by Bitnami. It’s used for encrypting Kubernetes secrets. After encryption, these secrets can be safely stored in your version control. This enables DevOps practices without exposing sensitive data.
-
 
 Only the Sealed Secrets controller has the ability to decrypt these encrypted secrets.
 
