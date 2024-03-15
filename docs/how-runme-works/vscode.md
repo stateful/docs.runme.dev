@@ -84,7 +84,7 @@ In this section, we will demonstrate how Runme displays command output when runn
 
 Note that the Node.js example is entirely optional. You can use any script of your preference to print the output you want. However, if you decide to follow along with it, make sure you have [Node.js](https://nodejs.org/en/), [curl](https://curl.se/), and [unzip](https://infozip.sourceforge.net/UnZip.html) installed on your local machine.
 
-<Infobox />
+</Infobox>
 
 ## **Running Scripts**
 
