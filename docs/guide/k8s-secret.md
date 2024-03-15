@@ -32,7 +32,14 @@ export platform
 curl -LO https://github.com/getsops/sops/releases/download/$version/sops-$version.$platform
 ```
 
-By using the runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux). You don’t need to input `env prompt` again ones the values has been inputted once, other cell within the notebook can use, unless you resent `reset session` .
+By using the runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux).
+
+<Infobox type="Sidenote">
+
+
+You don’t need to input the environment variable again ones the values has been inputted, other code cell within the notebook can use, unless you reset the session.
+
+</Infobox>
 
 <video autoPlay loop muted playsInline controls>
   <source src="../../static/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
