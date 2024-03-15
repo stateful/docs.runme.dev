@@ -8,25 +8,7 @@ With Runme, Platform Engineers can document how secrets are added to a Kubernete
 
 The guide below would show how to use [Runme](https://github.com/stateful/blog-examples/tree/main/k8s-secret) has your central knowledge hub and make your documentation the source of truth for all infrastructure operations
 
-## **What is Runme?**
-
-Runme transforms runbooks into executable files, simplifying the process of following step-by-step instructions. It's an ideal solution for any documentation that requires users to complete sequential tasks, use environment variables, or automate documents by executing the entire runbook in one go. Consequently, operational documents become more reliable and less prone to becoming obsolete.
-
-## **Why Choose Runme?**
-
-### **1. User-Friendly Interactive Documentation:**
-
-Runme converts your runbook into an executable format. Also, using the Runme VS Code extension provides an intuitive and interactive environment for creating and executing your code and commands.
-
-### **2. Live Code Execution:**
-
-Execute commands directly within the Runme Notebook environment. Watch the process unfold in real time as you encrypt and decrypt secrets, all without switching between your terminal and documentation.
-
-### **3. Centralized Knowledge Hub:**
-
-Runme Notebooks can serve as your central source of truth and execution. It acts as a centralized hub for all your documentation.
-
-## Prerequisites
+## **Prerequisites**
 
 - An AWS account with privileges to create an [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a [KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 - [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) installed and configured.
@@ -44,7 +26,10 @@ Encrypt your Kubernetes secrets using SOPS; you need enhanced security and acces
 ### **Step 1: Download SOPS Binary**
 
 ```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
-curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{version}.linux.amd64
+export version
+export platform
+
+curl -LO https://github.com/getsops/sops/releases/download/$version/sops-$version.$platform
 ```
 
 By using the runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux). You don’t need to input `env prompt` again ones the values has been inputted once, other cell within the notebook can use, unless you resent `reset session` .
@@ -246,15 +231,13 @@ You can quickly eliminate the hassle of learning and implementing secret encrypt
 Previously, we explored securing your Kubernetes secrets using sealed secrets and SOPS. Now, we will walk you through how to automate these processes with a single click right inside your Markdown file.
 
 1. Open VS Code on your local machine. Navigate to the extensions tab and search for “Runme” Now, click Install.
-2. Create a READme file.
+2. Create a README file.
 3. To execute each of your commands, paste them into the code block in Runme and click the run cell button beside the code block.
 
 The image below illustrates how easy it is to download the SOPS binary using Runme.
 
 ![runme using sops](../../static/img/runme-sops.png)
 
-You can also create code blocks for each step required and execute them with a single click.
-
-To have a full view of these processes, you can clone this repo, open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index.md) first.
+To have a full view of these processes, you can clone this [repo](https://github.com/stateful/blog-examples/tree/main/k8s-secret), open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index.md) first.
 
 Embrace the Runme Notebook experience to secure your secrets and effortlessly enhance your Kubernetes knowledge. Visit [Runme Documentation](https://docs.runme.dev/) to embark on a guided journey to a more secure Kubernetes environment.
