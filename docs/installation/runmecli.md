@@ -124,16 +124,15 @@ The video below displays Runme’s TUI and how to access its features using the 
 
 <Infobox type="warning" title="Warning!">
 
-Runme would not work if your current working directory does not contain a README file at the top level! You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
+Runme would not work if your current working directory does not contain a README file at the top level! You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other Markdown file, without changing the environment's working directory.
 
 </Infobox>
 
-
-Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
+Runme parses every shell or bash code block of a Markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your Markdown successfully:
 
 ```sh {"id":"01HMXWHNSWH5DV8A9P289P8SSE"}
 Runme executes commands inside your runbooks, docs, and READMEs. Parses commands
-directly from markdown files to make them executable.
+directly from Markdown files to make them executable.
 
 Usage:
   runme [flags]
@@ -182,4 +181,4 @@ Runme’s TUI is awesome however, if you want to run a specific command quickly,
 
 ## **Next Steps**
 
-You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdwon files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)
+You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdown files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)

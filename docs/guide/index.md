@@ -4,7 +4,7 @@ title: Guide
 ---
 
 
-Runme integrates with numerous third-party services and tools to simplify your documentation process and enhance your workflow across various domains. So, whether you are working with a cloud provider, setting up infrastructure, handling databases, etc., Runme can help you run and execute your projects, create standard procedures, and provide visibility to other team members.
+Runme integrates with numerous third-party services and tools to simplify your documentation process and enhance your workflow across various domains. So, whether you are working with a cloud provider, setting up infrastructure, handling databases, etc. Runme can help you run and execute your projects, create standard procedures, and provide visibility to other team members.
 
 In this guide section, we will walk you through using Runme with cloud-native services and tools such as Dev Containers, Ansible, Terraform, and so on, and how to utilize Runme's features to automate tasks with these tools.
 

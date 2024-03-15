@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Shebang Support
 ---
 
-Shebang is a versatile tool designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. Runme integrates Shebang to enable users to run the script of their choice directly from the markdown file in their preferred programming language.
+Shebang is a versatile tool designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. Runme integrates Shebang to enable users to run the script of their choice directly from the Markdown file in their preferred programming language.
 
 ## **Prerequisites**
 
@@ -11,7 +11,7 @@ Before proceeding with the integration of Shebang in [Runme](https://docs.runme.
 
 ## **Run your Code with Runme in VS Code Using Shebang**
 
-Runme gives you the power to run your code right inside your markdown file in VS Code without having to switch to a terminal. To do this, follow the steps below:
+Runme gives you the power to run your code right inside your Markdown file in VS Code without having to switch to a terminal. To do this, follow the steps below:
 
 1. Click on the **+Code icon.**
 2. Enter the script you would like to run.
@@ -27,14 +27,14 @@ Alternatively, if you would love to run your code using your specified interpret
 
 Follow the steps below to set up the Shebang custom interpreter in VS Code:
 
-1. Open your script (markdown file) in VS Code
+1. Open your script (Markdown file) in VS Code
 2. Click on **Configure** menu at the buttom right of your code block
 3. Click on **Advance**
 4. Set the path to the system interpreter of your choice.
 
 ![shebang-interpreter](../../static/img/shebang-interpreters.png)
 
-5. close the modular
+5. Close the modular
 6. Execute the Runme command:
 
 ```sh {"id":"01HPPEWMR0AQB8NA9BMNPDCNSP"}

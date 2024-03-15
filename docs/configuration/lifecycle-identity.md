@@ -14,11 +14,11 @@ The Lifecycle Identity feature in Runme is a tool that assigns unique identifier
 
 With this feature, you can easily track changes, versions, and the complete history of your documents using the assigned identifiers.
 
-> The default setting assigns a unique identifier to the cells and the markdown file.
+> The default setting assigns a unique identifier to the cells and the Markdown file.
 
 ### **Usage**
 
-The following metadata will be added to your markdown file :
+The following metadata will be added to your Markdown file :
 
 `id`: The unique identifier that represents the specific instance of your document or cell.
 
@@ -52,11 +52,11 @@ As shown in the image above, there are three levels of tracking available:
 
 ## **Cell Run Grouping**
 
-Cell Run Grouping is an important tool in Runme that works together with the Lifecycle Identity feature. It improves the organization and tracking of code runs, especially when working with markdown files or individual cells within these files. This functionality works when outputs are saved to the [Runme Cloud](https://app.runme.dev/), as it allows for a more structured and insightful analysis of the code's performance over time.
+Cell Run Grouping is an important tool in Runme that works together with the Lifecycle Identity feature. It improves the organization and tracking of code runs, especially when working with Markdown files or individual cells within these files. This functionality works when outputs are saved to the [Runme Cloud](https://app.runme.dev/), as it allows for a more structured and insightful analysis of the code's performance over time.
 
 ### **How Cell Run Grouping Works**
 
-When a user saves the output of a cell or an entire markdown file to the Runme Cloud, Runme assigns a unique identity to that file or cell. This identity is important for the cell run grouping process, as it ensures that any subsequent iterations or runs of that file or cell are recorded and grouped under the same identity in the cloud.
+When a user saves the output of a cell or an entire Markdown file to the Runme Cloud, Runme assigns a unique identity to that file or cell. This identity is important for the cell run grouping process, as it ensures that any subsequent iterations or runs of that file or cell are recorded and grouped under the same identity in the cloud.
 
 **Here is a breakdown**: Whenever a code is run, the output is stored in the same group as the previous, with the exact time of each run clearly stated. This chronological arrangement of each code provides a comprehensive view of the code's changes and performance over time.
 

@@ -18,7 +18,7 @@ With Runme you can click a button instantly clone into a repository for your use
 
 ## How does it work?
 
-You start by crafting a link that launches VS Code with all the desired details to successfully clone the project into your local file system. Next, it'll use the Runme extension to open the specified markdown file and render the runnable notebook. This mechanism uses the built in VS Code deep linking functionality that knows how to intelligently launch VS Code into a specified state. Along the way, VS Code will ask your permission and trust anytime it's touching your filesystem, auth or anything else sensitive.
+You start by crafting a link that launches VS Code with all the desired details to successfully clone the project into your local file system. Next, it'll use the Runme extension to open the specified Markdown file and render the runnable notebook. This mechanism uses the built in VS Code deep linking functionality that knows how to intelligently launch VS Code into a specified state. Along the way, VS Code will ask your permission and trust anytime it's touching your filesystem, auth or anything else sensitive.
 
 Let’s see the link:
 
@@ -28,7 +28,7 @@ Let’s see the link:
 vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md
 ```
 
-If you don’t want to use Github you can directly use a markdown link:
+If you don’t want to use Github you can directly use a Markdown link:
 
 ![runme open vscode](../../static/img/runme-open-vscode.png)
 

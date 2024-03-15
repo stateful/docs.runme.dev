@@ -7,7 +7,7 @@ If you prefer to run the entire Markdown file in order to save time, the documen
 
 ## Run All Markdown Files In the Directory
 
-Runme provides configuration flags that enable you to run all markdown files in a specific directory.
+Runme provides configuration flags that enable you to run all Markdown files in a specific directory.
 
 For example, if you have two or more Markdown files in your current working directory and you would like to run all of them at once, Runme makes that easy for you. To do this, enter the command below in your terminal and watch your Markdown files get executed.
 
@@ -17,13 +17,13 @@ runme run --all --allow-unnamed --skip-prompts
 
 ## Run Specific Markdown File
 
-You can also run a specific markdown file. To do this, enter the command below in your terminal:
+You can also run a specific Markdown file. To do this, enter the command below in your terminal:
 
 ```yaml {"id":"01HRVWMYEMRYPWHE5TEDATJAD5"}
 runme run --all --allow-unnamed --skip-prompts --filename=test.md
 ```
 
-This will run just that specific markdown file, in this case,  `test.md`
+This will run just that specific Markdown file, in this case,  `test.md`
 
 **Note**: Change `test.md` to the name of the Markdown file you want to execute.
 

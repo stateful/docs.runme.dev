@@ -8,7 +8,7 @@ title: Runme on VS Code
 
 # Runme on VS Code
 
-Runme strives to provide a great experience right out of the box. In this section we we will guide you through making the most of your markdown docs with Runme.
+Runme strives to provide a great experience right out of the box. In this section we we will guide you through making the most of your Markdown docs with Runme.
 
 <Infobox type="sidenote" title="Install Runme VS Code extension">
 
@@ -98,9 +98,9 @@ Start by initializing a new project and adding a new `README.md` file. Alterna
 
 To add a new Markdown section, click the "**+ Markdown"** button in the top left or center:
 
-![add markdown vs code](../../static/img/add-markdown-vscodes.png)
+![add Markdown vs code](../../static/img/add-markdown-vscodes.png)
 
-You can then edit the markdown block directly:
+You can then edit the Markdown block directly:
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/edit-markdown-block.mp4" type="video/mp4" />
@@ -113,11 +113,11 @@ As shown in the image below, once you're done editing a block, use the **Check**
 
 To edit the cell again, use the **Edit Cell** icon:
 
-![start editing markdown in vs code](../../static/img/editing-cell.png)
+![start editing Markdown in vs code](../../static/img/editing-cell.png)
 
 Finally, you can remove a cell at any time using the **Delete Cell** icon:
 
-![remove cell in markdown](../../static/img/dell-cell.png)
+![remove cell in Markdown](../../static/img/dell-cell.png)
 
 Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
@@ -170,7 +170,7 @@ Our code block will now display its output exactly as below:
 
 ## **Frontmatter**
 
-[Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
+[Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in Markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
 
 ## **Runme Settings for VS Code**
 
@@ -211,7 +211,7 @@ Background Task also has a **Stop Task** button to end their execution long afte
 
 ### Markdown Script Metadata
 
-Configuration fields like `background` and `interactive` are set using markdown's script metadata feature:
+Configuration fields like `background` and `interactive` are set using Markdown's script metadata feature:
 
 ![configuration of background vs code](../../static/img/runme-metedata.png)
 
@@ -237,16 +237,16 @@ Please see the [integrations section](/integrations) to see more sophisticated u
 
 ### How to ensure Runme is working properly?
 
-It’s easy. Open your project README file and see it is now opened as a Notebook file! Check that shell commands are now rendered as runnable blocks. That’s pretty nice. Finally, you’re seeing the future of running your README files now. We bet you won’t want to return to plain markdown viewers.
+It’s easy. Open your project README file and see it is now opened as a Notebook file! Check that shell commands are now rendered as runnable blocks. That’s pretty nice. Finally, you’re seeing the future of running your README files now. We bet you won’t want to return to plain Markdown viewers.
 
-### How to open a README file as a markdown file?
+### How to open a README file as a Markdown file?
 
-Sometimes, you will want to see the file as a regular markdown file, and you don’t need to disable or uninstall Runme. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or markdown preview for such cases.
+Sometimes, you will want to see the file as a regular Markdown file, and you don’t need to disable or uninstall Runme. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or Markdown preview for such cases.
 
-![open a README file as a markdown file](../../static/img/open-readme-file.gif)
+![open a README file as a Markdown file](../../static/img/open-readme-file.gif)
 
 ### Notebook Explorer
 
-To help you navigate the Markdown files in your project, Runme adds a super handy **Runme Notebooks** panel. Clicking any markdown file will open it in your code editor view:
+To help you navigate the Markdown files in your project, Runme adds a super handy **Runme Notebooks** panel. Clicking any Markdown file will open it in your code editor view:
 
 ![notebook explorer](../../static/img/runme-noteboooks.png)

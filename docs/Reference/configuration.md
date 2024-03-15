@@ -10,17 +10,17 @@ Executing code and commands in Runme can be done either at the [Document level](
 
 ### **Document Options**
 
-Frontmatter in yaml, json, or toml on top of markdown document.
+Frontmatter in yaml, json, or toml on top of Markdown document.
 
 | Configuration  | Description                              | Default value             |
 | ------------- | ----------------------------------------- | ------------------------- |
-| cwd           | Overwrites the default working directory  | [markdown file's basedir] |
+| cwd           | Overwrites the default working directory  | [Markdown file's basedir] |
 | shell         | Overwrites shell with custom preference   | [system/user default]     |
 | skipPrompts   | Bypasses interactive prompts              | [system/user default]     |
 
 ### **Cell Options**
 
-Metadata inside markdown's fenced code blocks.
+Metadata inside Markdown's fenced code blocks.
 
 | Configuration          | Description                                                     | Default value            |
 | ---------------------- | --------------------------------------------------------------- | ------------------------ |

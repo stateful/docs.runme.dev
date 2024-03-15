@@ -19,7 +19,7 @@ Not all commands are equal, and expectations of how execution works can differ! 
 
 To modify the cell execution behavior, simply click Configure on the respective cell.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
+If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
 
 To modify the cell execution behavior, simply click "Configure" on the respective cell.
 
@@ -28,7 +28,7 @@ To modify the cell execution behavior, simply click "Configure" on the respectiv
   <source src="/videos/configure-cell-execution.webm" type="video/webm" />
 </video>
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
+If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
 
 ### **Unnamed vs Named cells**
 
@@ -44,7 +44,7 @@ Where a cell is not named, a generated name is provided for each cell. We recomm
 
 These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
+If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
 
 ```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
@@ -79,7 +79,7 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 Runme, just like most Markdown viewers, will work best when a script's language is contained inside of fenced code blocks.
 
-If possible, always specify the language [according to the markdown standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) as is illustrated below:
+If possible, always specify the language [according to the Markdown standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) as is illustrated below:
 
 ```sh {"id":"01HFPW3ES2Y7TXV064BVXNCD12"}
   ```sh {"id":"01HPMBVRXTRHSD52YVAX4K648P"}
@@ -230,7 +230,7 @@ To set up the terminal row on your code editor, follow the steps below:
 
 ![terminalrow-1](../../static/img/terminalrow-1.png)
 
-We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your markdown is executed on your code editor using these settings.
+We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your Markdown is executed on your code editor using these settings.
 
 2. Navigate to “Advanced” > `terminalrow`.
 
@@ -240,7 +240,7 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 ### **Exclude Cell from Run All**
 
-Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the Run All button to get set up and running. However, sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option, you can configure this behavior.
+Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your Markdown file and it allows developers to just click the Run All button to get set up and running. However, sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option, you can configure this behavior.
 
 **Default:** `false`
 
@@ -253,7 +253,7 @@ Every VS Code notebook allows to run all available cells. This can be useful if 
 
 ### **Run All Cells by Category**
 
-If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
+If you have multiple workflows in a single Markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
 
 **Default:** `""`
 

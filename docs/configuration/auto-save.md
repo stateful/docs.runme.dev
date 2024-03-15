@@ -6,22 +6,23 @@ sidebar_position: 3
 title: Auto-Save Feature
 ---
 
-Runme provides an easy and effective way to manage your records and outputs throughout your deployment. With the frequent changes, that occur in a cloud infrastructure deployment process, it is easy to lose track over time and we understand this.
-The Runme autosave feature automatically records and tracks every change and activity in your deployment process without any manual intervention to keep you updated and enhance team collaboration.
+Runme auto-save feature makes saving your outputs and progress easier. It is an effective way to manage your records and outputs throughout your deployment.
 
-## **Getting Started with Autosave**
+The Runme autosave feature automatically records and tracks every change and activity in your deployment process without manual intervention, so you can focus on your task and team collaboration without worrying about losing your outputs.
 
-Runme autosave feature goes beyond saving commands and running shell scripts. It is super helpful when automating tasks with changing or inconsistent instructions. Think of handling tasks that change each time or require information gathering at each step. Runme notebooks step in to manage these tasks, providing a consistent and standard way to run automated processes, and keeping you informed at every step.
+## **How Runme Auto-Save Feature Works**
+
+Runme auto-save feature goes beyond saving commands and running shell scripts. It uses the'session output’ feature to provide advanced auto-save functionality.
 
 ### Session Outputs
 
-When auto-save is enabled,that is turned on, Runme captures a complete copy of the original Markdown document along with all cell outputs generated during the notebook's execution using the “**Runme Session Outputs**”.
+When auto-save is enabled, Runme captures a complete copy of the original Markdown document along with all cell outputs generated during the notebook’s execution using the  “**Runme Session Outputs**”.
 
 ![autosave-output-session](../../static/img/Autosave-output.png)
 
 The information includes when each cell was ran, the time it took, and exit codes. Additional contextual metadata like hostname and username are also saved to the Session Outputs file. Runme also captures non-text mime types like images (base64 encoded) outside of textual output produced by terminals.
 
-see an example below:
+See an example below:
 
 ```sh {"id":"01HPGQH3SV6HM949W7RHC4P563"}
 $ terraform workspace select staging
@@ -38,19 +39,18 @@ If there are more forms you like to be added, kindly [let us know](https://githu
 
 ### Why Separate Session Outputs?
 
-You might wonder why we have chosen to create a separate Session Outputs file instead of embedding outputs directly into the markdown document. Well, here are our reasons:
+You might wonder why we have chosen to create a separate Session Outputs file instead of embedding outputs directly into the Markdown document. Well, here are our reasons:
 
 1. **Promote Generality for Collaboration**: We believe that cells, including their code and commands (inputs), should remain generic to facilitate collaboration and sharing of notebooks with others. This approach is particularly important for version control-tracked files.
 2. **Avoid Version Control Errors**: Separating files prevents accidental inclusion of outputs into version control, reducing the risk of overwriting historical artifacts from previous sessions if they were stored in the same file.
-3. **Enhance User Experience (UX)**: Session files with outputs are not directly opened in the notebook UX. After writing the output, Runme may struggle to distinguish between input and output parts of a cell. Instead, the UX will prompt you to open the original document (which requires colocation in the same folder) as a notebook or launch the markdown previewer to display the Session Outputs.
+3. **Enhance User Experience (UX)**: Session files with outputs are not directly opened in the notebook UX. After writing the output, Runme may struggle to distinguish between input and output parts of a cell. Instead, the UX will prompt you to open the original document (which requires colocation in the same folder) as a notebook or launch the Markdown previewer to display the Session Outputs.
 
-While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the de-/serialization process.
+While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the deserialization process.
 
 <br />
 <Infobox type="sidenote" title="Session Outputs">
 It is strongly recommended that you do not deploy the session output files to your version control. you can `.gitignore` the files to ensure that it doesn't get deployed.
 </Infobox>
-
 
 ## **How to Enable Auto-Save**
 

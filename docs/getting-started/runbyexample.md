@@ -6,7 +6,7 @@ runme:
 
 # Runme by Example
 
-Discover the various ways you can use Runme to run your code straight from your markdown file. Explore our [example page](https://runme.dev/examples) to learn more exciting ways you can use Runme. These examples showcase improved ways you can use Runme, such as in [hardening your Ubuntu server](https://runme.dev/blog/hardening-ubuntu), within your dev container, etc. In this section, you will find a variety of features and examples to help you get the most out of Runme.
+Discover the various ways you can use Runme to run your code straight from your Markdown file. Explore our [example page](https://runme.dev/examples) to learn more exciting ways you can use Runme. These examples showcase improved ways you can use Runme, such as in [hardening your Ubuntu server](https://runme.dev/blog/hardening-ubuntu), within your dev container, etc. In this section, you will find a variety of features and examples to help you get the most out of Runme.
 
 ## **1. Advanced Usage of Piping and Variables**
 

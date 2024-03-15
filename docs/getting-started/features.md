@@ -3,7 +3,7 @@ sidebar_position: 8
 title: Key Features
 ---
 
-Runme lets you execute interactive runbooks built with markdown. Some of the key features include:
+Runme lets you execute interactive runbooks built with Markdown. Some of the key features include:
 
 ## **Runme Notebook**
 
@@ -21,7 +21,7 @@ You can also open the terminal that did the execution by clicking the “Open Te
 
 **Copy & Paste**
 
-Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a markdown file to paste into your terminal.
+Outside of literally running commands, Runme offers the ability to quickly copy commands (with the click of a button) out of a Markdown file to paste into your terminal.
 
 ![copyandpaste](../../static/img/copyandpaste.png)
 
@@ -52,7 +52,7 @@ For instance, in the image below, we configure the `SLEEP_SECS` environment vari
 
 This feature allows users to input values directly within the notebook environment, making task execution more efficient. Improve your workflow with the increased flexibility provided by promptEnv feature.
 
-## **Render images, CSV tables, and terminals inside markdown**
+## **Render images, CSV tables, and terminals inside Markdown**
 
 While allowing background tasks to run seamlessly :
 
@@ -120,11 +120,11 @@ Check the list of [auto-detected interpreters](https://docs.runme.dev/configura
 
 ## **Bridge the gaps between the terminal, editor, and browser**
 
-All inside markdown:
+All inside Markdown:
 
-The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within markdown. On top of that, you can even see images, tables, and more!
+The outputs of each run are displayed in the notebook itself. No need to open another terminal or a browser or a native app - just keep working within Markdown. On top of that, you can even see images, tables, and more!
 
-## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within markdown**:
+## **Manage resources like Vercel, Deno Cloud, or GitHub Actions directly from within Markdown**:
 
 You can integrate other platforms and, for example, trigger GitHub Actions to run within your notebooks. Already have an action set up to work the particular task? Just dispatch it!
 
