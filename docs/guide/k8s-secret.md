@@ -82,9 +82,12 @@ Refer to the [Prerequisite](https://github.com/stateful/blog-examples/blob/main/
 
 Here is how your output will look like
 
-{{ image }}
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
+  <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
+</video>
 
-You can save it straight to the runme cloud for future use or reference, using the runme auto-save feature 
+You can save it straight to the runme cloud for future use or reference, using the runme auto-save feature
 
 ## **Configure SOPS**
 
@@ -139,7 +142,7 @@ sops -d runme-secrets-enc.yaml | kubectl apply -f -
 
 This guide provides step-by-step instructions on setting up Sealed Secrets to encrypt secrets in a Kubernetes cluster. Here's a breakdown of the critical steps and commands:
 
-Decrypt the secret from a sops encrypted secret runme-secrets-enc.yaml into the original version before it was encrypted runme-secrets.yaml 
+Decrypt the secret from a sops encrypted secret runme-secrets-enc.yaml into the original version before it was encrypted runme-secrets.yaml
 
 - **Kubeseal:** Install the Sealed Secrets Controller.
 
