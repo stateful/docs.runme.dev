@@ -146,9 +146,10 @@ sops -d runme-secrets-enc.yaml | kubectl apply -f -
 
 ## **Securing Secrets with Sealed Secrets**
 
-This guide provides step-by-step instructions on setting up Sealed Secrets to encrypt secrets in a Kubernetes cluster. Here's a breakdown of the critical steps and commands:
+[Sealed Secrets](https://archive.eksworkshop.com/beginner/200_secrets/installing-sealed-secrets/) is an open-source project initiated by Bitnami. It’s used for encrypting Kubernetes secrets. After encryption, these secrets can be safely stored in your version control. This enables DevOps practices without exposing sensitive data.
 
-Decrypt the secret from a sops encrypted secret runme-secrets-enc.yaml into the original version before it was encrypted runme-secrets.yaml
+
+Only the Sealed Secrets controller has the ability to decrypt these encrypted secrets.
 
 - **Kubeseal:** Install the Sealed Secrets Controller.
 
@@ -200,6 +201,14 @@ cat mysecret.yaml | kubeseal --controller-namespace kube-system --controller-nam
 ```
 
 This creates a SealedSecret resource (**`mysealedsecret.yaml`**) containing the encrypted data.
+
+### Decrypt a Secret
+
+Decrypt the encrypted secret `mysealedsecret.yaml` into the original version before it was encrypted `runme-secrets.yaml`
+
+```sh {"id":"01HS1JF6867W5ASTVZ86GC37N2"}
+kubectl get sealedsecret <mysealedsecret> -o yaml | kubeseal --raw > runme-secret.yaml
+```
 
 ### **Add a New Value to a Sealed Secret**
 
