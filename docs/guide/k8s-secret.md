@@ -49,6 +49,11 @@ curl -LO https://github.com/getsops/sops/releases/download/{version}/sops-{versi
 
 By using the runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux). You don’t need to input `env prompt` again ones the values has been inputted once, other cell within the notebook can use, unless you resent `reset session` .
 
+<video autoPlay loop muted playsInline controls>
+  <source src="../../static/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
+  <source src="../../static/videos/runme-envprompt-k8s.webm" type="video/webm" />
+</video>
+
 For this guide, we are using a Linux operating system.
 
 ### **Step 2: Move the Binary to Your PATH**
@@ -82,12 +87,21 @@ Refer to the [Prerequisite](https://github.com/stateful/blog-examples/blob/main/
 
 Here is how your output will look like
 
-<video autoPlay loop muted playsInline controls>
-  <source src="../../static/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
-  <source src="../../static/videos/runme-envprompt-k8s.webm" type="video/webm" />
-</video>
+```sh {"id":"01HS1E58Y030113R231JV0SG2C"}
+{
+    "KeyMetadata": {
+        "AWSAccountId": "655675289698",
+        "KeyId": "901e8117-84dd-43ca-aa41-ad319c48abcd",
+        "Arn": "arn:aws:kms:us-east-1:655675289698:key/901e8117-84dd-43ca-aa41-ad319c48abcd",
+        "CreationDate": "2024-03-15T10:44:46.284000+01:00",
+        "Enabled": true,
+        "Description": "runme-keys",
+        "KeyUsage": "ENCRYPT_DECRYPT",
+       
+ }
+```
 
-You can save it straight to the runme cloud for future use or reference, using the runme auto-save feature
+You can save it straight to the runme cloud for future use or reference, using the runme [auto-save](../configuration/auto-save) feature
 
 ## **Configure SOPS**
 
