@@ -83,8 +83,8 @@ Refer to the [Prerequisite](https://github.com/stateful/blog-examples/blob/main/
 Here is how your output will look like
 
 <video autoPlay loop muted playsInline controls>
-  <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
-  <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
+  <source src="../../static/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
+  <source src="../../static/videos/runme-envprompt-k8s.webm" type="video/webm" />
 </video>
 
 You can save it straight to the runme cloud for future use or reference, using the runme auto-save feature
