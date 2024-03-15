@@ -10,7 +10,6 @@ You can containerize your Runme notebook using Docker. This approach allows you 
 
 Containerize your Runme notebook for enhanced portability across diverse environments. Improve DevOps operations, including backups and data import/export. Ensure compliance with standards by maintaining consistent execution in a containerized environment. Establish a well-documented DevOps process for transparent collaboration and reproducibility. Optimize workflows with Runme in containers for efficient, standardized, and compliant practices.
 
-
 ## **Docker Image**
 
 Docker images for each released version of Runme are available on [Docker Hub](https://hub.docker.com/r/statefulhq/runme). To get the latest version, use the following command:
@@ -18,7 +17,6 @@ Docker images for each released version of Runme are available on [Docker Hub](h
 ```sh {"id":"01HMXXHW2JRJ105X332JWKCZ8J"}
 docker pull statefulhq/runme:latest
 ```
-
 
 ## **Basic Usage**
 
@@ -46,7 +44,6 @@ Below is an example Dockerfile illustrating how to containerizing your applicati
 FROM statefulhq/runme:latest as build
 WORKDIR /app
 COPY example_runme.md .
-# Add any necessary commands to install dependencies
 RUN echo "Installing dependencies..."
 # Continue with your Runme configuration and usage
 ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
@@ -66,21 +63,20 @@ docker run --platform=linux/arm64 -it --volume $(pwd):/opt/var/runme statefulhq/
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
 
 ```dockerfile {"id":"01HQW92KPTDZVX2173NY4K80JQ"}
-# Stage 1: Dependency Stage
+# Stage 1: Dependency_Stage
 FROM statefulhq/runme:latest as dependency_stage
 WORKDIR /app
-COPY your_dependency_file.txt .
-# Add any necessary commands to install dependencies
-RUN install_dependencies_command
+COPY example_runme.md .
+
+ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
 
 # Stage 2: Runme Stage
 FROM statefulhq/runme:latest as build
 WORKDIR /app
-COPY example_runme.md .
-# Add any necessary commands to install dependencies
+COPY --from=Dependency_Stage /app /app
 RUN echo "Installing dependencies..."
-# Continue with your Runme configuration and usage
-ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
+# Cmmand to run when the container start
+CMD ["python", "app.py"]
 ```
 
 In this example, the first stage is dedicated to installing dependencies, and the second stage builds upon the first, incorporating the necessary files and configurations for Runme.

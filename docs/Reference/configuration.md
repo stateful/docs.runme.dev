@@ -2,7 +2,7 @@
 runme:
   id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
   version: v2.0
-sidebar_position: 12
+sidebar_position: 1
 title: Options for Document and Cell
 ---
 
