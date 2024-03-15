@@ -28,7 +28,7 @@ Runme Notebooks can serve as your central source of truth and execution. It acts
 
 ## Prerequisites
 
-- An AWS account with privileges to create an [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a KMS Key.
+- An AWS account with privileges to create an [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a [KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 - [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) installed and configured.
 - **Kubernetes Cluster:** A running Kubernetes cluster is required. For this guide, we will use `[kind](https://kind.sigs.k8s.io/docs/user/quick-start/)` for our Kubernetes cluster.
 - **[Kubectl](https://kubernetes.io/docs/tasks/tools/):** The Kubernetes command-line tool should be installed on your machine.
@@ -37,7 +37,7 @@ Here is a [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-sec
 
 # **Securing Secrets with SOPS**
 
-Encrypt your Kubernetes secrets using SOPS; you need enhanced security and access to your cloud provider. This requires a [Key Management Service]((https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys)) (KMS). For this guide, we'll use an AWS KMS key. This service offers secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
+Encrypt your Kubernetes secrets using SOPS; you need enhanced security and access to your cloud provider. This requires a [Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) (KMS). For this guide, we'll use an AWS KMS key. This service offers secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
 
 ## **Installation of SOPS**
 
