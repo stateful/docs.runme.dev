@@ -157,7 +157,7 @@ sudo install -m 755 kubeseal /usr/local/bin/kubeseal
 
 using the `export` command prompts you to input the value of `version` or `platform`
 
-{{ video}}
+![set var](../../static/img/set-var.png)
 
 Installing the Custom Controller and CRD for SealedSecrets
 
