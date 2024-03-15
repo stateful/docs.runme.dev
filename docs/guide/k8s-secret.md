@@ -17,13 +17,13 @@ The guide below would show how to use [Runme](https://github.com/stateful/blog-e
 
 Here is a [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-secret/sops/prerequiste.md) to help you install these prerequisites. For this guide we are using either Linux or Mac OS
 
-# **Securing Secrets with SOPS**
+## **Securing Secrets with SOPS**
 
 Encrypt your Kubernetes secrets using SOPS; you need enhanced security and access to your cloud provider. This requires a [Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) (KMS). For this guide, we'll use an AWS KMS key. This service offers secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
 
-## **Installation of SOPS**
+### **Installation of SOPS**
 
-### **Step 1: Download SOPS Binary**
+**Step 1: Download SOPS Binary**
 
 ```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
 export version
@@ -48,7 +48,7 @@ You don’t need to input the environment variable again ones the values has bee
 
 For this guide, we are using a Linux operating system.
 
-### **Step 2: Move the Binary to Your PATH**
+**Step 2: Move the Binary to Your PATH**
 
 ```sh {"id":"01HRT20X8V73M6KA66WPB156JR"}
 # Move the binary to your PATH
@@ -58,7 +58,7 @@ mv sops-{version}.linux.amd64 /usr/local/bin/sops
 chmod +x /usr/local/bin/sops
 ```
 
-## **Create a KMS Key**
+### **Create a KMS Key**
 
 Next, create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS. This key will be used to encrypt and decrypt your secrets. Follow the steps below to create a KMS key:
 
@@ -95,7 +95,7 @@ Here is how your output will look like
 
 You can save it straight to the runme cloud for future use or reference, using the runme [auto-save](../configuration/auto-save) feature
 
-## **Configure SOPS**
+### **Configure SOPS**
 
 Configure SOPS effortlessly with your AWS KMS key
 
@@ -110,7 +110,7 @@ Verify the configuration by checking the contents of `~/.sops.yaml`
 cat ~/.sops.yaml
 ```
 
-## **Encrypt Your Secrets**
+### **Encrypt Your Secrets**
 
 Encrypt your secrets seamlessly using SOPS and AWS KMS, no more cryptic commands; each step is laid out for you to follow along effortlessly.
 
@@ -229,7 +229,7 @@ Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret
 
 While the above processes help you secure your Kubernetes key, manually carrying out these operations can be take time and effort. This is where Runme comes in.
 
-Runme is a READme documentation software that automates manual processes and gives you the time to jump right into a task, execute it, and save time.
+Runme is a README documentation software that automates manual processes and gives you the time to jump right into a task, execute it, and save time.
 
 You can quickly eliminate the hassle of learning and implementing secret encryption in Kubernetes by automating these processes with Runme.
 
