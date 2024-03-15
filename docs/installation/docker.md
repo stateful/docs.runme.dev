@@ -8,8 +8,6 @@ runme:
 
 You can containerize your Runme notebook using Docker. This method enables easy deployment of notebook across different environments, including cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , and/or local test environments.
 
-Containerize your Runme notebook for enhanced portability across diverse environments. Improve DevOps operations, including backups and data import/export. Ensure compliance with standards by maintaining consistent execution in a containerized environment. Establish a well-documented DevOps process for transparent collaboration and reproducibility. Optimize workflows with Runme in containers for efficient, standardized, and compliant practices.
-
 ## **Docker Image**
 
 Docker images for each released version of Runme are available on [Docker Hub](https://hub.docker.com/r/statefulhq/runme). To get the latest version, use the following command:
