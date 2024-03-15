@@ -122,9 +122,12 @@ The video below displays Runme’s TUI and how to access its features using the 
 
 ![Runme TUI Usage](../../static/img/runme-tui.gif)
 
-### **Warning**
+<Infobox type="warning" title="Warning!">
 
 Runme would not work if your current working directory does not contain a README file at the top level! You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
+
+</Infobox>
+
 
 Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
 
