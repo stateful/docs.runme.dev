@@ -22,7 +22,7 @@
     },
     {
       "source": "/r/extension/mimeType",
-      "destination": "https://docs.runme.dev/reference/#mime",
+      "destination": "https://docs.runme.dev/reference/mime",
       "permanent": false
     },
     {
