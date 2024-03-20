@@ -1,4 +1,5 @@
 # How to Secure and Automate Kubernetes Secrets with Runme and SOPS/Sealed Secrets
+
 The default [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) are stored either as plaintext or base64 encoded. These secrets should not be sent to version control systems like git due to the security risk of exposing sensitive data such as API keys, passwords, or tokens.
 
 In cases where a developer or an infrastructure-focused engineer needs to add secrets to the cluster or to version control, they should use encryption-first tools. These tools securely share and push these secrets to version control. Tools like [sops](https://fluxcd.io/flux/guides/mozilla-sops/) and [sealed-secrets](https://archive.eksworkshop.com/beginner/200_secrets/installing-sealed-secrets/) are commonly used by DevOps and SREs.
@@ -6,7 +7,6 @@ In cases where a developer or an infrastructure-focused engineer needs to add se
 With Runme, Platform Engineers can document how secrets are added to a Kubernetes cluster, ensuring the commands and guides are repeatable, consistent, and executable. Runme also enables engineers to create runbooks as documentation. This allows other team members, including new ones, to add and encrypt secrets correctly without leaking data and causing a significant security breach.
 
 The guide below explains how to use [Runme](https://github.com/stateful/blog-examples/tree/main/k8s-secret) as your central knowledge hub. It will make your documentation the go-to source for all infrastructure operations.
-
 
 ## **Prerequisites**
 
@@ -21,13 +21,27 @@ Here is a [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-sec
 
 Encrypt your Kubernetes secrets using SOPS; you need enhanced security and access to your cloud provider. This requires a [Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) (KMS). For this guide, we'll use an AWS KMS key. This service offers secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
 
+Here is an example [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-secret/sops/sops.md) to follow this toturial.
+
 ### **Installation of SOPS**
 
 **Step 1: Download SOPS Binary**
 
-```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
+Click on execute cell button to install `sops` 
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
+  <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
+</video>
+
+Set your environment variable:
+
+```sh {"id":"01HSDSRR7BPPAATCHMZPZDXBGE"}
 export version
 export platform
+```
+
+```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
 
 curl -LO https://github.com/getsops/sops/releases/download/$version/sops-$version.$platform
 ```
@@ -41,68 +55,27 @@ You don’t need to input the environment variable again ones the values has bee
 
 </Infobox>
 
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
-  <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
-</video>
-
 For this guide, we are using a Linux operating system.
-
-**Step 2: Move the Binary to Your PATH**
-
-```sh {"id":"01HRT20X8V73M6KA66WPB156JR"}
-# Move the binary to your PATH
-mv sops-{version}.linux.amd64 /usr/local/bin/sops
-
-# Make the binary executable
-chmod +x /usr/local/bin/sops
-```
 
 ### **Create a KMS Key**
 
-Next, create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS. This key will be used to encrypt and decrypt your secrets. Follow the steps below to create a KMS key:
+Next, create a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) in AWS. This key will be used to encrypt and decrypt your secrets.
 
 To create a KMS key with a specific name, use the `--description` option followed by the name of the key, in this case, `runme-key`.
 
-```sh {"id":"01HS1AC1XDX7K7R1TRCHVPEB3G"}
-aws kms create-key --description "runme-key"
-```
+use the `jq -r` to parse the JSON input recieved from `aws kms create-key` command and extract the value associated with the `KeyId` field
 
-Next, create an alias.
+Use the [Chain Cell Output](https://docs.runme.dev/getting-started/features#chain-cell-output) feature to transfer the stdout result of the last execution into your next execution To create an `alias`
 
-```sh {"id":"01HS1ACBVNP56D9V53N398SPWT"}
-# This will create an alias "alias/MyAliasName" associated with the newly created key
-aws kms create-alias --alias-name alias/runme --target-key-id $key
-```
-
-Refer to the [Prerequisite](https://github.com/stateful/blog-examples/blob/main/k8s-secret/sealed-secret/prerequiste.md) notebook for installation instructions for your Linux OS.
-
-Here is how your output will look like
-
-```sh {"id":"01HS1E58Y030113R231JV0SG2C"}
-{
-    "KeyMetadata": {
-        "AWSAccountId": "655675289698",
-        "KeyId": "901e8117-84dd-43ca-aa41-ad319c48abcd",
-        "Arn": "arn:aws:kms:us-east-1:655675289698:key/901e8117-84dd-43ca-aa41-ad319c48abcd",
-        "CreationDate": "2024-03-15T10:44:46.284000+01:00",
-        "Enabled": true,
-        "Description": "runme-keys",
-        "KeyUsage": "ENCRYPT_DECRYPT",
-
- }
-```
+![KMS-key](../../static/img/guide-page/kms-create-key.png)
 
 You can save it straight to the runme cloud for future use or reference, using the runme [auto-save](../configuration/auto-save) feature
 
 ### **Configure SOPS**
 
-Configure SOPS effortlessly with your AWS KMS key
+Create a `SOPS` configuration file, this file specifies how `SOPS` should encrypt your secrets and what encryption keys to use.
 
-```sh {"id":"01HRT1SF7YAP44WFT0WS08WST5"}
-echo "creation_rules
-  - kms: arn:aws:kms:{region}:{account-id}:alias/{alias}" > ~/.sops.yaml
-```
+![configure-sops](../../static/img/guide-page/configure-sops.png)
 
 Verify the configuration by checking the contents of `~/.sops.yaml`
 
