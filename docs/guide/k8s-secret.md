@@ -34,6 +34,7 @@ Click the execute cell button to download `sops` to your environment.
   <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
 </video>
 
+
 Set your environment variable:
 
 You can use the Runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *Darwin* for macOS, *linux* for Linux). The env prompt uses the `export` commands available in Unix-like operating systems (such as Linux and macOS) to set the environment variable.
