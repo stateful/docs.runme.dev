@@ -27,7 +27,7 @@ Here is an example [notebook](https://github.com/stateful/blog-examples/blob/mai
 
 **Step 1: Download SOPS Binary**
 
-Click on execute cell button to install `sops` 
+Click on execute cell button to install `sops`
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
@@ -36,17 +36,9 @@ Click on execute cell button to install `sops`
 
 Set your environment variable:
 
-```sh {"id":"01HSDSRR7BPPAATCHMZPZDXBGE"}
-export version
-export platform
-```
+Use `export` command in Unix-like operating system (such as Linux and macOS) to set the environment variable.
 
-```sh {"id":"01HRT2VDC4VKCGXFGTRD6QESJX"}
-
-curl -LO https://github.com/getsops/sops/releases/download/$version/sops-$version.$platform
-```
-
-By using the runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux).
+With Runme [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) feature, all you need to do is input the latest version of SOPS for `{version}` and your platform for `{platform}` (e.g., *darwin* for macOS, *linux* for Linux).
 
 <br />
 <Infobox type="sidenote" title="Note">
@@ -54,8 +46,6 @@ By using the runme [env prompt](https://docs.runme.dev/getting-started/features#
 You don’t need to input the environment variable again ones the values has been inputted, other code cell within the notebook can use, unless you reset the session.
 
 </Infobox>
-
-For this guide, we are using a Linux operating system.
 
 ### **Create a KMS Key**
 
@@ -67,7 +57,7 @@ use the `jq -r` to parse the JSON input recieved from `aws kms create-key` comma
 
 Use the [Chain Cell Output](https://docs.runme.dev/getting-started/features#chain-cell-output) feature to transfer the stdout result of the last execution into your next execution To create an `alias`
 
-![KMS-key](../../static/img/guide-page/kms-create-key.png)
+![kms-key](../../static/img/guide-page/kms-create-keys.png)
 
 You can save it straight to the runme cloud for future use or reference, using the runme [auto-save](../configuration/auto-save) feature
 
@@ -75,21 +65,17 @@ You can save it straight to the runme cloud for future use or reference, using t
 
 Create a `SOPS` configuration file, this file specifies how `SOPS` should encrypt your secrets and what encryption keys to use.
 
-![configure-sops](../../static/img/guide-page/configure-sops.png)
+1. The first code block sets the variable, it prompts for you to input the value.
+2. The second block creates the `sops.yaml` file
+3. The third block confirms and check if the file was created correctly
 
-Verify the configuration by checking the contents of `~/.sops.yaml`
-
-```sh {"id":"01HRT1S289XFGGR43ZFJSJN8G8"}
-cat ~/.sops.yaml
-```
+![configuresops](../../static/img/guide-page/configuresops.png)
 
 ### **Encrypt Your Secrets**
 
 Encrypt your secrets seamlessly using SOPS and AWS KMS, no more cryptic commands; each step is laid out for you to follow along effortlessly.
 
-```sh {"id":"01HRT1REM347HVT1YNEHNQ75M9"}
-sops --encrypt --kms arn:aws:kms:$region:$account-id:key/$key --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets.yaml > runme-secrets-enc.yaml
-```
+![encrypt-sops](../../static/img/guide-page/encryptsops.png)
 
 the secrets in your `runme-secrets.yaml`  gets encrypt an piped into another file `runme-secrets-enc.yaml`
 
@@ -97,17 +83,7 @@ the secrets in your `runme-secrets.yaml`  gets encrypt an piped into another fil
 
 Retrieve and decrypt your secrets with confidence. Runme Notebook provides clear and concise instructions, ensuring the decryption process is as smooth as encrypting.
 
-here is how to check for you secret within the cluster:
-
-```sh {"id":"01HRSMKKZDA1MJMTEPK8CHS7YF"}
-kubectl get secret sops-runme -n test -o jsonpath="{.data.password}” | base64 --decode
-```
-
-here is how to decrypt your sops secret:
-
-```sh {"id":"01HRT1HVC0JY2JH7WKD1PRXW3H"}
-sops --decrypt --kms arn:aws:kms:{region}:{account-id}:key/{key} --encryption-context Role:sops-runme-kms-role --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
-```
+![decrypt-runme](../../static/img/guide-page/decrypt-runme.png)
 
 Decrypt the secret from a sops encrypted secret `runme-secrets-enc.yaml` into the original version before it was encrypted `runme-secrets.yaml`
 
@@ -138,38 +114,14 @@ using the `export` command prompts you to input the value of `version` or `platf
 
 ![set var](../../static/img/set-var.png)
 
-Installing the Custom Controller and CRD for SealedSecrets
-
-```sh {"id":"01HS1AR998QYFRGSA30DNZ6KQC"}
-wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v$version/controller.yaml
-kubectl apply -f controller.yaml
-```
-
-Check the status of the controller pod.
-
-```sh {"id":"01HS1ARV0VY9NRX6C5QGCE8837"}
-kubectl get pods -n kube-system | grep sealed-secrets-controller
-```
-
 ### **Encrypt a Secret**
 
 - Create a Kubernetes Secret and use **`kubeseal`** to encrypt it:
 
+![sealed-encrypt](../../static/img/guide-page/sealedsecret-encrypt.png)
+
 ```sh {"id":"01HRSMKKZDHRFG7RMFFHDXWZAB"}
 kubectl create secret generic mysecret --from-literal=username=myuser --from-literal=password=mypassword --dry-run=client -o yaml | kubeseal > mysealedsecret.yaml
-```
-
-- Alternatively, you can encrypt a manifest file:
-
-```sh {"id":"01HRSMKKZD3YZ69HWSZNW9FRWP"}
-kubeseal < mysecret.yaml > mysealedsecret.yaml
-```
-
-- Use the sealed-secrets-controller installed in your cluster to encrypt a secret before deploying:
-
-```sh {"id":"01HRSMKKZDFC6E3DE7T5Z79GDT"}
-
-cat mysecret.yaml | kubeseal --controller-namespace kube-system --controller-name sealed-secrets-controller --format yaml > mysealedsecret.yaml
 ```
 
 This creates a SealedSecret resource (**`mysealedsecret.yaml`**) containing the encrypted data.
@@ -186,14 +138,6 @@ kubectl get sealedsecret <mysealedsecret> -o yaml | kubeseal --raw > runme-secre
 
 ```sh {"id":"01HRSMKKZDQ3BAD5TMBMC994MY"}
 echo -n "my secret api key" | kubectl create secret generic xxx --dry-run=client --from-file=api_key=/dev/stdin -o json | kubeseal --controller-namespace=kube-system --controller-name=sealed-secrets --format yaml --merge-into sealed-secret.yaml
-```
-
-### **Delete Sealed Secret:**
-
-- To delete the secret, use the **`kubectl`** command:
-
-```sh {"id":"01HRSMKKZDEM5TGC0H49MCX158"}
-kubectl delete -f mysealedsecret.yaml
 ```
 
 ### **Deploy the Sealed Secret:**
