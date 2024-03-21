@@ -49,11 +49,11 @@ Firstly, you need to create a [KMS key](https://docs.aws.amazon.com/kms/latest/d
 
 To extract the value associated with the `KeyId` field, use `jq -r` to parse the JSON input from the `aws kms create-key` command.
 
-You can transfer the stdout result of the last execution to your next execution using the [Chain Cell Output](https://docs.runme.dev/getting-started/features#chain-cell-output) feature. To create an alias, refer to the image below:
+You can transfer the stdout result of the last execution to your subsequent execution using the [Chain Cell Output](https://docs.runme.dev/getting-started/features#chain-cell-output) feature. To create an alias, refer to the image below:
 
 ![kms-key](../../static/img/guide-page/kms-create-keys.png)
 
-Lastly, you can save it to the runme cloud for future use or reference using the runme auto-save feature.
+Lastly, you can save it to the runme cloud for future use or reference using the runme [auto-save](https://docs.runme.dev/configuration/auto-save) feature.
 
 ### **Configure SOPS**
 
@@ -125,7 +125,7 @@ Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret
 
 While the above processes help you secure your Kubernetes key, manually carrying out these operations can be take time and effort. This is where Runme comes in.
 
-Runme is a README documentation software that automates manual processes and gives you the time to jump right into a task, execute it, and save time.
+Runme is a documentation tool that automates manual processes and gives you the time to jump right into a task, execute it, and save time.
 
 You can quickly eliminate the hassle of learning and implementing secret encryption in Kubernetes by automating these processes with Runme.
 
