@@ -70,4 +70,4 @@ Now, you can run a preview deployment and subsequently promote it to production 
 ![deploy deno prod](../../static/img/Integration/deno-insert-token.png)
 
 
-You have successfully deployed your application to Deno cloud with Runme. However, this is just one of the various ways you can integrate Runme with your tools. To learn more, explore our [guide section](../guide/index).
+You have successfully deployed your application to Deno cloud with Runme. However, this is just one of the various ways you can integrate Runme with your tools. To learn more, explore our [guide section](../guide/index.md).
