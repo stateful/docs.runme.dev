@@ -223,7 +223,7 @@ export PROJECT_ID=Enter a valid project ID
 cli make-call --project-id $PROJECT_ID describe
 ```
 
-### **Terminal visibility post-execution**
+### 7. **Terminal visibility post-execution**
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
@@ -236,7 +236,7 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 docker ps | grep runme/demo:latest
 ```
 
-### **Human-friendly output**
+### 8. **Human-friendly output**
 
 Not all cells’ output is plain text. For example, you can have JSON, text, images, etc, all in your Markdown file.
 
@@ -246,55 +246,31 @@ Using the `mimeType` specifier, you can specify the expected output type. Runm
 
 See in the [reference page](../Reference/mime) for the list of supported MIME types!
 
-### **Exclude Cell from Run All**
+### 9. **Terminal Row**
 
-Every VS Code notebook allows users to run all available cells. This can be useful if you define a complete runbook in your Markdown file, allowing developers to click the **Run All** button to get set up and running.
+On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row.
+Terminal row allows you to set the number of rows with which your output should be displayed under a cell.
+Where the terminal row is not set or defined, Runme displayed the output in 10 rows by default.
 
-However, sometimes certain cells should be excluded from this workflow. You can configure this behavior by clicking the `excludeFromRunAll` option.
+#### How To Set Up Terminal Row
 
-**Default:** `false`
+The terminal row is a Runme VS Code feature. Therefore, you can set up using your code editor. If you haven’t installed Runme on your VS Code yet, see our installation guide to install Runme in your VS Code editor.
 
-**Example**
+To set up the terminal row on your code editor, follow the steps below:
 
-```sh {"id":"01HPM81V77G7ASW1F4BTFBX13C"}
- ```sh {"excludeFromRunAll":"true","id":"01HPM7NRQYMD5T06M4KS6S2DWG"}
- # Do something optional here
-```
+1. In your `.md` file, click on the “Configure” button at the bottom left of the file.
 
+![terminalrow-1](../../static/img/terminalrow-1.png)
 
-### **Run All Cells by Category**
+We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your Markdown is executed on your code editor using these settings.
 
-If you have multiple workflows in a single Markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
+2. Navigate to “Advanced” > `terminalrow`.
 
-**Default:** `""`
+![terminalrow-2](../../static/img/terminalrow-2.png)
 
-**Example**
+3. Lastly, set the number of rows you wish your output to be rendered in.
 
-```sh {"id":"01HPM829M14ADVR9M6J7N9VF5Z"}
-  ```sh {"category":"build","id":"01HPM7Q4JQ5HVJ5KS2FJ7Q31SQ"}
-    # Do something here
-```
-
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/categories.mp4" type="video/mp4" />
-  <source src="/videos/categories.webm" type="video/webm" />
-</video>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### **Unnamed vs Named cells**
+### 10. **Unnamed vs Named cells**
 
 On Runme cells are unnamed by default. However, you can name a cell directly in your notebook. This will enable you to easily identify the cell using the provided cell name. On the cell you wish to name, simply click on the “Add Name” button on the cell.
 
@@ -339,31 +315,38 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 </Infobox>
 
+### 11. **Exclude Cell from Run All**
+
+Every VS Code notebook allows users to run all available cells. This can be useful if you define a complete runbook in your Markdown file, allowing developers to click the **Run All** button to get set up and running.
+
+However, sometimes certain cells should be excluded from this workflow. You can configure this behavior by clicking the `excludeFromRunAll` option.
+
+**Default:** `false`
+
+**Example**
+
+```sh {"id":"01HPM81V77G7ASW1F4BTFBX13C"}
+ ```sh {"excludeFromRunAll":"true","id":"01HPM7NRQYMD5T06M4KS6S2DWG"}
+ # Do something optional here
+```
 
 
-### **Terminal Row**
+### 12. **Run All Cells by Category**
 
-On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row.
-Terminal row allows you to set the number of rows with which your output should be displayed under a cell.
-Where the terminal row is not set or defined, Runme displayed the output in 10 rows by default.
+If you have multiple workflows in a single Markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
 
-#### How To Set Up Terminal Row
+**Default:** `""`
 
-The terminal row is a Runme VS Code feature. Therefore, you can set up using your code editor. If you haven’t installed Runme on your VS Code yet, see our installation guide to install Runme in your VS Code editor.
+**Example**
 
-To set up the terminal row on your code editor, follow the steps below:
+```sh {"id":"01HPM829M14ADVR9M6J7N9VF5Z"}
+  ```sh {"category":"build","id":"01HPM7Q4JQ5HVJ5KS2FJ7Q31SQ"}
+    # Do something here
+```
 
-1. In your `.md` file, click on the “Configure” button at the bottom left of the file.
-
-![terminalrow-1](../../static/img/terminalrow-1.png)
-
-We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your Markdown is executed on your code editor using these settings.
-
-2. Navigate to “Advanced” > `terminalrow`.
-
-![terminalrow-2](../../static/img/terminalrow-2.png)
-
-3. Lastly, set the number of rows you wish your output to be rendered in.
-
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/categories.mp4" type="video/mp4" />
+  <source src="/videos/categories.webm" type="video/webm" />
+</video>
 
 
