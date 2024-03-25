@@ -12,8 +12,8 @@ The guide below explains how to use [Runme](https://github.com/stateful/blog-exa
 
 - An AWS account with privileges to create an [IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and a [KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 - [AWS CLI](https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-install.html) installed and configured.
-- **Kubernetes Cluster:** A running Kubernetes cluster is required. For this guide, we will use [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for our Kubernetes cluster.
-- **[Kubectl](https://kubernetes.io/docs/tasks/tools/):** The Kubernetes command-line tool should be installed on your machine.
+- Kubernetes Cluster: A running Kubernetes cluster is required. For this guide, we will use [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for our Kubernetes cluster.
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/): The Kubernetes command-line tool should be installed on your machine.
 
 Here is a [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-secret/sops/prerequiste.md) to help you install these prerequisites. For this guide we are using either Linux or Mac OS
 
@@ -51,7 +51,7 @@ To extract the value associated with the `KeyId` field, use `jq -r` to parse the
 
 You can transfer the stdout result of the last execution to your subsequent execution using the [Chain Cell Output](https://docs.runme.dev/getting-started/features#chain-cell-output) feature. To create an alias, refer to the image below:
 
-![kms-key](../../static/img/guide-page/kms-create-keys.png)
+![kms-key](../../static/img/guide-page/kms-create-key.png)
 
 Lastly, you can save it to the runme cloud for future use or reference using the runme [auto-save](https://docs.runme.dev/configuration/auto-save) feature.
 
