@@ -199,13 +199,13 @@ sleep $SLEEP_SECS
 
 There are two prompt modes:
 
-1.) Use a placeholder
+- Use a placeholder
 
-2.) a prompt message.
+- A prompt message.
 
 Here's the difference:
 
-1. **Using a Placeholder**:
+- **Using a Placeholder**:
 
 Using quotes or double-qoutes will prompt the use the confirm the placeholder value. This is convient when a valid default value is known ahead of time.
 
@@ -214,7 +214,7 @@ export PROJECT_ID="your-project-7f412a"
 cli make-call --project-id $PROJECT_ID describe
 ```
 
-2. **Using a Prompt Message**:
+- **Using a Prompt Message**:
 
 When you don't know the default value, you can instead use a prompt message to ask the user for the value. The key difference here is that the message does not act as value placeholder.
 
@@ -258,17 +258,17 @@ The terminal row is a Runme VS Code feature. Therefore, you can set up using you
 
 To set up the terminal row on your code editor, follow the steps below:
 
-1. In your `.md` file, click on the “Configure” button at the bottom left of the file.
+- In your `.md` file, click on the “Configure” button at the bottom left of the file.
 
 ![terminalrow-1](../../static/img/terminalrow-1.png)
 
 We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your Markdown is executed on your code editor using these settings.
 
-2. Navigate to “Advanced” > `terminalrow`.
+- Navigate to “Advanced” > `terminalrow`.
 
 ![terminalrow-2](../../static/img/terminalrow-2.png)
 
-3. Lastly, set the number of rows you wish your output to be rendered in.
+- Lastly, set the number of rows you wish your output to be rendered in.
 
 ### 10. **Unnamed vs Named cells**
 
