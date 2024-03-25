@@ -83,7 +83,7 @@ Let’s get into it!
 
 5. Set a name and link our local directory to the project.
 
-  The Runme environment prompt makes setting up a name for your project easier.
+   The Runme environment prompt makes setting up a name for your project easier.
 
   Additionally, you can link your directory to a project and kick off a preview deployment. See the image below for a better understanding.
 
