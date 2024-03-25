@@ -2,27 +2,25 @@
 runme:
   id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
   version: v2.0
-sidebar_position: 4
-title: Reference
+sidebar_position: 1
+title: Options for Document and Cell
 ---
 
-# Reference
-
-Everything in one place.
+Executing code and commands in Runme can be done either at the [Document level](../configuration/document-level) or the [Cell level](../configuration/cell-level). This page is a reference for both features.
 
 ### **Document Options**
 
-Frontmatter in yaml, json, or toml on top of markdown document.
+Frontmatter in yaml, json, or toml on top of Markdown document.
 
 | Configuration  | Description                              | Default value             |
 | ------------- | ----------------------------------------- | ------------------------- |
-| cwd           | Overwrites the default working directory  | [markdown file's basedir] |
+| cwd           | Overwrites the default working directory  | [Markdown file's basedir] |
 | shell         | Overwrites shell with custom preference   | [system/user default]     |
 | skipPrompts   | Bypasses interactive prompts              | [system/user default]     |
 
 ### **Cell Options**
 
-Metadata inside markdown's fenced code blocks.
+Metadata inside Markdown's fenced code blocks.
 
 | Configuration          | Description                                                     | Default value            |
 | ---------------------- | --------------------------------------------------------------- | ------------------------ |
@@ -45,24 +43,4 @@ This feature can be used to prevent [prompting](../configuration/document-level)
 
 </Infobox>
 
-### **Supported MIME types**
 
-Runme supports the standard VS Code MIME types alongside custom Runme MIME types.
-
-**Standard VS Code MIME types**
-
-- text/plain
-- application/javascript
-- text/html
-- image/svg+xml
-- text/markdown
-- image/png
-- image/jpeg
-
-**MIME types for rendering code**
-
-- text/x-json
-- text/x-javascript
-- text/x-html
-- text/x-rust
-- text/x-LANGUAGE_ID for any other built-in or installed languages.

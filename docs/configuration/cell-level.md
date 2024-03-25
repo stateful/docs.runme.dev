@@ -6,9 +6,15 @@ sidebar_position: 1
 title: Cell-level Options
 ---
 
-In this section, we will give you a step-by-step guide on how to run your Markdown file by each cell rather than execute your entire file at once.
+When running code blocks or commands with Runme, you have two execution options: document-level or cell-level options.
+
+The cell-level options allow you to run your Markdown file by cell rather than execute the entire file at once.
+
+In this section, we will explain the various features of the cell-level option and show you how to run your Markdown file by cell.
 
 ***Let’s dive in!***
+
+### Different Types of Commands
 
 Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be:
 
@@ -17,58 +23,63 @@ Not all commands are equal, and expectations of how execution works can differ! 
 3. Human-centric output: JSON, text, images, etc.
 4. Terminal visibility when no errors occur.
 
-To modify the cell execution behavior, simply click Configure on the respective cell.
+However, Runme makes running such commands easy. It has sophisticated features that ensure commands and code are executed inside your Markdown file. In this section, we will explore how to run commands and code in one click and some features that make running commands at the cell level easier with Runme.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](https://docs.runme.dev/configuration/reference#Cell-Options):
+## How to Run a Cell In One Click
 
-To modify the cell execution behavior, simply click "Configure" on the respective cell.
+To run a cell block in your Markdown file:
 
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/configure-cell-execution.mp4" type="video/mp4" />
-  <source src="/videos/configure-cell-execution.webm" type="video/webm" />
-</video>
+- Navigate to the specific cell you wish to run.
+- Click the **Run** icon on the left side of the code block.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
+![cell-level](../../static/img/configuration-page/cell-level-npm-install.png)
 
-### **Unnamed vs Named cells**
+This action will run your command and return an executed output.
 
-On Runme cells are unnamed by default. However, you can name a cell directly in your notebook. This will enable you to easily identify the cell using the provided cell name. On the cell you wish to name, simply click on the “Add Name” button on the cell.
+You can configure how your cell should run using the configuration options. In the next section, we will be explaining how to configure your cell using the different cell-level options in Runme.
 
-![add name](../../static/img/configuration-page/add-naming.png)
+## Features of the Cell-Level Options
 
-You will be directed to enter a preferred name for the cell.
+The cell-level option is designed with unique sub-features which makes it efficiently and gives users the flexibility to modify each cell to their preference. Some of these features include:
 
-![cell-name](../../static/img/configuration-page/cell-naming.png)
+### 1. Configuration of Cell
 
-Where a cell is not named, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS Code extension to name the file in the configuration settings.
+Runme provides two distinct ways you can configure your cell.
 
+- Using the **Configure** button
 
-These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
+To modify the cell execution behavior of any cell you choose, click **Configure** on the respective cell.
 
-If you feel more comfortable editing the markdown file directly, you can do it by using the following configuration options [schema](reference#Cell-Options):
+![configure ](../../static/img/configuration-page/configure-cell-level.png)
+
+A new view will open, allowing you to select “general” or “advanced” cell configuration.
+
+![general-page](../../static/img/configuration-page/npm-install-configure.png)
+
+- Using the Markdown Syntax
+
+If you feel more comfortable editing the Markdown file directly, you can do it using the following configuration options [schema](../Reference/configuration#cell-options):
+
+Let us consider this example:
 
 ```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
 echo "hello world"
 ```
 
-The above example uses the echo command to display the text "hello world" on the terminal. The context `{"interactive":"false","name":"echo-hello-world"}` indicates that the command is intended for non-interactive execution and has been labeled accordingly.
+The above example uses the `echo` command to display the text ***hello world*** on the terminal. The context `{"interactive":"false","name":"echo-hello-world"}` indicates that the command is intended for non-interactive execution and has been labeled accordingly.
+
+Another example you can look at is this
 
 ```sh {"id":"01HPM6HZEJKM8PPG6T38RABV9A"}
-
-Try out the previous command
-
-```sh {"id":"01HPMBXN8PNCMJ87Y1BGQ1NKN3"}
-echo hello world
+```sh { interactive=true name=example mimeType=text/plain closeTerminalOnSuccess=false background=false }echo hello world
 ```
 
-The entire [configuration schema](reference#Cell-Options): as an example
+To edit the Markdown syntax of your cell in Runme, click on the button indicated in the image below
 
-```sh {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
+![double view](../../static/img/configuration-page/example-cell.png)
 
-```sh {"background":"false","closeTerminalOnSuccess":"false","id":"01HPM33PJFH2Q9R5SNAQX0HCSC","interactive":"true","name":"example"}
-echo "hello world"
-```
+Your VS Code view will split into two. One side has Runme View, and the other has the raw Markdown view. On the Markdown view, locate the cell you want to configure and make the necessary configuration edit.
 
 <Infobox type="sidenote">
 
@@ -76,11 +87,22 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 </Infobox>
 
-### **Specify Language in Blocks**
+### 2. Specify Language in Blocks
 
-Runme, just like most Markdown viewers, will work best when a script's language is contained inside of fenced code blocks.
+Runme, just like most Markdown viewers, will work best when a script's language is contained inside fenced code blocks.
 
-If possible, always specify the language [according to the markdown standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) as is illustrated below:
+Runme provides two ways you can specify language in code blocks.
+
+- Using our Shebang Feature
+
+Runme has an awesome [Shebang feature](../configuration/shebang) allows users to specify each cell's programming language inside the Markdown file.
+
+![interpreter](../../static/img/configuration-page/shebang-cell-level.png)
+
+The image above shows that our first code block is in Python, and the next is in bash script.
+
+- The use of Markdown Standard
+   If possible, always specify the language according to the [Markdown standard](https://www.markdownguide.org/extended-syntax/#syntax-highlighting) as illustrated below:
 
 ```sh {"id":"01HFPW3ES2Y7TXV064BVXNCD12"}
   ```sh {"id":"01HPMBVRXTRHSD52YVAX4K648P"}
@@ -95,11 +117,10 @@ While this works well in a lot of cases, the accuracy is not perfect.
 
 </Infobox>
 
-### **Handle long-running processes**
+### 3. Handle long-running processes
 
-It is very common to use file-watcher enabled compilers/bundlers (`npm start dev`, `watchexec...` etc) in the background during development.
-
-For any cell containing an instance of these commands be sure to tick the "background" cell setting. This will prevent execution from permanently blocking the notebook UX.
+It is common to use file-watcher-enabled compilers/bundlers (e.g., `npm start dev`, `watchexec`, etc.) in the background during development.
+For any cell containing an instance of these commands, tick the background cell setting. This will prevent execution from permanently blocking the notebook UX.
 
 ![background running task](../../static/img/backgroundrunme.png)
 
@@ -114,9 +135,11 @@ Once ticked notice the "Background Task" label shows up in the cell status bar!
 npm run watch
 ```
 
-### **Cell's current working directory**
+![background](../../static/img/configuration-page/background-task.png)
 
-In most cases, you probably want to set the current working directory at the document-level, however, it is possible to set it per cell.
+### 4. **Cell's current working directory**
+
+In most cases, you should set the current working directory at the document level; however, you can also set it per cell.
 
 Click on `configure` to change the current work directory `cwd`:
 
@@ -125,23 +148,23 @@ Click on `configure` to change the current work directory `cwd`:
 ```sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
 
 ```sh { cwd=.. "id":"01HP475WXX5PVV658023KQJFRE"}
-terraform init
+npm run watch #relative path
 
 ```
 
 ```sh {"id":"01HPPF1PRAWK6WV432SB6KVF6G"}
 
 ```sh {"cwd":"/tmp","id":"01HPQ8F2307NFJR3WV1EJRJ0B8"}
-terraform plan
+echo "absolute path" > dummy_file
 ```
 
 <Infobox type="warning">
 
-Please note that when cwd settings are added at both the document level and the cell level, none will be overwritten but rather combined. For example, if you set `cwd: /tmp/dummy` at the document level and `cwd: ..` at the cell level, the resulting working directory will be `/tmp`, effectively combining the two paths.
+Please note that if both `cwd` is set for doc-level and cell, they don't overwrite. They combine. For example, `cwd: /tmp/dummy` (doc) and `cwd: ..` (cell) will result in `/tmp`.
 
 </Infobox>
 
-### **Interactive vs non-interactive cells**
+### 5. **Interactive vs non-interactive cells**
 
 If a cell's commands do not require any input from a reader it might be a good fit to include the cell's output inside the notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for, and it defaults to *true*.
 
@@ -161,7 +184,7 @@ Please note that the Runme team is currently working on making output in both no
 
 </Infobox>
 
-### **Set environment variables**
+### 6. **Set environment variables**
 
 If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
 
@@ -174,27 +197,33 @@ export SLEEP_SECS="0"
 sleep $SLEEP_SECS
 ```
 
-There are two prompt modes: using 1.) a placeholder or 2.) a prompt message. Here's the difference:
+There are two prompt modes:
 
-1. **Using a Placeholder**:
+- Use a placeholder
+
+- A prompt message.
+
+Here's the difference:
+
+- **Using a Placeholder**:
 
 Using quotes or double-qoutes will prompt the use the confirm the placeholder value. This is convient when a valid default value is known ahead of time.
 
-```sh
+```sh {"id":"01HRABZTNC8946E927BGMKQ1A0"}
 export PROJECT_ID="your-project-7f412a"
 cli make-call --project-id $PROJECT_ID describe
 ```
 
-2. **Using a Prompt Message**:
+- **Using a Prompt Message**:
 
 When you don't know the default value, you can instead use a prompt message to ask the user for the value. The key difference here is that the message does not act as value placeholder.
 
-```sh
+```sh {"id":"01HRABZTNCZ2ZZBPDXDW3AQFGQ"}
 export PROJECT_ID=Enter a valid project ID
 cli make-call --project-id $PROJECT_ID describe
 ```
 
-### **Terminal visibility post-execution**
+### 7. **Terminal visibility post-execution**
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
@@ -207,15 +236,17 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 docker ps | grep runme/demo:latest
 ```
 
-### **Human-friendly output**
+### 8. **Human-friendly output**
 
-JSON, text, images, etc. Not all cells’ output is plain text. Using the `mimeType` specifier it is possible to specify the expected output's type. Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
+Not all cells’ output is plain text. For example, you can have JSON, text, images, etc, all in your Markdown file.
+
+Using the `mimeType` specifier, you can specify the expected output type. Runme Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
 
 ![Human-centric output](../../static/img/human-centric-output.png)
 
-See in the [reference page](../configuration/reference) for the list of supported MIME types!
+See in the [reference page](../Reference/mime) for the list of supported MIME types!
 
-### **Terminal Row**
+### 9. **Terminal Row**
 
 On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row.
 Terminal row allows you to set the number of rows with which your output should be displayed under a cell.
@@ -227,21 +258,68 @@ The terminal row is a Runme VS Code feature. Therefore, you can set up using you
 
 To set up the terminal row on your code editor, follow the steps below:
 
-1. In your `.md` file, click on the “Configure” button at the bottom left of the file.
+- In your `.md` file, click on the “Configure” button at the bottom left of the file.
 
 ![terminalrow-1](../../static/img/terminalrow-1.png)
 
-We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your markdown is executed on your code editor using these settings.
+We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your Markdown is executed on your code editor using these settings.
 
-2. Navigate to “Advanced” > `terminalrow`.
+- Navigate to “Advanced” > `terminalrow`.
 
 ![terminalrow-2](../../static/img/terminalrow-2.png)
 
-3. Lastly, set the number of rows you wish your output to be rendered in.
+- Lastly, set the number of rows you wish your output to be rendered in.
 
-### **Exclude Cell from Run All**
+### 10. **Unnamed vs Named cells**
 
-Every VS Code notebook allows to run all available cells. This can be useful if you define a complete runbook in your markdown file and it allows developers to just click the Run All button to get set up and running. However, sometimes certain cells should be excluded from this workflow. With the `excludeFromRunAll` option, you can configure this behavior.
+On Runme cells are unnamed by default. However, you can name a cell directly in your notebook. This will enable you to easily identify the cell using the provided cell name. On the cell you wish to name, simply click on the “Add Name” button on the cell.
+
+![add name](../../static/img/configuration-page/add-naming.png)
+
+You will be directed to enter a preferred name for the cell.
+
+![cell-name](../../static/img/configuration-page/cell-naming.png)
+
+Where a cell is not named, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS Code extension to name the file in the configuration settings.
+
+These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
+
+If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
+
+```md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
+```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
+echo "hello world"
+```
+
+The above example uses the echo command to display the text "hello world" on the terminal. The context `{"interactive":"false","name":"echo-hello-world"}` indicates that the command is intended for non-interactive execution and has been labeled accordingly.
+
+```sh {"id":"01HPM6HZEJKM8PPG6T38RABV9A"}
+
+Try out the previous command
+
+```sh {"id":"01HPMBXN8PNCMJ87Y1BGQ1NKN3"}
+echo hello world
+```
+
+The entire [configuration schema](../Reference/configuration#Cell-Options): as an example
+
+```sh {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
+
+```sh {"background":"false","closeTerminalOnSuccess":"false","id":"01HPM33PJFH2Q9R5SNAQX0HCSC","interactive":"true","name":"example"}
+echo "hello world"
+```
+
+<Infobox type="sidenote">
+
+Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/main/examples) available inside the VS Code extension repo for a reference on how to apply these code block attributes in different use cases!
+
+</Infobox>
+
+### 11. **Exclude Cell from Run All**
+
+Every VS Code notebook allows users to run all available cells. This can be useful if you define a complete runbook in your Markdown file, allowing developers to click the **Run All** button to get set up and running.
+
+However, sometimes certain cells should be excluded from this workflow. You can configure this behavior by clicking the `excludeFromRunAll` option.
 
 **Default:** `false`
 
@@ -252,9 +330,10 @@ Every VS Code notebook allows to run all available cells. This can be useful if 
  # Do something optional here
 ```
 
-### **Run All Cells by Category**
 
-If you have multiple workflows in a single markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
+### 12. **Run All Cells by Category**
+
+If you have multiple workflows in a single Markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
 
 **Default:** `""`
 
@@ -269,3 +348,5 @@ If you have multiple workflows in a single markdown file you can categorize them
   <source src="/videos/categories.mp4" type="video/mp4" />
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
+
+

@@ -24,7 +24,7 @@ $ brew install runme && runme open
 $ npx runme open
 ```
 
-Make sure to confirm the prompts and you should be dropped into the Runme web interface at `http://127.0.0.1:8080`. Go ahead and open any arbitrary markdown document as notebook or open the terminal to test-drive the `runme` CLI. While the UI might remind you of VS Code, it's a self-hosted web app. More information please see [Runme for Web](https://docs.runme.dev/how-runme-works/web).
+Make sure to confirm the prompts and you should be dropped into the Runme web interface at `http://127.0.0.1:8080`. Go ahead and open any abitrary Markdown document as notebook or open the terminal to test-drive the `runme` CLI. While the UI might remind you of VS Code, it's a self-hosted web app. More information please see [Runme for Web](https://docs.runme.dev/how-runme-works/web).
 
 ![Runme for Web](../static/img/runme-web.png)
 
@@ -59,9 +59,9 @@ Learn how to install Runme and [get started](https://docs.runme.dev/getting-star
 
 ## **What is Runme?**
 
-Runme enables you to execute interactive runbooks using markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
+Runme enables you to execute interactive runbooks using Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
 
-We have designed a comprehensive set of tools and configurations that are 100% compatible with CommonMark, the standard for markdown. Through this, your integration with Runme does not interfere with your existing markdown documentation or tooling.
+We have designed a comprehensive set of tools and configurations that are 100% compatible with CommonMark, the standard for Markdown. Through this, your integration with Runme does not interfere with your existing Markdown documentation or tooling.
 
 Alongside, we provide interfaces for terminal, editor, and notebooks all attached to a kernel, making them interoperable. While these interfaces share core features, each interface excels in different use cases.
 
@@ -72,7 +72,7 @@ Alongside, we provide interfaces for terminal, editor, and notebooks all attache
 Runme runs everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
 
 - Split loose scripts into runbooks with separate cells, intermediate outputs, and controls to check before moving on.
-- Get ahead of bit-rot and reverse-engineering runbooks executing them directly from markdown inside your project's repo.
+- Get ahead of bit-rot and reverse-engineering runbooks executing them directly from Markdown inside your project's repo.
 - Increase the shareability of runbooks by decoupling them from personal _dotfiles_ or _bash_history's_ without getting in the way.
 - Codify golden paths without overly restricting the flexibility of "scripting".
 
@@ -85,7 +85,8 @@ Learn more about Runme's [Kernel Architecture](https://docs.runme.dev/architectu
 
 ### **Communication & Support**
 
-Need assistance in getting started? Get in touch with our support team to provide answers to your questions and provide you with all the necessary details to get you started with Runme.
+Need assistance in getting started? Get in touch with members of our team via [Discord](https://discord.gg/runme) and get answers to your questions and all the necessary details to get you started with Runme.
+
 
 <Infobox type="sidenote" title="Join Runme community!">
 

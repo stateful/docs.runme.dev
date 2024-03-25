@@ -104,7 +104,7 @@ Currently, there are two ways to indicate Runme to run a GitHub Action:
 - GitHub workflow URL
    `https://github.com/organization/repository/actions/workflows/workflow.yml`
 
-If you paste a URL following any of those formats in any markdown file, Runme will understand you want to run a manually triggered GitHub Action. If the file specifies inputs, a convenient form is displayed to specify the values, they will be displayed according to the type of input:
+If you paste a URL following any of those formats in any Markdown file, Runme will understand you want to run a manually triggered GitHub Action. If the file specifies inputs, a convenient form is displayed to specify the values, they will be displayed according to the type of input:
 
 - Choice: Drop-down list
 - String: Input text

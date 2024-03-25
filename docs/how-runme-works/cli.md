@@ -2,6 +2,8 @@
 runme:
   id: 01HMXY7YB2QZ7XVYMRXX0H1B8M
   version: v2.2
+sidebar_position: 2
+title: Runme on CLI
 ---
 
 # How Runme CLI Works
@@ -27,17 +29,17 @@ his allows you to quickly execute any script present in the README.
 
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
-You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
+You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other Markdown file, without changing the environment's working directory.
 
 </Infobox>
 
 ### Available commands
 
-Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
+Runme parses every shell or bash code block of a Markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your Markdown successfully:
 
 ```text
 Runme executes commands inside your runbooks, docs, and READMEs. Parses commands
-directly from markdown files to make them executable.
+directly from Markdown files to make them executable.
 
 Usage:
   runme [flags]
@@ -80,7 +82,7 @@ Flags:
 [...]
 ```
 
-### Run a markdown file
+### Run a Markdown file
 
 By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
 

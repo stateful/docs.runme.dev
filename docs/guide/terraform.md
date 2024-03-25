@@ -26,7 +26,7 @@ Before we proceed, there are a few requirements needed to get started
 
 ## **Setting Up Terraform for EC2 Instance**
 
-1. **Create a Project Directory:**
+**Create a Project Directory:**
 
    Begin by creating a new directory for your Terraform project and navigate to the directory in your terminal.
 
@@ -59,14 +59,14 @@ In the code snippet above, we set the AWS region,
 
 In this section of the guide, we will creating a runbook with Runme which will be used to run the project.
 
-Runme has amazing functionalities that not only allows  you run your commands within your markdown file but also saves the output in a separate file through a feature knwn as session output.
+Runme has amazing functionalities that not only allows  you run your commands within your Markdown file but also saves the output in a separate file through a feature knwn as session output.
 Through this you are not only running your command but your output is saved for future reference.
 
 **Initialize Terraform**
 
-To begin, first create a `.md` file within your project directory. With Runme installed, every markdown (`.md`) file created in your code editor will ipen with Markdown. Alteratieky you can set Runme as your [editor markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+To begin, first create a `.md` file within your project directory. With Runme installed, every Markdown (`.md`) file created in your code editor will ipen with Markdown. Alteratieky you can set Runme as your [editor Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-In your markdown file, creating a code block to execute your command.
+In your Markdown file, creating a code block to execute your command.
 
 ![start terraform code](../../static/img/guide-page/runm-terraform-code.png)
 
@@ -108,9 +108,9 @@ Terraform will prompt you to confirm the changes. Type `yes` and press Enter. On
 
 ## **Save Output**
 
-Runme allows you to save your output throughout your deployment process.  Whether it's running code or markdown, you can keep track of every activity that has taken place throughout your deployment process by saving the output
+Runme allows you to save your output throughout your deployment process.  Whether it's running code or Markdown, you can keep track of every activity that has taken place throughout your deployment process by saving the output
 This saved output is automatically stored in a new file which is created by default, so you can easily reference it at any time.
-To use this feature, just toggle the "Autosave" option at the top of your code editor in your markdown file to turn “on” or “off”. It's that simple!
+To use this feature, just toggle the "Autosave" option at the top of your code editor in your Markdown file to turn “on” or “off”. It's that simple!
 
 ![auto save](../../static/img/guide-page/runme-autosave.png)
 

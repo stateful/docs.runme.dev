@@ -68,31 +68,31 @@ Example:
 
 You can use `curl` or `wget` to install the runme binary
 
-```bash
+```bash {"id":"01HQW47K686SC6V7S5TH3Z7AFQ"}
 wget https://download.stateful.com/runme/3.1.0-rc.0/runme_darwin_x86_64.tar.gz
 ```
 
 Move the `runme` binary to **`/usr/local/bin`** (recommended) or **`/bin`** (as per your request)
 
-```bash
+```bash {"id":"01HQW47K69NQ6XZG26TQSP44MW"}
 sudo mv runme /usr/local/bin/ # or /bin/runme if you went that route
 ```
 
 Verify the binary is in the path and executable.
 
-```bash
+```bash {"id":"01HQW47K69P24D0JYBPQN0N755"}
 which runme
 ```
 
 This command should output the path to the binary, confirming it's in your system's PATH. To ensure it's executable, you can explicitly set executable permissions:
 
-```bash
+```bash {"id":"01HQW47K69ZTYTGC6998GF77VV"}
 sudo chmod +x /usr/local/bin/runme  # or /bin/runme if you went that route
 ```
 
 Run the binary by simply typing `runme`
 
-```bash
+```bash {"id":"01HQW47K69QVW77PN5NTARQZMX"}
 runme
 ```
 
@@ -103,6 +103,12 @@ We have also provided an option for Go developers to install Runme. If you are a
 ```sh {"id":"01HQK3RSC9YSH5NM2AE503GRB5"}
 go install github.com/stateful/runme/v3@v3
 ```
+
+<Infobox type="warning" title="Warning!">
+
+The displayed version may appear as “0.0.0”. This is an expected behavior and does not affect functionality
+
+</Infobox>
 
 If you don't have Go developer tools installed and still want to use this method, download and install Go.
 
@@ -116,15 +122,17 @@ The video below displays Runme’s TUI and how to access its features using the 
 
 ![Runme TUI Usage](../../static/img/runme-tui.gif)
 
-### **Warning**
+<Infobox type="warning" title="Warning!">
 
-Runme would not work if your current working directory does not contain a README file at the top level! You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other markdown file, without changing the environment's working directory.
+Runme would not work if your current working directory does not contain a README file at the top level! You can use the `--chdir` flag to alter the working directory or `--filename` to specify any other Markdown file, without changing the environment's working directory.
 
-Runme parses every shell or bash code block of a markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your markdown successfully:
+</Infobox>
+
+Runme parses every shell or bash code block of a Markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your Markdown successfully:
 
 ```sh {"id":"01HMXWHNSWH5DV8A9P289P8SSE"}
 Runme executes commands inside your runbooks, docs, and READMEs. Parses commands
-directly from markdown files to make them executable.
+directly from Markdown files to make them executable.
 
 Usage:
   runme [flags]
@@ -173,4 +181,4 @@ Runme’s TUI is awesome however, if you want to run a specific command quickly,
 
 ## **Next Steps**
 
-You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdwon files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)
+You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdown files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)

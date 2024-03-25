@@ -8,7 +8,7 @@ Welcome to Runme! This is your starting point for a journey with us. Here, we wi
 
 ## **Overview of Runme**
 Runme is an easy solution for runbooks, playbooks, and documentation that requires users to complete runnable steps one at a time. Thus making operational documentation dependable.
-It enables users to execute interactive runbooks using markdown. It also incorporates a feature that enables users to run code and commands inside your fenced code blocks.
+It enables users to execute interactive runbooks using Markdown. It also incorporates a feature that enables users to run code and commands inside your fenced code blocks.
 
 ## **Installation**
 Runme can be installed using VS Code, Docker, or your CLI. To start installing Runme for your machine, proceed to our installation page.

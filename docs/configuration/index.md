@@ -4,11 +4,16 @@ sidebar_position: 5
 
 # Configuration
 
-Runme offers configurations designed to enable you improve your README experience and workflow on Runme. This configuration includes options that allow you to define how your markdown files should be executed, either using:
+This section provides information on the various configurations found in Runme. These configurations were designed to improve your ReadME experience and workflow on Runme. They allow you to define how you want your Markdown file to be executed.
+
+Some configurations found in Runme include:
 
 * [Cell-level Options](../configuration/cell-level)
 * [Document-level Options](../configuration/document-level)
+* [Lifecycle Identity](../configuration/lifecycle-identity)
+* [Auto-Save Feature](../configuration/auto-save)
+* [Archiving Feature](../configuration/archiving)
+* [Shebang Support](../configuration/shebang)
 
-In addition, you can customize your README process by adding features such as [archiving](../configuration/archiving), [autosave](../configuration/auto-save), etc., according to your preferred settings.
 
-**Important:** Runme supports shebang to run various languages, enabling you to execute a diverse range of languages. Whether you're working with Python, Bash, or any executable language command, shebang executes your commands easily.
+Remember that we are constantly improving Runme to provide more configurations to ensure you have a smooth experience executing your Markdown file in Runme.

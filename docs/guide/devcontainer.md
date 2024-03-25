@@ -12,7 +12,7 @@ In this, we will give you a step-by-step guide on how to integrate Dev Container
 
 At the end of this guide you will learn how to:
 
-- Setup Runme in your code editor, Vscode
+- Setup Runme in your code editor, VS Code
 - Configure Runme in your devcontainer to running development task
 - Automate operations documents.
 
@@ -34,7 +34,7 @@ In your VS Code, navigate to the extension view by clicking on the **Extensions 
 
 ![dev container installation](../../static/img/runme-devcontainer.png)
 
-3. In your Vs code project, create a Dev Container Configuration
+3. In your VS Code project, create a Dev Container Configuration
 
 On the bottom left of your Code editot, click the **Remote container** icon.
 
@@ -79,7 +79,7 @@ Installing Runme in your VS Code is one of the various ways you can utilize the 
 
 Runme works perfectly  to automate processes and conduct development operations within the container . To run your code with Runme in your dev container, follow the steps below:
 
-- Create and open your **READ.me** file in your VScode.
+- Create and open your **READ.me** file in your VS Code.
 - Click on the **+Code** icon and type in your code script.
 - Click on the **Remote Container** icon on the bottom left of your VS Code.
 
@@ -92,7 +92,7 @@ Now a new view opens that prompts you to select and open a remote window.
 - Now choose the version you want and add any other features you want to install.
 - Now click **OK**. Your container configuration gets added, and the container starts.
 
-You will notice that your READ.me file switches over to a normal markdown setting. You will need to take it back to a Runme setting to enable you to run your code with Runme in a dev container. To do this,
+You will notice that your READ.me file switches over to a normal Markdown setting. You will need to take it back to a Runme setting to enable you to run your code with Runme in a dev container. To do this,
 
 - Go to the extensions page and search for Runme.
 - Click on the Runme extension and click on the **Install in Dev container**
