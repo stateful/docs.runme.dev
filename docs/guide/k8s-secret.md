@@ -1,4 +1,4 @@
-# How to Secure and Automate Kubernetes Secrets with Runme and SOPS/Sealed Secrets
+# How to Automate Kubernetes Secrets Encryption with Runme
 
 The default [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) are stored either as plaintext or base64 encoded. These secrets should not be sent to version control systems like git due to the security risk of exposing sensitive data such as API keys, passwords, or tokens.
 
@@ -71,7 +71,10 @@ Refer to the image below for a better understanding of the process:
 
 Encrypt your sensitive information with ease using SOPS and AWS KMS. follow each step effortlessly.
 
-![encrypt-sops](../../static/img/guide-page/encryptsops.png)
+1. Set your environment variable
+2. Click the run button
+
+![encrypt-sops](../../static/img/guide-page/sops-encrypt.png)
 
 Your secrets within `runme-secrets.yaml` will be encrypted and transferred to `runme-secrets-enc.yaml`.
 
@@ -95,13 +98,14 @@ sops -d runme-secrets-enc.yaml | kubectl apply -f -
 
 To input the value of `version` or `platform`, you can use the [env prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts).
 
-![set var](../../static/img/set-var.png)
+![set var](../../static/img/guide-page/set-var-sealedsecret.png)
 
 ### **Encrypt a Secret**
 
 Create a Kubernetes Secret and use **`kubeseal`** to encrypt it
 
-![sealed-encrypt](../../static/img/guide-page/sealedsecret-encrypt.png)
+
+![sealed-encrypt](../../static/img/guide-page/sealedsecret-encrypts.png)
 
 This creates a SealedSecret resource (**`mysealedsecret.yaml`**) containing the encrypted data.
 
