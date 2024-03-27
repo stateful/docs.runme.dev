@@ -14,7 +14,7 @@ In this section, we will explain the various features of the cell-level option a
 
 ***Let’s dive in!***
 
-### Different Types of Commands
+### **Different Types of Commands**
 
 Not all commands are equal, and expectations of how execution works can differ! For example, code blocks can be:
 
@@ -25,7 +25,7 @@ Not all commands are equal, and expectations of how execution works can differ! 
 
 However, Runme makes running such commands easy. It has sophisticated features that ensure commands and code are executed inside your Markdown file. In this section, we will explore how to run commands and code in one click and some features that make running commands at the cell level easier with Runme.
 
-## How to Run a Cell In One Click
+## **How to Run a Cell In One Click**
 
 To run a cell block in your Markdown file:
 
@@ -38,7 +38,7 @@ This action will run your command and return an executed output.
 
 You can configure how your cell should run using the configuration options. In the next section, we will be explaining how to configure your cell using the different cell-level options in Runme.
 
-## Features of the Cell-Level Options
+## **Features of the Cell-Level Options**
 
 The cell-level option is designed with unique sub-features which makes it efficiently and gives users the flexibility to modify each cell to their preference. Some of these features include:
 
@@ -137,7 +137,7 @@ npm run watch
 
 ![background](../../static/img/configuration-page/background-task.png)
 
-### 4. **Cell's current working directory**
+### **Cell's current working directory**
 
 In most cases, you should set the current working directory at the document level; however, you can also set it per cell.
 
