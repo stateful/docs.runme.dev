@@ -15,13 +15,13 @@ The guide below explains how to use [Runme](https://github.com/stateful/blog-ex
 - Kubernetes Cluster: A running Kubernetes cluster is required. For this guide, we will use [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) for our Kubernetes cluster.
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/): The Kubernetes command-line tool should be installed on your machine.
 
-Here is a [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-secret/sops/prerequiste.md) to help you install these prerequisites. For this guide, we are using either Linux or Mac OS.
+Here is a [notebook](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-mac.md) to help you install these prerequisites. For this guide, we are using either Linux or Mac OS.
 
 ## **Securing Secrets with SOPS**
 
 You need enhanced security and access to a cloud provider to encrypt your Kubernetes secrets using SOPS. It also requires a  [Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) (KMS); for this guide, we will use an AWS KMS key. This AWS service offers secure key management, key rotation, access control, auditing, and compatibility with cloud platforms.
 
-Here is an example [notebook](https://github.com/stateful/blog-examples/blob/main/k8s-secret/sops/sops.md) to follow this tutorial.
+Here is an example [notebook](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-mac.md) to follow this tutorial.
 
 ### **Installation of SOPS**
 
