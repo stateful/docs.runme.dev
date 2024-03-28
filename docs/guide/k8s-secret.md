@@ -6,7 +6,7 @@ In cases where a developer or an infrastructure-focused engineer needs to add se
 
 With Runme, Platform Engineers can document how secrets are added to a Kubernetes cluster, ensuring the commands and guides are repeatable, consistent, and executable. Runme also enables engineers to create runbooks as documentation. This allows other team members, including new ones, to add and encrypt secrets correctly without leaking data and causing a significant security breach.
 
-The guide below explains how to use [Runme](https://github.com/stateful/blog-examples/tree/main/k8s-secret) as your central knowledge hub for automating Kubernetes secrets encryption. It will make your documentation the go-to source for all infrastructure operations.
+The guide below explains how to use [Runme](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-mac.md) as your central knowledge hub for automating Kubernetes secrets encryption. It will make your documentation the go-to source for all infrastructure operations.
 
 ## **Prerequisites**
 
@@ -159,6 +159,6 @@ The image below illustrates how easy it is to download the SOPS binary using Run
 
 ![runme using sops](../../static/img/guide-page/runme-sops.png)
 
-To have a full view of these processes, you can clone this [repo](https://github.com/stateful/blog-examples/tree/main/k8s-secret), open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index.md) first.
+To have a full view of these processes, you can clone this [repo](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-mac.md), open it with VS Code on your local machine and click the run cell button to complete your tasks. However, ensure you have installed [Runme](../installation/index.md) first.
 
 Embrace the Runme Notebook experience to secure your secrets and effortlessly enhance your Kubernetes knowledge. Visit [Runme Documentation](https://docs.runme.dev/) to embark on a guided journey to a more secure Kubernetes environment.
