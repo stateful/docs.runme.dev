@@ -237,4 +237,4 @@ We believe, at this point, you have gotten an advanced understanding of how Runm
 
 We have provided an [FAQ page](https://docs.runme.dev/faq), which we constantly update to address common questions you may have about Runme.
 
-If you run into any issues kindly [file a ticket](https://github.com/stateful/runme.dev/issues) or tell us about it [on Discord](https://discord.gg/runme). We are open to hearing your suggestions on how we can improve Runme.
+If you run into any issues kindly [file a ticket](https://github.com/stateful/runme/issues) or tell us about it [on Discord](https://discord.gg/runme). We are open to hearing your suggestions on how we can improve Runme.

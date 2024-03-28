@@ -94,7 +94,7 @@ Additionally, for those who would love to work with the interpreter of their loc
 
 ## Smooth Integration With Other Platforms
 
-Runme integrates easily with other platforms such as [Deno](https://docs.runme.dev/integrations/deno-fresh), [Vercel](https://docs.runme.dev/integrations/vercel-nextjs), and [GitHub Actions](https://docs.runme.dev/integrations/embed-github-action).
+Runme integrates easily with other platforms such as [GitHub Actions](https://docs.runme.dev/integrations/embed-github-action).
 
 For example, Runme offers a convenient GitHub action that seamlessly integrates with your CI/CD pipeline. You can trigger workflows for GitHub actions in your notebook by pasting GitHub URLs.
 
