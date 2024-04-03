@@ -39,7 +39,7 @@ Learn more about Runme and what problems it solves for you.
 
 Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
 
-## **Reliable DevOps Workflows Built With Markdown** 🤝
+## **DevOps Workflows Built With Markdown** 🤝
 
 Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors, on the other hand, can define reliable paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
 
