@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require("prism-react-renderer").themes.github;
 const darkCodeTheme = require("prism-react-renderer").themes.dracula;
+const fs = require('fs').promises;
 
 const siteName = "Runme.dev";
 const twitterHandle = "@statefulhq";
@@ -54,6 +55,46 @@ const config = {
           return postcssOptions;
         },
       };
+    },
+    async function examplesInDocs(context, options) {
+      return {
+        name: 'examples-in-docs',
+        async contentLoaded({ content, actions }) {
+          const { createData, addRoute } = actions;
+          const examples = await fs.readFile('./examples/examples.json', 'utf8');
+          const examplesJsonPath = await createData(
+            'examples.json',
+            examples,
+          );
+
+          addRoute({
+            path: '/examples',
+            component: '@site/src/components/ExamplesPage',
+            modules: {
+              // propName -> JSON file path
+              examples: examplesJsonPath,
+            },
+            exact: true,
+          });
+
+          const examplesJson = JSON.parse(examples);
+          examplesJson.forEach(async (example) => {
+            const exampleJsonPath = await createData(
+              `example-${example.slug}.json`,
+              JSON.stringify(example),
+            );
+            addRoute({
+              path: `/examples/${example.slug}`,
+              component: '@site/src/components/ExamplesPage',
+              modules: {
+                // propName -> JSON file path
+                example: exampleJsonPath,
+              },
+              exact: true,
+            });
+          });
+        },
+      };;
     },
     [
       "@docusaurus/plugin-pwa",
@@ -182,15 +223,15 @@ const config = {
        * credentials available in 1password
        */
       ...(process.env.ALGOLIA_API_KEY &&
-      process.env.ALGOLIA_INDEX_NAME &&
-      process.env.ALGOLIA_APP_ID
+        process.env.ALGOLIA_INDEX_NAME &&
+        process.env.ALGOLIA_APP_ID
         ? {
-            algolia: {
-              apiKey: process.env.ALGOLIA_API_KEY,
-              indexName: process.env.ALGOLIA_INDEX_NAME,
-              appId: process.env.ALGOLIA_APP_ID,
-            },
-          }
+          algolia: {
+            apiKey: process.env.ALGOLIA_API_KEY,
+            indexName: process.env.ALGOLIA_INDEX_NAME,
+            appId: process.env.ALGOLIA_APP_ID,
+          },
+        }
         : {}),
     }),
 };
