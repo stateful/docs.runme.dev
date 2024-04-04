@@ -2,8 +2,6 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
 
-import Meta from "@site/src/components/Meta";
-
 import clsx from "clsx";
 
 import {
@@ -26,37 +24,37 @@ export default function (props) {
   );
 }
 
-function ExampleLayout({ children }) {
-  return (
-    <Layout>
-      <Meta />
-      <div className="max-w-screen-lg min-h-screen px-4 py-20 mx-auto content lg:px-0">
-        <div>
-          {children}
-        </div>
-      </div>
-    </Layout>
-  )
-}
+// function Layout({ children }) {
+//   return (
+//     <Layout>
+//       <Meta />
+//       <div className="max-w-screen-lg min-h-screen px-4 py-20 mx-auto content lg:px-0">
+//         <div>
+//           {children}
+//         </div>
+//       </div>
+//     </Layout>
+//   )
+// }
 
 function ExamplesPage({ examples, example }) {
   if (example) {
     return (
-      <ExampleLayout>
+      <Layout>
         <ExampleContent entry={example} />
         <a href="/examples">
           <div className="flex flex-row items-center justify-center pt-20 space-x-2 text-3xl">
             <div>More examples</div> <FontAwesomeIcon icon={faArrowRight} size="xs" />
           </div>
         </a>
-      </ExampleLayout>
+      </Layout>
     );
   }
 
   return (
-    <ExampleLayout>
+    <Layout>
       <Examples examples={examples} />
-    </ExampleLayout>
+    </Layout>
   )
 }
 
