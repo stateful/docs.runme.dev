@@ -1,3 +1,4 @@
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import React, { useEffect, useState } from "react";
 import Layout from "@theme/Layout";
 
@@ -15,6 +16,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+export default function (props) {
+  return (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+      {() => {
+        return <ExamplesPage {...props} />;
+      }}
+    </BrowserOnly>
+  );
+}
+
 function ExampleLayout({ children }) {
   return (
     <Layout>
@@ -28,7 +39,7 @@ function ExampleLayout({ children }) {
   )
 }
 
-export default function ExamplesPage({ examples, example }) {
+function ExamplesPage({ examples, example }) {
   if (example) {
     return (
       <ExampleLayout>
