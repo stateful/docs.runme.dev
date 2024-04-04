@@ -56,11 +56,17 @@ Most changes are reflected live without having to restart the server.
 
 To build the website locally, or to test/preview the build process that will run in CI.
 
-```sh {"id":"01HPS5TSQ025AQBEY5C5R7BQK4","name":"npm-run-build"}
+```sh {"id":"01HPS5TSQ025AQBEY5C5R7BQK4","name":"build"}
 npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Serve locally
+
+```sh {"id":"01HTMQZMYX58ZX7PK297YNYZ36","name":"serve"}
+cd build; python -m http.server 9000
+```
 
 ### Deployment
 
