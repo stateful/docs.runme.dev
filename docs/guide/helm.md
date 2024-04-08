@@ -16,9 +16,9 @@ This guide demonstrates how to integrate Helm with Runme. This integration simpl
 
 Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md) for this guide.
 
-## **Helm Chart Repository**
+## **Creating A Helm Chart Within Your Runme Environment**
 
-This collection comprises packaged Helm charts for easy discovery, distribution, and installation. In the `Helm Repo` section of this notebook, we guide you on how to add a repo to your local Helm configuration. We also show you how to list the charts in your repo and search through them to select the specific chart you need.
+You can create your [helm chart](https://helm.sh/docs/intro/using_helm/#creating-your-own-charts) to suit your specific use case but for this guide, We will be using a helm chart from the `helm repo` , The repository is a collection that comprises of packaged Helm charts for easy discovery, distribution, and installation. In the `Helm Repo` section of this notebook, we guide you on how to add a repo to your local Helm configuration. We also show you how to list the charts in your repo and search through them to select the specific chart you need.
 
 For this guide, The repo adds a Kubernetes Ingress controller called `ingress-nginx` it helps manage external access to services within the Kubernetes cluster.
 
@@ -29,7 +29,7 @@ With the Rume, you can run the [entire markdown file](https://docs.runme.dev/con
   <source src="/videos/runme-section.webm" type="video/webm" />
 </video>
 
-## **Helm Install : Installing packages**
+## **Installing Helm Packages with Runme**
 
 The `helm install` command installs a Helm chart into your Kubernetes cluster. When you run `helm install`, you specify the release name, the chart name (either local or from a repository), and any necessary configuration values or overrides. Helm fetches the specified chart from the repository (if not already locally available) and installs it into your cluster, creating a new release.
 
@@ -37,13 +37,15 @@ The `helm install` section of this guide installs the  Kubernetes Ingress contro
 
 ![helm status](../../static/img/guide-page/runme-helm-status.png)
 
+Successfully installed with your Runme terminal:tada:
+
 To uninstall Ingress Controller :
 
 ```sh
 helm uninstall ingress-nginx
 ```
 
-## **Helm Upgrade**
+## **Upgrading Helm Packages With Runme**
 
 `helm upgrade` is a Helm command used to upgrade a release to a new version of a chart or to apply changes to an existing release. It allows you to modify the configuration, resources, or versions associated with a Helm release in your Kubernetes cluster.
 
@@ -61,9 +63,9 @@ To check the status of your deployment
 helm status ingress-nginx
 ```
 
-## **Helm Rollback**
+## **Implementing Helm Rollback**
 
-`helm rollback` is a Helm command used to roll back a release to a previous version. It allows you to revert to a specific historical version of a Helm release in your Kubernetes cluster. Here’s how `helm rollback`
+In your Runme notebook, you can revert to a specific historical version of a Helm release within your Kubernetes cluster. Using the `helm rollback` command, Along side the name of the release and the revision number you want to deploy. 
 
 ![helm rollback](../../static/img/guide-page/runme-helm-rollback.png)
 
@@ -71,7 +73,7 @@ helm status ingress-nginx
 helm status ingress-nginx
 ```
 
-## **Helm Get**
+## **Retrieve Information with Runme**
 
 The `helm get` command in Helm is used to retrieve information about a specific release or resource within a release. It provides various subcommands to fetch different types of information related to Helm releases.
 
@@ -79,7 +81,7 @@ The `helm get` command in Helm is used to retrieve information about a specifi
 helm get manifest ingress-nginx
 ```
 
-## **Helm Plugin**
+## **Add Helm Plugin**
 
 Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. Plugins allow users to extend Helm’s capabilities by adding new commands or features without modifying the core Helm codebase.
 
