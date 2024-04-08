@@ -1,4 +1,4 @@
-# Runme Integration with Helm
+# Running Helm with Runme
 
 Helm is a package manager for Kubernetes, an open-source orchestration platform. It assists users in defining, installing, and managing applications and their dependencies on a Kubernetes cluster. Conversely, Runme is an IDE that converts Markdown files into executable notebooks. Both platforms aim to simplify users' deployment processes.
 
@@ -8,12 +8,13 @@ This guide demonstrates how to integrate Helm with Runme. This integration simpl
 
 ## **Prerequisite**
 
-- Have a running Kubernetes Cluster ( for this guide, I will be using kind)
-- Have Docker running
-- Install and configure Helm.
-- Notebook
+- Install [Brew](https://brew.sh/)
+- Have a running Kubernetes Cluster ( for this guide, I will be using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) )
+- Install [Docker](https://docs.docker.com/get-docker/)
+- Install and configure [Helm](https://helm.sh/docs/intro/install/).
+- [Notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md)
 
-Follow the instructions and commands in the above notebook for this guide.
+Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md) for this guide.
 
 ## **Helm Chart Repository**
 
@@ -21,7 +22,7 @@ This collection comprises packaged Helm charts for easy discovery, distribution,
 
 For this guide, The repo adds a Kubernetes Ingress controller called `ingress-nginx` it helps manage external access to services within the Kubernetes cluster.
 
-with the Rume, you can run the [entire markdown file](https://docs.runme.dev/configuration/document-level#run-all-button), a single code cell, or Just a section of your markdown
+With the Rume, you can run the [entire markdown file](https://docs.runme.dev/configuration/document-level#run-all-button), a single code cell, or Just a section of your markdown
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-section.mp4" type="video/mp4" />
@@ -32,7 +33,7 @@ with the Rume, you can run the [entire markdown file](https://docs.runme.dev/con
 
 The `helm install` command installs a Helm chart into your Kubernetes cluster. When you run `helm install`, you specify the release name, the chart name (either local or from a repository), and any necessary configuration values or overrides. Helm fetches the specified chart from the repository (if not already locally available) and installs it into your cluster, creating a new release.
 
-the `helm install` section of this guide installs the  Kubernetes Ingress controller & checks the status of the deployment to make sure everything is installed appropriately.
+The `helm install` section of this guide installs the  Kubernetes Ingress controller & checks the status of the deployment to make sure everything is installed appropriately.
 
 ![helm status](../../static/img/guide-page/runme-helm-status.png)
 
@@ -46,7 +47,7 @@ helm uninstall ingress-nginx
 
 `helm upgrade` is a Helm command used to upgrade a release to a new version of a chart or to apply changes to an existing release. It allows you to modify the configuration, resources, or versions associated with a Helm release in your Kubernetes cluster.
 
-IIn this guide, I expanded the replica set of my Ingress controller to 3 and customized my `values.yaml`.
+In this guide, I expanded the replica set of my Ingress controller to 3 and customized my `values.yaml`.
 
 With Runme, you can modify the [working directory](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
 
