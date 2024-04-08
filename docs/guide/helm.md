@@ -78,7 +78,7 @@ The `helm get` command in Helm is used to retrieve information about a specifi
 helm get manifest ingress-nginx
 ```
 
-### **Helm Plugin**
+## **Helm Plugin**
 
 Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. Plugins allow users to extend Helm’s capabilities by adding new commands or features without modifying the core Helm codebase.
 
