@@ -1,6 +1,5 @@
 # Runme Integration with Helm
 
-
 Helm is a package manager for Kubernetes, an open-source orchestration platform. It assists users in defining, installing, and managing applications and their dependencies on a Kubernetes cluster. Conversely, Runme is an IDE that converts Markdown files into executable notebooks. Both platforms aim to simplify users' deployment processes.
 
 Runme is designed to enhance communication between teams and facilitate knowledge sharing. It has the technical capability to execute your code or deploy your application, and it is accompanied by clear documentation that everyone can comprehend.
@@ -61,7 +60,7 @@ To check the status of your deployment
 helm status ingress-nginx
 ```
 
-**Helm Rollback**
+## **Helm Rollback**
 
 `helm rollback` is a Helm command used to roll back a release to a previous version. It allows you to revert to a specific historical version of a Helm release in your Kubernetes cluster. Here’s how `helm rollback`
 
@@ -71,7 +70,7 @@ helm status ingress-nginx
 helm status ingress-nginx
 ```
 
-## Helm Get
+## **Helm Get**
 
 The `helm get` command in Helm is used to retrieve information about a specific release or resource within a release. It provides various subcommands to fetch different types of information related to Helm releases.
 
