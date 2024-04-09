@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Run Cells By Section
+title: Section-level option
 ---
 
 
