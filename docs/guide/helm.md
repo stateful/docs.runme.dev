@@ -1,5 +1,7 @@
 # Running Helm with Runme
 
+If you find yourself performing a task repeatedly, it's best to automate it - this is a core principle of DevOps. This mindset has led to numerous initiatives focused on automation. For instance, we package and containerize our applications and write documentation as a guide to understand what needs to be done. With Runme, your documentation can be transformed into an interactive notebook where users can apply and perform the actions outlined in your documentation. 
+
 Helm is a package manager for Kubernetes, an open-source orchestration platform. It assists users in defining, installing, and managing applications and their dependencies on a Kubernetes cluster. Conversely, Runme is an IDE that converts Markdown files into executable notebooks. Both platforms aim to simplify users' deployment processes.
 
 Runme is designed to enhance communication between teams and facilitate knowledge sharing. It has the technical capability to execute your code or deploy your application, and it is accompanied by clear documentation that everyone can comprehend.
@@ -8,11 +10,13 @@ This guide demonstrates how to integrate Helm with Runme. This integration simpl
 
 ## **Prerequisite**
 
-- Install [Brew](https://brew.sh/)
-- Have a running Kubernetes Cluster ( for this guide, I will be using [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) )
-- Install [Docker](https://docs.docker.com/get-docker/)
-- Install and configure [Helm](https://helm.sh/docs/intro/install/).
-- [Notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md)
+To follow up on this tutorial, ensure you have the following:
+
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Clone Repo**: We've provided an example repository to help you follow this tutorial. You can clone the [repo here](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md).
+- **Require Packages**: Install the required packages ([Brew](https://brew.sh/), [kind](https://kind.sigs.k8s.io/docs/user/quick-start/),[Docker](https://docs.docker.com/get-docker/),kubectl and [Helm](https://helm.sh/docs/intro/install/) ) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md#prerequiste) in the repo.*
+
+Create a cell in your Rume notebook and run the command below to install the necessary packages.
 
 Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md) for this guide.
 
@@ -22,7 +26,7 @@ You can create your [helm chart](https://helm.sh/docs/intro/using_helm/#creating
 
 For this guide, The repo adds a Kubernetes Ingress controller called `ingress-nginx` it helps manage external access to services within the Kubernetes cluster.
 
-With the Rume, you can run the [entire markdown file](https://docs.runme.dev/configuration/document-level#run-all-button), a single code cell, or Just a section of your markdown
+Runme is dynamically set. You can run the entire markdown file using the [Run all](https://docs.runme.dev/configuration/document-level#run-all-button) feature. If you want to run just a particular section, you can also do that, or run just a single cell.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-section.mp4" type="video/mp4" />
@@ -65,7 +69,7 @@ helm status ingress-nginx
 
 ## **Implementing Helm Rollback**
 
-In your Runme notebook, you can revert to a specific historical version of a Helm release within your Kubernetes cluster. Using the `helm rollback` command, Along side the name of the release and the revision number you want to deploy. 
+In your Runme notebook, you can revert to a specific historical version of a Helm release within your Kubernetes cluster. Using the `helm rollback` command, Along side the name of the release and the revision number you want to deploy.
 
 ![helm rollback](../../static/img/guide-page/runme-helm-rollback.png)
 
