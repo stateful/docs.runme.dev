@@ -14,15 +14,13 @@ To follow up on this tutorial, ensure you have the following:
 - **Clone Repo**: We have provided an example repository to help you follow this tutorial. You can clone the [repo here](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md).
 - **Require Packages**: Install the required packages ([kind](https://kind.sigs.k8s.io/docs/user/quick-start/),[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/), [Helm](https://helm.sh/docs/intro/install/), etc. ) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md#prerequiste) in the repo.*
 
-Create a cell in your Rume notebook and run the command below to install the necessary packages.
-
-Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md) for this guide.
-
 Create a cell in your Rume notebook and run the command below to install the required packages. See example below:
 
 ![helm pre requiste section](../../static/img/guide-page/helm-prerequiste.png)
 
-Using the Runme [cell section](../configuration/cellsection) feature you can run the entire subheading at a go
+Using the Runme [cell section](../configuration/cellsection) feature you can run the entire subheading at a go.
+
+Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md) for this guide.
 
 ## **Creating A Helm Chart Within Your Runme Environment**
 
@@ -47,16 +45,10 @@ The `helm install` section of this guide installs the  Kubernetes Ingress contro
 
 Successfully installed with your Runme terminal:tada:
 
-To uninstall Ingress Controller :
-
-```sh
-helm uninstall ingress-nginx
-```
-
 ## **Upgrading Helm Packages With Runme**
 
 The `helm upgrade` command upgrades a release to a new version of a chart or applies changes to an existing release.
-Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. Plugins allow users to extend Helm’s capabilities by adding new commands or features without modifying the core Helm codebase.
+Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI.
 
 With Runme, you can modify the [working directory](../configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
 
@@ -72,7 +64,7 @@ helm status ingress-nginx
 
 ## **Implementing Helm Rollback**
 
-In your Runme notebook, you can revert to a specific historical version of a Helm release within your Kubernetes cluster. Using the `helm rollback` command, Along side the name of the release and the revision number you want to deploy.
+In your Runme notebook, you can revert to a specific historical version of a Helm release within your Kubernetes cluster. Using the `helm rollback` command, along side the name of the release and the revision number you want to deploy.
 
 ![helm rollback](../../static/img/guide-page/runme-helm-rollback.png)
 
@@ -84,13 +76,11 @@ helm status ingress-nginx
 
 The `helm get` command in Helm is used to retrieve information about a specific release or resource within a release. It provides various subcommands to fetch different types of information related to Helm releases.
 
-```sh
-helm get manifest ingress-nginx
-```
+![helm get manifest](../../static/img/guide-page/helmget.png)
 
 ## **Add Helm Plugin**
 
-Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. For this guide, we installed the `sops` plugin to use it encrypt our kubernetes secret
+Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. For this guide, we installed the `sops` plugin to use it encrypt our kubernetes secret.
 
 ![runme-plugins](../../static/img/guide-page/runme-helm-plugins.png)
 
