@@ -1,4 +1,4 @@
-# How To Integrate Helm with Runme
+# How To Integrate Helm With Runme
 
 If you are performing a task repeatedly, it is best to automate it; this is a core principle of DevOps.
 
@@ -55,11 +55,10 @@ helm uninstall ingress-nginx
 
 ## **Upgrading Helm Packages With Runme**
 
-The `helm upgrade` is used to upgrade a release to a new version of a chart or to apply changes to an existing release. It allows you to modify the configuration, resources, or versions associated with a Helm release in your Kubernetes cluster.
+The `helm upgrade` command upgrades a release to a new version of a chart or applies changes to an existing release.
+Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. Plugins allow users to extend Helm’s capabilities by adding new commands or features without modifying the core Helm codebase.
 
-In this guide, I expanded the replica set of my Ingress controller to 3 and customized my `values.yaml`.
-
-With Runme, you can modify the [working directory](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
+With Runme, you can modify the [working directory](..//configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
 
 ```sh
 helm upgrade ingress-nginx ingress-nginx/ingress-nginx --values values.yaml
@@ -91,9 +90,7 @@ helm get manifest ingress-nginx
 
 ## **Add Helm Plugin**
 
-Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. Plugins allow users to extend Helm’s capabilities by adding new commands or features without modifying the core Helm codebase.
-
-For this guide, we installed the sops plugin to use it encrypt our kubernetes secret
+Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. For this guide, we installed the `sops` plugin to use it encrypt our kubernetes secret
 
 ![runme-plugins](../../static/img/guide-page/runme-helm-plugins.png)
 
@@ -101,4 +98,4 @@ For this guide, we installed the sops plugin to use it encrypt our kubernetes se
 helm secrets encrypt secrets.yaml > sops-secrets.yaml
 ```
 
-Using Runme can give your documentation a fresh look. It provides a platform to share knowledge, test, and execute documented tasks, leading to easier knowledge sharing among teams. Additionally, integrating Runme with Helm enhances the management of your Kubernetes applications.
+In addition to creating a runbook to improve your documentation and automate repetitive tasks, Runme offers you an interactive environment to carry out these operations. Runme is power-packed with configuration tools to improve your process. Explore the [Runme configuration](../configuration) guide for configuration options.

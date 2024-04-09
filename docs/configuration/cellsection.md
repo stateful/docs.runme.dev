@@ -1,4 +1,9 @@
-# Run Cells By Section
+---
+sidebar_position: 3
+title: Run Cells By Section
+---
+
+
 
 Runme cells can be grouped into headings and subheadings depending on the structure of your documentation. In your Markdown file, a section is both a heading or a subheading within the file.
 
@@ -40,7 +45,7 @@ To run a section from the outline:
    Click on OUTLINE.
 - The sections will be displayed in the image below.
 
-![outline](../../static/img/guide-page/vscode-outline.png)
+![VS Code outline](../../static/img/guide-page/runme-vscode-outline.png)
 
 Hover your mouse on the section you want to run, click the three dots beside it, and click run cells to run all the cells in that section.
 
