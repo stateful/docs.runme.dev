@@ -55,7 +55,7 @@ helm uninstall ingress-nginx
 
 ## **Upgrading Helm Packages With Runme**
 
-`helm upgrade` is a Helm command used to upgrade a release to a new version of a chart or to apply changes to an existing release. It allows you to modify the configuration, resources, or versions associated with a Helm release in your Kubernetes cluster.
+The `helm upgrade` is used to upgrade a release to a new version of a chart or to apply changes to an existing release. It allows you to modify the configuration, resources, or versions associated with a Helm release in your Kubernetes cluster.
 
 In this guide, I expanded the replica set of my Ingress controller to 3 and customized my `values.yaml`.
 
