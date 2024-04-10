@@ -80,7 +80,7 @@ Learn more about Runme's [Kernel Architecture](https://docs.runme.dev/architectu
 
 ## **Known Limitations**
 
-- Runme currently only has rudimentary support for PowerShell. While PowerShell is not limited to Windows, it is its primary platform. We recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/).
+- Runme currently only has rudimentary support for PowerShell. While PowerShell is not limited to Windows, it is its primary platform. We recommend using [WSL](https://code.visualstudio.com/docs/remote/wsl).
 - Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter, big or small, to help us make Runme better.
 
 ### **Communication & Support**
