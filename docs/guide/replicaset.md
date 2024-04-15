@@ -9,7 +9,7 @@ This guide will show you a step-by-step guide to configure and deploy your Kuber
 
 To follow up on this tutorial, ensure you have the following:
 
-- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and make it your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer). Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation](../installation/index) guide.
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and make it your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer). Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation](../installation/index.md) guide.
 - **Clone Repo**: We have provided an example repo to help you follow this tutorial. Clone the [repo here](https://github.com/stateful/blog-examples/tree/main/kubernetes/replicaset).
 - **Require Packages**: Install the required packages (brew, kind, and kubectl) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/replicaset-mac.md#prerequisites) in the repo*.
 
