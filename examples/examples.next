@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Github Actions workflows UX (from a URL)",
+    "description": "This is a description of the thing this does and why it's cool",
+    "img": "https://media.graphassets.com/mbfC7eMfSHaKGeXvvWh2",
+    "slug": "gh-action-workflow-ux",
+    "tags": ["notebook", "github", "workflows", "ux", "action"]
+  },
+  {
+    "title": "Terminals embeded in your notebook cells",
+    "description": "This is a description of the thing this does and why it's cool",
+    "img": "https://media.graphassets.com/mbfC7eMfSHaKGeXvvWh2",
+    "slug": "terminals-embeded-notebook-cells",
+    "tags": ["notebook", "terminal"]
+  },
+  {
+    "title": "Click to send a SMS (Twilio) from a notebook",
+    "description": "This is a description of the thing this does and why it's cool",
+    "img": "https://media.graphassets.com/mbfC7eMfSHaKGeXvvWh2",
+    "slug": "sent-sms-twilio-notebook",
+    "tags": ["notebook", "sms", "twilio"]
+  }
+]
