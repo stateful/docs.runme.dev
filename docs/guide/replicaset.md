@@ -45,7 +45,7 @@ The `--replicas=` command helps you set the number of replica pods you want
 
 When the command is executed, Runme displays a confirmation message indicating that the ReplicaSet has been scaled.
 
-4. Get Logs From a Specific Pod in a ReplicaSet
+**Get Logs From a Specific Pod in a ReplicaSet**
 
 To follow the logs of a specific pod in real time, run the command below
 
