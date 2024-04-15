@@ -4,6 +4,8 @@ If you are performing a task repeatedly, it is best to automate it; this is a co
 
 With Runme, you can automate your task by creating an interactive notebook where you can run your commands, perform deployment and carry out the instructions outlined in your documentation.
 
+While Helm is a package manager for Kubernetes, an open-source orchestration platform. It assists users in defining, installing, and managing applications and their dependencies on a Kubernetes cluster.
+
 This guide demonstrates how to integrate Helm with Runme to automate processes and reduce repetitive tasks.
 
 ## **Prerequisite**

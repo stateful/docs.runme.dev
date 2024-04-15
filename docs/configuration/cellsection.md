@@ -18,7 +18,7 @@ To do this, you first need to enable “Sticky scroll” in your notebook. Follo
 ![VS Code](../../static/img/guide-page/runme-vscode-setting.png)
 
 - In the search bar, enter ‘notebook sticky.’ This will direct you to the sticky scroll configuration page in the notebook.
-- Now enable Stick Scroll by clicking on the “Enabled” checkbox.
+- Now enable Sticky Scroll by clicking on the “Enabled” checkbox.
 
 ![sticky roll](../../static/img/guide-page/stickyroll.png)
 
