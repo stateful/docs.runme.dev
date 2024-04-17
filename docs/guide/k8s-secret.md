@@ -58,9 +58,7 @@ kubectl delete -f mysealedsecret.yaml
 
 To deploy your secret, execute the code below:
 
-```sh
-kubectl apply -f mysealedsecret.yaml
-```
+![deploy sealed](../../static/img/guide-page/sealed-apply.png)
 
 The Sealed Secrets controller will decrypt the SealedSecret and create a Kubernetes Secret with the decrypted data.
 
