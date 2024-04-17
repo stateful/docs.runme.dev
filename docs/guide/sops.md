@@ -29,8 +29,8 @@ Navigate to the [SOPS file](https://github.com/stateful/blog-examples/tree/main/
 Run the command within your Runme cell to install `kind`, `kubectl`, `sops`, and `awscli`
 
 <video autoPlay loop muted playsInline controls>
-  <source src="/videos/runme-envprompt-k8s.mp4" type="video/mp4" />
-  <source src="/videos/runme-envprompt-k8s.webm" type="video/webm" />
+  <source src="/videos/runme-sops.mp4" type="video/mp4" />
+  <source src="/videos/runme-sops.webm" type="video/webm" />
 </video>
 
 Finally, configure the installed AWS CLI in your Runme Terminal.

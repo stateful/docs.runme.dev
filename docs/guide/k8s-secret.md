@@ -17,15 +17,18 @@ To get started, ensure you have the following:
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files.](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/linux-sealedsecrets.md)
 
-
 ### Install all Dependencies
 
 To follow up on securing your secrets using sealed secrets, ensure you install the necessary dependencies in the notebook's prerequisite section. In your Runme cell, run the commands below to install all dependencies required for this guide.
 
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/sealed-secrets-runme.mp4" type="video/mp4" />
+  <source src="/videos/sealed-secrets-runme.webm" type="video/webm" />
+</video>
+
 ### **Encrypt a Secret in Runme**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#encrypt-a-secret)
 
 To encrypt a secret, you must create a Kubernetes secret using `kubeseal`. Navigate to your cloned repo's ‘Encrypt a Secret’ section and [choose your preferred encryption method from the options provided.](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/Mac-sealedsecret.md#encrypt-a-secret)  Once that is done, run the command below in your Runme cell.
-
 
 Runme will automatically create a sealed secret resource containing the encrypted data, the **`mysealedsecret.yaml`**
 
@@ -33,14 +36,15 @@ Runme will automatically create a sealed secret resource containing the encrypte
 
 You can add a new value to your secret by navigating to [this section](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/Mac-sealedsecret.md#adding-a-new-value-to-a-sealed-secret) and executing the commands. You only need to update your manifest file with the new values, re-encrypt the secrets, and then reapply them to the cluster. All of these can be executed in your Runme cell. The image below shows a visual representation of this process.
 
-
-
-
 From the output gotten, you can see that your new value has successfully been added.
+
+![add value](../../static/img/guide-page/add-secrets.png)
 
 ### Decrypt a Secret[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#decrypt-a-secret)
 
 To retrieve the original version of `runme-secrets.yaml`, you can decrypt the encrypted secret, `mysealedsecret.yaml`. Run the command in the ‘Decrypt a Secret’ section of the repo and run it in your Runme cell.
+
+![decrypt](../../static/img/guide-page/decrypt-secret.png)
 
 ### Delete a Secret
 
@@ -50,12 +54,11 @@ To delete the secret, use the `kubectl` command to delete the resource and run
 kubectl delete -f mysealedsecret.yaml
 ```
 
-
 ### **Deploy the Sealed Secret**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#deploy-the-sealed-secret)
 
 To deploy your secret, execute the code below:
 
-```
+```sh
 kubectl apply -f mysealedsecret.yaml
 ```
 
@@ -75,7 +78,3 @@ Some [key features](https://docs.runme.dev/getting-started/features) of Runme th
 - Run code in your preferred language.
 
 These are just a few of the things you can achieve in Runme. To explore Runme more, visit the [Runme Documentation](https://docs.runme.dev/), where you can embark on a guided journey to a more secure Kubernetes environment.
-
-
-
-\
