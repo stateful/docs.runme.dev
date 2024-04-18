@@ -2,24 +2,24 @@
 
 Runme provides a platform for documenting processes and instructions. It integrates swiftly with cloud infrastructures, including Kubernetes and its resources.
 
-This guide will explore one such resource, Kubernetes secrets, with a specific focus on sealed secrets.
+This guide will explore one such resource, Kubernetes secrets, with a specific focus on Sealed Secrets.
 
 [Sealed Secrets](https://archive.eksworkshop.com/beginner/200_secrets/installing-sealed-secrets/) is an open-source project that helps encrypt Kubernetes secrets, which can then be securely stored in your version control. Runme makes securing these secrets easier.
 
-In this guide, we will demonstrate the steps required to encrypt Kubernetes secrets with sealed secrets in Runme successfully.
+In this guide, we will demonstrate the steps required to encrypt Kubernetes secrets with Sealed Secrets in Runme successfully.
 
 ## **Prerequisites**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#prerequisites)
 
 To get started, ensure you have the following:
 
-- **Clone the repo**: We created a [notebook repo](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret/sealed-secret) containing all the instructions and commands required for this guide.
-- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default markdown Viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Clone the repository**: We created a [notebook repository](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret/sealed-secret) containing all the instructions and commands required for this guide.
+- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files.](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/linux-sealedsecrets.md)
 
 ### Install all Dependencies
 
-To follow up on securing your secrets using sealed secrets, ensure you install the necessary dependencies in the notebook's prerequisite section. In your Runme cell, run the commands below to install all dependencies required for this guide.
+To follow up on securing your secrets using Sealed Secrets, ensure you install the necessary dependencies in the notebook's prerequisite section. In your Runme cell, run the commands below to install all dependencies required for this guide.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/sealed-secrets-runme.mp4" type="video/mp4" />
@@ -30,7 +30,7 @@ To follow up on securing your secrets using sealed secrets, ensure you install t
 
 To encrypt a secret, you must create a Kubernetes secret using `kubeseal`. Navigate to your cloned repo's ‘Encrypt a Secret’ section and [choose your preferred encryption method from the options provided.](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/Mac-sealedsecret.md#encrypt-a-secret)  Once that is done, run the command below in your Runme cell.
 
-Runme will automatically create a sealed secret resource containing the encrypted data, the **`mysealedsecret.yaml`**
+Runme will automatically create a Sealed Secret resource containing the encrypted data, the **`mysealedsecret.yaml`**
 
 ### Adding New Value to A Secret
 
@@ -60,9 +60,9 @@ To deploy your secret, execute the code below:
 
 ![deploy sealed](../../static/img/guide-page/sealed-apply.png)
 
-The Sealed Secrets controller will decrypt the SealedSecret and create a Kubernetes Secret with the decrypted data.
+The Sealed Secrets controller will decrypt the Sealed Secret and create a Kubernetes Secret with the decrypted data.
 
-Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret.yaml`** with your secret and sealed secret filenames. Adjust controller-specific details such as the namespace and name according to your environment.
+Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsecret.yaml`** with your secret and Sealed Secret filenames. Adjust controller-specific details such as the namespace and name according to your environment.
 
 ## How Runme Improves Your Documentation Experience
 

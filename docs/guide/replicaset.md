@@ -1,17 +1,17 @@
 # How to Optimize Kubernetes Replicaset Using Runme
 
 Runme provides a platform that allows you to create standardized procedures for configuring, deploying, and managing your everyday operational tools and resources.
-Working with essential kubernetes controller like [ReplicaSets](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) ensures that you have high availability of your pod and improve the scalability of your applications . With Runme, you can optimize these process right within your Markdown file!
+Working with essential Kubernetes controller like [ReplicaSets](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) ensures that you have high availability of your pod and improve the scalability of your applications. With Runme, you can optimize these process right within your Markdown file!
 
-This guide will show you a step-by-step guide to configure and deploy your Kubernetes ReplicaSets within your Runme Notebook.
+This guide will show you a step-by-step process to configure and deploy your Kubernetes ReplicaSets within your Runme Notebook.
 
 ## Prerequisites
 
 To follow up on this tutorial, ensure you have the following:
 
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and make it your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer). Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation](../installation/index.md) guide.
-- **Clone Repo**: We have provided an example repo to help you follow this tutorial. Clone the [repo here](https://github.com/stateful/blog-examples/tree/main/kubernetes/replicaset).
-- **Require Packages**: Install the required packages (brew, kind, and kubectl) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/replicaset-mac.md#prerequisites) in the repo*.
+- **Clone Repository**: We have provided an example repository to help you follow this tutorial. Clone the [Repository here](https://github.com/stateful/blog-examples/tree/main/kubernetes/replicaset).
+- **Require Packages**: Install the required packages (brew, kind, and kubectl) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/replicaset-mac.md#prerequisites) in the repository*.
 
 To get started, we have already [created a ReplicaSet](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/manifest.yaml) using a YAML configuration file. Here, we will demonstrate how you can manage the deployment of the Replicaset with Kubernetes. Before we deploy the ReplicaSet to Kubernetes, let us apply the functionalities to this file within your Runme cell.
 
@@ -19,7 +19,7 @@ To get started, we have already [created a ReplicaSet](https://github.com/statef
 
 **Apply ReplicaSet Configurations in Runme**
 
-In your cell, run the command below. This command instructs Kubernetes to create and update the resources specified in the YAML file. :
+In your cell, run the command below. This command instructs Kubernetes to create and update the resources specified in the YAML file:
 
 ![apply-manifest](../../static/img/guide-page/runme-apply-manifest.png)
 
@@ -41,7 +41,7 @@ If you want to modify the desired number of replicas for the specified ReplicaSe
 
 ![number-replica](../../static/img/guide-page/runme-get-scale.png)
 
-The `--replicas=` command helps you set the number of replica pods you want 
+The `--replicas=` command helps you set the number of replica pods you want
 
 When the command is executed, Runme displays a confirmation message indicating that the ReplicaSet has been scaled.
 
@@ -51,7 +51,7 @@ To follow the logs of a specific pod in real time, run the command below
 
 ![replica-log](../../static/img/guide-page/runme-replica-logs.png)
 
-When this command is executed, Runme returns logs about the specific Pod. This information can be used to debug or troubleshoot a pod. As provided in the image above
+When this command is executed, Runme returns logs about the specific pod. This information can be used to debug or troubleshoot a pod. As provided in the image above
 
 ## How to Manage ReplicaSets Using a Deployment in Runme
 
@@ -61,7 +61,7 @@ This section will walk you through the step-by-step process of managing ReplicaS
 
 **Step One: Deploy your application with Runme**
 
-You need to create a manifest file to deploy your application to your Kubernetes cluster. For the tutorial, we will be deploying an  [NGINX web server application](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/nginx-deployment.yaml). This Kubernetes manifest deploys our NGINX application into the "runme" namespace and specifies that it should manage a set of 5 identical Pods running the NGINX web server.
+You need to create a manifest file to deploy your application to your Kubernetes cluster. For the tutorial, we will be deploying an [NGINX web server application](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/nginx-deployment.yaml). This Kubernetes manifest deploys our NGINX application into the "runme" namespace and specifies that it should manage a set of 5 identical Pods running the NGINX web server.
 
 **Step Two: Update the Manifest File**
 
@@ -77,7 +77,7 @@ This will update your deployment with the defined ReplicaSet.
 
 ReplicaSet ensures that the specified number of identical pods are running at all times, so if a pod gets deleted, the ReplicaSet automatically creates a replacement pod to maintain the desired replica count. To delete a pod, run the command below in your Runme cell, and you will see an output that is identical to the one generated in the image.
 
-![delet pod](../../static/img/guide-page/runme-delete-pod.png)
+![delete pod](../../static/img/guide-page/runme-delete-pod.png)
 
 **Step Four: View Kubernetes Events in your Runme terminal**
 

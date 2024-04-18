@@ -12,9 +12,9 @@ In this guide, we will walk you through automating your [Kubernetes Secrets](htt
 
 To get started, ensure you have the following:
 
-- **Clone the Repo**: We have created a notebook repo containing all the instructions and commands required for this guide. Ensure to [clone the repo](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret).
+- **Clone the Repository**: We have created a notebook repository containing all the instructions and commands required for this guide. Ensure to [clone the repository](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret).
 - **Install Runme:** Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set Runme as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
-- **Require Packages**: Install the required packages (brew, kind, and kubectl) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/replicaset-mac.md#prerequisites) of the repo.*
+- **Require Packages**: Install the required packages (brew, kind, and kubectl) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/kubernetes/replicaset/replicaset-mac.md#prerequisites) of the repository.*
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-linux.md).
 
@@ -22,7 +22,7 @@ This guide will focus on using the Mac specifications. If you use a Linux OS, fo
 
 To encrypt your Kubernetes secrets using SOPS, you need an advanced security measure, access to a cloud provider, and a Key Management Service (KMS). For this guide, we will use an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 
-Navigate to the [SOPS file](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret/sops) in the repo you cloned earlier and open the Markdown file based on the specifications of your operating system to follow up on this section of the guide.
+Navigate to the [SOPS file](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret/sops) in the repository you cloned earlier and open the Markdown file based on the specifications of your operating system to follow up on this section of the guide.
 
 ### **Installation of SOPS**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#installation-of-sops)
 
@@ -47,7 +47,7 @@ You can also save this output to the Runme cloud for future use with the [Runme 
 
 ### **Configure SOPS in Runme** [](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#configure-sops)
 
-To configure your SOPS, specify how to encrypt your secrets, then define the encryption keys. To do this, navigate to the section on SOPS configuration and run the command in your Markdown file using Runme.
+To configure your SOPS, specify how to encrypt your secrets, and then define the encryption keys. To do this, navigate to the section on SOPS configuration and run the command in your Markdown file using Runme.
 
 ![sops](../../static/img/guide-page/configure-sops.png)
 
@@ -55,10 +55,10 @@ Once this is executed, it returns the configuration of your sops.yaml file to en
 
 ### **Encrypt Your Secrets**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#encrypt-your-secrets)
 
-To encrypt your secret, ensure you have set the following:
+To encrypt your secret, ensure you have the following information set:
 
 - Your environment variables
-- Your manifest `runme-secrets.yaml` file containing your secrets. If you have not done this, create one using the following YAML manifest in [our repo](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/runme-secrets.yaml).
+- Your manifest `runme-secrets.yaml` file containing your secrets. If you have not done this, create one using the following YAML manifest in [our repository ](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/runme-secrets.yaml).
 - Click the **execute cell** button.
 
 ![encrypt](../../static/img/guide-page/runme-encrypt.png)
@@ -69,7 +69,7 @@ Now, we have successfully encrypted your secrets within `runme-secrets.yaml`. Ru
 
 Similar to the encryption process, Runme lets you decrypt your encrypted security in your Markdown file. This will ensure that every process is properly automated.
 
-To decrypt your secrets, navigate to the “Decrypt Secrets” section in the repo and run the command in your Markdown file with Runme.
+To decrypt your secrets, navigate to the “Decrypt Secrets” section in the repository and run the command in your Markdown file with Runme.
 
 ![decrypt](../../static/img/guide-page/runme-decrypt.png)
 
@@ -87,8 +87,8 @@ This runs the `runme-secrets-enc.yaml` file decrypts it and then applies the fil
 
 We successfully encrypted our Kubernetes secrets inside our Markdown file. Runme makes your automation process easy with its features.
 
-One of these features is the [environment variable](https://docs-runme-ckcd767be-stateful.vercel.app/getting-started/features#environment-variable-prompts) feature, which allows users to input values directly within the notebook environment and use them whenever needed rather than inputting the value again.
+One of the useful features within the notebook environment is the [environment variable prompt](https://docs-runme-ckcd767be-stateful.vercel.app/getting-started/features#environment-variable-prompts). It allows users to input values directly and reuse them whenever needed.
 
-Another amazing key feature of Runme is the [Autosave](https://docs.runme.dev/configuration/auto-save) feature, which automatically records and tracks every change and activity in your processes without manual intervention.
+Runme's [Autosave](https://docs.runme.dev/configuration/auto-save) feature automatically tracks all changes and activities without manual intervention.
 
 To learn more about Runme and explore its features, visit the [Runme Documentation](https://docs.runme.dev/) to begin your journey to automating your operations processes.
