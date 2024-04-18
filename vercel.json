@@ -26,6 +26,11 @@
       "permanent": false
     },
     {
+      "source": "/r/extension/gist",
+      "destination": "https://runme.dev",
+      "permanent": false
+    },
+    {
       "source": "/r/extension/name",
       "destination": "https://docs.runme.dev/configuration/cell-level#unnamed-vs-named-cells",
       "permanent": false
