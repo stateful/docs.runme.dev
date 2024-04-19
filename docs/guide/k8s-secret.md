@@ -44,19 +44,25 @@ From the output gotten, you can see that your new value has successfully been ad
 
 To retrieve the original version of `runme-secrets.yaml`, you can decrypt the encrypted secret, `mysealedsecret.yaml`. Run the command in the ‘Decrypt a Secret’ section of the repo and run it in your Runme cell.
 
-![decrypt](../../static/img/guide-page/decrypt-secret.png)
+```sh
+kubeseal --controller-name=sealed-secrets-controller --controller-namespace=kube-system  < mysealedsecret.yaml > mysecrets.yaml
+```
 
 ### Delete a Secret
 
 To delete the secret, use the `kubectl` command to delete the resource and run it in your Runme cell.
 
-```json
+```sh
 kubectl delete -f mysealedsecret.yaml
 ```
 
 ### **Deploy the Sealed Secret**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#deploy-the-sealed-secret)
 
 To deploy your secret, execute the code below:
+
+```sh
+kubectl apply -f mysealedsecret.yaml
+```
 
 ![deploy sealed](../../static/img/guide-page/sealed-apply.png)
 

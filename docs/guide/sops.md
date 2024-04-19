@@ -71,6 +71,10 @@ Similar to the encryption process, Runme lets you decrypt your encrypted securit
 
 To decrypt your secrets, navigate to the “Decrypt Secrets” section in the repository and run the command in your Markdown file with Runme.
 
+```sh
+sops --decrypt --kms arn:aws:kms:${region}:${accountid}:key/${keyid} --encryption-context Role:runme-test --encrypted-regex password runme-secrets-enc.yaml > runme-secrets.yaml
+```
+
 ![decrypt](../../static/img/guide-page/runme-decrypt.png)
 
 When you decrypt the secret, it moves the decrypted secrets from a SOPS-encrypted secret `runtime-secrets-enc.yaml` into the original version before it was encrypted `runme-secrets.yaml`
@@ -78,6 +82,10 @@ When you decrypt the secret, it moves the decrypted secrets from a SOPS-encrypte
 ### **Apply Encrypted Secret**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#apply-encrypted-secret)
 
 To apply the encrypted secrets in your `runme-secrets-enc.yaml` file, run the command below.
+
+```sh
+sops -d runme-secrets-enc.yaml | kubectl apply -f -
+```
 
 ![apply](../../static/img/guide-page/secret-apply-runme.png)
 
