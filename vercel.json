@@ -27,7 +27,7 @@
     },
     {
       "source": "/r/extension/gist",
-      "destination": "https://runme.dev",
+      "destination": "https://runme.dev/blog/runme-gist",
       "permanent": false
     },
     {
