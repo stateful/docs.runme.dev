@@ -200,7 +200,7 @@ To open the alert manager app on your local machine, run the command below in yo
 open http://localhost:9093
 ```
 
-![alertmanager ui](../../static/img/guide-page/alert manager ui.png)
+![alertmanager](<../../static/img/guide-page/alert managerui.png>)
 
 ## Why use Runme
 
