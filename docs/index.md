@@ -1,7 +1,7 @@
 ---
 runme:
   id: 01HGAW03Y6QJQASC1QM0XC76P3
-  version: v2.0
+  version: v3
 sidebar_position: 1
 title: Home
 ---
@@ -11,6 +11,8 @@ Welcome to ▶️ Runme's docs. Thanks for stopping by.
 # **Quick Start ⚡️**
 
 If you are of the kind who likes to jump in head first. Below is a quick start guide to launch into Runme's self-hosted web UX.
+
+> 💡 If you are a VS Code user, skip ahead to [Runme for VS Code](https://docs.runme.dev/installation/installrunme).
 
 ## **MacOS**
 
