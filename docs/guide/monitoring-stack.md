@@ -52,6 +52,8 @@ EOF
 
 ```
 
+Output:
+
 ![Node exporter service](../../static/img/guide-page/create-node-exporter-service.png)
 
 Step Two: Run Node Exporter as a Service
@@ -74,6 +76,8 @@ sudo systemctl status node_exporter
 
 sudo systemctl restart node_exporter
 ```
+
+Output:
 
 ![node exporter service](../../static/img/guide-page/runme-node-exporter-service.png)
 
@@ -108,6 +112,8 @@ scrape_configs:
 EOF
 ```
 
+Output:
+
 ![promtheus yaml file](../../static/img/guide-page/runme-promtheus-yaml-file.png)
 
 Step Two: Set up Prometheus as a service
@@ -127,6 +133,8 @@ WantedBy=multi-user.target
 EOF
 ```
 
+Output:
+
 ![prometheus service](../../static/img/guide-page/create-promtheus-service.png)
 
 Step Three: Run Prometheus as a Service
@@ -140,6 +148,8 @@ Run the code below in your Runme cell to open the Prometheus app on your local m
 ```sh
 open http://localhost:9090
 ```
+
+Output:
 
 ![Prometheus UI](../../static/img/guide-page/prometheus-UI.png)
 
@@ -156,6 +166,8 @@ You installed Grafana on your local machine using Runme in the previous step. No
 ```sh
 open http://localhost:3000
 ```
+
+Ouput:
 
 ![Grafana UI](../../static/img/guide-page/grafana-runme.png)
 
@@ -188,7 +200,7 @@ To open the alert manager app on your local machine, run the command below in yo
 open http://localhost:9093
 ```
 
-![alertmanager ui](<../../static/img/guide-page/alert manager ui.png>)
+![alertmanager ui](../../static/img/guide-page/alert manager ui.png)
 
 ## Why use Runme
 
@@ -196,8 +208,7 @@ Rather than having your codes, commands, or processes in separate files or perfo
 Some key features of Runme that make it a choice platform for your monitoring stack include:
 
 - Environment Variable Prompts
-  As you can see from the procedure above, the [environment variable prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) is one feature that makes it a choice platform for this task. This feature comes in handy when your runbooks need user-specific values. It allows you to input values directly within your notebook environment, thus making your task execution more efficient.
-
+   As you can see from the procedure above, the [environment variable prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) is one feature that makes it a choice platform for this task. This feature comes in handy when your runbooks need user-specific values. It allows you to input values directly within your notebook environment, thus making your task execution more efficient.
 - Run Sections
    Runme makes [running the script by section](https://docs.runme.dev/configuration/cellsection) possible. For example, in your monitoring-stack notebook, you can choose to run each section (“Node Exporter,” “Prometheus,” “Grafana”) rather than individual cells. This feature makes running this task easier and faster.
 - Auto-Save
