@@ -156,7 +156,7 @@ Grafana provides a user-friendly interface for visualizing and analyzing metrics
 
 ![Install Grafaba](../../static/img/guide-page/install-grafana-runme.png)
 
-### Open the App
+Open the App:
 
 You installed Grafana on your local machine using Runme in the previous step. Now, you need to open the Grafana user interface on your local machine. To do this, enter the command below in your Runme cell and run the command.
 
