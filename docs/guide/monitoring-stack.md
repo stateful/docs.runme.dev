@@ -32,7 +32,7 @@ Runme uses its [environment variable prompt feature](https://docs.runme.dev/gett
 
 To configure your node exporter, you must follow three steps.
 
-- Step One: Set Up Node Exporter as a Service
+Step One: Set Up Node Exporter as a Service
 
 Create a `systemd` service file that ensures the Node Exporter is properly configured as a background service. This will allow it to continuously collect and export system metrics to Prometheus for monitoring and analysis. To do this, navigate to the “[Setup Node Exporter as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#setup-node-exporter-as-a-service)” section in your cloned repository and run the command in your Runme cell.
 
@@ -54,7 +54,7 @@ EOF
 
 ![Node exporter service](../../static/img/guide-page/create-node-exporter-service.png)
 
-- Step Two: Run Node Exporter as a Service
+Step Two: Run Node Exporter as a Service
 
 In this step, you are required to run your Node Exporter service, check its status, and restart it if necessary. To do this, navigate to the “[Run Node Exporter as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#run-node-exporter-as-a-service)” section and run the command in your Runme cell.
 
@@ -147,7 +147,6 @@ open http://localhost:9090
 
 Grafana provides a user-friendly interface for visualizing and analyzing metrics, logs, and other monitoring data in your monitoring stack. To install Grafana for your monitoring stack, navigate to the “[Install Grafana](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#install-grafana)” section and run the command in your Runme cell.
 
-
 ![Install Grafaba](../../static/img/guide-page/install-grafana-runme.png)
 
 ## Open the App
@@ -189,6 +188,7 @@ To open the alert manager app on your local machine, run the command below in yo
 open http://localhost:9093
 ```
 
+![alertmanager ui](<../../static/img/guide-page/alert manager ui.png>)
 
 ## Why use Runme
 
