@@ -1,8 +1,8 @@
 # How to Set Up a Monitoring Stack For Your Application by Leveraging Runme
 
-A monitoring stack is a set of tools and technologies that collect, process, and visualize data from various sources to improve the performance and security of systems and applications.
+A monitoring stack is a set of tools that collect, process, and visualize data from various sources to improve the performance and security of systems and applications.
 
-Often, having several instructions scattered everywhere to set up and configure your monitoring stack can be overwhelming. This is where Runme comes in! Runme provides a platform that helps you document all the standardized processes needed to set up and configure your monitoring stack, centralizing your procedures and processes in an interactive runbook accessible to you and your team.
+Most often, instructions which define setting up and configuration of monitoring stack procedures are set in multiple documents which can be overwhelming. This is where Runme comes in! Runme provides a platform that helps you document all the standardized processes needed to set up and configure your monitoring stack, centralizing your procedures and processes in an interactive runbook accessible to you and your team.
 
 With Runme, you create a set of predefined procedures and instructions for installing and configuring all dependencies needed for your monitoring stack, such as [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), etc.
 
@@ -52,7 +52,7 @@ EOF
 
 ```
 
-Output:
+**Output**:
 
 ![Node exporter service](../../static/img/guide-page/create-node-exporter-service.png)
 
@@ -77,7 +77,7 @@ sudo systemctl status node_exporter
 sudo systemctl restart node_exporter
 ```
 
-Output:
+**Output**:
 
 ![node exporter service](../../static/img/guide-page/runme-node-exporter-service.png)
 
@@ -112,7 +112,7 @@ scrape_configs:
 EOF
 ```
 
-Output:
+**Output**:
 
 ![promtheus yaml file](../../static/img/guide-page/runme-promtheus-yaml-file.png)
 
@@ -133,7 +133,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Output:
+**Output**:
 
 ![prometheus service](../../static/img/guide-page/create-promtheus-service.png)
 
@@ -143,15 +143,12 @@ Now, run Prometheus as a service. To do this, navigate to the â€œ[Run Prometheus
 ![prometheus](../../static/img/guide-page/prometheus-service-runme.png)
 
 Step four: Open the app
-Run the code below in your Runme cell to open the Prometheus app on your local machine.
+
+Run the code below in your Runme cell, it will open the prometheus User Interface page.
 
 ```sh
 open http://localhost:9090
 ```
-
-Output:
-
-![Prometheus UI](../../static/img/guide-page/prometheus-UI.png)
 
 ## Install Grafana
 
@@ -161,15 +158,11 @@ Grafana provides a user-friendly interface for visualizing and analyzing metrics
 
 ## Open the App
 
-You installed Grafana on your local machine using Runme in the previous step. Now, you need to open the Grafana app on your local machine. To do this, enter the command below in your Runme cell and run the command.
+You installed Grafana on your local machine using Runme in the previous step. Now, you need to open the Grafana user interface on your local machine. To do this, enter the command below in your Runme cell and run the command.
 
 ```sh
 open http://localhost:3000
 ```
-
-Ouput:
-
-![Grafana UI](../../static/img/guide-page/grafana-runme.png)
 
 ## Install Alert Manager
 
@@ -194,13 +187,12 @@ Now, you can run your alert manager as a service. To do this, navigate to the â€
 ![alertmanager-service](../../static/img/guide-page/runme-alertmanager.png)
 
 Step Three: Open the app
-To open the alert manager app on your local machine, run the command below in your Runme cell.
+
+To open the alert manager page on your local machine, run the command below in your Runme cell.
 
 ```sh
 open http://localhost:9093
 ```
-
-![alertmanager](<../../static/img/guide-page/alert managerui.png>)
 
 ## Why use Runme
 
