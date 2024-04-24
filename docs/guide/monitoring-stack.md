@@ -81,7 +81,7 @@ sudo systemctl restart node_exporter
 
 ![node exporter service](../../static/img/guide-page/runme-node-exporter-service.png)
 
-### Install Prometheus
+## Install Prometheus
 
 In a monitoring stack, Prometheus gathers metrics, monitors system and application health, generates alerts based on a predefined rule, and provides insights into system and application performance and availability.
 
@@ -91,7 +91,7 @@ To install Prometheus in Runme, navigate to the “[Install Prometheus](https://
 
 Runme will leverage its environment prompt feature to prompt you to input the version of Prometheus you want to install. Once you input the version, you will have an output similar to the one above.
 
-### Configure your Prometheus
+## Configure your Prometheus
 
 To configure your Prometheus, you will be required to follow three steps:
 
@@ -156,7 +156,7 @@ Grafana provides a user-friendly interface for visualizing and analyzing metrics
 
 ![Install Grafaba](../../static/img/guide-page/install-grafana-runme.png)
 
-## Open the App
+### Open the App
 
 You installed Grafana on your local machine using Runme in the previous step. Now, you need to open the Grafana user interface on your local machine. To do this, enter the command below in your Runme cell and run the command.
 
@@ -172,7 +172,7 @@ An alert manager is a component of a monitoring stack that handles alerts sent b
 
 You can edit your `alertmanager.yml` file to define the alerting configurations, notification integrations, and routing rules. To do that, run this command in your Runme cell `nano /etc/alertmanager/alertmanager.yml`
 
-### Configure and Run Your Alert Manager
+## Configure and Run Your Alert Manager
 
 You will follow three steps to configure and run your alert manager.
 
