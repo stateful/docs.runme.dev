@@ -42,7 +42,7 @@ By default, Runme uses the open-source data guardian to mask sensitive informati
 
 ![Runme gist unmask](../../static/img/configuration-page/runme-gist-unmask.png)
 
-## **Creating and Managing Gist with Runme using “Secret Gists”**
+## **Creating and Managing gist with Runme using Secret Gists**
 
 GitHub Gist is a service provided by GitHub that allows users to share code snippets, notes, and other small pieces of text with others. With a single click, you can push your Runme Session Output to GitHub Gist from your Markdown file.
 To do this, click on “Generate Gist”.
