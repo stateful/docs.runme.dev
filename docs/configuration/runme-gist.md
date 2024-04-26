@@ -1,3 +1,8 @@
+---
+sidebar_position: 4
+title: Runme Gist
+---
+
 Runme Gist
 Would you love to share or store your plain texts or code snippets securely with others in your team without needing a full repository or document?
 
