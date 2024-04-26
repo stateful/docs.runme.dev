@@ -15,7 +15,7 @@ Runme Gist combines GitHub Gist with Runme capabilities to run, share, and store
 - Set Runme as your [default Markdown viewer](../installation/installrunme) to ensure all Markdown files in your code editor are automatically opened as a Runme notebook.
 
 
-## **Setting Up Runme Gist **
+## **Setting Up Runme Gist**
 As stated earlier, Runme Gist combines GitHub Gist with Runme capabilities to enable you to securely run, share, and store code snippets. In this section, we will explain how Runme Gist works using a step-by-step guide.
 
 1. Open your Markdown File
