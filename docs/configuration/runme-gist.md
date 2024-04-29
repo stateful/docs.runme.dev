@@ -19,7 +19,7 @@ Runme Gist combines GitHub Gist with Runme capabilities to run, share, and store
 As stated earlier, Runme Gist combines GitHub Gist with Runme capabilities to enable you to securely run, share, and store code snippets. In this section, we will explain how Runme Gist works using a step-by-step guide.
 
 1. Open your Markdown File
-Create a `Readme.md` file and open it in your VS Code. If you already have the file you want to use, open it in VS Code.
+Create a `README.md` file and open it in your VS Code. If you already have the file you want to use, open it in VS Code.
 2. Run Cells
 Run your notebook cells, and ensure the [auto-save feature](../configuration/auto-save) is turned on to save your outputs without manual intervention.
 
@@ -32,12 +32,12 @@ To view your session output, click “Sessions Outputs” to inspect the locally
 
 ![Runme gist session output](../../static/img/configuration-page/runme-gist-sessionoutput.png)
 
-The Session Outputs feature is only available when the autosave is activated and the Runme cell is run.
+The Session Outputs feature is only available when the autosave is enabled and the Runme cell is run.
 
 4. Toggle Between Mask and Unmask
 You can decide if you want your session outputs to be masked or unmasked.
 The masked and unmasked options are how Runme keeps your sensitive information secret. If you want to keep your sensitive information secret, you should toggle the mask option otherwise, choose the unmasked option.
-By default, Runme uses the open-source data guardian to mask sensitive information on a best-effort basis.
+Otherwise, Runme uses the open-source `data-guardian` library to mask sensitive information on a best-effort basis.
 
 
 ![Runme gist unmask](../../static/img/configuration-page/runme-gist-unmask.png)

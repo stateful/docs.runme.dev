@@ -4,7 +4,7 @@ A monitoring stack is a set of tools that collect, process, and visualize data f
 
 Most often, instructions which define setting up and configuration of monitoring stack procedures are set in multiple documents which can be overwhelming. This is where Runme comes in! Runme provides a platform that helps you document all the standardized processes needed to set up and configure your monitoring stack, centralizing your procedures and processes in an interactive runbook accessible to you and your team.
 
-With Runme, you create a set of predefined procedures and instructions for installing and configuring all dependencies needed for your monitoring stack, such as [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), etc.
+With Runme, you create a set of predefined procedures and instructions for installing and configuring all dependencies needed for your monitoring stack, such as [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/) and others.
 
 In this guide, we will walk you through configuring a monitoring stack and creating a Runbook for your application setup and configuration using Runme.
 
@@ -30,7 +30,7 @@ Runme uses its [environment variable prompt feature](https://docs.runme.dev/gett
 
 ## Configure Your Node Exporter In Your Runbook
 
-To configure your node exporter, you must follow three steps.
+To configure your Node Exporter, you must follow three steps.
 
 Step One: Set Up Node Exporter as a Service
 
@@ -164,31 +164,31 @@ You installed Grafana on your local machine using Runme in the previous step. No
 open http://localhost:3000
 ```
 
-## Install Alert Manager
+## Install Alertmanager
 
-An alert manager is a component of a monitoring stack that handles alerts sent by monitoring tools like Prometheus. It is responsible for grouping, deduplication, and routing alerts to the appropriate recipients. To install an alert manager and make it a part of your monitoring stack, navigate to the “[Install Alert Manager](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#install-alert-manager)” section in the cloned repository, enter the command in your Runme cell, and run it.
+An Alertmanager is a component of a monitoring stack that handles alerts sent by monitoring tools like Prometheus. It is responsible for grouping, deduplication, and routing alerts to the appropriate recipients. To install an Alertmanager and make it a part of your monitoring stack, navigate to the “[Install Alertmanager](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#install-alert-manager)” section in the cloned repository, enter the command in your Runme cell, and run it.
 
 ![Install Alertmanager](../../static/img/guide-page/alertmanager-runme.png)
 
 You can edit your `alertmanager.yml` file to define the alerting configurations, notification integrations, and routing rules. To do that, run this command in your Runme cell `nano /etc/alertmanager/alertmanager.yml`
 
-## Configure and Run Your Alert Manager
+## Configure and Run Your Alertmanager
 
-You will follow three steps to configure and run your alert manager.
+You will follow three steps to configure and run your Alertmanager.
 
-Step One: Set Up Alert Manager as a Service
-Create a `systemd` service file for Alertmanager, specify its description, user-startup command, and target for activation. To do this, navigate to the “[Setup Alert Manager as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#setup-alert-manager-as-a-service)” section, enter the command, and run it in your Runme cell.
+Step One: Set Up Alertmanager as a Service
+Create a `systemd` service file for Alertmanager, specify its description, user-startup command, and target for activation. To do this, navigate to the “[Setup Alertmanager as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#setup-alert-manager-as-a-service)” section, enter the command, and run it in your Runme cell.
 
 ![alertmanager](../../static/img/guide-page/Alertmanager.service.png)
 
-Step Two: Run Alert Manager as a Service
-Now, you can run your alert manager as a service. To do this, navigate to the “[Run Alert as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#run-alert-manager-as-a-service)” section, enter the command in your Runme cell, and run it.
+Step Two: Run Alertmanager as a Service
+Now, you can run your Alertmanager as a service. To do this, navigate to the “[Run Alert as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#run-alert-manager-as-a-service)” section, enter the command in your Runme cell, and run it.
 
 ![alertmanager-service](../../static/img/guide-page/runme-alertmanager.png)
 
 Step Three: Open the app
 
-To open the alert manager page on your local machine, run the command below in your Runme cell.
+To open the Alertmanager page on your local machine, run the command below in your Runme cell.
 
 ```sh
 open http://localhost:9093
