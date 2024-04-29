@@ -1,7 +1,4 @@
----
-sidebar_position: 4
-title: Runme Gist
----
+# Runme Gist
 
 Would you love to share or store your plain texts or code snippets securely with others in your team without needing a full repository or document?
 Runme Gist makes this possible and prioritizes your information's sensitivity by keeping sensitive information secret. In this section, we will explain how Runme Gist works.
