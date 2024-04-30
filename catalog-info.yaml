@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: docs.runme.dev
+  description: Runme documentation
+  annotations:
+    github.com/project-slug: stateful/docs.runme.dev
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: user:edeediong
+  lifecycle: production
