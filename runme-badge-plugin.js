@@ -22,8 +22,10 @@ const runmePlugin = ({ repository }) => {
       return;
     }
 
-    visit(ast, "root", (node, index, parent) => {
-      node.children.unshift({
+    // let inserted = false;
+    visit(ast, "heading", (node, index, parent) => {
+      // inserted = true;
+      parent.children.splice(index, 0, {
         type: "link",
         url: `https://runme.dev/api/runme?repository=${encodeURIComponent(
           repository
@@ -38,6 +40,7 @@ const runmePlugin = ({ repository }) => {
           },
         ],
       });
+      return false;
     });
   };
 
