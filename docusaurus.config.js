@@ -96,6 +96,12 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/stateful/docs.runme.dev/edit/main",
+          remarkPlugins: [
+            [
+              require("./runme-badge-plugin.js"),
+              { repository: "https://github.com/stateful/docs.runme.dev.git" },
+            ],
+          ],
         },
         blog: {
           showReadingTime: true,
