@@ -23,18 +23,23 @@ const runmePlugin = ({ repository }) => {
     }
 
     visit(ast, "heading", (node, index, parent) => {
-      parent.children.splice(index, 0, {
-        type: "link",
-        url: `https://runme.dev/api/runme?repository=${encodeURIComponent(
-          repository
-        )}&fileToOpen=${markdownPath}`,
-        title: "Open with runme",
+      parent.children.splice(index + 1, 0, {
+        type: "paragraph",
         children: [
           {
-            type: "image",
+            type: "link",
+            url: `https://runme.dev/api/runme?repository=${encodeURIComponent(
+              repository
+            )}&fileToOpen=${markdownPath}`,
             title: "Open with runme",
-            url: "https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg",
-            alt: "Runme badget",
+            children: [
+              {
+                type: "image",
+                title: "Open with runme",
+                url: "https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg",
+                alt: "Runme badget",
+              },
+            ],
           },
         ],
       });
