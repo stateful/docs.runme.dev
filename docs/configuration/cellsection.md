@@ -1,9 +1,12 @@
 ---
+runme:
+  id: 01HX525D9B2H33WXVN253K6WX0
+  version: v3
 sidebar_position: 3
 title: Section-level option
 ---
 
-
+# Section-level option
 
 Runme cells can be grouped into headings and subheadings depending on the structure of your documentation. In your Markdown file, a section is both a heading or a subheading within the file.
 
@@ -13,7 +16,6 @@ To do this, you first need to enable “Sticky scroll” in your notebook. Follo
 
 - Click on the setting icon at the bottom left of your VS Code editor.
 - From the provided options, select “Settings”
-
 
 ![VS Code](../../static/img/guide-page/runme-vscode-setting.png)
 
@@ -50,4 +52,3 @@ To run a section from the outline:
 Hover your mouse on the section you want to run, click the three dots beside it, and click run cells to run all the cells in that section.
 
 ![cells section](../../static/img/guide-page/cellssection.png)
-

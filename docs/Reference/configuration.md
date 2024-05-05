@@ -1,10 +1,12 @@
 ---
 runme:
   id: 01HG11HG1XY3V7DCQVQ32Q71ZZ
-  version: v2.0
+  version: v3
 sidebar_position: 1
 title: Options for Document and Cell
 ---
+
+# Options for Document and Cell
 
 Executing code and commands in Runme can be done either at the [Document level](../configuration/document-level) or the [Cell level](../configuration/cell-level). This page is a reference for both features.
 
@@ -42,5 +44,3 @@ Metadata inside Markdown's fenced code blocks.
 This feature can be used to prevent [prompting](../configuration/document-level) when exporting an environment variable. By configuring the [cell options](../configuration/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
 
 </Infobox>
-
-

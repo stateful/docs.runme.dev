@@ -1,7 +1,12 @@
 ---
+runme:
+  id: 01HX525D99NZJ6YPEFFMPYFVR4
+  version: v3
 sidebar_position: 7
 title: Kernel Architecture
 ---
+
+# Kernel Architecture
 
 Under the hood, much like other Notebook technologies such as Jupyter, Runme breaks down into the following parts:
 

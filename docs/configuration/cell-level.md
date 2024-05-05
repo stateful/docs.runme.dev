@@ -1,10 +1,12 @@
 ---
 runme:
   id: 01HFPW3ES358GNC1Z633JB8JYR
-  version: v2.0
+  version: v3
 sidebar_position: 1
 title: Cell-level Options
 ---
+
+# Cell-level Options
 
 When running code blocks or commands with Runme, you have two execution options: document-level or cell-level options.
 
@@ -87,7 +89,7 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 </Infobox>
 
-###  **Specify Language in Blocks**
+### **Specify Language in Blocks**
 
 Runme, just like most Markdown viewers, will work best when a script's language is contained inside fenced code blocks.
 
@@ -117,7 +119,7 @@ While this works well in a lot of cases, the accuracy is not perfect.
 
 </Infobox>
 
-###  **Handle long-running processes**
+### **Handle long-running processes**
 
 It is common to use file-watcher-enabled compilers/bundlers (e.g., `npm start dev`, `watchexec`, etc.) in the background during development.
 For any cell containing an instance of these commands, tick the background cell setting. This will prevent execution from permanently blocking the notebook UX.
@@ -164,7 +166,7 @@ Please note that if both `cwd` is set for doc-level and cell, they don't overw
 
 </Infobox>
 
-###  **Interactive vs non-interactive cells**
+### **Interactive vs non-interactive cells**
 
 If a cell's commands do not require any input from a reader it might be a good fit to include the cell's output inside the notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for, and it defaults to *true*.
 
@@ -184,7 +186,7 @@ Please note that the Runme team is currently working on making output in both no
 
 </Infobox>
 
-###  **Set environment variables**
+### **Set environment variables**
 
 If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
 
@@ -200,7 +202,6 @@ sleep $SLEEP_SECS
 There are two prompt modes:
 
 - Use a placeholder
-
 - A prompt message.
 
 Here's the difference:
@@ -223,7 +224,7 @@ export PROJECT_ID=Enter a valid project ID
 cli make-call --project-id $PROJECT_ID describe
 ```
 
-###  **Terminal visibility post-execution**
+### **Terminal visibility post-execution**
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
@@ -236,7 +237,7 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 docker ps | grep runme/demo:latest
 ```
 
-###  **Human-friendly output**
+### **Human-friendly output**
 
 Not all cells’ output is plain text. For example, you can have JSON, text, images, etc, all in your Markdown file.
 
@@ -246,7 +247,7 @@ Using the `mimeType` specifier, you can specify the expected output type. Runm
 
 See in the [reference page](../Reference/mime) for the list of supported MIME types!
 
-###  **Terminal Row**
+### **Terminal Row**
 
 On Runme outputs are saved in lines also known as rows. The number of lines or rows in which an output should be rendered is defined by a setting known as Terminal row.
 Terminal row allows you to set the number of rows with which your output should be displayed under a cell.
@@ -270,7 +271,7 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 - Lastly, set the number of rows you wish your output to be rendered in.
 
-###  **Unnamed vs Named cells**
+### **Unnamed vs Named cells**
 
 On Runme cells are unnamed by default. However, you can name a cell directly in your notebook. This will enable you to easily identify the cell using the provided cell name. On the cell you wish to name, simply click on the “Add Name” button on the cell.
 
@@ -315,7 +316,7 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 </Infobox>
 
-###  **Exclude Cell from Run All**
+### **Exclude Cell from Run All**
 
 Every VS Code notebook allows users to run all available cells. This can be useful if you define a complete runbook in your Markdown file, allowing developers to click the **Run All** button to get set up and running.
 
@@ -330,8 +331,7 @@ However, sometimes certain cells should be excluded from this workflow. You can 
  # Do something optional here
 ```
 
-
-###  **Run All Cells by Category**
+### **Run All Cells by Category**
 
 If you have multiple workflows in a single Markdown file you can categorize them and allow your developers to run all cells by a certain category. To enable that you can add a category as a cell option. A cell can have one or multiple categories that are comma-separated.
 
@@ -348,5 +348,3 @@ If you have multiple workflows in a single Markdown file you can categorize them
   <source src="/videos/categories.mp4" type="video/mp4" />
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
-
-

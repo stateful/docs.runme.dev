@@ -1,7 +1,7 @@
 ---
 runme:
   id: 01HMXXHBVGVRWDENHJX7JDPXSM
-  version: v2.2
+  version: v3
 ---
 
 # Install Runme with Docker

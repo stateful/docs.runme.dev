@@ -1,7 +1,12 @@
 ---
+runme:
+  id: 01HX525D9Q4MX6K6NYPCRYEC7G
+  version: v3
 sidebar_position: 7
 title: Browser Extension for Runme
 ---
+
+# Browser Extension for Runme
 
 If you like to quickly check out a GitHub project from your browser, you can use the Runme Web Extension. It is supported in all Chromium browsers (e.g. Chrome, Brave, or Opera) and Firefox. You can download the extension through:
 

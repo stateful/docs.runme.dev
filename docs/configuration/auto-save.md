@@ -1,10 +1,12 @@
 ---
 runme:
   id: 01HFRZ3233HSQ0NVJB9BE682G5
-  version: v2.0
+  version: v3
 sidebar_position: 5
 title: Auto-Save Feature
 ---
+
+# Auto-Save Feature
 
 Runme auto-save feature makes saving your outputs and progress easier. It is an effective way to manage your records and outputs throughout your deployment.
 
@@ -76,6 +78,3 @@ By default, session output is turned off, indicated by the autosave button at th
 This action configures the system to automatically save the output of each cell execution.
 
 > 💡 If you’re logged into the Cloud (prompt whenever Auto-Save is toggled on) cells will both be stored locally in a Session Outputs file and securely stored in your dashboard for later review or sharing with others. This is completely optional and if desired can be turned off (follow “Open Settings” in prompt).
-
-
-

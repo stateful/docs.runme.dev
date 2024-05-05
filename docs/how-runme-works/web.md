@@ -1,15 +1,19 @@
 ---
+runme:
+  id: 01HX525D9MCT9JC5FMWKE5RMKB
+  version: v3
 sidebar_position: 4
 title: Runme for Web
 ---
+# Runme for Web
 
 Runme can run as a self-contained web app. Since Runme's notebook UX is built on the VS Code platform, we can leverage the [code-server](https://github.com/coder/code-server) project to run it as a local, self-contained web app.
 
 To start with Runme on the Web, you first need to follow the guide on [installing Runme on Web.](https://docs.runme.dev/installation/web)
 
 ## Features of Runme on Web
-![VS Code Marketplace](../../static/img/installation-page/runme-for-vscode.png)
 
+![VS Code Marketplace](../../static/img/installation-page/runme-for-vscode.png)
 
 Installing Runme on the Web allows you to use VS Code right at your local host address on your default web browser and set up a Runme `code-server`.
 

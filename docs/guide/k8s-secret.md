@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HX525D9FNAVSGJXVFHZA93FA
+  version: v3
+---
+
 # Securing Kubernetes Secrets with Sealed Secrets and Runme
 
 Runme provides a platform for documenting processes and instructions. It integrates swiftly with cloud infrastructures, including Kubernetes and its resources.

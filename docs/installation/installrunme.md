@@ -1,7 +1,7 @@
 ---
 runme:
   id: 01HMXW3W0C2V6YSP2PPB33T61E
-  version: v2.2
+  version: v3
 ---
 
 # Install Runme on VS Code
@@ -31,11 +31,9 @@ Alternatively, you can install Runme from the [VS Code Marketplace](https://mark
 
 ![VS Code Marketplace](../../static/img/installation-page/VSCodemarketplace.png)
 
-
 You have successfully installed Runme! 🎉 
 
 With Runme installed, every Markdown file you open on your VS Code editor, will open using Runme.
-
 
 ## Full Display of Runme’s Action on a Markdown File in VS Code
 
@@ -43,23 +41,15 @@ After successfully installing Runme on your VS Code, you can open any Markdown f
 
 Below is a full display of Runme’s action on a Markdown file in VS Code.
 
-
 ![VS Code Marketplace](../../static/img/installation-page/runme-for-vscode.png)
 
 1. **Notebooks Explorer:** You can easily access all your Markdown files using the Notebook Explorer. This will display all Markdown files existing in your project directory.
-
 2. **Cell Execution Status Indicator:** When a code block is executed, the status indicator displays an icon that indicates the status of the executed code. If the code fails, an “X” symbol is returned, indicating failure; however, if the code is successfully run, a symbol, as seen in the image above, is displayed.
-
 3. **Cell Execution Result:** View the executed cell result using the integrated VS Code terminal and prevent context switching using this terminal.
-
 4. **Run Cell Button:** Running code in Markdown files is now easier with just one click.
-
 5. **Cell Code Block:** Get a visual representation of commands to be executed with syntax highlighting.
-
 6. **Notebook Global Actions:** View common options that define your code input and execution in the context of the Notebook.
-
 7. **Cell Code Block Actions:** List of actions that define code block execution. This includes cell language, [configurations](../configuration/index.md) etc.
-
 8. **Cell Execution Result:**  Copy your generated output.
 
 ## How to Set VS Code as Your Default Markdown Viewer

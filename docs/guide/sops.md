@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HX525D9HYD6QHP138A69XKJ1
+  version: v3
+---
+
 # How to Automate Kubernetes Secrets Encryption with SOPS and  Runme
 
 Runme turns your documentation into interactive notebooks for operating cloud infrastructure. This cloud infrastructure includes Kubernetes, which is the combination of resources such as servers, cloud platforms, secrets, etc., that are supported in a Kubernetes environment.

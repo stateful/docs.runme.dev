@@ -1,7 +1,7 @@
 ---
 runme:
   id: 01HMXTKR1S6D784CWGFQ3F9D73
-  version: v2.2
+  version: v3
 ---
 
 # Runme by Example

@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HX525D9FNAVSGJXVF0W0FGW4
+  version: v3
+---
+
 # Running Runme in a DevContainer
 
 ## Introduction
@@ -37,7 +43,6 @@ In your VS Code, navigate to the extension view by clicking on the **Extensions 
 3. In your VS Code project, create a Dev Container Configuration
 
 On the bottom left of your Code editot, click the **Remote container** icon.
-
 
 ![remote icon](../../static/img/remote-container-icon.png)
 

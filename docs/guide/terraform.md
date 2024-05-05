@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HX525D9HYD6QHP138CDZRC1D
+  version: v3
+---
+
 # Infrastructure Automation With Terraform Using Runme
 
 As a cloud infrastructure engineer imagine you are responsible for managing the infrastructure of a web application that runs in multiple environments this includes, development, staging, and production. This infrastructure is defined using Terraform. However, you are faced with a specific configuration challenge where each environment has specific configuration requirements in addition your team needs visibility during the application deployment process.
@@ -28,7 +34,7 @@ Before we proceed, there are a few requirements needed to get started
 
 **Create a Project Directory:**
 
-   Begin by creating a new directory for your Terraform project and navigate to the directory in your terminal.
+Begin by creating a new directory for your Terraform project and navigate to the directory in your terminal.
 
 ```sh {"id":"01HPPVN521NV378FM42N6FA9B8"}
 mkdir terraform-ec2-instance
