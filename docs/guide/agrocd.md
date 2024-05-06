@@ -1,4 +1,4 @@
-# Agro CD guide
+# Deploying and Managing Applications with Runme and Argo CD
 
 In today's fast-paced tech environment, staying ahead with efficient deployment practices is crucial. Kubernetes has become a staple for managing modern infrastructure, offering flexibility and scalability. Yet, managing Kubernetes clusters and ensuring consistent, reliable deployments present ongoing challenges.
 
@@ -12,7 +12,7 @@ To follow up on this tutorial, ensure you have the following:
 
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md).
-- Brew installed on a macOS system (or a package manager for other OS)
+- Insatll [brew](https://brew.sh/)
 - **`kubectl`** installed for interacting with the Kubernetes cluster
 - Git installed for version control
 - Basic familiarity with YAML and Kubernetes resource definitions
@@ -37,7 +37,7 @@ argocd/
 
 The  **`values-override.yaml`** YAML file contains configuration settings that specifies server configuration, additional applications to deploy, additional projects within Argo CD, and their respective settings such as namespaces, sync policies, and cluster resource whitelists.
 
-click run and this will update `installation/values-override.yaml` file with your configuration
+click run in this section and it will update `installation/values-override.yaml` file with your present configuration
 
 ```sh
 cat << EOF > installation/values-override.yaml
@@ -124,7 +124,7 @@ EOF
 
 ## **Install Argo CD Using Helm**
 
-We are ready to install. and execute the helm install command.
+We are ready to install. Run the helm install command.
 
 ```sh
 helm install argocd ./installation/argo-cd \
@@ -150,20 +150,22 @@ kubectl -n argocd get secrets argocd-initial-admin-secret \
 
 ![agro cd password](../../static/img/guide-page/agrocd-password.png)
 
-Forward the port 80 of the argocd-server service to localhost:8080 using kubectl.
+Forward the port 80 of the argocd-server service to localhost:7070 using kubectl.
 
-```sh
-kubectl -n argocd port-forward service/argocd-server 8080:80
+```sh {"background":"true"}
+kubectl -n argocd port-forward service/argocd-server 7070:80
 ```
 
-With runme background process feature You can run your code cells as a [background task](../getting-started/features#background-task)
+![port- forwarding](../../static/img/guide-page/agrocd-portforwarding.png)
+
+With runme background process feature, you can run your code cells as a [background task](../getting-started/features#background-task)
 
 ![background mode](../../static/img/runme-background.png)
 
-After executing the port-forward command, you'll be able to access the Argo CD web interface locally by browsing http://localhost:8080.
+After executing the port-forward command, you'll be able to access the Argo CD web interface locally by browsing http://localhost:7070.
 
 ```sh
-open https://localhost:8080
+open https://localhost:7070
 ```
 
 Log in using the initial admin password. Upon login, you'll notice the three applications defined in the `values-override.yaml` file are ready for deployment. Although the "argocd" application may initially appear out of sync due to differing templating parameters, you can resolve this by clicking the "Sync" button and waiting for it to turn green.
@@ -200,6 +202,9 @@ EOF
 
 - Argo CD continuously monitors the repository for changes and automatically reconciles the project configuration.
 - Once detected, Argo CD applies the updated project configuration, allowing seamless management of applications within the specified project.
+
+
+Argo CD and CI/CD are vital components in modern software development. Argo CD automates application deployment and management in Kubernetes, ensuring consistency with desired states defined in Git repositories. CI/CD automates code integration, testing, and deployment, accelerating delivery while maintaining quality. Together, they enable rapid, reliable deployment cycles and foster collaboration between development and operations teams, ultimately delivering value to end-users efficiently
 
 ## Cleanup
 
