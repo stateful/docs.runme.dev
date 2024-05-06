@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01HX525D9B2H33WXVN2AD1C94T
+  version: v3
 sidebar_position: 5
 ---
 
@@ -14,6 +17,5 @@ Some configurations found in Runme include:
 * [Auto-Save Feature](../configuration/auto-save)
 * [Archiving Feature](../configuration/archiving)
 * [Shebang Support](../configuration/shebang)
-
 
 Remember that we are constantly improving Runme to provide more configurations to ensure you have a smooth experience executing your Markdown file in Runme.

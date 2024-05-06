@@ -1,7 +1,7 @@
 ---
 runme:
   id: 01HMXWCY2H423QQTC496NY7S34
-  version: v2.2
+  version: v3
 ---
 
 # Install Runme on CLI

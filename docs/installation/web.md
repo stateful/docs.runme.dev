@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HX525D9Q4MX6K6NYPBHV4Q5E
+  version: v3
+---
+
 # Install on Web
 
 This section will provide step-by-step instructions on installing Runme on your Web.
@@ -11,7 +17,7 @@ To install Runme on the web, you are required to run the Runme command in your C
 1. Open your terminal on your local machine.
 2. Run the command below
 
-```json {"id":"01HQR1SNB432H0KF49HSNWWK5Q"}
+```sh {"id":"01HQR1SNB432H0KF49HSNWWK5Q"}
 runme open
 ```
 

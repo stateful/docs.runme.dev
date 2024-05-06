@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HX525D9GDAKP0662NXT98NWK
+  version: v3
+---
+
 # How to Optimize Kubernetes Replicaset Using Runme
 
 Runme provides a platform that allows you to create standardized procedures for configuring, deploying, and managing your everyday operational tools and resources.

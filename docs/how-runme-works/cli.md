@@ -1,7 +1,7 @@
 ---
 runme:
   id: 01HMXY7YB2QZ7XVYMRXX0H1B8M
-  version: v2.2
+  version: v3
 sidebar_position: 2
 title: Runme on CLI
 ---

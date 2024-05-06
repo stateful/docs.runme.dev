@@ -1,13 +1,12 @@
 ---
 runme:
   id: 01HMXW1YSWS6A62VJ0CQPD38C9
-  version: v2.2
+  version: v3
 sidebar_position: 2
 title: Installation
 ---
 
 # Installation
-
 
 In this section, you will find comprehensive instructions on how you can install Runme using the various installation options we have provided.
 

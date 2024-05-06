@@ -1,10 +1,12 @@
 ---
 runme:
   id: 01HGAP763P40ATQQN75RMGW6XJ
-  version: v2.0
+  version: v3
 sidebar_position: 4
 title: Archiving Feature
 ---
+
+# Archiving Feature
 
 The Runme archiving feature is a tidy-up tool for users. It allows you to hide outputs generated from Markdown cells to reduce clutter and preserve output for future reference. The archived files are securely stored in [Runme cloud](https://app.runme.dev/welcome) which can be accessible at any time.
 

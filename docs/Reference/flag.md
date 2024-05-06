@@ -1,9 +1,12 @@
 ---
+runme:
+  id: 01HX525D99NZJ6YPEFFBVMRTC6
+  version: v3
 sidebar_position: 2
 title: Commands and Flags
 ---
 
-
+# Commands and Flags
 
 Runme executes commands inside your runbooks, documentation, and READMEs. It parses commands directly from Markdown files to make them executable.
 
@@ -37,7 +40,6 @@ Below are some available commands within Runme
 
 Runme supported configuration flags.
 
-
 | Flags         | Description                                                     |
 | ---------------------- | --------------------------------------------------------------- |
 | --allow-unknown           | Display snippets without known executor (default true)  |
@@ -58,4 +60,3 @@ Runme supported configuration flags.
 | -s, --server string          | Server address to connect runner to |
 | --tls string | Directory for TLS authentication (default "~/Library/Application Support/runme/tls")                  |
 | -v, --version          |  -v, --version |
-

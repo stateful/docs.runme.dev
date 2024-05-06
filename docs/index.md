@@ -6,9 +6,9 @@ sidebar_position: 1
 title: Home
 ---
 
-Welcome to ▶️ Runme's docs. Thanks for stopping by.
-
 # **Quick Start ⚡️**
+
+Welcome to ▶️ Runme's docs. Thanks for stopping by.
 
 If you are of the kind who likes to jump in head first. Below is a quick start guide to launch into Runme's self-hosted web UX.
 
@@ -16,13 +16,13 @@ If you are of the kind who likes to jump in head first. Below is a quick start g
 
 ## **MacOS**
 
-```sh {"id":"01HQ0JB6FJCYD1B5BBR4WD2QPX"}
+```sh
 $ brew install runme && runme open
 ```
 
 ## **Linux & Windows**
 
-```sh {"id":"01HQ0JB6FJV6AGANGQQ5PQ3GPA"}
+```sh
 $ npx runme open
 ```
 

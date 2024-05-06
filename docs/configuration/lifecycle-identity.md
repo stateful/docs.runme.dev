@@ -1,10 +1,12 @@
 ---
 runme:
   id: 01HFY0VFSB5F1PF7C28BW2YSVT
-  version: v2.0
+  version: v3
 sidebar_position: 6
 title: Lifecycle Identity in Runme
 ---
+
+# Lifecycle Identity in Runme
 
 Would you love to easily track the changes you have made to your document or monitor its history? The Lifecycle Identity feature in Runme makes this easy for you.
 
