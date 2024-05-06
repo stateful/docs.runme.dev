@@ -52,9 +52,9 @@ docker run <image_name>
 
 ![docker run](../../static/img/guide-page/docker-run.png)
 
-### Volume Mapping
+### Volume Mount
 
-Volume mapping maps directories or files on the host machine to directories inside the container, providing data persistence and allowing for easy file access.
+Volume mount maps directories or files on the host machine to directories inside the container, providing data persistence and allowing for easy file access.
 
 ```sh
 docker run -v <host_directory>:<container_directory> <image_name>
