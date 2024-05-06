@@ -1,6 +1,15 @@
+---
+runme:
+  document:
+    relativePath: docker.md
+  session:
+    id: 01HX6SSSX93QT3RWVETACQJVY5
+    updated: 2024-05-06 18:51:13+01:00
+---
+
 # How to Use Docker with Runme
 
-[Docker](https://www.docker.com/) has transformed development tooling by streamlining the creation, deployment, and management of applications across diverse environments. Running Docker in a runbook ensures that tasks and workflows can be automated easily, as it enables you to create precise instructions on how to deploy, update, and manage Docker containers across all environments.
+[Docker](ht******************om/) has transformed development tooling by streamlining the creation, deployment, and management of applications across diverse environments. Running Docker in a runbook ensures that tasks and workflows can be automated easily, as it enables you to create precise instructions on how to deploy, update, and manage Docker containers across all environments.
 
 Now, Runme is not just any runbook. Runme provides an interactive runbook that can turn your documentation into an interactive and executable environment.
 
@@ -11,8 +20,8 @@ In this guide, we will walk you through different use cases of Docker with Runme
 
 ## **Prerequisites**
 
-- **Clone the repository**: We created a [notebook repository](https://github.com/stateful/blog-examples/tree/T-doc-notebook/docker-notebook) containing all the instructions and commands required for this guide.
-- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Clone the repository**: We created a [notebook repository](ht*************************************************************************ok) containing all the instructions and commands required for this guide.
+- **Install Runme**: Install the [Runme extension on VS Code](ht**************************************************************me) and set it as your [default Markdown viewer.](ht***********************************************************************************************er)
 
 ## Example Use Case
 
@@ -177,7 +186,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 With Runme, you can efficiently manage your Docker containers by running your commands by section. Rather than running each cell individually, you run them by section. The video below provides a visual illustration of how this feature works.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="/videos/docker-container.mp4" type="video/mp4" />
+  <source src="/videos/do****************p4" type="video/mp4" />
   <source src="/videos/docker-container.webm" type="video/webm" />
 </video>
 
@@ -187,5 +196,5 @@ In this guide, we covered the various way you can use Docker within your Runme c
 - [Autosave feature](../configuration/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
 - You can run your Markdown file by cells, an entire document, or sections.
 
-To explore more features of Runme and learn how they can be utilized in your workflows, visit our [documentation page](https://docs.runme.dev/).
+To explore more features of Runme and learn how they can be utilized in your workflows, visit our [documentation page](ht******************ev/).
 

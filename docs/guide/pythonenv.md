@@ -1,4 +1,4 @@
-# How Intergrate Python Virtual Environment with Runme
+# How Integrate Python Virtual Environment with Runme
 
 Runme allows you to create Python environments natively in your Runme cell to enable you to save time while executing Python commands from your Markdown file.
 
@@ -19,7 +19,7 @@ In this [example](https://github.com/stateful/vscode-runme/blob/main/examples/sh
 ```sh
 python3 -m venv .venv
 source.venv/bin/activate
-pip3 install docker prettyatble 
+pip3 install docker prettyatble
 ```
 
 ![Python virtual environment ](../../static/img/guide-page/python-env.jpg)
