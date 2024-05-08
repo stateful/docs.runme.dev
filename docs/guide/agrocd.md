@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01HXCRQPTKTYCQX6WRQACB6F2M
+  version: v3
+---
+
 # Deploying and Managing Applications with Runme and Argo CD
 
 In today's fast-paced tech environment, staying ahead with efficient deployment practices is crucial. Kubernetes has become a staple for managing modern infrastructure, offering flexibility and scalability. Yet, managing Kubernetes clusters and ensuring consistent, reliable deployments present ongoing challenges.
@@ -203,7 +209,6 @@ EOF
 - Argo CD continuously monitors the repository for changes and automatically reconciles the project configuration.
 - Once detected, Argo CD applies the updated project configuration, allowing seamless management of applications within the specified project.
 
-
 Argo CD and CI/CD are vital components in modern software development. Argo CD automates application deployment and management in Kubernetes, ensuring consistency with desired states defined in Git repositories. CI/CD automates code integration, testing, and deployment, accelerating delivery while maintaining quality. Together, they enable rapid, reliable deployment cycles and foster collaboration between development and operations teams, ultimately delivering value to end-users efficiently
 
 ## Cleanup
@@ -222,13 +227,13 @@ kubectl -n argocd get pods
 
 Delete `argocd` namespaces.
 
-```sh
+```sh {"language":"sh"}
 kubectl delete ns argocd
 
 ```
 
 Delete kind cluster.
 
-```sh
+```sh {"language":"sh"}
 kind delete cluster --name my-cluster
 ```
