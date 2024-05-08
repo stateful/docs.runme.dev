@@ -1,6 +1,10 @@
-# How to Use Docker with Runme
+---
+runme:
+  id: 01HXCRQPTPH3KV5Z9HVC16PVBV
+  version: v3
+---
 
-[![Open with Runme](https://badgen.net/badge/Run%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git@github.com:stateful/blog-examples.git&fileToOpen=docker-notebook/readme.md)
+# How to Use Docker with Runme
 
 [Docker](https://www.docker.com/) has transformed development tooling by streamlining the creation, deployment, and management of applications across diverse environments. Running Docker in a runbook ensures that tasks and workflows can be automated easily, as it enables you to create precise instructions on how to deploy, update, and manage Docker containers across all environments.
 
@@ -138,6 +142,10 @@ To execute a command inside a container, use the command below
 
 ```sh
 docker exec -it $CONTAINER_ID_TEST bash
+```
+
+```sh
+echo "hello world"
 ```
 
 Example:
