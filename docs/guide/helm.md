@@ -19,8 +19,8 @@ This guide demonstrates how to integrate Helm with Runme to automate processes a
 To follow up on this tutorial, ensure you have the following:
 
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
-- **Clone Repo**: We have provided an example repository to help you follow this tutorial. You can clone the [repo here](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md).
-- **Require Packages**: Install the required packages ([kind](https://kind.sigs.k8s.io/docs/user/quick-start/),[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/), [Helm](https://helm.sh/docs/intro/install/), etc. ) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md#prerequiste) in the repo.*
+- **Clone Repo**: We have provided an example repository to help you follow this tutorial. You can clone the [repo here](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md).
+- **Require Packages**: Install the required packages ([kind](https://kind.sigs.k8s.io/docs/user/quick-start/),[kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/), [Helm](https://helm.sh/docs/intro/install/), etc. ) inside your Markdown file. *Runme allows you to achieve this! Simply run the command in the [prerequisite section](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md#prerequiste) in the repo.*
 
 Create a cell in your Rume notebook and run the command below to install the required packages. See example below:
 
@@ -28,7 +28,7 @@ Create a cell in your Rume notebook and run the command below to install the req
 
 Using the Runme [cell section](../configuration/cellsection) feature you can run the entire subheading at a go.
 
-Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md) for this guide.
+Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md) for this guide.
 
 ## **Creating A Helm Chart Within Your Runme Environment**
 
