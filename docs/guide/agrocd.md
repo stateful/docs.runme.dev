@@ -11,7 +11,7 @@ Our guide focuses on leveraging Argo CD and maximizing Runme's potential synergi
 To follow up on this tutorial, ensure you have the following:
 
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
-- **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/blob/main/Cloud-native/helm/helm.md).
+- **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md).
 - Insatll [brew](https://brew.sh/)
 - **`kubectl`** installed for interacting with the Kubernetes cluster
 - Git installed for version control
