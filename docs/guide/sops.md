@@ -6,6 +6,8 @@ runme:
 
 # How to Automate Kubernetes Secrets Encryption with SOPS and  Runme
 
+[![Run with Runme](https://badgen.net/badge/Run%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git@github.com:stateful/blog-examples.git&fileToOpen=kubernetes/k8s-secret/sops/sops-linux.md)
+
 Runme turns your documentation into interactive notebooks for operating cloud infrastructure. This cloud infrastructure includes Kubernetes, which is the combination of resources such as servers, cloud platforms, secrets, etc., that are supported in a Kubernetes environment.
 
 For the purpose of this guide, we will focus on Kubernetes secrets using Secret Operations.

@@ -1,5 +1,7 @@
 # How to Use Docker with Runme
 
+[![Open with Runme](https://badgen.net/badge/Run%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg)](https://runme.dev/api/runme?repository=git@github.com:stateful/blog-examples.git&fileToOpen=docker-notebook/readme.md)
+
 [Docker](https://www.docker.com/) has transformed development tooling by streamlining the creation, deployment, and management of applications across diverse environments. Running Docker in a runbook ensures that tasks and workflows can be automated easily, as it enables you to create precise instructions on how to deploy, update, and manage Docker containers across all environments.
 
 Now, Runme is not just any runbook. Runme provides an interactive runbook that can turn your documentation into an interactive and executable environment.
@@ -11,7 +13,7 @@ In this guide, we will walk you through different use cases of Docker with Runme
 
 ## **Prerequisites**
 
-- **Clone the repository**: We created a [notebook repository](https://github.com/stateful/blog-examples/tree/T-doc-notebook/docker-notebook) containing all the instructions and commands required for this guide.
+- **Clone the repository**: We created a [notebook repository](https://github.com/stateful/blog-examples/tree/main/docker-notebook) containing all the instructions and commands required for this guide.
 - **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
 
 ## Example Use Case
