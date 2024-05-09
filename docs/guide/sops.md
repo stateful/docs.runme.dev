@@ -65,7 +65,7 @@ Once this is executed, it returns the configuration of your sops.yaml file to en
 
 To encrypt your secret, ensure you have the following information set:
 
-- Your environment variables
+- Your environment variables.
 - Your manifest `runme-secrets.yaml` file containing your secrets. If you have not done this, create one using the following YAML manifest in [our repository ](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/runme-secrets.yaml).
 - Click the **execute cell** button.
 
