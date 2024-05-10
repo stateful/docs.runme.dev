@@ -8,7 +8,7 @@ title: Options for Document and Cell
 
 # Options for Document and Cell
 
-Executing code and commands in Runme can be done either at the [Document level](../configuration/document-level) or the [Cell level](../configuration/cell-level). This page is a reference for both features.
+Changing the behavior of executing code and commands in Runme can be done either at the [Document level](../configuration/document-level) or the [Cell level](../configuration/cell-level). This page is a reference for both.
 
 ### **Document Options**
 
