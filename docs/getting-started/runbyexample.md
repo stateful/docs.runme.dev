@@ -31,7 +31,7 @@ done
 
 - **Process a ENV-variable-named Output**:
 
-Please note how above's cell is conveniently available in the environment via `$GIT_BRANCHES` (please inspect raw markdown). Only cells named with uppercase letters and separated by underscores (min length is 3) are exported as environment variables:
+Please note how above's cell is conveniently available in the environment via `$GIT_BRANCHES` (please [inspect raw markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/main/docs/getting-started/runbyexample.md)). Only cells named with uppercase letters and separated by underscores (min length is 3) are exported as environment variables:
 
 The convention is simple e.g.:
 
