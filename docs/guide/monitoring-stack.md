@@ -287,9 +287,6 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Step Two: Run Alertmanager as a Service
-Now, you can run your Alertmanager as a service. To do this, navigate to the “[Run Alert as a Service](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md#run-alert-manager-as-a-service)” section, enter the command in your Runme cell, and run it.
-
 - Step Two: Run Alert Manager as a Service
 
 Now, you can run your alert manager as a service. To do this, run the command below
