@@ -6,30 +6,56 @@ runme:
 
 # Deploying and Managing Applications with Runme and Argo CD
 
-In today's fast-paced tech environment, staying ahead with efficient deployment practices is crucial. Kubernetes has become a staple for managing modern infrastructure, offering flexibility and scalability. Yet, managing Kubernetes clusters and ensuring consistent, reliable deployments present ongoing challenges.
+When it comes to managing documentation instructions and automating processes, Runme provides a platform that makes it easy and highly interactive to complete step-by-step instructions and handle automated tasks like software deployments, backup processes, etc.
 
-Introducing Argo CD and Runme—two cutting-edge tools reshaping deployment processes. Argo CD automates deployments from Git repositories to Kubernetes clusters, following GitOps principles. Meanwhile, Runme takes documentation to new heights, enabling the execution of actionable steps directly from the docs.
+With Runme, you can create detailed, step-by-step guides that document the procedures necessary to manage applications and execute them directly from your Markdown documentation.
 
-Our guide focuses on leveraging Argo CD and maximizing Runme's potential synergistically. We explore how this duo enhances efficiency and streamlines deployment workflows. From setup to advanced strategies, we equip users with the skills needed to optimize deployment practices. Whether you're a seasoned DevOps pro or a Kubernetes newbie, this guide is your go-to resource for achieving operational excellence.
+By integrating the features of Runme with [Argo CD](https://argo-cd.readthedocs.io/), you can automate and manage your software deployments more effectively. Argo CD automates deployments from Git repositories to Kubernetes clusters, following GitOps principles. At the same time, Runme enables you to execute actionable steps directly from your Markdown file.
+
+In this guide, we will show you how to set up Argo CD and Runme to work together. We will also walk you through creating your first Runbook and explain how to use these tools to make software deployments easier and error-free.
 
 ## **Prerequisites**
 
 To follow up on this tutorial, ensure you have the following:
 
-- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
-- **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md).
-- Insatll [brew](https://brew.sh/)
-- **`kubectl`** installed for interacting with the Kubernetes cluster
-- Git installed for version control
+### 1. Basic Requirement
+
 - Basic familiarity with YAML and Kubernetes resource definitions
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+
+### 2. Clone Our Repository
+
+- **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/tree/main/cloud-native).
+
+```sh {"id":"01HXY9TQPN2Y664537HNZR54E3"}
+git clone https://github.com/stateful/blog-examples/tree/main/cloud-native
+```
+
+### 3. Installation
+
+```json {"id":"01HXY9Y0NJYGMY89JWYJRW1AQC"}
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
+brew install kind
+brew install docker
+kind create cluster --name my-cluster
+kubectl cluster-info — context kind-my-cluster
+```
+
+The command above installs `brew` and `git,` creates a local Kubernetes Cluster using [kind](https://kind.sigs.k8s.io/), and checks whether the cluster is running and healthy.
+
+<aside>
+💡 For your kind cluster to run, you need to have docker running.
+
+</aside>
 
 ## **Set Up Git Repository Structure**
 
-Setting up a structured Git repository is crucial for Argo CD as it serves as the single source of truth, enabling granular control, simplified collaboration, and automated synchronization. A well-organized repository streamlines management, promotes scalability, and ensures maintainability of deployments, enhancing overall efficiency and reliability.
+The first step is to set up a structured Git repository for Argo CD. This will make it easier to manage everything since all the folders will be in one directory. Below is a visual representation of our repository folder tree.
 
 Repository folder tree:
 
-```ini
+```ini {"id":"01HXY9RR9MR7B9NFY6N0B3G5Z6"}
 argocd/
 ├── app-projects/          # Stores Argo CD Application Projects YAML files
 ├── applications/          # Stores Argo CD Application YAML files
@@ -41,11 +67,11 @@ argocd/
 
 ## **Create App Configuration and Project Settings**
 
-The  **`values-override.yaml`** YAML file contains configuration settings that specifies server configuration, additional applications to deploy, additional projects within Argo CD, and their respective settings such as namespaces, sync policies, and cluster resource whitelists.
+Next, the `values-override.yaml` YAML file created above should contain configuration settings that specify server configuration, additional applications to deploy, additional projects within Argo CD, and their respective settings.
 
-click run in this section and it will update `installation/values-override.yaml` file with your present configuration
+In your Runme cell, enter the command below and click run. This will update `installation/values-override.yaml` file with your specified configuration.
 
-```sh
+```sh {"id":"01HXY9RR9MR7B9NFY6N13J19BC"}
 cat << EOF > installation/values-override.yaml
 server:
   configEnabled: true
@@ -128,11 +154,20 @@ server:
 EOF
 ```
 
+This configuration should be pushed to a Git repository.
+
+<aside>
+💡 Feel free to change the url and  repoURL to any of your choice.
+
+</aside>
+
 ## **Install Argo CD Using Helm**
 
-We are ready to install. Run the helm install command.
+In the previous section, we set up configurations for Argo CD applications and projects and defined their behavior within a Kubernetes environment.
 
-```sh
+Now, we will install Argo CD using Helm. To do this, run the `helm install` command below to install Argo CD:
+
+```sh {"id":"01HXY9RR9MR7B9NFY6N4MYWKD6"}
 helm install argocd ./installation/argo-cd \
    --namespace=argocd \
    --create-namespace \
@@ -141,15 +176,15 @@ helm install argocd ./installation/argo-cd \
 
 Wait until all pods are running.
 
-```sh
+```sh {"id":"01HXY9RR9MR7B9NFY6N5NW1B27"}
 kubectl -n argocd get pods
 ```
 
 ![pod-image](../../static/img/guide-page/agrocd-pod.png)
 
-Get the initial admin password.
+Next, get the initial admin password. To do this, execute the command below:
 
-```sh
+```sh {"id":"01HXY9RR9MR7B9NFY6N63SPRMN"}
 kubectl -n argocd get secrets argocd-initial-admin-secret \
     -o jsonpath='{.data.password}' | base64 -d
 ```
@@ -158,30 +193,34 @@ kubectl -n argocd get secrets argocd-initial-admin-secret \
 
 Forward the port 80 of the argocd-server service to localhost:7070 using kubectl.
 
-```sh {"background":"true"}
+```sh {"background":"true","id":"01HXY9RR9NVCDREB3STEBAW78S"}
 kubectl -n argocd port-forward service/argocd-server 7070:80
 ```
+With Runme’s background process feature, you can run your code cells as a [background task](../getting-started/features#background-task). This will allow you to execute other tasks within the runbook without waiting for the initial task to complete.
 
 ![port- forwarding](../../static/img/guide-page/agrocd-portforwarding.png)
 
-With runme background process feature, you can run your code cells as a [background task](../getting-started/features#background-task)
 
-![background mode](../../static/img/runme-background.png)
 
 After executing the port-forward command, you'll be able to access the Argo CD web interface locally by browsing http://localhost:7070.
 
-```sh
+```sh {"id":"01HXY9RR9NVCDREB3STES78KCN"}
 open https://localhost:7070
 ```
 
-Log in using the initial admin password. Upon login, you'll notice the three applications defined in the `values-override.yaml` file are ready for deployment. Although the "argocd" application may initially appear out of sync due to differing templating parameters, you can resolve this by clicking the "Sync" button and waiting for it to turn green.
+Now, you need to log in using the initial admin password. After login, you will notice the three applications defined in the `values-override.yaml` file are ready for deployment.
+
+Although the "argocd" application may initially appear out of sync due to differing templating parameters, you can resolve this by clicking the "**Sync**" button and waiting for it to turn green.
 
 ### To Deploy an Application Project to Argo CD
 
-- Define the project configuration, specifying cluster resource access, destinations, and source repositories in a YAML file.
-- Add, commit, and push the YAML file to your Git repository to trigger Argo CD's synchronization process.
+In this section, we will use a demo project to explain how to deploy an application to Argo CD using Runme. To do this, follow the steps below:
 
-```sh
+**Step One**: The first step is to define the project configuration by specifying cluster resource access, destinations, and source repositories in a YAML file.
+
+**Step Two**: Add, commit, and push the YAML file to your Git repository to trigger Argo CD's synchronization process.
+
+```sh {"id":"01HXY9RR9NVCDREB3STHAA23PB"}
 cat << EOF >> argocd-apps/sample-app.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -206,34 +245,40 @@ spec:
 EOF
 ```
 
-- Argo CD continuously monitors the repository for changes and automatically reconciles the project configuration.
-- Once detected, Argo CD applies the updated project configuration, allowing seamless management of applications within the specified project.
+<aside>
+💡 Change the `repoURL` to any GitHub repo of your choice.
 
-Argo CD and CI/CD are vital components in modern software development. Argo CD automates application deployment and management in Kubernetes, ensuring consistency with desired states defined in Git repositories. CI/CD automates code integration, testing, and deployment, accelerating delivery while maintaining quality. Together, they enable rapid, reliable deployment cycles and foster collaboration between development and operations teams, ultimately delivering value to end-users efficiently
+</aside>
+
+**Step Three:** After carrying out steps one and two, Argo CD continuously monitors the repository for changes and automatically reconciles the project configuration.
+
+**Step Four**: If any change is detected, Argo CD applies the updated project configuration, allowing seamless application management within the specified project.
 
 ## Cleanup
 
-Uninstall argo-cd helm deployment.
+After successfully deploying your application to Argo CD, you can clean up. In cleaning up, you are to remove application and application project definition files in the git repository sample-app.yaml and sample-project.yaml . Here are some steps to achieve this:
 
-```sh
+Step One: Uninstall argo-cd helm deployment.
+
+```sh {"id":"01HXY9RR9NVCDREB3STKQVTHAW"}
 helm uninstall argocd
 ```
 
-Wait until all resources are deleted in argocd namespace.
+Step Two: Wait until all resources are deleted in argocd namespace and run the command below to verify.
 
-```sh
+```sh {"id":"01HXY9RR9NVCDREB3STMN1CPYE"}
 kubectl -n argocd get pods
 ```
 
-Delete `argocd` namespaces.
+Step Three: Delete `argocd` namespaces.
 
-```sh {"language":"sh"}
+```sh {"id":"01HXY9RR9NVCDREB3STQJ9Y2PW","language":"sh"}
 kubectl delete ns argocd
 
 ```
 
-Delete kind cluster.
+Step Four: Delete kind cluster.
 
-```sh {"language":"sh"}
+```sh {"id":"01HXY9RR9NVCDREB3STRV2TAHD","language":"sh"}
 kind delete cluster --name my-cluster
 ```
