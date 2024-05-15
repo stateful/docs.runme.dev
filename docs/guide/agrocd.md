@@ -18,12 +18,12 @@ In this guide, we will show you how to set up Argo CD and Runme to work together
 
 To follow up on this tutorial, ensure you have the following:
 
-### 1. Basic Requirement
+1. Basic Requirement
 
 - Basic familiarity with YAML and Kubernetes resource definitions
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-### 2. Clone Our Repository
+2. Clone Our Repository
 
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/tree/main/cloud-native).
 
@@ -31,7 +31,7 @@ To follow up on this tutorial, ensure you have the following:
 git clone https://github.com/stateful/blog-examples/tree/main/cloud-native
 ```
 
-### 3. Installation
+3. Installation
 
 ```json {"id":"01HXY9Y0NJYGMY89JWYJRW1AQC"}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
