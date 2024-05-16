@@ -1,7 +1,4 @@
 ---
-runme:
-  id: 01HX525D9D1E2MMYPTCZ6H9QF9
-  version: v3
 sidebar_position: 3
 ---
 
