@@ -41,7 +41,7 @@ Let's quickly run through Runme's top features. 🚨 Please be absolutely sure t
 
 ![Runme in VS Code](/img/doc-in-vscode.png)
 
-### **Make Docs Generic Using Prompts**
+### **Generic Docs Using Prompts**
 
 Write generic docs and notebooks using Runme's smart prompting. This is useful when you want to platform others. Per default, exported environment variables will trigger prompts for users to input values. If the export is declared without any quotes, Runme will prompt with the value as a message. With quoted values (no matter if single or double quotes), Runme will prompt with the value as a placeholder value for confirmation.
 
