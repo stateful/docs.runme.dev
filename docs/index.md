@@ -16,13 +16,13 @@ If you are of the kind who likes to jump in head first. Below is a quick start g
 
 ## **MacOS**
 
-```sh
+```sh {"id":"01HY0SZCMGA291TVE2R1QKNVX4"}
 $ brew install runme && runme open
 ```
 
 ## **Linux & Windows**
 
-```sh
+```sh {"id":"01HY0SZCMGA291TVE2R40BDNJ9"}
 $ npx runme open
 ```
 

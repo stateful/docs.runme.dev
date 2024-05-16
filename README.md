@@ -62,10 +62,16 @@ npm run build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+### Upgrade dependencies
+
+```sh {"id":"01HY0WFKM0C6QHVG0DF42AFZMM","name":"upgrade"}
+npm i @docusaurus/core@latest @docusaurus/plugin-pwa@latest @docusaurus/preset-classic@latest @docusaurus/module-type-aliases@latest @docusaurus/types@latest
+```
+
 ### Serve locally
 
-```sh {"id":"01HTMQZMYX58ZX7PK297YNYZ36","name":"serve"}
-cd build; python -m http.server 9000
+```sh {"background":"true","id":"01HTMQZMYX58ZX7PK297YNYZ36","name":"serve"}
+cd build; python3 -m http.server 9000
 ```
 
 ### Deployment
