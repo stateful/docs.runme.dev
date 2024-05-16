@@ -8,7 +8,7 @@ title: Home
 
 # **Quick Start ⚡️**
 
-### Welcome to ▶️ Runme's docs. Thanks for stopping by!
+### Welcome to ▶️ Runme's docs
 
 Runme makes markdown actually runnable. Runme achieves this by seamlessly loading markdown into a notebook interface which makes it much easier to complete step-by-step instructions. Let's jump right in!
 
