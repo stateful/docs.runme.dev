@@ -37,7 +37,7 @@ npx runme open
 
 ## **Runme by Example**
 
-Let's quickly run through Runme's top features.
+Let's quickly run through examples that best illustrate how Runme can unleash your docs and make them much more useful for everybody.
 
 > 🚨 Please be absolutely sure that you have cloned into the repository and opened the `docs/index.md` file in the notebook UI inside VS Code. Otherwise you will not be able to - literally - run the next steps.
 
