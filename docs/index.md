@@ -110,7 +110,9 @@ echo "\n$(echo -n $FILE_LIST | sort | uniq -c)"
 
 ## **Seamlessly Fits into DevOps Stack**
 
-Lock and distribute read-made [Devcontainers](https://docs.runme.dev/guide/devcontainer) to lock dependencies and configuration to make workflows reproducible. Runme is a perfect fit for DevOps workflows. Run notebooks against [SSH jumphosts](https://docs.runme.dev/how-runme-works/runme-via-ssh#vs-code-remote-development) or inside of popular Cloud Development Environments like GitHub Codespaces, Google IDX & Cloud Editor, Gitpod, or run as self-hosted [webapp](https://docs.runme.dev/how-runme-works/web) anywhere.
+Distribute ready-made [Devcontainers](https://docs.runme.dev/guide/devcontainer) to lock dependencies and configuration to make workflows reproducible. Runme is a perfect fit for DevOps workflows. Run docs and notebooks against [SSH jumphosts](https://docs.runme.dev/how-runme-works/runme-via-ssh#vs-code-remote-development) or inside of popular Cloud Development Environments like GitHub Codespaces, Google IDX & Cloud Editor, Gitpod, or run as self-hosted [webapp](https://docs.runme.dev/how-runme-works/web) anywhere.
+
+And so much [more](https://docs.runme.dev/getting-started/).
 
 <br />
 <Infobox type="sidenote" title="Keep going!">
