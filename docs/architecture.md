@@ -2,7 +2,7 @@
 runme:
   id: 01HX525D99NZJ6YPEFFMPYFVR4
   version: v3
-sidebar_position: 7
+sidebar_position: 10
 title: Kernel Architecture
 ---
 

@@ -2,7 +2,7 @@
 runme:
   id: 01HX525D9R8HR6G41SQMG974PZ
   version: v3
-sidebar_position: 4
+sidebar_position: 6
 title: Integrations
 ---
 

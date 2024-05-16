@@ -8,89 +8,113 @@ title: Home
 
 # **Quick Start ⚡️**
 
-Welcome to ▶️ Runme's docs. Thanks for stopping by.
+### Welcome to ▶️ Runme's docs. Thanks for stopping by!
 
-If you are of the kind who likes to jump in head first. Below is a quick start guide to launch into Runme's self-hosted web UX.
+Runme makes markdown actually runnable, by loading it into a notebook interface which makes it much easier to complete step-by-step instructions. Let's jump right in!
 
-> 💡 If you are a VS Code user, skip ahead to [Runme for VS Code](https://docs.runme.dev/installation/installrunme).
+> 💡 This document is a self-contained notebook which will guide you through Runme's key features. If you have *VS Code* installed locally, you can open this document in Runme by clicking the *"Open with Runme"* badge on **[docs.runme.dev](https://docs.runme.dev/)** which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
 
-## **MacOS**
+## **Clone the Repository**
 
-```sh {"id":"01HY0SZCMGA291TVE2R1QKNVX4"}
-$ brew install runme && runme open
+```sh {"id":"01HY0Y62WJCT2BVD5VA2HZ32TG"}
+git clone --depth=1 https://github.com/stateful/docs.runme.dev.git
+cd docs.runme.dev
 ```
 
-## **Linux & Windows**
+Unless you already have VS Code installed locally, go ahead and install the Runme CLI. Otherwise skip to the next paragraph please.
 
-```sh {"id":"01HY0SZCMGA291TVE2R40BDNJ9"}
-$ npx runme open
+### **MacOS**
+
+```sh {"cwd":"docs.runme.dev","id":"01HY0SZCMGA291TVE2R1QKNVX4"}
+brew install runme && runme open
 ```
 
-Make sure to confirm the prompts and you should be dropped into the Runme web interface at `http://127.0.0.1:8080`. Go ahead and open any abitrary Markdown document as notebook or open the terminal to test-drive the `runme` CLI. While the UI might remind you of VS Code, it's a self-hosted web app. More information please see [Runme for Web](https://docs.runme.dev/how-runme-works/web).
+### **Linux & Windows**
 
-![Runme for Web](../static/img/runme-web.png)
+```sh {"cwd":"docs.runme.dev","id":"01HY0SZCMGA291TVE2R40BDNJ9"}
+npx runme open
+```
+
+## **Runme by Example**
+
+Let's quickly run through examples that best illustrate how Runme can unleash your docs and make them much more useful for everybody.
+
+> 🚨 Please be absolutely sure that you have cloned into the repository and opened the `docs/index.md` file in the notebook UI inside VS Code. Otherwise you will not be able to - literally - run the next steps.
+
+<br/>
+
+After clicking the *"Open with Runme"* badge or cloning into the repo what you see should resemble following screenshot.
+
+![Runme in VS Code](/img/doc-in-vscode.png)
+
+## **Generic Docs Using Prompts**
+
+Write generic docs and notebooks using Runme's smart prompting. This is useful when you want to platform others. Per default, exported environment variables will trigger prompts for users to input values. If the export is declared without any quotes, Runme will prompt with the value as a message. With quoted values (no matter if single or double quotes), Runme will prompt with the value as a placeholder value for confirmation.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="videos/prompting.mp4" type="video/mp4" />
+  <source src="../static/videos/prompting.mp4" type="video/mp4" />
+  <source src="videos/prompting.webm" type="video/webm" />
+  <source src="../static/videos/prompting.webm" type="video/webm" />
+</video>
+<br/>
+
+Runme's prompting default is *"auto"*. It will not prompt again on re-runs if values are already known. Click *"Configure"* on the cell, to switch **promptEnv** to **no** (never prompt; run as is) or **yes** (always prompt; overwrite previous values). Try it yourself... just click the play button.
+
+```sh {"id":"01HY0Z7HSFFV7KHPX559SNVSHN","terminalRows":"4"}
+export PROJECT_NAME=[Enter your project id]
+echo "PROJECT_NAME set to $PROJECT_NAME"
+
+export CLUSTER_ZONE="us-central1-c"
+echo "CLUSTER_ZONE set to $CLUSTER_ZONE"
+```
+
+You can reset all environment variables using the **Reset Session** button in the top bar or choose *"Execute and always prompt for input"* from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
+
+## **Piping and Referencing Cells**
+
+Runme, unlike [Jupyter](https://jupyter.org/), does not allow block-scope variable sharing. This means that variables declared in one cell are not per se available in another cell. However, Runme is aware of environment variables. As seen above, `export` variable declarations ulitmately will be stored in the environment.
+
+Outside of that, you can reference cells in two ways. This is particularly useful when different languages (Bash/Shell, Python, Ruby, PHP, etc.) are used in different cells.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="videos/referencing.mp4" type="video/mp4" />
+  <source src="../static/videos/referencing.mp4" type="video/mp4" />
+  <source src="videos/referencing.webm" type="video/webm" />
+  <source src="../static/videos/referencing.webm" type="video/webm" />
+</video>
+<br/>
+
+### **1. Reference Last Cell Output**
+
+The most recent cell output will be stored in a special environment variable called `__` (double underscore).
+
+```sh {"id":"01HY18GGPG1C8KT40T8D41885F","name":"FILE_LIST"}
+ls *.md | head -n 5
+```
+
+This is useful when you want to reference the output of the last cell. When `$__` is reference the cells have to be executed back-to-back.
+
+```sh {"id":"01HY192SQK8VCQ9DXX2KGR249N"}
+echo -n "Previous cell's output was:\n\n$__"
+```
+
+### **2. Reference by Cell Name**
+
+Notice how the cell above is named `FILE_LIST` (visible in notebook UI & [raw markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/main/docs/index.md)). This allows you to reference the output of that cell by using the cell name as an environment variable. This makes reference outputs more robust since they no longer have to run back-to-back. However, sequence still matters. The referenced cells has to run first.
+
+```sh {"id":"01HY18W7RX74HFNZSBNYB9SEFR"}
+echo "Reference a cell via the ENV using its name \"\$FILE_LIST\":"
+echo "\n$(echo -n $FILE_LIST | sort | uniq -c)"
+```
+
+## **Seamlessly Fits into DevOps Stack**
+
+Lock and distribute read-made [Devcontainers](https://docs.runme.dev/guide/devcontainer) to lock dependencies and configuration to make workflows reproducible. Runme is a perfect fit for DevOps workflows. Run notebooks against [SSH jumphosts](https://docs.runme.dev/how-runme-works/runme-via-ssh#vs-code-remote-development) or inside of popular Cloud Development Environments like GitHub Codespaces, Google IDX & Cloud Editor, Gitpod, or run as self-hosted [webapp](https://docs.runme.dev/how-runme-works/web) anywhere.
 
 <br />
 <Infobox type="sidenote" title="Keep going!">
 
-Learn more about Runme and what problems it solves for you.
-
-</Infobox>
-
-## **Why Runme?**
-
-Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
-
-## **DevOps Workflows Built With Markdown** 🤝
-
-Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors, on the other hand, can define reliable paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
-
-In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells' output into successive cells.
-
-<video autoPlay loop muted playsInline controls>
-  <source src="/videos/Key-feature-v2.mp4" type="video/mp4" />
-  <source src="/videos/Key-feature-v2.webm" type="video/webm" />
-</video>
-
-<br />
-<Infobox type="sidenote" title="Try it now">
-
-Learn how to install Runme and [get started](https://docs.runme.dev/getting-started/runbyexample).
-
-</Infobox>
-
-## **What is Runme?**
-
-Runme enables you to execute interactive runbooks using Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
-
-We have designed a comprehensive set of tools and configurations that are 100% compatible with CommonMark, the standard for Markdown. Through this, your integration with Runme does not interfere with your existing Markdown documentation or tooling.
-
-Alongside, we provide interfaces for terminal, editor, and notebooks all attached to a kernel, making them interoperable. While these interfaces share core features, each interface excels in different use cases.
-
-> 💡 Runme is like Jupyter but with a Shell/Bash Kernel and lightweight dependencies.
-
-## **Usability**
-
-Runme runs everywhere, irrespective of the environment: a local laptop, a VM, a Devcontainer, Cloud Development Environment, or attached to a remote host via SSH:
-
-- Split loose scripts into runbooks with separate cells, intermediate outputs, and controls to check before moving on.
-- Get ahead of bit-rot and reverse-engineering runbooks executing them directly from Markdown inside your project's repo.
-- Increase the shareability of runbooks by decoupling them from personal _dotfiles_ or _bash_history's_ without getting in the way.
-- Codify golden paths without overly restricting the flexibility of "scripting".
-
-Learn more about Runme's [Kernel Architecture](https://docs.runme.dev/architecture) to understand what powers Runme's portability.
-
-## **Known Limitations**
-
-- Runme currently only has rudimentary support for PowerShell. While PowerShell is not limited to Windows, it is its primary platform. We recommend using [WSL](https://code.visualstudio.com/docs/remote/wsl).
-- Please [report any issues](https://github.com/stateful/runme/issues/new) you encounter, big or small, to help us make Runme better.
-
-### **Communication & Support**
-
-Need assistance in getting started? Get in touch with members of our team via [Discord](https://discord.gg/runme) and get answers to your questions and all the necessary details to get you started with Runme.
-
-<Infobox type="sidenote" title="Join Runme community!">
-
-Make sure to [get in touch](https://discord.gg/runme) with us if you are missing a feature or have other ideas.
+Learn more about Runme and what problems it [solves for you](/why).
 
 </Infobox>
