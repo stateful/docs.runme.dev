@@ -2,7 +2,7 @@
 runme:
   id: 01HMXW1YSWS6A62VJ0CQPD38C9
   version: v3
-sidebar_position: 2
+sidebar_position: 3
 title: Installation
 ---
 
