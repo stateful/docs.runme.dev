@@ -7,7 +7,7 @@ title: Why Runme?
 
 Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. Runme is Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface. Its design makes Runme an excellent solution for runbooks, playbooks, and documentation (in a "literate environment" as notebook) which require users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
 
-## **DevOps Workflows Built With Markdown** 🤝
+## **DevOps Workflows That Run Reliably** 👩‍💻
 
 Using notebook-based technology in a "literate environment" (interleave words and code unlocking their respective strength), users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors, on the other hand, can define reliable paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
 
