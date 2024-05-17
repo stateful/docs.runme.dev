@@ -5,17 +5,19 @@ title: Why Runme?
 
 # **Why Runme?**
 
-Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. This makes it an excellent solution for runbooks, playbooks, and documentation that requires users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
+Runme makes runbooks actually runnable, making it easy to complete step-by-step instructions. Runme is Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface. Its design makes Runme an excellent solution for runbooks, playbooks, and documentation (in a "literate environment" as notebook) which require users to complete runnable steps incrementally—making operational docs reliable and less likely to become outdated.
 
 ## **DevOps Workflows Built With Markdown** 🤝
 
-Using notebook-based technology, users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors, on the other hand, can define reliable paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
+Using notebook-based technology in a "literate environment" (interleave words and code unlocking their respective strength), users can execute instructions, check intermediate results, and ensure the desired outputs match expectations to complete the steps confidently. Authors, on the other hand, can define reliable paths for operational tasks, steps it takes to diagnose problems, or remedies to resolve problems and effectively share them with teammates.
 
-In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to pipe previous cells' output into successive cells.
+In a nutshell, Runme combines the guardrails of a pipeline with the flexibility of scripting, where users can check intermediary results before moving on. Much like a terminal session, environment variables are retained across execution, and it is possible to reference previous cell outputs in subsequent cells.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/Key-feature-v2.mp4" type="video/mp4" />
+  <source src="../static/videos/Key-feature-v2.mp4" type="video/mp4" />
   <source src="/videos/Key-feature-v2.webm" type="video/webm" />
+  <source src="../static/videos/Key-feature-v2.webm" type="video/webm" />
 </video>
 
 <br />
@@ -27,7 +29,7 @@ Learn how to install Runme and [get started](https://docs.runme.dev/getting-star
 
 ## **What is Runme?**
 
-Runme enables you to execute interactive runbooks using Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
+Runme is Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface. Runme enables you to execute interactive notebook built with Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
 
 We have designed a comprehensive set of tools and configurations that are 100% compatible with CommonMark, the standard for Markdown. Through this, your integration with Runme does not interfere with your existing Markdown documentation or tooling.
 
