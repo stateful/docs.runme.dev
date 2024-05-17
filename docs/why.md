@@ -14,7 +14,7 @@ Runme is 100% markdown compatible, open source licensed under Apache 2.0, and co
 - Markdown which is already ubiquitous for documentation
 - Devcontainers for reproducible development environments using existing container supply chains
 - Webcomponents for notebook renderers for integrated terminals, cloud resources, and human-friendly display of various media types (csv, images, etc.)
-- Built on the VS Code platform to run everywhere including VS Code, Codespaces, Gitpod, Google IDX & Cloud Editor, etc
+- Built on the VS Code platform to run everywhere including VS Code, CDEs (Codespaces, Gitpod, Google IDX & Cloud Editor), and SSH jumphosts
 - OpenTelemetry to emit traces into your existing observability stack
 
 ## **DevOps Workflows That Run Reliably** 👩‍💻
