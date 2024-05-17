@@ -73,7 +73,7 @@ You can reset all environment variables using the **Reset Session** button in th
 
 ## **Piping and Referencing Cells**
 
-Runme, unlike [Jupyter](https://jupyter.org/), does not allow block-scope variable sharing. This means that variables declared in one cell are not per se available in another cell. However, Runme is aware of environment variables. As seen above, `export` variable declarations ulitmately will be stored in the environment.
+Runme, unlike [Jupyter](https://jupyter.org/), does not allow block-scope variables and functions sharing. This means that variables declared in one cell are not per se available in another cell. However, Runme is aware of environment variables. As seen above, `export` variable declarations ulitmately will be stored in the environment.
 
 Outside of that, you can reference cells in two ways. This is particularly useful when different languages (Bash/Shell, Python, Ruby, PHP, etc.) are used in different cells.
 
