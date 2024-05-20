@@ -33,6 +33,10 @@ brew install docker
 brew install helm
 ```
 
+```sh {"id":"01HY2PQM3VEJ00ZY1K42794MSK"}
+kind create cluster --name my-runme-cluster
+```
+
 Using the Runme [cell section](../configuration/cellsection) feature you can run the entire subheading at a go.
 
 Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md) for this guide.
@@ -57,12 +61,11 @@ This command lists all releases managed by Helm in the current Kubernetes cluste
 helm repo update
 ```
 
-This command updates the local cache of Helm chart repositories. 
+This command updates the local cache of Helm chart repositories.
 
 ```sh {"id":"01HY2NCAXFYX82NJ1MH328KHZV"}
 helm history ingress-nginx
 ```
-
 
 This command displays the release history for a specific Helm release named `ingress-nginx`. You can check out the release history for any Helm release. Simply change `ingress-nginx` to the release of your choice.
 
@@ -91,7 +94,7 @@ The code block below installs the Kubernetes Ingress controller and checks the s
 helm install ingress-nginx ingress-nginx/ingress-nginx
 ```
 
-Check the status of helm chart 
+Check the status of helm chart
 
 ```sh {"id":"01HY2NG053CNSCHX67K4JKFE5A"}
 helm status ingress-nginx 
@@ -183,7 +186,7 @@ To install the Helm plugin named “helm-secrets” from the GitHub repository a
 helm plugin install https://github.com/jkroepke/helm-secrets --version v4.6.0
 ```
 
-To encrypt sensitive information within the secrets.yaml file, run the command below: 
+To encrypt sensitive information within the secrets.yaml file, run the command below:
 
 ```sh {"id":"01HY2NZBQ79YR2YW2CJ7XQ6C7E"}
 helm secrets encrypt secrets.yaml > sops-secrets.yaml
