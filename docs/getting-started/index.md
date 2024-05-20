@@ -13,13 +13,15 @@ It enables users to execute interactive runbooks using Markdown. It also incorpo
 
 ## **Installation**
 
-Runme can be installed using VS Code, Docker, or your CLI. To start installing Runme for your machine, proceed to our installation page.
+Runme can be installed using VS Code, Docker, or your CLI. To start installing Runme for your machine, proceed to our [installation page](https://docs.runme.dev/installation/).
 
 ## **UI Overview**
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-uioverview.mp4" type="video/mp4" />
+  <source src="../../static/videos/runme-uioverview.mp4" type="video/mp4" />
   <source src="/videos/runme-uioverview.webm" type="video/webm" />
+  <source src="../../static/videos/runme-uioverview.webm" type="video/webm" />
 </video>
 
 ## **Integration with Other tools**
@@ -29,15 +31,15 @@ To learn more about Runme’s integration with other tools, see our integration 
 
 ## **Support**
 
-Do you need assistance in getting started? Get in touch with our support team to provide answers to your questions and give you information on all the necessary details you need to enjoy working with Runme.
+Do you need assistance in getting started? Get in touch with us [on Discord](https://discord.gg/runme) to provide answers to your questions and give you information on all the necessary details you need to enjoy working with Runme.
 
 ## **Next Steps**
 
 Thank you for choosing Runme!
 We are sure that you will enjoy every bit of action you perform with Runme.
 To further your knowledge about Runme you can check out:
-Our full documentation
-Our Blogs
-Our Guides
-Our Tutorials
+
+- Our [full documentation](https://docs.runme.dev/how-runme-works/)
+- Our [Blogs](https://blog.runme.dev/blog)
+- Our [Guides](https://docs.runme.dev/guide/)
 
