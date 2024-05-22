@@ -22,13 +22,13 @@ In this [example](https://github.com/stateful/vscode-runme/blob/main/examples/sh
 
 **Step 3**: Enter the command below in your Runme cell.
 
-```sh
+```sh {"id":"01HYG3ZZGY9C5VW5D8TRPAQ4GB"}
 python3 -m venv .venv
 source.venv/bin/activate
 pip3 install docker prettyatble
 ```
 
-![Python virtual environment ](../../static/img/guide-page/python-env.jpg)
+![Python virtual environment ](../../../static/img/guide-page/python-env.jpg)
 
 The command above creates a new Python virtual environment named .venv in the current directory, activates the virtual environment, and installs Python packages docker and prettytable using the pip package manager. (Feel free to install any package of your choice).
 

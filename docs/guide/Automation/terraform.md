@@ -74,7 +74,7 @@ To begin, first create a `.md` file within your project directory. With Runme in
 
 In your Markdown file, creating a code block to execute your command.
 
-![start terraform code](../../static/img/guide-page/runm-terraform-code.png)
+![start terraform code](../../../static/img/guide-page/runm-terraform-code.png)
 
 Add your code to initialize Terraform
 
@@ -84,7 +84,7 @@ terraform init
 
 Run the above  command to initialize your Terraform configuration
 
-![terraform init](../../static/img/terraform-init.png)
+![terraform init](../../../static/img/terraform-init.png)
 
 This command initializes your working directory and downloads the necessary providers.
 
@@ -98,7 +98,7 @@ terraform plan
 
 You should get a similar output:
 
-![terraform plan](../../static/img/terraform-plan.png)
+![terraform plan](../../../static/img/terraform-plan.png)
 
 Once this is thoroughly checked for errors or misconfiguration, you can apply the changes to create the EC2 instance.
 
@@ -108,7 +108,7 @@ terraform apply
 
 Output:
 
-![terraform](../../static/img/terraform-apply.png)
+![terraform](../../../static/img/terraform-apply.png)
 
 Terraform will prompt you to confirm the changes. Type `yes` and press Enter. Once the apply process is complete, you can go to the AWS Management Console to verify that your EC2 instance has been created.
 
@@ -118,7 +118,7 @@ Runme allows you to save your output throughout your deployment process.  Whethe
 This saved output is automatically stored in a new file which is created by default, so you can easily reference it at any time.
 To use this feature, just toggle the "Autosave" option at the top of your code editor in your Markdown file to turn “on” or “off”. It's that simple!
 
-![auto save](../../static/img/guide-page/runme-autosave.png)
+![auto save](../../../static/img/guide-page/runme-autosave.png)
 
 Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save](../configuration/auto-save.md) feature for more information.
 
@@ -136,7 +136,7 @@ This command will prompt you to confirm the destruction of resources. Type `yes`
 
 Within your code cell you can set the directory structure of where you want your executable command to be initiated from
 
-![terraform structure](../../static/img/terraform-structure.png)
+![terraform structure](../../../static/img/terraform-structure.png)
 
 - Create workspace for production and staging:
 

@@ -48,11 +48,11 @@ sudo nano /etc/systemd/system/node_exporter.service
 
 When the command is executed successfully, this is what you will see in your Runme terminal.
 
-![install node exporter](../../static/img/guide-page/runme-install-exporter.png)
+![install node exporter](../../../static/img/guide-page/runme-install-exporter.png)
 
 Runme uses its [environment variable prompt feature](https://docs.runme.dev/getting-started/features#environment-variable-prompts) to prompt users to enter a value for the version and the platform. Runme will store these values, so you no longer need to enter them when working on this project.
 
-![env prompt for node exporter](../../static/img/guide-page/node-exporter-env-prompt.png)
+![env prompt for node exporter](../../../static/img/guide-page/node-exporter-env-prompt.png)
 
 ## Configure Your Node Exporter In Your Runbook
 
@@ -80,7 +80,7 @@ EOF
 
 Here is a visual representation of the command in a Runme cell and how it outputs when executed.
 
-![Node exporter service](../../static/img/guide-page/create-node-exporter-service.png)
+![Node exporter service](../../../static/img/guide-page/create-node-exporter-service.png)
 
 - Step Two: Run Node Exporter as a Service
 
@@ -105,7 +105,7 @@ sudo systemctl restart node_exporter
 
 Here is a visual representation of the command in your Runme cell and its output when executed successfully.
 
-![node exporter service](../../static/img/guide-page/runme-node-exporter-service.png)
+![node exporter service](../../../static/img/guide-page/runme-node-exporter-service.png)
 
 ## Install Prometheus
 
@@ -127,7 +127,7 @@ cp -r prometheus-${version}.linux-amd64/promtool ${PWD}/prometheus
 
 Here is a visual representation of the command in a Runme cell and the output when executed successfully.
 
-![Install prometheus](../../static/img/guide-page/install-promtheus.png)
+![Install prometheus](../../../static/img/guide-page/install-promtheus.png)
 
 Runme will leverage its environment prompt feature to prompt you to input the version of Prometheus you want to install. Once you input the version, you will have an output similar to the one above.
 
@@ -137,7 +137,7 @@ In the previous section, you installed Prometheus on your local machine. Now, yo
 
 Step One: Setup your Prometheus configuration
 
-Create a Prometheus configuration file that specifies how Prometheus should collect metrics from the Node Exporter. To create this Prometheus configuration file, run the commands below. 
+Create a Prometheus configuration file that specifies how Prometheus should collect metrics from the Node Exporter. To create this Prometheus configuration file, run the commands below.
 
 ```sh {"id":"01HXY82FRQB5GC3S9EZWX0VT68"}
 cat <<EOF > ${PWD}/prometheus/prometheus.yml
@@ -155,7 +155,7 @@ EOF
 
 This is a visual representation of the command in a Runme cell.
 
-![promtheus yaml file](../../static/img/guide-page/runme-promtheus-yaml-file.png)
+![promtheus yaml file](../../../static/img/guide-page/runme-promtheus-yaml-file.png)
 
 Step Two: Set up Prometheus as a service
 
@@ -177,7 +177,7 @@ EOF
 
 **Output**:
 
-![prometheus service](../../static/img/guide-page/create-promtheus-service.png)
+![prometheus service](../../../static/img/guide-page/create-promtheus-service.png)
 
 Step Three: Run Prometheus as a Service
 
@@ -201,7 +201,7 @@ sudo systemctl restart prometheus
 
 This is what this command and its output, when executed successfully, looks like in a Runme cell.
 
-![prometheus](../../static/img/guide-page/prometheus-service-runme.png)
+![prometheus](../../../static/img/guide-page/prometheus-service-runme.png)
 
 Step four: Open the app
 
@@ -216,17 +216,17 @@ open http://localhost:9090
 Grafana provides a user-friendly interface for visualizing and analyzing metrics, logs, and other monitoring data in your monitoring stack. To install Grafana for your monitoring stack, run the command below in your Runme cell.
 
 ```sh {"id":"01HXY8QJDCGYPWFS2ZC44S0JHW"}
-sudo apt-get install -y adduser libfontconfig1   
-wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.4.7_amd64.deb 
-sudo dpkg -i grafana-enterprise_9.4.7_amd64.deb 
-sudo apt-get install grafana 
+sudo apt-get install -y adduser libfontconfig1
+wget https://dl.grafana.com/enterprise/release/grafana-enterprise_9.4.7_amd64.deb
+sudo dpkg -i grafana-enterprise_9.4.7_amd64.deb
+sudo apt-get install grafana
 systemctl enable --now grafana-server
-systemctl restart grafana-server 
+systemctl restart grafana-server
 ```
 
 Here is a pictorial representation of the code in the Runme cell and the output in the Runme terminal when executed successfully.
 
-![Install Grafaba](../../static/img/guide-page/install-grafana-runme.png)
+![Install Grafaba](../../../static/img/guide-page/install-grafana-runme.png)
 
 Open the App:
 
