@@ -243,7 +243,7 @@ docker inspect $CONTAINER_ID
 
 Executing a command inside a Docker container means running a specific command within the container. This allows you to interact with the containerized environment without interactively entering the container.
 
-Runme makes this easy through the use of [environment variables prompts](../getting-started/features#environment-variable-prompts). Runme’s environment variable prompts allow you to input values directly within your notebook environment and store them easily.
+Runme makes this easy through the use of [environment variables prompts](../../getting-started/features#environment-variable-prompts). Runme’s environment variable prompts allow you to input values directly within your notebook environment and store them easily.
 
 To execute a command inside a container leveraging Runme’s environment variable prompt, run the command below:
 
@@ -296,7 +296,7 @@ docker rm $CONTAINER_ID_TEST
 
 Docker Compose is a tool for defining and running multi-container Docker applications. It uses YAML files to configure the application’s services and performs the creation and setup process for all the containers.
 
-For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](../configuration/cell-level#cells-current-working-directory) to the directory where the file exists and then run the docker-compose command.
+For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](../../configuration/cell-level#cells-current-working-directory) to the directory where the file exists and then run the docker-compose command.
 
 ![docker-compose](../../../static/img/guide-page/docker-compose.png)
 
@@ -313,8 +313,8 @@ In this guide, we covered the basics of running Docker commands in Runme.
 
 Runme has several features that make it a choice platform for integrating and using Docker. Some key features of Runme include
 
-- The [background mode](../getting-started/features#background-task) makes it possible to run commands in the background.
-- [Autosave feature](../configuration/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
+- The [background mode](../../getting-started/features#background-task) makes it possible to run commands in the background.
+- [Autosave feature](../../configuration/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
 - You can run your Markdown file by cells, an entire document, or sections.
 
 To explore more features of Runme and learn how they can be utilized in your workflows, visit our [documentation page](https://docs.runme.dev/).

@@ -37,7 +37,7 @@ brew install helm
 kind create cluster --name my-runme-cluster
 ```
 
-Using the Runme [cell section](../configuration/cellsection) feature you can run the entire subheading at a go.
+Using the Runme [cell section](../../configuration/cellsection) feature you can run the entire subheading at a go.
 
 Follow the instructions and commands in the above [notebook](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md) for this guide.
 
@@ -77,7 +77,7 @@ You can create your [helm chart](https://helm.sh/docs/intro/using_helm/#creating
 
 The repo adds a Kubernetes Ingress controller called `ingress-nginx` which helps manage external access to services within the Kubernetes cluster.
 
-Runme is dynamically set. You can run the entire markdown file using the [Run all](https://docs.runme.dev/configuration/document-level#run-all-button) feature. If you want to run just a particular [section](../configuration/cellsection), you can also do that, or run just a [single cell](../configuration/cell-level).
+Runme is dynamically set. You can run the entire markdown file using the [Run all](https://docs.runme.dev/configuration/document-level#run-all-button) feature. If you want to run just a particular [section](../../configuration/cellsection), you can also do that, or run just a [single cell](../configuration/cell-level).
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-section.mp4" type="video/mp4" />
@@ -110,7 +110,7 @@ Now, you have successfully installed it with your Runme terminal:tada:
 
 After installing your Helm packages, you can upgrade them. The `helm upgrade` command upgrades a release to a new version of a chart or applies changes to an existing release. Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI.
 
-With Runme, you can modify the [working directory](../configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
+With Runme, you can modify the [working directory](../../configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
 
 To upgrade the Ingress package installed earlier, run the command below:
 
@@ -196,4 +196,4 @@ This command encrypts the file secrets.yaml using the helm-secrets plugin and wr
 
 ![runme-plugins](../../../static/img/guide-page/runme-helm-plugins.png)
 
-In addition to creating a runbook to improve your documentation and automate repetitive tasks, Runme offers you an interactive environment to carry out these operations. Runme is power-packed with configuration tools to improve your process. Explore the [Runme configuration](../configuration) guide for configuration options.
+In addition to creating a runbook to improve your documentation and automate repetitive tasks, Runme offers you an interactive environment to carry out these operations. Runme is power-packed with configuration tools to improve your process. Explore the [Runme configuration](../../configuration) guide for configuration options.
