@@ -33,8 +33,22 @@ brew install docker
 brew install helm
 ```
 
+This code cell below deletes the cluster if it already existed.
+
+```sh {"id":"01HYG96SHB7J2MC94MVD7TV70S"}
+kind delete cluster --name helm-runme
+```
+
+We're using kind to create a Kubernetes cluster locally. The name of the Kubernetes cluster is `helm-runme`
+
 ```sh {"id":"01HY2PQM3VEJ00ZY1K42794MSK"}
-kind create cluster --name my-runme-cluster
+kind create cluster --name helm-runme
+```
+
+Check if your cluster is running 
+
+```sh {"id":"01HYG98VQD6C3ECRCRVGPC4HZ4"}
+kubectl get ns
 ```
 
 Using the Runme [cell section](../configuration/cellsection) feature you can run the entire subheading at a go.
