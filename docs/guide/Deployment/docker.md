@@ -132,7 +132,7 @@ docker run -p 80:5000 nginx
 
 ![port-mapping](../../../static/img/guide-page/docker-port-mapping.png)
 
-If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](../getting-started/features#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
+If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](../../getting-started/features#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
 
 ![background mode](../../../static/img/runme-background.png)
 

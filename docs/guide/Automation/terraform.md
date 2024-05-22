@@ -28,7 +28,7 @@ Before we proceed, there are a few requirements needed to get started
 
 3. **Runme Installation**
 
-   To get Runme available on your local machine or server, you are required to install the Runme. Runme has various client interfaces with which you can use Runme, this includes; [VS Code editor](../../installation/installrunme.md), [CLI](../installation/runmecli.md), and [web app](../../how-runme-works/web.md). In this guide, we will use Runme for VS Code editor using the [Runme Notebook extension](../../how-runme-works/vscode.md).
+   To get Runme available on your local machine or server, you are required to install the Runme. Runme has various client interfaces with which you can use Runme, this includes; [VS Code editor](../../installation/installrunme.md), [CLI](../../installation/runmecli.md), and [web app](../../how-runme-works/web.md). In this guide, we will use Runme for VS Code editor using the [Runme Notebook extension](../../how-runme-works/vscode.md).
 
 ## **Setting Up Terraform for EC2 Instance**
 

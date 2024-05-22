@@ -77,7 +77,7 @@ You can create your [helm chart](https://helm.sh/docs/intro/using_helm/#creating
 
 The repo adds a Kubernetes Ingress controller called `ingress-nginx` which helps manage external access to services within the Kubernetes cluster.
 
-Runme is dynamically set. You can run the entire markdown file using the [Run all](https://docs.runme.dev/configuration/document-level#run-all-button) feature. If you want to run just a particular [section](../../configuration/cellsection), you can also do that, or run just a [single cell](../configuration/cell-level).
+Runme is dynamically set. You can run the entire markdown file using the [Run all](https://docs.runme.dev/configuration/document-level#run-all-button) feature. If you want to run just a particular [section](../../configuration/cellsection), you can also do that, or run just a [single cell](../../configuration/cell-level).
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-section.mp4" type="video/mp4" />
