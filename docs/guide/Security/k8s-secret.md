@@ -2,6 +2,7 @@
 runme:
   id: 01HX525D9FNAVSGJXVFHZA93FA
   version: v3
+title: Managing Kubernetes Secrets in Runme
 ---
 
 # Securing Kubernetes Secrets with Sealed Secrets and Runme

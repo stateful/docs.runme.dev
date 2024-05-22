@@ -2,6 +2,7 @@
 runme:
   id: 01HX525D9GDAKP0662NXT98NWK
   version: v3
+title: Optimizing Kubernetes Replicaset Using Runme
 ---
 
 # How to Optimize Kubernetes Replicaset Using Runme

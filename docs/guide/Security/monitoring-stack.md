@@ -2,6 +2,7 @@
 runme:
   id: 01HX525D9GDAKP0662NVFVSDR8
   version: v3
+title: How to Set Up a Monitoring Stack
 ---
 
 # How to Set Up a Monitoring Stack For Your Application by Leveraging Runme

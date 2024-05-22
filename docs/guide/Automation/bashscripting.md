@@ -2,6 +2,7 @@
 runme:
   id: 01HX525D9E10RVX8R4VE708M5H
   version: v3
+title: Running Bash Scripts in Runme
 ---
 
 # Running Bash Scripts in Runme

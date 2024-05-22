@@ -2,6 +2,7 @@
 runme:
   id: 01HX525D9HYD6QHP138A69XKJ1
   version: v3
+title: Automating Secrets Encryption with Runme
 ---
 
 # How to Automate Kubernetes Secrets Encryption with SOPS and  Runme

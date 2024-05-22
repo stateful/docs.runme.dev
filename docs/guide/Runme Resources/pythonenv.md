@@ -2,6 +2,7 @@
 runme:
   id: 01HXCRQPTSY410B5XFD9QY2K65
   version: v3
+title: Creating Python Virtual Environment in Runme
 ---
 
 # How to Integrate Python Virtual Environment with Runme
