@@ -2,6 +2,7 @@
 runme:
   id: 01HXCRQPTKTYCQX6WRQACB6F2M
   version: v3
+title: Managing Applications with Runme and Argo CD
 ---
 
 # Deploying and Managing Applications with Runme and Argo CD
