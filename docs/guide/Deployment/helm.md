@@ -2,7 +2,7 @@
 runme:
   id: 01HX525D9FNAVSGJXVFBPTKS96
   version: v3
-title: How To Integrate Helm With Runme
+title: Integrating Helm with Runme
 ---
 
 # How To Integrate Helm With Runme
