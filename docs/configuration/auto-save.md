@@ -104,7 +104,7 @@ You might wonder why we have created a separate Session Outputs file instead of 
 While we are contemplating the possibility of transparently opening Session Outputs files in the future, this may inevitably involve reformatting the original source file as part of the deserialization process.
 
 <aside>
-💡 **Session Outputs**
+💡 Session Outputs
 
 </aside>
 
