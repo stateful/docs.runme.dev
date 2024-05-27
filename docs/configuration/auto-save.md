@@ -53,7 +53,7 @@ Alternatively, you can change the settings to be permanently on by adjusting the
 
 This action configures the system to automatically save the output of each cell execution.
 
-💡 If logged into the Cloud (prompt whenever Auto-Save is toggled on), cells will be stored locally in a Session Output {Add link} file and securely in your dashboard for later review or sharing with others. This is optional and can be turned off if desired (follow “Open Settings” in the prompt).
+💡 If logged into the Cloud (prompt whenever Auto-Save is toggled on), cells will be stored locally in a Session Output file and securely in your dashboard for later review or sharing with others. This is optional and can be turned off if desired (follow “Open Settings” in the prompt).
 
 ### How to Access Saved Output
 
