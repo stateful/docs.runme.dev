@@ -22,7 +22,7 @@ All files saved in Runme are stored on the Runme Cloud. To access your saved out
 
 Once you are signed in, you can access all your saved cells and outputs anytime, ensuring your work is always backed up and accessible whenever needed.
 
-### How to Enable Auto-Save
+### **How to Enable Auto-Save**
 
 - Toggle Auto-Save On/Off:
 
@@ -36,7 +36,7 @@ If, for any reason, you would like to turn the auto-save off, you can simply use
 
 Alternatively, you can set autosave to the default setting. This way, you won’t need to manually enable the feature every time to use it.
 
-### Set Autosave as Default
+### **Set Autosave as Default**
 
 By default, auto-save is turned off, as indicated by the autosave button at the top bar displaying off. However, if you want to use the session output feature, you can toggle the feature (on) or (off) using the autosave button.
 
@@ -55,7 +55,7 @@ This action configures the system to automatically save the output of each cell 
 
 💡 If logged into the Cloud (prompt whenever Auto-Save is toggled on), cells will be stored locally in a Session Output file and securely in your dashboard for later review or sharing with others. This is optional and can be turned off if desired (follow “Open Settings” in the prompt).
 
-### How to Access Saved Output
+### **How to Access Saved Output**
 
 As earlier stated, Runme saved files are stored in the Runme Cloud to enable easy and secure access to your runbook. To access your saved runbook, you are required to log in to the Runme Cloud.
 
@@ -73,7 +73,7 @@ To access the Runme Cloud on your Runme web client or VS Code editor, follow the
 
 Here is a video to guide you through accessing your saved output on the Runme cloud.
 
-### Session Outputs
+## **Session Outputs**
 
 Runme uses the session output feature to provide advanced auto-save functionality. When auto-save is enabled, Runme captures a complete copy of the original Markdown document and creates the entire Markdown file during the notebook’s execution.
 
@@ -110,7 +110,7 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 > It is strongly recommended that you do not deploy the session output files to your version control. You can `.gitignore` the files to ensure that it doesn't get deployed.
 
-## Additional Information
+## **Additional Information**
 
 The auto-save feature is also used in other Runme’s features. Some of these include:
 
