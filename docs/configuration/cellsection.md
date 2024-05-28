@@ -3,7 +3,7 @@ runme:
   id: 01HX525D9B2H33WXVN253K6WX0
   version: v3
 sidebar_position: 3
-title: Section-level option
+title: Run Cells By Section
 ---
 
 # Run Cells By Section
