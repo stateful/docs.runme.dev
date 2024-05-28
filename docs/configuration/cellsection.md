@@ -61,7 +61,7 @@ To run a section from the outline:
 - Navigate to the left-hand side of your VS Code dashboard.
 - Click on **OUTLINE**. The sections will be displayed in the image below.
 
-![VS Code outline](../../static/img/configuration-page/runme-outline.png)
+![VS Code outline](../../static/img/guide-page/runme-vscode-outline.png)
 
 Hover your mouse on the section you want to run, click the three dots beside it, and click run cells to run all the cells in that section.
 
