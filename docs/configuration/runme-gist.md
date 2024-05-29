@@ -38,7 +38,7 @@ With the auto-save feature activated, when you run a command within your Runme c
 ![Runme cloud login page ](../../static/img/configuration-page/runme-cloud.png)
 
 3. **View Sessions Output**
-      Session Output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](../configuration/auto-save#session-outputs) guide.
+   Session Output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](../configuration/auto-save#session-outputs) guide.
 
 To view your Session Output, click “Sessions Outputs” to inspect the locally recorded session. Alternatively, you can find it on the left-hand side of your VS Code right inside your current working directory.
 
@@ -77,7 +77,7 @@ Here is a video that showcases how to generate Runme Gist for your entire Markdo
   <source src="/videos/Runme-gist.webm" type="video/webm" />
 </video>
 
-### Generate Gist Per Cell
+## **Generate Gist Per Cell**
 
 Alternatively to generating Gist for the entire Markdown file, you can generate gist for each cell in your Markdown file. To do this, in your Session Outputs file, navigate to the cell you want to be generated as  a gist and click on ‘Generate Gist’.
 
