@@ -38,9 +38,9 @@ With the auto-save feature activated, when you run a command within your Runme c
 ![Runme cloud login page ](../../static/img/configuration-page/runme-cloud.png)
 
 3. **View Sessions Output**
-      Session output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](../configuration/auto-save#session-outputs) guide.
+      Session Output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](../configuration/auto-save#session-outputs) guide.
 
-To view your session output, click “Sessions Outputs” to inspect the locally recorded session. Alternatively, you can find it on the left-hand side of your VS Code right inside your current working directory.
+To view your Session Output, click “Sessions Outputs” to inspect the locally recorded session. Alternatively, you can find it on the left-hand side of your VS Code right inside your current working directory.
 
 ![Runme gist session output](../../static/img/configuration-page/runme-gist-sessionoutput.png)
 
@@ -48,7 +48,7 @@ The Session Outputs feature is only available when the autosave is enabled and t
 
 4. Toggle Between Mask and Unmask
 
-   You can decide if you want your session outputs to be masked or unmasked.
+   You can decide if you want your Session Outputs to be masked or unmasked.
    The masked and unmasked options are how Runme keeps your sensitive information secret. If you want to keep your sensitive information secret, you should toggle the mask option otherwise, choose the unmasked option.
    By default, Runme uses the open-source `data-guardian` to mask sensitive information on a best-effort basis.
 
@@ -60,7 +60,7 @@ GitHub Gist is a service provided by GitHub that allows users to share code snip
 
 ### Generate Gist for the Entire Markdown File
 
-You can generate a Gist for your entire Markdown file. To do this, in your session outputs file, click on ‘Generate Gist’.
+You can generate a Gist for your entire Markdown file. To do this, in your Session Outputs file, click on ‘Generate Gist’.
 
 ![Runme gist](../../static/img/configuration-page/runme-gist.png)
 
@@ -79,13 +79,13 @@ Here is a video that showcases how to generate Runme Gist for your entire Markdo
 
 ### Generate Gist Per Cell
 
-Alternatively to generating Gist for the entire Markdown file, you can generate gist for each cell in your Markdown file. To do this, in your session outputs file, navigate to the cell you want to be generated as  a gist and click on ‘Generate Gist’.
+Alternatively to generating Gist for the entire Markdown file, you can generate gist for each cell in your Markdown file. To do this, in your Session Outputs file, navigate to the cell you want to be generated as  a gist and click on ‘Generate Gist’.
 
 ![Gist per cell](../../static/img/configuration-page/BashScript-Docker.png)
 
 Congratulations! You have successfully learned how to use the Runme Gist feature.
 
-**Note that session output files can be kept offline and locally**.
+**Note that Session Output files can be kept offline and locally**.
 
 You can read about that [here](https://runme.dev/blog/runme-v3-pipeline-logs-and-artifacts). If you love this feature, kindly give [Runme a star](https://github.com/stateful/runme/stargazers) on GitHub.
 
