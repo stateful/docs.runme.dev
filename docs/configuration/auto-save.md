@@ -71,8 +71,6 @@ To access the Runme Cloud on your Runme web client or VS Code editor, follow the
 
 ![Access Runme cloud](../../static/img/configuration-page/runme-cloud-ui-docs.png)
 
-Here is a video to guide you through accessing your saved output on the Runme cloud.
-
 ## **Session Outputs**
 
 Runme uses the session output feature to provide advanced auto-save functionality. When auto-save is enabled, Runme captures a complete copy of the original Markdown document and creates the entire Markdown file during the notebook’s execution.
