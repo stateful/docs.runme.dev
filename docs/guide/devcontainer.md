@@ -84,7 +84,7 @@ Installing Runme in your VS Code is one of the various ways you can utilize the 
 
 Runme works perfectly  to automate processes and conduct development operations within the container . To run your code with Runme in your dev container, follow the steps below:
 
-- Create and open your **READ.me** file in your VS Code.
+- Create and open your **README.md** file in your VS Code.
 - Click on the **+Code** icon and type in your code script.
 - Click on the **Remote Container** icon on the bottom left of your VS Code.
 
@@ -97,14 +97,14 @@ Now a new view opens that prompts you to select and open a remote window.
 - Now choose the version you want and add any other features you want to install.
 - Now click **OK**. Your container configuration gets added, and the container starts.
 
-You will notice that your READ.me file switches over to a normal Markdown setting. You will need to take it back to a Runme setting to enable you to run your code with Runme in a dev container. To do this,
+You will notice that your README.md. file switches over to a normal Markdown setting. You will need to take it back to a Runme setting to enable you to run your code with Runme in a dev container. To do this,
 
 - Go to the extensions page and search for Runme.
 - Click on the Runme extension and click on the **Install in Dev container**
 
 ![install dev container](../../static/img/runme-devcontainer-install.png)
 
-- Once it is installed, go back to your READ.me file, and you will see your code in Runme format.
+- Once it is installed, go back to your README.md file, and you will see your code in Runme format.
 - Click on **Select Cell Language Mode** and configure it to the programming language of your script.
 
 ![set shebang](../../static/img/runme-devcontainer-shebang.png)
