@@ -38,7 +38,7 @@ Alternatively, if you want to run all commands and scripts in your present Markd
 
 ![run all](../../static/img/configuration-page/runme-runall.png)
 
-### Set Custom Shell
+## Set Custom Shell
 
 To specify the custom shell of each cell block in your file, you can do so using the Runme Frontmatter.
 
@@ -58,7 +58,7 @@ shell: /bin/ksh
 
 > Runme does not just retain Frontmatter, it also supports top-level settings that will affect all cells in the document.
 
-### Current Working Directory
+## Current Working Directory
 
 It is not unusual to store documents in a sub-directory, e.g., `docs/`. It is often implied that commands need to run from the base directory. To reliably execute commands in this case, it is handy to explicitly set a working directory in the frontmatter.
 
