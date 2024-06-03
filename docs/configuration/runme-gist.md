@@ -6,38 +6,40 @@ runme:
 
 # Runme Gist
 
-Would you love to share or store your plain texts or code snippets securely with others in your team without needing a full repository or document?
+Would you like to share or store your plain texts or code snippets securely with others in your team without needing a full repository or document?
 
-Runme Gist makes this possible and prioritizes your information's sensitivity by keeping sensitive information secret. In this section, we will explain how Runme Gist works.
+Runme Gist makes this possible and prioritizes your information's sensitivity by keeping sensitive information secret. In this section, we will explain how you can use Runme Gist to generate gist and share your texts and code.
 
 ## **What is Runme Gist?**
 
-Runme Gist combines [GitHub Gist](https://gist.github.com/) with Runme capabilities to run, share, and store plain texts or code snippets in your Markdown file. What makes Runme Gist powerful is its ability to capture outputs and mask sensitive data without copying and pasting or integrating a third-party tool. You have everything done inside your Markdown file. Amazing right?
+Runme Gist combines [GitHub Gist](https://gist.github.com/) with Runme features to run, share, and store plain texts or code snippets in your Markdown file. What makes Runme Gist powerful is its ability to capture outputs and mask sensitive data without copying and pasting or integrating a third-party tool. All is done right within your Markdown file. 
 
 ## **Installation**
 
-- To utilize the Runme Gist feature, ensure the [Runme extension](../installation/installrunme) is installed in your VS Code. If you already have Runme installed in your VS Code, ensure you are upgraded to v3.4.0.
+To utilize the Runme Gist feature, set up the following Runme tools.
+
+- Install the [Runme extension](../installation/installrunme) in your VS Code If you already have Runme installed in your VS Code, ensure you are upgraded to the latest version `v3.4.0`.
 - Set Runme as your [default Markdown viewer](../installation/installrunme) to ensure all Markdown files in your code editor are automatically opened as a Runme notebook.
 
 ## **Setting Up Runme Gist**
 
-As stated earlier, Runme Gist combines [GitHub Gist](https://gist.github.com/) with Runme capabilities to enable you to securely run, share, and store code snippets. This section will explain how Runme Gist works using a step-by-step guide.
+As stated earlier, Runme Gist combines [GitHub Gist](https://gist.github.com/) with Runme features to enable you to securely run, share, and store code snippets. This section will explain how Runme Gist works using a step-by-step guide. 
 
-1. **Open your Markdown File**
+**Step 1: Open your Markdown File**
 
    Create a `README.md` file and open it in your VS Code. If you already have the file you want to use, open it in VS Code.
 
-2. **Run Cells**
-
-   Run your notebook cells, and ensure the [auto-save feature](../configuration/auto-save) is turned on to save your outputs without manual intervention.
+**Step 2: Activate Auto-Save**
+As part of the requirements to generate a gist, you need to activate the [auto-save feature](../configuration/auto-save) of Runme. This ensures your outputs are saved automatically without manual intervention.
 
 ![runme gist Autosave ](../../static/img/configuration-page/runme-gist-autosave.png)
 
-With the auto-save feature activated, when you run a command within your Runme cell, the generated output is automatically saved on the Runme cloud. To access your saved output within the Runme cloud, sign in using your GitHub account or other preferred option.
+**Step 3: Run Cells**
 
-![Runme cloud login page ](../../static/img/configuration-page/runme-cloud.png)
+Now, run your notebook cells. A separate file containing your saved output will be automatically generated, known as “Session Outputs.”
 
-3. **View Sessions Output**
+**Step 4: View Sessions Output**
+
    Session Output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](../configuration/auto-save#session-outputs) guide.
 
 To view your Session Output, click “Sessions Outputs” to inspect the locally recorded session. Alternatively, you can find it on the left-hand side of your VS Code right inside your current working directory.
@@ -46,7 +48,7 @@ To view your Session Output, click “Sessions Outputs” to inspect the locally
 
 The Session Outputs feature is only available when the autosave is enabled and the Runme cell is run.
 
-4. Toggle Between Mask and Unmask
+**Step 5: Toggle Between Mask and Unmask**
 
    You can decide if you want your Session Outputs to be masked or unmasked.
    The masked and unmasked options are how Runme keeps your sensitive information secret. If you want to keep your sensitive information secret, you should toggle the mask option otherwise, choose the unmasked option.
