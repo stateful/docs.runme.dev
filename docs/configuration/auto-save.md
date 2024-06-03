@@ -14,13 +14,7 @@ The Runme auto-save feature efficiently saves and manages your commands and exec
 
 The Runme auto-save feature goes beyond saving commands. It removes the need to manually save each cell or output you generate.
 
-**Here’s how it works**: With the auto-save feature activated, when you run a command within your Runme cell, your generated output is automatically saved on the Runme Cloud. Here, you can access the returned output and the entire commands within your Runme cell.
-
-All files saved in Runme are stored on the Runme Cloud. To access your saved output within the Runme Cloud, sign in using your GitHub account or any other preferred option.
-
-![Runme cloud login page ](../../static/img/configuration-page/runme-cloud.png)
-
-Once you are signed in, you can access all your saved cells and outputs anytime, ensuring your work is always backed up and accessible whenever needed.
+**Here’s how it works**: With the auto-save feature activated, when you run a command within your Runme cell, a Session Ouputs file is automatically generated.  This captures a complete copy of the original Markdown document, along with the generated outputs, details on when each cell was run, the time it took to run the cell, and exit codes. With the Session Outputs generated, you can turn your command with the generated outputs into Runme gist if you ever want to.
 
 ### **How to Enable Auto-Save**
 
@@ -32,9 +26,9 @@ As seen in the image below:
 
 ![runme-autosave](../../static/img/runme-autosave.png)
 
-If, for any reason, you would like to turn the auto-save off, you can simply use the toggle button as shown above to set “Auto-Save” to (off)
+If you would like to turn the auto-save off, you can simply use the toggle button as shown above to set “Auto-Save” to (off)
 
-Alternatively, you can set autosave to the default setting. This way, you won’t need to manually enable the feature every time to use it.
+Alternatively, you can set autosave to the default setting. This way, you do not need to manually enable the feature whenever you want to use it.
 
 ### **Set Autosave as Default**
 
@@ -52,24 +46,6 @@ Alternatively, you can change the settings to be permanently on by adjusting the
 ![autosave-defualt](../../static/img/runme-set-autosave-default.png)
 
 This action configures the system to automatically save the output of each cell execution.
-
-💡 If logged into the Cloud (prompt whenever Auto-Save is toggled on), cells will be stored locally in a Session Output file and securely in your dashboard for later review or sharing with others. This is optional and can be turned off if desired (follow “Open Settings” in the prompt).
-
-### **How to Access Saved Output**
-
-As earlier stated, Runme saved files are stored in the Runme Cloud to enable easy and secure access to your runbook. To access your saved runbook, you are required to log in to the Runme Cloud.
-
-For ease, Runme allows you to sign in by linking your GitHub account or using any other option to sign in to the Runme cloud.
-
-To access the Runme Cloud on your Runme web client or VS Code editor, follow the steps below”
-
-1. On your Runme client interface, select the Runme extension icon
-
-![Runme cloud](../../static/img/configuration-page/runme-cloud-vscode-ui.png)
-
-2. Next, click on “Go here” to access the Runme cloud.
-
-![Access Runme cloud](../../static/img/configuration-page/runme-cloud-ui-docs.png)
 
 ## **Session Outputs**
 
