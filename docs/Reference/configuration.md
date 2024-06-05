@@ -33,7 +33,7 @@ Metadata inside Markdown's fenced code blocks.
 | excludeFromRunAll      | Prevent executing this cell during the "Run All" operation      | false                    |
 | interactive            | Indicates if run should allow interactive input                 | false                    |
 | interpreter            | The program or command line inserted into shebang (aka #!) line | inferred from languageId |
-| mimeType               | Cell’s output content MIME type                                 | text/plain               |
+| mimeType               | If set skips auto-detection and uses specific media (MIME) type | [empty]                  |
 | name                   | Cell’s canonical name useful for referencing the cell via CLI   | auto-generated           |
 | terminalRows           | Number of rows to display in the notebook terminal              | auto-set                 |
 | promptEnv              | Prompt user to set exported environment vars                    | auto                     |
