@@ -6,15 +6,13 @@ runme:
 
 # Running Runme in a DevContainer
 
-## Introduction
-
 In the development process, the goal extends beyond having working and scalable software but simplifying routine tasks to reduce complexity.
 
 For engineers, the solution would be to document processes for handling incidents and automating everyday operations. As organizations seek to replace manual processes with executable code, runbooks have become more essential.
 
-[Runme](https://runme.dev/) is a tool that lets you run step-by-step processes, both manually and automatically, making it easier to handle and automate tasks. It's like a one-stop solution to speed up your development and operation processes.
+[Runme](https://runme.dev/) enables you to execute interactive runbooks using Markdown. With Runme, you can write codes and commands inside your Markdown file and execute them automatically, making it easier to handle and automate tasks. It is a one-stop solution for documenting your entire development process and optimizing your workflow.
 
-In this, we will give you a step-by-step guide on how to integrate Dev Container into your Runme and perform awesome actions.
+In this, we will provide a step-by-step guide to integrating a Dev container into your Runme and performing incredible actions.
 
 At the end of this guide you will learn how to:
 
@@ -24,11 +22,18 @@ At the end of this guide you will learn how to:
 
 ## **Creating your development container**
 
-A development container, also referred to as a ‘dev container’ is a dockerized container that allows you to run your software in a fully configured development environment, which significantly speeds up application deployment and scalability.
+A development container, also known as a `Dev Container`, is a dockerized container that allows you to run your software in a fully configured development environment. This significantly speeds up application deployment and scalability.
 
-Dev containers are highly preferred as it enables developers to run programs without the need to configure anything and with zero setup required.
+Dev containers are highly preferred as they enable developers to run programs without configuring anything and with zero setup required.
 
-For this guide, we will be using an already existing Python app. Feel free to use any application of your choice.
+For this guide, we will be using an already existing Python app. Feel free to clone this repository. To create a dev container, you need to:
+
+```bash {"id":"01HZM4W2BHHGKFQJXNTQ5619DD"}
+git clone https://github.com/stateful/blog-examples.git
+cd blog-examples
+cd devcontainer-guide
+
+```
 
 1. Install Visual Studio Code
 
@@ -38,7 +43,7 @@ If you haven’t installed this yet you should [install it now](https://code.vis
 
 In your VS Code, navigate to the extension view by clicking on the **Extensions Icon** in the Activity bar on the side of the window. Search for **Dev Containers**  and install the extension.
 
-![dev container installation](../../static/img/runme-devcontainer.png)
+![dev container installation](../../static/img/guide-page/runme-dev-container.png)
 
 3. In your VS Code project, create a Dev Container Configuration
 
@@ -51,15 +56,15 @@ On the bottom left of your Code editot, click the **Remote container** icon.
 - In this view, search for your specified programming language and also add additional features you wish to install.
 - Click **OK** to proceed.
 
-Your system will first add dev container configuration files and start the dev container.
+Your system will first add the Dev container configuration files and start the Dev container configuration.
 
-Once these steps are complete, your .devcontainer directory, devcontainer.json and .github directory will be created as displayed in the image below.
+Once these steps are complete, your `.devcontainer`, `devcontainer.json`, and `.github` directories will be created, as displayed in the image below.
 
-![runme-calculator](../../static/img/runme-calculator-devcontainer.png)
+![runme-calculator](../../static/img/guide-page/explorer.png)
 
 4. Run Your App:
 
-Depending on the programming language of your script, run your app in the terminal. This guide uses a Python app named calculator.py so we will run the following command
+Run your app in the terminal depending on your script's programming language. This guide uses a Python app named `calculator.py` so we will run the following command
 
 ```bash {"id":"01HPF5MXD3HBWB5T32AAF6S9JF"}
 
@@ -69,12 +74,12 @@ python calculator.py
 
 This will execute your Python app within the dev container.
 
-![python app](../../static/img/dev-container-python-ouput.png)
+![python app](../../static/img/guide-page/terminal-runme.png)
 
 **Note:**
 
-1. Ensure Docker is open and running on your system before you create a dev container.
-2. You do not need to create a separate dockerfile for this as the base image and settings needed for your development environment are specified in the dev container configuration (devcontainer.json). This eliminates the need for explicit Dockerfile maintenance and makes it simple to share and replicate the development environment across several machines.
+1. Ensure Docker is open and running on your system before you create a Dev container.
+2. You do not need to create a separate dockerfile for this as the base image and settings needed for your development environment are specified in the dev container configuration (`devcontainer.json`). This eliminates the need for explicit Dockerfile maintenance and makes it simple to share and replicate the development environment across several machines.
 
 ## **Setting up Runme on VSCode**
 
@@ -97,21 +102,23 @@ Now a new view opens that prompts you to select and open a remote window.
 - Now choose the version you want and add any other features you want to install.
 - Now click **OK**. Your container configuration gets added, and the container starts.
 
-You will notice that your README.md. file switches over to a normal Markdown setting. You will need to take it back to a Runme setting to enable you to run your code with Runme in a dev container. To do this,
+You will notice that your README.md file switches over to a normal Markdown setting. 
+
+You must take it back to a Runme setting to enable you to run your code with Runme in a Dev container. To do this,
 
 - Go to the extensions page and search for Runme.
 - Click on the Runme extension and click on the **Install in Dev container**
 
-![install dev container](../../static/img/runme-devcontainer-install.png)
+![install dev container](../../static/img/guide-page/runme-dev-container-desktop.png)
 
 - Once it is installed, go back to your README.md file, and you will see your code in Runme format.
 - Click on **Select Cell Language Mode** and configure it to the programming language of your script.
 
-![set shebang](../../static/img/runme-devcontainer-shebang.png)
+![set shebang](../../static/img/guide-page/runme-python-terminal.png)
 
 - Now click the **Run** icon and view your output on the Runme terminal.
 
-![ouput](../../static/img/output-devcontainer.png)
+![ouput](../../static/img/guide-page/runme-terminal-devcontainer.png)
 
 ## **Other Features**
 

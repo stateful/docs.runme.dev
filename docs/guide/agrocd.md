@@ -180,7 +180,7 @@ Wait until all pods are running.
 kubectl -n argocd get pods
 ```
 
-![pod-image](../../static/img/guide-page/agrocd-pod.png)
+![pod-image](../../static/img/guide-page/agrocd-pods.png)
 
 Next, get the initial admin password. To do this, execute the command below:
 
@@ -189,23 +189,23 @@ kubectl -n argocd get secrets argocd-initial-admin-secret \
     -o jsonpath='{.data.password}' | base64 -d
 ```
 
-![agro cd password](../../static/img/guide-page/agrocd-password.png)
+![agro cd password](../../static/img/guide-page/agrocd-passwords.png)
 
-Forward the port 80 of the argocd-server service to localhost:7070 using kubectl.
+Forward the port 80 of the argocd-server service to `localhost:8080` using kubectl.
 
 ```sh {"background":"true","id":"01HXY9RR9NVCDREB3STEBAW78S"}
-kubectl -n argocd port-forward service/argocd-server 7070:80
+kubectl -n argocd port-forward service/argocd-server 8080:80
 ```
+
 With Runme’s background process feature, you can run your code cells as a [background task](../getting-started/features#background-task). This will allow you to execute other tasks within the runbook without waiting for the initial task to complete.
 
-![port- forwarding](../../static/img/guide-page/agrocd-portforwarding.png)
 
+![port- forwarding](../../static/img/guide-page/agrocd-portforwardings.png)
 
-
-After executing the port-forward command, you'll be able to access the Argo CD web interface locally by browsing http://localhost:7070.
+After executing the port-forward command, you'll be able to access the Argo CD web interface locally by browsing http://localhost:8080.
 
 ```sh {"id":"01HXY9RR9NVCDREB3STES78KCN"}
-open https://localhost:7070
+open https://localhost:8080
 ```
 
 Now, you need to log in using the initial admin password. After login, you will notice the three applications defined in the `values-override.yaml` file are ready for deployment.

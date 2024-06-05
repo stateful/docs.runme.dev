@@ -77,13 +77,13 @@ kubectl apply -f mysealedsecret.yaml
 
 Here is a pictorial representation of the command when executed in Runme.
 
-![add value](../../static/img/guide-page/add-secrets.png)
+![add value](../../static/img/guide-page/add-secret.png)
 
 From the output gotten, you can see that your new value has successfully been added.
 
 ### Decrypt a Secret[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#decrypt-a-secret)
 
-To retrieve the original version of `runme-secrets.yaml`, you can decrypt the encrypted secret, `mysealedsecret.yaml`. Run the command below 
+To retrieve the original version of `runme-secrets.yaml`, you can decrypt the encrypted secret, `mysealedsecret.yaml`. Run the command below
 
 ```sh {"id":"01HYBANBSHN43RFRRNP1J6P7YA"}
 kubeseal --controller-name=sealed-secrets-controller --controller-namespace=kube-system  < mysealedsecret.yaml > mysecrets.yaml
@@ -91,7 +91,7 @@ kubeseal --controller-name=sealed-secrets-controller --controller-namespace=kube
 
 When you run the code in your Runme cell, here is what it looks like.
 
-![decrypt sealed secret](../../static/img/guide-page/decrypt-sealed-secret.png)
+![decrypt sealed secret](../../static/img/guide-page/decrypt-sealed-secrets.png)
 
 ### Delete a Secret
 
@@ -109,7 +109,7 @@ To deploy your secret, execute the code below:
 kubectl apply -f mysealedsecret.yaml
 ```
 
-![deploy sealed](../../static/img/guide-page/sealed-apply.png)
+![deploy sealed](../../static/img/guide-page/sealed-secret-apply.png)
 
 The Sealed Secrets controller will decrypt the Sealed Secret and create a Kubernetes Secret with the decrypted data.
 
