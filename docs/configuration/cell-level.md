@@ -241,7 +241,7 @@ docker ps | grep runme/demo:latest
 
 Not all cells’ output is plain text. For example, you can have JSON, text, images, etc, all in your Markdown file.
 
-Using the **mimeType** specifier, you can specify the expected output type. Runme Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
+Using the optional **mimeType** specifier, you can specify the expected output type. Runme Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
 
 When the **interactive** setting is turned off, and the **mimeType** value is empty, Runme attempt to auto-detect the MIME Type. This is useful for automatically displaying a cell's output according to the renderers available in your VS Code installation. If you specify a specific MIME Type, it will be used instead of auto-detection.
 
