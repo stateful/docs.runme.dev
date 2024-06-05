@@ -37,7 +37,7 @@ $ cat links.log | grep -v "https://github.com" | grep -v "https://marketplace" |
 
 Install all the dependencies using npm.
 
-```sh {"id":"01HPS5TSQ0VYD6QXQZEPJPZ60A","name":"npm-install"}
+```sh {"id":"01HPS5TSQ0VYD6QXQZEPJPZ60A","name":"setup"}
 npm install
 ```
 
@@ -45,7 +45,7 @@ npm install
 
 When developing locally we remove the build directory to avoid any confusion and run the docusaurus server.
 
-```sh {"background":"true","id":"01HPS5TSQ00E1RC31EMBG5W9WE","name":"npm-run-start"}
+```sh {"background":"true","id":"01HPS5TSQ00E1RC31EMBG5W9WE","name":"start"}
 rm -rf build/
 npm run start
 ```
