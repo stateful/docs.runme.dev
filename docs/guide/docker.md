@@ -18,6 +18,8 @@ In this guide, we will walk you through the use cases of integrating Runme and D
 
 ## **Prerequisites**
 
+To get started, ensure you have the following:
+
 - **Clone the repository**: We created a [notebook repository](https://github.com/stateful/blog-examples/tree/main/docker-notebook) containing all the instructions and commands required for this guide. To clone this repo and go into the folder for this guide, run the command below
 
 ```sh {"id":"01HYG0CRBP472SW6E302EQQZAK"}
@@ -27,12 +29,11 @@ cd blog-examples/docker-notebook
 ```
 
 - **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
-
 - **Required Packages**: Run the command below to install the required packages for this guide.
 
 ```sh {"id":"01HYG0F007XK8RT7466DNS16RQ"}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install docker 
+brew install docker
 ```
 
 ## Example Use Case
@@ -57,7 +58,7 @@ Example:
 docker build -t my-test-app .
 ```
 
-![Docker build](../../static/img/guide-page/docker-build.png)
+![Docker build](../../static/img/guide-page/dockker-build.jpeg)
 
 ### Run a Docker Image
 
@@ -81,7 +82,7 @@ Example:
 docker run nginx
 ```
 
-![docker run](../../static/img/guide-page/docker-run.png)
+![docker run](../../static/img/guide-page/dockerr-run.png)
 
 **Run Container Using Runme Environment Variable**
 
@@ -112,7 +113,7 @@ Example:
 docker run -d -p 8010:8010 -v ${PWD}/nginx.conf:/etc/nginx/nginx.conf:ro nginx
 ```
 
-![Docker Volume](../../static/img/guide-page/docker-volume-mapping.png)
+![Docker Volume](../../static/img/guide-page/docker-volume-mappings.png)
 
 **Port Mapping**
 
@@ -130,7 +131,7 @@ Example:
 docker run -p 80:5000 nginx
 ```
 
-![port-mapping](../../static/img/guide-page/docker-port-mapping.png)
+![port-mapping](../../static/img/guide-page/docker-port-mappings.png)
 
 If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](../getting-started/features#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
 
@@ -158,13 +159,12 @@ It is possible to list all the images currently available on your Docker host. T
 docker images
 ```
 
-
 **Remove an Image**
 
 If you would love to remove an image from your local Docker host, run the command below:
 
 ```sh {"id":"01HYG16NDV59THPXJP2KNKMAEW"}
-docker rmi nginx 
+docker rmi nginx
 ```
 
 This command will try to remove the Docker image with the name **`nginx`**.
@@ -191,7 +191,7 @@ Example:
 docker run nginx
 ```
 
-![docker-run-container](../../static/img/guide-page/docker-run-container.png)
+![docker-run-container](../../static/img/guide-page/docker-run-containers.png)
 
 **List Containers**
 
@@ -203,7 +203,7 @@ docker ps
 
 Example:
 
-![docker ps](../../static/img/guide-page/docker-ps.png)
+![docker ps](../../static/img/guide-page/docker-pss.png)
 
 If you would love to get a list of all containers (including stopped ones), use the command below:
 
@@ -213,7 +213,7 @@ docker ps -a
 
 Example:
 
-![docker ps -a ](../../static/img/guide-page/docker-ps-a.png)
+![docker ps -a](../../static/img/guide-page/docker-psa.png)
 
 **Container Logs**
 
@@ -231,7 +231,7 @@ Example:
 docker logs $CONTAINER_ID
 ```
 
-![docker logs](../../static/img/guide-page/docker-logs.png)
+![docker logs](../../static/img/guide-page/docker-log.png)
 
 You can also use the inspect command to retrieve detailed information about your container or docker image. To do this, run the command below
 
@@ -258,7 +258,7 @@ docker exec -it $CONTAINER_ID_TEST bash
 
 Example:
 
-![Docker exec ](../../static/img/guide-page/docker-exec.png)
+![Docker exec](../../static/img/guide-page/dockerr-exec.png)
 
 **Stop a Running Container**
 
@@ -274,7 +274,7 @@ Example:
 docker stop $CONTAINER_ID_TEST
 ```
 
-![Docker stop](../../static/img/guide-page/docker-stop.png)
+![Docker stop](../../static/img/guide-page/dockerr-stop.png)
 
 **Remove a Container**
 
@@ -290,7 +290,7 @@ Example:
 docker rm $CONTAINER_ID_TEST
 ```
 
-![remove container](../../static/img/guide-page/docker-remove.png)
+![remove container](../../static/img/guide-page/dockerr-remove.png)
 
 ### Docker compose
 
@@ -298,7 +298,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](../configuration/cell-level#cells-current-working-directory) to the directory where the file exists and then run the docker-compose command.
 
-![docker-compose](../../static/img/guide-page/docker-compose.png)
+![docker-compose](../../static/img/guide-page/dockerr-compose.png)
 
 ## How to Manage Docker Containers using Runme Run Cells by Section Feature
 

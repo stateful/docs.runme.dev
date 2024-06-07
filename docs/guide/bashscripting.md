@@ -18,7 +18,7 @@ In this guide, we will walk you through running a bash script on Runme.
 
 To get started with Bash scripts in Runme, you are required to first install and configure [Runme on your VS Code](https://docs.runme.dev/installation/installrunme) editor. If you do not have Runme on VS Code installed yet, proceed to the Extension tab of your VS Code and search for “**Runme DevOps Notebook**.”
 
-![install runme](../../static/img/guide-page/runme-notebooks.png)
+![install runme](../../static/img/guide-page/devops-notebook.png)
 
 You can configure your code editor to make Runme your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer). This means you `.md` will be displayed as a runbook whenever you open a Markdown.
 
@@ -37,7 +37,13 @@ Let’s get started.
 
 3. Enter the script you want to run. For this tutorial, we will be using the simple bash script below.
 
-![scripting-outputs](../../static/img/guide-page/scripting-outputs.png)
+```sh {"id":"01HZM4505FJ0Z604CPX4H0E011"}
+echo "Hello! Please enter your name"
+read name
+
+#Greet the user
+echo "Hello, $name! Welcome to the Bash Scripting World"
+```
 
 4. Click on the programming language at the button of the cell. This will display a list of supported languages. .
 
@@ -67,32 +73,96 @@ Bash scripts have several advanced techniques that can be integrated with Rume. 
 
    The image below provides an example of how a user can manipulate variables in bash scripts in Runme and the corresponding output the user will get in the terminal.
 
+Run the script below to understand how Variable manipulation works.
+
+```sh {"id":"01HZM46PVS5TCTRHYXAX7559GP"}
+sentence="The quick brown fox jumps over the lazy dog"
+echo ${sentence:4:5}
+
+first_name="John"
+last_name="Doe"
+full_name="$first_name $last_name"
+echo $full_name
+
+sentence="The quick brown fox jumps over the lazy dog"
+echo ${sentence/brown/yellow}
+
+name="Alice"
+echo $name | tr '[:lower:]' '[:upper:]'
+echo $name | tr '[:upper:]' '[:lower:]'
+echo ${#name}
+```
+
+The image below provides a visual representation of the output of this script when it is executed.
+
 ![example](../../static/img/guide-page/var-maniuplation.png)
 
 * **Conditional Statements**:
 
-   If you have a series of conditional statements in a Bash script that you would love to execute, Runme makes this easy. All you need to do is create a .md file in your editor, enter your script, and click the Run cell button.
+   If you have a series of conditional statements in a Bash script that you would love to execute, Runme makes this easy. All you need to do is create a `.md` file in your editor, enter your script, and click the Run cell button. Run the command below to understand how this works
+
+```sh {"id":"01HZM493AY8Y3V0YBHNJFX47CS"}
+echo -n "Enter your score: "
+read score
+
+# Perform grade determination based on the score
+if (( score >= 90 )); then
+  echo "Your grade is A."
+elif (( score >= 80 )); then
+  echo "Your grade is B."
+elif (( score >= 70 )); then
+  echo "Your grade is C."
+elif (( score >= 60 )); then
+  echo "Your grade is D."
+else
+  echo "Your grade is F."
+fi
+
+```
 
    The image below shows how a conditional statement in a Bash script is executed in Runme in VS Code.
 
 ![if-statement](../../static/img/guide-page/ifstatement.png)
 
 * **Integrating Runme with Docker**:
+
    You can use Runme to write several bash scripts that execute Docker commands. The script below manages a Docker container for an Nginx web server.
+
+```sh {"id":"01HZM4AZVMTPYDE6A8QK49294Z"}
+CONTAINER_NAME="my-nginx-container"
+IMAGE_NAME="nginx:latest"
+
+
+if [ "$(docker ps -a -q -f name=$CONTAINER_NAME)" ]; then
+    echo "Removing existing container: $CONTAINER_NAME"
+    docker rm -f $CONTAINER_NAME
+fi
+
+echo "Running Docker container: $CONTAINER_NAME"
+docker run --name $CONTAINER_NAME -d -p 8080:80 $IMAGE_NAME
+
+docker cp local_file.txt $CONTAINER_NAME:/usr/share/nginx/html/file.txt
+
+docker exec $CONTAINER_NAME ls -l /usr/share/nginx/html
+
+docker stop $CONTAINER_NAME
+
+docker rm $CONTAINER_NAME
+
+echo "Script Completed"
+```
+
+When it is executed successfully, here is the output.
 
 ![bash-docker](../../static/img/guide-page/docker-bash.png)
 
-### How to optimize Bash scripts using Runme's key features:
+### Save Your Outputs
 
-- **Lifecycle Identity for Versioning and Tracking**
+Every output generated can be automatically saved using the Runme [auto-save](https://docs.runme.dev/configuration/auto-save) feature.
 
-Runme’s [lifecycle identity](https://docs.runme.dev/configuration/lifecycle-identity) for versioning and tracking enables you to assign unique identifiers and versions to cells. This will ensure easy version control and tracking of the script whenever an update is made.
+Runme auto-save automatically saves your outputs, enabling you to access the history of the command and all cell output produced while running your file without manual intervention.
 
-- **Auto-save feature and separate session outputs**
-
-The [auto-save](https://docs.runme.dev/configuration/auto-save) feature provides a uniform approach to task automation by ensuring that the history of the Markdown command and all cell output produced while running your file is stored without manual intervention.
-
-Runme auto-save incorporates a [separate session](https://docs.runme.dev/configuration/auto-save#session-outputs) output method that securely saves the time each cell was run and its exit codes. It stores this output in an external file for easy reference.
+Runme auto-save also incorporates a [separate Session](https://docs.runme.dev/configuration/auto-save#session-outputs) Outputs method that securely saves the time each cell was run and its exit codes. It stores this output in an external file for easy reference.
 
 <br />
 <Infobox type="sidenote" title="Note">
@@ -101,11 +171,12 @@ When working with this feature, you are not to push the session outputs to git o
 
 </Infobox>
 
-Incorporating these features into your bash scripts simplifies your automation process, reduces scalability in managing infrastructure, and ensures service availability, whether troubleshooting incidents, automating routine tasks, or optimizing system performance.
 
 ### Conclusion
 
-Using Runme to execute your Bash scripts automates your process, whether it is a development, testing, or deployment task. This enables you to avoid repetitive tasks and environment compatibility issues. In this tutorial, we delved into how you can execute your first Bash script in Runme, advanced Bash scripts you can execute in Runme, and lastly, features in Runme that make the execution of tasks as an SRE expert, DevOps engineer, or system administrator easier.
+Using Runme to execute your Bash scripts automates your process, whether it is a development, testing, or deployment task. Runme was built to enable you to automate repetitive tasks and ride off environment compatibility issues.
 
-You can easily integrate Runme with your favourite cloud native tools. Take a look at our [tutorial page](https://docs.runme.dev/guide/) to learn more ways to use Runme to make your tasks seamless.
+In this guide, we delved into how to execute your first Bash script in Runme, advanced Bash scripts you can execute in Runme, and, lastly, features in Runme that make the execution of tasks as an SRE expert, DevOps engineer, or system administrator easier.
+
+You can easily integrate Runme with your favorite cloud-native tools. Take a look at our [tutorial page](https://docs.runme.dev/guide/) to learn more ways to use Runme to make your tasks seamless.
 

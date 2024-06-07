@@ -156,6 +156,11 @@ From here, we can easily disable interactive mode:
 
 Our code block will now display its output exactly as below:
 
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/non-interactive-mode.mp4" type="video/mp4" />
+  <source src="/videos/non-interactive-mode.webm" type="video/webm" />
+</video>
+
 ## **Frontmatter**
 
 [Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in Markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
