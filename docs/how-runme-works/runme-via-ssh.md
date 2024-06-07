@@ -7,15 +7,21 @@ sidebar_position: 3
 
 # Runme for VS Code SSH & Remote
 
-Runme is committed to delivering an exceptional experience right from the start. By using Runme, and [VS Code's native-SSH](https://code.visualstudio.com/docs/remote/ssh) capabilities you can easily connect to an instance and carry out specific instructions using Markdown docs. Before exploring various ways to utilize Runme through SSH, it's important to make sure that you have installed Runme for [VS Code](https://docs.runme.dev/installation/installrunme) or [CLI](https://docs.runme.dev/installation/runmecli) by referring to the [installation](https://docs.runme.dev/getting-started/) guide, as well as ensuring that you have access to the remote server you need.
+Runme enables you to execute codes and commands inside your Markdown file without switching tabs. It integrates easily with [VS Code SSH](https://code.visualstudio.com/docs/remote/ssh) and allows users to connect to remote instances effortlessly. This integration allows for easy execution of specific instructions directly in Markdown files, streamlining workflows and boosting productivity.
+
+In this section, we will explore the various ways you can utilize Runme with VS Code SSH.
+
+To follow up on the instructions on this page, ensure you have installed Runme on your [VS Code](https://docs.runme.dev/installation/installrunme) or [CLI](https://docs.runme.dev/installation/runmecli). Also, ensure you have access to the remote server you need.
 
 ## **VS Code Remote Development**
 
-Using runme on a remote server with VS Code enhances efficiency by streamlining the execution of tasks. It minimizes the need for manual commands, automating repetitive tasks, thereby saving time and reducing errors. This approach also optimizes performance by ensuring consistent and reliable execution of scripts and processes, ultimately improving the development workflow.
+Runme leverages the [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) provided by VS Code to enable you to attach remote SSH hosts to your local VS Code environment. This makes task execution easier and enhances productivity by simplifying development processes, minimizing the need for manual commands, and automating repetitive tasks, saving time and reducing the likelihood of errors.
+
+This approach also optimizes performance by ensuring consistent and reliable script and process execution, thus improving the development workflow.
 
 > 💡 Note: Runme harnesses VS Code's [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extensions to attach VS Code to remote SSH hosts.
 
-### SSH Connection
+### How to Set up SSH Connection in VS Code
 
 To set up your SSH key configuration, follow the steps below:
 
@@ -47,20 +53,29 @@ cd Vsc
 touch example.txt
 ```
 
-![ssh with Vsc](https://i.imgur.com/91ImVIz.png)
+![ssh with Vsc](../../static/img/how-runme-works/runme-via-ssh.png)
 
 ## **Key-Based Authentication**
 
-To enhance security when using Runme, it is recommended to use [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) for authentication. This eliminates the need for password transmission and reduces the risk of brute-force attacks.
+To enhance security when using Runme, it is recommended that [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) be used for authentication. This eliminates the need for password transmission and reduces the risk of brute-force attacks.
 
 To execute commands on a remote server using Runme, follow these steps:
 
-1. Set up your SSH key configuration by following the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-2. Remote server: Make sure you have access to the remote server and the necessary permissions to execute commands.
-3. Create a Markdown file: Create a `.md` file that will connect to the remote server and execute the desired commands.
-4. In the `.md` file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command.
+1. **Set up your SSH key configuration**
 
-### Example: how to use ssh inside of notebooks
+Set up your SSH key configuration by following the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+2. **Set Up the Remote Server**
+
+Ensure you can access the remote server and the necessary permissions to execute commands.
+
+3. **Create a Markdown File**
+
+Create a `.md` file to connect to the remote server and execute the desired commands.
+
+4. **Create a Block of Code**
+
+In the .md file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command.
 
 ```sh {"id":"01HPQBHPSY79T1NSR3P7E27BER"}
 ssh user@remote.server.com 'bash -s' < script.sh
@@ -70,22 +85,26 @@ This command will run a bash script called `script.sh` on the remote server. Mak
 
 By following these steps and using SSH keys for authentication, you can enhance the security of your Runme commands and reduce the risk of unauthorized access or attacks.
 
-5. Execute the Runme command:
+5. **Execute the Runme command**
+
+To execute your command, run the command below
 
 ```sh {"id":"01HPQBHPSYNE6C9RPE3KXC51P7"}
 # short for "runme tui" is
 runme
 ```
 
-6. Select the Markdown file `.md` you want to execute (if you have multiple `.md` files or different codeblocks and instruction in a `.md`)
+6. **Running Multiple Markdown files**
+
+Select the Markdown file `.md` you want to execute (if you have multiple `.md` files or different codeblocks and instruction in a `.md`)
 
 ![runme](https://i.imgur.com/5CGxKCZ.png)
 
-### Example: how ssh into remote hosts from a notebook
+### How to SSH into Remote Hosts From a Notebook
 
-If you need to securely copy files between your local machine and the remote server, you can install [SCP](https://www.geeksforgeeks.org/scp-command-in-linux-with-examples/) on your machine.
+If you need to securely copy files from your local machine to a remote server, you can install Secure Copy Files [SCP](https://www.geeksforgeeks.org/scp-command-in-linux-with-examples/) on your machine. SCP encrypts data during transmission, protecting it from unauthorized access.
 
-Setup [SSH Connection](https://docs-runme-56vudiq08-stateful.vercel.app/getting-started/runme-via-ssh#key-based-authentication)
+To do this, you need to set up an [SSH Connection](https://docs-runme-56vudiq08-stateful.vercel.app/getting-started/runme-via-ssh#key-based-authentication) and run the code below in your Markdown file
 
 ```sh {"id":"01HPQBHPSYM2Z33GX8FR4RBGJ7"}
 scp /path/to/bash/script user@host:/path/on/remote/server
@@ -94,4 +113,4 @@ ssh user@host 'bash /path/on/remote/server/script.sh'
 
 ***This is an example of running bash script in a server.***
 
-![Bash](https://i.imgur.com/nizv2CB.png)
+![Bash](../../static/img/how-runme-works/ssh-remote-server.png)
