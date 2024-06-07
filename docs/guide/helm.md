@@ -45,7 +45,7 @@ We're using kind to create a Kubernetes cluster locally. The name of the Kuberne
 kind create cluster --name helm-runme
 ```
 
-Check if your cluster is running 
+Check if your cluster is running
 
 ```sh {"id":"01HYG98VQD6C3ECRCRVGPC4HZ4"}
 kubectl get ns
@@ -176,7 +176,7 @@ helm get manifest ingress-nginx
 
 When the command is executed successfully, this is the output.
 
-![helm get manifest](../../static/img/guide-page/helmget.png)
+![helm get manifest](../../static/img/guide-page/helm-get.png)
 
 To retrieve the release note associated with the package, run the command below
 

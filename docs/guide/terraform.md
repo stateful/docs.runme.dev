@@ -84,7 +84,7 @@ terraform init
 
 Run the above  command to initialize your Terraform configuration
 
-![terraform init](../../static/img/terraform-init.png)
+![terraform init](../../static/img/guide-page/terrraform-init.png)
 
 This command initializes your working directory and downloads the necessary providers.
 
@@ -98,7 +98,7 @@ terraform plan
 
 You should get a similar output:
 
-![terraform plan](../../static/img/terraform-plan.png)
+![terraform plan](../../static/img/guide-page/terraform-plan.png)
 
 Once this is thoroughly checked for errors or misconfiguration, you can apply the changes to create the EC2 instance.
 
@@ -108,7 +108,7 @@ terraform apply
 
 Output:
 
-![terraform](../../static/img/terraform-apply.png)
+![terraform](../../static/img/guide-page/terrraform-apply.png)
 
 Terraform will prompt you to confirm the changes. Type `yes` and press Enter. Once the apply process is complete, you can go to the AWS Management Console to verify that your EC2 instance has been created.
 
@@ -189,7 +189,5 @@ This will allow for the separation of configurations for different environments,
 
 ## **Conclusion**
 
-Using Runme with Terraform helps you to create an operational workflow that integrates Terraform commands within Runme’s automated runbook. ​​In this guide, we walked through running a Terraform within a Runme Notebook in our VS Code editor. We covered how you can run your EC2 instance with Runme, review and apply your changes, set directory commands for each workspace, and save your output for future reference.
-We hope this tutorial was of help to you.
-Wish you a smooth operation!
+Using Runme with Terraform helps you to create an operational workflow that integrates Terraform commands within Runme’s automated runbook. In this guide, we walked through running a Terraform within a Runme Notebook in our VS Code editor. We covered how you can run your EC2 instance with Runme, review and apply your changes, set directory commands for each workspace, and save your output for future reference. We hope this tutorial was of help to you. Wish you a smooth operation!
 
