@@ -15,7 +15,6 @@ Some configurations found in Runme include:
 * [Document-level Options](../configuration/document-level)
 * [Lifecycle Identity](../configuration/lifecycle-identity)
 * [Auto-Save Feature](../configuration/auto-save)
-* [Archiving Feature](../configuration/archiving)
 * [Shebang Support](../configuration/shebang)
 
 Remember that we are constantly improving Runme to provide more configurations to ensure you have a smooth experience executing your Markdown file in Runme.

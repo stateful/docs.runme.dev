@@ -89,4 +89,3 @@ While we are contemplating the possibility of transparently opening Session Outp
 The auto-save feature is also used in other Runme’s features. Some of these include:
 
 - **[Runme Gist](https://docs.runme.dev/configuration/runme-gist)**: Runme Gist uses the auto-save feature to create session outputs, which is used to generate a GitHub Gist while still concealing your sensitive details.
-- **[Runme’s Archiving Feature](https://docs.runme.dev/configuration/archiving)**: The archiving feature was designed to enable you to hide outputs generated from your Runme cell to preserve them for future use. To archive a file, it must first be saved; this can be done effectively using auto-save, which stores the output automatically without manual intervention.
