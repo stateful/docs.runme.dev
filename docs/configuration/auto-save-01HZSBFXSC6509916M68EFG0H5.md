@@ -2,6 +2,11 @@
 runme:
   id: 01HFRZ3233HSQ0NVJB9BE682G5
   version: v3
+  document:
+    relativePath: auto-save.md
+  session:
+    id: 01HZSBFXSC6509916M68EFG0H5
+    updated: 2024-06-07 17:12:19+01:00
 sidebar_position: 5
 title: Auto-Save Feature
 ---
@@ -20,7 +25,7 @@ The Runme auto-save feature goes beyond saving commands. It removes the need to 
 
 - Toggle Auto-Save On/Off:
 
-The auto-save feature is available by default on your Markdown file whether you use the Runme Notebook on [VS Code](https://docs.runme.dev/how-runme-works/vscode) or the [web client interface](https://docs.runme.dev/how-runme-works/web) To enable you to access this feature, at the top of your Markdown file, you can easily turn on the “Auto-save” feature.
+The auto-save feature is available by default on your Markdown file whether you use the Runme Notebook on [VS Code](ht*****************************************de) or the [web client interface](ht**************************************eb) To enable you to access this feature, at the top of your Markdown file, you can easily turn on the “Auto-save” feature.
 
 As seen in the image below:
 
@@ -59,13 +64,13 @@ The session output file includes details on when each cell was run, the time it 
 
 ![Session output](../../static/img/configuration-page/runme-session-output.png)
 
-Runme also captures non-text mime types like images (base64 encoded) outside of textual output produced by terminals.
+Runme also captures non-text mime types like images (ba**64 encoded) outside of textual output produced by terminals.
 
 The session outputs are written per Runme session, which is saved throughout the lifetime of the window running the runbook until it is reset via “Reset Session” in the notebook.
 
 ![reset-session](../../static/img/auto-save-reset-session.png)
 
-If there are more forms you would like to be added to the session output, kindly [let us know](https://github.com/stateful/runme/issues/new). We are open to incorporating your requests.
+If there are more forms you would like to be added to the session output, kindly [let us know](ht****************************************ew). We are open to incorporating your requests.
 
 ### **Why Separate Session Outputs?**
 
@@ -88,4 +93,4 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 The auto-save feature is also used in other Runme’s features. Some of these include:
 
-- **[Runme Gist](https://docs.runme.dev/configuration/runme-gist)**: Runme Gist uses the auto-save feature to create session outputs, which is used to generate a GitHub Gist while still concealing your sensitive details.
+- **[Runme Gist](ht*******************************************st)**: Runme Gist uses the auto-save feature to create session outputs, which is used to generate a GitHub Gist while still concealing your sensitive details.
