@@ -11,9 +11,9 @@ Runme is a powerful tool that manages and runs development scripts directly from
 
 This guide provides step-by-step instructions on how to install the Runme extension in GitHub Codespaces, Gitpod, and Project IDX. Runme helps in managing and running your development scripts directly from your codebase and documentation.
 
-## GitHub Codespaces
+## **GitHub Codespaces**
 
-### Creating a Codespace
+### **Creating a Codespace**
 
 1. Navigate to a new repository.
 2. Click Code.
@@ -23,7 +23,7 @@ This guide provides step-by-step instructions on how to install the Runme extens
 
 > A Visual Studio Code instance will open in your browser with a unique URL and container.
 
-### Installing Runme in Codespaces
+### **Installing Runme in Codespaces**
 
 1. Once your Codespace is open, click on the Extensions view icon on the sidebar or press `Ctrl+Shift+X` to open the Extensions view.
 2. In the search bar, type "Runme" and press Enter.
@@ -35,9 +35,9 @@ This guide provides step-by-step instructions on how to install the Runme extens
 
 ![Runme Interface](../../static/img/installation-page/Runme-interface-codespaces.png)
 
-## Gitpod
+## **Gitpod**
 
-### Sign Up and Login
+### **Sign Up and Login**
 
 1. Sign Up:
 
@@ -48,7 +48,7 @@ This guide provides step-by-step instructions on how to install the Runme extens
 
 * Once signed up, log in to Gitpod with the account you used to sign up.
 
-### Creating a New Workspace
+### **Creating a New Workspace**
 
 1. From a Repository:
 
@@ -60,7 +60,7 @@ This guide provides step-by-step instructions on how to install the Runme extens
 open https://gitpod.io/#https://github.com/stateful/Runme-CDEs
 ```
 
-### Installing Runme in Gitpod
+### **Installing Runme in Gitpod**
 
 1. Once your workspace is open, click on the Extensions view icon on the sidebar or press `Ctrl+Shift+X` to open the Extensions view.
 2. In the search bar, type `Runme` and press Enter.
@@ -72,21 +72,21 @@ open https://gitpod.io/#https://github.com/stateful/Runme-CDEs
 
 ![Runme interface](../../static/img/installation-page/runme-gitpod-interface.png)
 
-## Project IDX
+## **Project IDX**
 
-### Login
+### **Login**
 
 1. Go to [Project IDX](https://idx.dev/).
 2. Login with your credentials.
 
-### Creating a New Project
+### **Creating a New Project**
 
 1. After logging in, you will see the dashboard.
 2. Click on the New Project button to create a new project.
 
 ![New project](../../static/img/installation-page/runme-projectidx-project.png)
 
-### Installing Runme in Project IDX
+### **Installing Runme in Project IDX**
 
 1. Once your project environment is set up, click on the Extensions view icon on the sidebar or press `Ctrl+Shift+X` to open the Extensions view.
 2. In the search bar, type `Runme` and press Enter.
