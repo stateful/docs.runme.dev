@@ -2,9 +2,14 @@
 runme:
   id: 01J01B5S4Y31Q8FAP5SREPGWRY
   version: v3
+title: Install Runme on CDEs
 ---
 
-This guide provides step-by-step instructions on how to install the Runme extension in GitHub Codespaces, Gitpod, and Project IDX. Runme helps in managing and running your development scripts directly from your codebase.
+# Install Runme on Cloud Development Environments
+
+Runme is a powerful tool that manages and runs development scripts directly from your documentation and codebase. It helps with automation, consistency, and collaboration. Integrated with Cloud Development Environments (CDEs) like GitHub Codespaces, Gitpod, and Project IDX, Runme enhances the development process by providing a centralized and user-friendly interface for script management. CDEs offer pre-configured, accessible, and consistent setups, eliminating the need for extensive local configurations and boosting productivity. Runme and CDEs simplify workflows, improve efficiency, and ensure a seamless development experience.
+
+This guide provides step-by-step instructions on how to install the Runme extension in GitHub Codespaces, Gitpod, and Project IDX. Runme helps in managing and running your development scripts directly from your codebase and documentation.
 
 ## GitHub Codespaces
 
@@ -94,3 +99,7 @@ open https://gitpod.io/#https://github.com/stateful/Runme-CDEs
 ![Runme interface](../../static/img/installation-page/runme-projectidx-interface.png)
 
 With these instructions, you can easily install the Runme extension in GitHub Codespaces, Gitpod, and Project IDX.
+
+## **Next Steps**
+
+You can achieve so much more with the Runme and your Markdown will also benefit from its features. [Our documentation](https://docs.runme.dev/how-runme-works/web) provides more details on how this works.
