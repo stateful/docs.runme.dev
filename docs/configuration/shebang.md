@@ -35,7 +35,7 @@ Follow the steps below to set up the Shebang custom interpreter in VS Code:
 
 1. Open your script (Markdown file) in VS Code
 2. Click on **Configure** menu at the buttom right of your code block
-3. Click on **Advance**
+3. Click on **Advanced**
 4. Set the path to the system interpreter of your choice.
 
 ![shebang-interpreter](../../static/img/shebang-interpreters.png)
