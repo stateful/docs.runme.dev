@@ -119,4 +119,4 @@ With these instructions, you can easily install the Runme extension in GitHub Co
 
 ## **Next Steps**
 
-Runme offers more benefits. You can achieve so much more with the Runme, and your Markdown will also benefit from its features. Explore [Our documentation](../configuration/index) to get more details on how this works.
+Runme offers more benefits. You can achieve so much more with the Runme, and your Markdown will also benefit from its features. Explore [Our documentation](../configuration/index.md) to get more details on how this works.
