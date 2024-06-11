@@ -49,7 +49,7 @@ In this section, we will walk you through how to Install Runme on Gitpod.
 
 ### **Sign Up and Login**
 
-The first step is to create an account and sign-in. To do this, go to the [Gitpod website](https://gitpod.io/), click on **‘Try for Free’** and sign up using your GitHub, GitLab, or Bitbucket account. 
+The first step is to create an account and sign-in. To do this, go to the [Gitpod website](https://gitpod.io/), click on **‘Try for Free’** and sign up using your GitHub, GitLab, or Bitbucket account.
 
 Once signed up, log in to Gitpod with the account you used earlier.
 
@@ -58,7 +58,6 @@ Once signed up, log in to Gitpod with the account you used earlier.
 After completing the signup and log-in process, the next step is to create a new workspace. To do this, follow the steps below:
 
 - Navigate to the repository on GitHub, GitLab, or Bitbucket that you want to work on.
-
 - Add `gitpod.io/#` before the URL of the repository. For example, `https://github.com/user/repo` becomes `https://gitpod.io/#https://github.com/user/repo`.
 - Press Enter, and Gitpod will start setting up your workspace.
 
@@ -68,7 +67,7 @@ open https://gitpod.io/#https://github.com/stateful/Runme-CDEs
 
 ### **Installing Runme in Gitpod**
 
-After creating a new workspace for your project, it’s time to install Runme in Gitpod. To do this, do the following: 
+After creating a new workspace for your project, it’s time to install Runme in Gitpod. To do this, do the following:
 
 1. Once your workspace is open, click on the Extensions view icon on the sidebar or press `Ctrl+Shift+X` to open the Extensions view.
 2. In the search bar, type `Runme` and press Enter.
@@ -82,13 +81,13 @@ After creating a new workspace for your project, it’s time to install Runme in
 
 ## **Project IDX**
 
-Project IDX is designed to make building, management, and deployment of full-stack web and multiplatform applications easier. In this section, we will walk you through the process of installing Runme on Project IDX. 
+Project IDX is designed to make building, management, and deployment of full-stack web and multiplatform applications easier. In this section, we will walk you through the process of installing Runme on Project IDX.
 
 ### **Login**
 
 The first step is to log in. To do this, go to the [Project IDX](https://idx.dev/) website and click on ‘**Get Started**’.
 
-After affirming to the instructions that pop up, you will be logged in. 
+After affirming to the instructions that pop up, you will be logged in.
 
 > Project IDX works with your Google account details.
 
@@ -97,8 +96,6 @@ After affirming to the instructions that pop up, you will be logged in.
 The next step is to create a new project. To do this, follow the steps below.
 
 1. After logging in, you will see the dashboard.
-
-
 
 ![Dashboard](../../static/img/installation-page/projectidx.png)
 
@@ -122,4 +119,4 @@ With these instructions, you can easily install the Runme extension in GitHub Co
 
 ## **Next Steps**
 
-Runme offers more benefits. You can achieve so much more with the Runme, and your Markdown will also benefit from its features. Explore [Our documentation](../configuration/index) to get more details on how this works. 
+Runme offers more benefits. You can achieve so much more with the Runme, and your Markdown will also benefit from its features. Explore [Our documentation](../configuration/index) to get more details on how this works.
