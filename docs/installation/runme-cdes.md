@@ -13,7 +13,7 @@ In the sections below, we will provide step-by-step instructions for installing 
 
 ## **GitHub Codespaces**
 
-GitHub codespaces is a cloud-based development environment that accelerates project setup by providing pre-configured environments and fosters collaborative development, testing, and debugging directly within GitHub.  With the VS Code extension on GitHub Codespace you can install Runme. by integrating Runme, developers can automates routine tasks and executes notebooks directly from your GitHub repository.
+GitHub codespaces is a cloud-based development environment that speeds up project setup by providing pre-configured environments for users and promotes collaborative development, testing, and debugging directly within GitHub. With the VS Code extension on GitHub Codespace, you can install Runme. This integration helps developers automate routine tasks and execute notebooks directly from your GitHub repository.
 
 In this section, we will walk you through how to install Runme on GitHub Codespaces.
 
@@ -40,6 +40,8 @@ To create a codespace, do the following:
 4. Once installed, you can use the Runme extension to manage and run your scripts directly from your codebase.
 
 ![Runme Interface](../../static/img/installation-page/runme-codespace-interface.png)
+
+Now, you have successfully installed Runme in your GitHub Codespaces.
 
 ## **Gitpod**
 
