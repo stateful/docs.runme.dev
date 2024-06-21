@@ -6,14 +6,14 @@ runme:
     relativePath: agrocd-cli.md
   session:
     id: 01J0TE8MC2PW6MEKWM9C1587QQ
-    updated: 2024-06-21 10:19:44+01:00
+    updated: 2024-06-21 11:47:19+01:00
 ---
 
 # Advanced Guide to Argo CD and Runme
 
 This guide provides an advanced tutorial on using Argo CD with the Runme extension in VS Code. Follow the steps to set up your environment, deploy applications, and manage them using Argo CD and Runme.
 
-## **Prerequisites**[](ht*********************************************es)
+## **Prerequisites**
 
 To follow up on this tutorial, ensure you have the following:
 
@@ -27,7 +27,7 @@ To follow up on this tutorial, ensure you have the following:
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](ht************************************************************ve).
 
 ```sh {"id":"01J0TF9A888ZBTPEJZGRBPPCVW"}
-git clone ht************************************************************ve
+git clone /guide/ht************************************************************ve
 
 ```
 

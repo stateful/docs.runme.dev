@@ -8,7 +8,7 @@ runme:
 
 This guide provides an advanced tutorial on using Argo CD with the Runme extension in VS Code. Follow the steps to set up your environment, deploy applications, and manage them using Argo CD and Runme.
 
-## **Prerequisites**[](https://docs.runme.dev/guide/agrocd#prerequisites)
+## **Prerequisites**
 
 To follow up on this tutorial, ensure you have the following:
 
@@ -22,7 +22,7 @@ To follow up on this tutorial, ensure you have the following:
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/tree/main/cloud-native).
 
 ```sh {"id":"01J0TF9A888ZBTPEJZGRBPPCVW"}
-git clone https://github.com/stateful/blog-examples/tree/main/cloud-native
+git clone /guide/https://github.com/stateful/blog-examples/tree/main/cloud-native
 
 ```
 
