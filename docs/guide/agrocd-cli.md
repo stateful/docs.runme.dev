@@ -12,21 +12,20 @@ This guide provides an advanced tutorial on using Argo CD with the Runme extensi
 
 To follow up on this tutorial, ensure you have the following:
 
-### Basic Requirement
+1. **Basic Requirement**
 
 - Basic familiarity with YAML and Kubernetes resource definitions
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-### Clone Our Repository
+2. **Clone Our Repository**
 
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/tree/main/cloud-native).
 
 ```sh {"id":"01J0TF9A888ZBTPEJZGRBPPCVW"}
 git clone https://github.com/stateful/blog-examples/tree/main/cloud-native
-
 ```
 
-### Installation
+3. **Installation**
 
 Run the following commands to install the necessary tools and set up your environment:
 
@@ -43,7 +42,7 @@ The command above installs `brew` and `git,` creates a local Kubernetes Clus
 
 💡 For your kind cluster to run, you need to have docker running.
 
-### Setting Up Your Cluster
+## **Setting Up Your Cluster**
 
 ```sh {"id":"01J0QP7HM4HB9NY43B10CQYNDK"}
 kind create cluster --name runme-argocd
@@ -97,7 +96,7 @@ Retrieve Initial Admin Password
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode
 ```
 
-## **Login to Argo CD CLI**
+### **Login to Argo CD CLI**
 
 ```sh {"id":"01J0V0PQ2TA2MC9A2JB92RGQPF"}
 argocd login <ARGOCD_SERVER> --username admin --password <retrieved-password> --insecure
@@ -161,7 +160,7 @@ To view the deployment history of your application, you can use the `argocd app 
 argocd app history guestbook
 ```
 
-### **Argo CD Rollback**
+## Argo CD Rollback
 
 Argo CD maintains a history of application deployments, allowing you to roll back to a previous state if needed. To list the history:
 
