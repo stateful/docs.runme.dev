@@ -228,7 +228,7 @@ argocd app logs guestbook --follow
 argocd app logs my-app --tail 100 --follow
 ```
 
-## Customizing Argo CD
+### Customizing Argo CD
 
 1. **Define an Application with CRD**: Create a YAML file for the application.
 
