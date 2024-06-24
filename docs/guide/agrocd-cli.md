@@ -35,6 +35,7 @@ brew install git
 brew install kind
 brew install docker
 brew install argocd
+brew install yq
 ```
 
 The command above installs `brew` and `git,` creates a local Kubernetes Cluster using [kind](https://kind.sigs.k8s.io/)
@@ -340,36 +341,7 @@ Large-scale deployments often involve managing hundreds or thousands of applicat
 
 **Resource Allocation**
 
-Ensure that the Argo CD components (e.g., server, controller, repo server, and application controller) have adequate CPU and memory resources. This can be configured in the Helm chart or directly in the Kubernetes manifests.
-
-Example Helm values:
-
-```yaml {"id":"01J0TF9A89KN0GBESXNBNJ3KHW"}
-controller:
-  resources:
-    requests:
-      memory: "512Mi"
-      cpu: "250m"
-    limits:
-      memory: "1Gi"
-      cpu: "500m"
-repoServer:
-  resources:
-    requests:
-      memory: "256Mi"
-      cpu: "125m"
-    limits:
-      memory: "512Mi"
-      cpu: "250m"
-server:
-  resources:
-    requests:
-      memory: "256Mi"
-      cpu: "125m"
-    limits:
-      memory: "512Mi"
-      cpu: "250m"
-```
+Ensure that the Argo CD components (e.g., server, controller, repo server, and application controller) have adequate CPU and memory resources. This can be configured in your Helm chart or directly in the Kubernetes manifests.
 
 **Repository Caching**
 
@@ -384,10 +356,6 @@ cat << EOF > runme-agrocd-plugins1.yaml
       - url: https://github.com/my-org/my-repo.git
         cacheDuration: 30m
 EOF
-```
-
-```sh {"id":"01J0X1GA9H2MJ4HTR6JX26RP3P"}
-brew install yq
 ```
 
 ```sh {"id":"01J0TWDFWAA01HWKDDY8MAM2CP"}
@@ -500,14 +468,6 @@ docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSIO
 **High Availability**
 
 Configure Argo CD for high availability (HA) by running multiple replicas of its components and distributing them across different nodes and availability zones.
-
-Example HA configuration in Helm:
-
-```yaml {"id":"01J0TF9A89KN0GBESXNRRX7YSE"}
-replicaCount: 3
-```
-
-Deploying with high availability ensures that Argo CD can continue operating even if some instances fail.
 
 **Disaster Recovery Testing**
 
