@@ -383,6 +383,14 @@ cat << EOF > runme-agrocd-shard-controllers.yaml
 EOF
 ```
 
+```sh {"id":"01J15CX08X86B5W88C60GPX0KJ"}
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' runme-agrocd-cm.yaml runme-agrocd-shard-controllers.yaml > runme-merged.yaml
+```
+
+```sh {"id":"01J15D6PV7ZEV510S6S3CV5RA4"}
+kubectl apply -f runme-merged.yaml
+```
+
 Update `runme-agrocd-cm.yaml`
 
 Label your applications to distribute them among controller instances:
@@ -426,26 +434,7 @@ groups:
 
 **Log Aggregation**
 
-Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and Grafana to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
-
-Example Fluentd configuration:
-
-```yaml {"id":"01J0TF9A89KN0GBESXNPAWMY2Y"}
-<source>
-  @type tail
-  path /var/log/argocd/*.log
-  pos_file /var/log/td-agent/argocd.log.pos
-  tag argocd.*
-  format none
-</source>
-
-<match argocd.**>
-  @type elasticsearch
-  host elasticsearch
-  port 9200
-  logstash_format true
-</match>
-```
+Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and [Grafana](../guide/monitoring-stack.md) to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
 
 **Setting Up Disaster Recovery Procedures**
 
@@ -467,7 +456,7 @@ docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSIO
 
 **High Availability**
 
-Configure Argo CD for high availability (HA) by running multiple replicas of its components and distributing them across different nodes and availability zones.
+Configure Argo CD for high availability (HA) by running multiple [replicas](../guide/replicaset.md) of its components and distributing them across different nodes and availability zones.
 
 **Disaster Recovery Testing**
 
