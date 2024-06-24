@@ -175,7 +175,7 @@ argocd app rollback guestbook 1
 
 Replace `<REVISION>` with the desired revision number from the history.
 
-## **Managing Repositories with Argo CD CLI**
+### **Managing Repositories with Argo CD CLI**
 
 1. **Add a Repository**: Register a new public repository.
 
@@ -196,7 +196,7 @@ argocd repo update https://github.com/my-org/new-repo-url.git --username newuser
 argocd repo rm https://github.com/my-org/new-repo-url.git
 ```
 
-## Accessing Application Logs with Argo CD CLI
+### Accessing Application Logs with Argo CD CLI
 
 1. **View All Logs**: Start by viewing all logs for the application to get a broad overview.
 
@@ -228,7 +228,7 @@ argocd app logs guestbook --follow
 argocd app logs my-app --tail 100 --follow
 ```
 
-## Customizing Argo CD
+### Customizing Argo CD
 
 1. **Define an Application with CRD**: Create a YAML file for the application.
 
@@ -324,15 +324,15 @@ EOF
 kubectl apply -f runme-agrocd-plugins.yaml
 ```
 
-## Scaling and Performance Tuning
+### Scaling and Performance Tuning
 
 As Argo CD is increasingly adopted in large-scale environments, ensuring optimal performance and scalability becomes critical. Proper configuration and monitoring can significantly enhance Argo CD's efficiency, reliability, and responsiveness. This section covers strategies for optimizing Argo CD for large-scale deployments, performance monitoring, tuning tips, and setting up disaster recovery procedures.
 
-### Optimizing Argo CD for Large-Scale Deployments
+**Optimizing Argo CD for Large-Scale Deployments**
 
 Large-scale deployments often involve managing hundreds or thousands of applications, which can place considerable demands on Argo CD. Here are key practices for optimizing Argo CD for such environments:
 
-### Resource Allocation
+**Resource Allocation**
 
 Ensure that the Argo CD components (e.g., server, controller, repo server, and application controller) have adequate CPU and memory resources. This can be configured in the Helm chart or directly in the Kubernetes manifests.
 
@@ -365,7 +365,7 @@ server:
       cpu: "250m"
 ```
 
-### Repository Caching
+**Repository Caching**
 
 Enable and configure repository caching to reduce the load on the repo server and speed up application syncing.
 
@@ -391,7 +391,7 @@ yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' agrocd-cm.yaml run
 
 Update `runme-agrocd-cm.yaml`
 
-### Sharding Controllers
+**Sharding Controllers**
 
 Distribute the workload by sharding the Argo CD controllers. This involves running multiple instances of the application controller, each responsible for a subset of applications.
 
@@ -418,11 +418,11 @@ kubectl label app my-app instance=instance1
 kubectl label app another-app instance=instance2
 ```
 
-### Performance Monitoring and Tuning Tips
+**Performance Monitoring and Tuning Tips**
 
 Monitoring Argo CD's performance is crucial to identify bottlenecks and optimize the system. Here are some tips for effective monitoring and tuning:
 
-### Metrics and Alerts
+**Metrics and Alerts**
 
 Enable Prometheus metrics to monitor the performance of Argo CD components. Use Grafana dashboards to visualize metrics and set up alerts for critical thresholds.
 
@@ -450,7 +450,7 @@ groups:
 
 ```
 
-### Log Aggregation
+**Log Aggregation**
 
 Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and Grafana to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
 
@@ -473,11 +473,11 @@ Example Fluentd configuration:
 </match>
 ```
 
-### Setting Up Disaster Recovery Procedures
+**Setting Up Disaster Recovery Procedures**
 
 Having robust disaster recovery procedures is essential for ensuring business continuity and minimizing downtime. Here are key practices for setting up disaster recovery in Argo CD:
 
-### Regular Backups
+**Regular Backups**
 
 Regularly back up Argo CD configurations, including the Kubernetes manifests and Git repositories. Use tools like [Velero](https://velero.io/) for Kubernetes backups and Git hooks or cron jobs for repository backups.
 
@@ -491,7 +491,7 @@ Import from a backup
 docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSION argocd admin import - < backup.yaml
 ```
 
-### High Availability
+**High Availability**
 
 Configure Argo CD for high availability (HA) by running multiple replicas of its components and distributing them across different nodes and availability zones.
 
@@ -503,7 +503,7 @@ replicaCount: 3
 
 Deploying with high availability ensures that Argo CD can continue operating even if some instances fail.
 
-### Disaster Recovery Testing
+**Disaster Recovery Testing**
 
 Regularly test your disaster recovery procedures to ensure they work as expected. Simulate failures and validate that you can restore from backups and that your HA setup can handle node failures.
 
