@@ -175,7 +175,7 @@ argocd app rollback guestbook 1
 
 Replace `<REVISION>` with the desired revision number from the history.
 
-### **Managing Repositories with Argo CD CLI**
+## **Managing Repositories with Argo CD CLI**
 
 1. **Add a Repository**: Register a new public repository.
 
@@ -228,7 +228,7 @@ argocd app logs guestbook --follow
 argocd app logs my-app --tail 100 --follow
 ```
 
-### Customizing Argo CD
+## Customizing Argo CD
 
 1. **Define an Application with CRD**: Create a YAML file for the application.
 
