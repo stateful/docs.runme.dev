@@ -53,6 +53,8 @@ Checks whether the cluster is running and healthy.
 kubectl cluster-info — context kind-runme-argocd
 ```
 
+![Cluster health](../../static/img/guide-page/runme-cluster-healthy.png)
+
 Check namespaces
 
 ```sh {"id":"01J0QPCQXAWZ0ZG837CEKH1CA1"}
@@ -102,7 +104,7 @@ argocd login <ARGOCD_SERVER> --username admin --password <retrieved-password> --
 ```
 
 ```sh {"id":"01J0R8H2WGKEHE1J2J8EYHBTW7"}
-argocd login localhost:8080 --username admin --password kSBMFH04aGuzPIZL --insecure
+argocd login localhost:8080 --username admin --password GS66Sw8YrJ7bn1I- --insecure
 
 ```
 
@@ -148,6 +150,8 @@ argocd app sync guestbook
 ```sh {"id":"01J0REE4N5XT06VH48M2SV2ARC"}
 argocd app get guestbook
 ```
+
+![argocd status](../../static/img/guide-page/Runme-argocd-status.png)
 
 ## **CLI Operations**
 
@@ -262,6 +266,8 @@ EOF
 ```sh {"id":"01J0TF9A89KN0GBESXN5H4NFQ7"}
 kubectl apply -f sample-project.yaml
 ```
+
+![Deploy CRD](../../static/img/guide-page/Runme-argo-CRD.png)
 
 3. **Configure a Plugin**: Add a custom plugin to `argocd-cm`.
 
