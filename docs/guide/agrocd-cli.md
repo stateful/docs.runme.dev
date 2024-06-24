@@ -95,7 +95,7 @@ Retrieve Initial Admin Password
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode
 ```
 
-### **Login to Argo CD CLI**
+### Login to Argo CD CLI
 
 ```sh {"id":"01J0V0PQ2TA2MC9A2JB92RGQPF"}
 argocd login <ARGOCD_SERVER> --username admin --password <retrieved-password> --insecure
