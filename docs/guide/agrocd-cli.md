@@ -35,7 +35,6 @@ brew install git
 brew install kind
 brew install docker
 brew install argocd
-
 ```
 
 The command above installs `brew` and `git,` creates a local Kubernetes Cluster using [kind](https://kind.sigs.k8s.io/)
@@ -45,7 +44,7 @@ The command above installs `brew` and `git,` creates a local Kubernetes Clus
 ## **Setting Up Your Cluster**
 
 ```sh {"id":"01J0QP7HM4HB9NY43B10CQYNDK"}
-kind create cluster --name runme-argocd
+kind create cluster --name runme-argocd 
 ```
 
 Checks whether the cluster is running and healthy.
@@ -115,7 +114,7 @@ Create a Project (if you haven't already)
 argocd proj create my-project
 ```
 
-### Register a Repository
+Register a Repository
 
 ```sh {"id":"01J0RBRQ824D1SVC4X9Z4GXPMV"}
 argocd repo add https://github.com/stateful/blog-examples.git
@@ -152,7 +151,7 @@ argocd app get guestbook
 
 ## **CLI Operations**
 
-## Argo CD History
+### Argo CD History
 
 To view the deployment history of your application, you can use the `argocd app history` command. This command provides a list of all the revisions that have been deployed, along with timestamps, commit messages, and other relevant details.
 
@@ -160,7 +159,7 @@ To view the deployment history of your application, you can use the `argocd app 
 argocd app history guestbook
 ```
 
-## Argo CD Rollback
+### Argo CD Rollback
 
 Argo CD maintains a history of application deployments, allowing you to roll back to a previous state if needed. To list the history:
 
@@ -176,7 +175,7 @@ argocd app rollback guestbook 1
 
 Replace `<REVISION>` with the desired revision number from the history.
 
-## Managing Repositories with Argo CD CLI
+## **Managing Repositories with Argo CD CLI**
 
 1. **Add a Repository**: Register a new public repository.
 
