@@ -2,6 +2,11 @@
 runme:
   id: 01J1AM4C0T1S197M3R3MKPXFDB
   version: v3
+  document:
+    relativePath: gcp.md
+  session:
+    id: 01J1D0K90CF0AG5NRV3KJX8GCN
+    updated: 2024-06-27 17:25:45+01:00
 ---
 
 ## Runme with Google Cloud Engine
@@ -49,7 +54,7 @@ With Runme's cloud rendering capabilities, you can visualize your Google Cloud d
 
 **Set Your Project ID Using an Environment Variable**
 
-First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook
+First, set your Google Cloud project ID using an [environment vairable](ht************************************************************************ts). This allows you to specify the project you want to work with and visualize in your notebook
 
 ```sh {"id":"01J1AQK0KF874HAGT2HGYG3VFK"}
 export PROJECT_ID="runme-ci"
@@ -61,7 +66,7 @@ echo "PROJECT_ID set to $PROJECT_ID"
 To utilize this feature, simply paste a link from the console, specifying the desired project for visualization.
 
 ```sh {"id":"01J1CXFZ8AS8VS42KX85A1D7HK"}
-https://console.cloud.google.com/compute/instances?project=$PROJECT_ID
+ht******************************************************ct=$PROJECT_ID
 ```
 
 Here, `runme-ci` is the project identifier.
@@ -84,7 +89,7 @@ When you access the visualized dashboard within your Runme notebook, you can eas
 
 Outcome:
 
-![pause an instance ](../../../static/img/Integration/runme-suspending-2.png)
+![pause an instance ](../../../static/img/Integration/ru******************ng)
 
 2. **Start instance**
 
@@ -100,9 +105,9 @@ the instance is starting
 
 ![starting instance](../../../static/img/Integration/starting-runme.png)
 
-the instance is up
+the instance is up 
 
-![the instance is up](<../../../static/img/Integration/Screenshot 2024-06-27 at 14.40.13.png>)
+![the instance is up](<../../../static/img/Integration/Screenshot 2024-06-27 at 14********ng>)
 
 3. ***Stop an Instance**
 
@@ -112,7 +117,7 @@ the instance is up
 
 ![stop](../../../static/img/Integration/runme-cloud-stop.png)
 
-The instance has stopped
+The instance has stopped 
 
 ![stop](../../../static/img/Integration/stop-cloud-render.png)
 
@@ -129,9 +134,9 @@ The instance has stopped
 
 ## Working with Google Kubernetes Cluster
 
-With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. Follow the steps below to set up and use this feature.
+Runme introduces a Cloud Native Renderer tailored for listing Kubernetes clusters, essentially functioning as a mission control dashboard. This allows seamless integration of Google Cloud Console views into your Runbook environment, providing a unified interface for managing your Kubernetes clusters
 
-## List clusters
+## Viewing Kubernetes Clusters in Google Cloud Console
 
 To utilize this feature, simply paste a link from the console, specifying the desired project for visualization.
 
@@ -140,7 +145,7 @@ You'll be presented with a resources table akin to the Google Cloud interface, s
 Run the following command (ensure you have provided a valid value for project-id)
 
 ```sh {"id":"01J1D05NR48FG1QYVD6RDF9KJ5"}
-https://console.cloud.google.com/kubernetes/list/overview?project=project-id
+ht************************************************************************id
 ```
 
 ![click up](../../../static/img/Integration/list-cluster.png)
@@ -148,7 +153,7 @@ https://console.cloud.google.com/kubernetes/list/overview?project=project-id
 click on actions the button
 
 ```sh {"background":"false","id":"01J1D07SGQ84ZH1GZSYYVGFTC3"}
-https://console.cloud.google.com/kubernetes/clusters/details/europe-central2-a/rejekts/details?project=runme-ci
+ht***********************************************************************************************************ci
 ```
 
 ![test](../../../static/img/Integration/cluster-detail.png)
@@ -156,7 +161,7 @@ https://console.cloud.google.com/kubernetes/clusters/details/europe-central2-a/r
 You can also paste a cluster details link:
 
 ```sh {"id":"01J1D71J5NS0NH2KJS39JHYYS5"}
-https://console.cloud.google.com/kubernetes/clusters/details/[location]/[account]/details?project=[project]
+ht********************************************************ls/[location]/[account]/details?project=[project]
 ```
 
 replace `location` `account` and `project`
