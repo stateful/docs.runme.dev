@@ -78,6 +78,9 @@ When you access the visualized dashboard within your Runme notebook, you can eas
 1. **Pause an Instance**
 
 - Click on the pause icon next to the instance you want to pause.
+
+![pause](../../../static/img/Integration/test-runme-cloud.png)
+
 - An interface will appear asking if you want to suspend the instance.
 - Click `Yes` or `No` to confirm your choice.
 
@@ -90,6 +93,9 @@ Outcome:
 2. **Start instance**
 
 - Click the start button next to the instance you want to start.
+
+![start](../../../static/img/Integration/test-runme-cloud.png)
+
 - An interface will appear asking if you want to start the instance.
 - Click "Yes" or "No" to proceed.
 
@@ -103,12 +109,18 @@ the instance is starting
 
 the instance is up
 
-![the instance is up](../../../static/img/Integration/Screenshot 2024-06-27 at 14.40.13.png)
+![instance is up](../../../static/img/Integration/rume-up.png)
 
 3. ***Stop an Instance**
 
 - Click on the stop button next to the instance you want to stop.
+
+![stop](../../../static/img/Integration/test-runme-cloud.png)
+
 - An interface will pop up asking if you want to stop the instance.
+
+![yes or no](../../../static/img/Integration/runme-stop.png)
+
 - Click "Yes" or "No" to confirm your action.
 
 ![stop](../../../static/img/Integration/runme-cloud-stop.png)
