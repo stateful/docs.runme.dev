@@ -2,30 +2,31 @@
 runme:
   id: 01J1AM4C0T1S197M3R3MKPXFDB
   version: v3
+title: Runme Cloud Renderers via Google Cloud
 ---
 
-## Runme with Google Cloud Engine
-
-Runme offers seamless integration with your Google Cloud and AWS EC2 resources directly from your interactive notebook. With Runme Cloud Renderers, you can:
+Runme introduces a Cloud Native Renderer tailored for integration with your Google Cloud resources directly from your interactive notebook, essentially functioning as a mission control dashboard. This allows seamless integration of Google Cloud Console views into your Runbook environment, providing a unified interface for managing your Kubernetes clusters. With Runme Cloud Renderers, you can:
 
 - Effortlessly list, manage, and connect to your cloud instances
-- Perform cloud management tasks within a single, unified interface
+- Perform GKE management tasks within a single, unified interface
 - Simplify your workflow by consolidating cloud operations
-- Experience streamlined cloud resource management with Runme, making it easier than ever to handle your Google Cloud and EC2 instances efficiently
+- Experience streamlined cloud resource management with Runme, making it easier than ever to handle your Google Cloud and GKE instances efficiently
 
 ## Prerequisites
 
-Install Google Cloud SDK
+1. **Install Google Cloud SDK**
 
 To interact with Google Cloud resources, you need the Google Cloud SDK. This SDK provides the necessary tools and libraries.
 
-via homebrew
+via [homebrew](https://brew.sh/)
 
 ```sh {"id":"01J1ANGXDNJ462THYDNVPWZJTP"}
 $ brew install --cask google-cloud-sdk
 ```
 
-Authenticate with Google Cloud
+For Other platforms Consult [GCP's official docs](https://cloud.google.com/sdk/docs/install)
+
+2. **Authenticate with Google Cloud**
 
 After installing the SDK, you need to authenticate your account to gain access to your Google Cloud resources.
 
@@ -33,7 +34,7 @@ After installing the SDK, you need to authenticate your account to gain access t
 $ gcloud auth login
 ```
 
-Setup default credentials
+3. **Setup default credentials**
 
 Setting up default application credentials allows your applications and tools to access your Google Cloud resources without requiring further authentication prompts.
 
@@ -43,7 +44,7 @@ gcloud auth application-default login
 
 With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. Follow the steps below to set up and use this feature.
 
-# Google Compute Engine
+# Google Compute Engine via Runme Native Cloud Renderer
 
 With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. Follow the steps below to set up and use this feature.
 
@@ -102,7 +103,7 @@ the instance is starting
 
 the instance is up
 
-![the instance is up](<../../../static/img/Integration/Screenshot 2024-06-27 at 14.40.13.png>)
+![the instance is up](../../../static/img/Integration/Screenshot 2024-06-27 at 14.40.13.png)
 
 3. ***Stop an Instance**
 
