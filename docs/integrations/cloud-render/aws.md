@@ -93,7 +93,7 @@ Listing EC2 instances is a crucial part of managing your AWS environment, and it
 
 Runme integrates with your AWS EC2 resource URLs, mirroring your navigation in the AWS Console directly within your Notebook. This provides you with more focus as you get all its functionality within your Notebook.
 
-To list your EC2 Instances, run the command below.
+To list your EC2 Instances, run the command below
 
 Note: Replace the `[region]` with your actual region.
 
