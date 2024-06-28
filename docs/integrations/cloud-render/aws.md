@@ -2,6 +2,7 @@
 runme:
   id: 01J1ASZDP12DG2YF681CEAEHY3
   version: v3
+title: Runme Notebook Cloud Renderers with AWS
 ---
 
 Runme Notebook Cloud Renderers provides users with access to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, one of which is the [AWS Elastic Cloud Compute (EC2).](https://aws.amazon.com/ec2/)
