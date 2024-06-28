@@ -5,13 +5,15 @@ runme:
 title: Runme Notebook Cloud Renderers with AWS
 ---
 
-Runme Notebook Cloud Renderers provides users with access to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, one of which is the [AWS Elastic Cloud Compute (EC2).](https://aws.amazon.com/ec2/)
+# Runme Notebook Cloud Renderers with AWS
 
-AWS EC2 is a cloud-based service that allows users to deploy, manage, and scale applications efficiently while optimizing costs and ensuring security.
+Runme Notebook Cloud Renderers allows users to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, including [AWS Elastic Cloud Compute (EC2)](https://aws.amazon.com/ec2/) and [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/).
 
-The integration of Runme with AWS EC2 makes it easy to scale applications from your Markdown file and promotes collaboration between teammates.
+While AWS EC2 is a cloud-based service that allows users to deploy, manage, and scale applications efficiently while optimizing costs and ensuring security, AWS EKS, on the other hand, is a managed Kubernetes service that makes it easy to run Kubernetes on AWS without installing and operating your own Kubernetes control plane or nodes.
 
-This guide will explore how to accelerate your workflow by leveraging Runme Notebook Cloud Renderers with AWS EC2.
+The integration of Runme with AWS makes it easy to scale applications from your Markdown file and promotes collaboration between teammates.
+
+This guide will explore how to accelerate your workflow by leveraging Runme Notebook Cloud Renderers with AWS.
 
 ## Installation
 
@@ -189,7 +191,7 @@ This is the resulting interface. Isn’t it cool? You can view comprehensive inf
 
 This will direct you to your EKS cluster detail page.
 
-image-test
+![EKS](../../../static/img/Integration/eks-aws-runme.png)
 
 ### Get Specific EKS Cluster Details
 

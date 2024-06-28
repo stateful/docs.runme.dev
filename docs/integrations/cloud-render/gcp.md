@@ -5,20 +5,20 @@ runme:
 title: Runme Cloud Renderers via Google Cloud
 ---
 
-Runme introduces a Cloud Native Renderer tailored for integration with your Google Cloud resources directly from your interactive notebook, essentially functioning as a mission control dashboard. This allows seamless integration of Google Cloud Console views into your Runbook environment, providing a unified interface for managing your Kubernetes clusters. With Runme Cloud Renderers, you can:
+Runme introduces Cloud Native Renderers for integrating cloud resources, such as from Google Cloud, directly from your interactive notebook.
 
-- Effortlessly list, manage, and connect to your cloud instances
-- Perform GKE management tasks within a single, unified interface
-- Simplify your workflow by consolidating cloud operations
-- Experience streamlined cloud resource management with Runme, making it easier than ever to handle your Google Cloud and GKE instances efficiently
+This  integration of Google Cloud Console views into your Runbook environment provides a unified interface for managing your resources with Runme Cloud Renderers as you can:
+
+- Effortlessly list, manage, and connect to your cloud instances.
+- Perform GKE management tasks within a single interface.
+- Simplify your workflow
+- Experience faster cloud resource management with Runme, making it easier than ever to handle your Google Cloud and GKE instances efficiently.
 
 ## Prerequisites
 
 1. **Install Google Cloud SDK**
 
-To interact with Google Cloud resources, you need the Google Cloud SDK. This SDK provides the necessary tools and libraries.
-
-via [homebrew](https://brew.sh/)
+To interact with Google Cloud resources, you need the Google Cloud SDK. This SDK provides the necessary tools and libraries. Run the command below to install:
 
 ```sh {"id":"01J1ANGXDNJ462THYDNVPWZJTP"}
 $ brew install --cask google-cloud-sdk
@@ -28,7 +28,7 @@ For Other platforms Consult [GCP's official docs](https://cloud.google.com/sdk/d
 
 2. **Authenticate with Google Cloud**
 
-After installing the SDK, you need to authenticate your account to gain access to your Google Cloud resources.
+After installing the SDK, you need to authenticate your account to gain access to your Google Cloud resources. Run the command below to get authenticated:
 
 ```sh {"id":"01J1CX6BXBBQ433QSKDNYDX3Q5"}
 $ gcloud auth login
@@ -36,7 +36,7 @@ $ gcloud auth login
 
 3. **Setup default credentials**
 
-Setting up default application credentials allows your applications and tools to access your Google Cloud resources without requiring further authentication prompts.
+Setting up default application credentials allows your applications and tools to access your Google Cloud resources without requiring further authentication prompts. To do this, run the command below:
 
 ```sh {"id":"01J1CX90BA6VECCBJAWSWA369W"}
 gcloud auth application-default login
@@ -46,11 +46,15 @@ With Runme's cloud rendering capabilities, you can visualize your Google Cloud d
 
 # Google Compute Engine via Runme Native Cloud Renderer
 
-With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. Follow the steps below to set up and use this feature.
+Google Compute Engine (GCE) is a service that allows users to run virtual machines on Google's infrastructure. It offers a customizable and scalable environment for deploying, managing, and scaling applications. 
+
+With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. 
+
+This section will walk you through how GCE works in Runme Notebook Renderers.
 
 **Set Your Project ID Using an Environment Variable**
 
-First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook
+First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook. To set your project ID, run the command below:
 
 ```sh {"id":"01J1AQK0KF874HAGT2HGYG3VFK"}
 export PROJECT_ID="runme-ci"
@@ -59,21 +63,23 @@ echo "PROJECT_ID set to $PROJECT_ID"
 
 **Specify the Project for Visualization**
 
-To utilize this feature, simply paste a link from the console, specifying the desired project for visualization.
+After setting your project ID, you can now visualize your project. 
+
+To see this, you need to paste a link from the console specifying the desired project for visualization, like the link below, and click **run**.
 
 ```sh {"id":"01J1CXFZ8AS8VS42KX85A1D7HK"}
 https://console.cloud.google.com/compute/instances?project=$PROJECT_ID
 ```
 
-Here, `runme-ci` is the project identifier.
+Here, `runme-ci` is the project ID.
 
-When you visit this link, you'll be presented with a table displaying your Google Compute Engine instances, akin to the Google Cloud Console.
+When run that code block, you'll be presented with a table displaying your Google Compute Engine instances, mirroring the Google Cloud Console.
 
 ![alt text](../../../static/img/Integration/gce-dashboard.png)
 
 ## Managing Your Instances
 
-When you access the visualized dashboard within your Runme notebook, you can easily manage your instances. Here are the available actions:
+You can easily manage your instances when you access the visualized dashboard within your Runme notebook. Here are the available actions:
 
 1. **Pause an Instance**
 
@@ -93,7 +99,7 @@ Outcome:
 ![start](../../../static/img/Integration/test-runme-cloud.png)
 
 - An interface will appear asking if you want to start the instance.
-- Click "Yes" or "No" to proceed.
+- Click `Yes` or `No` to proceed.
 
 Outcome:
 
@@ -110,7 +116,6 @@ the instance is up
 ![stop](../../../static/img/Integration/test-runme-cloud.png)
 
 - An interface will pop up asking if you want to stop the instance.
-
 - Click "Yes" or "No" to confirm your action.
 
 The instance has stopped
