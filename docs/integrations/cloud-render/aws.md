@@ -4,29 +4,27 @@ runme:
   version: v3
 ---
 
-Runme is an interactive notebook that allows you to run codes and commands and document your workflows directly in your Markdown file. To enhance its capabilities, Runme integrates with various cloud services, one of which is the AWS Elastic Kubernetes Service (EKS).
+Runme Notebook Cloud Renderers provides users with access to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, one of which is the [AWS Elastic Cloud Compute (EC2).](https://aws.amazon.com/ec2/)
 
-AWS EKS is a managed Kubernetes service that makes it easy to run Kubernetes on AWS without installing and operating your own Kubernetes control plane or nodes. The integration of Runme with AWS EKS makes it easy to scale applications from your Markdown file and promotes collaboration between teammates.
+AWS EC2 is a cloud-based service that allows users to deploy, manage, and scale applications efficiently while optimizing costs and ensuring security.
 
-In this guide, we will explore how you can leverage this for cloud rendering.
+The integration of Runme with AWS EC2 makes it easy to scale applications from your Markdown file and promotes collaboration between teammates.
 
-## Prerequisite
+This guide will explore how to accelerate your workflow by leveraging Runme Notebook Cloud Renderers with AWS EC2.
 
-To follow up on this tutorial, carry out the following:
+## Installation
 
-- **Install Runme:** Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
-- **Clone the repository:** You need to clone [this repository](https://github.com/stateful/vscode-runme). It contains all the commands needed to [set up](https://github.com/stateful/vscode-runme/blob/main/examples/aws/setup.md) and [follow up](https://github.com/stateful/vscode-runme/blob/main/examples/aws/eks.md) on this tutorial.
-- **Install AWS CLI:** For UNIX-based systems (macOS and Linux), you can use `Homebrew` to install `awscli`. To do that, run the command below:
+**Install AWS CLI:** For UNIX-based systems (macOS and Linux), you can use `Homebrew` to install `awscli`. To do that, run the command below:
 
-```bash {"id":"01J1ASZDP12DG2YF680TJWTRJ5"}
+```bash {"id":"01J1FHEZWX220HQZ4T5GEKWTH0"}
 brew install awscli
 ```
 
-To install on other platforms, check out the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html).
+To install on other platforms, check out the AWS [documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html).
 
 ## Getting Started
 
-This section will explore how to set up your AWS profile.
+This section will explore setting up your AWS profile, listing configured profiles, and configuring any profie you want.
 
 ### Setting Up Your Working AWS Profile
 
@@ -36,24 +34,40 @@ Within a credentials file, information is organized into profiles, each potentia
 
 **List Configured Profiles**
 
-You can create as many profiles as you need. Each profile has a unique set of credentials and configuration settings. To get a list of configured profiles, run the command below.
+You can create as many profiles as you need to execute your task. Each profile has a unique set of credentials and configuration settings. To get a list of configured profiles, run the command below.
 
 ```bash {"id":"01J1ASZDP12DG2YF680YG0KB06"}
 aws configure list-profiles
 ```
 
-To display profile details, including access key, secret key, and region configuration information utilized for a specific profile, you can leverage Runme’s environment variable prompt and execute the following commands:
+When this command is executed, it will display a list of all profile(s) configured to your AWS CLI.
+
+![List profile](../../../static/img/Integration/runme-aws-list-profile.png)
+
+Apart from just listing profiles, you may want to get explicit profile details such as access key, secret key, etc.
+
+To do this, you must first ensure you set the profile name of the specific profile you wish to display. [Runme’s environment variable prompt](https://docs.runme.dev/configuration/cell-level#set-environment-variables) makes this easy, as it prompts you to enter the profile name. To see this in action, run the command below.
 
 ```bash {"id":"01J1ASZDP12DG2YF680ZWS9MEQ"}
 export PROFILE_NAME="default"
 echo "PROFILE NAME SET TO $PROFILE_NAME"
 ```
 
+This command sets the environment variable `PROFILE_NAME` to "default". You can replace "default" with any other configured profile name.
+
+Once this command is executed, it will return the current value of the `PROFILE_NAME` variable to confirm it has been set correctly. The output will be:
+
+![Set profile](../../../static/img/Integration/runme-set-profile.png)
+
+Next, execute this command below to get the full details of your profile.
+
 ```bash {"id":"01J1ASZDP12DG2YF6811CEN9W8"}
 aws configure list --profile $PROFILE_NAME
 ```
 
-When both commands are executed individually in your Runme code cell, you will get outputs similar to the image below.
+When that is successful, you will get an image similar to this.
+
+![set profile](../../../static/img/Integration/runme-list-aws-profile-detail.png)
 
 **Configuring a Default Profile**
 
@@ -65,67 +79,79 @@ aws configure
 
 Here is a visual representation of the output.
 
+![aws configure](../../../static/img/Integration/aws-configure.png)
+
 Your AWS CLI is correctly configured, and you can proceed to the next section.
 
-## Working with EKS Clusters
+## Working With EC2 Instances
 
-In the sections below, you will discover how you can leverage Runme's robust Notebook Cloud Renderers to engage with your EKS resources in ways you've never imagined before!
+AWS EC2 enables you to deploy cloud-native applications with high performance and security. In the sections below, you will discover how to leverage Runme Notebook Cloud Renderers to engage with your EC2 resources.
 
-### List EKS Clusters
+### List EC2 Instances
 
-One of the fundamental tasks in working with EKS is listing your clusters. Listing EKS clusters gives you a snapshot of all your clusters and their statuses and ensures your Kubernetes environment is running smoothly and efficiently.
+Listing EC2 instances is a crucial part of managing your AWS environment, and it serves as a foundation for performing other operations, such as managing instance states or securely connecting via SSH.
 
-Runme seamlessly integrates with your AWS EKS resource URLs, mirroring your navigation in the AWS Console directly within your Notebook. This eliminates the need to open the console separately; you can access its functionality within your Notebook file.
+Runme integrates with your AWS EC2 resource URLs, mirroring your navigation in the AWS Console directly within your Notebook. This provides you with more focus as you get all its functionality within your Notebook.
 
-To test this out, run the command below. Ensure to set your region.
+To list your EC2 Instances, run the command below.
+
+Note: Replace the `[region]` with your actual region.
 
 ```bash {"id":"01J1ASZDP12DG2YF6816BNW44M"}
-export EKS_REGION="us-east-1"
-echo "EKS_REGION set to $EKS_REGION"
+https://[region].console.aws.amazon.com/ec2/home?region=[region]#Instances
 ```
 
-When this command is executed, this is the output interface.
+When this command is executed in your Runme code cell, the output is given below. If you would like to view your AWS console, you can click any of the highlight links indicated in the output image below.
 
-Next, run the command below to experience the Runme Cloud Renderer in action.
+![AWS Dashboard](../../../static/img/Integration/runme-aws-ec2-dashboard.png)
 
-```bash {"id":"01J1ASZDP12DG2YF6818DEFVV0"}
-https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters
+### Get Specific EC2 Instance
+
+With Runme Cloud Renderers, you can get specific instance details right inside your Notebook with a single click. To do this, follow the steps below.
+
+- Ensure you have generated a list of your EC2 instances. If you haven’t go back to the previous step and do that.
+- In the dashboard that appears in your Notebook, click the button as indicated in the image.
+
+If you have more than one instance displayed, be sure to navigate to the specific instance and click that button.
+
+![Dashboard display](../../../static/img/Integration/runme-aws-display.png)
+
+- This will open a new view in your VS Code that prompts you to confirm your decision. Click Yes.
+
+![Display details](../../../static/img/Integration/display-instance-details.png)
+
+- Once your decision is confirmed, a new code block will be created in your Notebook and automatically run to generate the display. The code cell will look like this:
+
+```bash {"id":"01J1FJ4FG6JB28J9445QT3A7GJ"}
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=$EC2_INSTANCE_ID
 ```
 
-This is the resulting interface. Isn’t it cool?
+- After the code cell is run automatically and successfully executed, your Instance will be displayed.
 
-![eks dashboard](../../../static/img/configuration-page/EkS-dashboard.png)
+![AWS Dashboard](../../../static/img/Integration/runme-aws-dashboard.png)
 
-It also possesses useful links to your AWS console below the table, as shown in the image above.
+This will unlock the visual display of the specific EC2 instance, which will give details of the instance ID, launch time, platform, availability zone, security groups, etc. You will also find useful links to the AWS Console like details and manage state.
 
-### Display a Specific EKS Cluster
+### Connect to EC2 instance via SSH
 
-When you execute an AWS console link for specific cluster details, you will have a similar experience to listing EKS clusters, which offers a comprehensive breakdown of the instance’s details.
+SSH is essential for securely accessing, managing, and troubleshooting EC2 instances, thus giving you efficient and effective control over your cloud resources.
 
-To experience this firsthand, run the commands below.
+You can establish a secure SSH connection to an EC2 instance right inside your Markdown file. To do that, follow the steps below:
 
-```bash {"id":"01J1ASZDP12DG2YF68197RG3BX"}
-export EKS_CLUSTER="runme-cloud"
-export EKS_REGION="us-west-1"
-echo "EKS_CLUSTER set to $EKS_CLUSTER"
-echo "EKS_REGION set to $EKS_REGION"
-```
+- Ensure you have generated a list of your EC2 instances. If you haven’t go back to the previous step and do that.
+- In the dashboard that appears in your Notebook, click the button as indicated in the image.
 
-Be sure to replace the cluster placeholder with the instance you want to visualize, as in the image below.
+If you have more than one instance displayed, be sure to navigate to the specific instance and click that button.
 
-![placeholder](../../../static/img/configuration-page/runme-cloud-rendering.png)
+![display more information](../../../static/img/Integration/runme-aws-dahsboard-ssh.png)
 
-Next, run this command:
+- This will open a new view in your VS Code that prompts you to confirm your decision. Click Yes.
 
-```bash {"id":"01J1ASZDP12DG2YF681AVWHAY9"}
-https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters/$EKS_CLUSTER
-```
+![SSH AWS](../../../static/img/Integration/runme-ssh-aws.png)
 
-This will unlock the visual display of the specific EKS cluster details.
+- Once your decision is confirmed, a new code block will be created in your Notebook and automatically run to SSH into the instance. This is the code block created and the final output to confirm that it operation was successful.
 
-![eks dashboard](../../../static/img/Integration/aws-dashboard.png)
-
-If you would love to navigate to the AWS console for that cluster, click the **view detail**s icon.
+![ssh ec2](../../../static/img/Integration/runme-ssh-ec2.png)
 
 ## Feedback and Contribution
 
