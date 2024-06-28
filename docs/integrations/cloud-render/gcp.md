@@ -44,7 +44,7 @@ gcloud auth application-default login
 
 With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. Follow the steps below to set up and use this feature.
 
-# Google Compute Engine via Runme Native Cloud Renderer
+## Google Compute Engine via Runme's Cloud Render
 
 Google Compute Engine (GCE) is a service that allows users to run virtual machines on Google's infrastructure. It offers a customizable and scalable environment for deploying, managing, and scaling applications.
 
@@ -141,7 +141,6 @@ the virtual machine is up
 The virtual machine has stopped
 
 ![stop](../../../static/img/Integration/stop-cloud-render.png)
-
 
 ## Working with Google Kubernetes Cluster
 
