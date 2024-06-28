@@ -102,7 +102,7 @@ Now a new view opens that prompts you to select and open a remote window.
 - Now choose the version you want and add any other features you want to install.
 - Now click **OK**. Your container configuration gets added, and the container starts.
 
-You will notice that your README.md file switches over to a normal Markdown setting. 
+You will notice that your README.md file switches over to a normal Markdown setting.
 
 You must take it back to a Runme setting to enable you to run your code with Runme in a Dev container. To do this,
 

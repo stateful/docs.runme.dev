@@ -120,7 +120,7 @@ fi
 
 ```
 
-   The image below shows how a conditional statement in a Bash script is executed in Runme in VS Code.
+The image below shows how a conditional statement in a Bash script is executed in Runme in VS Code.
 
 ![if-statement](../../static/img/guide-page/ifstatement.png)
 
@@ -170,7 +170,6 @@ Runme auto-save also incorporates a [separate Session](https://docs.runme.dev/co
 When working with this feature, you are not to push the session outputs to git or any version control software as they have sensitive details.
 
 </Infobox>
-
 
 ### Conclusion
 
