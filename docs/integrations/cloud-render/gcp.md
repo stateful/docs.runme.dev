@@ -52,7 +52,7 @@ With Runme's cloud rendering capabilities, you can visualize your Google Cloud d
 
 This section will walk you through how GCE works in Runme Notebook Renderers.
 
-**Set Your Project ID Using an Environment Variable**
+1. **Set Your Project ID Using an Environment Variable**
 
 First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook. To set your project ID, run the command below:
 
@@ -61,7 +61,7 @@ export PROJECT_ID="runme-ci"
 echo "PROJECT_ID set to $PROJECT_ID"
 ```
 
-**Specify the Project for Visualization**
+2. **Specify the Project for Visualization**
 
 After setting your project ID, you can now visualize your project. 
 
@@ -75,7 +75,7 @@ Here, `runme-ci` is the project ID.
 
 When run that code block, you'll be presented with a table displaying your Google Compute Engine instances, mirroring the Google Cloud Console.
 
-![alt text](../../../static/img/Integration/gce-dashboard.png)
+![VM dashboard](../../../static/img/Integration/runme-gcp-vm-dashboard.png)
 
 ## Managing Your Instances
 
@@ -85,7 +85,7 @@ You can easily manage your instances when you access the visualized dashboard wi
 
 - Click on the pause icon next to the instance you want to pause.
 
-![pause](../../../static/img/Integration/test-runme-cloud.png)
+![pause](../../../static/img/Integration/runme-gcp-pause.png)
 
 - An interface will appear asking if you want to suspend the instance.
 - Click `Yes` or `No` to confirm your choice.
@@ -96,7 +96,7 @@ Outcome:
 
 - Click the start button next to the instance you want to start.
 
-![start](../../../static/img/Integration/test-runme-cloud.png)
+![start](../../../static/img/Integration/runme-gcp-start.png)
 
 - An interface will appear asking if you want to start the instance.
 - Click `Yes` or `No` to proceed.
@@ -109,11 +109,13 @@ the instance is starting
 
 the instance is up
 
-3. ***Stop an Instance**
+![start](../../../static/img/Integration/test-runme-cloud.png)
+
+3. **Stop an Instance**
 
 - Click on the stop button next to the instance you want to stop.
 
-![stop](../../../static/img/Integration/test-runme-cloud.png)
+![stop](../../../static/img/Integration/runme-gcp-stop.png)
 
 - An interface will pop up asking if you want to stop the instance.
 - Click "Yes" or "No" to confirm your action.
@@ -124,45 +126,83 @@ The instance has stopped
 
 4. **SSH into an Instance**
 
+When you SSH into an instance, you gain direct,secure access to your virtual machine, enabling you to perform a wide range of tasks essential fo the management, maintenance and customization of your environment.
+
+To SSH into an instance, do the following:
+
 - Click the SSH button next to the desired instance.
+
+![ssh into instance](../../../static/img/Integration/runme-gcp-ssh-button.png)
+
 - An interface will ask if you want to SSH into the instance.
 
-```sh {"id":"01J1FPQZWYSX4W69V1138SZJ1R"}
-
-```
+![ssh instance](../../../static/img/Integration/runme-gcp-ssh.png)
 
 - Upon confirmation, another code block will pop up, allowing you to establish an SSH connection to the instance.
 
+![ssh into vm](../../../static/img/Integration/runme-gcp-ssh-outcome.png)
+
 ## Working with Google Kubernetes Cluster
 
-With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook. Follow the steps below to set up and use this feature.
+Google Kubernetes Engine(GKE) is a managed Kubernetes service that allows users to deploy, manage, and scale containerized applications using Kubernetes. 
+
+With Runme's cloud rendering capabilities, you can visualize your GKE dashboard directly within your notebook. Follow the steps below to set up and use this feature.
 
 ## List clusters
 
-To utilize this feature, simply paste a link from the console, specifying the desired project for visualization.
+Listing cluster in Google Cloud, especially with Google Kubernetes Engine(GKE) provides several benefits such as tracking and managing costs effectively, enhancing team collaboration on cluster management, etc. 
 
-You'll be presented with a resources table akin to the Google Cloud interface, seamlessly integrated into your Runbook environment!
+To list your Kubernetes clusters, you need to specify your project identifier. Runme makes this easy as it uses the environment variable feature which will prompt you enter your cluster project name which in this case is `runme-ci`. Run the command below to experience this.
 
-Run the following command (ensure you have provided a valid value for project-id)
-
-```sh {"id":"01J1D05NR48FG1QYVD6RDF9KJ5"}
-https://console.cloud.google.com/kubernetes/list/overview?project=project-id
+```sh {"id":"01J1G0S0Q1X5W8VSDKR0GVH9KF"}
+export CLUSTERS_PROJECT_NAME="runme-ci"
+echo "You have selected the project-id $CLUSTERS_PROJECT_NAME"
 ```
 
-![click up](../../../static/img/Integration/list-cluster.png)
+This is the output
 
-click on actions the button
+![set env ](../../../static/img/Integration/runme-gke-set-env.png)
+
+Now you have configured your project, run the following command to list your clusters:
+
+**Note:** Ensure you have provided a valid value for `project-id`
+
+```sh {"id":"01J1D05NR48FG1QYVD6RDF9KJ5"}
+https://console.cloud.google.com/kubernetes/list/overview?project=$CLUSTERS_PROJECT_NAME
+```
+
+When the command is run, you will see  a full list of all your Kubernetes cluster.
+
+![gks dashboard](../../../static/img/Integration/runme-gcp-gks-dashboard.png)
+
+**View Specific Cluster** 
+
+You can also view details of a specific cluster. To do this, click on the actions button beside the cluster which you want to view.
+
+![GKE dashboard](../../../static/img/Integration/runme-gke-dashboard.png)
+
+This will create a code block like the one below and automatically run it.
 
 ```sh {"background":"false","id":"01J1D07SGQ84ZH1GZSYYVGFTC3"}
 https://console.cloud.google.com/kubernetes/clusters/details/europe-central2-a/rejekts/details?project=runme-ci
 ```
 
-![test](../../../static/img/Integration/cluster-detail.png)
+Once the code block is executed, the actions page for that cluster opens up and you can perform any specific action you wish. 
 
-You can also paste a cluster details link:
+![GKE details](../../../static/img/Integration/runme-gke-dashboard-display.png)
+
+If you do not want to go through the process of clicking the button to view details, you can also paste a cluster details link into your Runme code cell and run it. Here is what it looks like
 
 ```sh {"id":"01J1D71J5NS0NH2KJS39JHYYS5"}
 https://console.cloud.google.com/kubernetes/clusters/details/[location]/[account]/details?project=[project]
 ```
 
-replace `location` `account` and `project`
+Be sure to replace `location` `account` and `project` with right credentials to access the details of the cluster 
+
+When this run, the details dashboard of your cluster will be displayed.
+
+![display details](../../../static/img/Integration/runme-gke-display.png)
+
+## Feedback and Contribution
+
+We are still developing more features for the Runme Cloud Renderers. If you have feedback on this or new ideas on how to improve this feature, feel free to [reach out to us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
