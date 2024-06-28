@@ -2,6 +2,11 @@
 runme:
   id: 01J1AM4C0T1S197M3R3MKPXFDB
   version: v3
+  document:
+    relativePath: gcp.md
+  session:
+    id: 01J1F8JWX97T4QWC8MPGS5ST07
+    updated: 2024-06-28 16:17:17+01:00
 title: Runme Cloud Renderers via Google Cloud
 ---
 
@@ -18,13 +23,13 @@ Runme introduces a Cloud Native Renderer tailored for integration with your Goog
 
 To interact with Google Cloud resources, you need the Google Cloud SDK. This SDK provides the necessary tools and libraries.
 
-via [homebrew](https://brew.sh/)
+via [homebrew](ht***********sh/)
 
 ```sh {"id":"01J1ANGXDNJ462THYDNVPWZJTP"}
 $ brew install --cask google-cloud-sdk
 ```
 
-For Other platforms Consult [GCP's official docs](https://cloud.google.com/sdk/docs/install)
+For Other platforms Consult [GCP's official docs](ht*************************************ll)
 
 2. **Authenticate with Google Cloud**
 
@@ -50,7 +55,7 @@ With Runme's cloud rendering capabilities, you can visualize your Google Cloud d
 
 **Set Your Project ID Using an Environment Variable**
 
-First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook
+First, set your Google Cloud project ID using an [environment vairable](ht************************************************************************ts). This allows you to specify the project you want to work with and visualize in your notebook
 
 ```sh {"id":"01J1AQK0KF874HAGT2HGYG3VFK"}
 export PROJECT_ID="runme-ci"
@@ -62,7 +67,7 @@ echo "PROJECT_ID set to $PROJECT_ID"
 To utilize this feature, simply paste a link from the console, specifying the desired project for visualization.
 
 ```sh {"id":"01J1CXFZ8AS8VS42KX85A1D7HK"}
-https://console.cloud.google.com/compute/instances?project=$PROJECT_ID
+ht******************************************************ct=$PROJECT_ID
 ```
 
 Here, `runme-ci` is the project identifier.
@@ -141,7 +146,7 @@ You'll be presented with a resources table akin to the Google Cloud interface, s
 Run the following command (ensure you have provided a valid value for project-id)
 
 ```sh {"id":"01J1D05NR48FG1QYVD6RDF9KJ5"}
-https://console.cloud.google.com/kubernetes/list/overview?project=project-id
+ht************************************************************************id
 ```
 
 ![click up](../../../static/img/Integration/list-cluster.png)
@@ -149,7 +154,7 @@ https://console.cloud.google.com/kubernetes/list/overview?project=project-id
 click on actions the button
 
 ```sh {"background":"false","id":"01J1D07SGQ84ZH1GZSYYVGFTC3"}
-https://console.cloud.google.com/kubernetes/clusters/details/europe-central2-a/rejekts/details?project=runme-ci
+ht***********************************************************************************************************ci
 ```
 
 ![test](../../../static/img/Integration/cluster-detail.png)
@@ -157,7 +162,7 @@ https://console.cloud.google.com/kubernetes/clusters/details/europe-central2-a/r
 You can also paste a cluster details link:
 
 ```sh {"id":"01J1D71J5NS0NH2KJS39JHYYS5"}
-https://console.cloud.google.com/kubernetes/clusters/details/[location]/[account]/details?project=[project]
+ht********************************************************ls/[location]/[account]/details?project=[project]
 ```
 
 replace `location` `account` and `project`
