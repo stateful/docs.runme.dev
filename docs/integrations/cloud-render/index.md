@@ -4,13 +4,13 @@ runme:
   version: v3
 ---
 
-# Runme Cloud Renderers
+# Runme Cloud Renderer
 
 ## Overview
 
 Runme Notebook Cloud Renderers enable you to interact with your cloud resources directly within your interactive notebook in your Markdown file.
 
-The integration between Runme Notebook Cloud Renderers and cloud service platforms allows you to perform tasks such as listing, managing, and connecting to instances, all within a single interface.
+The integration between Runme's Cloud Renderer and cloud service platforms allows you to perform tasks such as listing, managing, and SSH into a virtual machine, all within a single interface.
 
 This eliminates the need to open the console separately; you can access its functionality within your Notebook file.
 

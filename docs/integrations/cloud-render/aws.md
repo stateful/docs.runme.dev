@@ -2,18 +2,18 @@
 runme:
   id: 01J1ASZDP12DG2YF681CEAEHY3
   version: v3
-title: Runme Notebook Cloud Renderers with AWS
+title: Runme Cloud Renders with AWS
 ---
 
-# Runme Notebook Cloud Renderers with AWS
+# Runme Cloud Renderers with AWS
 
-Runme Notebook Cloud Renderers allows users to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, including [AWS Elastic Cloud Compute (EC2)](https://aws.amazon.com/ec2/) and [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/).
+Runme Cloud Rendering allows users to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, including [AWS Elastic Cloud Compute (EC2)](https://aws.amazon.com/ec2/) and [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/).
 
 While AWS EC2 is a cloud-based service that allows users to deploy, manage, and scale applications efficiently while optimizing costs and ensuring security, AWS EKS, on the other hand, is a managed Kubernetes service that makes it easy to run Kubernetes on AWS without installing and operating your own Kubernetes control plane or nodes.
 
 The integration of Runme with AWS makes it easy to scale applications from your Markdown file and promotes collaboration between teammates.
 
-This guide will explore how to accelerate your workflow by leveraging Runme Notebook Cloud Renderers with AWS.
+This guide will explore how to accelerate your workflow by leveraging Runme Cloud Rendering with AWS.
 
 ## Installation
 
@@ -88,7 +88,7 @@ Your AWS CLI is correctly configured, and you can proceed to the next section.
 
 ## Working With EC2 Instances
 
-AWS EC2 enables you to deploy cloud-native applications with high performance and security. In the sections below, you will discover how to leverage Runme Notebook Cloud Renderers to engage with your EC2 resources.
+AWS EC2 enables you to deploy cloud-native applications with high performance and security. In the sections below, you will discover how to leverage Runme Cloud Rendering to engage with your EC2 resources.
 
 ### List EC2 Instances
 
@@ -110,7 +110,7 @@ When this command is executed in your Runme code cell, the output is given below
 
 ### Get Specific EC2 Instance
 
-With Runme Cloud Renderers, you can get specific instance details right inside your Notebook with a single click. To do this, follow the steps below.
+With Runme Cloud Rendering, you can get specific instance details right inside your Notebook with a single click. To do this, follow the steps below.
 
 - Ensure you have generated a list of your EC2 instances. If you haven’t go back to the previous step and do that.
 - In the dashboard that appears in your Notebook, click the button as indicated in the image.
@@ -158,7 +158,7 @@ If you have more than one instance displayed, be sure to navigate to the specifi
 
 ## Working with EKS Clusters
 
-In this section, you will discover how you can leverage Runme's Notebook Cloud Renderers to engage with your EKS resources in ways you've never imagined before!
+In this section, you will discover how you can leverage Runme's Cloud Rendering to engage with your EKS resources in ways you've never imagined before!
 
 ### List EKS Clusters
 
@@ -179,7 +179,7 @@ When this command is executed, this is the output interface.
 
 ![Set Region](../../../static/img/Integration/runme-aws-eks-var.png)
 
-Next, run the command below to experience the Runme Cloud Renderer in action.
+Next, run the command below to experience the Runme Cloud Rendering in action.
 
 ```bash {"id":"01J1FQEDEXFFKERZ3NZ1CK9A1H"}
 https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters
@@ -195,7 +195,7 @@ This will direct you to your EKS cluster detail page.
 
 ### Get Specific EKS Cluster Details
 
-Another important operation with the Runme Cloud Renderers is viewing details of a specific EKS cluster using the AWS console link.
+Another important operation with the Runme Cloud Rendering is viewing details of a specific EKS cluster using the AWS console link.
 
 **How does this work?**
 
