@@ -153,6 +153,84 @@ If you have more than one instance displayed, be sure to navigate to the specifi
 
 ![ssh ec2](../../../static/img/Integration/runme-ssh-ec2.png)
 
+## Working with EKS Clusters
+
+In this section, you will discover how you can leverage Runme's Notebook Cloud Renderers to engage with your EKS resources in ways you've never imagined before!
+
+### List EKS Clusters
+
+One of the fundamental tasks when working with EKS is listing your clusters. This is important because it helps you view your cluster status and is a starting point for other actions, such as viewing and retrieving their cluster details and ensuring your Kubernetes environment is running smoothly.
+
+Runme easily connects with your AWS EKS resources, letting you navigate them directly within your Notebook, just like in the AWS Console. This means you don't need to open the AWS Console separately; you can do everything right from your Notebook.
+
+To test out this action, run the command below:
+
+```bash {"id":"01J1FQD2AXH8VQQYH15EKJMN8X"}
+export EKS_REGION="us-east-1"
+echo "EKS_REGION set to $EKS_REGION"
+```
+
+**Note: Ensure to set your region.**
+
+When this command is executed, this is the output interface.
+
+![Set Region](../../../static/img/Integration/runme-aws-eks-var.png)
+
+Next, run the command below to experience the Runme Cloud Renderer in action.
+
+```bash {"id":"01J1FQEDEXFFKERZ3NZ1CK9A1H"}
+https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters
+```
+
+This is the resulting interface. Isn’t it cool? You can view comprehensive information about the cluster by clicking on the action button (highlighted in the image).
+
+![Display EKS](../../../static/img/Integration/runme-aws-display-eks.png)
+
+This will direct you to your EKS cluster detail page.
+
+image-test
+
+### Get Specific EKS Cluster Details
+
+Another important operation with the Runme Cloud Renderers is viewing details of a specific EKS cluster using the AWS console link.
+
+**How does this work?**
+
+When you execute an AWS console link. Here is a sample of an AWS console link:
+
+```sh {"id":"01J1FQKDWC9EM7BBTVTYN0X1V7"}
+https://[Region].console.aws.amazon.com/eks/home?region=[Region]#/clusters/[Cluster-name]
+```
+
+**Remember:** Replace the `Region` and `Cluster-name` name with the right credentials to have access to your cluster.
+
+Runme provides a detailed view similar to listing EKS clusters. This view includes comprehensive information about the cluster and makes it easy to understand and manage its settings and status.
+
+Alternatively, you can access specific details of your EKS cluster by running the command below:
+
+```sh {"id":"01J1FQMBNHJ5BGW5PEFMDWD0WY"}
+export EKS_CLUSTER="dev1"
+export EKS_REGION="us-east-1"
+echo "EKS_CLUSTER set to $EKS_CLUSTER"
+echo "EKS_REGION set to $EKS_REGION"
+```
+
+As in the image below, be sure to replace the cluster placeholder with the instance you want to visualize.
+
+![SET VAR EKS](../../../static/img/Integration/runme-aws-set-var.png)
+
+Next, run this command:
+
+```sh {"id":"01J1FQNKT62ZGXB3T0HHQRE79Z"}
+https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters/$EKS_CLUSTER
+```
+
+This will return the comprehensive details of the specific EKS cluster. As seen below:
+
+![eks dashboard](../../../static/img/Integration/eks-dashboard.png)
+
+If you would love to navigate to the AWS console for that cluster, click the view details icon as indicated in the image above.
+
 ## Feedback and Contribution
 
 We are still developing more features for the Runme Cloud Renderers. If you have feedback on this or new ideas on how to improve this feature, feel free to [reach out to us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
