@@ -42,7 +42,7 @@ aws configure list-profiles
 
 When this command is executed, it will display a list of all profile(s) configured to your AWS CLI.
 
-list
+![list profile](../../../static/img/Integration/runme-aws-list-profile.png)
 
 Apart from just listing profiles, you may want to get explicit profile details such as access key, secret key, etc.
 
