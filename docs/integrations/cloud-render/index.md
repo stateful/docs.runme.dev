@@ -16,4 +16,4 @@ The integration between Runme's Cloud Renderer and cloud service platforms allow
 
 This eliminates the need to open the console separately; you can access its functionality within your Notebook file.
 
-This section will introduce you to and walk you through using the Runme Notebook Cloud Renderers with cloud platforms like AWS and GCP.
+This section will introduce you to and walk you through using the Runme Notebook Cloud Renderers with cloud platforms like [AWS](../cloud-render/aws.md) and [GCP](../cloud-render/gcp.md).
