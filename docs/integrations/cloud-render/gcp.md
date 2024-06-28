@@ -109,7 +109,7 @@ the instance is starting
 
 the instance is up
 
-![start](../../../static/img/Integration/test-runme-cloud.png)
+![start](../../../static/img/Integration/runme-gcp-instanceup.png)
 
 3. **Stop an Instance**
 
