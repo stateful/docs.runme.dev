@@ -29,7 +29,7 @@ To install on other platforms, check out the AWS [documentation](https://docs.aw
 
 This section will explore setting up your AWS profile, listing configured profiles, and configuring your desired profile.
 
-### Setting Up Your Working AWS Profile
+### **Setting Up Your Working AWS Profile**
 
 After installing the AWS CLI, it stores your configuration settings and credentials in files. Within this credentials file, information is organized into profiles, each potentially holding data such as your `AWS Access Key ID` and `AWS Secret Access Key`.
 
@@ -234,6 +234,6 @@ This will return the comprehensive details of the specific EKS cluster. As seen 
 
 If you would love to navigate to the AWS console for that cluster, click the view details icon as indicated in the image above.
 
-## **Feedback and Contribution**
+## Feedback and Contribution
 
 We are still developing more features for the Runme Cloud Renderers. If you have feedback on this or new ideas on how to improve this feature, feel free to [reach out to us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
