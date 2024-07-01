@@ -10,10 +10,8 @@ title: Runme Cloud Renderers
 
 ## Overview
 
-Runme Notebook Cloud Renderers enable you to interact with your cloud resources directly within your interactive notebook in your Markdown file.
+Runme Cloud  Renderers features enable you to interact with various cloud resources to manage and deploy your cloud-native application. The ​​Runme Cloud Renderers integrate with cloud platforms such as Amazon Web Services ([AWS](../cloud-render/aws.md)) and Google Cloud Platform ([GCP](../cloud-render/gcp.md)), which allows you to manage and deploy virtual machines, run containerized applications using Kubernetes, and perform cloud services for diverse applications, all within your Markdown file.
 
-The integration between Runme's Cloud Renderer and cloud service platforms allows you to perform tasks such as listing, managing, and SSH into a virtual machine, all within a single interface.
+With this integration, you can perform tasks such as listing and managing clusters, retrieving cluster information, pausing clusters, connecting to instances via SSH, etc. All these operations can be done within a single interface without opening cloud consoles separately.
 
-This eliminates the need to open the console separately; you can access its functionality within your Notebook file.
-
-This section will introduce you to and walk you through using the Runme Notebook Cloud Renderers with cloud platforms like [AWS](../cloud-render/aws.md) and [GCP](../cloud-render/gcp.md).
+This section provides detailed instructions to guide you through using Runme Cloud Renderers with cloud platforms like [AWS](../cloud-render/aws.md) and [GCP](../cloud-render/gcp.md). These instructions will help you perform routine deployment tasks efficiently within one interface.
