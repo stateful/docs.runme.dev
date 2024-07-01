@@ -2,10 +2,10 @@
 runme:
   id: 01J1AM4C0T1S197M3R3MKPXFDB
   version: v3
-title: Runme Cloud Renderers via Google Cloud
+title: Runme Cloud Renderers via GCP
 ---
 
-# Runme Cloud Renderers via Google Cloud
+# Runme Cloud Renderers with Google Cloud Platform
 
 Runme introduces Cloud Native Renderers for integrating cloud resources, such as from Google Cloud, directly from your interactive notebook. The integration of Google Cloud Console Views into your Runbook environment provides a unified interface for managing your cloud resources.
 

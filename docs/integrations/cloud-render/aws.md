@@ -99,7 +99,7 @@ To list your EC2 Instances, run the command below
 <br />
 <Infobox type="sidenote" title="Note!">
 
-Replace the `[region]` with your actual region.
+Replace the `[region]` with your actual region or consider using environment variables, e.g., $AWS_REGION, to set it dynamically.
 
 </Infobox>
 
