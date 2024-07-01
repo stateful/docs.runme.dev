@@ -96,7 +96,13 @@ Runme integrates with your AWS EC2 resource URLs, mirroring your navigation in t
 
 To list your EC2 Instances, run the command below
 
-Note: Replace the `[region]` with your actual region.
+<br />
+<Infobox type="sidenote" title="Note!">
+
+Replace the `[region]` with your actual region.
+
+</Infobox>
+
 
 ```bash {"id":"01J1ASZDP12DG2YF6816BNW44M"}
 https://[region].console.aws.amazon.com/ec2/home?region=[region]#Instances
@@ -156,7 +162,7 @@ If you have more than one instance displayed, be sure to navigate to the specifi
 
 ## Working with EKS Clusters
 
-In addition to EC2, Runme Notebook, Cloud Renderers can also interact with AWS EKS to enable you to perform tasks such as retrieving and managing your cluster within your Markdown file. 
+In addition to EC2, Runme Notebook, Cloud Renderers can also interact with AWS EKS to enable you to perform tasks such as retrieving and managing your cluster within your Markdown file.
 
 In this section, you will discover how you can leverage Runme's Cloud Rendering to engage with your EKS resources in ways you've never imagined before!
 
@@ -205,7 +211,13 @@ When you execute an AWS console link. Here is a sample of an AWS console link:
 https://[Region].console.aws.amazon.com/eks/home?region=[Region]#/clusters/[Cluster-name]
 ```
 
-**Remember:** Replace the `Region` and `Cluster-name` name with the right credentials to have access to your cluster.
+
+<br />
+<Infobox type="sidenote" title="Remember">
+
+Replace the `Region` and `Cluster-name` name with the right credentials to have access to your cluster.
+
+</Infobox>
 
 Runme provides a detailed view similar to listing EKS clusters. This view includes comprehensive information about the cluster and makes it easy to understand and manage its settings and status.
 
