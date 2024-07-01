@@ -1,7 +1,4 @@
 ---
-runme:
-  id: 01J1ASZDP12DG2YF681CEAEHY3
-  version: v3
 title: Runme Cloud Renderers with AWS
 ---
 

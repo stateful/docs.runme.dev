@@ -1,8 +1,5 @@
 ---
-runme:
-  id: 01J1AM4C0T1S197M3R3MKPXFDB
-  version: v3
-title: Runme Cloud Renderers via GCP
+title: Runme Cloud Renderers via Google Cloud
 ---
 
 # Runme Cloud Renderers with Google Cloud Platform
