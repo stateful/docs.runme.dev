@@ -199,7 +199,6 @@ kubectl -n argocd port-forward service/argocd-server 8080:80
 
 With Runme’s background process feature, you can run your code cells as a [background task](../getting-started/features#background-task). This will allow you to execute other tasks within the runbook without waiting for the initial task to complete.
 
-
 ![port- forwarding](../../static/img/guide-page/agrocd-portforwardings.png)
 
 After executing the port-forward command, you'll be able to access the Argo CD web interface locally by browsing http://localhost:8080.

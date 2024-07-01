@@ -176,7 +176,6 @@ EOF
 
 **Output**:
 
-
 ![prometheus service](../../static/img/guide-page/create-prometheus-service.jpeg)
 
 Step Three: Run Prometheus as a Service
