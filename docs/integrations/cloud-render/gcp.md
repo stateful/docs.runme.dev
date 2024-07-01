@@ -7,7 +7,7 @@ title: Runme Cloud Renderers via Google Cloud
 
 # Runme Cloud Renderers via Google Cloud
 
-Runme introduces Cloud Native Renderers for integrating cloud resources, such as from Google Cloud, directly from your interactive notebook.
+Runme introduces Cloud Native Renderers for integrating cloud resources, such as from Google Cloud, directly from your interactive notebook. The integration of Google Cloud Console Views into your Runbook environment provides a unified interface for managing your cloud resources.
 
 This  integration of Google Cloud Console views into your Runbook environment provides a unified interface for managing your resources with Runme Cloud Renderers as you can:
 
@@ -18,7 +18,7 @@ This  integration of Google Cloud Console views into your Runbook environment pr
 
 ## Prerequisites
 
-1. **Install Google Cloud SDK**
+**Install Google Cloud SDK**
 
 To interact with Google Cloud resources, you need the Google Cloud SDK. This SDK provides the necessary tools and libraries. Run the command below to install:
 
@@ -28,7 +28,7 @@ $ brew install --cask google-cloud-sdk
 
 For Other platforms Consult [GCP's official docs](https://cloud.google.com/sdk/docs/install)
 
-2. **Authenticate with Google Cloud**
+**Authenticate with Google Cloud**
 
 After installing the SDK, you need to authenticate your account to gain access to your Google Cloud resources. Run the command below to get authenticated:
 
@@ -36,7 +36,7 @@ After installing the SDK, you need to authenticate your account to gain access t
 $ gcloud auth login
 ```
 
-3. **Setup default credentials**
+**Setup default credentials**
 
 Setting up default application credentials allows your applications and tools to access your Google Cloud resources without requiring further authentication prompts. To do this, run the command below:
 
@@ -48,13 +48,13 @@ With Runme's cloud rendering capabilities, you can visualize your Google Cloud d
 
 ## Google Compute Engine via Runme's Cloud Render
 
-Google Compute Engine (GCE) is a service that allows users to run virtual machines on Google's infrastructure. It offers a customizable and scalable environment for deploying, managing, and scaling applications.
+Google Compute Engine (GCE) is a service that allows users to run virtual machines on Google's infrastructure. It offers a customizable and scalable environment for deploying, managing, and scaling applications. 
 
-With Runme's cloud rendering capabilities, you can visualize your Google Cloud dashboard directly within your notebook.
+With Runme's cloud rendering capabilities, you can access and visualize your Google Cloud dashboard directly within your notebook. 
 
 This section will walk you through how GCE works in Runme Notebook Renderers.
 
-1. **Set Your Project ID Using an Environment Variable**
+**Set Your Project ID Using an Environment Variable**
 
 First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook. To set your project ID, run the command below:
 
@@ -63,7 +63,7 @@ export PROJECT_ID="runme-ci"
 echo "PROJECT_ID set to $PROJECT_ID"
 ```
 
-2. **Specify the Project for Visualization**
+**Specify the Project for Visualization**
 
 After setting your project ID, you can now visualize your project.
 
@@ -73,9 +73,9 @@ To see this, you need to paste a link from the console specifying the desired pr
 https://console.cloud.google.com/compute/instances?project=$PROJECT_ID
 ```
 
-Here, `runme-ci` is the project ID.
+In this example, `runme-ci` is the project ID.
 
-When run that code block, you'll be presented with a table displaying your Google Compute Engines, mirroring the Google Cloud Console.
+When you run that code block, you'll be presented with a table displaying your Google Compute Engine instances, similar to your Google Cloud Console.
 
 ![VM dashboard](../../../static/img/Integration/runme-gcp-vm-dashboard.png)
 
@@ -148,7 +148,7 @@ The virtual machine has stopped
 
 Google Kubernetes Engine(GKE) is a managed Kubernetes service that allows users to deploy, manage, and scale containerized applications using Kubernetes.
 
-With Runme's cloud rendering capabilities, you can visualize your GKE dashboard directly within your notebook. Follow the steps below to set up and use this feature.
+Similarly with Runme's cloud rendering, you can view and access your GKE dashboard directly within your Notebook. Follow the steps below to set up and use this feature.
 
 ## List clusters
 
@@ -199,9 +199,9 @@ If you do not want to go through the process of clicking the button to view deta
 https://console.cloud.google.com/kubernetes/clusters/details/[location]/[account]/details?project=[project]
 ```
 
-Be sure to replace `location` `account` and `project` with right credentials to access the details of the cluster
+Be sure to replace the `location`, `account` and `project` with the right credentials to access the details of the cluster. 
 
-When this run, the details dashboard of your cluster will be displayed.
+When this runs, the details dashboard of your cluster will be displayed.
 
 ![display details](../../../static/img/Integration/runme-gke-display.png)
 

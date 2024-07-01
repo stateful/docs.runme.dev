@@ -7,17 +7,15 @@ title: Runme Cloud Renderers with AWS
 
 # Runme Cloud Renderers with AWS
 
-Runme Cloud Rendering allows users to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, including [AWS Elastic Cloud Compute (EC2)](https://aws.amazon.com/ec2/) and [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/).
+Runme Notebook Cloud Renderers allows users to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, including [AWS Elastic Cloud Compute](https://aws.amazon.com/ec2/) (EC2) and [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/) (EKS), to make it easy for you to perform various tasks, including managing and running your clusters and instances, all in your Markdown file.
 
-While AWS EC2 is a cloud-based service that allows users to deploy, manage, and scale applications efficiently while optimizing costs and ensuring security, AWS EKS, on the other hand, is a managed Kubernetes service that makes it easy to run Kubernetes on AWS without installing and operating your own Kubernetes control plane or nodes.
+These AWS services are cloud-based resources that enable users to deploy, manage, and scale applications. EC2 optimizes costs and ensures security for running applications, while EKS simplifies running Kubernetes on AWS by managing the control plane and node operations.
 
-The integration of Runme with AWS makes it easy to scale applications from your Markdown file and promotes collaboration between teammates.
-
-This guide will explore how to accelerate your workflow by leveraging Runme Cloud Rendering with AWS.
+With Runme integration using Cloud Renderer, you can execute a series of cloud operations within a single interface.
 
 ## Installation
 
-**Install AWS CLI:** For UNIX-based systems (macOS and Linux), you can use `Homebrew` to install `awscli`. To do that, run the command below:
+**AWS CLI:** For UNIX-based systems (macOS and Linux), you can use `Homebrew` to install `awscli`. To do that, run the command below:
 
 ```bash {"id":"01J1FHEZWX220HQZ4T5GEKWTH0"}
 brew install awscli
@@ -27,13 +25,11 @@ To install on other platforms, check out the AWS [documentation](https://docs.aw
 
 ## Getting Started
 
-This section will explore setting up your AWS profile, listing configured profiles, and configuring any profie you want.
+This section will explore setting up your AWS profile, listing configured profiles, and configuring your desired profile.
 
 ### Setting Up Your Working AWS Profile
 
-After installing the AWS CLI, it stores your configuration settings and credentials in files.
-
-Within a credentials file, information is organized into profiles, each potentially holding data such as your **AWS Access Key ID** and **AWS Secret Access Key**.
+After installing the AWS CLI, it stores your configuration settings and credentials in files. Within this credentials file, information is organized into profiles, each potentially holding data such as your `AWS Access Key ID` and `AWS Secret Access Key`.
 
 **List Configured Profiles**
 
@@ -43,11 +39,11 @@ You can create as many profiles as you need to execute your task. Each profile h
 aws configure list-profiles
 ```
 
-When this command is executed, it will display a list of all profile(s) configured to your AWS CLI.
+When this command is executed, it will display a list of all profile(s) configured to your AWS CLI. As seen below:
 
 ![list profile](../../../static/img/Integration/runme-aws-list-profile.png)
 
-Apart from just listing profiles, you may want to get explicit profile details such as access key, secret key, etc.
+In addition to listing profiles, you may want to obtain explicit profile details such as access key, secret key, etc.
 
 To do this, you must first ensure you set the profile name of the specific profile you wish to display. [Runme’s environment variable prompt](https://docs.runme.dev/configuration/cell-level#set-environment-variables) makes this easy, as it prompts you to enter the profile name. To see this in action, run the command below.
 
@@ -157,6 +153,8 @@ If you have more than one instance displayed, be sure to navigate to the specifi
 ![ssh ec2](../../../static/img/Integration/runme-ssh-ec2.png)
 
 ## Working with EKS Clusters
+
+In addition to EC2, Runme Notebook, Cloud Renderers can also interact with AWS EKS to enable you to perform tasks such as retrieving and managing your cluster within your Markdown file. 
 
 In this section, you will discover how you can leverage Runme's Cloud Rendering to engage with your EKS resources in ways you've never imagined before!
 
