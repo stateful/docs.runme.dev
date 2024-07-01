@@ -13,6 +13,8 @@ These AWS services are cloud-based resources that enable users to deploy, manage
 
 With Runme integration using Cloud Renderer, you can execute a series of cloud operations within a single interface.
 
+This guide will help you utilize Runme Notebook Cloud Renderers with AWS EC2 and EKS to access and manage your cloud resources.
+
 ## Installation
 
 **AWS CLI:** For UNIX-based systems (macOS and Linux), you can use `Homebrew` to install `awscli`. To do that, run the command below:
@@ -86,7 +88,7 @@ Your AWS CLI is correctly configured, and you can proceed to the next section.
 
 AWS EC2 enables you to deploy cloud-native applications with high performance and security. In the sections below, you will discover how to leverage Runme Cloud Rendering to engage with your EC2 resources.
 
-### List EC2 Instances
+### **List EC2 Instances**
 
 Listing EC2 instances is a crucial part of managing your AWS environment, and it serves as a foundation for performing other operations, such as managing instance states or securely connecting via SSH.
 
@@ -104,7 +106,7 @@ When this command is executed in your Runme code cell, the output is given below
 
 ![AWS Dashboard](../../../static/img/Integration/runme-aws-ec2-dashboard.png)
 
-### Get Specific EC2 Instance
+### **Get Specific EC2 Instance**
 
 With Runme Cloud Rendering, you can get specific instance details right inside your Notebook with a single click. To do this, follow the steps below.
 
@@ -131,7 +133,7 @@ https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetai
 
 This will unlock the visual display of the specific EC2 instance, which will give details of the instance ID, launch time, platform, availability zone, security groups, etc. You will also find useful links to the AWS Console like details and manage state.
 
-### Connect to EC2 instance via SSH
+### **Connect to EC2 instance via SSH**
 
 SSH is essential for securely accessing, managing, and troubleshooting EC2 instances, thus giving you efficient and effective control over your cloud resources.
 
@@ -158,7 +160,7 @@ In addition to EC2, Runme Notebook, Cloud Renderers can also interact with AWS E
 
 In this section, you will discover how you can leverage Runme's Cloud Rendering to engage with your EKS resources in ways you've never imagined before!
 
-### List EKS Clusters
+### **List EKS Clusters**
 
 One of the fundamental tasks when working with EKS is listing your clusters. This is important because it helps you view your cluster status and is a starting point for other actions, such as viewing and retrieving their cluster details and ensuring your Kubernetes environment is running smoothly.
 
@@ -191,7 +193,7 @@ This will direct you to your EKS cluster detail page.
 
 ![EKS](../../../static/img/Integration/eks-aws-runme.png)
 
-### Get Specific EKS Cluster Details
+### **Get Specific EKS Cluster Details**
 
 Another important operation with the Runme Cloud Rendering is viewing details of a specific EKS cluster using the AWS console link.
 
@@ -232,6 +234,6 @@ This will return the comprehensive details of the specific EKS cluster. As seen 
 
 If you would love to navigate to the AWS console for that cluster, click the view details icon as indicated in the image above.
 
-## Feedback and Contribution
+## **Feedback and Contribution**
 
 We are still developing more features for the Runme Cloud Renderers. If you have feedback on this or new ideas on how to improve this feature, feel free to [reach out to us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
