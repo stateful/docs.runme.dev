@@ -48,9 +48,9 @@ With Runme's cloud rendering capabilities, you can visualize your Google Cloud d
 
 ## Google Compute Engine via Runme's Cloud Render
 
-Google Compute Engine (GCE) is a service that allows users to run virtual machines on Google's infrastructure. It offers a customizable and scalable environment for deploying, managing, and scaling applications. 
+Google Compute Engine (GCE) is a service that allows users to run virtual machines on Google's infrastructure. It offers a customizable and scalable environment for deploying, managing, and scaling applications.
 
-With Runme's cloud rendering capabilities, you can access and visualize your Google Cloud dashboard directly within your notebook. 
+With Runme's cloud rendering capabilities, you can access and visualize your Google Cloud dashboard directly within your notebook.
 
 This section will walk you through how GCE works in Runme Notebook Renderers.
 
@@ -150,7 +150,7 @@ Google Kubernetes Engine(GKE) is a managed Kubernetes service that allows users 
 
 Similarly with Runme's cloud rendering, you can view and access your GKE dashboard directly within your Notebook. Follow the steps below to set up and use this feature.
 
-## List clusters
+## **List clusters**
 
 Listing cluster in Google Cloud, especially with Google Kubernetes Engine(GKE) provides several benefits such as tracking and managing costs effectively, enhancing team collaboration on cluster management, etc.
 
@@ -199,7 +199,7 @@ If you do not want to go through the process of clicking the button to view deta
 https://console.cloud.google.com/kubernetes/clusters/details/[location]/[account]/details?project=[project]
 ```
 
-Be sure to replace the `location`, `account` and `project` with the right credentials to access the details of the cluster. 
+Be sure to replace the `location`, `account` and `project` with the right credentials to access the details of the cluster.
 
 When this runs, the details dashboard of your cluster will be displayed.
 
