@@ -6,18 +6,24 @@ runme:
 
 # Advanced Guide to Argo CD and Runme
 
-This guide provides an advanced tutorial on using Argo CD with the Runme extension in VS Code. Follow the steps to set up your environment, deploy applications, and manage them using Argo CD and Runme.
+Our previous guide provided a detailed tutorial on [deploying and managing applications with ArgoCD and Runme.](https://docs.runme.dev/guide/agrocd)
+
+In this guide, we will take it a step higher by providing an advanced tutorial on how to use Argo CD with the Runme extension in VS Code. The best part of this integration is that everything can be done right inside your Markdown file without switching between terminals.
 
 ## **Prerequisites**
 
 To follow up on this tutorial, ensure you have the following:
 
-1. **Basic Requirement**
+> 💡 Ensure you have installed the necessary tools as indicated in the [beginner guide](https://docs.runme.dev/guide/agrocd#prerequisites)
+
+### Basic Requirement[](https://docs-runme-qmkm7hhq4-stateful.vercel.app/guide/agrocd-cli#basic-requirement)
+
+**Basic Requirement**
 
 - Basic familiarity with YAML and Kubernetes resource definitions
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-2. **Clone Our Repository**
+**Clone Our Repository**
 
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. You can clone the [repository here](https://github.com/stateful/blog-examples/tree/main/cloud-native).
 
@@ -25,7 +31,7 @@ To follow up on this tutorial, ensure you have the following:
 git clone https://github.com/stateful/blog-examples/tree/main/cloud-native
 ```
 
-3. **Installation**
+**Installation**
 
 Run the following commands to install the necessary tools and set up your environment:
 
@@ -44,11 +50,15 @@ The command above installs `brew` and `git,` creates a local Kubernetes Clus
 
 ## **Setting Up Your Cluster**
 
+To proceed with this tutorial, you need to set up your Kubernetes cluster. This is an important step as it ensures that ArgoCD can effectively maintain the desired state of your application and perform continuous delivery. 
+
+The command below helps you do that.
+
 ```sh {"id":"01J0QP7HM4HB9NY43B10CQYNDK"}
-kind create cluster --name runme-argocd 
+kind create cluster --name runme-argocd
 ```
 
-Checks whether the cluster is running and healthy.
+Run the command below to inspect the cluster to ensure it is running and healthy.
 
 ```sh {"id":"01J0TG40SSNCDSW1A0F4Q0K87Y"}
 kubectl cluster-info — context kind-runme-argocd
@@ -56,19 +66,21 @@ kubectl cluster-info — context kind-runme-argocd
 
 ![Cluster health](../../static/img/guide-page/runme-cluster-healthy.png)
 
-Check namespaces
+To inspect namespaces, execute the command below
 
 ```sh {"id":"01J0QPCQXAWZ0ZG837CEKH1CA1"}
 kubectl get ns
 ```
 
-Create a namespace
+To create a new namespace, execute the command below
 
 ```sh {"id":"01J0QPDF85VJKWXB4SB4HTBJDF"}
 kubectl create namespace argocd
 ```
 
-Install Argo CD
+## Install Argo CD in Kubernetes Cluster
+
+After setting up your cluster, the next step is to install Argo CD in your Kubernetes cluster. To do this, run the command below.
 
 ```sh {"id":"01J0R7GVV6AH9639D5A0KH0CWR"}
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
@@ -82,9 +94,9 @@ kubectl get po -n argocd
 
 ![Agro CD pods](../../static/img/guide-page/runme-argo-pods.png)
 
-Port Forward Argo CD Server
+Port forwarding an Argo CD Server is a practical and secure way to access the Argo CD web UI for setup, development, and general use without exposing it to external networks.
 
-You can run your code cells as a [background process](../how-runme-works/vscode#background-processes)
+To do this, run the command below. You can run your code cell as a [background process](../how-runme-works/vscode#background-processes). This feature enables you to run tasks in the background while continuing with your other tasks.
 
 ```sh {"background":"true","id":"01J0R8FX97QQR7ME2DH3C54C6E"}
 kubectl port-forward svc/argocd-server -n argocd 8080:443
@@ -92,13 +104,17 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 ![Background process](../../static/img/guide-page/runme-background-agrocdcli.png)
 
-Retrieve Initial Admin Password
+**Retrieve Initial Admin Password**
+
+To access and manage Argo CD via its web UI, you need your admin credentials. To retrieve this password, run the command below. 
 
 ```sh {"id":"01J0R8GGMCBAYYEMEG7K4WSE2Q"}
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode
 ```
 
 ### Login to Argo CD CLI
+
+Now that you have successfully retrieved your login credentials, you can log in to your Argo CD CLI. To do that, run the command below.
 
 ```sh {"id":"01J0V0PQ2TA2MC9A2JB92RGQPF"}
 argocd login <ARGOCD_SERVER> --username admin --password <retrieved-password> --insecure
@@ -111,13 +127,19 @@ argocd login localhost:8080 --username admin --password GS66Sw8YrJ7bn1I- --insec
 
 ## **Deploy an Application Using Argo CD**
 
-Create a Project (if you haven't already)
+After logging into your Argo CD CLI, you can now easily deploy an application using the functionalities of Argo CD and Runme right inside your Markdown file. This section walks you through the step-by-step process of achieving this.
+
+To proceed, you need to create a project. If you haven’t created one, run the command below to create one on the go.
 
 ```sh {"id":"01J0R8JSF8RTE86JN7SXFQX4Y9"}
 argocd proj create my-project
 ```
 
 Register a Repository
+
+The next step is to register your repository. This is an important step as it allows Argo CD to access and monitor the repository hosting your application configurations. 
+
+To register your repository, execute the command below.
 
 ```sh {"id":"01J0RBRQ824D1SVC4X9Z4GXPMV"}
 argocd repo add https://github.com/stateful/blog-examples.git
@@ -126,6 +148,8 @@ argocd repo add https://github.com/stateful/blog-examples.git
 (Add the flag `--username` myuser `--password` or SSH key if you're behind authentication.)
 
 ### Create an Application:
+
+After registering your repository, the next step is to create an application. To do so, run the command below. This command creates an Argo CD application named `guestbook`
 
 ```sh {"id":"01J0REC9ZN15FP8XN1D4KCGMQD"}
 argocd app create my-app \
@@ -142,11 +166,15 @@ argocd app create guestbook --repo https://github.com/argoproj/argocd-example-ap
 
 ### Sync Application
 
+You can now sync your application. To do so, run the command below. The command is used to synchronize the state of the guestbook application managed by Argo CD
+
 ```sh {"id":"01J0RECRAKE385EBM7R62GYF3N"}
 argocd app sync guestbook
 ```
 
 ### Check Status
+
+To check the status of your application, run the command below.
 
 ```sh {"id":"01J0REE4N5XT06VH48M2SV2ARC"}
 argocd app get guestbook
@@ -155,6 +183,8 @@ argocd app get guestbook
 ![argocd status](../../static/img/guide-page/Runme-argocd-status.png)
 
 ## **CLI Operations**
+
+The Argo CD CLI provides a set of operations to manage applications, repositories, and other resources in Argo CD. In this section, we will discuss some of the key operations you can perform using the Argo CD CLI.
 
 ### Argo CD History
 
@@ -172,30 +202,38 @@ Argo CD maintains a history of application deployments, allowing you to roll bac
 argocd app history guestbook
 ```
 
-To rollback to a specific revision, use:
+If you would love to rollback to a specific revision, run this command instead.
 
 ```sh {"id":"01J0TF9A888ZBTPEJZH14W89P0"}
-argocd app rollback guestbook 1
+argocd app rollback guestbook <1>
 ```
 
 Replace `<REVISION>` with the desired revision number from the history.
 
 ## **Managing Repositories with Argo CD CLI**
 
-1. **Add a Repository**: Register a new public repository.
+It is possible to manage your repositories with Argo CD CLI. Here are some ways to do that.
+
+**Add a Repository** 
+
+To register a new public repository, run the command below. 
 
 ```sh {"id":"01J0TF9A888ZBTPEJZH2648SDC"}
 argocd repo add https://github.com/my-org/my-repo.git
 ```
 
-2. **Update the Repository**: Change the repository URL and update authentication credentials.
+**Update the Repository**
+
+If you would love to change the repository URL and update authentication credentials, run the command below.
 
 ```sh {"id":"01J0TF9A89KN0GBESXMNG6K3PR"}
 argocd repo update https://github.com/my-org/my-repo.git --url https://github.com/my-org/new-repo-url.git
 argocd repo update https://github.com/my-org/new-repo-url.git --username newuser --password newpass
 ```
 
-3. **Remove the Repository**: Unregister the repository when it's no longer needed.
+**Remove the Repository**: 
+
+To unregister the repository when it's no longer needed, run the command below.
 
 ```sh {"id":"01J0TF9A89KN0GBESXMR266BWR"}
 argocd repo rm https://github.com/my-org/new-repo-url.git
@@ -203,31 +241,43 @@ argocd repo rm https://github.com/my-org/new-repo-url.git
 
 ### Accessing Application Logs with Argo CD CLI
 
-1. **View All Logs**: Start by viewing all logs for the application to get a broad overview.
+You can also view the logs of applications managed by Argo CD. This section discusses how to do so.
+
+**View All Logs**
+
+To get a broad overview of the application, run the command below. This will give you all the logs associated with the application.
 
 ```sh {"id":"01J0TF9A89KN0GBESXMTV8QV04"}
 argocd app logs guestbook
 ```
 
-2. **Filter by Pod**: Identify a specific pod that may be experiencing issues and view its logs.
+**Filter by Pod**
+
+If you have a pod that is experiencing issues, you can use the filter-by-pod feature to view the logs associated with that pod. To do this, run the command below. 
 
 ```sh {"id":"01J0TF9A89KN0GBESXMW3Z0QT9"}
 argocd app logs my-app --pod my-app-pod-12345
 ```
 
-3. **Filter by Container**: Narrow down to the logs of a particular container within that pod.
+**Filter by Container** 
+
+To narrow down to the logs of a particular container within that pod, run the command below.
 
 ```sh {"id":"01J0TF9A89KN0GBESXMZZX8W0D"}
 argocd app logs my-app --pod my-app-pod-12345 --container my-container
 ```
 
-4. **Stream Logs**: Continuously monitor the logs to observe real-time application behavior.
+**Stream Logs**
+
+To continuously monitor the logs to observe real-time application behavior, run the command below.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN2BFXZB8"}
 argocd app logs guestbook --follow
 ```
 
-5. **Tail Specific Logs**: Retrieve and follow the last 100 lines of logs for a focused troubleshooting session.
+**Tail Specific Logs**
+
+To retrieve and follow the last 100 lines of logs for a focused troubleshooting session, run the command below.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN30NM9WH"}
 argocd app logs my-app --tail 100 --follow
@@ -235,7 +285,13 @@ argocd app logs my-app --tail 100 --follow
 
 ### Customizing Argo CD
 
-1. **Define an Application with CRD**: Create a YAML file for the application.
+Customizing Argo CD can be beneficial as it allows you to tailor your Argo CD to meet your organization's specific needs and improve security and user experience.
+
+In this section, we will walk you through the steps involved in customizing Argo CD.
+
+**Step One: Define an Application with CRD**
+
+To do this, you need to create a YAML file for the application.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN48STWQR"}
 cat << EOF > sample-project.yaml
@@ -262,7 +318,9 @@ EOF
 
 ```
 
-2. **Apply the Application CRD**:
+**Step Two: Apply the Application CRD**
+
+Run the command below to apply the application CRD you created in your YAML file.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN5H4NFQ7"}
 kubectl apply -f sample-project.yaml
@@ -270,7 +328,9 @@ kubectl apply -f sample-project.yaml
 
 ![Deploy CRD](../../static/img/guide-page/Runme-argo-CRD.png)
 
-3. **Configure a Plugin**: Add a custom plugin to `argocd-cm`.
+**Step Three: Configure a Plugin**
+
+Now, add a custom plugin to `argocd-cm`.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN61QE8VK"}
 cat << EOF > runme-agrocd-cm.yaml
@@ -291,14 +351,18 @@ data:
 EOF
 ```
 
-4. **Apply the Plugin Configuration**:
+**Step Four: Apply the Plugin Configuration**
+
+Apply the plugin configuration you created.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN7T1EEJ6"}
 kubectl apply -f runme-agrocd-cm.yaml
 
 ```
 
-5. **Define an Application Using the Plugin**:
+**Step Five: Define an Application Using the Plugin**
+
+This file helps you do this.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN817NCCD"}
 cat << EOF > runme-agrocd-plugins.yaml
@@ -325,7 +389,9 @@ EOF
 
 ```
 
-6. **Apply the Application Configuration**:
+**Step Six: Apply the Application Configuration**
+
+Apply the application configuration you created earlier.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN8Y7FDNQ"}
 kubectl apply -f runme-agrocd-plugins.yaml
