@@ -149,15 +149,6 @@ argocd repo add https://github.com/stateful/blog-examples.git
 
 After registering your repository, the next step is to create an application. To do so, run the command below. This command creates an Argo CD application named `guestbook`
 
-```sh {"id":"01J0REC9ZN15FP8XN1D4KCGMQD"}
-argocd app create my-app \
---repo https://github.com/stateful/blog-examples  \
---path cloud-native/argocd /runme-app-repo/manifests \
---dest-server https://kubernetes.default.svc \
---dest-namespace runme-app \
---project my-project
-```
-
 ```sh {"id":"01J0TQAWCHF87ZDKPHKNCNFVR8"}
 argocd app create guestbook --repo https://github.com/argoproj/argocd-example-apps.git --path guestbook --dest-namespace default --dest-server https://kubernetes.default.svc --directory-recurse
 ```
