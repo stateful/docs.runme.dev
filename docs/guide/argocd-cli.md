@@ -16,8 +16,6 @@ To follow up on this tutorial, ensure you have the following:
 
 > 💡 Ensure you have installed the necessary tools as indicated in the [beginner guide](https://docs.runme.dev/guide/agrocd#prerequisites)
 
-### Basic Requirement[](https://docs-runme-qmkm7hhq4-stateful.vercel.app/guide/agrocd-cli#basic-requirement)
-
 **Basic Requirement**
 
 - Basic familiarity with YAML and Kubernetes resource definitions
