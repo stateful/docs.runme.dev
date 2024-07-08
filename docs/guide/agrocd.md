@@ -189,7 +189,7 @@ kubectl -n argocd get secrets argocd-initial-admin-secret \
     -o jsonpath='{.data.password}' | base64 -d
 ```
 
-![agro cd password](../../static/img/guide-page/agrocd-passwords.png)
+![argo cd password](../../static/img/guide-page/agrocd-passwords.png)
 
 Forward the port 80 of the argocd-server service to `localhost:8080` using kubectl.
 

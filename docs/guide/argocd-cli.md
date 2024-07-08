@@ -50,7 +50,7 @@ The command above installs `brew` and `git,` creates a local Kubernetes Clus
 
 ## **Setting Up Your Cluster**
 
-To proceed with this tutorial, you need to set up your Kubernetes cluster. This is an important step as it ensures that ArgoCD can effectively maintain the desired state of your application and perform continuous delivery. 
+To proceed with this tutorial, you need to set up your Kubernetes cluster. This is an important step as it ensures that ArgoCD can effectively maintain the desired state of your application and perform continuous delivery.
 
 The command below helps you do that.
 
@@ -106,7 +106,7 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 **Retrieve Initial Admin Password**
 
-To access and manage Argo CD via its web UI, you need your admin credentials. To retrieve this password, run the command below. 
+To access and manage Argo CD via its web UI, you need your admin credentials. To retrieve this password, run the command below.
 
 ```sh {"id":"01J0R8GGMCBAYYEMEG7K4WSE2Q"}
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode
@@ -137,7 +137,7 @@ argocd proj create my-project
 
 Register a Repository
 
-The next step is to register your repository. This is an important step as it allows Argo CD to access and monitor the repository hosting your application configurations. 
+The next step is to register your repository. This is an important step as it allows Argo CD to access and monitor the repository hosting your application configurations.
 
 To register your repository, execute the command below.
 
@@ -214,9 +214,9 @@ Replace `<REVISION>` with the desired revision number from the history.
 
 It is possible to manage your repositories with Argo CD CLI. Here are some ways to do that.
 
-**Add a Repository** 
+**Add a Repository**
 
-To register a new public repository, run the command below. 
+To register a new public repository, run the command below.
 
 ```sh {"id":"01J0TF9A888ZBTPEJZH2648SDC"}
 argocd repo add https://github.com/my-org/my-repo.git
@@ -231,7 +231,7 @@ argocd repo update https://github.com/my-org/my-repo.git --url https://github.co
 argocd repo update https://github.com/my-org/new-repo-url.git --username newuser --password newpass
 ```
 
-**Remove the Repository**: 
+**Remove the Repository**:
 
 To unregister the repository when it's no longer needed, run the command below.
 
@@ -253,13 +253,13 @@ argocd app logs guestbook
 
 **Filter by Pod**
 
-If you have a pod that is experiencing issues, you can use the filter-by-pod feature to view the logs associated with that pod. To do this, run the command below. 
+If you have a pod that is experiencing issues, you can use the filter-by-pod feature to view the logs associated with that pod. To do this, run the command below.
 
 ```sh {"id":"01J0TF9A89KN0GBESXMW3Z0QT9"}
 argocd app logs my-app --pod my-app-pod-12345
 ```
 
-**Filter by Container** 
+**Filter by Container**
 
 To narrow down to the logs of a particular container within that pod, run the command below.
 
@@ -333,7 +333,7 @@ kubectl apply -f sample-project.yaml
 Now, add a custom plugin to `argocd-cm`.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN61QE8VK"}
-cat << EOF > runme-agrocd-cm.yaml
+cat << EOF > runme-argocd-cm.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -356,7 +356,7 @@ EOF
 Apply the plugin configuration you created.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN7T1EEJ6"}
-kubectl apply -f runme-agrocd-cm.yaml
+kubectl apply -f runme-argocd-cm.yaml
 
 ```
 
@@ -365,7 +365,7 @@ kubectl apply -f runme-agrocd-cm.yaml
 This file helps you do this.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN817NCCD"}
-cat << EOF > runme-agrocd-plugins.yaml
+cat << EOF > runme-argocd-plugins.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -394,12 +394,14 @@ EOF
 Apply the application configuration you created earlier.
 
 ```sh {"id":"01J0TF9A89KN0GBESXN8Y7FDNQ"}
-kubectl apply -f runme-agrocd-plugins.yaml
+kubectl apply -f runme-argocd-plugins.yaml
 ```
 
 ### Scaling and Performance Tuning
 
-As Argo CD is increasingly adopted in large-scale environments, ensuring optimal performance and scalability becomes critical. Proper configuration and monitoring can significantly enhance Argo CD's efficiency, reliability, and responsiveness. This section covers strategies for optimizing Argo CD for large-scale deployments, performance monitoring, tuning tips, and setting up disaster recovery procedures.
+As Argo CD is increasingly adopted in large-scale environments, ensuring optimal performance and scalability becomes critical. Proper configuration and monitoring can significantly enhance Argo CD's efficiency, reliability, and responsiveness.
+
+This section covers strategies for optimizing Argo CD for large-scale deployments, performance monitoring, tuning tips, and setting up disaster recovery procedures.
 
 **Optimizing Argo CD for Large-Scale Deployments**
 
@@ -409,6 +411,34 @@ Large-scale deployments often involve managing hundreds or thousands of applicat
 
 Ensure that the Argo CD components (e.g., server, controller, repo server, and application controller) have adequate CPU and memory resources. This can be configured in your Helm chart or directly in the Kubernetes manifests.
 
+```yaml {"id":"01J29B8QWGEHQT9D4F7CDEP9FN"}
+controller:
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "250m"
+    limits:
+      memory: "1Gi"
+      cpu: "500m"
+repoServer:
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "125m"
+    limits:
+      memory: "512Mi"
+      cpu: "250m"
+server:
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "125m"
+    limits:
+      memory: "512Mi"
+      cpu: "250m"
+
+```
+
 **Repository Caching**
 
 Enable and configure repository caching to reduce the load on the repo server and speed up application syncing.
@@ -416,7 +446,7 @@ Enable and configure repository caching to reduce the load on the repo server an
 Example configuration:
 
 ```sh {"id":"01J0TF9A89KN0GBESXNBTG0ARH"}
-cat << EOF > runme-agrocd-plugins1.yaml
+cat << EOF > runme-argocd-plugins1.yaml
   data:
     repository.credentials: |
       - url: https://github.com/my-org/my-repo.git
@@ -425,11 +455,11 @@ EOF
 ```
 
 ```sh {"id":"01J0TWDFWAA01HWKDDY8MAM2CP"}
-yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' agrocd-cm.yaml runme-agrocd-plugins1.yaml > merged.yaml
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' argocd-cm.yaml runme-argocd-plugins1.yaml > merged.yaml
 
 ```
 
-Update `runme-agrocd-cm.yaml`
+Update `runme-argocd-cm.yaml`
 
 **Sharding Controllers**
 
@@ -444,20 +474,20 @@ argocd-cm:
 ```
 
 ```sh {"id":"01J0TF9A89KN0GBESXND4MJMWA"}
-cat << EOF > runme-agrocd-shard-controllers.yaml
+cat << EOF > runme-argocd-shard-controllers.yaml
     application.instanceLabelKey: instance
 EOF
 ```
 
 ```sh {"id":"01J15CX08X86B5W88C60GPX0KJ"}
-yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' runme-agrocd-cm.yaml runme-agrocd-shard-controllers.yaml > runme-merged.yaml
+yq eval-all 'select(fileIndex == 0) * select(fileIndex == 1)' runme-argocd-cm.yaml runme-argocd-shard-controllers.yaml > runme-merged.yaml
 ```
 
 ```sh {"id":"01J15D6PV7ZEV510S6S3CV5RA4"}
 kubectl apply -f runme-merged.yaml
 ```
 
-Update `runme-agrocd-cm.yaml`
+Update `runme-argocd-cm.yaml`
 
 Label your applications to distribute them among controller instances:
 
@@ -510,6 +540,11 @@ Having robust disaster recovery procedures is essential for ensuring business co
 
 Regularly back up Argo CD configurations, including the Kubernetes manifests and Git repositories. Use tools like [Velero](https://velero.io/) for Kubernetes backups and Git hooks or cron jobs for repository backups.
 
+```sh {"id":"01J29AZYKHT52K2ARSAGP5DMWN"}
+export VERSION="2.1"
+echo "VERSION set to $VERSION"
+```
+
 ```sh {"id":"01J0TZFQFH1RJ0PKHBKQFJD10P","promptEnv":"yes"}
 docker run -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSION argocd admin export > backup.yaml
 ```
@@ -524,12 +559,12 @@ docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSIO
 
 Configure Argo CD for high availability (HA) by running multiple [replicas](../guide/replicaset.md) of its components and distributing them across different nodes and availability zones.
 
-**Disaster Recovery Testing**
+Example HA configuration in Helm:
 
-Regularly test your disaster recovery procedures to ensure they work as expected. Simulate failures and validate that you can restore from backups and that your HA setup can handle node failures.
+```sh {"id":"01J29ARSKNA6A4QYVZ2HPQNN0E"}
+replicaCount: 3
+```
 
-Example testing procedure:
+Deploying with high availability ensures that Argo CD can continue operating even if some instances fail.
 
-1. Simulate a failure by stopping a node or deleting a pod.
-2. Verify that the HA setup handles the failure and Argo CD remains operational.
-3. Restore from a backup and verify that the system state is correct.
+With Runme you can deploy your applications using Argo CD to perform CLI operations and customize Argo CD right inside your Markdown file, and its functionalities goes even further! To explore [more features](https://docs.runme.dev/configuration/) and [integrations](https://docs.runme.dev/integrations/) of Runme, visit our documentation page to learn about Runme and stay updated on additional features to optimize your workflow.
