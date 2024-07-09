@@ -6,7 +6,7 @@ runme:
 
 # Guide to Using Google BigQuery with Runme
 
-This guide will help you set up and use Google BigQuery with the Runme CLI. Follow these steps to authenticate, configure your project, and run queries.
+This comprehensive guide will walk you through the process of setting up and using Google BigQuery with Runme. Runme is a tool designed to simplify the management and execution of your data tasks and document your process. With Runme, you can seamlessly integrate with BigQuery to authenticate your account, configure your project, and efficiently run queries.
 
 ### Prerequisites
 
