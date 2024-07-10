@@ -16,7 +16,7 @@ To follow up on this guide, ensure you have the following:
 
 **Runme Extension**
 
-Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation guide](../installation/index). You can also make Runme your default Markdown viewer, with this every Markdown with your code editor will be accessed as a Notebook. 
+Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation guide](../installation/index.md). You can also make Runme your default Markdown viewer, with this every Markdown with your code editor will be accessed as a Notebook.
 
 **Install Google Cloud SDK**
 
@@ -137,7 +137,7 @@ bq load --source_format=CSV --skip_leading_rows=1 runme_bq.runme_table ./101.csv
 
 **Export Data from a Table**
 
-To extract data from a table and save it as a CSV file in your storage system (GCS bucket), run the command below 
+To extract data from a table and save it as a CSV file in your storage system (GCS bucket), run the command below
 
 ```sh {"id":"01J2BCARNPK25F2YAPAZ22GHK8"}
 bq extract --destination_format=CSV [DATASET].[TABLE] gs://[BUCKET]/[FILE_NAME].csv
@@ -182,7 +182,7 @@ bq mk --table runme_bq.runme_table schema.json
 
 **Delete a Table**
 
-To delete a table from your BigQuery run the command below 
+To delete a table from your BigQuery run the command below
 
 ```sh {"id":"01J2BCCW3DTQ090CY0PGSGT5FZ"}
 bq rm -f [DATASET].[TABLE]
@@ -190,11 +190,11 @@ bq rm -f [DATASET].[TABLE]
 
 ![remove table](../../static/img/guide-page/runme-bigquery-remove-table.png)
 
-This command forcefully deletes the table named `runme_table` in the dataset `runme_bq` 
+This command forcefully deletes the table named `runme_table` in the dataset `runme_bq`
 
 **Create a Table with Expiration Time**
 
-You can create a partitioned table with an expiration in BigQuery 
+You can create a partitioned table with an expiration in BigQuery
 
 ```sh {"id":"01J2BCGHCEX7XV8EZAG9DC02D3"}
 bq mk --table --time_partitioning_expiration 2592000000 my_dataset.temporary_data schema.json
@@ -210,4 +210,4 @@ bq --help
 
 ### Conclusion
 
-You have successfully set up, configured Google BigQuery and execute SQL queries on BigQuery within your Runme notebook. [Runme](../index) enhances your data operations by providing a simple, efficient, and powerful interface for working with Google BigQuery. 
+You have successfully set up, configured Google BigQuery and execute SQL queries on BigQuery within your Runme notebook. [Runme](../index.md) enhances your data operations by providing a simple, efficient, and powerful interface for working with Google BigQuery.
