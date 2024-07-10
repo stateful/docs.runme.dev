@@ -86,10 +86,15 @@ If you would love to explore other output types, you only need to click the menu
 ![JSON output](../../static/img/guide-page/runme-terminal-data-rendering.png)
 
 A small dashboard with several options will pop up. Carry out these actions:
-- Click on Change Presentation to change how the data is presented.
-- You will be prompted to select how you want to view your data. 
 
+- Click on Change Presentation to change how the data is presented.
+- You will be prompted to select how you want to view your data.
 - Once that is selected, your output will be displayed in the format above.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-data-rendering.mp4" type="video/mp4" />
+  <source src="/videos/runme-data-rendering.webm" type="video/webm" />
+</video>
 
 ## Feedback and Contribution
 
@@ -98,6 +103,7 @@ We are still developing more features for Runme. If you have feedback on this or
 ## Additional Resources
 
 See more resources on the Runme Renderer feature:
+
 - [Manage your Google Cloud Console with Runme Cloud Renderer](https://docs.runme.dev/integrations/cloud-render/gcp)
 - [Execute a series of AWS operations in your Runbook](https://docs.runme.dev/integrations/cloud-render/aws)
 
