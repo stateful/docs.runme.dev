@@ -96,6 +96,10 @@ A small dashboard with several options will pop up. Carry out these actions:
   <source src="/videos/runme-data-rendering.webm" type="video/webm" />
 </video>
 
+Another great functionality is that you can download your data as a CSV or JSON when you select the `Flat Data Grid` presentation option, as shown in the image below.
+
+![JSON output save](../../static/img/guide-page/runme-save-json-output.jpg)
+
 ## Feedback and Contribution
 
 We are still developing more features for Runme. If you have feedback on this or new ideas for improving this feature, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
