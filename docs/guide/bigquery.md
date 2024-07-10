@@ -153,7 +153,7 @@ bq mk runme_bq
 
 ![create table](../../static/img/guide-page/runme-create-table.png)
 
-## Delete Dataset
+**Delete Dataset**
 
 Delete all tables and views within the dataset
 
