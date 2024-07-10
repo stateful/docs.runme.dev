@@ -4,9 +4,11 @@ runme:
   version: v3
 ---
 
-# Guide to Using Google BigQuery with Runme
+# Manage Data Queries with BigQuery and Runme
 
-This comprehensive guide will walk you through the process of setting up and using Google BigQuery with Runme. Runme is a tool designed to simplify the management and execution of your data tasks and document your process. With Runme, you can seamlessly integrate with BigQuery to authenticate your account, configure your project, and efficiently run queries.
+Runme is designed to simplify the management and execution of your tasks while documenting your process. With Runme, you can integrate with BigQuery to run queries easily and efficiently.
+
+In this guide, you will first authenticate your BigQuery account, set up your project configuration, and then run a series of query operations using Runme’s integrated environment.
 
 ### Prerequisites
 
@@ -14,11 +16,11 @@ To follow up on this guide, ensure you have the following:
 
 **Runme Extension**
 
-Install the Runme extension in your VS Code editor and make it your default Markdown viewer. Runme also provides other client interfaces where you can run your Markdown file. See the Runme installation guide.
+Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation guide](../installation/index). You can also make Runme your default Markdown viewer, with this every Markdown with your code editor will be accessed as a Notebook. 
 
 **Install Google Cloud SDK**
 
-To interact with Google Cloud resources, you need the Google Cloud SDK. This SDK provides the necessary tools and libraries. Run the command below to install
+To interact with Google Cloud resources, you need to install the Google Cloud SDK. This SDK provides the necessary tools and libraries. Run the command below to install:
 
 ```sh {"id":"01J2B9V1NA28V0KFGPAYZP10V0"}
 brew install --cask google-cloud-sdk
@@ -28,7 +30,7 @@ For Other platforms Consult [GCP's official docs](https://cloud.google.com/sdk/d
 
 ## Authenticate with Google Cloud
 
-First, you need to authenticate your Google Cloud account, Run the command
+To get started, you need to authenticate your Google Cloud account using the `gcloud auth` feature which allows you have access to google cloud resources. Run the command:
 
 ```sh {"id":"01J2B937J9DH0TPAHSRX57KFSZ"}
 gcloud auth login
@@ -38,11 +40,13 @@ This command will open a browser window where you can log in with your Google ac
 
 **List Available Components**
 
-Check which components are available in your Google Cloud SDK, Run the command below
+Check which components are available or installed in your Google Cloud SDK. Run the command below to do this:
 
 ```sh {"id":"01J2B937J9DH0TPAHSS05NY5CD"}
 gcloud components list
 ```
+
+![Componenets list](../../static/img/guide-page/runme-list-component.png)
 
 **Update Google Cloud Components**
 
@@ -54,7 +58,7 @@ gcloud components update
 
 **Install the BigQuery Component**
 
-If you haven't already installed the BigQuery component, do so now:
+with the authentication completed, you can proceed to install your BigQuery component
 
 ```sh {"id":"01J2B937J9DH0TPAHSS5X947XP"}
 gcloud components install bq
@@ -85,10 +89,6 @@ You can now run a query against your BigQuery dataset. For example, to select da
 
 ```sh {"id":"01J2BC81H7AVSXV28Z52C1QYM9"}
 bq query --use_legacy_sql=false 'SELECT * FROM `[PROJECT_ID].[DATASET].[TABLE]` LIMIT 10'
-```
-
-```sh {"id":"01J2B937J9DH0TPAHSS8TSGV9W"}
-bq query --use_legacy_sql=false 'SELECT * FROM `runme-ci.runme_bigquery.runme-query` LIMIT 10'
 ```
 
 ![query](../../static/img/guide-page/runme-bq-query.png)
@@ -123,6 +123,8 @@ bq show runme_bigquery.runme-query
 
 **Load Data into a Table**
 
+To load data from a CSV file into a table in Google BigQuery run the command below:
+
 ```sh {"id":"01J2BCAB5QYAHCBFDK5JRSCR8G"}
 bq load --source_format=CSV [DATASET].[TABLE] [PATH_TO_CSV_FILE] [SCHEMA]
 ```
@@ -134,6 +136,8 @@ bq load --source_format=CSV --skip_leading_rows=1 runme_bq.runme_table ./101.csv
 ![bq load](../../static/img/guide-page/runme-bq-load.png)
 
 **Export Data from a Table**
+
+To extract data from a table and save it as a CSV file in your storage system (GCS bucket), run the command below 
 
 ```sh {"id":"01J2BCARNPK25F2YAPAZ22GHK8"}
 bq extract --destination_format=CSV [DATASET].[TABLE] gs://[BUCKET]/[FILE_NAME].csv
@@ -148,8 +152,6 @@ bq mk runme_bq
 ```
 
 ![create table](../../static/img/guide-page/runme-create-table.png)
-
-**Delete a Dataset**
 
 ### Creating a Table
 
@@ -172,17 +174,19 @@ bq mk --table runme_bq.runme_table schema.json
 
 **Delete a Table**
 
+To delete a table from your BigQuery run the command below 
+
 ```sh {"id":"01J2BCCW3DTQ090CY0PGSGT5FZ"}
 bq rm -f [DATASET].[TABLE]
 ```
 
-```sh {"id":"01J2BEWCS160J7V3HCETZH6MNZ"}
-bq rm -f runme_bq.runme_table
-```
-
 ![remove table](../../static/img/guide-page/runme-bigquery-remove-table.png)
 
+This command forcefully deletes the table named `runme_table` in the dataset `runme_bq` 
+
 **Create a Table with Expiration Time**
+
+You can create a partitioned table with an expiration in BigQuery 
 
 ```sh {"id":"01J2BCGHCEX7XV8EZAG9DC02D3"}
 bq mk --table --time_partitioning_expiration 2592000000 my_dataset.temporary_data schema.json
@@ -198,4 +202,4 @@ bq --help
 
 ### Conclusion
 
-By following these steps, you should be able to set up and use Google BigQuery with the Runme CLI effectively. For more detailed information, refer to the official Google Cloud documentation.
+You have successfully set up, configured Google BigQuery and execute SQL queries on BigQuery within your Runme notebook. [Runme](../index) enhances your data operations by providing a simple, efficient, and powerful interface for working with Google BigQuery. 
