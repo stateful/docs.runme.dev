@@ -153,6 +153,14 @@ bq mk runme_bq
 
 ![create table](../../static/img/guide-page/runme-create-table.png)
 
+## Delete Dataset
+
+Delete all tables and views within the dataset
+
+```sh {"id":"01J2E7RCKGKX96ZBFTSJJZWMGZ"}
+bq rm -r -f [PROJECT_ID]:[DATASET]
+```
+
 ### Creating a Table
 
 To create a new table within your dataset:
