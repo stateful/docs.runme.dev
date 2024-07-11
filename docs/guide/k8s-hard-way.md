@@ -6,7 +6,7 @@ runme:
 
 Provisioning Compute Resources
 
-### Create Jumpbox 
+### Create Jumpbox
 
 ```sh {"id":"01J2EFYQDQGF2JKSNXETZH4WDX"}
 gcloud compute instances create jumpbox \
@@ -44,7 +44,7 @@ gcloud compute instances create server \
 
 ### Create Node-0
 
-```sh {"id":"01J2EFXEKG9XY2ADRRB4AHPNMN"}
+```sh {"background":"true","id":"01J2EFXEKG9XY2ADRRB4AHPNMN"}
 gcloud compute instances create node-0 \
     --project=runme-ci \
     --zone=us-central1-a \
@@ -62,7 +62,7 @@ gcloud compute instances create node-0 \
 
 ### Create Node-1
 
-```sh {"id":"01J2EFWVT10CPYT8V7QZEV152P"}
+```sh {"background":"true","id":"01J2EFWVT10CPYT8V7QZEV152P"}
 gcloud compute instances create node-1 \
     --project=runme-ci \
     --zone=us-central1-a \
@@ -87,8 +87,84 @@ echo "PROJECT_ID set to $PROJECT_ID"
 https://console.cloud.google.com/compute/instances?project=$PROJECT_ID
 ```
 
-Set up your virtual machines or instances. This guide assumes you have control over these resources.
-Setting Up Networking
+### Set Up The Jumpbox
+
+This machine will be used to run commands in this tutorial. 
+
+```sh {"id":"01J2EM0SF9EN8T7W99ZHKBCH6E"}
+https://console.cloud.google.com/compute/instances?project=$PROJECT_ID
+```
+
+```sh {"background":"true","id":"01J2EM21QGX57JX6PMTV6B3B5E"}
+echo "Connecting to instance via SSH..."
+gcloud compute ssh --zone "us-central1-a" "jumpbox" --project "runme-ci"
+```
+
+click on the jumpbox ssh, to ssh into the server
+
+login as root user
+
+**Install Command Line Utilities**
+
+Now that you are logged into the jumpbox machine as the root user, you will install the command line utilities that will be used to preform various tasks throughout the tutorial.
+
+```ini {"id":"01J2EM5J43MZHAMQ0AA1H72YHV"}
+apt-get -y install wget curl vim openssl git
+```
+
+**Sync GitHub Repository** 
+
+Now it's time to download a copy of this tutorial which contains the configuration files and templates that will be used build your Kubernetes cluster from the ground up. Clone the Kubernetes The Hard Way git repository using the git command:
+
+```ini {"id":"01J2EM8T4Q7W0995182EE2BR9G"}
+git clone --depth 1 \
+  https://github.com/kelseyhightower/kubernetes-the-hard-way.git
+```
+
+Change into the kubernetes-the-hard-way directory:
+
+```ini {"id":"01J2EMA7CRMYFDAW30DCFDN156"}
+cd kubernetes-the-hard-way
+```
+
+**Download Binaries**
+
+From the kubernetes-the-hard-way directory create a downloads directory using the mkdir command:
+
+```ini {"id":"01J2EMK3YQ9VYXAGGZQQEB5TQ0"}
+mkdir downloads
+```
+
+The binaries that will be downloaded are listed in the downloads.txt file, which you can review using the cat command:
+
+```ini {"id":"01J2EMM377W7160DAANPDV8EXF"}
+cat downloads.txt
+```
+
+Download the binaries listed in the downloads.txt file using the wget command:
+
+wget -q --show-progress \
+  --https-only \
+  --timestamping \
+  -P downloads \
+  -i downloads.txt
+
+Depending on your internet connection speed it may take a while to download the `584` megabytes of binaries, and once the download is complete, you can list them using the `ls` command:
+
+```ini {"id":"01J2EN8NR5VJ0G252016RKNVP5"}
+ls -loh downloads
+```
+
+**Install kubectl**
+
+In this section you will install the kubectl, the official Kubernetes client command line tool, on the jumpbox machine. `kubectl will be used to interact with the Kubernetes control once your cluster is provisioned later in this tutorial.
+
+Use the chmod command to make the kubectl binary executable and move it to the /usr/local/bin/ directory:
+
+```ini {"id":"01J2ENKDWTGXM84GVA6D47F41M"}
+chmod +x downloads/kubectl
+cp downloads/kubectl /usr/local/bin/
+```
 
 Configure networking between your machines. Ensure each node can communicate with the others via both private and public IP addresses.
 TLS Bootstrapping
