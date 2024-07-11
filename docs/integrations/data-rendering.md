@@ -22,6 +22,8 @@ In this guide, we will work with JSON data to specify that.
 
 ![Runme mimetype](../../static/img/guide-page/runme-mimetype.png)
 
+However it is important to note that setting the `mimeType` is optional as Runme has an effective auto-detection that detects JSON/CSV files reliably.
+
 - **Interactive Mode**
    The Interactive mode is another feature of Runme that makes rendering JSON data into human-friendly output possible. By default, Runme allows your scripts to run in the interactive mode. This mode enables you to interact with scripts in the output terminal.
    However, you must turn that off to render your JSON data successfully. This can be done with a single click.
@@ -70,7 +72,7 @@ Ensure to change `<runme-new.json>` to the name of your JSON file.
 
 Now, click the `configuration icon` to configure your cell. In the general configuration dashboard, deactivate the interactive mode.
 
-Next, navigate to the advanced dashboard and enter the MIME type for your file, which is `application/json`. One good thing about Runme is that in case you miss this step, Runme can automatically detect the file type and fill in that for you.
+Next, navigate to the advanced dashboard and enter the MIME type for your file, which is `application/json`. One good thing about Runme is that if you ignore this setting of your MIME type, Runme can automatically detect the file type and fill it in for you. 
 
 **Step Three**
 
