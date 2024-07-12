@@ -97,6 +97,8 @@ This command will return the first 10 rows from the `runme-query` table in the `
 
 ## Execute & make a query
 
+you can QUERY and Execution can be split into two cells
+
 ```sh {"id":"01J2KDSN92SZZYTSN11D7GS2G9"}
 $ export FORMAT="json"
 $ echo "FORMAT set to ${FORMAT}"
@@ -114,6 +116,10 @@ SELECT title, num_characters, timestamp, id, revision_id FROM
 WHERE num_characters < 67100
 LIMIT 10;
 ```
+
+![big query](../../static/img/guide-page/runme-bigquery-sql.png)
+
+user using sql formetter to lint thier query 
 
 ```sh {"id":"01J2KDZ0Z374808DNBPDD898HR","interactive":"false"}
  bq query --format $FORMAT --use_legacy_sql=false $QUERY 2> /dev/null
