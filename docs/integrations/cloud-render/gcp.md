@@ -1,4 +1,7 @@
 ---
+runme:
+  id: 01J2K4Y0BK8EJ27AH41NHCWPPY
+  version: v3
 title: Runme Cloud Renderers via Google Cloud
 ---
 
@@ -98,7 +101,7 @@ To SSH into an virtual machine, do the following:
 
 ![ssh into vm](../../../static/img/Integration/runme-gcp-ssh-outcome.png)
 
-2. **Pause an Virtual Machine**
+2. **Pause Virtual Machine**
 
 - Click on the pause icon next to the virtual machine you want to pause.
 
@@ -120,15 +123,15 @@ Outcome:
 
 Outcome:
 
-the virtual machine is starting
+The virtual machine is starting
 
 ![starting virtual](../../../static/img/Integration/starting-runme.png)
 
-the virtual machine is up
+The virtual machine is up
 
 ![start](../../../static/img/Integration/runme-gcp-instanceup.png)
 
-4. **Stop an Virtual Machine**
+4. **Stop Virtual Machine**
 
 - Click on the stop button next to the virtual machine you want to stop.
 
