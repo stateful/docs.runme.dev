@@ -95,6 +95,32 @@ bq query --use_legacy_sql=false 'SELECT * FROM `[PROJECT_ID].[DATASET].[TABLE]` 
 
 This command will return the first 10 rows from the `runme-query` table in the `runme_bigquery` dataset.
 
+## Execute & make a query
+
+```sh {"id":"01J2KDSN92SZZYTSN11D7GS2G9"}
+$ export FORMAT="json"
+$ echo "FORMAT set to ${FORMAT}"
+```
+
+Set format, run, and display BigQuery results.
+
+name your cells block ( cause you're going to call it in the next query)
+
+change your code block programming language is sql
+
+```sql {"id":"01J2KDYDZHSYQW5M78AVG3NN1P","name":"QUERY"}
+SELECT title, num_characters, timestamp, id, revision_id FROM
+  `bigquery-public-data.samples.wikipedia`
+WHERE num_characters < 67100
+LIMIT 10;
+```
+
+```sh {"id":"01J2KDZ0Z374808DNBPDD898HR","interactive":"false"}
+ bq query --format $FORMAT --use_legacy_sql=false $QUERY 2> /dev/null
+```
+
+![result](../../static/img/guide-page/runme-result.png)
+
 ### Listing Datasets and Tables
 
 To list all datasets in your project:
