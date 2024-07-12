@@ -89,7 +89,7 @@ gcloud config set project $PROJECT_ID
 
 In this section, we will explore various BigQuery operations.
 
-## Query a Dataset With Runme
+### Query a Dataset With Runme
 
 With Runme features, you can successfully run and display your query's output, formatting it into a table for easy navigation.
 
@@ -268,6 +268,6 @@ If you need additional help with BigQuery commands, you can view the help docume
 bq --help
 ```
 
-### Feedback
+## Feedback
 
 You have successfully set up and configured Google BigQuery and executed SQL queries on BigQuery within your Runme notebook. We are constantly developing more features for Runme. If you have feedback on this or new ideas for improving this feature, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
