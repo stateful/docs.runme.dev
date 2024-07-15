@@ -89,7 +89,7 @@ gcloud config set project $PROJECT_ID
 
 In this section, we will explore various BigQuery operations.
 
-1.  **Query a Dataset With Runme**
+- **Query a Dataset With Runme**
 
 With Runme features, you can successfully run and display your query's output, formatting it into a table for easy navigation.
 
@@ -123,7 +123,7 @@ When this is successful, you will get an output similar to this. You can change 
 
 ![result](../../static/img/guide-page/runme-result.png)
 
-2.  **Querying BigQuery Dataset**
+- **Querying BigQuery Dataset**
 
 You run a query against your BigQuery dataset. For example, to select data from a specific table, use the following command:
 
@@ -141,7 +141,7 @@ This command will return the first 10 rows from the `runme-query` table in the `
 
 ![query](../../static/img/guide-page/runme-bq-query.png)
 
-3. **Listing Datasets and Tables**
+- **Listing Datasets and Tables**
 
 The next Bigquery operation we will explore is how to list datasets and tables.
 
@@ -171,7 +171,7 @@ bq show runme_bigquery.runme-query
 
 Be sure to change the `runme-query` with your project dataset.
 
-4. **Load Data into a Table**
+- **Load Data into a Table**
 
 You can also load data from a CSV file into a table in Google BigQuery. To do that, run the command below:
 
@@ -189,7 +189,7 @@ Once that is done, you will get an output similar to this.
 
 ![bq load](../../static/img/guide-page/runme-bq-load.png)
 
-5. **Export Data from a Table**
+- **Export Data from a Table**
 
 Extracting data from a table and saving it as a CSV file in your storage system(GCS bucket) is equally possible. To do that, run the command below
 
@@ -197,7 +197,7 @@ Extracting data from a table and saving it as a CSV file in your storage system(
 bq extract --destination_format=CSV [DATASET].[TABLE] gs://[BUCKET]/[FILE_NAME].csv
 ```
 
-6. **Creating a Dataset**
+- **Creating a Dataset**
 
 If you need to create a new dataset, run the command below.
 
@@ -207,7 +207,7 @@ bq mk runme_bq
 
 ![create table](../../static/img/guide-page/runme-create-table.png)
 
-7. **Delete Dataset**
+- **Delete Dataset**
 
 To delete all tables and views within the dataset, run the command below.
 
@@ -217,7 +217,7 @@ bq rm -r -f [PROJECT_ID]:[DATASET]
 
 Replace `PROJECT_ID` and `DATASET` with your information, and run the command to delete a dataset.
 
-8. **Creating a Table**
+- **Creating a Table**
 
 To create a new table within your dataset, run the command below.
 
@@ -234,7 +234,7 @@ bq mk --table [DATASET].[TABLE] schema.json
 
 ![use schema](../../static/img/guide-page/runme_bigquery-schema.png)
 
-8. **Delete a Table**
+- **Delete a Table**
 
 To delete a table from your BigQuery, run the command below
 
@@ -252,7 +252,7 @@ This command forcefully deletes the table named `runme_table` in the dataset `ru
 
 ![remove table](../../static/img/guide-page/runme-bigquery-remove-table.png)
 
-9. **Create a Table with Expiration Time**
+- **Create a Table with Expiration Time**
 
 You can create a partitioned table with expiration in BigQuery. Run the command below to do this.
 
