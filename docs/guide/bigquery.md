@@ -10,15 +10,15 @@ Runme simplifies the management and execution of tasks while documenting your pr
 
 In this guide, you will learn how to manage data queries using BigQueris and Runme.
 
-### Prerequisites
+## **Prerequisites**
 
 To follow up on this guide, ensure you have the following:
 
-**Install Runme Extension and Make it Your Default Markdown Viewer**
+- **Install Runme Extension and Make it Your Default Markdown Viewer**
 
 Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](../installation/index.md) where you can run your Markdown file. Once installed, make Runme your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-**Google Cloud SDK**
+- **Google Cloud SDK**
 
 Install Google Cloud SDK to interact with Google Cloud resources. To install it, run the command below.
 
@@ -38,7 +38,7 @@ gcloud auth login
 
 Once this command is executed, a browser window will open where you can log in with your Google account. After logging in, you can explore the Gcloud components.
 
-**List Available Components**
+1. **List Available Components**
 
 To list all available or installed components of your Google Cloud SDK, run the command below.
 
@@ -50,7 +50,7 @@ When the command is executed successfully, you will see a list of all available 
 
 ![Componenets list](../../static/img/guide-page/runme-list-component.png)
 
-**Update Google Cloud Components**
+2. **Update Google Cloud Components**
 
 After getting a list of all available and installed components, you may want to update them. To do that, run the command below.
 
@@ -58,7 +58,7 @@ After getting a list of all available and installed components, you may want to 
 gcloud components update
 ```
 
-**Install the BigQuery Component**
+3. **Install the BigQuery Component**
 
 With the authentication completed, you can proceed to install your BigQuery component. Run the command below to do that.
 
@@ -66,7 +66,7 @@ With the authentication completed, you can proceed to install your BigQuery comp
 gcloud components install bq
 ```
 
-### Set Your Project
+### Set Up Your Project
 
 Now, you have successfully completed the authentication phase. The next step is to set up your project.
 
@@ -89,7 +89,7 @@ gcloud config set project $PROJECT_ID
 
 In this section, we will explore various BigQuery operations.
 
-### Query a Dataset With Runme
+1.  **Query a Dataset With Runme**
 
 With Runme features, you can successfully run and display your query's output, formatting it into a table for easy navigation.
 
@@ -123,7 +123,7 @@ When this is successful, you will get an output similar to this. You can change 
 
 ![result](../../static/img/guide-page/runme-result.png)
 
-### Querying BigQuery Dataset
+2.  **Querying BigQuery Dataset**
 
 You run a query against your BigQuery dataset. For example, to select data from a specific table, use the following command:
 
@@ -141,7 +141,7 @@ This command will return the first 10 rows from the `runme-query` table in the `
 
 ![query](../../static/img/guide-page/runme-bq-query.png)
 
-### Listing Datasets and Tables
+3. **Listing Datasets and Tables**
 
 The next Bigquery operation we will explore is how to list datasets and tables.
 
@@ -171,7 +171,7 @@ bq show runme_bigquery.runme-query
 
 Be sure to change the `runme-query` with your project dataset.
 
-**Load Data into a Table**
+4. **Load Data into a Table**
 
 You can also load data from a CSV file into a table in Google BigQuery. To do that, run the command below:
 
@@ -179,7 +179,7 @@ You can also load data from a CSV file into a table in Google BigQuery. To do th
 bq load --source_format=CSV [DATASET].[TABLE] [PATH_TO_CSV_FILE] [SCHEMA]
 ```
 
-Ensure that you provide the information for the `DATASET`, `PATH_TO_CSV_FILE` and `SCHEMA` like the code block below. Now, run the command. 
+Ensure that you provide the information for the `DATASET`, `PATH_TO_CSV_FILE` and `SCHEMA` like the code block below. Now, run the command.
 
 ```sh {"id":"01J2BH3RJYZVD6XRAHQ198FVD5"}
 bq load --source_format=CSV --skip_leading_rows=1 runme_bq.runme_table ./101.csv ./schema.json
@@ -189,7 +189,7 @@ Once that is done, you will get an output similar to this.
 
 ![bq load](../../static/img/guide-page/runme-bq-load.png)
 
-**Export Data from a Table**
+5. **Export Data from a Table**
 
 Extracting data from a table and saving it as a CSV file in your storage system(GCS bucket) is equally possible. To do that, run the command below
 
@@ -197,7 +197,7 @@ Extracting data from a table and saving it as a CSV file in your storage system(
 bq extract --destination_format=CSV [DATASET].[TABLE] gs://[BUCKET]/[FILE_NAME].csv
 ```
 
-### Creating a Dataset
+6. **Creating a Dataset**
 
 If you need to create a new dataset, run the command below.
 
@@ -207,7 +207,7 @@ bq mk runme_bq
 
 ![create table](../../static/img/guide-page/runme-create-table.png)
 
-**Delete Dataset**
+7. **Delete Dataset**
 
 To delete all tables and views within the dataset, run the command below.
 
@@ -217,7 +217,7 @@ bq rm -r -f [PROJECT_ID]:[DATASET]
 
 Replace `PROJECT_ID` and `DATASET` with your information, and run the command to delete a dataset.
 
-### Creating a Table
+8. **Creating a Table**
 
 To create a new table within your dataset, run the command below.
 
@@ -234,9 +234,9 @@ bq mk --table [DATASET].[TABLE] schema.json
 
 ![use schema](../../static/img/guide-page/runme_bigquery-schema.png)
 
-**Delete a Table**
+8. **Delete a Table**
 
-To delete a table from your BigQuery, run the command below 
+To delete a table from your BigQuery, run the command below
 
 ```sh {"id":"01J2BCCW3DTQ090CY0PGSGT5FZ"}
 bq rm -f [DATASET].[TABLE]
@@ -252,7 +252,7 @@ This command forcefully deletes the table named `runme_table` in the dataset `ru
 
 ![remove table](../../static/img/guide-page/runme-bigquery-remove-table.png)
 
-**Create a Table with Expiration Time**
+9. **Create a Table with Expiration Time**
 
 You can create a partitioned table with expiration in BigQuery. Run the command below to do this.
 
@@ -260,7 +260,7 @@ You can create a partitioned table with expiration in BigQuery. Run the command 
 bq mk --table --time_partitioning_expiration 2592000000 my_dataset.temporary_data schema.json
 ```
 
-### Getting Help
+## Getting Help
 
 If you need additional help with BigQuery commands, you can view the help documentation:
 
