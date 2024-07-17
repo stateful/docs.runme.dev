@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# Runme Cloud Renderers with Google Cloud Run in the Web Browser
+# Runme Cloud Renderers with Google Cloud Run
 
 Runme Cloud Renderers enable you to access various cloud resources directly within your Markdown files without the need to log into your cloud console. With Cloud Renderers, you can manage your Google Cloud Run resources and perform various operations without leaving your Markdown environment.
 
