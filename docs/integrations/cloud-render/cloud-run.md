@@ -36,11 +36,7 @@ mkdir my_new_directory
 
 Where `my_new_directory` is the name of your folder.
 
-Now, navigate into that directory by changing directory to `my_new_directory`.
-
-```ini {"id":"01J30C8X64C0CA1156Q807AQ81"}
-cd my_new_directory
-```
+Now, navigate into that directory by [changing directory](https://docs-runme-qner5rfvu-stateful.vercel.app/configuration/cell-level#cells-current-working-directory) to `my_new_directory`.
 
 - **Open the Web Browser**
 
