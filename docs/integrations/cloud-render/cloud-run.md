@@ -24,7 +24,7 @@ brew install runme
 
 Check out our detailed installation guide for instructions on [installing Runme CLI](../../installation/runmecli.md) on other operation systems.
 
-- **Cd into a directory**
+- **Change directory**
 
 The next step is to navigate into your directory. However,  if you do not have an existing folder you would love to work on, you can create a new folder or clone the repo you want to work with.
 
@@ -36,7 +36,7 @@ mkdir my_new_directory
 
 Where `my_new_directory` is the name of your folder.
 
-Now, navigate into that directory by `cd my_new_directory`.
+Now, navigate into that directory by changing directory to `my_new_directory`.
 
 ```ini {"id":"01J30C8X64C0CA1156Q807AQ81"}
 cd my_new_directory
