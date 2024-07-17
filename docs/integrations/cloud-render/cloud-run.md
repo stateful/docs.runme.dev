@@ -136,7 +136,10 @@ To view more details about your project, click the `Details` icon beside the pro
 
 This will load a table that will provide details of your project, such as containers, volumes, storage, network, security, and YAML.
 
-![Describe container yaml](../../../static/img/Integration/runme-web-cloudrun-container-details.png)
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
+  <source src="/videos/runme-revision-cloudrun.webm" type="video/webm" />
+</video>
 
 **Visualize and Download YAML**
 
