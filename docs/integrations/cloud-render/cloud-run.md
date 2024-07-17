@@ -26,7 +26,7 @@ Check out our detailed installation guide for instructions on [installing Runme 
 
 - **Change directory**
 
-The next step is to navigate into your directory. However,  if you do not have an existing folder you would love to work on, you can create a new folder or clone the repo you want to work with.
+The next step is to navigate into your directory. However,  if you do not have an existing folder you would love to work on, you can create a new folder or [clone the repo](https://github.com/stateful/vscode-runme/blob/main/examples/gcp/cloudRun.md) you want to work with.
 
 To create a folder, run the command below
 
