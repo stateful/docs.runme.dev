@@ -86,12 +86,9 @@ To do this, first, create a new Markdown cell in your Markdown file and type you
 Foyle will answer the question below.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/runme-foyle-example.mp4" type="video/mp4" />
-  <source src="../static/videos/runme-foyle-example.mp4" type="video/mp4" />
-  <source src="videos/runme-foyle-example.webm" type="video/webm" />
-  <source src="../static/videos/runme-foyle-example.webm" type="video/webm" />
+  <source src="/videos/runme-foyle-example.mp4" type="video/mp4" />
+  <source src="/videos/runme-foyle-example.webm" type="video/webm" />
 </video>
-<br/>
 
 **Executing a Command**
 
@@ -102,12 +99,9 @@ To run the question and get Foyle to answer, press `shift + command + p`. This w
 In the video below, we prompt Foyle to list all pods. Foyle returns the command, which you can run in the Markdown file to get the list of all pods.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/runme-foyle-command.mp4" type="video/mp4" />
-  <source src="../static/videos/runme-foyle-command.mp4" type="video/mp4" />
-  <source src="videos/runme-foyle-command.webm" type="video/webm" />
-  <source src="../static/videos/runme-foyle-command.webm" type="video/webm" />
+  <source src="/videos/runme-foyle-command.mp4" type="video/mp4" />
+  <source src="/videos/runme-foyle-command.webm" type="video/webm" />
 </video>
-<br/>
 
 **Generate Output Based on Previous Command**
 
