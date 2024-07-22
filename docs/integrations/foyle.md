@@ -6,93 +6,31 @@ runme:
 
 # How to Use Foyle with Runme
 
-Foyle is a project designed to build agents that assist software developers in deploying and operating software by moving software development operations from the shell to a literate environment.
+This guide shows you how to use Runme Notebook to run and execute commands and prompts. By integrating [Foyle](https://foyle.io/), an AI assistant, you can execute cells containing shell commands or Markdown. However, to perform these actions, Foyle works within the Runme Notebook to enable you to input prompts and display the generated output directly within the Notebook. 
 
-​It utilizes VS Code and integrates with Runme to provide users with a nice frontend for software development operations. This guide will explore how to perform operations with Foyle in your Runme Notebook.
+This makes it easy to add and run commands, as Foyle can automatically create and execute the necessary cells based on your input. With Runme's interactive notebook, you can perform these operations and view your completed tasks.
 
 ## Installation
 
-You need to follow up on this installation section to get started with this tutorial.
+To get started, ensure you have the following installed: 
 
-**Install Runme**
+**Runme Extension**
 
-Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and make it your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+To access the Runme Notebook, install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can also set Runme as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 **Install Foyle**
 
-To install Foyle, do the following
+To install Foyle, follow the steps as instructed [here](https://github.com/jlewi/foyle/releases).
 
-- **Download the Binary**
+## Setting Up Foyle with Runme
 
-The first step to installing Foyle is to download the binary. You can download the latest release from the [releases page](https://github.com/jlewi/foyle/releases). In this guide, we will download the Foyle application package for Linux. To do that, run the command below.
-
-```sh {"id":"01J330D58TDAQZ8J3DJAP4K111"}
-wget https://github.com/jlewi/foyle/releases/download/v0.0.14/foyle_0.0.14_linux_amd64
-```
-
-This command downloads the specified version of the Foyle binary for Linux, allowing you to install and use Foyle on your system.
-
-When successfully executed, you will get an output similar to the image below.
-
-![download binary](../../static/img/Integration/runme-install-foyle.png)
-
-However, if you install Foyle on Mac, you may need to remove the quarantine attribute from the binary. To do that, run the command below.
-
-```sh {"id":"01J330HTHQKQ12RVKN5BVBM8NE"}
-xattr -d com.apple.quarantine /path/to/foyle
-```
-
-- **Move the Executable**
-
-The next step is to move the executable to the bin directory. This action makes the application easily accessible from the command line without specifying its full path every time you run it. To do this, run the command below.
-
-```sh {"id":"01J330JKQ8RDCC8YCTTBWWB9EQ"}
-sudo mv foyle_0.0.14_linux_amd64 /usr/local/bin/foyle
-```
-
-- **Give Executable Permissions**
-
-To give Foyle executable permissions, run the command below
-
-```sh {"id":"01J330MAHP2QBZD5XYDS7PKG87"}
-sudo chmod +x /usr/local/bin/foyle
-```
-
-- **Check if Foyle is Installed**
-
-To check if Foyle is correctly installed on your local machine, run the command below
-
-```sh {"id":"01J330NJEGB02JJSXFEKRVJ8PA"}
-foyle
-```
-
-This command should display as seen in the image below if Foyle is installed.
-
-![Foyle is running](../../static/img/Integration/runme-foyle-running.png)
-
-- **Create a Directory Path for Foyle**
-
-Creating the `.foyle/assets/vscode/extensions` directory is important as it ensures that Foyle’s assets and configuration files are well-stored and organized. It also ensures proper integration with VS Code by managing VS Code extensions and maintaining consistency across sessions.
-
-To create a directory path for Foyle, run the command below
-
-```sh {"id":"01J330SNEAJGRB7JKKBYEJ1BM9"}
-mkdir -p /home/ubuntu/.foyle/assets/vscode/extensions
-```
-
-This command will create the entire directory path `/home/ubuntu/.foyle/assets/vscode/extensions` if it doesn't already exist.
-
-![vscode extension](../../static/img/Integration/runme-foyle-vscode-extension.png)
-
-## Setting Up Foyle
-
-After successfully installing Foyle, the next step is to set it up. This section will break down the steps required to do so.
+After successfully installing Foyle, the next step is to set it up. This section will break down the setup process.
 
 ### Configure Your OpenAPI Key
 
-To perform this action, you need an API key. If you do not have one, go to [OpenAI](https://openai.com/) to obtain one.
+To kickstart setting up Foyle on your local machine, you will need to configure your OpenAPI key. This will give you access to work with Foyle. Go to [OpenAI](https://openai.com/) to obtain your unique API key.
 
-Once you have gotten your key, run the command below.
+Once you have gotten your key, save it in a plain text file and run the command below.
 
 ```sh {"id":"01J3311MR9WFWKQG2BZ6CS2MNC"}
 foyle config set openai.apiKeyFile=/path/to/openai/apikey
@@ -102,15 +40,15 @@ foyle config set openai.apiKeyFile=/path/to/openai/apikey
 
 ### Start the Server
 
-Run the command below to start the Foyle server on your local machine. However, you must ensure your API Key is in the directory where this command will run.
-
-If it isn’t, you can set the directory of your code cell to the directory where your API Key is located using the [CWD feature of Runme](../configuration/cell-level#cells-current-working-directory).
+Run the command below to start the Foyle server on your local machine. However, you must ensure your API Key is in the directory where this command will run. If it isn’t, you can set the directory of your code cell to the directory where your API Key is located using the [CWD feature of Runme](../configuration/cell-level#cells-current-working-directory).
 
 ```sh {"id":"01J331ERREM6TZ2VCVES792H65"}
 foyle serve
 ```
 
-This command should start Foyle in the background. To make this run in the background without disrupting your activities, activate the [background task](../getting-started/features#background-task) mode of your cell. Once that is done, run the cell, and you will get an output similar to the image below.
+This command should start Foyle in the background. To make it run without disrupting your activities, activate your cell's [background task](../getting-started/features#background-task) mode. This feature will make Foyle run as a background task without interrupting your progress.
+
+Once that is done, run the cell, and you will get an output similar to the image below.
 
 ![foyle serve](../../static/img/Integration/runme-foyle-serve.png)
 
@@ -121,13 +59,66 @@ foyle config set server.httpPort=<YOUR HTTP PORT>
 foyle config set server.grpcPort=<YOUR GRPC PORT>
 ```
 
-**Confirm Foyle Address**
+### Confirm Foyle's Address
 
 If you would love to confirm your Foyle Address in VS Code, do the following.
+
 - Open the VSCode setting palette
 - Search for `Runme: Foyle Address`
 - Set the address to `localhost:${GRPC_PORT}`. By default, the port is `9080`. If you set a non-default value, it will be the value of `server.grpcPort`
 
 ![Extension Setting](../../static/img/Integration/runme-foyle-setting.png)
+
+## Running Foyle Operations with Runme 
+
+Now that Foyle has been successfully installed and set up in your Runme Notebook, we can proceed to test it out by performing some operations, such as asking it questions like we would ask an AI tool.
+
+In this section, we will be performing several operations with Foyle, such as setting up a kind cluster, getting a list of all namespaces in a cluster, and listing and describing pods.
+
+**Running a Prompt**
+
+With this integration, you can ask a question using Foyle within the Notebook to generate a response. Remember, Foyle allows you to add cells and execute commands within a Notebook. 
+
+In the example below, we will demonstrate “**How to set up a kind cluster**” using Foyle in our Runme Interactive Notebook.
+
+To do this, first, create a new Markdown cell in your Markdown file and type your questions. For instance, in the video below, we will ask Foyle, "How do I set up a kind cluster?"
+
+Foyle will answer the question below.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="videos/runme-foyle-example.mp4" type="video/mp4" />
+  <source src="../static/videos/runme-foyle-example.mp4" type="video/mp4" />
+  <source src="videos/runme-foyle-example.webm" type="video/webm" />
+  <source src="../static/videos/runme-foyle-example.webm" type="video/webm" />
+</video>
+<br/>
+
+**Executing a Command**
+
+When you enter a command in the Notebook, you can run it to get a response. Foyle processes the command and displays the response in the Notebook.
+
+To run the question and get Foyle to answer, press `shift + command + p`. This will open a dashboard with several options. Select **Generate cells using the Foyle assistant**.
+
+In the video below, we prompt Foyle to list all pods. Foyle returns the command, which you can run in the Markdown file to get the list of all pods.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="videos/runme-foyle-command.mp4" type="video/mp4" />
+  <source src="../static/videos/runme-foyle-command.mp4" type="video/mp4" />
+  <source src="videos/runme-foyle-command.webm" type="video/webm" />
+  <source src="../static/videos/runme-foyle-command.webm" type="video/webm" />
+</video>
+<br/>
+
+**Generate Output Based on Previous Command**
+
+Additionally, you can also use Foyle to generate output based on your previous commands. Foyle will follow the events from your previous commands or output and return the result in the Notebook. 
+
+In the image below, we are asking Foyle to describe a pod from the list of pods we got in the example above.
+
+![Output command](../../static/img/Integration/runme-foyle-execute-command3.png)
+
+## **Feedback and Contribution**
+
+If you have any tool or project you would like to see integrated with Runme, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback) with your idea. We will be glad to test it out.
 
 
