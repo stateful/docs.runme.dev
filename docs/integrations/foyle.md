@@ -92,6 +92,8 @@ Foyle will answer the question below.
 
 **Executing a Command**
 
+
+
 When you enter a command in the Notebook, you can run it to get a response. Foyle processes the command and displays the response in the Notebook.
 
 To run the question and get Foyle to answer, press `shift + command + p`. This will open a dashboard with several options. Select **Generate cells using the Foyle assistant**.
