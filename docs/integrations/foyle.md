@@ -6,19 +6,19 @@ runme:
 
 # How to Use Foyle with Runme
 
-This guide shows you how to use Runme Notebook to run and execute commands and prompts. By integrating [Foyle](https://foyle.io/), an AI assistant, you can execute cells containing shell commands or Markdown. However, to perform these actions, Foyle works within the Runme Notebook to enable you to input prompts and display the generated output directly within the Notebook. 
+This guide shows you how to use Runme Notebook to run and execute commands and prompts. By integrating [Foyle](https://foyle.io/), an AI assistant, you can execute cells containing shell commands or Markdown. However, to perform these actions, Foyle works within the Runme Notebook to enable you to input prompts and display the generated output directly within the Notebook.
 
 This makes it easy to add and run commands, as Foyle can automatically create and execute the necessary cells based on your input. With Runme's interactive notebook, you can perform these operations and view your completed tasks.
 
 ## Installation
 
-To get started, ensure you have the following installed: 
+To get started, ensure you have the following installed:
 
-**Runme Extension**
+- **Runme Extension**
 
 To access the Runme Notebook, install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can also set Runme as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-**Install Foyle**
+- **Install Foyle**
 
 To install Foyle, follow the steps as instructed [here](https://github.com/jlewi/foyle/releases).
 
@@ -26,7 +26,7 @@ To install Foyle, follow the steps as instructed [here](https://github.com/jlewi
 
 After successfully installing Foyle, the next step is to set it up. This section will break down the setup process.
 
-### Configure Your OpenAPI Key
+1. **Configure Your OpenAPI Key**
 
 To kickstart setting up Foyle on your local machine, you will need to configure your OpenAPI key. This will give you access to work with Foyle. Go to [OpenAI](https://openai.com/) to obtain your unique API key.
 
@@ -38,7 +38,7 @@ foyle config set openai.apiKeyFile=/path/to/openai/apikey
 
 ![open ai key](../../static/img/Integration/runme-foyle-openai-key.png)
 
-### Start the Server
+2. **Start the Server**
 
 Run the command below to start the Foyle server on your local machine. However, you must ensure your API Key is in the directory where this command will run. If it isn’t, you can set the directory of your code cell to the directory where your API Key is located using the [CWD feature of Runme](../configuration/cell-level#cells-current-working-directory).
 
@@ -59,7 +59,7 @@ foyle config set server.httpPort=<YOUR HTTP PORT>
 foyle config set server.grpcPort=<YOUR GRPC PORT>
 ```
 
-### Confirm Foyle's Address
+3. **Confirm Foyle's Address**
 
 If you would love to confirm your Foyle Address in VS Code, do the following.
 
@@ -69,15 +69,15 @@ If you would love to confirm your Foyle Address in VS Code, do the following.
 
 ![Extension Setting](../../static/img/Integration/runme-foyle-setting.png)
 
-## Running Foyle Operations with Runme 
+## Running Foyle Operations with Runme
 
 Now that Foyle has been successfully installed and set up in your Runme Notebook, we can proceed to test it out by performing some operations, such as asking it questions like we would ask an AI tool.
 
 In this section, we will be performing several operations with Foyle, such as setting up a kind cluster, getting a list of all namespaces in a cluster, and listing and describing pods.
 
-**Running a Prompt**
+### Running a Prompt
 
-With this integration, you can ask a question using Foyle within the Notebook to generate a response. Remember, Foyle allows you to add cells and execute commands within a Notebook. 
+With this integration, you can ask a question using Foyle within the Notebook to generate a response. Remember, Foyle allows you to add cells and execute commands within a Notebook.
 
 In the example below, we will demonstrate “**How to set up a kind cluster**” using Foyle in our Runme Interactive Notebook.
 
@@ -90,9 +90,7 @@ Foyle will answer the question below.
   <source src="/videos/runme-foyle-example.webm" type="video/webm" />
 </video>
 
-**Executing a Command**
-
-
+### Executing a Command
 
 When you enter a command in the Notebook, you can run it to get a response. Foyle processes the command and displays the response in the Notebook.
 
@@ -105,15 +103,15 @@ In the video below, we prompt Foyle to list all pods. Foyle returns the command,
   <source src="/videos/runme-foyle-command.webm" type="video/webm" />
 </video>
 
-**Generate Output Based on Previous Command**
+### Generate Output Based on Previous Command
 
-Additionally, you can also use Foyle to generate output based on your previous commands. Foyle will follow the events from your previous commands or output and return the result in the Notebook. 
+Additionally, you can also use Foyle to generate output based on your previous commands. Foyle will follow the events from your previous commands or output and return the result in the Notebook.
 
 In the image below, we are asking Foyle to describe a pod from the list of pods we got in the example above.
 
 ![Output command](../../static/img/Integration/runme-foyle-execute-command3.png)
 
-## **Feedback and Contribution**
+## Feedback and Contribution
 
 If you have any tool or project you would like to see integrated with Runme, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback) with your idea. We will be glad to test it out.
 
