@@ -55,8 +55,10 @@ Once that is done, run the cell, and you will get an output similar to the image
 By default, Foyle uses port `8080` for the HTTP server and port `9080` for gRPC. You can configure this by running the command below if you would love to use different ports.
 
 ```sh {"id":"01J331M1RFEST6592A558A8G3S"}
-foyle config set server.httpPort=YOUR HTTP PORT
-foyle config set server.grpcPort=YOUR GRPC PORT
+export FOYLE_HTTP_PORT=YOUR HTTP PORT
+export FOYLE_GRCP_PORT=YOUR GRPC PORT
+foyle config set server.httpPort=$FOYLE_HTTP_PORT
+foyle config set server.grpcPort=$FOYLE_GRPC_PORT
 ```
 
 3. **Confirm Foyle's Address**
