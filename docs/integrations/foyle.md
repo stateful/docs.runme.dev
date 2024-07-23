@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# How to Use Foyle with Runme
+# How to Use Foyle AI with Runme
 
 This guide shows you how to use Runme Notebook to run and execute commands and prompts. By integrating [Foyle](https://foyle.io/), an AI assistant, you can execute cells containing shell commands or Markdown. However, to perform these actions, Foyle works within the Runme Notebook to enable you to input prompts and display the generated output directly within the Notebook.
 
