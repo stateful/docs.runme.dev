@@ -42,7 +42,7 @@ foyle config set openai.apiKeyFile=/path/to/openai/apikey
 
 Run the command below to start the Foyle server on your local machine. However, you must ensure your API Key is in the directory where this command will run. If it isn’t, you can set the directory of your code cell to the directory where your API Key is located using the [CWD feature of Runme](../configuration/cell-level#cells-current-working-directory).
 
-```sh {"id":"01J331ERREM6TZ2VCVES792H65"}
+```sh {"background":"true","id":"01J331ERREM6TZ2VCVES792H65"}
 foyle serve
 ```
 
@@ -55,8 +55,8 @@ Once that is done, run the cell, and you will get an output similar to the image
 By default, Foyle uses port `8080` for the HTTP server and port `9080` for gRPC. You can configure this by running the command below if you would love to use different ports.
 
 ```sh {"id":"01J331M1RFEST6592A558A8G3S"}
-foyle config set server.httpPort=<YOUR HTTP PORT>
-foyle config set server.grpcPort=<YOUR GRPC PORT>
+foyle config set server.httpPort=YOUR HTTP PORT
+foyle config set server.grpcPort=YOUR GRPC PORT
 ```
 
 3. **Confirm Foyle's Address**
@@ -88,6 +88,7 @@ Foyle will answer the question below.
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-foyle-example.mp4" type="video/mp4" />
   <source src="/videos/runme-foyle-example.webm" type="video/webm" />
+  <source src="../../static/videos/runme-foyle-example.mp4" type="video/mp4" />
 </video>
 
 ### Executing a Command
@@ -101,6 +102,7 @@ In the video below, we prompt Foyle to list all pods. Foyle returns the command,
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-foyle-command.mp4" type="video/mp4" />
   <source src="/videos/runme-foyle-command.webm" type="video/webm" />
+  <source src="../../static/videos/runme-foyle-command.mp4" type="video/mp4" />
 </video>
 
 ### Generate Output Based on Previous Command
