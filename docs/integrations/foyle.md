@@ -63,7 +63,7 @@ foyle config set server.grpcPort=YOUR GRPC PORT
 
 If you would love to confirm your Foyle Address in VS Code, do the following.
 
-- Open the VSCode setting palette
+- Open the VS Code setting palette
 - Search for `Runme: Foyle Address`
 - Set the address to `localhost:${GRPC_PORT}`. By default, the port is `9080`. If you set a non-default value, it will be the value of `server.grpcPort`
 
