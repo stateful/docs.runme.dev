@@ -115,6 +115,64 @@ In the image below, we are asking Foyle to describe a pod from the list of pods 
 
 ![Output command](../../static/img/Integration/runme-foyle-execute-command3.png)
 
+## Learning with Foyle
+
+This section will show you how to configure Foyle to learn from your interaction to get improved outputs.
+
+**Configure Foyle to use RAG.**
+
+The first step is to configure Foyle to use RAG. To do this, run the command below
+
+```sh {"id":"01J3QKEXEMQFQQ8BMH3EN67KZF"}
+foyle config set agent.rag.enabled=true
+foyle config set agent.rag.maxResults=3
+```
+
+**Enabling Logging In RunMe**
+
+The next step is to enable logging in Runme. Using Runme as the frontend for Foyle will require you to configure Runme to enable the AI logging experiment. To do that, perform the steps below.
+
+1. In your VS Code, open the settings panel
+2. Search for `Runme › Experiments: Enable Ai Logs` in the search bar.
+
+![Enable Ai logs](../../static/img/Integration/runme-foyle-ai-extension.png)
+
+Enabling this feature makes logging server logs used for training AIs possible.
+
+Now that logging is enabled, you can verify that logs are being written and identify their location, as shown in the image below.
+
+![Foyle serve logs](../../static/img/Integration/runme-foyle-serve-logs.png)
+
+To view the logs, you need to follow the steps below;
+
+- Create a new code cell block using Runme's [CWD feature](../configuration/cell-level#cells-current-working-directory) and configure the path for that code cell block to the log file path shown earlier.
+- Run the command `ls -la` to access the file's content, as shown below.
+
+![Check the list](../../static/img/Integration/runme-foyle-json-file.png)
+
+- Now that you see the content and the logs, you will want to view the current log. To do that, run the command below in your Markdown file after setting your directory path, as you did in the step above.
+
+```sh {"id":"01J3QM2AWKBBBRSE5Q1NHERMHD"}
+code logs.2024-07-24T10:50:24.json
+```
+
+The field `aiLogs` will contain the file that the current instance of Runme uses for the JSON logs.
+
+By default, Runme will use the directory on MacOS.
+
+**Configuring Learning**
+
+To configure Foyle with the location of Runme’s logs directory, run the command below
+
+```sh {"id":"01J3QM7BKTA620CDGZ38340V4S"}
+export RUNME_LOGS_DIR="/Users/${USER}/Library/Application Support/runme/logs/"
+foyle config set learner.logDirs=${RUNME_LOGS_DIR}
+```
+
+This will use the Runme Environment Prompt Variable to prompt you to confirm your RUNME_LOGS_DIR path and output, as in the image below.
+
+![Set env var](../../static/img/Integration/rume-foyle-envvar-ai-learning.png)
+
 ## Feedback and Contribution
 
 If you have any tool or project you would like to see integrated with Runme, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback) with your idea. We will be glad to test it out.
