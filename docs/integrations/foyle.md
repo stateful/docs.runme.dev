@@ -135,7 +135,7 @@ The next step is to enable logging in Runme. Using Runme as the frontend for Foy
 1. In your VS Code, open the settings panel
 2. Search for `Runme › Experiments: Enable Ai Logs` in the search bar.
 
-![Enable Ai logs](../../static/img/Integration/runme-foyle-ai-extension.png)
+![enable ai logs](../../static/img/Integration/runme-foyle-ailogs-extension.png)
 
 Enabling this feature makes logging server logs used for training AIs possible.
 
