@@ -102,7 +102,7 @@ runme list
 
 This command also lets you view all the code blocks in every Markdown file in your directory.
 
-![runme list ](../../static/img/how-runme-works/runme-cli-count.png)
+![runme list](../../static/img/how-runme-works/runme-cli-lists.png)
 
 ### Navigating to a Specific File
 
@@ -148,7 +148,7 @@ runme run [name of code block]
 
 This will run your code block and return the output to your terminal.
 
-![runme count](../../static/img/how-runme-works/runme-cli-count.jpeg)
+![run code block](../../static/img/how-runme-works/runme-cli-run.png)
 
 **Run all Code Blocks in Your Directory**
 
@@ -197,8 +197,6 @@ runme open
 This command opens Runme in your web browser.
 
 ![web browser](../../static/img/how-runme-works/runme-cli-notebook.png)
-
-
 
 ## Additional Resources
 
