@@ -26,7 +26,7 @@ In this section, we will demonstrate how to execute Runme commands and run Markd
 
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
-### **Executing Runme Commands and Flags**
+## **Executing Runme Commands and Flags**
 
 Runme parses every shell or bash code block of a Markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your Markdown successfully. To get a list of the available commands, run the command below:
 
@@ -112,7 +112,7 @@ With Runme CLI, you can also navigate to a specific Markdown file. Use the comma
 runme ls --filename ../../README.md
 ```
 
-This command returns all code blocks in the specified Markdown file. 
+This command returns all code blocks in the specified Markdown file.
 
 ![navigating specific file](../../static/img/how-runme-works/runme-cli-singlefile.png)
 
@@ -132,7 +132,7 @@ The highlighted code block in the image below is an unnamed code block.
 
 ![runme cli ](../../static/img/how-runme-works/runme-cli-list.png)
 
-### Running Scripts
+## Running Scripts
 
 With Runme CLI, markdown files can be executed in the terminal. This section will explore the various ways to run scripts in the Runme CLI. To run a specific script by name, use the `runme run <command>` subcommand.
 
@@ -184,9 +184,9 @@ This will run all code block cells in the Markdown file, including the unnamed c
 
 Alternatively, you can run only named cells in the file. To do that, run the command below.
 
-### How to Access Runme Notebook
+## How to Access Runme Notebook
 
-Runme works with a highly interactive and user-friendly notebook that allows you to run and view your commands and codes. Using the CLI, you can access this notebook UI on your web browser. This will enable you to view and execute your commands and create a Markdown file that can be shared with your teammates anytime. 
+Runme works with a highly interactive and user-friendly notebook that allows you to run and view your commands and codes. Using the CLI, you can access this notebook UI on your web browser. This will enable you to view and execute your commands and create a Markdown file that can be shared with your teammates anytime.
 
 To access the notebook, first, navigate to the directory where your Markdown file exists in your terminal and run the commands below.
 
@@ -198,7 +198,7 @@ This command opens Runme in your web browser.
 
 ![web browser](../../static/img/how-runme-works/runme-cli-notebook.png)
 
-<Infobox type="warning" title="Warning!">
+
 
 ## Additional Resources
 
@@ -210,4 +210,3 @@ See more resources on how Runme works
 
 [How Runme works on VS Code SSH and Remote](../how-runme-works/runme-via-ssh)
 
-</Infobox>
