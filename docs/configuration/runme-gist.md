@@ -50,9 +50,22 @@ The Session Outputs feature is only available when the autosave is enabled and t
 
 **Step 5: Toggle Between Mask and Unmask**
 
-You can decide if you want your Session Outputs to be masked or unmasked.
-The masked and unmasked options are how Runme keeps your sensitive information secret. If you want to keep your sensitive information secret, you should toggle the mask option otherwise, choose the unmasked option.
-By default, Runme uses the open-source `data-guardian` to mask sensitive information on a best-effort basis.
+You can choose whether your Session Outputs should be masked or unmasked. Masking helps to keep your sensitive information secure. To keep your sensitive information secret, toggle the mask option; otherwise, choose the unmasked option. By default, Runme uses the open-source tool `data-guardian` to mask sensitive information on a best-effort basis.
+
+Also, instead of unmasking Session Outputs individually, you can configure this feature in your Runme settings to keep all Session Outputs masked or unmasked.
+
+Follow the steps below to add this setting:
+
+- In your VS Code extension dashboard, search for Runme.
+- Click on the settings Icon in the Runme extension. A small dashboard will pop up. Next, click on Extension Settings.
+
+![Runme setting](../../static/img/configuration-page/runme-extension.png)
+
+- In the search bar, type Mask, and you will see the feature. By default, it is set to true, but you can unselect this option if you wish.
+
+![Mask outputs](../../static/img/configuration-page/runme-mask-outputs.png)
+
+Alternatively, if you want to unmask only a particular session output, you can toggle the “Mask and Unmask” feature at the top of your Session Outputs file.
 
 ![Runme gist unmask](../../static/img/configuration-page/runme-gist-unmask.png)
 
