@@ -132,7 +132,7 @@ The highlighted code block in the image below is an unnamed code block.
 
 ![runme cli ](../../static/img/how-runme-works/runme-cli-list.png)
 
-## Running Scripts
+## **Running Scripts**
 
 With Runme CLI, markdown files can be executed in the terminal. This section will explore the various ways to run scripts in the Runme CLI. To run a specific script by name, use the `runme run <command>` subcommand.
 
