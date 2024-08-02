@@ -92,6 +92,21 @@ runme
 
 ![Runme TUI Usage](../../static/img/runme-tui.gif)
 
+### Proximity in Directory Tree
+
+Proximity in the directory tree helps you organize and easily access your code block’s file. Runme uses the proximity rule in its interactive terminal UI to ensure that code block files in the root directory are easier to find and use than those that are deeply nested in the directory structure.
+
+For example, if you have two files with deploy commands:
+
+- One file is located at `./CONTRIBUTING.md`
+- Another file is located at `./examples/README.md`
+
+Since `./CONTRIBUTING.md` is in the root directory and `./examples/README.md` is nested deeper within the `examples` folder, the command in `./CONTRIBUTING.md` will appear higher in the terminal UI compared to the command in `./examples/README.md`.
+
+![proximity in directory tree ](../../static/img/how-runme-works/runme-cli-ptd.png)
+
+This structure helps prioritize commands that are closer to the top-level directory, making them more accessible and easier to use in the Interactive Terminal UI. 
+
 ### Get a List of All Code Blocks in a Directory
 
  If you need to view all the code blocks in a directory, you can use the `runme list`, which provides a list of every line block in your directory.
