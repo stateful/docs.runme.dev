@@ -39,7 +39,7 @@ Extension 'stateful.runme' is already installed.
 [2024-08-06T13:35:37.131Z] info  Opened http://127.0.0.1:8080/
 ```
 
-From the above code block, it is clear that the configuration of Runme uses the local IP `127.0.0.1:8080`. It is possible to change the IP from `127.0.0.1:8080` to `0.0.0.0:8080` so you can have access to the server outside of your local host IP.
+From the above code block, it is clear that the configuration of Runme uses the local IP `127.0.0.1:8080`. It is possible to change the IP from `127.0.0.1:8080` to `0.0.0.0:8080` so you can have access to the server outside of your local host IP. manually edit the `config.yaml` file
 
 ![runme via web](../../static/img/how-runme-works/runme-via-web.png)
 
