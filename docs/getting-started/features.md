@@ -119,9 +119,17 @@ Please be aware that if the execution of a cell depends on the standard output (
 
 You can securely share or store plain texts and code snippets with others in your team without needing a full repository or document. Runme does this using the [Runme Gist feature](../configuration/runme-gist). With Runme Gist, the sensitivity of your information is prioritized and kept secret, as you can mask sensitive data in your outputs.
 
+![executionresult actions](../../static/img/how-runme-works/runme-cells-execution-result-actions.png)
+
 ## Runme Cloud Renderers
 
 [Runme Cloud Renderers](../integrations/cloud-render/index.md) is a tool that enables you to interact with your favorite cloud resources to manage and deploy your cloud-native applications right from your Notebook. It integrates with cloud platforms such as AWS and GCP and enables you to perform tasks such as listing and managing clusters, retrieving cluster information, pausing clusters, connecting to instances via SSH, etc., all within your Markdown file.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
+  <source src="/videos/runme-revision-cloudrun.webm" type="video/webm" />
+  <source src="../../../static/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
+</video>
 
 ## **Other Key Features**
 
