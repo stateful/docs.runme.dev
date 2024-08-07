@@ -48,7 +48,7 @@ Download the Istio release and install the Istio CLI.
 curl -L https://istio.io/downloadIstio | sh -
 ```
 
-Replace `<version>` with the version of Istio you download
+Replace `<version>` with the version of Istio you downloaded
 
 ```bash {"id":"01J4PEEDESRWQG8MDQNP2ZR7GT"}
 cd istio-<version>
@@ -101,6 +101,8 @@ You can use the `istioctl` command to install Istio. There are different profile
 istioctl install --set profile=demo
 ```
 
+![set profile](../../static/img/guide-page/runme-istioctl.png)
+
 To verify the installation of Istio, run the command below:
 
 ```sh {"id":"01J4PEEDF0XKGE0V7CVH44SZW3"}
@@ -127,10 +129,6 @@ After complete verification of all Istio components, you need to label the names
 kubectl label namespace <your-namespace> istio-injection=enabled
 ```
 
-```sh {"id":"01J4PFN6NCT1SA81PBHN5PWDZS"}
-kubectl label namespace istio-system istio-injection=enabled
-```
-
 ![label namespace](../../static/img/guide-page/runme-label-ns.png)
 
 Be sure to replace `your-namespace` with the name of the namespace where Istio is running.
@@ -141,7 +139,17 @@ In this section, we will deploy a sample application to verify that the service 
 
 To achieve this, run the command below.
 
-```sh {"id":"01J4PEEDF1FY462R33GEY55MBF"}
+```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PEEDF1FY462R33GEY55MBF"}
+kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+```
+
+![bookinfo](../../static/img/guide-page/runme-bookinfo.png)
+
+```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PJCH54MB1ZXGFKF1149FDX"}
+kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+```
+
+```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PM6RAGFY3J134K2WJAG437"}
 kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 
@@ -151,9 +159,11 @@ Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#ce
 
 After deploying your sample application, the next step is to expose the application using the Istio ingress gateway. Run the command below to do this.
 
-```sh {"id":"01J4PEEDF8SEA5G3AMWACZD0YS"}
+```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PEEDF8SEA5G3AMWACZD0YS"}
 kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 ```
+
+![gateway](../../static/img/guide-page/runme-bookinfo-gateway.png)
 
 [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) here to set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
@@ -181,7 +191,7 @@ Now the next step is to properly handle traffic management. To do this, you need
 
 To begin traffic management, first create a file named `runme-virtual-service-reviews-v1.yaml` by running the script below.
 
-```yaml {"id":"01J4PEEDF8SEA5G3AMWHRB0GRD"}
+```sh {"id":"01J4PEEDF8SEA5G3AMWHRB0GRD"}
 cat << EOF > runme-virtual-service-reviews-v1.yaml
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -204,12 +214,14 @@ Next, run this command.
 kubectl apply -f runme-virtual-service-reviews-v1.yaml
 ```
 
+![virtualservice](../../static/img/guide-page/runme-virtual-service-reviews.png)
+
 **Set Up Destination Rules**
 
 After creating the file, you need to define the subsets for the `reviews` service. To do this, create a file named `destination-rule-reviews.yaml` that will contain the following configuration:
 
 ```bash {"id":"01J4PEEDF9Q8N8AGEJN9WCVVK5"}
-cat << EOF > runme-virtual-service-reviews-v1.yaml
+cat << EOF > destination-rule-reviews.yaml
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
@@ -227,7 +239,7 @@ spec:
     labels:
       version: v3
 
- EOF
+EOF
 ```
 
 Now, apply the configuration by executing the command below:
@@ -235,6 +247,8 @@ Now, apply the configuration by executing the command below:
 ```bash {"id":"01J4PEEDF9Q8N8AGEJN9Y2YM8W"}
 kubectl apply -f destination-rule-reviews.yaml
 ```
+
+![destinatio-rule-review](../../static/img/guide-page/runme-destination-rule.png)
 
 **Implementing Traffic Shifting**
 
@@ -280,7 +294,7 @@ To boost the application's security, we will enable strict mutual TLS mode in Is
 
 To do this, run the script below.
 
-```yaml {"id":"01J4PEEDFAA2PV3CBPY9YSS6NG"}
+```sh {"id":"01J4PEEDFAA2PV3CBPY9YSS6NG"}
 cat << EOF > installation/values-override.yaml
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
@@ -303,9 +317,11 @@ To get a visual view of your application's progress, consider integrating with P
 
 Run this command to do that.
 
-```bash {"id":"01J4PEEDFDRZG60BYR4ENM3SQ2"}
+```bash {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PEEDFDRZG60BYR4ENM3SQ2"}
 kubectl apply -f samples/addons
 ```
+
+![runme-sample-addons](../../static/img/guide-page/runme-samples-addons.png)
 
 ## Cleanup[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/agrocd#cleanup)
 
