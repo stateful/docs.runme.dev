@@ -4,29 +4,23 @@ runme:
   version: v3
 ---
 
-# Runme via Service Mesh
+# Setup Cloud Native Mesh with Runme
 
-Runme provides an interactive notebook that enhances the development of workflows and execution of codes and commands. This guide explores how to set up and work with Istio Service mesh right inside a Markdown file. You will learn how to:
+Runme interactive notebook is designed to help you execute and document your daily automation tasks.
 
-- Install Istio CLI
-- Set up your cluster
-- Deploy a sample application
-- Expose and verify the application
-- handle traffic management and clean up
+With Runme, you can run your code and commands directly within the notebook, which makes it easy to manage and improve your workflow.
+
+In this guide, we will focus on integrating Istio, a powerful service mesh, into your Markdown files using Runme. Istio helps you manage and secure your microservices.
+
+By the end of this guide, you'll be able to use Runme to efficiently set up and manage Istio in your projects.
 
 ## Prerequisite
 
 To follow up on this tutorial, ensure you have the following:
 
-**Runme Extension:** Install the Runme extension in your VS Code editor and set it as your default Markdown viewer.
+**Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-**Clone Repo:** We have provided an example repository to help you follow this tutorial. You can clone the repo here.
-
-```sh {"id":"01J4PEEDESRWQG8MDQNHEGD8BS"}
-git clone https://github.com/stateful/blog-examples.git
-```
-
-**Required Packages:** Install the required packages (kind, kubectl, git, helm ) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
+**Required Packages:** Install the required packages (kind, kubectl, helm) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
 
 ```sh {"id":"01J4PEEDESRWQG8MDQNJATK6CD"}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -109,6 +103,8 @@ To verify the installation of Istio, run the command below:
 istioctl verify-install
 ```
 
+![istio installed](../../static/img/guide-page/runme-verofy-istiocli-install.png)
+
 ## Verify Istio Components[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#verify-installation)
 
 Ensure all Istio components are running correctly.
@@ -144,14 +140,6 @@ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 
 ![bookinfo](../../static/img/guide-page/runme-bookinfo.png)
-
-```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PJCH54MB1ZXGFKF1149FDX"}
-kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
-```
-
-```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/istio-1.22.3","id":"01J4PM6RAGFY3J134K2WJAG437"}
-kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
-```
 
 Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
@@ -279,6 +267,8 @@ spec:
 EOF
 ```
 
+Now, apply the configuration by executing the command below:
+
 ```bash {"id":"01J4PP654BB1MB30AVG1WTMAVX"}
 kubectl apply -f runme-virtual-service-reviews-shifting.yaml
 ```
@@ -300,8 +290,8 @@ To boost the application's security, we will enable strict mutual TLS mode in Is
 
 To do this, run the script below.
 
-```sh {"id":"01J4PEEDFAA2PV3CBPY9YSS6NG"}
-cat << EOF > installation/values-override.yaml
+```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/","id":"01J4PEEDFAA2PV3CBPY9YSS6NG"}
+cat << EOF > peer-authentication.yaml
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:
@@ -316,8 +306,10 @@ EOF
 Apply the configuration:
 
 ```sh {"id":"01J4PFSYG20GTKE6PWCHFBE1DX"}
-kubectl apply -f installation/values-override.yaml
+kubectl apply -f peer-authentication.yaml
 ```
+
+![peer-auth](../../static/img/guide-page/runme-instio-security.png)
 
 ## Observability[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#observability)
 
