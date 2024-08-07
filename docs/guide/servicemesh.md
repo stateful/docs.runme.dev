@@ -276,8 +276,14 @@ spec:
         subset: v3
       weight: 50
 
- EOF
+EOF
 ```
+
+```bash {"id":"01J4PP654BB1MB30AVG1WTMAVX"}
+kubectl apply -f runme-virtual-service-reviews-shifting.yaml
+```
+
+![runme-virtual-service-reviews-shifting](../../static/img/guide-page/runme-virtual-service-reviews-shifting.png)
 
 **Testing the Configuration**
 
@@ -307,13 +313,15 @@ spec:
 EOF
 ```
 
-```yaml {"id":"01J4PFSYG20GTKE6PWCHFBE1DX"}
+Apply the configuration:
+
+```sh {"id":"01J4PFSYG20GTKE6PWCHFBE1DX"}
 kubectl apply -f installation/values-override.yaml
 ```
 
 ## Observability[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#observability)
 
-To get a visual view of your application's progress, consider integrating with Prometheus, Grafana, and Jaeger for metrics, dashboards, and tracing.
+To get a visual view of your application's progress, consider integrating with [Prometheus](../guide/monitoring-stack#configure-your-prometheus), [Grafana](../guide/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
 
 Run this command to do that.
 
