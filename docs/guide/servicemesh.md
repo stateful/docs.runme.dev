@@ -286,9 +286,9 @@ curl http://$GATEWAY_URL/productpage
 
 ## Security[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#security)
 
-To boost the application's security, we will enable strict mutual TLS mode in Istio, which secures service-to-service communication and provides authentication to protect sensitive data.
+To boost the application's security, we will enable strict mutual TLS mode in Istio. This mode secures service-to-service communication and provides authentication to protect sensitive data.
 
-To do this, run the script below.
+To do this, create a file named `peer-authentication.yaml` and give it the following configurations:
 
 ```sh {"cwd":"/Users/macbookpro/Desktop/docs.runme.dev/docs/guide/","id":"01J4PEEDFAA2PV3CBPY9YSS6NG"}
 cat << EOF > peer-authentication.yaml
@@ -323,26 +323,28 @@ kubectl apply -f samples/addons
 
 ![runme-sample-addons](../../static/img/guide-page/runme-samples-addons.png)
 
+Using the [Runme cwd feature](../configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
+
 ## Cleanup[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/agrocd#cleanup)
 
-After successfully deploying your application to Argo CD, you can clean up. In cleaning up, you are to remove application and application project definition files in the git repository `sample-app.yaml` and `sample-project.yaml` . Here are some steps to achieve this:
+After successfully deploying your application, you can clean up when you’re done. Here are some steps to achieve this:
 
-**Step One:** Uninstall argo-cd helm deployment.
+**Step One:** If you used istioctl to install Istio, you can use it to uninstall
 
 ```sh {"id":"01J4PEEDFEHDVPZT0FEH5YP5K0"}
-helm uninstall argocd
+istioctl uninstall --purge -y
 ```
 
-**Step Two:** Wait until all resources are deleted in argocd namespace and run the command below to verify.
+**Step Two:** If you installed Istio manually or prefer to do it manually
 
 ```sh {"id":"01J4PEEDFEHDVPZT0FEM3G8RST"}
 kubectl -n mesh get pods
 ```
 
-**Step Three:** Delete `argocd` namespaces.
+**Step Three:** Delete `istio-system` namespaces.
 
 ```sh {"id":"01J4PEEDFFV7N83E9CQ79CYJ7X"}
-kubectl delete ns mesh
+kubectl delete namespace istio-system
 ```
 
 **Step Four:** Delete kind cluster.
