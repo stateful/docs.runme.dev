@@ -49,16 +49,57 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
 ## **Installing Runme On Windows**
 
-For Windows users, you can conveniently install Runme using [Scoop.sh](https://scoop.sh/), a command-line installer for Windows.
+Windows users can also conveniently install Runme using any of the two options.
+
+- [Scoop.sh](https://scoop.sh/) a command-line installer for Windows or
+- Windows Subsystem for Linux 2 (WSL 2)
+
+### Installing Runme on Windows Using Scoop.sh
+
+With Scoop, you can quickly install and set up your Runme CLI on your Windows machine.
 
 Run the commands below on your terminal to install Runme:
 
-```sh {"id":"01HMXWP6WJP70JQEBKRMZWR955"}
-
+```sh {"id":"01J58HFV8JQTPGE2B4EK1KZ0VJ"}
 scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
 scoop install stateful/runme
-
 ```
+
+Runme is currently available only on the Cloud-native Shell Kernel, which makes it more compatible with a Linux operating system than a Windows operating system. To use Runme effectively on a Windows OS, you need to install and utilize the Windows Subsystem for Linux 2 (WSL 2)
+
+### Installing Runme on Windows Using Windows Subsystem for Linux 2
+
+To install the Runme CLI on your WSL server, follow these steps:
+
+- **Install WSL**
+
+Run the command below to install WSL on your Windows machine:
+
+```bash {"id":"01J58HFV8JQTPGE2B4EN87VTFP"}
+wsl --install
+```
+
+- **Connect to WSL**
+
+Next, connect your machine to WSL, run the command below:
+
+```bash {"id":"01J58HFV8JQTPGE2B4EQB5V9ZQ"}
+wsl
+```
+
+This will connect your machine to your WSL server.
+
+- **Install Runme CLI**
+
+After successfully connecting to the WSL server, you should install Runme CLI on your local machine.
+
+Here is an example of installing the runme cli with [brew](../installation/runmecli#install-runme-on-macos) . 
+
+```bash {"id":"01J58HFV8JQTPGE2B4ERMWB4XJ"}
+brew install runme
+```
+
+To explore how Runme works on Windows, check out our [documentation page](../how-runme-works/windows.md).
 
 ## **Other Platforms**
 
