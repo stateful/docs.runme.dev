@@ -47,27 +47,16 @@ Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
 Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 ```
 
-## **Installing Runme On Windows**
+## Installing Runme On Windows
 
 Windows users can also conveniently install Runme using any of the two options.
 
-- [Scoop.sh](https://scoop.sh/) a command-line installer for Windows or
-- Windows Subsystem for Linux 2 (WSL 2)
-
-### Installing Runme on Windows Using Scoop.sh
-
-With Scoop, you can quickly install and set up your Runme CLI on your Windows machine.
-
-Run the commands below on your terminal to install Runme:
-
-```sh {"id":"01J58HFV8JQTPGE2B4EK1KZ0VJ"}
-scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
-scoop install stateful/runme
-```
-
-Runme is currently available only on the Cloud-native Shell Kernel, which makes it more compatible with a Linux operating system than a Windows operating system. To use Runme effectively on a Windows OS, you need to install and utilize the Windows Subsystem for Linux 2 (WSL 2)
+- Windows Subsystem for Linux 2 (WSL 2) or
+- [Scoop.sh](https://scoop.sh/) a command-line installer for Windows
 
 ### Installing Runme on Windows Using Windows Subsystem for Linux 2
+
+Runme is currently available only on the Cloud-native Shell Kernel, which makes it more compatible with a Linux operating system than a Windows operating system. To use Runme effectively on a Windows OS, you need to install and utilize the Windows Subsystem for Linux 2 (WSL 2)
 
 To install the Runme CLI on your WSL server, follow these steps:
 
@@ -75,7 +64,7 @@ To install the Runme CLI on your WSL server, follow these steps:
 
 Run the command below to install WSL on your Windows machine:
 
-```bash {"id":"01J58HFV8JQTPGE2B4EN87VTFP"}
+```bash {"id":"01J58R4TJ430708WYDMTRV0677"}
 wsl --install
 ```
 
@@ -83,7 +72,7 @@ wsl --install
 
 Next, connect your machine to WSL, run the command below:
 
-```bash {"id":"01J58HFV8JQTPGE2B4EQB5V9ZQ"}
+```bash {"id":"01J58R4TJ430708WYDMWVPMT8N"}
 wsl
 ```
 
@@ -91,17 +80,28 @@ This will connect your machine to your WSL server.
 
 - **Install Runme CLI**
 
-After successfully connecting to the WSL server, you should install Runme CLI on your local machine.
+After successfully connecting to the WSL server, you should install Runme CLI on your remote server.
 
-Here is an example of installing the runme cli with [brew](../installation/runmecli#install-runme-on-macos) . 
+[Homebrew](https://brew.sh/) is one of the easiest ways to install Runme CLI. However, you must ensure you have the latest Brew version. Once that is done we can proceed to install the Runme CLI with [](https://docs.runme.dev/installation/runmecli#install-runme-on-macos)Brew.
 
-```bash {"id":"01J58HFV8JQTPGE2B4ERMWB4XJ"}
+```bash {"id":"01J58R4TJ430708WYDMXAZKVD4"}
 brew install runme
 ```
 
-To explore how Runme works on Windows, check out our [documentation page](../how-runme-works/windows.md).
+While Homebrew provides an easy way to install Runme using the `brew command`, you can also conveniently install Runme using other platforms, such as `curl` and `wget`, regardless of your operating system. See the “Installing Runme Binary”  section.
 
-## **Other Platforms**
+### **Installing Runme on Windows Using Scoop.sh**
+
+With Scoop, you can quickly install and set up your Runme CLI on your Windows machine.
+
+Run the commands below on your terminal to install Runme:
+
+```bash {"id":"01J58R4TJ430708WYDMXQ6D5FN"}
+scoop bucket add stateful https://github.com/stateful/scoop-bucket.git
+scoop install stateful/runme
+```
+
+## Installing Runme Binary
 
 Alternatively, you can explore Runme's [releases](https://github.com/stateful/runme/releases) and choose the binary that corresponds to your operating system.
 
@@ -137,12 +137,15 @@ Run the binary by simply typing `runme`
 runme
 ```
 
-If you have a different preferred distribution mechanism, feel free to inform us on [Discord](https://discord.gg/runme).
+If you have a different preferred distribution mechanism, feel free to inform us on [Discord](https://discord.gg/runme). We will be glad to explore it.
 
-We have also provided an option for Go developers to install Runme. If you are a Go developer or you have Go developer tools installed, you can install Runme with `go install`  command. Use the command below to carry out this installation:
+### Install Runme using Go
+
+Additionally, we have provided an option for Go developers to install Runme. If you are a [Go](https://go.dev/) developer or you have Go developer tools installed, you can install Runme directly using the `go install` command.
+Simply use the command below to carry out this installation:
 
 ```sh {"id":"01HQK3RSC9YSH5NM2AE503GRB5"}
-go install github.com/stateful/runme/v3@v3
+go install github.com/stateful/runme@latest
 ```
 
 <Infobox type="warning" title="Warning!">
@@ -222,4 +225,9 @@ Runme’s TUI is awesome however, if you want to run a specific command quickly,
 
 ## **Next Steps**
 
-You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdown files in CLI. To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)
+You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdown files right in your MacOS or Windows terminal
+
+**Additional resources:**
+
+- To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)
+- We have provided information on creating a Runme runbook on your Windows machine. Check out the [How Runme works on Windows](../how-runme-works/windows.md) guide.
