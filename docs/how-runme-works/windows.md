@@ -53,13 +53,13 @@ Alternatively, you can click on the button at the bottom left side of your VS Co
 
 ![vs code dashboard](../../static/img/how-runme-works/runme-wsl-vscode-windows.png)
 
-**Step Two**
+- **Step Two**
 
 After connecting to your server using WSL, the next step is to install the Runme extension on the remote server so you can use it as you like.
 
 ![install runme](../../static/img/how-runme-works/runme-wsl-server-windows.png)
 
-**Step Three**
+- **Step Three**
 
 Use the File menu to open your folder. If you already have a folder open, you can also use the **WSL: Reopen Folder in WSL** command. You will be prompted which “Distro" to use.
 
