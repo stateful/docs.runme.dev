@@ -33,7 +33,7 @@ To get Runme installed in VS Code on your Windows machine, follow the steps belo
 
 3. In your search bar, type "Runme". This will display the Runme Notebook extension.
 
-![runme extension](../../static/img/how-runme-works/runme-notebook-extension-windows.png)image
+![runme extension](../../static/img/how-runme-works/runme-notebook-extension-windows.png)
 
 4. Now click on Install to install the Notebook extension.
 
