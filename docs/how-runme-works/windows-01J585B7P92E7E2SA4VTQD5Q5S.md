@@ -2,6 +2,11 @@
 runme:
   id: 01J583JVRDADD3Y3TG41EEF291
   version: v3
+  document:
+    relativePath: windows.md
+  session:
+    id: 01J585B7P92E7E2SA4VTQD5Q5S
+    updated: 2024-08-14 11:24:16+01:00
 ---
 
 # Runme on Windows
@@ -14,11 +19,11 @@ In this section, we will explore the various steps required to get Runme working
 
 To get started, you need to :
 
-- Set up the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) and choose your preferred Linux distribution.
-- Ensure you have [Visual Studio Code](https://code.visualstudio.com/) installed on the Windows side rather than within WSL.
-- Install the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) in your VS Code editor.
+- Set up the [Windows Subsystem for Linux](ht*******************************************ll) and choose your preferred Linux distribution.
+- Ensure you have [Visual Studio Code](ht*************************om/) installed on the Windows side rather than within WSL.
+- Install the [WSL extension](ht***************************************************************************sl) in your VS Code editor.
 
-Once all the requirements are fulfilled, the next thing you need to do is start your WSL. To learn all about starting WSL, check out [this article.](https://learn.microsoft.com/en-us/windows/wsl/install)
+Once all the requirements are fulfilled, the next thing you need to do is start your WSL. To learn all about starting WSL, check out [this article.](ht*************************************************ll)
 
 ## How to Install Runme Extension on VS Code on Windows
 
@@ -67,7 +72,7 @@ Use the File menu to open your folder. If you already have a folder open, you ca
 
 ## How Runme Works
 
-This section will explore how [Runme works in VS Code on Windows](https://docs.runme.dev/how-runme-works/vscode).
+This section will explore how [Runme works in VS Code on Windows](ht*****************************************de).
 
 - Create a Markdown file and click the “+Code” button to create a code cell for your scripts or command.
 
@@ -110,13 +115,13 @@ At this point,  you have connected to the WSL server and installed Runme CLI. Yo
 
 ![runme cli](../../static/img/how-runme-works/runme-cli-windows.png)
 
-For more details on how to use the Runme CLI, refer to the [Runme CLI documentation](https://docs.runme.dev/how-runme-works/cli).
+For more details on how to use the Runme CLI, refer to the [Runme CLI documentation](ht**************************************li).
 
 ## Additional Resources
 
 To learn more about how Runme works on several other client interfaces, see these resources:
 
-- [How Runme Works in VS Code](https://docs.runme.dev/how-runme-works/vscode)
-- [How Runme Works on the Web](https://docs.runme.dev/how-runme-works/web)
-- [How Runme works on VS Code SSH and Remote](https://docs.runme.dev/how-runme-works/runme-via-ssh)
-- [How Runme Works on CLI](https://docs.runme.dev/how-runme-works/cli)
+- [How Runme Works in VS Code](ht*****************************************de)
+- [How Runme Works on the Web](ht**************************************eb)
+- [How Runme works on VS Code SSH and Remote](ht************************************************sh)
+- [How Runme Works on CLI](ht**************************************li)
