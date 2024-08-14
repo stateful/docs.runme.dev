@@ -65,7 +65,7 @@ After connecting to your server using WSL, the next step is to install the Runme
 
 Use the File menu to open your folder. If you already have a folder open, you can also use the **WSL: Reopen Folder in WSL** command. You will be prompted which “Distro" to use.
 
-## How Runme Works
+## Running Runme works on Windows
 
 This section will explore how [Runme works in VS Code on Windows](https://docs.runme.dev/how-runme-works/vscode).
 
