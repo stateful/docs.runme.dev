@@ -94,7 +94,7 @@ This will connect your machine to your WSL server.
 
 2. **Install Runme CLI**
 
-After successfully connection to the WSL server, the next step is to install Runme CLI on your local machine.
+After successfully connecting to the WSL server, the next step is to install Runme CLI on your local machine.
 
 To do this, run the command below:
 
