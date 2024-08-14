@@ -57,8 +57,6 @@ Alternatively, you can click on the button at the bottom left side of your VS Co
 
 After connecting to your server using WSL, the next step is to install the Runme extension on the remote server so you can use it as you like.
 
-![install runme](../../static/img/how-runme-works/runme-wsl-server-windows.png)
-
 ![wsl windows](../../static/img/how-runme-works/runme-install-wsl-windows.png)
 
 - **Step Three**
