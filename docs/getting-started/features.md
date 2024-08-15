@@ -115,6 +115,22 @@ The video below provides a visual representation of how Runme integrates with Gi
 
 Please be aware that if the execution of a cell depends on the standard output (stdout) of a preceding cell, it is imperative to execute these cells sequentially. Failure to adhere to this sequence could lead to unintended and unpredictable behavior.
 
+## **Runme Gist**
+
+You can securely share or store plain texts and code snippets with others in your team without needing a full repository or document. Runme does this using the [Runme Gist feature](../configuration/runme-gist). With Runme Gist, the sensitivity of your information is prioritized and kept secret, as you can mask sensitive data in your outputs.
+
+![executionresult actions](../../static/img/how-runme-works/runme-cells-execution-result-actions.png)
+
+## **Runme Cloud Renderers**
+
+[Runme Cloud Renderers](../integrations/cloud-render/index.md) is a tool that enables you to interact with your favorite cloud resources to manage and deploy your cloud-native applications right from your Notebook. It integrates with cloud platforms such as AWS and GCP and enables you to perform tasks such as listing and managing clusters, retrieving cluster information, pausing clusters, connecting to instances via SSH, etc., all within your Markdown file.
+
+<video autoPlay loop muted playsInline controls>
+  <source src="/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
+  <source src="/videos/runme-revision-cloudrun.webm" type="video/webm" />
+  <source src="../../../static/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
+</video>
+
 ## **Other Key Features**
 
 That’s not all!
@@ -127,3 +143,7 @@ There are other features available on Runme that can help you improve your proce
 - Start a session in the editor, complete environment variables in the notebook, and finish up a workflow in the terminal — all sharing the same session.
 - Open tech and open formats at the core (e.g. VS Code Platform and Markdown).
 - Compatible with existing task management (Makefile, Docker, NPM/Pipfile, Rake, etc).
+
+## **Feedback and Contribution**
+
+At Runme, we are continuously enhancing and developing more features to give you a better experience. If you have feedback or new ideas on how to improve Runme, feel free to [reach out to us](https://github.com/stateful/runme?tab=readme-ov-file#feedback). We will be glad to hear from you.
