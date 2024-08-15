@@ -105,7 +105,7 @@ For example, Runme offers a convenient GitHub action that seamlessly integrates 
 
 ## Piping
 
-By default, Runme prevents variables declared in one cell from being directly accessed in another cell. However, by using Piping, which is declared using `$__`, you can pass a variable declared in a previous execution to another in the same file.
+By default, Runme prevents the output of one cell from being directly accessed in another cell. However, Piping allows you to use `$__` to refer to the output of the most recently executed cell.
 
 The video below provides a visual representation of how Runme integrates with GitHub actions.
 

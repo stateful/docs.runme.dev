@@ -87,7 +87,7 @@ Outside of that, you can reference cells in two ways. This is particularly usefu
 
 ### **1. Reference Last Cell Output**
 
-The most recent cell output will be stored in a special environment variable called `__` (double underscore).
+The most recent cell output will be stored in a special environment variable called `$__` (double underscore).
 
 ```sh {"id":"01HY18GGPG1C8KT40T8D41885F","name":"FILE_LIST"}
 ls *.md | head -n 5
