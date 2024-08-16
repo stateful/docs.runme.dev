@@ -58,7 +58,7 @@ To proceed with this tutorial, you are required to set up your Kubernetes cluste
 The first step in setting up your cluster is to check if any already exist and delete it. To do that, run the command below.
 
 ```sh {"id":"01J4PEEDESRWQG8MDQNS02C6P7"}
-kind delete cluster --name helm-runme
+kind delete cluster --name runme-mesh
 ```
 
 Next, use `kind` to create a Kubernetes cluster locally. For this tutorial, the name of the Kubernetes cluster will be `runme-mesh`. To create this, run the command below.
