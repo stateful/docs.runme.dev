@@ -37,7 +37,7 @@ const runmePlugin = ({ repository }) => {
                 type: "image",
                 title: "Open with runme",
                 url: "https://badgen.net/badge/Open%20with/Runme/5B3ADF?icon=https://runme.dev/img/logo.svg",
-                alt: "Runme badget",
+                alt: "Runme badge",
               },
             ],
           },

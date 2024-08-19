@@ -293,6 +293,7 @@ ol {
 
 .markdown a > img[title="Open with runme"] {
   margin: initial;
+  margin-bottom: var(--ifm-leading);
   border-radius: 4px;
 }
 
