@@ -39,6 +39,8 @@ Learn how to install Runme and [get started](https://docs.runme.dev/getting-star
 
 ## **What is Runme?**
 
+<RunmeStars /><br /><br />
+
 Runme is Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface. Runme enables you to execute interactive notebook built with Markdown. More specifically, Runme runs your code and commands inside your fenced code blocks (shell, bash, zsh, but also, Ruby, Python, etc).
 
 We have designed a comprehensive set of tools and configurations that are 100% compatible with CommonMark, the standard for Markdown. Through this, your integration with Runme does not interfere with your existing Markdown documentation or tooling.
