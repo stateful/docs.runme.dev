@@ -12,6 +12,8 @@ title: Home
 
 Runme makes markdown actually runnable. Runme achieves this by seamlessly loading markdown into a notebook interface which makes it much easier to complete step-by-step instructions. Let's jump right in!
 
+<RunmeStars /><br /><br />
+
 > 💡 This document is a self-contained notebook which will guide you through Runme's key features. If you have *VS Code* installed locally, you can open this document in Runme by clicking the *"Open with Runme"* badge on **[docs.runme.dev](https://docs.runme.dev/)** which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
 
 ## **Clone the Repository**
