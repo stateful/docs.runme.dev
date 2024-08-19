@@ -5,7 +5,7 @@ title: Kernel Architecture
 
 # Kernel Architecture
 
-Under the hood, much like other Notebook technologies such as Jupyter, Runme breaks down into the following parts:
+Runme is built on the VS Code platform running in Codespaces, Coder's `code-server`, Google IDX, GCP Cloud Editor, Gitpod, VSCodium, etc. Under the hood, much like other Notebook technologies such as Jupyter, Runme breaks down into the following components:
 
 - A serializer that transforms Markdown into executable cells with input and output
 - A portable runner interface that supports multimodal clients
@@ -14,8 +14,9 @@ Under the hood, much like other Notebook technologies such as Jupyter, Runme bre
 - A CLI client for the runner
 - A notebook client (inside VS Code) for the runner
 - A visual Markdown viewer and editor (inside VS Code)
+- A cloud-native web component renderer that can embed any cloud resource
 
-The kernel architecture allows Runme to be seamlessly embedded into various User Interface technologies (notebook, editor, webapp, CLI) as well as headless excution as part of CI/CD pipelines.
+The kernel architecture allows Runme to be seamlessly embedded into various User Interface modalities (notebook, editor, webapp, CLI) as well as headless excution as part of CI/CD pipelines. Runme strives to provide the best possible out-of-the-box experience for every client modalitiy.
 
 <br />
 <img src="/img/venn.png" style={{width: "60%", display: "inline"}} alt="What is runme"/>
