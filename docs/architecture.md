@@ -16,7 +16,7 @@ Runme is built on the VS Code platform running in Codespaces, Coder's [code-serv
 - A visual Markdown viewer and editor (inside VS Code)
 - A cloud-native web component renderer that can embed any cloud resource
 
-The kernel architecture allows Runme to be seamlessly embedded into various User Interface modalities (notebook, editor, webapp, CLI) as well as headless excution as part of CI/CD pipelines. Runme strives to provide the best possible out-of-the-box experience for every client modalitiy.
+The kernel architecture allows Runme to be seamlessly embedded into various User Interface modalities (notebook, editor, webapp, CLI) as well as headless execution as part of CI/CD pipelines. Runme strives to provide the best possible out-of-the-box experience for every client modality.
 
 <br />
 <img src="/img/venn.png" style={{width: "60%", display: "inline"}} alt="What is runme"/>
