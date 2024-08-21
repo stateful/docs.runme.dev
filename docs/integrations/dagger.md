@@ -36,7 +36,7 @@ This section will explore navigating the Dagger CLI in your Runme Notebooks. We 
 
 ### Writing Dagger Module within Runme Notebook cell
 
-Runme Notebook interface includes a terminal environment with [powerful features](../getting-started/features.md), that gives you the experience of working in your regular terminal. With the Runme Notebook interface, you can write and execute Dagger commands. 
+Runme Notebook interface includes a terminal environment with [powerful features](../getting-started/features.md), that gives you the experience of working in your regular terminal. With the Runme Notebook interface, you can write and execute Dagger commands.
 
 Let’s explore the code block below.
 
@@ -104,8 +104,6 @@ This interactive interface makes the execution of complex pipelines easy and eli
   <source src="../static/videos/runme-dagger-output.webm" type="video/webm" />
 </video>
 <br/>
-
-[]()
 
 ## Running Dagger Pipelines in Runme (using the GUI & CLI)
 
