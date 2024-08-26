@@ -36,7 +36,7 @@
     "tailwindcss": "^3.4.10",
     "ts-node": "^10.9.1",
     "typescript": "^5.5.4",
-    "vercel": "^36.0.0"
+    "vercel": "^37.1.1"
   },
   "browserslist": {
     "production": [
