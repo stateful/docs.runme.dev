@@ -140,3 +140,5 @@ To learn more about Runme, see more resources on Runme Integrations:
 [Data Rendering with Runme and JSON](https://docs.runme.dev/integrations/data-rendering)
 
 [How to Use Foyle AI with Runme](https://docs.runme.dev/integrations/foyle)
+
+<video controls src="../../static/videos/runme-dagger-output.mp4" title="Title"></video>
