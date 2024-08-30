@@ -28,7 +28,7 @@ Get Docker installed and running on your local machine. You can download Docker 
 
 Install Dagger on your local machine. The [Dagger installation guide](https://docs.dagger.io/install/) provides more information on how to install Dagger on any platform of your choice. if you have brew installed already run the command below to install dagger 
 
-```jsx {"id":"01J6CH26D7HCJXVZXA2CATX4A2"}
+```sh {"id":"01J6CH26D7HCJXVZXA2CATX4A2"}
 brew install dagger/tap/dagger
 ```
 
@@ -44,7 +44,7 @@ Runme Notebook interface includes a terminal environment with [additional featur
 
 Let’s explore the code block below.
 
-```jsx {"id":"01J5TMAKC9QEMWB806SC1V5WH9"}
+```sh {"id":"01J5TMAKC9QEMWB806SC1V5WH9"}
 dagger call \
     -m github.com/purpleclay/daggerverse/golang@v0.3.0 \
     --src "https://github.com/stateful/runme#main" \
@@ -127,10 +127,10 @@ With the Runme interactive interface, you can run your Dagger functions with a s
 This interactive interface makes the execution of complex pipelines easy and eliminates the need to type follow-up commands manually.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/runme-dagger-output.mp4" type="video/mp4" />
-  <source src="../static/videos/runme-dagger-output.mp4" type="video/mp4" />
-  <source src="videos/runme-dagger-output.webm" type="video/webm" />
-  <source src="../static/videos/runme-dagger-output.webm" type="video/webm" />
+  <source src="/videos/runme-dagger-output.mp4" type="video/mp4" />
+  <source src="../../static/videos/runme-dagger-output.mp4" type="video/mp4" />
+  <source src="/videos/runme-dagger-output.webm" type="video/webm" />
+  <source src="../../static/videos/runme-dagger-output.webm" type="video/webm" />
 </video>
 <br/>
 
@@ -141,20 +141,20 @@ More than just running Dagger commands, developing pipelines, or troubleshooting
 If you have a Markdown file with your dagger pipeline commands written, you can run your pipeline from the terminal by running this command `$ runme run --filename my-notebook.md --all --skip-prompts`.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/runme-dagger-demo.mp4" type="video/mp4" />
-  <source src="../static/videos/runme-dagger-demo.mp4" type="video/mp4" />
-  <source src="videos/runme-dagger-demo.webm" type="video/webm" />
-  <source src="../static/videos/runme-dagger-demo.webm" type="video/webm" />
+  <source src="/videos/runme-dagger-demo.mp4" type="video/mp4" />
+  <source src="../../static/videos/runme-dagger-demo.mp4" type="video/mp4" />
+  <source src="/videos/runme-dagger-demo.webm" type="video/webm" />
+  <source src="../../static/videos/runme-dagger-demo.webm" type="video/webm" />
 </video>
 <br/>
 
 You can also run individual cells using the names of the cells or select them individually from Runme’s TUI.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/runme-tui-dagger.mp4" type="video/mp4" />
-  <source src="../static/videos/runme-tui-dagger.mp4" type="video/mp4" />
-  <source src="videos/runme-tui-dagger.webm" type="video/webm" />
-  <source src="../static/videos/runme-tui-dagger.webm" type="video/webm" />
+  <source src="/videos/runme-tui-dagger.mp4" type="video/mp4" />
+  <source src="../../static/videos/runme-tui-dagger.mp4" type="video/mp4" />
+  <source src="/videos/runme-tui-dagger.webm" type="video/webm" />
+  <source src="../../static/videos/runme-tui-dagger.webm" type="video/webm" />
 </video>
 <br/>
 
