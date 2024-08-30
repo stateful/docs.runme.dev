@@ -26,7 +26,7 @@ Get Docker installed and running on your local machine. You can download Docker 
 
 - **Install Dagger**
 
-Install Dagger on your local machine. The [Dagger installation guide](https://docs.dagger.io/install/) provides more information on how to install Dagger on any platform of your choice. if you have brew installed already run the command below to install dagger 
+Install Dagger on your local machine. The [Dagger installation guide](https://docs.dagger.io/install/) provides more information on how to install Dagger on any platform of your choice. if you have brew installed already run the command below to install dagger
 
 ```sh {"id":"01J6CH26D7HCJXVZXA2CATX4A2"}
 brew install dagger/tap/dagger
@@ -40,7 +40,7 @@ This section will explore navigating the Dagger CLI in your Runme Notebooks. We 
 
 ### Writing Dagger Module within Runme Notebook cell
 
-Runme Notebook interface includes a terminal environment with [additional features](../getting-started/features.md), that gives you the experience of working in your regular terminal and more. With the Runme Notebook interface, you can write and execute Dagger commands. 
+Runme Notebook interface includes a terminal environment with [additional features](../getting-started/features.md), that gives you the experience of working in your regular terminal and more. With the Runme Notebook interface, you can write and execute Dagger commands.
 
 Let’s explore the code block below.
 
