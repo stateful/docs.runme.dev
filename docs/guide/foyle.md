@@ -52,22 +52,21 @@ Once that is done, run the cell, and you will get an output similar to the image
 
 ![foyle serve](/img/integration/runme-foyle-serve.png)
 
-By default, Foyle uses port `8080` for the HTTP server and port `9080` for gRPC. You can configure this by running the command below if you would love to use different ports.
+By default, Foyle uses port `8877` for the HTTP server. You can configure this by running the command below if you would like to use a different port.
 
 ```sh {"id":"01J331M1RFEST6592A558A8G3S"}
 export FOYLE_HTTP_PORT=YOUR HTTP PORT
-export FOYLE_GRCP_PORT=YOUR GRPC PORT
 foyle config set server.httpPort=$FOYLE_HTTP_PORT
-foyle config set server.grpcPort=$FOYLE_GRPC_PORT
+
 ```
 
 3. **Confirm Foyle's Address**
 
-If you would love to confirm your Foyle Address in VS Code, do the following.
+If you would like to confirm your Foyle Address in VS Code, do the following.
 
 - Open the VS Code setting palette
-- Search for `Runme: Foyle Address`
-- Set the address to `localhost:${GRPC_PORT}`. By default, the port is `9080`. If you set a non-default value, it will be the value of `server.grpcPort`
+- Search for `Runme: Ai Base URL`
+- Set the address to `http://localhost:${FOYLE_HTTP_PORT}/api`. By default, the port is `8877`. If you set a non-default value, it will be the value of `server.httpPort`
 
 ![Extension Setting](/img/integration/runme-foyle-setting.png)
 
