@@ -8,6 +8,7 @@ title: Kernel Architecture
 Runme is built on the VS Code platform running in Codespaces, Coder's [code-server](https://github.com/coder/code-server), Google IDX, GCP Cloud Editor, Gitpod, VSCodium, etc. Under the hood, much like other Notebook technologies such as Jupyter, Runme breaks down into the following components:
 
 - A serializer that transforms Markdown into executable cells with input and output
+- A universal task runner that's native to markdown and works with all language-specific runners
 - A portable runner interface that supports multimodal clients
 - A kernel that retains state across execution in sessions akin to a terminal
 - A raw-Markdown editor (inside VS Code) client for the runner
