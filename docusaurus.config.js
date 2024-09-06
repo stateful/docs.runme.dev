@@ -139,6 +139,11 @@ const config = {
         { property: "og:site_name", content: siteName },
         { property: "og:url", content: prodUrl },
         { property: "og:type", content: "website" },
+        {
+          name: "scarf",
+          content:
+            '<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=53709e16-2848-40f3-b485-763d4d788fbb" />',
+        },
       ],
       navbar: {
         logo: {
