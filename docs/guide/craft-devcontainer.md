@@ -6,7 +6,7 @@ runme:
 
 # How to Build Projects With Container Craft Dev Container and  Runme
 
-Runme interactive notebook provides an easy way for developers and operations teams to manage workflows and document processes. With the [Runme extension,](../how-runme-works/vscode) users can access a user-friendly interface and build their projects within a pre-configured DevContainer.
+Runme interactive notebook provides an easy way for developers and operations teams to manage workflows and document processes. With the [Runme extension,](../how-runme-works/vscode) users can access a user-friendly interactive Notebook and build their projects within a pre-configured DevContainer.
 
 In this guide, we will walk through setting up the [ContainerCraft DevContainer repository](https://github.com/ContainerCraft/devcontainer.git) as your development environment in Runme. Here, you will also learn how to create instructions for testing your projects directly inside the container. This setup ensures that your development and testing are all in a unified document.
 
@@ -50,7 +50,7 @@ git clone https://github.com/ContainerCraft/devcontainer.git
 
 ## Test Your Project Inside the Dev Container
 
-Your container environment is set up with pre-configured tools and config required for DevOps, including Runme, Kubernetes, Helm, Kubectl, K9s, Tmux, Python, Go, and more. You can use these tools directly within the VS Code terminal, which runs inside the container. 
+Your container environment is set up with pre-configured tools and config required for DevOps, including Runme, Kubernetes, Helm, Kubectl, K9s, Tmux, Python, Go, and more. You can use these tools directly within the VS Code terminal, which runs inside the container.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-devcontainer-hello.mp4" type="video/mp4" />
@@ -68,7 +68,7 @@ To add your project files to the dev container workspace, copy them into the clo
 cp -r ~/my-project/* .
 ```
 
-The command above copies your project to the workspace. Alternatively, you can clone your project into the dev container. 
+The command above copies your project to the workspace. Alternatively, you can clone your project into the dev container.
 
 ```jsx {"id":"01J73XKSBWZDVA209YNPRJ59A1"}
 git clone https://github.com/username/repository.git
@@ -84,7 +84,7 @@ After adding your project files to the folder, you can leverage Runme to easily 
 </video>
 <br/>
 
-You can also add and run the different supported languages in one Markdown file. 
+You can also add and run the different supported languages in one Markdown file.
 
 When building projects, you may need to execute a command and move to the next command quickly. However, you may get stuck because the previous command still needs to be executed, and you cannot move on. [Runme’s background task](../how-runme-works/vscode#background-processes) feature solves this issue! With the background task, you can execute commands and move on to the next.
 
@@ -100,7 +100,7 @@ Runme also makes your Markdown file more organized and user-friendly.
 
 ![runme ui](../../static/img/guide-page/runme-ui.jpeg)
 
-You can easily build your entire project with the CotainerCraft DevContainer using all the existing features of Runme. Here is an example of [how to handle large data efficiently with Node.js streams](https://github.com/stateful/blog-examples/tree/main/node-streams). 
+You can easily build your entire project with the CotainerCraft DevContainer using all the existing features of Runme. Here is an example of [how to handle large data efficiently with Node.js streams](https://github.com/stateful/blog-examples/tree/main/node-streams).
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-node.mp4" type="video/mp4" />
