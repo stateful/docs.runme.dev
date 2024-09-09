@@ -16,6 +16,7 @@ Whether you are a beginner getting started with Runme for the first time or an e
 
 In which environment do you like to work the most?
 
-If you’re interested in the technical architecture of Runme, take a look at the [Kernel Architecture](../architecture)
-
 <EnvironmentOptions />
+
+
+If you’re interested in the technical architecture of Runme, take a look at the [Kernel Architecture](../architecture)
