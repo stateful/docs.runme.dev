@@ -204,7 +204,7 @@ const config = {
     {
       tagName: "link",
       attributes: {
-        href: "https://static.scarf.sh/a.png?x-pxid=5e3dee0d-e5d5-433d-977b-895efa51faa6",
+        href: "https://static.scarf.sh/a.png?x-pxid=53709e16-2848-40f3-b485-763d4d788fbb",
         rel: "preload",
         as: "image",
         referrerpolicy: "no-referrer-when-downgrade",
