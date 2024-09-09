@@ -205,6 +205,17 @@ const config = {
           }
         : {}),
     }),
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        href: "https://static.scarf.sh/a.png?x-pxid=5e3dee0d-e5d5-433d-977b-895efa51faa6",
+        rel: "preload",
+        as: "image",
+        referrerpolicy: "no-referrer-when-downgrade",
+      }
+    }
+  ],
 };
 
 module.exports = config;
