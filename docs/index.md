@@ -14,7 +14,7 @@ Runme makes your Markdown documentation actually runnable. Runme achieves this b
 
 <RunmeStars /><br /><br />
 
-> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on **[docs.runme.dev](https://docs.runme.dev/)** which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
+> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on __[docs.runme.dev](https://docs.runme.dev/)__ which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
 
 ## **Clone the Repository**
 
@@ -61,7 +61,7 @@ Write generic docs and notebooks using Runme's smart prompting. This is useful w
 </video>
 <br/>
 
-Runme's prompting default is _"auto"_. It will not prompt again on re-runs if values are already known. Click _"Configure"_ on the cell, to switch **promptEnv** to **no** (never prompt; run as is) or **yes** (always prompt; overwrite previous values). Try it yourself... just click the play button.
+Runme's prompting default is _"auto"_. It will not prompt again on re-runs if values are already known. Click _"Configure"_ on the cell, to switch __promptEnv__ to __no__ (never prompt; run as is) or __yes__ (always prompt; overwrite previous values). Try it yourself... just click the play button.
 
 ```sh {"id":"01HY0Z7HSFFV7KHPX559SNVSHN","terminalRows":"4"}
 export PROJECT_NAME=[Enter your project id]
@@ -71,7 +71,7 @@ export CLUSTER_ZONE="us-central1-c"
 echo "CLUSTER_ZONE set to $CLUSTER_ZONE"
 ```
 
-You can reset all environment variables using the **Reset Session** button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
+You can reset all environment variables using the __Reset Session__ button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
 
 ## **Piping and Referencing Cells**
 
