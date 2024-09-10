@@ -10,11 +10,11 @@ title: Home
 
 ### Welcome to ▶️ Runme's docs
 
-Runme makes markdown actually runnable. Runme achieves this by seamlessly loading markdown into a notebook interface which makes it much easier to complete step-by-step instructions. Let's jump right in!
+Runme makes your Markdown documentation actually runnable. Runme achieves this by seamlessly loading Markdown into a notebook interface and rendering an interactive UI of runnable commands. Runme is inherently designed to streamline cloud-native DevOps processes. Let's jump right in!
 
 <RunmeStars /><br /><br />
 
-> 💡 This document is a self-contained notebook which will guide you through Runme's key features. If you have *VS Code* installed locally, you can open this document in Runme by clicking the *"Open with Runme"* badge on **[docs.runme.dev](https://docs.runme.dev/)** which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
+> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on __[docs.runme.dev](https://docs.runme.dev/)__ which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
 
 ## **Clone the Repository**
 
@@ -45,7 +45,7 @@ Let's quickly run through examples that best illustrate how Runme can unleash yo
 
 <br/>
 
-After clicking the *"Open with Runme"* badge or cloning into the repo what you see should resemble following screenshot.
+After clicking the _"Open with Runme"_ badge or cloning into the repo what you see should resemble following screenshot.
 
 ![Runme in VS Code](/img/doc-in-vscode.png)
 
@@ -61,7 +61,7 @@ Write generic docs and notebooks using Runme's smart prompting. This is useful w
 </video>
 <br/>
 
-Runme's prompting default is *"auto"*. It will not prompt again on re-runs if values are already known. Click *"Configure"* on the cell, to switch **promptEnv** to **no** (never prompt; run as is) or **yes** (always prompt; overwrite previous values). Try it yourself... just click the play button.
+Runme's prompting default is _"auto"_. It will not prompt again on re-runs if values are already known. Click _"Configure"_ on the cell, to switch __promptEnv__ to __no__ (never prompt; run as is) or __yes__ (always prompt; overwrite previous values). Try it yourself... just click the play button.
 
 ```sh {"id":"01HY0Z7HSFFV7KHPX559SNVSHN","terminalRows":"4"}
 export PROJECT_NAME=[Enter your project id]
@@ -71,7 +71,7 @@ export CLUSTER_ZONE="us-central1-c"
 echo "CLUSTER_ZONE set to $CLUSTER_ZONE"
 ```
 
-You can reset all environment variables using the **Reset Session** button in the top bar or choose *"Execute and always prompt for input"* from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
+You can reset all environment variables using the __Reset Session__ button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
 
 ## **Piping and Referencing Cells**
 
@@ -103,7 +103,7 @@ echo -n "Previous cell's output was:\n\n$__"
 
 ### **2. Reference by Cell Name**
 
-Notice how the cell above is named `FILE_LIST` (visible in notebook UI & [raw markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/main/docs/index.md)). This allows you to reference the output of that cell by using the cell name as an environment variable. This makes reference outputs more robust since they no longer have to run back-to-back. However, sequence still matters. The referenced cells has to run first.
+Notice how the cell above is named `FILE_LIST` (visible in notebook UI & [raw Markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/main/docs/index.md)). This allows you to reference the output of that cell by using the cell name as an environment variable. This makes reference outputs more robust since they no longer have to run back-to-back. However, sequence still matters. The referenced cells has to run first.
 
 ```sh {"id":"01HY18W7RX74HFNZSBNYB9SEFR"}
 echo "Reference a cell via the ENV using its name \"\$FILE_LIST\":"
@@ -112,7 +112,7 @@ echo "\n$(echo -n $FILE_LIST | sort | uniq -c)"
 
 ## **Seamlessly Fits into DevOps Stack**
 
-Runme is 100% markdown compatible and seamlessly integrates with tooling in your DevOps stack.
+Runme is 100% Markdown compatible and seamlessly integrates with tooling in your DevOps stack.
 
 Distribute ready-made [Devcontainers](https://docs.runme.dev/guide/devcontainer) to lock dependencies and configuration to make workflows reproducible. Runme is a perfect fit for DevOps workflows. Run docs and notebooks against [SSH jumphosts](https://docs.runme.dev/how-runme-works/runme-via-ssh#vs-code-remote-development) or inside of popular Cloud Development Environments like GitHub Codespaces, Google IDX & Cloud Editor, Gitpod, or run as self-hosted [webapp](https://docs.runme.dev/how-runme-works/web) anywhere.
 
