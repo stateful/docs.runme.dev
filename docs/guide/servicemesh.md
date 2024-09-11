@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# Setup Cloud Native Mesh with Runme
+# Setup Istio service mesh with Runme
 
 Runme interactive notebook is designed to help you execute and document your daily automation tasks.
 
