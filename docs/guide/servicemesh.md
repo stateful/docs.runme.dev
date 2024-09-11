@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# Setup Istio service mesh with Runme
+# Setup Istio Service Mesh with Runme
 
 Runme interactive notebook is designed to help you execute and document your daily automation tasks. With Runme, you can run your code and commands directly within the notebook, which makes it easy to manage and improve your workflow.
 
