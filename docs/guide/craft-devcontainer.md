@@ -6,7 +6,7 @@ runme:
 
 # How to Build Projects With Container Craft Dev Container and  Runme
 
-Runme interactive notebook provides an interactive notebook for developers and operations teams to run projects while documenting each step of the process.
+Runme provides an interactive notebook for developers and operations teams to run projects while documenting each step of the process.
 
 In this guide, we will walk through setting up the ContainerCraft DevContainer as your development environment with Runme. The ContainerCraft DevContainer houses the most commonly used tools and configurations required for DevOps and provides a consistent development environment for DevOps practitioners. You will also learn how to create instructions for testing your projects directly inside the container.
 
