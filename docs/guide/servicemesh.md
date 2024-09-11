@@ -16,9 +16,9 @@ By the end of this guide, you'll be able to use Runme to efficiently set up and 
 
 To follow up on this tutorial, ensure you have the following:
 
-**Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-**Required Packages:** Install the required packages (kind, kubectl, helm) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
+- **Required Packages:** Install the required packages (kind, kubectl, helm) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
 
 ```sh {"id":"01J4PEEDESRWQG8MDQNJATK6CD"}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
