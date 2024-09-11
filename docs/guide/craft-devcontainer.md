@@ -6,9 +6,9 @@ runme:
 
 # How to Build Projects With Container Craft Dev Container and  Runme
 
-Runme interactive notebook provides an easy way for developers and operations teams to manage workflows and document processes. With the [Runme extension,](../how-runme-works/vscode) users can access a user-friendly interactive Notebook and build their projects within a pre-configured DevContainer.
+Runme interactive notebook provides an interactive notebook for developers and operations teams to run projects while documenting each step of the process.
 
-In this guide, we will walk through setting up the [ContainerCraft DevContainer repository](https://github.com/ContainerCraft/devcontainer.git) as your development environment in Runme. Here, you will also learn how to create instructions for testing your projects directly inside the container. This setup ensures that your development and testing are all in a unified document.
+In this guide, we will walk through setting up the ContainerCraft DevContainer as your development environment with Runme. The ContainerCraft DevContainer houses the most commonly used tools and configurations required for DevOps and provides a consistent development environment for DevOps practitioners. You will also learn how to create instructions for testing your projects directly inside the container.
 
 ## Prerequisites
 
@@ -16,41 +16,124 @@ To get started, ensure you have the following installed on your local machine:
 
 - **Runme**: Runme provides various [client interfaces](../installation/index.md) for accessing the Runme Notebook. For this guide, we will be using [Runme on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme). With Runme installed on your code editor, you can proceed to set Runme as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
 - **Docker**: Ensure you have [Docker installed](https://www.docker.com/products/docker-desktop/) and running on your machine.
-- **VS Code Remote—Containers Extension**: Install the VS Code Remote—Containers Extension to work with containers directly in VS Code.
+- **VS Code Remote—Containers Extension**: Install the [VS Code Remote—Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) to work with containers directly in VS Code.
 
 ## Setting Up Your Dev Container
 
-In this section, we will walk you through how to access your project repository in the ContainerCraft Dev Container in VS Code, test your project inside the dev container, and leverage Runme’s features to build your projects faster and easier.
+In this section, we will walk you through creating your dev container with all necessary files, accessing it in VS Code, testing your project in the container, and using Runme’s features to build your projects.
 
-## Clone the Repository
+## Create the `.devcontainer` Folder.
 
-Start by cloning the `ContainerCraft/devcontainer` repository to your local machine:
+To create your `.devcontainer` folder, ensure you have a `README.md` file in your project directory. In your `README.md` file, run the command below:
 
 ```bash {"id":"01J6YWZ6PHZM16VX6EE3JYY98Y"}
-git clone https://github.com/ContainerCraft/devcontainer.git
+mkdir -p ./.devcontainer
 ```
 
-### Access the Repository in VS Code
+### Create and Configure the `devcontainer.json`
 
-1. Open Visual Studio Code.
-2. You can access the command palette by pressing `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) and searching for `Remote-Explorer: Focus on Dev Containers.`
+The `devcontainer.json` file specifies how VSCode should handle the container. In your `README.md` file, run the script below. This will create the `devcontainer.json` file and give it the ContainerCraft DevContainer configuration.
+
+```bash {"id":"01J7GC2HFGJXB58KQZ6M1VVJ15"}
+
+
+cat <<EOF | sudo tee ./.devcontainer/devcontainer.json > /dev/null
+{
+    "name": "konductor",
+    "remoteUser": "vscode",
+    "dockerFile": "Dockerfile",
+    "init": true,
+    "privileged": true,
+    "overrideCommand": false,
+    "updateRemoteUserUID": true,
+    "shutdownAction": "stopContainer",
+    "securityOpt": [
+        "seccomp=unconfined"
+    ],
+    "runArgs": [
+        "--privileged",
+        "--network=host",
+        "--device=/dev/kvm"
+    ],
+    "mounts": [
+        "source=dind-var-lib-docker,target=/var/lib/docker,type=volume"
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
+    "postCreateCommand": "devcontainer-links",
+    "forwardPorts": [
+        1313,
+        2222,
+        6000,
+        7681,
+        8080
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "vscodevim.vim",
+                "github.copilot",
+                "stateful.runme",
+                "max-ss.cyberpunk",
+                "ms-python.python",
+                "redhat.vscode-yaml",
+                "esbenp.prettier-vscode",
+                "oderwat.indent-rainbow",
+                "okteto.kubernetes-context",
+                "ms-vsliveshare.vsliveshare",
+                "ms-azuretools.vscode-docker",
+                "github.vscode-github-actions",
+                "ms-kubernetes-tools.kind-vscode",
+                "ms-vscode.vscode-typescript-next",
+                "github.vscode-pull-request-github",
+                "ms-vscode-remote.remote-containers",
+                "randomfractalsinc.vscode-data-table",
+                "visualstudioexptteam.vscodeintellicode",
+                "ms-kubernetes-tools.vscode-kubernetes-tools"
+            ]
+        }
+    }
+}
+EOF
+```
+
+### Create and Configure the `Dockerfile`
+
+The `Dockerfile` defines the base image for the dev container, which is the foundation for setting up the development environment. In your `README.md` file, run the script below.
+
+```bash {"id":"01J7GC7RQ5QRM437CJS3TCPW8B"}
+cat <<EOF | sudo tee ./.devcontainer/Dockerfile > /dev/null
+FROM ghcr.io/containercraft/devcontainer:latest
+EOF
+```
+
+This will create a Dockerfile with containercraft image in it.
+
+## Access Your Project in the Dev Container
+
+Now that you have set up your dev container, you need to access your project in the dev container. To do this, follow the steps below:
+
+1. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the command palette. Then, search for `Remote-Explorer: Focus on Dev Containers`.
 
 ![remote-explorer](../../static/img/guide-page/runme-remote-explorer.png)
 
-3. Select the folder where you cloned the repository.
+2. Now, click the `+` icon to select your project.
 
-![dev-containers](../../static/img/guide-page/runme-dev-containers.png)
+![dev-containers](../../static/img/guide-page/select-devcontainer-runme.png)
 
 ## Rebuild and Open the Container
 
-- VS Code should prompt you to reopen the folder in a container. If it doesn’t, open the command palette again and select `Remote-Explorer: Focus on Dev Containers...`.
-- VS Code will build the Docker container defined in the `.devcontainer` folder and open the workspace inside the container once the build is complete.
+After selecting the folder where your project is, VS Code should prompt you to reopen the folder in a container.
 
-![dev container ui ](../../static/img/guide-page/runme-dev-conatiner-ui.png)
+If that does not happen, open the command palette (`Ctrl + Shift + P`) and select `Remote-Explorer: Focus on Dev Containers`. This will allow VS Code to build the Docker container defined in the `.devcontainer` folder and open the workspace inside the container once the build is complete.
+
+![dev container ui](../../static/img/guide-page/runme-interface-devcontainer.png)
 
 ## Test Your Project Inside the Dev Container
 
-Your container environment is set up with pre-configured tools and config required for DevOps, including Runme, Kubernetes, Helm, Kubectl, K9s, Tmux, Python, Go, and more. You can use these tools directly within the VS Code terminal, which runs inside the container.
+Your container environment is set up with pre-configured tools required for DevOps, including Runme, Kubernetes, Helm, Kubectl, K9s, Tmux, Python, Go, and more. You can use these tools directly within the VS Code terminal, which runs inside the container.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-devcontainer-hello.mp4" type="video/mp4" />
@@ -60,21 +143,11 @@ Your container environment is set up with pre-configured tools and config requir
 </video>
 <br/>
 
-## **Add Your Project Files**
+## Runme Features
 
-To add your project files to the dev container workspace, copy them into the cloned repository folder or mount an additional volume in the `devcontainer.json` file.
+With Runme in your dev container, you can build projects in any programming language. This is made possible with the [Shebang support feature](../configuration/shebang) It allows you to easily set the code block of the specific programming language you intend to use. You can also add and run the different supported languages in one Markdown file.
 
-```jsx {"id":"01J6YWZ6PHZM16VX6EE3RR3QER"}
-cp -r ~/my-project/* .
-```
-
-The command above copies your project to the workspace. Alternatively, you can clone your project into the dev container.
-
-```jsx {"id":"01J73XKSBWZDVA209YNPRJ59A1"}
-git clone https://github.com/username/repository.git
-```
-
-After adding your project files to the folder, you can leverage Runme to easily build your projects with ContainerCraft DevContainer using any language you choose. This is made possible with the [Shebang support feature](../configuration/shebang). This allows you to easily set the code block of the specific programming language you intend to use.
+Here is an example of a simple Python project showcasing how the Runme Shebang feature enables you to execute commands and scripts in a dev container.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/Runme-python-dev-container.mp4" type="video/mp4" />
@@ -84,9 +157,9 @@ After adding your project files to the folder, you can leverage Runme to easily 
 </video>
 <br/>
 
-You can also add and run the different supported languages in one Markdown file.
+In addition, you can set your code block to run a command(s) in the background while you focus on other aspects of your project using the [background task feature](https://docs.runme.dev/how-runme-works/vscode#background-processes).
 
-When building projects, you may need to execute a command and move to the next command quickly. However, you may get stuck because the previous command still needs to be executed, and you cannot move on. [Runme’s background task](../how-runme-works/vscode#background-processes) feature solves this issue! With the background task, you can execute commands and move on to the next.
+Below is an example video that illustrates how the background task feature works with your Go projects in a dev container.
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/go-runme-dev-container.mp4" type="video/mp4" />
@@ -96,11 +169,7 @@ When building projects, you may need to execute a command and move to the next c
 </video>
 <br/>
 
-Runme also makes your Markdown file more organized and user-friendly.
-
-![runme ui](../../static/img/guide-page/runme-ui.jpeg)
-
-You can easily build your entire project with the CotainerCraft DevContainer using all the existing features of Runme. Here is an example of [how to handle large data efficiently with Node.js streams](https://github.com/stateful/blog-examples/tree/main/node-streams).
+Here is also an example of a project on [how to handle large data efficiently with Node.js streams](https://github.com/stateful/blog-examples/tree/main/node-streams).
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-node.mp4" type="video/mp4" />
@@ -110,20 +179,14 @@ You can easily build your entire project with the CotainerCraft DevContainer usi
 </video>
 <br/>
 
-## Customize the Environment
-
-If your project requires additional tools or dependencies:
-
-- Edit the `Dockerfile` or `devcontainer.json` in the `.devcontainer` folder to include what’s needed.
-- Rebuild the container to apply these customizations.
-
 ## Shutting Down the Container
 
 After completing the task, you can shut down the container by closing the VS Code, which automatically stops the container. However, your project files and changes will persist on your local machine.
 
-## Additional Resources[](https://docs.runme.dev/integrations/dagger#additional-resources)
+## Additional Resources
 
-To learn more about Runme, see more resources on Runme:
+To learn more about using Dev Containers with Runme, see more resources below:
 
 - [Running Runme in a DevContainer](../guide/devcontainer)
 - [How to Integrate Python Virtual Environments with Runme](../guide/pythonenv)
+- [Developing Inside Container](https://code.visualstudio.com/docs/devcontainers/containers)
