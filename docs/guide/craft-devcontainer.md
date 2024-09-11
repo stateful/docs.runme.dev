@@ -22,7 +22,7 @@ To get started, ensure you have the following installed on your local machine:
 
 In this section, we will walk you through creating your dev container with all necessary files, accessing it in VS Code, testing your project in the container, and using Runme’s features to build your projects.
 
-## Create the `.devcontainer` Folder.
+## Create the .devcontainer Folder.
 
 To create your `.devcontainer` folder, ensure you have a `README.md` file in your project directory. In your `README.md` file, run the command below:
 
