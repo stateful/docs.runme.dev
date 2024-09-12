@@ -1,22 +1,12 @@
 ---
-runme:
-  id: 01HFRZ3233HSQ0NVJB9BE682G5
-  version: v3
-sidebar_position: 5
-title: Auto-Save Feature
+title: Auto-Save
 ---
 
-# Auto-Save Feature
+# Auto-Save
 
-The Runme auto-save feature efficiently saves and manages your commands and executed cells for future reference. This feature automatically records and saves every change and activity within your cell without manual intervention. This allows you to focus on your task and easily share your runbook with team members without worrying about losing your commands.
+The Runme auto-save feature efficiently saves and manages your commands and executed cells for future reference. When you run a command within your Runme Notebook, a Session Ouputs file is automatically generated. This captures a complete copy of the original Markdown document, along with the generated outputs, details on when each cell was run, the time it took to run the cell, and exit codes. You can also turn your command/generated outputs into a [Runme gist](/configuration/runme-gist).
 
-## **How Runme Auto-Save Feature Works**
-
-The Runme auto-save feature goes beyond saving commands. It removes the need to manually save each cell or output you generate.
-
-**Here’s how it works**: With the auto-save feature activated, when you run a command within your Runme cell, a Session Ouputs file is automatically generated.  This captures a complete copy of the original Markdown document, along with the generated outputs, details on when each cell was run, the time it took to run the cell, and exit codes. With the Session Outputs generated, you can turn your command with the generated outputs into Runme gist if you ever want to.
-
-### **How to Enable Auto-Save**
+### **Enable Auto-Save**
 
 - Toggle Auto-Save On/Off:
 
@@ -30,7 +20,7 @@ If you would like to turn the auto-save off, you can simply use the toggle butto
 
 Alternatively, you can set autosave to the default setting. This way, you do not need to manually enable the feature whenever you want to use it.
 
-### **Set Autosave as Default**
+### **Auto-save default**
 
 By default, auto-save is turned off, as indicated by the autosave button at the top bar displaying off. However, if you want to use the session output feature, you can toggle the feature (on) or (off) using the autosave button.
 

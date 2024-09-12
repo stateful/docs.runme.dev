@@ -3,9 +3,91 @@ runme:
   id: 01HGAW03Y6QJQASC1QM0XC76P3
   version: v3
 sidebar_position: 1
-title: Home
+title: Welcome
 ---
 
+# **Welcome**
+
+## **Why Runme?**
+
+The goal of Runme is to enable engineers to capture an operational process as a reliable, refinable, reusable asset we call a Runme Notebook. All DevOps engineers have experienced the frustration of not being able to get work done because documentation is out of date, hard to find and not able to integrate with cloud native processes. By building, and curating, reliable Runme Notebooks, you can break through this frustration and open up hours of productivity!
+
+## **What is Runme?**
+
+Runme makes Markdown documentation actually runnable. Runme is a Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface. Runme helps you build and curate Notebooks and also run them making it easy to automate step-by-step instructions especially in cloud-native environments. Runme Notebooks are perfect for capturing and persisting operational knowledge making operational docs reliable and less likely to become outdated.
+
+Another way to think about it:
+
+> 💡 Runme is like Jupyter but with a Shell/Bash Kernel and lightweight dependencies.
+
+## **Built on Open Technologies & Standards**
+
+Runme is Markdown compatible (and superset) and open source licensed under Apache 2.0. We also work hard to use open standards for interoperability. Get more details in our [open source](/resources/open-source) section.
+
+<RunmeStars /><br /><br />
+
+All the code for Runme can be found in 4 repositories on Github:
+
+- [Kernel / CLI](https://github.com/stateful/runme)
+- [VS Code extension](https://github.com/stateful/vscode-runme)
+- [Github action](https://github.com/stateful/runme-action)
+- [Website](https://github.com/stateful/runme.dev)
+- [Docs](https://github.com/stateful/docs.runme.dev)
+
+## **Introduction video**
+
+A fun introduction to the problem Runme is trying to solve.
+<video autoPlay loop muted playsInline controls>
+
+  <source src="https://runme.dev/videos/hero.mp4" type="video/mp4" />
+  <source src="https://runme.dev/videos/hero.webm" type="video/webm" />
+</video>
+
+## **Runme in 2 minutes**
+
+A quick hands on example of Runme in action.
+<video autoPlay loop muted playsInline controls>
+
+  <source src="https://runme.dev/videos/runme-hello-world.mp4" type="video/mp4" />
+</video>
+
+<br /><br />
+<Infobox type="sidenote" title="Jump forward">
+[Install Runme](https://docs.runme.dev/installation) or [get started](https://docs.runme.dev/get-started).
+</Infobox>
+
+## **What makes a Runme Notebook?**
+
+When you create a Notebook using Markdown, and then either open it's Notebook form in VS Code (or use the CLI) we are adding important capabilities that don't exist in a pure Markdown rendering.
+
+The Notebook interface makes:
+
+- commands and code executable
+- behavior and output configurable (stored transparently in the Markdown)
+- commands aware of .ENV dependencies
+
+A great example of this is when you specify the **mimetype**, that config metadata tells the Notebook to automatically render an image or a sortable table instead of text for output. We can also interpret URL's to cloud console's as an interactive dashboard UI.
+
+<br />
+<img src="/img/notebook-components.png" style={{width: "80%", display: "inline"}} alt="What is runme"/>
+<br /><br />
+
+## Runme's architecture
+
+Runme is built on the VS Code platform running in Codespaces, Coder's [code-server](https://github.com/coder/code-server), Google IDX, GCP Cloud Editor, Gitpod, VSCodium, etc. Under the hood, much like other Notebook technologies such as Jupyter, you can read more on the [Architecture page](/architecture).
+
+<br />
+<img src="/img/venn.png" style={{width: "60%", display: "inline"}} alt="What is runme"/>
+<br /><br />
+
+## **What's next?**
+
+- First you need to (install Runme)(/installation) for the client you want to use.
+- Next you need to (write a hello world)(/hello-world) Notebook
+
+If you've already done that, skip to [configuring Notebooks](/configuration) or our [tutorials](/tutorials).
+
+<!--
 # **Quick Start ⚡️**
 
 ### Welcome to ▶️ Runme's docs
@@ -14,7 +96,7 @@ Runme makes your Markdown documentation actually runnable. Runme achieves this b
 
 <RunmeStars /><br /><br />
 
-> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on __[docs.runme.dev](https://docs.runme.dev/)__ which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
+> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on **[docs.runme.dev](https://docs.runme.dev/)** which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
 
 ## **Clone the Repository**
 
@@ -61,7 +143,7 @@ Write generic docs and notebooks using Runme's smart prompting. This is useful w
 </video>
 <br/>
 
-Runme's prompting default is _"auto"_. It will not prompt again on re-runs if values are already known. Click _"Configure"_ on the cell, to switch __promptEnv__ to __no__ (never prompt; run as is) or __yes__ (always prompt; overwrite previous values). Try it yourself... just click the play button.
+Runme's prompting default is _"auto"_. It will not prompt again on re-runs if values are already known. Click _"Configure"_ on the cell, to switch **promptEnv** to **no** (never prompt; run as is) or **yes** (always prompt; overwrite previous values). Try it yourself... just click the play button.
 
 ```sh {"id":"01HY0Z7HSFFV7KHPX559SNVSHN","terminalRows":"4"}
 export PROJECT_NAME=[Enter your project id]
@@ -71,7 +153,7 @@ export CLUSTER_ZONE="us-central1-c"
 echo "CLUSTER_ZONE set to $CLUSTER_ZONE"
 ```
 
-You can reset all environment variables using the __Reset Session__ button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
+You can reset all environment variables using the **Reset Session** button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
 
 ## **Piping and Referencing Cells**
 
@@ -123,4 +205,4 @@ And so much [more](https://docs.runme.dev/getting-started/).
 
 Learn more about Runme and what problems it [solves for you](/why).
 
-</Infobox>
+</Infobox> -->

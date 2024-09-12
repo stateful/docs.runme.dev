@@ -1,8 +1,4 @@
 ---
-runme:
-  id: 01HX525D9CNEBFG0X78C97HST8
-  version: v3
-sidebar_position: 7
 title: Shebang Support
 ---
 
@@ -54,11 +50,11 @@ runme
 
 We have attached some scripts in various languages as seen below to enable you to test how Runme works in your VS Code.
 
-Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("*Hello, World!*"), obtain the current date and time, and then combine these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
+Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("_Hello, World!_"), obtain the current date and time, and then combine these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
 
 ### **Python**
 
-To run the Python code, you need to set the path to the Python interpreter, which is ***/usr/bin/python3***, in the advanced section of your configuration in your code block.
+To run the Python code, you need to set the path to the Python interpreter, which is **_/usr/bin/python3_**, in the advanced section of your configuration in your code block.
 
 ```python {"id":"01HPPEWMR0YKCGMCXWPVHBDKVR"}
 import datetime
@@ -78,7 +74,7 @@ print(fullGreeting)
 
 ### **Bash**
 
-To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is ***/usr/bin/bash***, in the advanced section of your configuration in your code block.
+To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is **_/usr/bin/bash_**, in the advanced section of your configuration in your code block.
 
 ```sh {"id":"01HPPEWMR0PC5W41BZWYABPB47"}
 
@@ -97,7 +93,7 @@ echo $fullGreeting
 
 ### **Ruby**
 
-To use Ruby, you need to add the path to the Ruby interpreter, which is ***/usr/bin/ruby***, in the advanced section of your configuration in your code block.
+To use Ruby, you need to add the path to the Ruby interpreter, which is **_/usr/bin/ruby_**, in the advanced section of your configuration in your code block.
 
 ```ruby {"id":"01HPPEWMR0WHY93Q0MVFQ4YHS8"}
 # Define a variable for the greeting
@@ -115,7 +111,7 @@ puts fullGreeting
 
 ### **PHP**
 
-To use PHP, you need to add the path to the PHP interpreter, which is ***/usr/bin/php***, in the advanced section of your configuration in your code block..
+To use PHP, you need to add the path to the PHP interpreter, which is **_/usr/bin/php_**, in the advanced section of your configuration in your code block..
 
 ```php {"id":"01HPPEWMR02F1ZNBJNNQGW9H29","interpreter":"/opt/homebrew/bin/php"}
 <?php
@@ -137,14 +133,17 @@ echo $fullGreeting;
 
 ### **Node**
 
-To use Node.js, you need to add the path to the node interpreter, which is ***/usr/bin/node***, in the advanced section of your configuration in your code block.
+To use Node.js, you need to add the path to the node interpreter, which is **_/usr/bin/node_**, in the advanced section of your configuration in your code block.
 
 ```js {"id":"01HPPEWMR03X1RNX68H4G28T6A"}
 // Define a variable for the greeting
 const greeting = "Hello, World!";
 
 // Get the current date and time
-const currentDateTime = new Date().toISOString().replace('T', ' ').substring(0, 19);
+const currentDateTime = new Date()
+  .toISOString()
+  .replace("T", " ")
+  .substring(0, 19);
 
 // Concatenate the greeting with the current date and time
 const fullGreeting = `${greeting} It's now ${currentDateTime}`;

@@ -1,10 +1,8 @@
 ---
-runme:
-  id: 01HX525D9CNEBFG0X788KGMB9E
-  version: v3
+title: Runme Gist
 ---
 
-# Runme Gist
+# **Runme Gist**
 
 Would you like to share or store your plain texts or code snippets securely with others in your team without needing a full repository or document?
 
@@ -94,7 +92,7 @@ Here is a video that showcases how to generate Runme Gist for your entire Markdo
 
 ## **Generate Gist Per Cell**
 
-Alternatively to generating Gist for the entire Markdown file, you can generate gist for each cell in your Markdown file. To do this, in your Session Outputs file, navigate to the cell you want to be generated as  a gist and click on ‘Generate Gist’.
+Alternatively to generating Gist for the entire Markdown file, you can generate gist for each cell in your Markdown file. To do this, in your Session Outputs file, navigate to the cell you want to be generated as a gist and click on ‘Generate Gist’.
 
 ![Gist per cell](../../static/img/configuration-page/BashScript-Docker.png)
 
@@ -103,4 +101,3 @@ Congratulations! You have successfully learned how to use the Runme Gist feature
 **Note that Session Output files can be kept offline and locally**.
 
 You can read about that [here](https://runme.dev/blog/runme-v3-pipeline-logs-and-artifacts). If you love this feature, kindly give [Runme a star](https://github.com/stateful/runme/stargazers) on GitHub.
-

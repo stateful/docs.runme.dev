@@ -1,24 +1,17 @@
 ---
-runme:
-  id: 01HX525D9B2H33WXVN253K6WX0
-  version: v3
-sidebar_position: 3
-title: Run Cells By Section
+sidebar_position: 5
+title: Run cells by section
 ---
 
-# Run Cells By Section
+# Running cells by section
 
 An alternative way to run your Runme cell individually or the entire document is to run your Markdown file by sections.
 
 If you have a Markdown file with a large volume of codes and commands to be executed and they are all grouped into sections in the order in which they are to be executed (for example, installation section, configuration section, setting up section, etc.), rather than running each cell individually or the entire Markdown file, you can run each section of the file.
 
-This enables you to save time and also watch the execution result of each section before proceeding to the next.
-
-Runme cells can be grouped into headings and subheadings depending on the structure of your documentation. In your Markdown file, a section is both a heading or a subheading within the file. Runme makes it possible to run your file according to the section/headings of your Markdown file.
-
 To do this, you first need to enable “Sticky Scroll” in your notebook. Sticky Scroll allows you to stick sections to the top of the editor so that they are always in view while you scroll through your Markdown file.
 
-## Getting Started
+## **Getting Started**
 
 This section will explore how to use the Sticky Scroll to run cells by section in Runme.
 
@@ -52,7 +45,7 @@ See the video below to represent the steps visually.
   <source src="/videos/cellsection.webm" type="video/webm" />
 </video>
 
-## Run Cells by Section From Outline
+## **Run Cells by Section From Outline**
 
 Alternatively, you can run your cells by section using the Outline feature of the VS Code editor. In this example, we use this [README file](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/Mac-sealedsecret.md) with several sections.
 
@@ -66,4 +59,3 @@ To run a section from the outline:
 Hover your mouse on the section you want to run, click the three dots beside it, and click run cells to run all the cells in that section.
 
 ![cells section](../../static/img/guide-page/cellssection.png)
-
