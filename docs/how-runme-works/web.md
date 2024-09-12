@@ -95,7 +95,7 @@ To configure a cell code block, this feature provides a list of actions that can
 
 **Cell Execution Result Actions**
 
-This feature allows users to perform specific actions, such as copying the output or previewing a gist. [Runme Gis](https://docs.runme.dev/configuration/runme-gist)t allows users to store and share plain texts or code snippets with others without needing a full repository while also masking sensitive information.
+This feature allows users to perform specific actions, such as copying the output or previewing a gist. [Runme Gis](https://docs.runme.dev/integrations/runme-gist)t allows users to store and share plain texts or code snippets with others without needing a full repository while also masking sensitive information.
 
 ![executionresult actions](../../static/img/how-runme-works/runme-cells-execution-result-actions.png)
 

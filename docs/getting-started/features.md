@@ -117,7 +117,7 @@ Please be aware that if the execution of a cell depends on the standard output (
 
 ## **Runme Gist**
 
-You can securely share or store plain texts and code snippets with others in your team without needing a full repository or document. Runme does this using the [Runme Gist feature](../configuration/runme-gist). With Runme Gist, the sensitivity of your information is prioritized and kept secret, as you can mask sensitive data in your outputs.
+You can securely share or store plain texts and code snippets with others in your team without needing a full repository or document. Runme does this using the [Runme Gist feature](../integrations/runme-gist). With Runme Gist, the sensitivity of your information is prioritized and kept secret, as you can mask sensitive data in your outputs.
 
 ![executionresult actions](../../static/img/how-runme-works/runme-cells-execution-result-actions.png)
 

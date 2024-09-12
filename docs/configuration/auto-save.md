@@ -88,4 +88,4 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 The auto-save feature is also used in other Runme’s features. Some of these include:
 
-- **[Runme Gist](https://docs.runme.dev/configuration/runme-gist)**: Runme Gist uses the auto-save feature to create session outputs, which is used to generate a GitHub Gist while still concealing your sensitive details.
+- **[Runme Gist](https://docs.runme.dev/integrations/runme-gist)**: Runme Gist uses the auto-save feature to create session outputs, which is used to generate a GitHub Gist while still concealing your sensitive details.
