@@ -119,6 +119,11 @@
       "source": "/getting-started/cli",
       "destination": "/how-runme-works/cli",
       "permanent": true
+    },
+    {
+      "source": "/configuration/runme-gist",
+      "destination": "/integrations/runme-gist",
+      "permanent": true
     }
   ]
 }
