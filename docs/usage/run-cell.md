@@ -23,5 +23,5 @@ This action will run your command and return an executed output, you can configu
 - Make sure the [Runme CLI is installed](/installation/cli)
 
 ```sh
-runme run [name of cell]
+$ runme run [name of cell]
 ```
