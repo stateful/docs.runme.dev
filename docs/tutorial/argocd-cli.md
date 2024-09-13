@@ -19,7 +19,7 @@ To follow up on this tutorial, ensure you have the following:
 **Basic Requirement**
 
 - Basic familiarity with YAML and Kubernetes resource definitions
-- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 **Clone Our Repository**
 
@@ -94,7 +94,7 @@ kubectl get po -n argocd
 
 Port forwarding an Argo CD Server is a practical and secure way to access the Argo CD web UI for setup, development, and general use without exposing it to external networks.
 
-To do this, run the command below. You can run your code cell as a [background process](../how-runme-works/vscode#background-processes). This feature enables you to run tasks in the background while continuing with your other tasks.
+To do this, run the command below. You can run your code cell as a [background process](configuration/cell-level#long-running-processes). This feature enables you to run tasks in the background while continuing with your other tasks.
 
 ```sh {"background":"true","id":"01J0R8FX97QQR7ME2DH3C54C6E"}
 kubectl port-forward svc/argocd-server -n argocd 8080:443
@@ -425,7 +425,6 @@ server:
     limits:
       memory: "512Mi"
       cpu: "250m"
-
 ```
 
 **Repository Caching**
@@ -514,12 +513,11 @@ groups:
         annotations:
           summary: "High CPU usage on Argo CD components"
           description: "CPU usage is above 80% for more than 5 minutes."
-
 ```
 
 **Log Aggregation**
 
-Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and [Grafana](../guide/monitoring-stack.md) to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
+Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and [Grafana](../tutorial/monitoring-stack.md) to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
 
 **Setting Up Disaster Recovery Procedures**
 
@@ -546,7 +544,7 @@ docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSIO
 
 **High Availability**
 
-Configure Argo CD for high availability (HA) by running multiple [replicas](../guide/replicaset.md) of its components and distributing them across different nodes and availability zones.
+Configure Argo CD for high availability (HA) by running multiple [replicas](../tutorial/replicaset.md) of its components and distributing them across different nodes and availability zones.
 
 Example HA configuration in Helm:
 

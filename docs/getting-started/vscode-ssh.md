@@ -7,7 +7,7 @@ title: VS Code / SSH
 
 Runme integrates easily with [VS Code SSH](https://code.visualstudio.com/docs/remote/ssh) and allows users to connect to remote instances effortlessly. This integration allows for easy execution of specific instructions directly in Markdown files, streamlining workflows and boosting productivity.
 
-To follow the instructions on this page, ensure you have installed Runme on your [VS Code](https://docs.runme.dev/installation/installrunme) or [CLI](https://docs.runme.dev/installation/runmecli). Also, ensure you have access to the remote server you need.
+To follow the instructions on this page, ensure you have installed Runme on your [VS Code](https://docs.runme.dev/installation/vscode) or [CLI](https://docs.runme.dev/installation/runmecli). Also, ensure you have access to the remote server you need.
 
 ## **VS Code Remote Development**
 

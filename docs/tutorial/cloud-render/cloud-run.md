@@ -6,7 +6,7 @@ title: Google Cloud Run
 
 Runme Cloud Renderers enable you to access various cloud resources directly within your Markdown files without the need to log into your cloud console. With Cloud Renderers, you can manage your Google Cloud Run resources and perform various operations without leaving your Markdown environment.
 
-It is available on Runme client interfaces, including the [editor](../../installation/installrunme.md) and [web browser](../../installation/web.md). This section will explore how you can access the Google Cloud Run with Runme Cloud Renderers in a [web browser](../../installation/web.md).
+It is available on Runme client interfaces, including the [editor](../../installation/vscode.md) and [web browser](../../installation/web.md). This section will explore how you can access the Google Cloud Run with Runme Cloud Renderers in a [web browser](../../installation/web.md).
 
 ## Prerequisites
 
@@ -14,13 +14,13 @@ Before proceeding, ensure you have the following installed:
 
 - **Install Runme**
 
-To access Runme on your web browser, you are required to [install Runme](../../installation/runmecli.md) on your terminal. To do that, run the command below:
+To access Runme on your web browser, you are required to [install Runme](..//installation/cli) on your terminal. To do that, run the command below:
 
 ```sh {"id":"01J30C5KDGY6TVVXPNHWKZPTYX"}
 brew install runme
 ```
 
-Check out our detailed installation guide for instructions on [installing Runme CLI](../../installation/runmecli.md) on other operation systems.
+Check out our detailed installation guide for instructions on [installing Runme CLI](..//installation/cli) on other operation systems.
 
 - **Change directory**
 
@@ -84,7 +84,7 @@ This section will explain how Google Cloud Run works in Runme Notebook Cloud Ren
 
 **Set Your Project ID Using an Environment Variable**
 
-Use the [environment variable prompts](../../getting-started/features#environment-variable-prompts) to set your project ID. Run the command below to experience how it works.
+Use the [environment variable prompts](..//configuration/cell-level#environment-variable-prompts) to set your project ID. Run the command below to experience how it works.
 
 ```sh {"id":"01J30CGS5MMDB865SCNVZNDJGH"}
 export PROJECT_ID="runme-ci"

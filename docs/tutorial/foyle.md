@@ -16,7 +16,7 @@ To get started, ensure you have the following installed:
 
 - **Runme Extension**
 
-To access the Runme Notebook, install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can also set Runme as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+To access the Runme Notebook, install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can also set Runme as your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Install Foyle**
 
@@ -46,7 +46,7 @@ Run the command below to start the Foyle server on your local machine. However, 
 foyle serve
 ```
 
-This command should start Foyle in the background. To make it run without disrupting your activities, activate your cell's [background task](../getting-started/features#background-task) mode. This feature will make Foyle run as a background task without interrupting your progress.
+This command should start Foyle in the background. To make it run without disrupting your activities, activate your cell's [background task](/configuration/cell-level#background-task) mode. This feature will make Foyle run as a background task without interrupting your progress.
 
 Once that is done, run the cell, and you will get an output similar to the image below.
 
@@ -176,5 +176,3 @@ This will use the Runme Environment Prompt Variable to prompt you to confirm you
 ## Feedback and Contribution
 
 If you have any tool or project you would like to see integrated with Runme, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback) with your idea. We will be glad to test it out.
-
-

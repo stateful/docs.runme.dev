@@ -212,8 +212,8 @@ This command opens Runme in your web browser.
 
 See more resources on how Runme works
 
-[How Runme Works on the Web](../how-runme-works/web)
+[How Runme Works on the Web](/getting-started/web)
 
-[How Runme Works in VS Code](../how-runme-works/vscode)
+[How Runme Works in VS Code](getting-started/vscode)
 
-[How Runme works on VS Code SSH and Remote](../how-runme-works/runme-via-ssh)
+[How Runme works on VS Code SSH and Remote](/getting-started/vscode-ssh)

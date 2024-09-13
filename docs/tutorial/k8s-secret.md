@@ -25,7 +25,7 @@ git clone https://github.com/stateful/blog-examples.git
 cd kubernetes/k8s-secret/sealed-secret
 ```
 
-- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files.](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/linux-sealedsecrets.md)
 
@@ -35,7 +35,7 @@ To follow up on securing your secrets using Sealed Secrets, ensure you install t
 
 ```sh {"id":"01HYBAST575EKGMG6PW081YNFK"}
 brew install kind
-brew install kubectl 
+brew install kubectl
 brew install kubeseal
 ```
 
@@ -46,7 +46,7 @@ brew install kubeseal
 
 ### **Encrypt a Secret in Runme**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#encrypt-a-secret)
 
-To encrypt a secret, you must create a Kubernetes secret  and then using `kubeseal` you can encrypt it. Run the command below in your Runme cell to encrypt your secret.
+To encrypt a secret, you must create a Kubernetes secret and then using `kubeseal` you can encrypt it. Run the command below in your Runme cell to encrypt your secret.
 
 ```sh {"id":"01HYBAVNNJQ40YSKKAXF3653J2"}
 kubectl create secret generic mysecret --from-literal=username=myuser --from-literal=password=mypassword --dry-run=client -o yaml | kubeseal > mysealedsecret.yaml

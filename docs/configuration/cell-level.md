@@ -60,7 +60,7 @@ A new view will open, allowing you to select “general” or “advanced” cel
 
 ## Configure using Markdown
 
-If you feel more comfortable editing the Markdown file directly, you can do it using the following configuration options [schema](../Reference/configuration#cell-options):
+If you feel more comfortable editing the Markdown file directly, you can do it using the following configuration options [schema](../Reference/configuration#cell-level):
 
 Consider this example:
 
@@ -252,6 +252,14 @@ Runme has a `MimeType` feature that enables you to render images, CSV-based tabl
 
 See in the [reference page](../Reference/mime) for the list of supported MIME types!
 
+### Background Task
+
+If you cannot wait for your code or command to finish execution and you want to run something else simultaneously, the background mode in Runme is the way to go.
+
+Runme has a **background** mode that enables you to run tasks in the background. To do this, you have to activate the background mode.
+
+![runme-background](../../static/img/runme-background.png)
+
 ### **Terminal Row**
 
 The number of rows an output should be rendered is defined by a setting known as Terminal row. Set the number of rows with which your output should be displayed under a cell, 10 rows is the default.
@@ -288,7 +296,7 @@ Where a cell is not named, a generated name is provided for each cell. We recomm
 
 These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
 
-If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#Cell-Options):
+If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration#cell-level):
 
 ````md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
@@ -306,7 +314,7 @@ Try out the previous command
 echo hello world
 ````
 
-The entire [configuration schema](../Reference/configuration#Cell-Options): as an example
+The entire [configuration schema](../Reference/configuration#cell-level): as an example
 
 ````sh {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
 
@@ -334,6 +342,23 @@ However, sometimes certain cells should be excluded from this workflow. You can 
  ```sh {"excludeFromRunAll":"true","id":"01HPM7NRQYMD5T06M4KS6S2DWG"}
  # Do something optional here
 ````
+
+## **Environment Variable Prompts**
+
+Runme simplifies the use of environment variables in your notebooks by allowing dynamic settings within each cell block of your notebook. It provides interactive prompts in each cell, tailored to your users' needs. This ensures a smooth and user-friendly experience when incorporating real-time user interaction.
+
+**How to Enable PromptEnv**
+
+- Click on `configure ⚙️` in your code cell
+- Click `promptEnv` to set the condition you want the cell to run in
+
+![promptenv](../../static/img/getting-started/promptsenv.png)
+
+For instance, in the image below, we configure the `SLEEP_SECS` environment variable to 10 seconds with a single click on the run cell button. This feature is useful when your runbooks need user-specific values.
+
+![ouput](../../static/img/getting-started/promptenv-output.png)
+
+This feature allows users to input values directly within the notebook environment, making task execution more efficient. Improve your workflow with the increased flexibility provided by `promptEnv` feature.
 
 ### **Run All Cells by Category**
 

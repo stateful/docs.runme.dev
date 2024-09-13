@@ -18,7 +18,7 @@ git clone --branch T-doc-notebook https://github.com/stateful/blog-examples.git
 cd blog-examples/docker-notebook
 ```
 
-- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
 - **Required Packages**: Run the command below to install the required packages for this guide.
 
 ```sh {"id":"01HYG0F007XK8RT7466DNS16RQ"}
@@ -123,7 +123,7 @@ docker run -p 80:5000 nginx
 
 ![port-mapping](../../static/img/guide-page/docker-port-mappings.png)
 
-If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](../getting-started/features#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
+If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](/configuration/cell-level#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
 
 ![background mode](../../static/img/runme-background.png)
 
@@ -233,7 +233,7 @@ docker inspect $CONTAINER_ID
 
 Executing a command inside a Docker container means running a specific command within the container. This allows you to interact with the containerized environment without interactively entering the container.
 
-Runme makes this easy through the use of [environment variables prompts](../getting-started/features#environment-variable-prompts). Runme’s environment variable prompts allow you to input values directly within your notebook environment and store them easily.
+Runme makes this easy through the use of [environment variables prompts](/configuration/cell-level#environment-variable-prompts). Runme’s environment variable prompts allow you to input values directly within your notebook environment and store them easily.
 
 To execute a command inside a container leveraging Runme’s environment variable prompt, run the command below:
 
@@ -303,7 +303,7 @@ In this guide, we covered the basics of running Docker commands in Runme.
 
 Runme has several features that make it a choice platform for integrating and using Docker. Some key features of Runme include
 
-- The [background mode](../getting-started/features#background-task) makes it possible to run commands in the background.
+- The [background mode](/configuration/cell-level#background-task) makes it possible to run commands in the background.
 - [Autosave feature](../configuration/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
 - You can run your Markdown file by cells, an entire document, or sections.
 

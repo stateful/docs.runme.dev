@@ -89,4 +89,4 @@ If you don't see this option, make sure your VS Code is updated to at least vers
 
 ### How Runme Works in VS Code
 
-Congratulations on successfully installing the Runme extension on VS Code. We have a lot in store for you. Explore how [How Runme Works with VS Code](../how-runme-works/vscode.md) and all you can achieve with the Runme extension.
+Congratulations on successfully installing the Runme extension on VS Code. We have a lot in store for you. Explore how [How Runme Works with VS Code](/getting-started/vscode) and all you can achieve with the Runme extension.

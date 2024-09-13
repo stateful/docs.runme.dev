@@ -18,7 +18,7 @@ By the end of this guide, you'll be able to use Runme to efficiently set up and 
 
 To follow up on this tutorial, ensure you have the following:
 
-**Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+**Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 **Required Packages:** Install the required packages (kind, kubectl, helm) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
 
@@ -313,7 +313,7 @@ kubectl apply -f peer-authentication.yaml
 
 ## Observability[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#observability)
 
-To get a visual view of your application's progress, consider integrating with [Prometheus](../guide/monitoring-stack#configure-your-prometheus), [Grafana](../guide/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
+To get a visual view of your application's progress, consider integrating with [Prometheus](../tutorial/monitoring-stack#configure-your-prometheus), [Grafana](../tutorial/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
 
 Run this command to do that.
 

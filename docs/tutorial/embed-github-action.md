@@ -8,7 +8,7 @@ title: Running Github Action Inside a Markdown File
 
 # Running Github Action Inside a Markdown File
 
-> 💡 Be sure to install [Runme for VS Code](https://docs.runme.dev/installation/installrunme) first
+> 💡 Be sure to install [Runme for VS Code](https://docs.runme.dev/installation/vscode) first
 
 <br/>
 
@@ -39,7 +39,7 @@ In general, being able to run a GitHub Action manually gives you control over wo
 
 ### **How To Use It**
 
-Use the __workflow_dispatch__ event to specify your manually triggered workflow, you can optionally specify inputs that are passed to the workflow. The triggered workflow receives the inputs in the [inputs context](https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context)
+Use the **workflow_dispatch** event to specify your manually triggered workflow, you can optionally specify inputs that are passed to the workflow. The triggered workflow receives the inputs in the [inputs context](https://docs.github.com/en/actions/learn-github-actions/contexts#inputs-context)
 
 See an example of a manually triggered workflow:
 
@@ -105,9 +105,9 @@ The above YAML file specifies a simple manual triggered workflow file with input
 Currently, there are two ways to indicate Runme to run a GitHub Action:
 
 - GitHub repository source URL
-   `https://github.com/organization/repository/blob/main/.github/workflows/workflow.yml`
+  `https://github.com/organization/repository/blob/main/.github/workflows/workflow.yml`
 - GitHub workflow URL
-   `https://github.com/organization/repository/actions/workflows/workflow.yml`
+  `https://github.com/organization/repository/actions/workflows/workflow.yml`
 
 If you paste a URL following any of those formats in any Markdown file, Runme will understand you want to run a manually triggered GitHub Action. If the file specifies inputs, a convenient form is displayed to specify the values, they will be displayed according to the type of input:
 

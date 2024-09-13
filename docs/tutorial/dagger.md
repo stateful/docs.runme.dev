@@ -14,7 +14,7 @@ To proceed with this guide, it is crucial to carry out the following actions:
 
 - **Install Runme**
 
-Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](../installation/index.md) where you can run your Markdown file. Once installed, you can make Runme your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](../installation/index.md) where you can run your Markdown file. Once installed, you can make Runme your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Install Docker(if not already installed)**
 

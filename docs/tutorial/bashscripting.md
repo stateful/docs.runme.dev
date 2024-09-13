@@ -16,11 +16,11 @@ In this guide, we will walk you through running a bash script on Runme.
 
 ## **Setting Up Your Environment**
 
-To get started with Bash scripts in Runme, you are required to first install and configure [Runme on your VS Code](https://docs.runme.dev/installation/installrunme) editor. If you do not have Runme on VS Code installed yet, proceed to the Extension tab of your VS Code and search for “**Runme DevOps Notebook**.”
+To get started with Bash scripts in Runme, you are required to first install and configure [Runme on your VS Code](https://docs.runme.dev/installation/vscode) editor. If you do not have Runme on VS Code installed yet, proceed to the Extension tab of your VS Code and search for “**Runme DevOps Notebook**.”
 
 ![install runme](../../static/img/guide-page/devops-notebook.png)
 
-You can configure your code editor to make Runme your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer). This means you `.md` will be displayed as a runbook whenever you open a Markdown.
+You can configure your code editor to make Runme your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer). This means you `.md` will be displayed as a runbook whenever you open a Markdown.
 
 ## **Writing Your First Bash Script in Runme**
 
@@ -59,7 +59,7 @@ After an execution time of 2.3 seconds, you will get a similar output:
 ![run-code](../../static/img/guide-page/runme-users.png)
 You have successfully executed your first bash script with Runme!🎉
 
-Runme makes it incredibly easy! Previously, you would have to create a .sh   file to execute bash scripts, but with Runme, you do not need to create a new file from scratch. All you need to do is install the Runme extension in VS Code, and you can save yourself the stress of environment issues, as bash scripts run swiftly in Runme regardless of your machine's environment and operating system.
+Runme makes it incredibly easy! Previously, you would have to create a .sh file to execute bash scripts, but with Runme, you do not need to create a new file from scratch. All you need to do is install the Runme extension in VS Code, and you can save yourself the stress of environment issues, as bash scripts run swiftly in Runme regardless of your machine's environment and operating system.
 
 Let’s dive into more advanced bash scripting actions.
 
@@ -67,11 +67,11 @@ Let’s dive into more advanced bash scripting actions.
 
 Bash scripts have several advanced techniques that can be integrated with Rume. In this section, we will explore some of the advanced features of bash scripting and how they can be integrated with Runme.
 
-* **Variable Manipulation**:
+- **Variable Manipulation**:
 
-   Variable manipulation involves modifying or extracting parts of a variable’s value to suit your needs without changing the original data. This can be done and executed in your Markdown file without external dependencies.
+  Variable manipulation involves modifying or extracting parts of a variable’s value to suit your needs without changing the original data. This can be done and executed in your Markdown file without external dependencies.
 
-   The image below provides an example of how a user can manipulate variables in bash scripts in Runme and the corresponding output the user will get in the terminal.
+  The image below provides an example of how a user can manipulate variables in bash scripts in Runme and the corresponding output the user will get in the terminal.
 
 Run the script below to understand how Variable manipulation works.
 
@@ -97,9 +97,9 @@ The image below provides a visual representation of the output of this script wh
 
 ![example](../../static/img/guide-page/var-maniuplation.png)
 
-* **Conditional Statements**:
+- **Conditional Statements**:
 
-   If you have a series of conditional statements in a Bash script that you would love to execute, Runme makes this easy. All you need to do is create a `.md` file in your editor, enter your script, and click the Run cell button. Run the command below to understand how this works
+  If you have a series of conditional statements in a Bash script that you would love to execute, Runme makes this easy. All you need to do is create a `.md` file in your editor, enter your script, and click the Run cell button. Run the command below to understand how this works
 
 ```sh {"id":"01HZM493AY8Y3V0YBHNJFX47CS"}
 echo -n "Enter your score: "
@@ -124,9 +124,9 @@ The image below shows how a conditional statement in a Bash script is executed i
 
 ![if-statement](../../static/img/guide-page/ifstatement.png)
 
-* **Integrating Runme with Docker**:
+- **Integrating Runme with Docker**:
 
-   You can use Runme to write several bash scripts that execute Docker commands. The script below manages a Docker container for an Nginx web server.
+  You can use Runme to write several bash scripts that execute Docker commands. The script below manages a Docker container for an Nginx web server.
 
 ```sh {"id":"01HZM4AZVMTPYDE6A8QK49294Z"}
 CONTAINER_NAME="my-nginx-container"
@@ -178,4 +178,3 @@ Using Runme to execute your Bash scripts automates your process, whether it is a
 In this guide, we delved into how to execute your first Bash script in Runme, advanced Bash scripts you can execute in Runme, and, lastly, features in Runme that make the execution of tasks as an SRE expert, DevOps engineer, or system administrator easier.
 
 You can easily integrate Runme with your favorite cloud-native tools. Take a look at our [tutorial page](https://docs.runme.dev/guide/) to learn more ways to use Runme to make your tasks seamless.
-

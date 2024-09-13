@@ -19,7 +19,7 @@ git clone https://github.com/stateful/blog-examples.git
 cd kubernetes/k8s-secret/sops
 ```
 
-- **Install Runme:** Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set Runme as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Install Runme:** Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set Runme as your [default Markdown viewer.](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-linux.md).
 

@@ -9,7 +9,7 @@ Runme can run as a self-contained web app. Since Runme's Notebook UX is built on
 
 ## Getting Started With Runme on Web
 
-To get started with Runme on the web, you first need to [install Runme on your CLI](../installation/runmecli).
+To get started with Runme on the web, you first need to [install Runme on your CLI](/installation/cli).
 
 Once that is done, in your CLI, navigate to the directory you would love to open on the Web and run the command below
 
@@ -40,7 +40,7 @@ From the above code block, it is clear that the configuration of Runme uses the 
 
 Installing Runme on the Web allows you to use VS Code right at your local host address on your default web browser and set up a Runme `code-server`.
 
-On the web app, the features and actions that can be performed are quite similar to running [Runme in VS Code](../how-runme-works/vscode). The features include:
+On the web app, the features and actions that can be performed are quite similar to running [Runme in VS Code](/getting-started/vscode). The features include:
 
 ![VS Code Marketplace](../../static/img/installation-page/runme-for-vscode.png)
 
@@ -88,7 +88,7 @@ To configure a cell code block, this feature provides a list of actions that can
 
 **Cell Execution Result Actions**
 
-This feature allows users to perform specific actions, such as copying the output or previewing a gist. [Runme Gis](https://docs.runme.dev/configuration/runme-gist)t allows users to store and share plain texts or code snippets with others without needing a full repository while also masking sensitive information.
+This feature allows users to perform specific actions, such as copying the output or previewing a gist. [Runme Gis](https://docs.runme.dev/usage/runme-gist)t allows users to store and share plain texts or code snippets with others without needing a full repository while also masking sensitive information.
 
 ![executionresult actions](../../static/img/how-runme-works/runme-cells-execution-result-actions.png)
 

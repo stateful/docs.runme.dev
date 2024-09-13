@@ -28,7 +28,7 @@ Before we proceed, there are a few requirements needed to get started
 
 3. **Runme Installation**
 
-   To get Runme available on your local machine or server, you are required to install the Runme. Runme has various client interfaces with which you can use Runme, this includes; [VS Code editor](../installation/installrunme.md), [CLI](../installation/runmecli.md), and [web app](../how-runme-works/web.md). In this guide, we will use Runme for VS Code editor using the [Runme Notebook extension](../how-runme-works/vscode.md).
+   To get Runme available on your local machine or server, you are required to install the Runme. Runme has various client interfaces with which you can use Runme, this includes; [VS Code editor](/installation/vscode), [CLI](/installation/cli.md), and [web app](/getting-started/web). In this guide, we will use Runme for VS Code editor using the [Runme Notebook extension](/getting-started/vscode).
 
 ## **Setting Up Terraform for EC2 Instance**
 
@@ -70,7 +70,7 @@ Through this you are not only running your command but your output is saved for 
 
 **Initialize Terraform**
 
-To begin, first create a `.md` file within your project directory. With Runme installed, every Markdown (`.md`) file created in your code editor will ipen with Markdown. Alternatively you can set Runme as your [editor Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+To begin, first create a `.md` file within your project directory. With Runme installed, every Markdown (`.md`) file created in your code editor will ipen with Markdown. Alternatively you can set Runme as your [editor Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 In your Markdown file, creating a code block to execute your command.
 

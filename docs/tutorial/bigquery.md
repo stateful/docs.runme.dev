@@ -16,7 +16,7 @@ To follow up on this guide, ensure you have the following:
 
 - **Install Runme Extension and Make it Your Default Markdown Viewer**
 
-Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](../installation/index.md) where you can run your Markdown file. Once installed, make Runme your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](../installation/index.md) where you can run your Markdown file. Once installed, make Runme your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Google Cloud SDK**
 
@@ -70,7 +70,7 @@ gcloud components install bq
 
 Now, you have successfully completed the authentication phase. The next step is to set up your project.
 
-To do that, you first need to set up your Google Cloud project ID using the [Runme Environment Variable Prompt](../getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work on within your notebook. To set your project ID, run the command below:
+To do that, you first need to set up your Google Cloud project ID using the [Runme Environment Variable Prompt](/configuration/cell-level#environment-variable-prompts). This allows you to specify the project you want to work on within your notebook. To set your project ID, run the command below:
 
 ```sh {"id":"01J2B992A1G2K3PT40FDHV4QZ9"}
 export PROJECT_ID="runme-ci"
@@ -113,13 +113,13 @@ LIMIT 10;
 
 ![big query](../../static/img/guide-page/runme-output-sql.png)
 
-Next, run the command below while disabling the [interactive mode](../getting-started/features#interactive-mode) of the code cell.
+Next, run the command below while disabling the [interactive mode](/getting-started/vscode#interactive-mode) of the code cell.
 
 ```sh {"id":"01J2KDZ0Z374808DNBPDD898HR","interactive":"false"}
  bq query --format $FORMAT --use_legacy_sql=false $QUERY 2> /dev/null
 ```
 
-When this is successful, you will get an output similar to this. You can change the presentation of your data.  To do this, click the menu icon (three vertical dots) beside your output. A small dashboard will pop up. Click on `Change Presentation` to change how the data is presented. You will be prompted to select how you want to view your data.
+When this is successful, you will get an output similar to this. You can change the presentation of your data. To do this, click the menu icon (three vertical dots) beside your output. A small dashboard will pop up. Click on `Change Presentation` to change how the data is presented. You will be prompted to select how you want to view your data.
 
 ![result](../../static/img/guide-page/runme-result.png)
 

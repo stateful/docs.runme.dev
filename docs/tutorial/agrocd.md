@@ -15,7 +15,7 @@ To follow up on this tutorial, ensure you have the following:
 1. Basic Requirement
 
 - Basic familiarity with YAML and Kubernetes resource definitions
-- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 2. Clone Our Repository
 
@@ -191,7 +191,7 @@ Forward the port 80 of the argocd-server service to `localhost:8080` using kubec
 kubectl -n argocd port-forward service/argocd-server 8080:80
 ```
 
-With Runme’s background process feature, you can run your code cells as a [background task](../getting-started/features#background-task). This will allow you to execute other tasks within the runbook without waiting for the initial task to complete.
+With Runme’s background process feature, you can run your code cells as a [background task](/configuration/cell-level#background-task). This will allow you to execute other tasks within the runbook without waiting for the initial task to complete.
 
 ![port- forwarding](../../static/img/guide-page/agrocd-portforwardings.png)
 

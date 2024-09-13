@@ -15,7 +15,7 @@ Runme uses two specific features to render JSON Data into human-friendly output.
 These features are:
 
 - **Mime Type**
-  Multipurpose Internet Mail Extensions(MIME) types are a standard way of indicating a nature and format of a file. Runme has an advanced configuration that allows users to specify the data's [MIME type](../Reference/mime.md).
+  Multipurpose Internet Mail Extensions(MIME) types are a standard way of indicating a nature and format of a file. Runme has an advanced configuration that allows users to specify the data's [MIME type](/configuration/mime.md).
 
 In this guide, we will work with JSON data to specify that.
 
@@ -37,7 +37,7 @@ To get started with rendering your JSON data, ensure you have the following:
 
 - **Install Runme**
 
-Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) to enable you access the Runme Notebook on your code editor. You can also set Runme as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer).
+Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) to enable you access the Runme Notebook on your code editor. You can also set Runme as your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Install Data Table Renderers**
 

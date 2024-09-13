@@ -228,5 +228,5 @@ You have successfully installed Runme on your CLI. Now, it’s time to explore j
 
 **Additional resources:**
 
-- To learn more about how Runme works in CLI, read [our documentation.](../how-runme-works/cli.md)
-- We have provided information on creating a Runme runbook on your Windows machine. Check out the [How Runme works on Windows](../how-runme-works/windows.md) guide.
+- To learn more about how Runme works in CLI, read [our documentation.](/getting-started/cli)
+- We have provided information on creating a Runme runbook on your Windows machine. Check out the [How Runme works on Windows](/installation/windows) guide.
