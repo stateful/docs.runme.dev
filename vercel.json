@@ -111,7 +111,7 @@
       "permanent": true
     },
     {
-      "source": "/how-runme-works/vs-code",
+      "source": "/how-runme-works/vscode",
       "destination": "/getting-started/vscode",
       "permanent": true
     },
@@ -131,97 +131,97 @@
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/architecture",
+      "source": "/architecture",
       "destination": "/resources/architecture",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/configuration/auto-save",
+      "source": "/configuration/auto-save",
       "destination": "/usage/auto-save",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/configuration/cellsection",
+      "source": "/configuration/cellsection",
       "destination": "/usage/run-section",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/configuration/shebang",
+      "source": "/configuration/shebang",
       "destination": "/usage/shebang",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/agrocd",
+      "source": "/guide/argocd",
       "destination": "/guide/k8s/argocd",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/argocd-cli",
+      "source": "/guide/argocd-cli",
       "destination": "/guide/k8s/argocd-cli",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/bashscripting",
+      "source": "/guide/bashscripting",
       "destination": "/usage/hello-world",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/helm",
+      "source": "/guide/helm",
       "destination": "/guide/k8s/helm",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/k8s-secret",
+      "source": "/guide/k8s-secret",
       "destination": "/guide/k8s/k8s-secret",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/replicaset",
+      "source": "/guide/replicaset",
       "destination": "/guide/k8s/replicaset",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/servicemesh",
+      "source": "/guide/servicemesh",
       "destination": "/guide/k8s/istio",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/guide/sops",
+      "source": "/guide/sops",
       "destination": "/guide/k8s/sops",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/how-runme-works/",
+      "source": "/how-runme-works",
       "destination": "/getting-started",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/how-runme-works/cli",
+      "source": "/how-runme-works/cli",
       "destination": "/getting-started/cli",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/how-runme-works/runme-via-ssh",
+      "source": "/how-runme-works/runme-via-ssh",
       "destination": "/getting-started/vscode-ssh",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/how-runme-works/web",
+      "source": "/how-runme-works/web",
       "destination": "/getting-started/web",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/installation/installrunme",
+      "source": "/installation/installrunme",
       "destination": "/installation/vscode",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/installation/runmecli",
+      "source": "/installation/runmecli",
       "destination": "/installation/cli",
       "permanent": true
     },
     {
-      "source": "https://docs.runme.dev/integrations/dagger",
+      "source": "/integrations/dagger",
       "destination": "/guides/dagger",
       "permanent": true
     }
