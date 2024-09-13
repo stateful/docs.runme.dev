@@ -9,7 +9,7 @@ Runme integrates with numerous third-party services and tools to simplify your d
 
 In this guide section, we will walk you through using Runme with cloud-native services and tools such as Dev Containers, Ansible, Terraform, and so on, and how to utilize Runme's features to automate tasks with these tools.
 
-## Requirement
+## Requirements
 
 To follow along with each guide in this section, here are a few requirements you need to get started:
 
