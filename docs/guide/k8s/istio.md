@@ -139,7 +139,7 @@ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 
 ![bookinfo](/img/guide-page/runme-bookinfo.png)
 
-Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
+Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cell-cwd-current-working-directory), you can confidently set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
 ## Expose the Application
 
@@ -151,7 +151,7 @@ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 
 ![gateway](/img/guide-page/runme-bookinfo-gateway.png)
 
-[Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) here to set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located (the sample folder is inside of `istio-<version>` that you downloaded earlier).
+[Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cell-cwd-current-working-directory) here to set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
 ## Verify the Application
 
@@ -319,7 +319,7 @@ kubectl apply -f samples/addons
 
 ![runme-sample-addons](/img/guide-page/runme-samples-addons.png)
 
-Using the [Runme cwd feature](/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
+Using the [Runme cwd feature](/configuration/cell-level#cell-cwd-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
 ## Cleanup
 

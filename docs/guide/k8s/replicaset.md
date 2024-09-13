@@ -40,7 +40,7 @@ When this command is successfully executed in Runme, this is the output.
 
 With this command, you can create the resources for ReplicaSets based on the definitions provided in the file.
 
-With this command, you can create the resources for ReplicaSets based on the definitions provided in the file. However, if your manifest.yaml file does not exist in the same directory as your Markdown file, you can use [Runme’s cell working directory feature](/configuration/cell-level#cells-current-working-directory) to set its directory.
+With this command, you can create the resources for ReplicaSets based on the definitions provided in the file. However, if your manifest.yaml file does not exist in the same directory as your Markdown file, you can use [Runme’s cell working directory feature](/configuration/cell-level#cell-cwd-current-working-directory) to set its directory.
 
 **Get Information About ReplicaSets**
 

@@ -6,7 +6,7 @@ title: Google Cloud Run
 
 Runme Cloud Renderers enable you to access various cloud resources directly within your Markdown files without the need to log into your cloud console. With Cloud Renderers, you can manage your Google Cloud Run resources and perform various operations without leaving your Markdown environment.
 
-It is available on Runme client interfaces, including the [editor](/installation/vscode) and [web browser](/installation/web). This section will explore how you can access the Google Cloud Run with Runme Cloud Renderers in a [web browser](/installation/web.md).
+It is available on Runme client interfaces, including the [editor](/installation/vscode) and [web browser](/installation/web). This section will explore how you can access the Google Cloud Run with Runme Cloud Renderers in a [web browser](/installation/web).
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ mkdir my_new_directory
 
 Where `my_new_directory` is the name of your folder.
 
-Now, navigate into that directory by [changing directory](/configuration/cell-level#cells-current-working-directory) to `my_new_directory`.
+Now, navigate into that directory by [changing directory](/configuration/cell-level#cell-cwd-current-working-directory) to `my_new_directory`.
 
 - **Open the Web Browser**
 

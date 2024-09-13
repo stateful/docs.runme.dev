@@ -37,7 +37,7 @@
     },
     {
       "source": "/r/extension/cwd",
-      "destination": "https://docs.runme.dev/configuration/cell-level#cells-current-working-directory",
+      "destination": "https://docs.runme.dev/configuration/cell-level#cell-cwd-current-working-directory",
       "permanent": false
     },
     {

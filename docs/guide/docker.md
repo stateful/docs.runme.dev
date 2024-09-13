@@ -286,7 +286,7 @@ docker rm $CONTAINER_ID_TEST
 
 Docker Compose is a tool for defining and running multi-container Docker applications. It uses YAML files to configure the application’s services and performs the creation and setup process for all the containers.
 
-For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](/configuration/cell-level#cells-current-working-directory) to the directory where the file exists and then run the docker-compose command.
+For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](/configuration/cell-level#cell-cwd-current-working-directory) to the directory where the file exists and then run the docker-compose command.
 
 ![docker-compose](/img/guide-page/dockerr-compose.png)
 

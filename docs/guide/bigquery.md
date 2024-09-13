@@ -88,7 +88,7 @@ In this section, we will explore various BigQuery operations.
 
 With Runme features, you can successfully run and display your query's output, formatting it into a table for easy navigation.
 
-To do this, you first need to set your `FORMAT`. Using [Runme’s environment variable](/configuration/cell-level#set-environment-variables), you will be prompted to set the `FORMAT`. Run the command below in your code cell.
+To do this, you first need to set your `FORMAT`. Using [Runme’s environment variable](/configuration/cell-level#environment-variables), you will be prompted to set the `FORMAT`. Run the command below in your code cell.
 
 ```sh {"id":"01J2KDSN92SZZYTSN11D7GS2G9"}
 export FORMAT="json"

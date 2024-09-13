@@ -112,7 +112,7 @@ Now, you have successfully installed it with your Runme terminal:tada:
 
 After installing your Helm packages, you can upgrade them. The `helm upgrade` command upgrades a release to a new version of a chart or applies changes to an existing release. Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI.
 
-With Runme, you can modify the [working directory](/configuration/cell-level#cells-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
+With Runme, you can modify the [working directory](/configuration/cell-level#cell-cwd-current-working-directory) for your code cell to a file directory of your choice. This enables you to easily run `values.yaml` even if the file is not located in the same directory as your markdown file.
 
 To upgrade the Ingress package installed earlier, run the command below:
 
