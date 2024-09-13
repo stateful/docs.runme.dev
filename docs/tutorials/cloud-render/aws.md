@@ -1,8 +1,8 @@
 ---
-title: Runme Cloud Renderers with AWS
+title: AWS
 ---
 
-# Runme Cloud Renderers with AWS
+# AWS
 
 Runme Notebook Cloud Renderers allows users to interact with cloud resources directly from their Markdown file. It integrates with various cloud services, including [AWS Elastic Cloud Compute](https://aws.amazon.com/ec2/) (EC2) and [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/) (EKS), to make it easy for you to perform various tasks, including managing and running your clusters and instances, all in your Markdown file.
 
@@ -99,7 +99,6 @@ To list your EC2 Instances, run the command below
 Replace the `[region]` with your actual region or consider using environment variables, e.g., $AWS_REGION, to set it dynamically.
 
 </Infobox>
-
 
 ```bash {"id":"01J1ASZDP12DG2YF6816BNW44M"}
 https://[region].console.aws.amazon.com/ec2/home?region=[region]#Instances
@@ -207,7 +206,6 @@ When you execute an AWS console link. Here is a sample of an AWS console link:
 ```sh {"id":"01J1FQKDWC9EM7BBTVTYN0X1V7"}
 https://[Region].console.aws.amazon.com/eks/home?region=[Region]#/clusters/[Cluster-name]
 ```
-
 
 <br />
 <Infobox type="sidenote" title="Remember">

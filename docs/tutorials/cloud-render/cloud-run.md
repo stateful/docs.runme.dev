@@ -1,10 +1,8 @@
 ---
-runme:
-  id: 01J30C5HDR7GMKTK801Q1CG4ZQ
-  version: v3
+title: Google Cloud Run
 ---
 
-# Runme Cloud Renderers with Google Cloud Run
+# Google Cloud Run
 
 Runme Cloud Renderers enable you to access various cloud resources directly within your Markdown files without the need to log into your cloud console. With Cloud Renderers, you can manage your Google Cloud Run resources and perform various operations without leaving your Markdown environment.
 
@@ -26,7 +24,7 @@ Check out our detailed installation guide for instructions on [installing Runme 
 
 - **Change directory**
 
-The next step is to navigate into your directory. However,  if you do not have an existing folder you would love to work on, you can create a new folder or [clone the repo](https://github.com/stateful/vscode-runme/blob/main/examples/gcp/cloudRun.md) you want to work with.
+The next step is to navigate into your directory. However, if you do not have an existing folder you would love to work on, you can create a new folder or [clone the repo](https://github.com/stateful/vscode-runme/blob/main/examples/gcp/cloudRun.md) you want to work with.
 
 To create a folder, run the command below
 

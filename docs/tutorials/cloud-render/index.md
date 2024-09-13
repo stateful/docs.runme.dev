@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: Runme Cloud Renderers
+title: Cloud Renderers
 ---
 
-# Runme Cloud Renderers
+# Cloud Renderers
 
 ## Overview
 

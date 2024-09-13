@@ -1,15 +1,12 @@
 ---
-runme:
-  id: 01J2K4Y0BK8EJ27AH41NHCWPPY
-  version: v3
-title: Runme Cloud Renderers via Google Cloud
+title: Google Cloud Platform
 ---
 
-# Runme Cloud Renderers with Google Cloud Platform
+# Google Cloud Platform
 
 Runme introduces Cloud Native Renderers for integrating cloud resources, such as from Google Cloud, directly from your interactive notebook. The integration of Google Cloud Console Views into your Runbook environment provides a unified interface for managing your cloud resources.
 
-This  integration of Google Cloud Console views into your Runbook environment provides a unified interface for managing your resources with Runme Cloud Renderers as you can:
+This integration of Google Cloud Console views into your Runbook environment provides a unified interface for managing your resources with Runme Cloud Renderers as you can:
 
 - Effortlessly list, manage, and connect to your cloud virtual machine.
 - Perform GKE management tasks within a single interface.
@@ -173,7 +170,7 @@ Now you have configured your project, run the following command to list your clu
 https://console.cloud.google.com/kubernetes/list/overview?project=$CLUSTERS_PROJECT_NAME
 ```
 
-When the command is run, you will see  a full list of all your Kubernetes cluster.
+When the command is run, you will see a full list of all your Kubernetes cluster.
 
 ![gks dashboard](../../../static/img/Integration/runme-gcp-gks-dashboard.png)
 
