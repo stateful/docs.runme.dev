@@ -14,7 +14,7 @@ const options = [
   },
   {
     title: "VS Code via SSH",
-    href: "/getting-started/runme-via-ssh",
+    href: "/getting-started/vscode-ssh",
     icon: SSHIcon,
   },
   {

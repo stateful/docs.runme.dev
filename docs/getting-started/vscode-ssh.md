@@ -100,7 +100,7 @@ Select the Markdown file `.md` you want to execute (if you have multiple `.md` f
 
 If you need to securely copy files from your local machine to a remote server, you can install Secure Copy Files [SCP](https://www.geeksforgeeks.org/scp-command-in-linux-with-examples/) on your machine. SCP encrypts data during transmission, protecting it from unauthorized access.
 
-To do this, you need to set up an [SSH Connection](https://docs-runme-56vudiq08-stateful.vercel.app/getting-started/runme-via-ssh#key-based-authentication) and run the code below in your Markdown file
+To do this, you need to set up an [SSH Connection](/getting-started/vscode-ssh#key-based-authentication) and run the code below in your Markdown file
 
 ```sh {"id":"01HPQBHPSYM2Z33GX8FR4RBGJ7"}
 scp /path/to/bash/script user@host:/path/on/remote/server

@@ -82,7 +82,7 @@
     },
     {
       "source": "/getting-started/runme-via-ssh",
-      "destination": "https://docs.runme.dev/getting-started/runme-via-ssh",
+      "destination": "/getting-started/vscode-ssh",
       "permanent": true
     },
     {
