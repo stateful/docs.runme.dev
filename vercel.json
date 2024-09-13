@@ -124,7 +124,7 @@
       "source": "/integrations",
       "destination": "/guide",
       "permanent": true
-    }
+    },
     {
       "source": "/getting-started/features",
       "destination": "/getting-started",
