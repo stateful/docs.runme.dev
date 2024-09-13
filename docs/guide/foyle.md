@@ -90,7 +90,7 @@ Foyle will answer the question below.
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-foyle-example.mp4" type="video/mp4" />
   <source src="/videos/runme-foyle-example.webm" type="video/webm" />
-  <source src="../../static/videos/runme-foyle-example.mp4" type="video/mp4" />
+  <source src="/videos/runme-foyle-example.mp4" type="video/mp4" />
 </video>
 
 ### Executing a Command
@@ -104,7 +104,7 @@ In the video below, we prompt Foyle to list all pods. Foyle returns the command,
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-foyle-command.mp4" type="video/mp4" />
   <source src="/videos/runme-foyle-command.webm" type="video/webm" />
-  <source src="../../static/videos/runme-foyle-command.mp4" type="video/mp4" />
+  <source src="/videos/runme-foyle-command.mp4" type="video/mp4" />
 </video>
 
 ### Generate Output Based on Previous Command

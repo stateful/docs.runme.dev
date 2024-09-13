@@ -45,10 +45,10 @@ After clicking the _"Open with Runme"_ badge or cloning into the repo what you s
 Write generic docs and notebooks using Runme's smart prompting. This is useful when you want to platform others. Per default, exported environment variables will trigger prompts for users to input values. If the export is declared without any quotes, Runme will prompt with the value as a message. With quoted values (no matter if single or double quotes), Runme will prompt with the value as a placeholder value for confirmation.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/prompting.mp4" type="video/mp4" />
-  <source src="../static/videos/prompting.mp4" type="video/mp4" />
-  <source src="videos/prompting.webm" type="video/webm" />
-  <source src="../static/videos/prompting.webm" type="video/webm" />
+  <source src="/videos/prompting.mp4" type="video/mp4" />
+  <source src="/videos/prompting.mp4" type="video/mp4" />
+  <source src="/videos/prompting.webm" type="video/webm" />
+  <source src="/videos/prompting.webm" type="video/webm" />
 </video>
 <br/>
 
@@ -71,10 +71,10 @@ Runme, unlike [Jupyter](https://jupyter.org/), does not allow block-scope variab
 Outside of that, you can reference cells in two ways. This is particularly useful when different languages (Bash/Shell, Python, Ruby, PHP, etc.) are used in different cells.
 
 <video autoPlay loop muted playsInline controls>
-  <source src="videos/referencing.mp4" type="video/mp4" />
-  <source src="../static/videos/referencing.mp4" type="video/mp4" />
-  <source src="videos/referencing.webm" type="video/webm" />
-  <source src="../static/videos/referencing.webm" type="video/webm" />
+  <source src="/videos/referencing.mp4" type="video/mp4" />
+  <source src="/videos/referencing.mp4" type="video/mp4" />
+  <source src="/videos/referencing.webm" type="video/webm" />
+  <source src="/videos/referencing.webm" type="video/webm" />
 </video>
 <br/>
 

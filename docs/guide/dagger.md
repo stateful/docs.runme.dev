@@ -122,9 +122,9 @@ This interactive interface makes the execution of complex pipelines easy and eli
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-dagger-output.mp4" type="video/mp4" />
-  <source src="../../static/videos/runme-dagger-output.mp4" type="video/mp4" />
+  <source src="/videos/runme-dagger-output.mp4" type="video/mp4" />
   <source src="/videos/runme-dagger-output.webm" type="video/webm" />
-  <source src="../../static/videos/runme-dagger-output.webm" type="video/webm" />
+  <source src="/videos/runme-dagger-output.webm" type="video/webm" />
 </video>
 <br/>
 
@@ -136,9 +136,9 @@ If you have a Markdown file with your dagger pipeline commands written, you can 
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-dagger-demo.mp4" type="video/mp4" />
-  <source src="../../static/videos/runme-dagger-demo.mp4" type="video/mp4" />
+  <source src="/videos/runme-dagger-demo.mp4" type="video/mp4" />
   <source src="/videos/runme-dagger-demo.webm" type="video/webm" />
-  <source src="../../static/videos/runme-dagger-demo.webm" type="video/webm" />
+  <source src="/videos/runme-dagger-demo.webm" type="video/webm" />
 </video>
 <br/>
 
@@ -146,9 +146,9 @@ You can also run individual cells using the names of the cells or select them in
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-tui-dagger.mp4" type="video/mp4" />
-  <source src="../../static/videos/runme-tui-dagger.mp4" type="video/mp4" />
+  <source src="/videos/runme-tui-dagger.mp4" type="video/mp4" />
   <source src="/videos/runme-tui-dagger.webm" type="video/webm" />
-  <source src="../../static/videos/runme-tui-dagger.webm" type="video/webm" />
+  <source src="/videos/runme-tui-dagger.webm" type="video/webm" />
 </video>
 <br/>
 

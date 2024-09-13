@@ -133,7 +133,7 @@ This will load a table that will provide details of your project, such as contai
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
   <source src="/videos/runme-revision-cloudrun.webm" type="video/webm" />
-  <source src="../../../static/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
+  <source src="/videos/runme-revision-cloudrun.mp4" type="video/mp4" />
 </video>
 
 **Visualize and Download YAML**
