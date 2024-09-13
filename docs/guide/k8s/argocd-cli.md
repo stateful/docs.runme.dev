@@ -1,10 +1,4 @@
----
-runme:
-  id: 01J0QP74QNFG58ANB2DYKDGEZ6
-  version: v3
----
-
-# Advanced Guide to Argo CD and Runme
+# Argo CD advanced
 
 Our previous guide provided a detailed tutorial on [deploying and managing applications with ArgoCD and Runme.](https://docs.runme.dev/guide/agrocd)
 

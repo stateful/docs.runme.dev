@@ -1,10 +1,4 @@
----
-runme:
-  id: 01HX525D9GDAKP0662NXT98NWK
-  version: v3
----
-
-# How to Optimize Kubernetes Replicaset Using Runme
+# ReplicaSet
 
 This guide will show you a step-by-step guide to configure and deploy your Kubernetes ReplicaSets within your Runme Notebook.
 

@@ -1,10 +1,4 @@
----
-runme:
-  id: 01HX525D9FNAVSGJXVFHZA93FA
-  version: v3
----
-
-# Securing Kubernetes Secrets with Sealed Secrets and Runme
+# Sealed Secrets
 
 Runme provides a platform for documenting processes and instructions. It integrates swiftly with cloud infrastructures, including Kubernetes and its resources.
 
@@ -14,7 +8,7 @@ This guide will explore one such resource, Kubernetes secrets, with a specific f
 
 In this guide, we will demonstrate the steps required to encrypt Kubernetes secrets with sealed secrets in Runme successfully.
 
-## **Prerequisites**[](/guide/k8s-secret#prerequisites)
+## Prerequisites
 
 To get started, ensure you have the following:
 

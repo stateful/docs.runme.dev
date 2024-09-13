@@ -1,10 +1,4 @@
----
-runme:
-  id: 01HXCRQPTKTYCQX6WRQACB6F2M
-  version: v3
----
-
-# Deploying and Managing Applications with Runme and Argo CD
+# Argo CD
 
 In this guide, we will show you how to set up Argo CD and Runme to work together. We will also walk you through creating your first Runbook and explain how to use these tools to make software deployments easier and error-free.
 

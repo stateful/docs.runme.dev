@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# How to Automate Kubernetes Secrets Encryption with SOPS and Runme
+# SOPS
 
 In this guide, we will walk you through automating your [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) encryption with Runme to ensure your encryption and decryption processes are automated and properly documented to improve your secret management.
 

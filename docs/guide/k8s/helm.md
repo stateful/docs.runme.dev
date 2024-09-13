@@ -1,14 +1,8 @@
----
-runme:
-  id: 01HX525D9FNAVSGJXVFBPTKS96
-  version: v3
----
-
-# How To Integrate Helm With Runme
+# Helm
 
 This guide demonstrates how Helm integrates with Runme to automate processes and reduce repetitive tasks.
 
-## **Prerequisite**
+## Prerequisite
 
 To follow up on this tutorial, ensure you have the following:
 
@@ -79,7 +73,7 @@ This command displays the release history for a specific Helm release named `ing
 
 Let’s dive deeper into more complex Helm configurations in your Markdown file with Runme.
 
-## **Creating A Helm Chart Within Your Runme Environment**
+## Creating A Helm Chart Within Your Runme Environment
 
 You can create your [helm chart](https://helm.sh/docs/intro/using_helm/#creating-your-own-charts) to suit your specific use case however, for this guide, we will be using a helm chart from the `helm repo`.
 
@@ -92,7 +86,7 @@ Runme is dynamically set. You can run the entire markdown file using the [Run al
   <source src="/videos/runme-section.webm" type="video/webm" />
 </video>
 
-## **Installing Helm Packages with Runme**
+## Installing Helm Packages with Runme
 
 The `helm install` command installs a Helm chart into your Kubernetes cluster. When you run `helm install`, specify the release name, the chart name (either local or from a repository), and any necessary configuration values or overrides. Helm fetches the specified chart from the repository (if not locally available) and installs it into your cluster, creating a new release.
 
@@ -114,7 +108,7 @@ This is a pictorial representation of the output in the Runme terminal.
 
 Now, you have successfully installed it with your Runme terminal:tada:
 
-## **Upgrading Helm Packages With Runme**
+## Upgrading Helm Packages With Runme
 
 After installing your Helm packages, you can upgrade them. The `helm upgrade` command upgrades a release to a new version of a chart or applies changes to an existing release. Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI.
 
@@ -138,7 +132,7 @@ If you ever want to uninstall the package, run the command below:
 helm uninstall ingress-nginx
 ```
 
-## **Implementing Helm Rollback**
+## Implementing Helm Rollback
 
 In your Runme notebook, you can revert to a specific historical version of a Helm release within your Kubernetes cluster. Use the `helm rollback` command alongside the release name and the revision number you want to deploy.
 
@@ -158,7 +152,7 @@ helm status ingress-nginx
 
 ![helm rollback](/img/guide-page/runme-helm-rollback.png)
 
-## **Retrieve Information with Runme**
+## Retrieve Information with Runme
 
 The `helm get` command in Helm retrieves information about a specific release or resource within a release. It provides various subcommands to fetch different information related to Helm releases.
 
@@ -178,7 +172,7 @@ To retrieve the release note associated with the package, run the command below
 helm get notes ingress-nginx
 ```
 
-## **Add Helm Plugin**
+## Add Helm Plugin
 
 Helm plugins are external tools or extensions that enhance the functionality of the Helm CLI. For this guide, we installed the `sops` plugin to use it encrypt our kubernetes secret.
 
