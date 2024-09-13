@@ -27,7 +27,7 @@
     },
     {
       "source": "/r/extension/gist",
-      "destination": "https://runme.dev/blog/runme-gist",
+      "destination": "https://docs.runme.dev/usage/runme-gist",
       "permanent": false
     },
     {
@@ -62,12 +62,12 @@
     },
     {
       "source": "/getting-started/faq",
-      "destination": "/faq",
+      "destination": "/resources/faq",
       "permanent": true
     },
     {
       "source": "/features",
-      "destination": "/getting-started/features",
+      "destination": "/getting-started",
       "permanent": true
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "source": "/Guide/devcontainer",
-      "destination": "/guide/devcontainer",
+      "destination": "/usage/devcontainers",
       "permanent": true
     },
     {
