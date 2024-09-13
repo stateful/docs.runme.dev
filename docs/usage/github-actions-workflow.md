@@ -1,9 +1,5 @@
 ---
-runme:
-  id: 01HX525D9R8HR6G41SQMB84YRE
-  version: v3
-sidebar_position: 5
-title: Runme CLI in Github Actions Workflows
+title: Github Actions Workflows
 ---
 
 # Runme CLI in Github Actions Workflows

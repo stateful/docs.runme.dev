@@ -22,7 +22,7 @@ runme open
 
 This command will automatically open Runme in your default web browser and set up a Runme `code-server`.
 
-![Runme for Web](../../static/img/runme-for-web.png)
+![Runme for Web](/img/runme-for-web.png)
 
 ## **Next Steps**
 

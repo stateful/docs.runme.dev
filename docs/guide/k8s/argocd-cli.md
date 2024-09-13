@@ -62,7 +62,7 @@ Run the command below to inspect the cluster to ensure it is running and healthy
 kubectl cluster-info — context kind-runme-argocd
 ```
 
-![Cluster health](../../static/img/guide-page/runme-cluster-healthy.png)
+![Cluster health](/img/guide-page/runme-cluster-healthy.png)
 
 To inspect namespaces, execute the command below
 
@@ -90,7 +90,7 @@ Get Argo CD Pods in the Argo CD namespace
 kubectl get po -n argocd
 ```
 
-![Agro CD pods](../../static/img/guide-page/runme-argo-pods.png)
+![Agro CD pods](/img/guide-page/runme-argo-pods.png)
 
 Port forwarding an Argo CD Server is a practical and secure way to access the Argo CD web UI for setup, development, and general use without exposing it to external networks.
 
@@ -100,7 +100,7 @@ To do this, run the command below. You can run your code cell as a [background 
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 
-![Background process](../../static/img/guide-page/runme-background-agrocdcli.png)
+![Background process](/img/guide-page/runme-background-agrocdcli.png)
 
 **Retrieve Initial Admin Password**
 
@@ -169,7 +169,7 @@ To check the status of your application, run the command below.
 argocd app get guestbook
 ```
 
-![argocd status](../../static/img/guide-page/Runme-argocd-status.png)
+![argocd status](/img/guide-page/Runme-argocd-status.png)
 
 ## **CLI Operations**
 
@@ -315,7 +315,7 @@ Run the command below to apply the application CRD you created in your YAML file
 kubectl apply -f sample-project.yaml
 ```
 
-![Deploy CRD](../../static/img/guide-page/Runme-argo-CRD.png)
+![Deploy CRD](/img/guide-page/Runme-argo-CRD.png)
 
 **Step Three: Configure a Plugin**
 

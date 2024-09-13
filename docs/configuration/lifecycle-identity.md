@@ -42,7 +42,7 @@ To update the Lifecycle Identity feature in Runme, follow these steps:
 - Navigate to Runme's [Extension Settings](https://docs.runme.dev/getting-started/vs-code#runme-settings-for-vs-code) on your [VS code](https://docs.runme.dev/install#runme-for-vs-code). Click on the **Settings** icon and select **Extension Settings**. The Runme extension can be found in the extension toolbar on the left side of your screen.
 - Next, choose the tracking level by selecting the document you wish to enable lifecycle identity tracking.
 
-![lifecycle-identity](../../static/img/lifecycle-identity1.png)
+![lifecycle-identity](/img/lifecycle-identity1.png)
 
 As shown in the image above, there are three levels of tracking available:
 
@@ -60,6 +60,6 @@ When a user saves the output of a cell or an entire Markdown file to the Runme C
 
 **Here is a breakdown**: Whenever a code is run, the output is stored in the same group as the previous, with the exact time of each run clearly stated. This chronological arrangement of each code provides a comprehensive view of the code's changes and performance over time.
 
-![cell-grouping](../../static/img/cell-run-grouping.png)
+![cell-grouping](/img/cell-run-grouping.png)
 
 Cell grouping is not just a simple collection of executed commands in a cell or document but it is an organized, time-stamped record of each run.

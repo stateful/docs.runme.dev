@@ -30,7 +30,7 @@ Create a `README.md` file and open it in your VS Code. If you already have the f
 **Step 2: Activate Auto-Save**
 As part of the requirements to generate a gist, you need to activate the [auto-save feature](/usage/auto-save) of Runme. This ensures your outputs are saved automatically without manual intervention.
 
-![runme gist Autosave ](../../static/img/configuration-page/runme-gist-autosave.png)
+![runme gist Autosave ](/img/configuration-page/runme-gist-autosave.png)
 
 **Step 3: Run Cells**
 
@@ -42,7 +42,7 @@ Session Output is a Runme feature that stores your generated cell outputs in a s
 
 To view your Session Output, click “Sessions Outputs” to inspect the locally recorded session. Alternatively, you can find it on the left-hand side of your VS Code right inside your current working directory.
 
-![Runme gist session output](../../static/img/configuration-page/runme-gist-sessionoutput.png)
+![Runme gist session output](/img/configuration-page/runme-gist-sessionoutput.png)
 
 The Session Outputs feature is only available when the autosave is enabled and the Runme cell is run.
 
@@ -57,15 +57,15 @@ Follow the steps below to add this setting:
 - In your VS Code extension dashboard, search for Runme.
 - Click on the settings Icon in the Runme extension. A small dashboard will pop up. Next, click on Extension Settings.
 
-![Runme setting](../../static/img/configuration-page/runme-extension.png)
+![Runme setting](/img/configuration-page/runme-extension.png)
 
 - In the search bar, type Mask, and you will see the feature. By default, it is set to true, but you can unselect this option if you wish.
 
-![Mask outputs](../../static/img/configuration-page/runme-mask-outputs.png)
+![Mask outputs](/img/configuration-page/runme-mask-outputs.png)
 
 Alternatively, if you want to unmask only a particular session output, you can toggle the “Mask and Unmask” feature at the top of your Session Outputs file.
 
-![Runme gist unmask](../../static/img/configuration-page/runme-gist-unmask.png)
+![Runme gist unmask](/img/configuration-page/runme-gist-unmask.png)
 
 ## **Creating and Managing Gist with Runme using Secret Gists**
 
@@ -75,7 +75,7 @@ GitHub Gist is a service provided by GitHub that allows users to share code snip
 
 You can generate a Gist for your entire Markdown file. To do this, in your Session Outputs file, click on ‘Generate Gist’.
 
-![Runme gist](../../static/img/configuration-page/runme-gist.png)
+![Runme gist](/img/configuration-page/runme-gist.png)
 
 Runme will first prompt you to log into your GitHub account and grant write access to your Gist. After a successful login, a notification containing a link to the Runme Gist hosted on your GitHub will be displayed. The link is generated as a “Secret Gist,” which will stay private as long as you keep it private. Ensure you secure the link cautiously before pushing your sessions to GitHub Gist.
 
@@ -94,7 +94,7 @@ Here is a video that showcases how to generate Runme Gist for your entire Markdo
 
 Alternatively to generating Gist for the entire Markdown file, you can generate gist for each cell in your Markdown file. To do this, in your Session Outputs file, navigate to the cell you want to be generated as a gist and click on ‘Generate Gist’.
 
-![Gist per cell](../../static/img/configuration-page/BashScript-Docker.png)
+![Gist per cell](/img/configuration-page/BashScript-Docker.png)
 
 Congratulations! You have successfully learned how to use the Runme Gist feature.
 

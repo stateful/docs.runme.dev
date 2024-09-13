@@ -1,16 +1,8 @@
 ---
-runme:
-  id: 01HX525D9HYD6QHP138CDZRC1D
-  version: v3
+sidebar_position: 4
 ---
 
-# Infrastructure Automation With Terraform Using Runme
-
-As a cloud infrastructure engineer imagine you are responsible for managing the infrastructure of a web application that runs in multiple environments this includes, development, staging, and production. This infrastructure is defined using Terraform. However, you are faced with a specific configuration challenge where each environment has specific configuration requirements in addition your team needs visibility during the application deployment process.
-
-**_This is where Runme comes in!_**
-
-Runme provides you with an interactive runbook where you can easily complete step-by-step instructions, execute runnable stables for operational docs, and through saved provide visibility to other team members.
+#  Terraform
 
 In this guide, we will help you understand how to set Terraform to create an EC2 instance on AWS and run this instance using Runme
 
@@ -74,7 +66,7 @@ To begin, first create a `.md` file within your project directory. With Runme in
 
 In your Markdown file, creating a code block to execute your command.
 
-![start terraform code](../../static/img/guide-page/runm-terraform-code.png)
+![start terraform code](/img/guide-page/runm-terraform-code.png)
 
 Add your code to initialize Terraform
 
@@ -84,7 +76,7 @@ terraform init
 
 Run the above command to initialize your Terraform configuration
 
-![terraform init](../../static/img/guide-page/terrraform-init.png)
+![terraform init](/img/guide-page/terrraform-init.png)
 
 This command initializes your working directory and downloads the necessary providers.
 
@@ -98,7 +90,7 @@ terraform plan
 
 You should get a similar output:
 
-![terraform plan](../../static/img/guide-page/terraform-plan.png)
+![terraform plan](/img/guide-page/terraform-plan.png)
 
 Once this is thoroughly checked for errors or misconfiguration, you can apply the changes to create the EC2 instance.
 
@@ -108,7 +100,7 @@ terraform apply
 
 Output:
 
-![terraform](../../static/img/guide-page/terrraform-apply.png)
+![terraform](/img/guide-page/terrraform-apply.png)
 
 Terraform will prompt you to confirm the changes. Type `yes` and press Enter. Once the apply process is complete, you can go to the AWS Management Console to verify that your EC2 instance has been created.
 
@@ -118,7 +110,7 @@ Runme allows you to save your output throughout your deployment process. Whether
 This saved output is automatically stored in a new file which is created by default, so you can easily reference it at any time.
 To use this feature, just toggle the "Autosave" option at the top of your code editor in your Markdown file to turn “on” or “off”. It's that simple!
 
-![auto save](../../static/img/guide-page/runme-autosave.png)
+![auto save](/img/guide-page/runme-autosave.png)
 
 Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save](/usage/auto-save.md) feature for more information.
 
@@ -136,7 +128,7 @@ This command will prompt you to confirm the destruction of resources. Type `yes`
 
 Within your code cell you can set the directory structure of where you want your executable command to be initiated from
 
-![terraform structure](../../static/img/terraform-structure.png)
+![terraform structure](/img/terraform-structure.png)
 
 - Create workspace for production and staging:
 

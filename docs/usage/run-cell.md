@@ -14,7 +14,7 @@ This is what Notebooks are all about, running commands (which combined with conf
 - Navigate to the specific cell you wish to run
 - Click the **Run** icon on the left side of the code block
 
-![cell-level](../../static/img/configuration-page/cell-level-npm-install.png)
+![cell-level](/img/configuration-page/cell-level-npm-install.png)
 
 This action will run your command and return an executed output, you can configure how your cell should run using the configuration options.
 

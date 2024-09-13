@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# Setup Cloud Native Mesh with Runme
+# Istio Service Mesh
 
 Runme interactive notebook is designed to help you execute and document your daily automation tasks.
 
@@ -95,7 +95,7 @@ You can use the `istioctl` command to install Istio. There are different profile
 istioctl install --set profile=demo
 ```
 
-![set profile](../../static/img/guide-page/runme-istioctl.png)
+![set profile](/img/guide-page/runme-istioctl.png)
 
 To verify the installation of Istio, run the command below:
 
@@ -103,7 +103,7 @@ To verify the installation of Istio, run the command below:
 istioctl verify-install
 ```
 
-![istio installed](../../static/img/guide-page/runme-verofy-istiocli-install.png)
+![istio installed](/img/guide-page/runme-verofy-istiocli-install.png)
 
 ## Verify Istio Components[](/guide/servicemesh#verify-installation)
 
@@ -113,7 +113,7 @@ Ensure all Istio components are running correctly.
 kubectl get pods -n istio-system
 ```
 
-![get istio-system pods](../../static/img/guide-page/runme-istio-pod.png)
+![get istio-system pods](/img/guide-page/runme-istio-pod.png)
 
 You should see pods for `istiod`, `istio-ingressgateway`, and other components.
 
@@ -125,7 +125,7 @@ After complete verification of all Istio components, you need to label the names
 kubectl label namespace <your-namespace> istio-injection=enabled
 ```
 
-![label namespace](../../static/img/guide-page/runme-label-ns.png)
+![label namespace](/img/guide-page/runme-label-ns.png)
 
 Be sure to replace `your-namespace` with the name of the namespace where Istio is running.
 
@@ -139,7 +139,7 @@ To achieve this, run the command below.
 kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 ```
 
-![bookinfo](../../static/img/guide-page/runme-bookinfo.png)
+![bookinfo](/img/guide-page/runme-bookinfo.png)
 
 Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
@@ -151,7 +151,7 @@ After deploying your sample application, the next step is to expose the applicat
 kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 ```
 
-![gateway](../../static/img/guide-page/runme-bookinfo-gateway.png)
+![gateway](/img/guide-page/runme-bookinfo-gateway.png)
 
 [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) here to set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
@@ -169,7 +169,7 @@ If you would want to analyze the entire cluster, run the command below.
   istioctl analyze
 ```
 
-![istioctl](../../static/img/guide-page/runme-istioctl-analyze.png)
+![istioctl](/img/guide-page/runme-istioctl-analyze.png)
 
 [](/guide/servicemesh#additional-configuration)
 
@@ -202,7 +202,7 @@ Next, run this command.
 kubectl apply -f runme-virtual-service-reviews-v1.yaml
 ```
 
-![virtualservice](../../static/img/guide-page/runme-virtual-service-reviews.png)
+![virtualservice](/img/guide-page/runme-virtual-service-reviews.png)
 
 **Set Up Destination Rules**
 
@@ -236,7 +236,7 @@ Now, apply the configuration by executing the command below:
 kubectl apply -f destination-rule-reviews.yaml
 ```
 
-![destinatio-rule-review](../../static/img/guide-page/runme-destination-rule.png)
+![destinatio-rule-review](/img/guide-page/runme-destination-rule.png)
 
 **Implementing Traffic Shifting**
 
@@ -273,7 +273,7 @@ Now, apply the configuration by executing the command below:
 kubectl apply -f runme-virtual-service-reviews-shifting.yaml
 ```
 
-![runme-virtual-service-reviews-shifting](../../static/img/guide-page/runme-virtual-service-reviews-shifting.png)
+![runme-virtual-service-reviews-shifting](/img/guide-page/runme-virtual-service-reviews-shifting.png)
 
 **Testing the Configuration**
 
@@ -309,7 +309,7 @@ Apply the configuration:
 kubectl apply -f peer-authentication.yaml
 ```
 
-![peer-auth](../../static/img/guide-page/runme-instio-security.png)
+![peer-auth](/img/guide-page/runme-instio-security.png)
 
 ## Observability[](/guide/servicemesh#observability)
 
@@ -321,7 +321,7 @@ Run this command to do that.
 kubectl apply -f samples/addons
 ```
 
-![runme-sample-addons](../../static/img/guide-page/runme-samples-addons.png)
+![runme-sample-addons](/img/guide-page/runme-samples-addons.png)
 
 Using the [Runme cwd feature](../configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 

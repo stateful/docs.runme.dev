@@ -48,7 +48,7 @@ This will load and open Runme in your default web browser and set up a Runme `co
 
 Now, create a `README.md` file and run the following sections below inside the code cell one after the other.
 
-![run-web](../../../static/img/Integration/runme-web.png)
+![run-web](/img/integration/runme-web.png)
 
 - **Install Google Cloud SDK**
 
@@ -93,7 +93,7 @@ echo "PROJECT_ID set to $PROJECT_ID"
 
 This is how the prompt looks like.
 
-![prompt](../../../static/img/Integration/runme-set-var.png)
+![prompt](/img/integration/runme-set-var.png)
 
 **Specify the Project for Visualization**
 
@@ -106,7 +106,7 @@ https://console.cloud.google.com/run?project=$PROJECT_ID
 In this example, `runme-ci` is the project ID.
 Once the operation is successful, you will receive a table displaying your Google Cloud Console page, similar to the one below.
 
-![cloud run dashboard](../../../static/img/Integration/runme-web-console.png)
+![cloud run dashboard](/img/integration/runme-web-console.png)
 
 If you would love to view the logs of a particular project under the `actions` section, click the icon beside `Revisons`. This will take you to the log page of your console, where you can view the logs.
 
@@ -118,15 +118,15 @@ Runme Notebook Cloud Renderers makes accessing and managing the details of your 
 
 To get the revision of a project, click the Revisions icon beside the project name, as indicated in the image below.
 
-![Get revision](../../../static/img/Integration/runme-web-revisions.png)
+![Get revision](/img/integration/runme-web-revisions.png)
 
 This will create a new code cell to run automatically and display a table with your project revisions.
 
-![project revision](../../../static/img/Integration/runme-web-cloud-run.png)
+![project revision](/img/integration/runme-web-cloud-run.png)
 
 To view more details about your project, click the `Details` icon beside the project name.
 
-![Detail project](../../../static/img/Integration/runme-web-cloudrun-details.png)
+![Detail project](/img/integration/runme-web-cloudrun-details.png)
 
 This will load a table that will provide details of your project, such as containers, volumes, storage, network, security, and YAML.
 
@@ -141,23 +141,23 @@ This will load a table that will provide details of your project, such as contai
 Once you have gotten the details of your revision, navigate to the section on YAML.
 You will find two gcloud commands, `Visualize` and `Download`.
 
-![Visualize and Download YAML](../../../static/img/Integration/runme-web-cloud-run-yaml.png)
+![Visualize and Download YAML](/img/integration/runme-web-cloud-run-yaml.png)
 
 To visualize the project YAML configurations, click Run under the visualize section.
 
-![visualize yaml](../../../static/img/Integration/runme-web-cloud-run-visualize.png)
+![visualize yaml](/img/integration/runme-web-cloud-run-visualize.png)
 
 This will add a new code block, which will run automatically to visualize your YAML configuration in Runme’s terminal.
 
-![cat yaml file cloud run](../../../static/img/Integration/runme-web-cloud-run-visualize-terminal.png)
+![cat yaml file cloud run](/img/integration/runme-web-cloud-run-visualize-terminal.png)
 
 On the other hand, to download the project YAML configurations, click `Run` under the download section.
 
-![download yaml](../../../static/img/Integration/runme-web-download-yaml.png)
+![download yaml](/img/integration/runme-web-download-yaml.png)
 
 This will add a new code block that automatically downloads your YAML configuration. Once that is successful, the terminal will show that the operation has been completed, and the `.yaml` will be added to your current directory.
 
-![download yaml](../../../static/img/Integration/runme-web-cloud-run-download-yaml.png)
+![download yaml](/img/integration/runme-web-cloud-run-download-yaml.png)
 
 ## Feedback and Contribution
 

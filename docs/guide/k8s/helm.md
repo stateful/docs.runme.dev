@@ -110,7 +110,7 @@ helm status ingress-nginx
 
 This is a pictorial representation of the output in the Runme terminal.
 
-![helm status](../../static/img/guide-page/runme-helm-status.png)
+![helm status](/img/guide-page/runme-helm-status.png)
 
 Now, you have successfully installed it with your Runme terminal:tada:
 
@@ -156,7 +156,7 @@ helm rollback ingress-nginx 1
 helm status ingress-nginx
 ```
 
-![helm rollback](../../static/img/guide-page/runme-helm-rollback.png)
+![helm rollback](/img/guide-page/runme-helm-rollback.png)
 
 ## **Retrieve Information with Runme**
 
@@ -170,7 +170,7 @@ helm get manifest ingress-nginx
 
 When the command is executed successfully, this is the output.
 
-![helm get manifest](../../static/img/guide-page/helm-get.png)
+![helm get manifest](/img/guide-page/helm-get.png)
 
 To retrieve the release note associated with the package, run the command below
 
@@ -202,6 +202,6 @@ helm secrets encrypt secrets.yaml > sops-secrets.yaml
 
 This command encrypts the file secrets.yaml using the helm-secrets plugin and write the encrypted content to a new file sops-secrets.yaml . Here is the pictorial representation of the commands when executed individually in your Runme cell.
 
-![runme-plugins](../../static/img/guide-page/runme-helm-plugins.png)
+![runme-plugins](/img/guide-page/runme-helm-plugins.png)
 
 In addition to creating a runbook to improve your documentation and automate repetitive tasks, Runme offers you an interactive environment to carry out these operations. Runme is power-packed with configuration tools to improve your process. Explore the [Runme configuration](../configuration) guide for configuration options.

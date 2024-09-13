@@ -85,7 +85,7 @@ The base command for the Runme CLI is runme. For example, to run an interactive 
 runme
 ```
 
-![Runme TUI Usage](../../static/img/runme-tui.gif)
+![Runme TUI Usage](/img/runme-tui.gif)
 
 ### Proximity in Directory Tree
 
@@ -98,7 +98,7 @@ For example, if you have two files with deploy commands:
 
 Since `./CONTRIBUTING.md` is in the root directory and `./examples/README.md` is nested deeper within the `examples` folder, the command in `./CONTRIBUTING.md` will appear higher in the terminal UI compared to the command in `./examples/README.md`.
 
-![proximity in directory tree ](../../static/img/how-runme-works/runme-cli-ptd.png)
+![proximity in directory tree ](/img/how-runme-works/runme-cli-ptd.png)
 
 This structure helps prioritize commands that are closer to the top-level directory, making them more accessible and easier to use in the Interactive Terminal UI.
 
@@ -112,7 +112,7 @@ runme list
 
 This command also lets you view all the code blocks in every Markdown file in your directory.
 
-![runme list](../../static/img/how-runme-works/runme-cli-lists.png)
+![runme list](/img/how-runme-works/runme-cli-lists.png)
 
 ### Navigating to a Specific File
 
@@ -124,7 +124,7 @@ runme ls --filename ../../README.md
 
 This command returns all code blocks in the specified Markdown file.
 
-![navigating specific file](../../static/img/how-runme-works/runme-cli-singlefile.png)
+![navigating specific file](/img/how-runme-works/runme-cli-singlefile.png)
 
 By default, Runme will try to open a `Readme.md` file in your current work directory but you can modify this by using the `filename` and `chdir` flags, e.g.:
 
@@ -140,7 +140,7 @@ You have the option to name your code blocks. Unlike the Runme Notebook UX, the 
 
 The highlighted code block in the image below is an unnamed code block.
 
-![runme cli ](../../static/img/how-runme-works/runme-cli-list.png)
+![runme cli ](/img/how-runme-works/runme-cli-list.png)
 
 ## **Running Scripts**
 
@@ -158,7 +158,7 @@ runme run [name of code block]
 
 This will run your code block and return the output to your terminal.
 
-![run code block](../../static/img/how-runme-works/runme-cli-run.png)
+![run code block](/img/how-runme-works/runme-cli-run.png)
 
 **Run all Code Blocks in Your Directory**
 
@@ -170,7 +170,7 @@ runme run --all --allow-unnamed --skip-prompts
 
 This command will run all code block cells, including unnamed ones, and skip the prompts.
 
-imag![skip prompts](../../static/img/how-runme-works/runme-cli-unnamed-prompt.png)
+imag![skip prompts](/img/how-runme-works/runme-cli-unnamed-prompt.png)
 
 Alternatively, you can run only named cells and skip prompts using the command below:
 
@@ -190,7 +190,7 @@ runme run --all --allow-unnamed --skip-prompts --filename=Readme2.md
 
 This will run all code block cells in the Markdown file, including the unnamed cells, and also skip prompts.
 
-![skip prompts](../../static/img/how-runme-works/runme-cli-skip-prompt.png)
+![skip prompts](/img/how-runme-works/runme-cli-skip-prompt.png)
 
 Alternatively, you can run only named cells in the file. To do that, run the command below.
 
@@ -206,7 +206,7 @@ runme open
 
 This command opens Runme in your web browser.
 
-![web browser](../../static/img/how-runme-works/runme-cli-notebook.png)
+![web browser](/img/how-runme-works/runme-cli-notebook.png)
 
 ## Additional Resources
 

@@ -49,7 +49,7 @@ cd Vsc
 touch example.txt
 ```
 
-![ssh with Vsc](../../static/img/how-runme-works/runme-via-ssh.png)
+![ssh with Vsc](/img/how-runme-works/runme-via-ssh.png)
 
 ## **Key-Based Authentication**
 
@@ -109,4 +109,4 @@ ssh user@host 'bash /path/on/remote/server/script.sh'
 
 **_This is an example of running bash script in a server._**
 
-![Bash](../../static/img/how-runme-works/ssh-remote-server.png)
+![Bash](/img/how-runme-works/ssh-remote-server.png)

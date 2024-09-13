@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# Running Runme in a DevContainer
+# Runme in a DevContainer
 
 ## **Creating your development container**
 
@@ -29,13 +29,13 @@ If you haven’t installed this yet you should [install it now](https://code.vis
 
 In your VS Code, navigate to the extension view by clicking on the **Extensions Icon** in the Activity bar on the side of the window. Search for **Dev Containers**  and install the extension.
 
-![dev container installation](../../static/img/guide-page/runme-dev-container.png)
+![dev container installation](/img/guide-page/runme-dev-container.png)
 
 3. In your VS Code project, create a Dev Container Configuration
 
 On the bottom left of your Code editot, click the **Remote container** icon.
 
-![remote icon](../../static/img/remote-container-icon.png)
+![remote icon](/img/remote-container-icon.png)
 
 - When prompted on the new view that gets displayed, click on **Reopen in Container**.
 - A new view will open to enable you to add dev container configuration files.
@@ -46,7 +46,7 @@ Your system will first add the Dev container configuration files and start the D
 
 Once these steps are complete, your `.devcontainer`, `devcontainer.json`, and `.github` directories will be created, as displayed in the image below.
 
-![runme-calculator](../../static/img/guide-page/explorer.png)
+![runme-calculator](/img/guide-page/explorer.png)
 
 4. Run Your App:
 
@@ -60,7 +60,7 @@ python calculator.py
 
 This will execute your Python app within the dev container.
 
-![python app](../../static/img/guide-page/terminal-runme.png)
+![python app](/img/guide-page/terminal-runme.png)
 
 **Note:**
 
@@ -79,7 +79,7 @@ Runme works perfectly  to automate processes and conduct development operations
 - Click on the **+Code** icon and type in your code script.
 - Click on the **Remote Container** icon on the bottom left of your VS Code.
 
-![remote icon](../../static/img/remote-container-icon.png)
+![remote icon](/img/remote-container-icon.png)
 
 Now a new view opens that prompts you to select and open a remote window.
 
@@ -95,22 +95,22 @@ You must take it back to a Runme setting to enable you to run your code with Run
 - Go to the extensions page and search for Runme.
 - Click on the Runme extension and click on the **Install in Dev container**
 
-![install dev container](../../static/img/guide-page/runme-dev-container-desktop.png)
+![install dev container](/img/guide-page/runme-dev-container-desktop.png)
 
 - Once it is installed, go back to your README.md file, and you will see your code in Runme format.
 - Click on **Select Cell Language Mode** and configure it to the programming language of your script.
 
-![set shebang](../../static/img/guide-page/runme-python-terminal.png)
+![set shebang](/img/guide-page/runme-python-terminal.png)
 
 - Now click the **Run** icon and view your output on the Runme terminal.
 
-![ouput](../../static/img/guide-page/runme-terminal-devcontainer.png)
+![ouput](/img/guide-page/runme-terminal-devcontainer.png)
 
 ## **Other Features**
 
 Some other actions that can be performed in your Dev container include cloning repository, configuring container features, exploring a volume, etc. The image below shows you a non-exhaustive list of some of these actions.
 
-![output dev container](../../static/img/devcontainer-output.png)
+![output dev container](/img/devcontainer-output.png)
 
 ## **Conclusion**
 

@@ -25,7 +25,7 @@ Before proceeding with the integration of Shebang in [Runme](https://docs.runme.
 
 Alternatively, if you would love to run your code using your specified interpreter version, you can achieve that using the custom interpreter feature. This allows you to configure the environment for running code directly within your editor, making your coding experience much smoother and easier.
 
-![shebang-language-mood](../../static/img/shebang-language-mood.png)
+![shebang-language-mood](/img/shebang-language-mood.png)
 
 Follow the steps below to set up the Shebang custom interpreter in VS Code:
 
@@ -34,7 +34,7 @@ Follow the steps below to set up the Shebang custom interpreter in VS Code:
 3. Click on **Advanced**
 4. Set the path to the system interpreter of your choice.
 
-![shebang-interpreter](../../static/img/shebang-interpreters.png)
+![shebang-interpreter](/img/shebang-interpreters.png)
 
 5. Close the modular
 6. Execute the Runme command:
@@ -44,7 +44,7 @@ Follow the steps below to set up the Shebang custom interpreter in VS Code:
 runme
 ```
 
-![shebang-output](../../static/img/shebang-outputt.png)
+![shebang-output](/img/shebang-outputt.png)
 
 ## **Examples of Shebang Lines for Different Languages**
 

@@ -42,7 +42,7 @@ kubectl apply -f manifest.yaml
 
 When this command is successfully executed in Runme, this is the output.
 
-![apply-manifest](../../static/img/guide-page/runme-apply-manifests.png)
+![apply-manifest](/img/guide-page/runme-apply-manifests.png)
 
 With this command, you can create the resources for ReplicaSets based on the definitions provided in the file.
 
@@ -66,7 +66,7 @@ kubectl describe replicaset my-replicaset
 
 When these commands are executed successfully, these are the output.
 
-![replicasets](../../static/img/guide-page/runme-gets-replica.png)
+![replicasets](/img/guide-page/runme-gets-replica.png)
 
 **Scale the Number of Replicas in a ReplicaSet**
 
@@ -86,7 +86,7 @@ kubectl scale replicaset my-replicaset --replicas=2
 
 Remember to change the numbering to the one of your choice. When the command is executed, Runme displays a confirmation message indicating that the ReplicaSet has been scaled just like the image below.
 
-![number-replica](../../static/img/guide-page/runme-get-scales.png)
+![number-replica](/img/guide-page/runme-get-scales.png)
 
 **Get Logs From a Specific Pod in a ReplicaSet**
 
@@ -104,7 +104,7 @@ Replace `my-replicaset-c4mr5` with the name of your pod.
 
 When this command is executed, Runme returns logs about the specific Pod. This information can be used to debug or troubleshoot a pod.
 
-![replica-log](../../static/img/guide-page/runme-replica-logss.png)
+![replica-log](/img/guide-page/runme-replica-logss.png)
 
 When this command is executed, Runme returns logs about the specific pod. This information can be used to debug or troubleshoot a pod. As provided in the image above
 
@@ -163,7 +163,7 @@ In your Runme Cell, run the command below.
 kubectl apply -f nginx-deployment.yaml
 ```
 
-![update-manifest](../../static/img/guide-page/runme-pod-updates.png)
+![update-manifest](/img/guide-page/runme-pod-updates.png)
 
 This will update your deployment with the defined ReplicaSet.
 
@@ -175,7 +175,7 @@ ReplicaSet ensures that the specified number of identical pods are running at al
 kubectl delete pod nginx-deployment-7c79c4bf97-l24tp -n runme
 ```
 
-![delete pod](../../static/img/guide-page/runme-deletes-pod.png)
+![delete pod](/img/guide-page/runme-deletes-pod.png)
 
 **Step Four: View Kubernetes Events in your Runme terminal**
 
@@ -185,7 +185,7 @@ In Kubernetes, events are records of various occurrences and state changes withi
 kubectl get events -n runme
 ```
 
-![pod events](../../static/img/guide-page/runme-pods-event.png)
+![pod events](/img/guide-page/runme-pods-event.png)
 
 **Step Five: Get Logs From a Specific Pod in the ReplicaSet**
 
@@ -195,7 +195,7 @@ You can get logs from a specific pod in your ReplicaSet. To get logs from a spec
 kubectl logs -f pod/nginx-deployment-7c79c4bf97-cslps -n runme
 ```
 
-![pod logs](../../static/img/guide-page/runme-pod-logs.png)
+![pod logs](/img/guide-page/runme-pod-logs.png)
 
 This command can be useful for troubleshooting issues or monitoring the activity of a specific pod within your Kubernetes cluster.
 

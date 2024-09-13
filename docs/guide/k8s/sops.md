@@ -44,7 +44,7 @@ aws configure
 
 Here is a pictorial representation of the command in Runme and the corresponding output when it is successfully executed.
 
-![pre-requiste](../../static/img/guide-page/prerequiste-sops.png)
+![pre-requiste](/img/guide-page/prerequiste-sops.png)
 
 Finally, configure the installed AWS CLI in your Runme Terminal.
 
@@ -76,7 +76,7 @@ aws kms create-alias --alias-name "alias/$alias" --target-key-id $keyid
 
 This command will prompt you to input a value for `alias` and create a KMS key. It will filter the output only to show the key ID and turn it into an environment variable called `keyid`. Once you run this command, you will get an output similar to the one in the image below.
 
-![kms](../../static/img/guide-page/kms-key-runme.png)
+![kms](/img/guide-page/kms-key-runme.png)
 
 You can also save this output to the Runme cloud for future use with the [Runme auto-save](https://docs.runme.dev/configuration/auto-save) feature.
 
@@ -98,7 +98,7 @@ cat ~/.sops.yaml
 
 Once this is executed, it returns the configuration of your sops.yaml file to ensure that it is correct, as shown in the image below.
 
-![sops](../../static/img/guide-page/configure-sops-runme.png)
+![sops](/img/guide-page/configure-sops-runme.png)
 
 ### **Encrypt Your Secrets**[](/guide/k8s-secret#encrypt-your-secrets)
 
@@ -134,7 +134,7 @@ sops --decrypt --kms arn:aws:kms:${region}:${accountid}:key/${keyid} --encryptio
 
 Here is a pictorial representation on what happens when you decrypt your secrets within your Runme cell.
 
-![decrypt](../../static/img/guide-page/runme-decrypts.png)
+![decrypt](/img/guide-page/runme-decrypts.png)
 
 When you decrypt the secret, it moves the decrypted secrets from a SOPS-encrypted secret `runtime-secrets-enc.yaml` into the original version before it was encrypted `runme-secrets.yaml`
 
@@ -146,7 +146,7 @@ To apply the encrypted secrets in your `runme-secrets-enc.yaml` file, run the co
 sops -d runme-secrets-enc.yaml | kubectl apply -f -
 ```
 
-![apply](../../static/img/guide-page/secrets-apply-runme.png)
+![apply](/img/guide-page/secrets-apply-runme.png)
 
 This runs the `runme-secrets-enc.yaml` file decrypts it and then applies the file.
 

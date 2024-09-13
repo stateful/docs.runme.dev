@@ -19,7 +19,7 @@ To get started, follow the steps below:
 3. In your search bar, type "Runme". This will display the Runme Notebook extension.
 4. Now click on Install to install the Notebook extension
 
-![install runme gif](../../static/img/install.gif)
+![install runme gif](/img/install.gif)
 
 ## Installing Runme From the VS Code Marketplace
 
@@ -28,7 +28,7 @@ Alternatively, you can install Runme from the [VS Code Marketplace](https://mark
 1. Go to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme)
 2. Next, click on the **`Install`** button.
 
-![VS Code Marketplace](../../static/img/installation-page/VSCodemarketplace.png)
+![VS Code Marketplace](/img/installation-page/VSCodemarketplace.png)
 
 You have successfully installed Runme! 🎉
 
@@ -40,7 +40,7 @@ After successfully installing Runme on your VS Code, you can open any Markdown f
 
 Below is a full display of Runme’s action on a Markdown file in VS Code.
 
-![VS Code Marketplace](../../static/img/installation-page/runme-for-vscode.png)
+![VS Code Marketplace](/img/installation-page/runme-for-vscode.png)
 
 1. **Notebooks Explorer:** You can easily access all your Markdown files using the Notebook Explorer. This will display all Markdown files existing in your project directory.
 2. **Cell Execution Status Indicator:** When a code block is executed, the status indicator displays an icon that indicates the status of the executed code. If the code fails, an “X” symbol is returned, indicating failure; however, if the code is successfully run, a symbol, as seen in the image above, is displayed.
@@ -62,7 +62,7 @@ We believe that at this point, you have become a fan of Runme. If you want to ma
 
 Here is a visual representation of these steps:
 
-![Find runme in vs code](../../static/img/switch-notebook-viewers.gif)
+![Find runme in vs code](/img/switch-notebook-viewers.gif)
 
 Alternatively, set the following in your .vscode/settings.json file of your project:
 
@@ -85,7 +85,7 @@ Are you a curious developer who loves trying out new things? Runme has a pre-rel
 
 If you don't see this option, make sure your VS Code is updated to at least version `1.63.0`.
 
-![Find runme in VS Codet](../../static/img/bleed-edge-feature.png)
+![Find runme in VS Codet](/img/bleed-edge-feature.png)
 
 ### How Runme Works in VS Code
 

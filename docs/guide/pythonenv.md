@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# How to Integrate Python Virtual Environment with Runme
+# Python venvs
 
 This section will walk you through creating Python virtual environments in your Markdown file using Runme.
 
@@ -24,7 +24,7 @@ source.venv/bin/activate
 pip3 install docker prettyatble
 ```
 
-![Python virtual environment ](../../static/img/guide-page/python-env.jpg)
+![Python virtual environment ](/img/guide-page/python-env.jpg)
 
 The command above creates a new Python virtual environment named .venv in the current directory, activates the virtual environment, and installs Python packages docker and prettytable using the pip package manager. (Feel free to install any package of your choice).
 

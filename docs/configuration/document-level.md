@@ -21,7 +21,7 @@ Cen be specified in yaml, json, or toml on top of the document.
 
 To specify the custom shell of each cell block in your file, you can do so using the Frontmatter.
 
-![custom-shell](../../static/img/configuration-page/runme-customshell.png)
+![custom-shell](/img/configuration-page/runme-customshell.png)
 
 You can also specify the custom shell of each cell block in your file using the Runme Frontmatter. Once a custom shell is specified, Runme will switch to the system's default shell unless specified in the front matter. Both relative (be sure shell is included in $PATH) and absolute paths work. This is useful when notebooks are being shared amongst users with different shell setups.
 

@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# Data Rendering with JSON and Runme
+# Custom output rendering
 
 Navigating through a large amount of JSON data can be overwhelming. Runme makes this much easier by taking your data and transforming it into an organized format, which can be a tabular arrangement, a flat data grid, or a data summary.
 
@@ -19,7 +19,7 @@ These features are:
 
 In this guide, we will work with JSON data to specify that.
 
-![Runme mimetype](../../static/img/guide-page/runme-mimetype.png)
+![Runme mimetype](/img/guide-page/runme-mimetype.png)
 
 However it is important to note that setting the `mimeType` is optional as Runme has an effective auto-detection that detects JSON/CSV files reliably.
 
@@ -27,7 +27,7 @@ However it is important to note that setting the `mimeType` is optional as Runme
   The Interactive mode is another feature of Runme that makes rendering JSON data into human-friendly output possible. By default, Runme allows your scripts to run in the interactive mode. This mode enables you to interact with scripts in the output terminal.
   However, you must turn that off to render your JSON data successfully. This can be done with a single click.
 
-![interaction mode](../../static/img/guide-page/runme-interaction.png)
+![interaction mode](/img/guide-page/runme-interaction.png)
 
 Now that we have explored how it works let’s discuss what you need to get started.
 
@@ -84,7 +84,7 @@ IMAGES
 
 If you would love to explore other output types, you only need to click the menu icon (three vertical dots) beside your output.
 
-![JSON output](../../static/img/guide-page/runme-terminal-data-rendering.png)
+![JSON output](/img/guide-page/runme-terminal-data-rendering.png)
 
 A small dashboard with several options will pop up. Carry out these actions:
 
@@ -99,7 +99,7 @@ A small dashboard with several options will pop up. Carry out these actions:
 
 Another great functionality is that you can download your data as a CSV or JSON when you select the `Flat Data Grid` presentation option, as shown in the image below.
 
-![JSON output save](../../static/img/guide-page/runme-save-json-output.jpg)
+![JSON output save](/img/guide-page/runme-save-json-output.jpg)
 
 ## Feedback and Contribution
 

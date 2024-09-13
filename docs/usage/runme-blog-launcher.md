@@ -1,10 +1,7 @@
 ---
-runme:
-  id: 01HX525D9HYD6QHP1382XDS5ER
-  version: v3
 ---
 
-# Runnable Tutorial Straight From Your Blog Post
+# Launch Runme from your website
 
 As a developer, you may often find yourself writing and reading technical blog posts, GitHub project READMEs, Stack Overflow answers and developer documentation. Have you ever wished you could click a link within any of them to launch a VS Code environment and automatically run the commands? This is a useful (and easy) way to verify that all the commands in the project are correct and the outputs/responses make sense. Also, if you have code examples this is a great way to help people quickly check them out and start experimenting.
 
@@ -14,9 +11,9 @@ Let’s take for example the blog post “[How to Process Large Files with Node.
 
 If you click the link “[Launch the demo project locally](vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md)” as shown below, you will be able to run the commands inside VS Code.
 
-![launch-project](../../static/img/launch-project.png)
+![launch-project](/img/launch-project.png)
 
-![runnable](../../static/img/runnable-gif.gif)
+![runnable](/img/runnable-gif.gif)
 
 A lot of the examples you find for frameworks, blog posts and tutorials are not really usable because they require a lot of context and setup, for example; downloading packages and setting up the required environment. Runme can take away this pain.
 
@@ -28,7 +25,7 @@ You start by crafting a link that launches VS Code with all the desired details 
 
 Let’s see the link:
 
-![git-repository](../../static/img/runme-git-repository.png)
+![git-repository](/img/runme-git-repository.png)
 
 ```sh {"id":"01HQ2JT43P80CW88PJXTWTGVDP"}
 vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-examples.git&fileToOpen=node-streams/README.md
@@ -36,7 +33,7 @@ vscode://stateful.runme?command=setup&repository=git@github.com:stateful/blog-ex
 
 If you don’t want to use Github you can directly use a Markdown link:
 
-![runme open vscode](../../static/img/runme-open-vscode.png)
+![runme open vscode](/img/runme-open-vscode.png)
 
 ```sh {"id":"01HQ2JWRN06G0560GXWE41Z2WN"}
 vscode://stateful.runme?command=setup&fileToOpen=your-markdown-file.md
@@ -44,10 +41,10 @@ vscode://stateful.runme?command=setup&fileToOpen=your-markdown-file.md
 
 By clicking the link, you will be able to see the README.md file with a ▶️ button next to the code.
 
-![blog-example ](../../static/img/runme-processnodejs.png)
+![blog-example ](/img/runme-processnodejs.png)
 
 And that’s it! Now you can make all your blog posts, GitHub project READMEs, Stack Overflow answers and developer documentation available with a click in VS Code.
 
 **Note**: the repository will be in a temporary directory by default, but you can set it up in VS Code by going to: code > preferences > settings > Look for the Runme extension, and give it a specific path.
 
-![runme-setting-extension](../../static/img/runme-setting-extensions.png)
+![runme-setting-extension](/img/runme-setting-extensions.png)

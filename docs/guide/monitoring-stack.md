@@ -4,7 +4,7 @@ runme:
   version: v3
 ---
 
-# How to Set Up a Monitoring Stack For Your Application by Leveraging Runme
+# Monitoring Stack
 
 In this guide, we will walk you through configuring a monitoring stack and creating a Runbook for your application setup and configuration using Runme.
 
@@ -42,11 +42,11 @@ sudo nano /etc/systemd/system/node_exporter.service
 
 When the command is executed successfully, this is what you will see in your Runme terminal.
 
-![install node exporter](../../static/img/guide-page/runme-node-exporter.png)
+![install node exporter](/img/guide-page/runme-node-exporter.png)
 
 Runme uses its [environment variable prompt feature](https://docs.runme.dev/getting-started/features#environment-variable-prompts) to prompt users to enter a value for the version and the platform. Runme will store these values, so you no longer need to enter them when working on this project.
 
-![env prompt for node exporter](../../static/img/guide-page/node-exporter-env-prompt.png)
+![env prompt for node exporter](/img/guide-page/node-exporter-env-prompt.png)
 
 ## Configure Your Node Exporter In Your Runbook
 
@@ -73,7 +73,7 @@ EOF
 
 Here is a visual representation of the command in a Runme cell and how it outputs when executed.
 
-![Node exporter service](../../static/img/guide-page/create-node-exporters-service.png)
+![Node exporter service](/img/guide-page/create-node-exporters-service.png)
 
 - Step Two: Run Node Exporter as a Service
 
@@ -98,7 +98,7 @@ sudo systemctl restart node_exporter
 
 Here is a visual representation of the command in your Runme cell and its output when executed successfully.
 
-![node exporter service](../../static/img/guide-page/runme-node-exporter-services.png)
+![node exporter service](/img/guide-page/runme-node-exporter-services.png)
 
 ## Install Prometheus
 
@@ -120,7 +120,7 @@ cp -r prometheus-${version}.linux-amd64/promtool ${PWD}/prometheus
 
 Here is a visual representation of the command in a Runme cell and the output when executed successfully.
 
-![Install prometheus](../../static/img/guide-page/install-prometheuss.png)
+![Install prometheus](/img/guide-page/install-prometheuss.png)
 
 Runme will leverage its environment prompt feature to prompt you to input the version of Prometheus you want to install. Once you input the version, you will have an output similar to the one above.
 
@@ -148,7 +148,7 @@ EOF
 
 This is a visual representation of the command in a Runme cell.
 
-![promtheus yaml file](../../static/img/guide-page/runme-prometheus-yaml.jpeg)
+![promtheus yaml file](/img/guide-page/runme-prometheus-yaml.jpeg)
 
 Step Two: Set up Prometheus as a service
 
@@ -170,7 +170,7 @@ EOF
 
 **Output**:
 
-![prometheus service](../../static/img/guide-page/create-prometheus-service.jpeg)
+![prometheus service](/img/guide-page/create-prometheus-service.jpeg)
 
 Step Three: Run Prometheus as a Service
 
@@ -194,7 +194,7 @@ sudo systemctl restart prometheus
 
 This is what this command and its output, when executed successfully, looks like in a Runme cell.
 
-![prometheus](../../static/img/guide-page/prometheus-services-runme.png)
+![prometheus](/img/guide-page/prometheus-services-runme.png)
 
 Step four: Open the app
 
@@ -219,7 +219,7 @@ systemctl restart grafana-server
 
 Here is a pictorial representation of the code in the Runme cell and the output in the Runme terminal when executed successfully.
 
-![Install Grafana](../../static/img/guide-page/installgrafana-runme.png)
+![Install Grafana](/img/guide-page/installgrafana-runme.png)
 
 Open the App:
 

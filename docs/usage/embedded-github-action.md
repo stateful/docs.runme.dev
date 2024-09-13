@@ -1,12 +1,8 @@
 ---
-runme:
-  id: 01HX525D9R8HR6G41SQM234ZJ8
-  version: v3
-sidebar_position: 1
-title: Running Github Action Inside a Markdown File
+title: Embedded Github Action UI
 ---
 
-# Running Github Action Inside a Markdown File
+# Embedded Github Action UI
 
 > 💡 Be sure to install [Runme for VS Code](https://docs.runme.dev/installation/vscode) first
 
@@ -118,14 +114,14 @@ To execute the action, you need access to the repository and sign in using your 
 
 Once you are signed in, you should be able to see the workflow file like the following:
 
-![paste GitHub action URL](../../static/img/github-1.png)
+![paste GitHub action URL](/img/github-1.png)
 
 In the above example, we have a workflow action with inputs, once you specify them, you can click Run Workflow to trigger the action. Once you trigger the action, you will see in real-time the status of the execution of the workflow, just like the original GitHub action interface.
 
-![trigger github action](../../static/img/github-2.png)
+![trigger github action](/img/github-2.png)
 
 If you click Open workflow run, a browser window will be opened with the detailed logs of the triggered workflow.
 
-![trigger github action](../../static/img/github-3.png)
+![trigger github action](/img/github-3.png)
 
 In the next Runme version release, we will display workflow run details in real-time. We believe Runme is a great companion to the official [GitHub Actions extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions).

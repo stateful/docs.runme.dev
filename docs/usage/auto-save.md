@@ -14,7 +14,7 @@ The auto-save feature is available by default on your Markdown file whether you 
 
 As seen in the image below:
 
-![runme-autosave](../../static/img/runme-autosave.png)
+![runme-autosave](/img/runme-autosave.png)
 
 If you would like to turn the auto-save off, you can simply use the toggle button as shown above to set “Auto-Save” to (off)
 
@@ -28,12 +28,12 @@ Alternatively, you can change the settings to be permanently on by adjusting the
 
 - Navigate to the extension settings in the Runme interface. This is typically found in the toolbar or under a settings menu in both the Runme web and VS Code interface.
 
-![runme-setting](../../static/img/configuration-page/runme-setting.png)
+![runme-setting](/img/configuration-page/runme-setting.png)
 
 - Search for “autosave” to easily access the Auto-save feature settings.
 - To set it as default, select “Yes” to set the selected option as a default.
 
-![autosave-defualt](../../static/img/runme-set-autosave-default.png)
+![autosave-defualt](/img/runme-set-autosave-default.png)
 
 This action configures the system to automatically save the output of each cell execution.
 
@@ -43,17 +43,17 @@ Runme uses the session output feature to provide advanced auto-save functionalit
 
 See the image below for a sample of the session output file.
 
-![autosave-output-session](../../static/img/Autosave-output.png)
+![autosave-output-session](/img/Autosave-output.png)
 
 The session output file includes details on when each cell was run, the time it took to run the cell, and exit codes. Additional contextual metadata like hostname and username are also saved to the Session Outputs file.
 
-![Session output](../../static/img/configuration-page/runme-session-output.png)
+![Session output](/img/configuration-page/runme-session-output.png)
 
 Runme also captures non-text mime types like images (base64 encoded) outside of textual output produced by terminals.
 
 The session outputs are written per Runme session, which is saved throughout the lifetime of the window running the runbook until it is reset via “Reset Session” in the notebook.
 
-![reset-session](../../static/img/auto-save-reset-session.png)
+![reset-session](/img/auto-save-reset-session.png)
 
 If there are more forms you would like to be added to the session output, kindly [let us know](https://github.com/stateful/runme/issues/new). We are open to incorporating your requests.
 

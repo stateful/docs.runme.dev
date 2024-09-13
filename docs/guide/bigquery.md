@@ -1,12 +1,7 @@
 ---
-runme:
-  id: 01J2B937J9DH0TPAHSSRB76X1G
-  version: v3
 ---
 
-# Manage Data Queries with BigQuery and Runme
-
-Runme simplifies the management and execution of tasks while documenting your process. With Runme, you can integrate with BigQuery to run queries easily and efficiently.
+# BigQuery
 
 In this guide, you will learn how to manage data queries using BigQueris and Runme.
 
@@ -48,7 +43,7 @@ gcloud components list
 
 When the command is executed successfully, you will see a list of all available components, similar to the image below.
 
-![Componenets list](../../static/img/guide-page/runme-list-component.png)
+![Componenets list](/img/guide-page/runme-list-component.png)
 
 2. **Update Google Cloud Components**
 
@@ -111,7 +106,7 @@ WHERE num_characters < 67100
 LIMIT 10;
 ```
 
-![big query](../../static/img/guide-page/runme-output-sql.png)
+![big query](/img/guide-page/runme-output-sql.png)
 
 Next, run the command below while disabling the [interactive mode](/getting-started/vscode#interactive-mode) of the code cell.
 
@@ -121,7 +116,7 @@ Next, run the command below while disabling the [interactive mode](/getting-star
 
 When this is successful, you will get an output similar to this. You can change the presentation of your data. To do this, click the menu icon (three vertical dots) beside your output. A small dashboard will pop up. Click on `Change Presentation` to change how the data is presented. You will be prompted to select how you want to view your data.
 
-![result](../../static/img/guide-page/runme-result.png)
+![result](/img/guide-page/runme-result.png)
 
 - **Querying BigQuery Dataset**
 
@@ -139,7 +134,7 @@ bq query --use_legacy_sql=false 'SELECT * FROM `runme-ci.runme_bigquery.runme-qu
 
 This command will return the first 10 rows from the `runme-query` table in the `runme_bigquery` dataset. Here is the output.
 
-![query](../../static/img/guide-page/runme-bq-query.png)
+![query](/img/guide-page/runme-bq-query.png)
 
 - **Listing Datasets and Tables**
 
@@ -151,7 +146,7 @@ To get a detailed list of all datasets in your project, run the command below:
 bq ls
 ```
 
-![List tables](../../static/img/guide-page/runme-bq-ls.png)
+![List tables](/img/guide-page/runme-bq-ls.png)
 
 Additionally, you can list all tables in a specific dataset (e.g., `runme_bigquery`). To do this, run the command below.
 
@@ -159,7 +154,7 @@ Additionally, you can list all tables in a specific dataset (e.g., `runme_bigqu
 bq ls runme_bigquery
 ```
 
-![list data set](../../static/img/guide-page/runme-list-bigquery.png)
+![list data set](/img/guide-page/runme-list-bigquery.png)
 
 To show details of a specific table (e.g., `runme-query`), run the command below.
 
@@ -167,7 +162,7 @@ To show details of a specific table (e.g., `runme-query`), run the command belo
 bq show runme_bigquery.runme-query
 ```
 
-![show table](../../static/img/guide-page/runme-show-bigquery.png)
+![show table](/img/guide-page/runme-show-bigquery.png)
 
 Be sure to change the `runme-query` with your project dataset.
 
@@ -187,7 +182,7 @@ bq load --source_format=CSV --skip_leading_rows=1 runme_bq.runme_table ./101.csv
 
 Once that is done, you will get an output similar to this.
 
-![bq load](../../static/img/guide-page/runme-bq-load.png)
+![bq load](/img/guide-page/runme-bq-load.png)
 
 - **Export Data from a Table**
 
@@ -205,7 +200,7 @@ If you need to create a new dataset, run the command below.
 bq mk runme_bq
 ```
 
-![create table](../../static/img/guide-page/runme-create-table.png)
+![create table](/img/guide-page/runme-create-table.png)
 
 - **Delete Dataset**
 
@@ -232,7 +227,7 @@ bq mk --table [DATASET].[TABLE] schema.json
 
 ```
 
-![use schema](../../static/img/guide-page/runme_bigquery-schema.png)
+![use schema](/img/guide-page/runme_bigquery-schema.png)
 
 - **Delete a Table**
 
@@ -250,7 +245,7 @@ bq rm -f runme_bq.runme_table
 
 This command forcefully deletes the table named `runme_table` in the dataset `runme_bq`
 
-![remove table](../../static/img/guide-page/runme-bigquery-remove-table.png)
+![remove table](/img/guide-page/runme-bigquery-remove-table.png)
 
 - **Create a Table with Expiration Time**
 

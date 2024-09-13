@@ -1,24 +1,18 @@
 ---
-runme:
-  id: 01HX525D9E10RVX8R4VE708M5H
-  version: v3
+sidebar_position: 1
 ---
 
-# Running Bash Scripts in Runme
-
-Looking to automate your workflow?
+# Hello world
 
 Runme makes it easy to run bash scripts directly within your Markdown files. With Runme, you can create, manage, and run scripts to automate repetitive tasks, saving time and effort.
 
 This is not just limited to bash; [Runme](https://runme.dev/) supports scripting in various languages like PowerShell, Python, and more. This flexibility allows you to tailor automated solutions to your specific requirements.
 
-In this guide, we will walk you through running a bash script on Runme.
-
 ## **Setting Up Your Environment**
 
 To get started with Bash scripts in Runme, you are required to first install and configure [Runme on your VS Code](https://docs.runme.dev/installation/vscode) editor. If you do not have Runme on VS Code installed yet, proceed to the Extension tab of your VS Code and search for “**Runme DevOps Notebook**.”
 
-![install runme](../../static/img/guide-page/devops-notebook.png)
+![install runme](/img/guide-page/devops-notebook.png)
 
 You can configure your code editor to make Runme your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer). This means you `.md` will be displayed as a runbook whenever you open a Markdown.
 
@@ -33,7 +27,7 @@ Let’s get started.
 1. Create a new folder and open it with your VS code. In your VS code, create a new README.md file.
 2. Click on the + Code icon
 
-![create code block](../../static/img/guide-page/codeblock.png)
+![create code block](/img/guide-page/codeblock.png)
 
 3. Enter the script you want to run. For this tutorial, we will be using the simple bash script below.
 
@@ -47,16 +41,16 @@ echo "Hello, $name! Welcome to the Bash Scripting World"
 
 4. Click on the programming language at the button of the cell. This will display a list of supported languages. .
 
-![cell language](../../static/img/guide-page/language-mode.png)
+![cell language](/img/guide-page/language-mode.png)
 
 5. Search for Shell script.
 6. Now click on the Run button beside your script to execute it.
 
-![run codeblock](../../static/img/guide-page/executionpromt.png)
+![run codeblock](/img/guide-page/executionpromt.png)
 
 After an execution time of 2.3 seconds, you will get a similar output:
 
-![run-code](../../static/img/guide-page/runme-users.png)
+![run-code](/img/guide-page/runme-users.png)
 You have successfully executed your first bash script with Runme!🎉
 
 Runme makes it incredibly easy! Previously, you would have to create a .sh file to execute bash scripts, but with Runme, you do not need to create a new file from scratch. All you need to do is install the Runme extension in VS Code, and you can save yourself the stress of environment issues, as bash scripts run swiftly in Runme regardless of your machine's environment and operating system.
@@ -95,7 +89,7 @@ echo ${#name}
 
 The image below provides a visual representation of the output of this script when it is executed.
 
-![example](../../static/img/guide-page/var-maniuplation.png)
+![example](/img/guide-page/var-maniuplation.png)
 
 - **Conditional Statements**:
 
@@ -122,7 +116,7 @@ fi
 
 The image below shows how a conditional statement in a Bash script is executed in Runme in VS Code.
 
-![if-statement](../../static/img/guide-page/ifstatement.png)
+![if-statement](/img/guide-page/ifstatement.png)
 
 - **Integrating Runme with Docker**:
 
@@ -154,7 +148,7 @@ echo "Script Completed"
 
 When it is executed successfully, here is the output.
 
-![bash-docker](../../static/img/guide-page/docker-bash.png)
+![bash-docker](/img/guide-page/docker-bash.png)
 
 ### Save Your Outputs
 

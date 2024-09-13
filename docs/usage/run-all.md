@@ -28,4 +28,4 @@ This will run just that specific Markdown file, in this case,  `test.md`
 
 In VS Code you can use the the “**Run All”** button (you will be prompted if you would like to run all scripts before they are executed).
 
-![run all](../../static/img/configuration-page/runme-runall.png)
+![run all](/img/configuration-page/runme-runall.png)

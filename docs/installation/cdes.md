@@ -23,7 +23,7 @@ To create a codespace, do the following:
 2. Click `Code`.
 3. Click + in the Codespaces tab to open a new Codespace on your repository.
 
-![Github Codespaces](../../static/img/installation-page/add-codespace-runme.png)
+![Github Codespaces](/img/installation-page/add-codespace-runme.png)
 
 > A Visual Studio Code instance will open in your browser with a unique URL and container.
 
@@ -33,11 +33,11 @@ To create a codespace, do the following:
 2. In the search bar, type `Runme` and press Enter.
 3. Locate the Runme extension in the search results and click on `Install`.
 
-![install Runme](../../static/img/installation-page/runme-codespace-install.png)
+![install Runme](/img/installation-page/runme-codespace-install.png)
 
 4. Once installed, you can use the Runme extension to manage and run your scripts directly from your codebase.
 
-![Runme Interface](../../static/img/installation-page/runme-codespace-interface.png)
+![Runme Interface](/img/installation-page/runme-codespace-interface.png)
 
 Now, you have successfully installed Runme in your GitHub Codespaces.
 
@@ -73,11 +73,11 @@ After creating a new workspace for your project, it’s time to install Runme in
 2. In the search bar, type `Runme` and press Enter.
 3. Locate the Runme extension in the search results and click on `Install`.
 
-![Install](../../static/img/installation-page/runme-gitpod.png)
+![Install](/img/installation-page/runme-gitpod.png)
 
 4. Once installed, you can use the Runme extension to manage and run your scripts directly from your codebase.
 
-![Runme interface](../../static/img/installation-page/runme-gitpod-interface.png)
+![Runme interface](/img/installation-page/runme-gitpod-interface.png)
 
 ## **Project IDX**
 
@@ -97,11 +97,11 @@ The next step is to create a new project. To do this, follow the steps below.
 
 1. After logging in, you will see the dashboard.
 
-![Dashboard](../../static/img/installation-page/projectidx.png)
+![Dashboard](/img/installation-page/projectidx.png)
 
 2. You can either start something new from a template based on your programming language or you import an existing project. For this guide, we will import a repo. Once you click on that option, a new dashboard opens up that prompts you to import the repo URL.
 
-![New project](../../static/img/installation-page/runme-projectidx-project.png)
+![New project](/img/installation-page/runme-projectidx-project.png)
 
 ### **Installing Runme in Project IDX**
 
@@ -109,11 +109,11 @@ The next step is to create a new project. To do this, follow the steps below.
 2. In the search bar, type `Runme` and press Enter.
 3. Locate the Runme extension in the search results and click on `Install`.
 
-![Runme-extension](../../static/img/installation-page/Runme-projectidx-extension.png)
+![Runme-extension](/img/installation-page/Runme-projectidx-extension.png)
 
 4. Once installed, you can use the Runme extension to manage and run your scripts directly from your codebase.
 
-![Runme interface](../../static/img/installation-page/runme-projectidx-interface.png)
+![Runme interface](/img/installation-page/runme-projectidx-interface.png)
 
 With these instructions, you can easily install the Runme extension in GitHub Codespaces, Gitpod, and Project IDX.
 

@@ -19,7 +19,7 @@ Cell-level options allow you to configure the commands and their behvaior in you
 - Navigate to the specific cell you wish to run.
 - Click the **Run** icon on the left side of the code block.
 
-![cell-level](../../static/img/configuration-page/cell-level-npm-install.png)
+![cell-level](/img/configuration-page/cell-level-npm-install.png)
 
 This action will run your command and return an executed output, you can configure how your cell should run using the configuration options.
 
@@ -52,11 +52,11 @@ This feature can be used to prevent [prompting](../configuration/document-level)
 
 To modify the cell execution behavior of any cell you choose, click **Configure** on the respective cell.
 
-![configure ](../../static/img/configuration-page/configure-cell-level.png)
+![configure ](/img/configuration-page/configure-cell-level.png)
 
 A new view will open, allowing you to select “general” or “advanced” cell configuration.
 
-![general-page](../../static/img/configuration-page/npm-install-configure.png)
+![general-page](/img/configuration-page/npm-install-configure.png)
 
 ## Configure using Markdown
 
@@ -80,7 +80,7 @@ Another example:
 
 To edit the Markdown syntax of your cell in Runme, click on the button indicated in the image below
 
-![double view](../../static/img/configuration-page/example-cell.png)
+![double view](/img/configuration-page/example-cell.png)
 
 Your VS Code view will split into two. One side has Notebook view, and the other has the raw Markdown view. On the Markdown view, locate the cell you want to configure and make the necessary configuration edit.
 
@@ -94,7 +94,7 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 Runme has a [Shebang feature](/usage/shebang) which allows users to specify each cell's programming language inside the Markdown file.
 
-![interpreter](../../static/img/configuration-page/shebang-cell-level.png)
+![interpreter](/img/configuration-page/shebang-cell-level.png)
 
 The image above shows that our first code block is in Python, and the next is bash.
 
@@ -118,7 +118,7 @@ While this works well in a lot of cases, the accuracy is not perfect.
 It is common to use file-watcher-enabled compilers/bundlers (e.g., `npm start dev`, `watchexec`, etc.) in the background during development.
 For any cell containing an instance of these commands, tick the background cell setting. This will prevent execution from permanently blocking the Notebook UX.
 
-![background running task](../../static/img/backgroundrunme.png)
+![background running task](/img/backgroundrunme.png)
 
 Once ticked notice the "Background Task" label shows up in the cell status bar!
 
@@ -131,7 +131,7 @@ Once ticked notice the "Background Task" label shows up in the cell status bar!
 npm run watch
 ````
 
-![background](../../static/img/configuration-page/background-task.png)
+![background](/img/configuration-page/background-task.png)
 
 ### **Cell CWD (current working directory)**
 
@@ -139,7 +139,7 @@ In most cases, you should set the current working directory at the document leve
 
 Click on `configure` to change the current work directory `cwd`:
 
-![checking directory](../../static/img/runme-cwd.png)
+![checking directory](/img/runme-cwd.png)
 
 ````sh {"id":"01HPPF1PRAK846NR2H1CW86XVQ"}
 
@@ -164,9 +164,9 @@ Please note that if both `cwd` is set for doc-level and cell, they don't overw
 
 If a cell's commands do not require any input from the user it might be a good fit to include the cell's output inside the Notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for, and it defaults to _true_.
 
-![interatcive-mode](../../static/img/runme-interactive.png)
+![interatcive-mode](/img/runme-interactive.png)
 
-![interactive execution in vs code](../../static/img/interactive-execution.png)
+![interactive execution in vs code](/img/interactive-execution.png)
 
 **Default:** `true`
 
@@ -185,7 +185,7 @@ If a cell has exported variables, the user will be prompted to set these variabl
 - Click on `configure ⚙️` in your code cell
 - Click `promptEnv` to set the condition you want the cell to run in
 
-![promptenv](../../static/img/getting-started/promptsenv.png)
+![promptenv](/img/getting-started/promptsenv.png)
 
 **Example**
 
@@ -194,7 +194,7 @@ export SLEEP_SECS="0"
 sleep $SLEEP_SECS
 ```
 
-![prompt user in vscode](../../static/img/promptenv-runme.png)
+![prompt user in vscode](/img/promptenv-runme.png)
 
 There are two prompt modes:
 
@@ -240,7 +240,7 @@ Not all cells’ output is plain text. For example, you can have JSON, text, ima
 
 You can configure to any of your choice in the cell configuration setting.
 
-![mimetype](../../static/img/mimetype.png)
+![mimetype](/img/mimetype.png)
 
 Using the optional **mimeType** specifier, you can specify the expected output type. Runme Notebooks have a variety of renderers that will display them as human-friendly. The MIME type defaults to *text/plain*.
 
@@ -248,7 +248,7 @@ When the **interactive** setting is turned off, and the **mimeType** value is em
 
 Runme has a `MimeType` feature that enables you to render images, CSV-based tables, and other supported content type right inside your Markdown file. Runme supports a wide range of MimeTypes such as `text/x-json`, `text/x-javascript`, `text/x-html`, `image/png`, `image/svg+xml` and `text/csv`.
 
-![Human-centric output](../../static/img/human-centric-output.png)
+![Human-centric output](/img/human-centric-output.png)
 
 See in the [reference page](/configuration/mime) for the list of supported MIME types!
 
@@ -258,7 +258,7 @@ If you cannot wait for your code or command to finish execution and you want to 
 
 Runme has a **background** mode that enables you to run tasks in the background. To do this, you have to activate the background mode.
 
-![runme-background](../../static/img/runme-background.png)
+![runme-background](/img/runme-background.png)
 
 ### **Terminal Row**
 
@@ -272,13 +272,13 @@ To set up the terminal row on your code editor, follow the steps below:
 
 - In your `.md` file, click on the “Configure” button at the bottom left of the file.
 
-![terminalrow-1](../../static/img/terminalrow-1.png)
+![terminalrow-1](/img/terminalrow-1.png)
 
 We have provided a list of configuration settings to upgrade your experience using the Runme extension. You can configure how your Markdown is executed on your code editor using these settings.
 
 - Navigate to “Advanced” > `terminalrow`.
 
-![terminalrow-2](../../static/img/terminalrow-2.png)
+![terminalrow-2](/img/terminalrow-2.png)
 
 - Lastly, set the number of rows you wish your output to be rendered in.
 
@@ -286,11 +286,11 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 On Runme cells are unnamed by default. However, you can name a cell directly in your notebook. This will enable you to easily identify the cell using the provided cell name. On the cell you wish to name, simply click on the “Add Name” button on the cell.
 
-![add name](../../static/img/configuration-page/add-naming.png)
+![add name](/img/configuration-page/add-naming.png)
 
 You will be directed to enter a preferred name for the cell.
 
-![cell-name](../../static/img/configuration-page/cell-naming.png)
+![cell-name](/img/configuration-page/cell-naming.png)
 
 Where a cell is not named, a generated name is provided for each cell. We recommend you DO NOT name a cell when using the CLI mode, you can use the VS Code extension to name the file in the configuration settings.
 
@@ -352,10 +352,10 @@ Runme simplifies the use of environment variables in your notebooks by allowing 
 - Click on `configure ⚙️` in your code cell
 - Click `promptEnv` to set the condition you want the cell to run in
 
-![promptenv](../../static/img/getting-started/promptsenv.png)
+![promptenv](/img/getting-started/promptsenv.png)
 
 For instance, in the image below, we configure the `SLEEP_SECS` environment variable to 10 seconds with a single click on the run cell button. This feature is useful when your runbooks need user-specific values.
 
-![ouput](../../static/img/getting-started/promptenv-output.png)
+![ouput](/img/getting-started/promptenv-output.png)
 
 This feature allows users to input values directly within the notebook environment, making task execution more efficient. Improve your workflow with the increased flexibility provided by `promptEnv` feature.

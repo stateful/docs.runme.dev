@@ -77,7 +77,7 @@ kubectl apply -f mysealedsecret.yaml
 
 Here is a pictorial representation of the command when executed in Runme.
 
-![add value](../../static/img/guide-page/add-secret.png)
+![add value](/img/guide-page/add-secret.png)
 
 From the output gotten, you can see that your new value has successfully been added.
 
@@ -91,7 +91,7 @@ kubeseal --controller-name=sealed-secrets-controller --controller-namespace=kube
 
 When you run the code in your Runme cell, here is what it looks like.
 
-![decrypt sealed secret](../../static/img/guide-page/decrypt-sealed-secrets.png)
+![decrypt sealed secret](/img/guide-page/decrypt-sealed-secrets.png)
 
 ### Delete a Secret
 
@@ -109,7 +109,7 @@ To deploy your secret, execute the code below:
 kubectl apply -f mysealedsecret.yaml
 ```
 
-![deploy sealed](../../static/img/guide-page/sealed-secret-apply.png)
+![deploy sealed](/img/guide-page/sealed-secret-apply.png)
 
 The Sealed Secrets controller will decrypt the Sealed Secret and create a Kubernetes Secret with the decrypted data.
 

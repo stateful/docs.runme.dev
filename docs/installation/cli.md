@@ -7,7 +7,7 @@ title: Install the CLI
 
 Runme works effectively on the CLI. If you are a power user who enjoys running Markdown files from the terminal of your local machine, this section is for you.
 
-![cli](../../static/img/terminal.png)
+![cli](/img/terminal.png)
 
 Here, we will give you detailed instructions on how to install Runme on your CLI.
 
@@ -163,7 +163,7 @@ This TUI can be accessed using the command `runme tui` or just `runme` . These c
 
 The video below displays Runme’s TUI and how to access its features using the command.
 
-![Runme TUI Usage](../../static/img/runme-tui.gif)
+![Runme TUI Usage](/img/runme-tui.gif)
 
 <Infobox type="warning" title="Warning!">
 

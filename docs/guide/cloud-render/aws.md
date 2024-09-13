@@ -40,7 +40,7 @@ aws configure list-profiles
 
 When this command is executed, it will display a list of all profile(s) configured to your AWS CLI. As seen below:
 
-![list profile](../../../static/img/Integration/runme-aws-list-profile.png)
+![list profile](/img/integration/runme-aws-list-profile.png)
 
 In addition to listing profiles, you may want to obtain explicit profile details such as access key, secret key, etc.
 
@@ -55,7 +55,7 @@ This command sets the environment variable `PROFILE_NAME` to "default". You can 
 
 Once this command is executed, it will return the current value of the `PROFILE_NAME` variable to confirm it has been set correctly. The output will be:
 
-![Set profile](../../../static/img/Integration/runme-set-profile.png)
+![Set profile](/img/integration/runme-set-profile.png)
 
 Next, execute this command below to get the full details of your profile.
 
@@ -65,7 +65,7 @@ aws configure list --profile $PROFILE_NAME
 
 When that is successful, you will get an image similar to this.
 
-![set profile](../../../static/img/Integration/runme-list-aws-profile-detail.png)
+![set profile](/img/integration/runme-list-aws-profile-detail.png)
 
 **Configuring a Default Profile**
 
@@ -77,7 +77,7 @@ aws configure
 
 Here is a visual representation of the output.
 
-![aws configure](../../../static/img/Integration/aws-configure.png)
+![aws configure](/img/integration/aws-configure.png)
 
 Your AWS CLI is correctly configured, and you can proceed to the next section.
 
@@ -106,7 +106,7 @@ https://[region].console.aws.amazon.com/ec2/home?region=[region]#Instances
 
 When this command is executed in your Runme code cell, the output is given below. If you would like to view your AWS console, you can click any of the highlight links indicated in the output image below.
 
-![AWS Dashboard](../../../static/img/Integration/runme-aws-ec2-dashboard.png)
+![AWS Dashboard](/img/integration/runme-aws-ec2-dashboard.png)
 
 ### **Get Specific EC2 Instance**
 
@@ -117,11 +117,11 @@ With Runme Cloud Rendering, you can get specific instance details right inside y
 
 If you have more than one instance displayed, be sure to navigate to the specific instance and click that button.
 
-![Dashboard display](../../../static/img/Integration/runme-aws-display.png)
+![Dashboard display](/img/integration/runme-aws-display.png)
 
 - This will open a new view in your VS Code that prompts you to confirm your decision. Click Yes.
 
-![Display details](../../../static/img/Integration/display-instance-details.png)
+![Display details](/img/integration/display-instance-details.png)
 
 - Once your decision is confirmed, a new code block will be created in your Notebook and automatically run to generate the display. The code cell will look like this:
 
@@ -131,7 +131,7 @@ https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetai
 
 - After the code cell is run automatically and successfully executed, your Instance will be displayed.
 
-![AWS Dashboard](../../../static/img/Integration/runme-aws-dashboard.png)
+![AWS Dashboard](/img/integration/runme-aws-dashboard.png)
 
 This will unlock the visual display of the specific EC2 instance, which will give details of the instance ID, launch time, platform, availability zone, security groups, etc. You will also find useful links to the AWS Console like details and manage state.
 
@@ -146,15 +146,15 @@ You can establish a secure SSH connection to an EC2 instance right inside your M
 
 If you have more than one instance displayed, be sure to navigate to the specific instance and click that button.
 
-![display more information](../../../static/img/Integration/runme-aws-dahsboard-ssh.png)
+![display more information](/img/integration/runme-aws-dahsboard-ssh.png)
 
 - This will open a new view in your VS Code that prompts you to confirm your decision. Click Yes.
 
-![SSH AWS](../../../static/img/Integration/runme-ssh-aws.png)
+![SSH AWS](/img/integration/runme-ssh-aws.png)
 
 - Once your decision is confirmed, a new code block will be created in your Notebook and automatically run to SSH into the instance. This is the code block created and the final output to confirm that it operation was successful.
 
-![ssh ec2](../../../static/img/Integration/runme-ssh-ec2.png)
+![ssh ec2](/img/integration/runme-ssh-ec2.png)
 
 ## Working with EKS Clusters
 
@@ -179,7 +179,7 @@ echo "EKS_REGION set to $EKS_REGION"
 
 When this command is executed, this is the output interface.
 
-![Set Region](../../../static/img/Integration/runme-aws-eks-var.png)
+![Set Region](/img/integration/runme-aws-eks-var.png)
 
 Next, run the command below to experience the Runme Cloud Rendering in action.
 
@@ -189,11 +189,11 @@ https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters
 
 This is the resulting interface. Isn’t it cool? You can view comprehensive information about the cluster by clicking on the action button (highlighted in the image).
 
-![Display EKS](../../../static/img/Integration/runme-aws-display-eks.png)
+![Display EKS](/img/integration/runme-aws-display-eks.png)
 
 This will direct you to your EKS cluster detail page.
 
-![EKS](../../../static/img/Integration/eks-aws-runme.png)
+![EKS](/img/integration/eks-aws-runme.png)
 
 ### **Get Specific EKS Cluster Details**
 
@@ -227,7 +227,7 @@ echo "EKS_REGION set to $EKS_REGION"
 
 As in the image below, be sure to replace the cluster placeholder with the instance you want to visualize.
 
-![SET VAR EKS](../../../static/img/Integration/runme-aws-set-var.png)
+![SET VAR EKS](/img/integration/runme-aws-set-var.png)
 
 Next, run this command:
 
@@ -237,7 +237,7 @@ https://$EKS_REGION.console.aws.amazon.com/eks/home?region=$EKS_REGION#/clusters
 
 This will return the comprehensive details of the specific EKS cluster. As seen below:
 
-![eks dashboard](../../../static/img/Integration/eks-dashboard.png)
+![eks dashboard](/img/integration/eks-dashboard.png)
 
 If you would love to navigate to the AWS console for that cluster, click the view details icon as indicated in the image above.
 

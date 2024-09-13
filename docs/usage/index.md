@@ -18,4 +18,4 @@ These are features you may want to utilize in crafting the Notebook experience.
 
 These are all the pieces you may care about in creating and operating Notebooks in VS Code.
 
-![VS Code Notebook UX](../../static/img/vscode-notebook-ux.png)
+![VS Code Notebook UX](/img/vscode-notebook-ux.png)

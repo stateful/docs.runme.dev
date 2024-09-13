@@ -15,19 +15,19 @@ To get started with Runme on VS Code, ensure you have the Runme Notebook extensi
 
 </Infobox>
 
-![run commands in vs code](../../static/img/run-commands-vscode.gif)
+![run commands in vs code](/img/run-commands-vscode.gif)
 
 ### From Scratch
 
 Start by initializing a new project and adding a new `README.md` file. Alternatively, you can select `Runme Notebook` from the `File->New File` menu. When you open it, you should get an empty canvas, like this:
 
-![start readme project](../../static/img/start-readme-projects.png)
+![start readme project](/img/start-readme-projects.png)
 
 ### Adding Markdown
 
 To add a new Markdown section, click the "**+ Markdown"** button in the top left or center:
 
-![add Markdown vs code](../../static/img/add-markdown-vscodes.png)
+![add Markdown vs code](/img/add-markdown-vscodes.png)
 
 You can then edit the Markdown block directly:
 
@@ -38,15 +38,15 @@ You can then edit the Markdown block directly:
 
 As shown in the image below, once you're done editing a block, use the **Check** icon (the one with the checkmark):
 
-![Stop Editing Cell vs code](../../static/img/check-icon.png)
+![Stop Editing Cell vs code](/img/check-icon.png)
 
 To edit the cell again, use the **Edit Cell** icon:
 
-![start editing Markdown in vs code](../../static/img/editing-cell.png)
+![start editing Markdown in vs code](/img/editing-cell.png)
 
 Finally, you can remove a cell at any time using the **Delete Cell** icon:
 
-![remove cell in Markdown](../../static/img/dell-cell.png)
+![remove cell in Markdown](/img/dell-cell.png)
 
 Note that the usual shortcuts (like `Ctrl + Z`) work perfectly in this environment too!
 
@@ -66,11 +66,11 @@ Code cell blocks work similarly to Markdown blocks and can be edited, saved, or 
 
 To create a new code block, use the `+ Code` button in the top left or center:
 
-![add new code block vs code](../../static/img/adding-code.png)
+![add new code block vs code](/img/adding-code.png)
 
 You can then freely add runnable code:
 
-![run hello world from vs code](../../static/img/echo-hello-world.png)
+![run hello world from vs code](/img/echo-hello-world.png)
 
 In this section, we will demonstrate how Runme displays command output when running code or commands. For this illustration, we will use a Node.js script in our repository under the **[Examples](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md)** section.
 
@@ -100,7 +100,7 @@ Now, try running Steps 1 and 2 in the [Example Repo](https://github.com/stateful
 
 You should get an output like this:
 
-![Command output vs code](../../static/img/command-output-vscodess.png)
+![Command output vs code](/img/command-output-vscodess.png)
 
 Great! You can see the terminal output from each command beneath its respective cell. Our Node.JS script was able to parse that massive file with no problems!
 
@@ -108,7 +108,7 @@ Great! You can see the terminal output from each command beneath its respective 
 
 Wondering how you know when a command is finished executing? Look out for the checkmark in the bottom left:
 
-![checkmar in vs code](../../static/img/checkmark-vs-codes.jpg)
+![checkmar in vs code](/img/checkmark-vs-codes.jpg)
 
 If the command fails, it will be an "X" mark instead!
 
@@ -116,7 +116,7 @@ If the command fails, it will be an "X" mark instead!
 
 Runme provides a handy "**Copy**" button to easily copy the output of a command!
 
-![copy output vs code](../../static/img/copy-output-vscodes.png)
+![copy output vs code](/img/copy-output-vscodes.png)
 
 ### Clearing Output
 
@@ -124,7 +124,7 @@ Sometimes, the output of a command can clutter up the screen. To prevent this, u
 
 Alternatively, select the output and use the **Option+Delete shortcut**.
 
-![clear output vs code](../../static/img/clear-output-vscodes.png)
+![clear output vs code](/img/clear-output-vscodes.png)
 
 Congratulations on running your first Runme notebook! 🎉. While you've understood the basics, there's more to discover about Runme's powerful features. Let's get ready to dive deeper.
 
@@ -143,11 +143,11 @@ If we just try to run this as it is, we will experience the following:
 
 However, when you disable interactive mode from the configuration setting, you cannot interact with your scripts.
 
-![configure vs code](../../static/img/configure-vs-codes.png)
+![configure vs code](/img/configure-vs-codes.png)
 
 From here, we can easily disable interactive mode:
 
-![disable interactive vs cose](../../static/img/disable-interactives.png)
+![disable interactive vs cose](/img/disable-interactives.png)
 
 Our code block will now display its output exactly as below:
 
@@ -168,7 +168,7 @@ In the VS Code settings, several configurable settings influence general Runme b
 
 This handles scripts that you will love to run in the background.
 
-![background task vs code](../../static/img/backgroundrunme1.png)
+![background task vs code](/img/backgroundrunme1.png)
 
 <Infobox type="warning">
 
@@ -185,17 +185,17 @@ Now, when you run the script, it will be part of a long-running terminal session
 
 As is demonstrated by the previous video, background tasks are delineated by the "Background Task" label:
 
-![run in the background](../../static/img/run-backgorund.png)
+![run in the background](/img/run-backgorund.png)
 
 Background Task also has a **Stop Task** button to end their execution long after starting:
 
-![stop task in background in vs code](../../static/img/background-stop-tassk.png)
+![stop task in background in vs code](/img/background-stop-tassk.png)
 
 ### Markdown Script Metadata
 
 Configuration fields like `background` and `interactive` are set using Markdown's script metadata feature:
 
-![configuration of background vs code](../../static/img/runme-metedata.png)
+![configuration of background vs code](/img/runme-metedata.png)
 
 <Infobox type="warning">
 
@@ -207,7 +207,7 @@ Be sure not to strip this data if you want to use it!
 
 At this point, we believe you now feel comfortable creating and using Runme on VS Code! We would appreciate your feedback. You can send us feedback directly from VS Code, simply click “Send Feedback” button on your Markdown file in your code editor.
 
-![feedback](../../static/img/feedback.png)
+![feedback](/img/feedback.png)
 
 ## **Useful Tips & Tricks**
 
@@ -221,13 +221,13 @@ It’s easy. Open your project README file and see it is now opened as a Noteboo
 
 Sometimes, you will want to see the file as a regular Markdown file, and you don’t need to disable or uninstall Runme. You can right-click on the file and pick one of the options displayed when clicking Open with. You can select the built-in text editor or Markdown preview for such cases.
 
-![open a README file as a Markdown file](../../static/img/open-readme-file.gif)
+![open a README file as a Markdown file](/img/open-readme-file.gif)
 
 ### Notebook Explorer
 
 To help you navigate the Markdown files in your project, Runme adds a super handy `Runme Notebooks` panel. Clicking any Markdown file will open it in your code editor view:
 
-![notebook explorer](../../static/img/runme-noteboooks.png)
+![notebook explorer](/img/runme-noteboooks.png)
 
 ## Next Steps
 

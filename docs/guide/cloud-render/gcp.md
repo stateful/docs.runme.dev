@@ -74,7 +74,7 @@ In this example, `runme-ci` is the project ID.
 
 When you run that code block, you'll be presented with a table displaying your Google Compute Engine instances, similar to your Google Cloud Console.
 
-![VM dashboard](../../../static/img/Integration/runme-gcp-vm-dashboard.png)
+![VM dashboard](/img/integration/runme-gcp-vm-dashboard.png)
 
 ## Managing Your Virtual Machine
 
@@ -88,21 +88,21 @@ To SSH into an virtual machine, do the following:
 
 - Click the SSH button next to the desired machine.
 
-![ssh into machine](../../../static/img/Integration/runme-gcp-ssh-button.png)
+![ssh into machine](/img/integration/runme-gcp-ssh-button.png)
 
 - An interface will ask if you want to SSH into the virtual machine.
 
-![ssh virtual machine](../../../static/img/Integration/runme-gcp-ssh.png)
+![ssh virtual machine](/img/integration/runme-gcp-ssh.png)
 
 - Upon confirmation, another code block will pop up, allowing you to establish an SSH connection to the virtual machine.
 
-![ssh into vm](../../../static/img/Integration/runme-gcp-ssh-outcome.png)
+![ssh into vm](/img/integration/runme-gcp-ssh-outcome.png)
 
 2. **Pause Virtual Machine**
 
 - Click on the pause icon next to the virtual machine you want to pause.
 
-![pause](../../../static/img/Integration/runme-gcp-pause.png)
+![pause](/img/integration/runme-gcp-pause.png)
 
 - An interface will appear asking if you want to suspend the virtual machine.
 - Click `Yes` or `No` to confirm your choice.
@@ -113,7 +113,7 @@ Outcome:
 
 - Click the start button next to the virtual machine you want to start.
 
-![start](../../../static/img/Integration/runme-gcp-start.png)
+![start](/img/integration/runme-gcp-start.png)
 
 - An interface will appear asking if you want to start the virtual machine.
 - Click `Yes` or `No` to proceed.
@@ -122,24 +122,24 @@ Outcome:
 
 The virtual machine is starting
 
-![starting virtual](../../../static/img/Integration/starting-runme.png)
+![starting virtual](/img/integration/starting-runme.png)
 
 The virtual machine is up
 
-![start](../../../static/img/Integration/runme-gcp-instanceup.png)
+![start](/img/integration/runme-gcp-instanceup.png)
 
 4. **Stop Virtual Machine**
 
 - Click on the stop button next to the virtual machine you want to stop.
 
-![stop](../../../static/img/Integration/runme-gcp-stop.png)
+![stop](/img/integration/runme-gcp-stop.png)
 
 - An interface will pop up asking if you want to stop the virtual machine.
 - Click "Yes" or "No" to confirm your action.
 
 The virtual machine has stopped
 
-![stop](../../../static/img/Integration/stop-cloud-render.png)
+![stop](/img/integration/stop-cloud-render.png)
 
 ## Working with Google Kubernetes Cluster
 
@@ -160,7 +160,7 @@ echo "You have selected the project-id $CLUSTERS_PROJECT_NAME"
 
 This is the output
 
-![set env ](../../../static/img/Integration/runme-gke-set-env.png)
+![set env ](/img/integration/runme-gke-set-env.png)
 
 Now you have configured your project, run the following command to list your clusters:
 
@@ -172,13 +172,13 @@ https://console.cloud.google.com/kubernetes/list/overview?project=$CLUSTERS_PROJ
 
 When the command is run, you will see a full list of all your Kubernetes cluster.
 
-![gks dashboard](../../../static/img/Integration/runme-gcp-gks-dashboard.png)
+![gks dashboard](/img/integration/runme-gcp-gks-dashboard.png)
 
 **View Specific Cluster**
 
 You can also view details of a specific cluster. To do this, click on the actions button beside the cluster which you want to view.
 
-![GKE dashboard](../../../static/img/Integration/runme-gke-dashboard.png)
+![GKE dashboard](/img/integration/runme-gke-dashboard.png)
 
 This will create a code block like the one below and automatically run it.
 
@@ -188,7 +188,7 @@ https://console.cloud.google.com/kubernetes/clusters/details/europe-central2-a/r
 
 Once the code block is executed, the actions page for that cluster opens up and you can perform any specific action you wish.
 
-![GKE details](../../../static/img/Integration/runme-gke-dashboard-display.png)
+![GKE details](/img/integration/runme-gke-dashboard-display.png)
 
 If you do not want to go through the process of clicking the button to view details, you can also paste a cluster details link into your Runme code cell and run it. Here is what it looks like
 
@@ -200,7 +200,7 @@ Be sure to replace the `location`, `account` and `project` with the right creden
 
 When this runs, the details dashboard of your cluster will be displayed.
 
-![display details](../../../static/img/Integration/runme-gke-display.png)
+![display details](/img/integration/runme-gke-display.png)
 
 ## Feedback and Contribution
 

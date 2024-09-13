@@ -28,11 +28,11 @@ To get Runme installed in VS Code on your Windows machine, follow the steps belo
 1. Open up VS Code on your local machine.
 2. Navigate to the **`Extension`** tab, which can be located on the dashboard on your left.
 
-![runme extension](../../static/img/how-runme-works/runme-extension-windows.png)
+![runme extension](/img/how-runme-works/runme-extension-windows.png)
 
 3. In your search bar, type "Runme". This will display the Runme Notebook extension.
 
-![runme extension](../../static/img/how-runme-works/runme-notebook-extension-windows.png)
+![runme extension](/img/how-runme-works/runme-notebook-extension-windows.png)
 
 4. Now click on Install to install the Notebook extension.
 
@@ -46,17 +46,17 @@ To set up Runme on WSL, follow the steps below:
 
 In your VS Code, press `F1`. This will open up a dashboard containing a list of configuration/setup options. Select **Connect to WSL**.
 
-![runme on wsl](../../static/img/how-runme-works/runme-wsl.png)
+![runme on wsl](/img/how-runme-works/runme-wsl.png)
 
 Alternatively, you can click on the button at the bottom left side of your VS Code dashboard, as shown in the image below, and you will be prompted with the same dashboard options.
 
-![vs code dashboard](../../static/img/how-runme-works/runme-wsl-vscode-windows.png)
+![vs code dashboard](/img/how-runme-works/runme-wsl-vscode-windows.png)
 
 - **Step Two**
 
 After connecting to your server using WSL, the next step is to install the Runme extension on the remote server so you can use it as you like.
 
-![wsl windows](../../static/img/how-runme-works/runme-install-wsl-windows.png)
+![wsl windows](/img/how-runme-works/runme-install-wsl-windows.png)
 
 - **Step Three**
 
@@ -68,15 +68,15 @@ This section will explore how [Runme works in VS Code on Windows](https://docs.r
 
 - Create a Markdown file and click the “+Code” button to create a code cell for your scripts or command.
 
-![runme +code](../../static/img/how-runme-works/runme-vscode-windows.png)
+![runme +code](/img/how-runme-works/runme-vscode-windows.png)
 
 - Enter your command into the code cell and click Run.
 
-![click run](../../static/img/how-runme-works/runme-execute-windows.png)
+![click run](/img/how-runme-works/runme-execute-windows.png)
 
 - If you want to configure your code cell before running, click the configure button.
 
-![runme configure](../../static/img/how-runme-works/runme-configure-windows.png)
+![runme configure](/img/how-runme-works/runme-configure-windows.png)
 
 ## Runme CLI with WSL
 
@@ -105,7 +105,7 @@ brew install runme
 
 At this point, you have connected to the WSL server and installed Runme CLI. You can run any task of your choice within your CLI. To do this, use `runme <command>` to execute tasks defined in the Markdown `.md` files.
 
-![runme cli](../../static/img/how-runme-works/runme-cli-windows.png)
+![runme cli](/img/how-runme-works/runme-cli-windows.png)
 
 For more details on how to use the Runme CLI, refer to the [Runme CLI documentation](https://docs.runme.dev/how-runme-works/cli).
 

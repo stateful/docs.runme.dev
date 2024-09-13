@@ -21,12 +21,12 @@ Follow the steps below to enable Sticky Scroll:
 - Click on the settings icon at the bottom left of your VS Code editor.
 - From the provided options, select “Settings”.
 
-![VS Code](../../static/img/guide-page/runme-vscode-setting.png)
+![VS Code](/img/guide-page/runme-vscode-setting.png)
 
 - In the search bar, enter ‘**notebook sticky**.’ This will direct you to the Sticky Scroll configuration page in the notebook.
 - Now enable Stick Scroll by clicking on the “Enabled” checkbox.
 
-![sticky roll](../../static/img/guide-page/stickyroll.png)
+![sticky roll](/img/guide-page/stickyroll.png)
 
 2. Run Cells
 
@@ -35,7 +35,7 @@ Next, follow the steps below to run cells by section in your Markdown file:
 - Navigate to your README.md file and scroll through it. As you scroll, all sections will stick to the top of the file.
 - Locate the section you want to run, right-click on it, and click on **Run Cells by Section**.
 
-![run section](../../static/img/guide-page/runme-cellsection.png)
+![run section](/img/guide-page/runme-cellsection.png)
 
 See the video below to represent the steps visually.
 
@@ -53,8 +53,8 @@ To run a section from the outline:
 - Navigate to the left-hand side of your VS Code dashboard.
 - Click on **OUTLINE**. The sections will be displayed in the image below.
 
-![VS Code outline](../../static/img/guide-page/runme-vscode-outline.png)
+![VS Code outline](/img/guide-page/runme-vscode-outline.png)
 
 Hover your mouse on the section you want to run, click the three dots beside it, and click run cells to run all the cells in that section.
 
-![cells section](../../static/img/guide-page/cellssection.png)
+![cells section](/img/guide-page/cellssection.png)
