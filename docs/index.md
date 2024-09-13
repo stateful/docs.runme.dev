@@ -27,7 +27,6 @@ All the code for Runme can be found in 4 repositories on Github:
 - [Kernel / CLI](https://github.com/stateful/runme)
 - [VS Code extension](https://github.com/stateful/vscode-runme)
 - [Github action](https://github.com/stateful/runme-action)
-- [Website](https://github.com/stateful/runme.dev)
 - [Docs](https://github.com/stateful/docs.runme.dev)
 
 ## Introduction video
