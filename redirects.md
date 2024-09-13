@@ -4,7 +4,7 @@ terminalRows: 20
 
 # Redirects
 
-As part of migrating to a new docs structure, let's be sure all old links have a new home.
+As part of migrating to a new docs structure, let's be sure all old links have a new home. Just grab a sitemap before deploy: e.g. https://docs.runme.dev/sitemap.xml.
 
 ```javascript {"id":"01J7PBSH505CN6QZT1T73RE0MG","interactive":"true","name":"NOT_FOUND"}
 const { readFile } = require("fs").promises;
@@ -32,6 +32,8 @@ const fetch = require("node-fetch");
   }
 })();
 ```
+
+The results are stored in the `NOT_FOUND` env var. All these links need redirects to be put in place, e.g. `vercel.json`:
 
 ```sh {"id":"01J7PE889Y4C7J033H0HMW49Z4"}
 echo $NOT_FOUND
