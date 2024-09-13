@@ -36,5 +36,5 @@ const fetch = require("node-fetch");
 The results are stored in the `NOT_FOUND` env var. All these links need redirects to be put in place, e.g. `vercel.json`:
 
 ```sh {"id":"01J7PE889Y4C7J033H0HMW49Z4"}
-echo $NOT_FOUND
+echo -n $NOT_FOUND
 ```
