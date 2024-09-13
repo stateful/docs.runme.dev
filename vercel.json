@@ -72,7 +72,7 @@
     },
     {
       "source": "/getting-started/runbyexample",
-      "destination": "/getting-started/hello-world",
+      "destination": "/usage/hello-world",
       "permanent": true
     },
     {
@@ -171,8 +171,13 @@
       "permanent": true
     },
     {
-      "source": "/integrations/:path*/",
-      "destination": "/guide/:path*/",
+      "source": "/integrations/cloud-render/:path*",
+      "destination": "/guide/cloud-render/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/:path*",
+      "destination": "/guide/:path*",
       "permanent": true
     },
     {
@@ -181,8 +186,8 @@
       "permanent": true
     },
     {
-      "source": "/home-runme-works/:path*/",
-      "destination": "/getting-started/:path*/",
+      "source": "/how-runme-works/:path*",
+      "destination": "/getting-started/:path*",
       "permanent": true
     },
     {
