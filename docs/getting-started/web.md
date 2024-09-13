@@ -97,6 +97,6 @@ This feature allows users to perform specific actions, such as copying the outpu
 To learn more about how Runme works on several other client interfaces, see these resources:
 
 - [Getting started in VS Code](/getting-started/vscode)
-- [Getting started on the Web](getting-started/how-runme-works/web)
+- [Getting started on the Web](/getting-started/web)
 - [Getting started with VS Code SSH and Remote](/getting-started/vscode-ssh)
 - [Getting started in the CLI](/getting-started/cli)
