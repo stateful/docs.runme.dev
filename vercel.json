@@ -119,6 +119,61 @@
       "source": "/integrations/:path*",
       "destination": "/guide/:path*",
       "permanent": true
+    },
+    {
+      "source": "/how-runme-works/runme-via-ssh",
+      "destination": "/how-runme-works/vscode-ssh",
+      "permanent": true
+    },
+    {
+      "source": "/home-runme-works/:path*",
+      "destination": "/getting-started/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/open-source",
+      "destination": "/resources/open-source",
+      "permanent": true
+    },
+    {
+      "source": "/Reference",
+      "destination": "/configuration",
+      "permanent": true
+    },
+    {
+      "source": "/Reference/configuration",
+      "destination": "/configuration",
+      "permanent": true
+    },
+    {
+      "source": "/Reference/flag",
+      "destination": "/configuration/cli-reference",
+      "permanent": true
+    },
+    {
+      "source": "/guide/helm",
+      "destination": "/guide/k8s/helm",
+      "permanent": true
+    },
+    {
+      "source": "/guide/k8s-secret",
+      "destination": "/guide/k8s/k8s-secret",
+      "permanent": true
+    },
+    {
+      "source": "/guide/replicaset",
+      "destination": "/guide/k8s/replicaset",
+      "permanent": true
+    },
+    {
+      "source": "/guide/servicemesh",
+      "destination": "/guide/k8s/istio",
+      "permanent": true
+    },
+    {
+      "source": "/guide/sops",
+      "destination": "/guide/k8s/sops",
+      "permanent": true
     }
   ]
 }
