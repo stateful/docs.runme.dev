@@ -289,6 +289,21 @@
       "source": "/installation/runme-cdes",
       "destination": "/installation/cdes",
       "permanent": true
+    },
+    {
+      "source": "/configuration/auto-save",
+      "destination": "/usage/auto-save",
+      "permanent": true
+    },
+    {
+      "source": "/configuration/shebang",
+      "destination": "/usage/shebang",
+      "permanent": true
+    },
+    {
+      "source": "/installation/runmecli",
+      "destination": "/installation/cli",
+      "permanent": true
     }
   ]
 }
