@@ -517,7 +517,7 @@ groups:
 
 **Log Aggregation**
 
-Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and [Grafana](../tutorial/monitoring-stack.md) to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
+Use log aggregation tools like Elasticsearch, Fluentd, and Kibana (EFK) or Loki and [Grafana](/guide/monitoring-stack) to collect and analyze logs from Argo CD components. This helps in identifying issues and understanding system behavior.
 
 **Setting Up Disaster Recovery Procedures**
 
@@ -544,7 +544,7 @@ docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSIO
 
 **High Availability**
 
-Configure Argo CD for high availability (HA) by running multiple [replicas](../tutorial/replicaset.md) of its components and distributing them across different nodes and availability zones.
+Configure Argo CD for high availability (HA) by running multiple [replicas](/guide/replicaset) of its components and distributing them across different nodes and availability zones.
 
 Example HA configuration in Helm:
 

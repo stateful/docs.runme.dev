@@ -313,7 +313,7 @@ kubectl apply -f peer-authentication.yaml
 
 ## Observability[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#observability)
 
-To get a visual view of your application's progress, consider integrating with [Prometheus](../tutorial/monitoring-stack#configure-your-prometheus), [Grafana](../tutorial/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
+To get a visual view of your application's progress, consider integrating with [Prometheus](/guide/monitoring-stack#configure-your-prometheus), [Grafana](/guide/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
 
 Run this command to do that.
 

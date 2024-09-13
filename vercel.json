@@ -96,13 +96,18 @@
       "permanent": true
     },
     {
+      "source": "/guides",
+      "destination": "/guide",
+      "permanent": true
+    },
+    {
       "source": "/Guide/terraform",
-      "destination": "/tutorial/terraform",
+      "destination": "/guide/terraform",
       "permanent": true
     },
     {
       "source": "/Guide/devcontainer",
-      "destination": "/tutorial/devcontainer",
+      "destination": "/guide/devcontainer",
       "permanent": true
     },
     {

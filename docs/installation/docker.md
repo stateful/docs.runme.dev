@@ -81,6 +81,6 @@ In this example, the first stage is dedicated to installing dependencies, and th
 <br />
 <Infobox type="sidenote" title="Keep going!">
 
-Explore further customization options and [integration](/tutorial/github-actions-workflow) possibilities.
+Explore further customization options and [integration](/guide/github-actions-workflow) possibilities.
 
 </Infobox>

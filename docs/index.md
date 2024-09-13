@@ -81,4 +81,4 @@ Runme is built on the VS Code platform running in Codespaces, Coder's [code-serv
 - First you need to [install Runme](/installation) for the client you want to use.
 - Next follow the [getting started](/getting-started) guide
 
-If you've already done that, skip to [configuring Notebooks](/configuration) or our [tutorials](/tutorial).
+If you've already done that, skip to [configuring Notebooks](/configuration) or our [guides](/guide).
