@@ -89,7 +89,7 @@ Runme provides several options that can be executed in the context of a notebook
 
 **Cell Code Block Actions**
 
-To configure a cell code block, this feature provides a list of actions that can be used to define the code block executions. This includes a [cell programming language](https://docs.runme.dev/configuration/shebang), [configurations](https://docs.runme.dev/configuration/cell-level), etc.
+To configure a cell code block, this feature provides a list of actions that can be used to define the code block executions. This includes a [cell programming language](https://docs.runme.dev/usage/shebang), [configurations](https://docs.runme.dev/configuration/cell-level), etc.
 
 ![cell code block actions](../../static/img/how-runme-works/runme-block-actions.png)
 
@@ -101,10 +101,9 @@ This feature allows users to perform specific actions, such as copying the outpu
 
 ## Additional Resources[](https://docs.runme.dev/how-runme-works/cli#additional-resources)
 
-See more resources on how Runme works
+To learn more about how Runme works on several other client interfaces, see these resources:
 
-[How Runme Works on the CLI](https://docs.runme.dev/how-runme-works/cli)
-
-[How Runme Works in VS Code](https://docs.runme.dev/how-runme-works/vscode)
-
-[How Runme works on VS Code SSH and Remote](https://docs.runme.dev/how-runme-works/runme-via-ssh)
+- [Getting started in VS Code](/getting-started/vscode)
+- [Getting started on the Web](getting-started/how-runme-works/web)
+- [Getting started with VS Code SSH and Remote](/getting-started/vscode-ssh)
+- [Getting started in the CLI](/getting-started/cli)

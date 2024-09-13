@@ -357,8 +357,8 @@ kind delete cluster --name my-cluster
 
 Some other guides you may want to explore:
 
-[Deploying and Managing Applications with Runme and Argo CD](https://docs.runme.dev/guide/agrocd)
+[Deploying and Managing Applications with Runme and Argo CD](/guide/k8s/agrocd)
 
-[Advanced Guide to Argo CD and Runme](https://docs.runme.dev/guide/argocd-cli)
+[Advanced Guide to Argo CD and Runme](/guide/k8s/argocd-cli)
 
-[How to Setup a Monitoring Stack for Your Applications by Leveraging Runme](https://docs.runme.dev/guide/monitoring-stack)
+[How to Setup a Monitoring Stack for Your Applications by Leveraging Runme](/guide/monitoring-stack)

@@ -56,7 +56,7 @@ This section will walk you through how GCE works in Runme Notebook Renderers.
 
 **Set Your Project ID Using an Environment Variable**
 
-First, set your Google Cloud project ID using an [environment vairable](https://docs.runme.dev/getting-started/features#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook. To set your project ID, run the command below:
+First, set your Google Cloud project ID using an [environment vairable](/configuration/cell-level#environment-variable-prompts). This allows you to specify the project you want to work with and visualize in your notebook. To set your project ID, run the command below:
 
 ```sh {"id":"01J1AQK0KF874HAGT2HGYG3VFK"}
 export PROJECT_ID="runme-ci"

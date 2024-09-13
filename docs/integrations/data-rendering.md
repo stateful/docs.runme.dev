@@ -110,6 +110,11 @@ We are still developing more features for Runme. If you have feedback on this or
 
 See more resources on the Runme Renderer feature:
 
+<<<<<<< Updated upstream:docs/integrations/data-rendering.md
 - [Manage your Google Cloud Console with Runme Cloud Renderer](https://docs.runme.dev/integrations/cloud-render/gcp)
 - [Execute a series of AWS operations in your Runbook](https://docs.runme.dev/integrations/cloud-render/aws)
 
+=======
+- [Manage your Google Cloud Console with Runme Cloud Renderer](/guide/cloud-render/gcp)
+- [Execute a series of AWS operations in your Runbook](/guide/cloud-render/aws)
+>>>>>>> Stashed changes:docs/configuration/output-rendering.md

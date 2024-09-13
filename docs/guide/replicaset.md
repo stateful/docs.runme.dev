@@ -16,7 +16,11 @@ This guide will show you a step-by-step guide to configure and deploy your Kuber
 
 To follow up on this tutorial, ensure you have the following:
 
+<<<<<<< Updated upstream:docs/guide/replicaset.md
 - **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and make it your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer). Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation](../installation/index.md) guide.
+=======
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and make it your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer). Runme also provides other client interfaces where you can run your Markdown file. See the [Runme installation](/installation) guide.
+>>>>>>> Stashed changes:docs/guide/k8s/replicaset.md
 - **Clone Repository**: We have provided an example repository to help you follow this tutorial. Clone the [Repository here](https://github.com/stateful/blog-examples/tree/main/kubernetes/replicaset).
 
 ```sh {"id":"01HYB7KWWEWVTF00NN5CDCZA3V"}

@@ -27,4 +27,4 @@ This command will automatically open Runme in your default web browser and set u
 
 ## **Next Steps**
 
-You can achieve so much more with the Runme Web and your Markdown will also benefit from its features. [Our documentation](https://docs.runme.dev/how-runme-works/web) provides more details on how this works.
+You can achieve so much more with the Runme Web and your Markdown will also benefit from its features. [Our documentation](/getting-started/web) provides more details on how this works.

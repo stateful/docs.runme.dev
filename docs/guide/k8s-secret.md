@@ -25,7 +25,11 @@ git clone https://github.com/stateful/blog-examples.git
 cd kubernetes/k8s-secret/sealed-secret
 ```
 
+<<<<<<< Updated upstream:docs/guide/k8s-secret.md
 - **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+=======
+- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
+>>>>>>> Stashed changes:docs/guide/k8s/k8s-secret.md
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files.](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/linux-sealedsecrets.md)
 
@@ -119,7 +123,7 @@ Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsec
 
 In this guide, we explored how to encrypt, decrypt, delete, deploy a Kubernetes secrtes using sealed secrets and Runme. Runme made the process of carrying all these operations out swiftly by utilizing its features.
 
-Some [key features](https://docs.runme.dev/getting-started/features) of Runme that make it stand out include:
+Some [key features](/usage/hello-world) of Runme that make it stand out include:
 
 - Its ability to simplify the copying and pasting of commands and codes,
 - Run tasks in the background, interact with your terminal,

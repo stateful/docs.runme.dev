@@ -9,7 +9,11 @@ sidebar_position: 3
 
 Runme enables you to execute codes and commands inside your Markdown file without switching tabs. It integrates easily with [VS Code SSH](https://code.visualstudio.com/docs/remote/ssh) and allows users to connect to remote instances effortlessly. This integration allows for easy execution of specific instructions directly in Markdown files, streamlining workflows and boosting productivity.
 
+<<<<<<< Updated upstream:docs/how-runme-works/runme-via-ssh.md
 In this section, we will explore the various ways you can utilize Runme with VS Code SSH.
+=======
+To follow the instructions on this page, ensure you have installed Runme on your [VS Code](/installation/vscode) or [CLI](/installation/cli). Also, ensure you have access to the remote server you need.
+>>>>>>> Stashed changes:docs/getting-started/vscode-ssh.md
 
 To follow up on the instructions on this page, ensure you have installed Runme on your [VS Code](https://docs.runme.dev/installation/installrunme) or [CLI](https://docs.runme.dev/installation/runmecli). Also, ensure you have access to the remote server you need.
 

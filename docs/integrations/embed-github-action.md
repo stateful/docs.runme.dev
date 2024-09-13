@@ -8,7 +8,11 @@ title: Running Github Action Inside a Markdown File
 
 # Running Github Action Inside a Markdown File
 
+<<<<<<< Updated upstream:docs/integrations/embed-github-action.md
 > 💡 Be sure to install [Runme for VS Code](https://docs.runme.dev/installation/installrunme) first
+=======
+> 💡 Be sure to install [Runme for VS Code](/installation/vscode) first
+>>>>>>> Stashed changes:docs/usage/embedded-github-action.md
 
 <br/>
 

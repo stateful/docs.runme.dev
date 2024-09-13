@@ -14,7 +14,11 @@ Within the CLI, you can enter and run your command and access your interactive n
 
 <Infobox type="sidenote" title="Install Runme">
 
+<<<<<<< Updated upstream:docs/how-runme-works/cli.md
 To get started with the Runme CLI, it is important that you have Runme CLI installed. The  [installation](https://docs.runme.dev/installation/runmecli) will guide you through this process.
+=======
+To get started with the Runme CLI, it is important that you have Runme CLI installed. The [installation](/installation/cli) will guide you through this process.
+>>>>>>> Stashed changes:docs/getting-started/cli.md
 
 </Infobox>
 

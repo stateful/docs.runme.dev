@@ -123,4 +123,10 @@ And so much [more](https://docs.runme.dev/getting-started/).
 
 Learn more about Runme and what problems it [solves for you](/why).
 
+<<<<<<< Updated upstream
+=======
+<br /><br />
+<Infobox type="sidenote" title="Jump forward">
+[Install Runme](/installation) or [get started](/getting-started).
+>>>>>>> Stashed changes
 </Infobox>
