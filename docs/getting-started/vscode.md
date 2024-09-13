@@ -5,46 +5,32 @@ title: VS Code
 
 # Runme in VS Code
 
-## Your First Runme
-
-If you would like to quickly understand how Runme works in VS Code, simply clone the [example Repo](https://github.com/stateful/blog-examples) to follow along! This guide follows the `node-streams` sub-package; open its README file, and Runme will do the rest.
-
-<Infobox type="sidenote" title="Install Runme VS Code extension">
-
-To get started with Runme on VS Code, ensure you have the Runme Notebook extension installed on your code editor. See the step-by-step [installation](/installation/vscode) guide to install the Runme Notebook extension proceed.
-
-</Infobox>
-
-![run commands in vs code](/img/run-commands-vscode.gif)
-
-### From Scratch
-
-Start by initializing a new project and adding a new `README.md` file. Alternatively, you can select `Runme Notebook` from the `File->New File` menu. When you open it, you should get an empty canvas, like this:
+Make sure you followed the [installation process for Runme in VS Code](/installation/vscode). Next, in the VS Code file `Explorer` create a new `README.md` file by right clicking or using the `File->New File` menu. When you open it, you should get an empty canvas, like this:
 
 ![start readme project](/img/start-readme-projects.png)
 
-### Adding Markdown
+## Adding Markdown
 
 To add a new Markdown section, click the "**+ Markdown"** button in the top left or center:
 
 ![add Markdown vs code](/img/add-markdown-vscodes.png)
 
-You can then edit the Markdown block directly:
+You can then edit the Markdown cell directly:
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/edit-markdown-block.mp4" type="video/mp4" />
   <source src="/videos/edit-markdown-block.webm" type="video/webm" />
 </video>
 
-As shown in the image below, once you're done editing a block, use the **Check** icon (the one with the checkmark):
+As shown in the image below, once you're done editing a cell, use the **check** icon (the one with the checkmark):
 
 ![Stop Editing Cell vs code](/img/check-icon.png)
 
-To edit the cell again, use the **Edit Cell** icon:
+To edit the cell again, use the **edit cell** icon:
 
 ![start editing Markdown in vs code](/img/editing-cell.png)
 
-Finally, you can remove a cell at any time using the **Delete Cell** icon:
+Finally, you can remove a cell at any time using the **delete cell** icon:
 
 ![remove cell in Markdown](/img/dell-cell.png)
 
@@ -60,7 +46,7 @@ Other shortcuts you can use are:
 
 </Infobox>
 
-### Adding Code
+## Adding Code
 
 Code cell blocks work similarly to Markdown blocks and can be edited, saved, or deleted in the same way.
 
@@ -72,20 +58,11 @@ You can then freely add runnable code:
 
 ![run hello world from vs code](/img/echo-hello-world.png)
 
-In this section, we will demonstrate how Runme displays command output when running code or commands. For this illustration, we will use a Node.js script in our repository under the **[Examples](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md)** section.
-
-<br />
-<Infobox type="sidenote" title="Note">
-
-Note that the Node.js example is entirely optional. You can use any script of your preference to print the output you want. However, if you decide to follow along with it, make sure you have [Node.js](https://nodejs.org/en/), [curl](https://curl.se/), and [unzip](https://infozip.sourceforge.net/UnZip.html) installed on your local machine.
-
-</Infobox>
-
 ## Running Scripts
 
-Runme automatically converts all bash codeblocks in your README into runnable scripts. This makes getting started with a new project a breeze - say goodbye to annoying copy-and-pasting!
+All bash commands added to the Notebook will become runnable. This makes getting started with a new project a breeze - say goodbye to annoying copy-and-pasting!
 
-To run a script, click the Run button on its left-hand side. Start by running the first script under "Prerequisites":
+To run a script, click the Run button on its left-hand side:
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/run-scripting-vscode.mp4" type="video/mp4" />
@@ -96,9 +73,9 @@ As you can see, we have downloaded the `business_data.csv` file, which contains 
 
 ## Command Output
 
-Now, try running Steps 1 and 2 in the [Example Repo](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md).
+After running cells you will see their output displayed below the cell
 
-You should get an output like this:
+For example:
 
 ![Command output vs code](/img/command-output-vscodess.png)
 
@@ -114,7 +91,7 @@ If the command fails, it will be an "X" mark instead!
 
 ### Copying Output
 
-Runme provides a handy "**Copy**" button to easily copy the output of a command!
+Runme provides a handy "**copy**" button to easily copy the output of a command!
 
 ![copy output vs code](/img/copy-output-vscodes.png)
 
@@ -141,6 +118,7 @@ If we just try to run this as it is, we will experience the following:
   <source src="/videos/hello-world-vscode-error.webm" type="video/webm" />
 </video>
 
+<br/>
 However, when you disable interactive mode from the configuration setting, you cannot interact with your scripts.
 
 ![configure vs code](/img/configure-vs-codes.png)
