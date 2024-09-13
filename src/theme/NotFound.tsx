@@ -70,7 +70,9 @@ export default function NotFound() {
                 </div>
                 <div className="flex flex-col space-y-2 text-sm">
                   <div className="text-[color:var(--ifm-navbar-link-color)] hover:underline">
-                    <a href="https://docs.runme.dev/installation/">Installation</a>
+                    <a href="https://docs.runme.dev/installation/">
+                      Installation
+                    </a>
                   </div>
                   <div className="text-[color:var(--ifm-navbar-link-color)] hover:underline">
                     <a href="https://docs.runme.dev/getting-started">
@@ -78,7 +80,7 @@ export default function NotFound() {
                     </a>
                   </div>
                   <div className="text-[color:var(--ifm-navbar-link-color)] hover:underline">
-                    <a href="https://docs.runme.dev/getting-started/features">Key features</a>
+                    <a href="https://docs.runme.dev/usage">Usage</a>
                   </div>
                 </div>
               </div>

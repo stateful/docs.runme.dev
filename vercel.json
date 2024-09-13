@@ -42,7 +42,7 @@
     },
     {
       "source": "/r/extension/interpreter",
-      "destination": "https://docs.runme.dev/configuration/shebang",
+      "destination": "https://docs.runme.dev/usage/shebang",
       "permanent": false
     },
     {

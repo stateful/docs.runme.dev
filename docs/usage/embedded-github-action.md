@@ -4,7 +4,7 @@ title: Embedded Github Action UI
 
 # Embedded Github Action UI
 
-> 💡 Be sure to install [Runme for VS Code](https://docs.runme.dev/installation/vscode) first
+> 💡 Be sure to install [Runme for VS Code](/installation/vscode) first
 
 <br/>
 

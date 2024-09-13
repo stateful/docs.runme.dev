@@ -6,7 +6,7 @@ This guide demonstrates how Helm integrates with Runme to automate processes and
 
 To follow up on this tutorial, ensure you have the following:
 
-- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 - **Clone Repo**: We have provided an example repository to help you follow this tutorial. You can clone the [repo here](https://github.com/stateful/blog-examples/blob/main/cloud-native/helm/helm.md).
 
 ```sh {"id":"01HY2N3NNE1X67QD5FE0Y5T2XG"}

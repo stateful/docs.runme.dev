@@ -9,7 +9,7 @@ With the CLI, you can run commands from your Notebooks in the terminal. The Runm
 
 <Infobox type="sidenote" title="Install Runme">
 
-To get started with the Runme CLI, it is important that you have Runme CLI installed. The [installation](https://docs.runme.dev/installation/runmecli) will guide you through this process.
+To get started with the Runme CLI, it is important that you have Runme CLI installed. The [installation](/installation/cli) will guide you through this process.
 
 </Infobox>
 

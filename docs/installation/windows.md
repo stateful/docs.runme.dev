@@ -107,13 +107,13 @@ At this point, you have connected to the WSL server and installed Runme CLI. You
 
 ![runme cli](/img/how-runme-works/runme-cli-windows.png)
 
-For more details on how to use the Runme CLI, refer to the [Runme CLI documentation](https://docs.runme.dev/how-runme-works/cli).
+For more details on how to use the Runme CLI, refer to the [Runme CLI documentation](/configuration/cli-reference).
 
 ## Additional Resources
 
 To learn more about how Runme works on several other client interfaces, see these resources:
 
-- [How Runme Works in VS Code](https://docs.runme.dev/how-runme-works/vscode)
-- [How Runme Works on the Web](https://docs.runme.dev/how-runme-works/web)
-- [How Runme works on VS Code SSH and Remote](https://docs.runme.dev/how-runme-works/runme-via-ssh)
-- [How Runme Works on CLI](https://docs.runme.dev/how-runme-works/cli)
+- [Getting started in VS Code](/getting-started/vscode)
+- [Getting started on the Web](/getting-started/web)
+- [Getting started with VS Code SSH and Remote](/getting-started/vscode-ssh)
+- [Getting started in the CLI](/getting-started/cli)
