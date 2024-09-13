@@ -353,7 +353,7 @@ kind delete cluster --name my-cluster
 
 Some other guides you may want to explore:
 
-[Deploying and Managing Applications with Runme and Argo CD](/guide/k8s/agrocd)
+[Deploying and Managing Applications with Runme and Argo CD](/guide/k8s/argocd)
 
 [Advanced Guide to Argo CD and Runme](/guide/k8s/argocd-cli)
 

@@ -1,6 +1,6 @@
 # Argo CD advanced
 
-Our previous guide provided a detailed tutorial on [deploying and managing applications with ArgoCD and Runme.](https://docs.runme.dev/guide/k8s/agrocd)
+Our previous guide provided a detailed tutorial on [deploying and managing applications with ArgoCD and Runme.](https://docs.runme.dev/guide/k8s/argocd)
 
 In this guide, we will take it a step higher by providing an advanced tutorial on how to use Argo CD with the Runme extension in VS Code. The best part of this integration is that everything can be done right inside your Markdown file without switching between terminals.
 
@@ -8,7 +8,7 @@ In this guide, we will take it a step higher by providing an advanced tutorial o
 
 To follow up on this tutorial, ensure you have the following:
 
-> 💡 Ensure you have installed the necessary tools as indicated in the [beginner guide](https://docs.runme.dev/guide/k8s/agrocd#prerequisites)
+> 💡 Ensure you have installed the necessary tools as indicated in the [beginner guide](https://docs.runme.dev/guide/k8s/argocd#prerequisites)
 
 **Basic Requirement**
 
@@ -84,7 +84,7 @@ Get Argo CD Pods in the Argo CD namespace
 kubectl get po -n argocd
 ```
 
-![Agro CD pods](/img/guide-page/runme-argo-pods.png)
+![argo CD pods](/img/guide-page/runme-argo-pods.png)
 
 Port forwarding an Argo CD Server is a practical and secure way to access the Argo CD web UI for setup, development, and general use without exposing it to external networks.
 
@@ -94,7 +94,7 @@ To do this, run the command below. You can run your code cell as a [background 
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 
-![Background process](/img/guide-page/runme-background-agrocdcli.png)
+![Background process](/img/guide-page/runme-background-argocdcli.png)
 
 **Retrieve Initial Admin Password**
 
