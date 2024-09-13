@@ -1,23 +1,78 @@
 {
   "redirects": [
     {
-      "source": "/r/extension/gist",
-      "destination": "https://runme.dev/blog/runme-gist",
-      "permanent": false
-    },
-    {
-      "source": "/configuration/runme-gist",
-      "destination": "/integrations/runme-gist",
-      "permanent": true
-    },
-    {
       "source": "/r/extension/(.*)",
       "destination": "/configuration/cell-level#$1",
       "permanent": false
     },
     {
+      "source": "/r/extension/background",
+      "destination": "/configuration/cell-level#handle-long-running-processes",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/interactive",
+      "destination": "/configuration/cell-level#interactive-vs-non-interactive-cells",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/closeTerminalOnSuccess",
+      "destination": "/configuration/cell-level#terminal-visibility-post-execution",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/promptEnv",
+      "destination": "/configuration/cell-level#set-environment-variables",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/mimeType",
+      "destination": "/configuration/mime",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/gist",
+      "destination": "/usage/runme-gist",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/name",
+      "destination": "/configuration/cell-level#unnamed-vs-named-cells",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/cwd",
+      "destination": "/configuration/cell-level#cell-cwd-current-working-directory",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/interpreter",
+      "destination": "/usage/shebang",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/category",
+      "destination": "/configuration/cell-level#run-all-cells-by-category",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/excludeFromRunAll",
+      "destination": "/configuration/cell-level#exclude-cell-from-run-all",
+      "permanent": false
+    },
+    {
+      "source": "/r/extension/terminalRows",
+      "destination": "/configuration/cell-level#terminal-row",
+      "permanent": false
+    },
+    {
       "source": "/getting-started/(.*)",
       "destination": "/getting-started/$1",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started/faq",
+      "destination": "/resources/faq",
       "permanent": true
     },
     {
@@ -186,10 +241,29 @@
       "permanent": true
     },
     {
+      "source": "/integrations/data-rendering",
+      "destination": "/configuration/output-rendering",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/foyle",
+      "destination": "/guide/foyle",
+      "permanent": true
+    },
+    {
+      "source": "/open-source",
+      "destination": "/resources/open-source",
+      "permanent": true
+    },
+    {
       "source": "/Reference/flag",
       "destination": "/configuration/cli-reference",
+      "permanent": true
+    },
+    {
+      "source": "/Reference/mime",
+      "destination": "/configuration/mime",
       "permanent": true
     }
   ]
 }
-
