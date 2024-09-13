@@ -2,27 +2,27 @@
   "redirects": [
     {
       "source": "/r/extension/background",
-      "destination": "https://docs.runme.dev/configuration/cell-level#handle-long-running-processes",
+      "destination": "/configuration/cell-level#handle-long-running-processes",
       "permanent": false
     },
     {
       "source": "/r/extension/interactive",
-      "destination": "https://docs.runme.dev/configuration/cell-level#interactive-vs-non-interactive-cells",
+      "destination": "/configuration/cell-level#interactive-vs-non-interactive-cells",
       "permanent": false
     },
     {
       "source": "/r/extension/closeTerminalOnSuccess",
-      "destination": "https://docs.runme.dev/configuration/cell-level#terminal-visibility-post-execution",
+      "destination": "/configuration/cell-level#terminal-visibility-post-execution",
       "permanent": false
     },
     {
       "source": "/r/extension/promptEnv",
-      "destination": "https://docs.runme.dev/configuration/cell-level#set-environment-variables",
+      "destination": "/configuration/cell-level#set-environment-variables",
       "permanent": false
     },
     {
       "source": "/r/extension/mimeType",
-      "destination": "https://docs.runme.dev/reference/mime",
+      "destination": "/configuration/mime",
       "permanent": false
     },
     {
@@ -32,57 +32,52 @@
     },
     {
       "source": "/r/extension/name",
-      "destination": "https://docs.runme.dev/configuration/cell-level#unnamed-vs-named-cells",
+      "destination": "/configuration/cell-level#unnamed-vs-named-cells",
       "permanent": false
     },
     {
       "source": "/r/extension/cwd",
-      "destination": "https://docs.runme.dev/configuration/cell-level#cells-current-working-directory",
+      "destination": "/configuration/cell-level#cells-current-working-directory",
       "permanent": false
     },
     {
       "source": "/r/extension/interpreter",
-      "destination": "https://docs.runme.dev/configuration/shebang",
+      "destination": "/configuration/shebang",
       "permanent": false
     },
     {
       "source": "/r/extension/category",
-      "destination": "https://docs.runme.dev/configuration/cell-level#run-all-cells-by-category",
+      "destination": "/configuration/cell-level#run-all-cells-by-category",
       "permanent": false
     },
     {
       "source": "/r/extension/excludeFromRunAll",
-      "destination": "https://docs.runme.dev/configuration/cell-level#exclude-cell-from-run-all",
+      "destination": "/configuration/cell-level#exclude-cell-from-run-all",
       "permanent": false
     },
     {
       "source": "/r/extension/terminalRows",
-      "destination": "https://docs.runme.dev/configuration/cell-level#terminal-row",
+      "destination": "/configuration/cell-level#terminal-row",
       "permanent": false
     },
     {
       "source": "/getting-started/faq",
-      "destination": "/faq",
+      "destination": "/resources/faq",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/resources/faq",
       "permanent": true
     },
     {
       "source": "/features",
-      "destination": "/getting-started/features",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/vs-code",
-      "destination": "https://docs.runme.dev/how-runme-works/vscode",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/web",
-      "destination": "https://docs.runme.dev/how-runme-works/web",
+      "destination": "/usage",
       "permanent": true
     },
     {
       "source": "/getting-started/runme-via-ssh",
-      "destination": "https://docs.runme.dev/how-runme-works/runme-via-ssh",
+      "destination": "/getting-started/vscode-ssh",
       "permanent": true
     },
     {
@@ -102,27 +97,27 @@
     },
     {
       "source": "/Guide/devcontainer",
-      "destination": "/guide/devcontainer",
-      "permanent": true
-    },
-    {
-      "source": "/how-runme-works/vs-code",
-      "destination": "/how-runme-works/vscode",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/cli",
-      "destination": "/how-runme-works/cli",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/cli",
-      "destination": "/how-runme-works/cli",
+      "destination": "/usage/devcontainers",
       "permanent": true
     },
     {
       "source": "/configuration/runme-gist",
-      "destination": "/integrations/runme-gist",
+      "destination": "/usage/runme-gist",
+      "permanent": true
+    },
+    {
+      "source": "/guide/argocd",
+      "destination": "/guide/k8s/argocd",
+      "permanent": true
+    },
+    {
+      "source": "/guide/agrocd",
+      "destination": "/guide/k8s/argocd",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/:path*",
+      "destination": "/guides/:path*",
       "permanent": true
     }
   ]
