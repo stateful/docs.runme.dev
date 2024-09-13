@@ -171,13 +171,13 @@
       "permanent": true
     },
     {
-      "source": "/integrations/cloud-render/:path*",
-      "destination": "/guide/cloud-render/:path*",
+      "source": "/integrations/cloud-render/",
+      "destination": "/guide/cloud-render/",
       "permanent": true
     },
     {
-      "source": "/integrations/cloud-render/",
-      "destination": "/guide/cloud-render/",
+      "source": "/integrations/cloud-render/:path*",
+      "destination": "/guide/cloud-render/:path*",
       "permanent": true
     },
     {
@@ -193,6 +193,11 @@
     {
       "source": "/how-runme-works/runme-via-ssh",
       "destination": "/how-runme-works/vscode-ssh",
+      "permanent": true
+    },
+    {
+      "source": "/how-runme-works/windows",
+      "destination": "installation/windows",
       "permanent": true
     },
     {
