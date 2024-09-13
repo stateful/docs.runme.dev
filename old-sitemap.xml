@@ -25,7 +25,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://docs.runme.dev/usage/auto-save</loc>
+        <loc>https://docs.runme.dev/configuration/auto-save</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -50,7 +50,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://docs.runme.dev/usage/shebang</loc>
+        <loc>https://docs.runme.dev/configuration/shebang</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -80,7 +80,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://docs.runme.dev/guide/argocd</loc>
+        <loc>https://docs.runme.dev/guide/agrocd</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -205,7 +205,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>/installation/cli</loc>
+        <loc>https://docs.runme.dev/installation/runmecli</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
