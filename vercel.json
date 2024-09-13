@@ -119,7 +119,7 @@
       "source": "/configuration/runme-gist",
       "destination": "/usage/runme-gist",
       "permanent": true
-    }
+    },
     {
       "source": "/integrations",
       "destination": "/guide",
