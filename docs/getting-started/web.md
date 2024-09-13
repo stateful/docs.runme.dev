@@ -44,49 +44,49 @@ On the web app, the features and actions that can be performed are quite similar
 
 ![VS Code Marketplace](/img/installation-page/runme-for-vscode.png)
 
-**Notebooks Explorer**
+### Notebooks Explorer
 
 If you have more than one Markdown file that exists in a directory, you can easily access any of the Markdown files using the Notebooks Explorer.
 
 ![notebooks explorer](/img/how-runme-works/runme-notebooks-explorer.png)
 
-**Cell Execution Status Indicator**
+### Cell Execution Status Indicator
 
 After a code or command cell block is executed, the execution can either fail or pass. The Cell execution status indicator helps a user know the status of the executed cell.
 
 ![status indicator](/img/how-runme-works/runme-status-indicator.png)
 
-**Cell Execution Result**
+### Cell Execution Result
 
 Runme provides an embedded Notebook terminal that works just like the VS Code integrated terminal. With the Runme terminal, you can view the execution result of your codes and commands right inside your Markdown file.
 
 ![execution result](/img/how-runme-works/runme-cell-execution-result.png)
 
-**Run Cell Button**
+### Run Cell Button
 
 Run codes and commands in a Markdown file with a single click.
 
 ![run cell button](/img/how-runme-works/runme-cell-button.png)
 
-**Cell Code Block**
+### Cell Code Block
 
 Runme provides a cell code block that provides a visual representation of commands to be executed with syntax highlighting.
 
 ![runme code block](/img/how-runme-works/runme-code-block.png)
 
-**Notebook Global Actions**
+### Notebook Global Actions
 
 Runme provides several options that can be executed in the context of a notebook thus making users more productive at their tasks.
 
 ![global actions](/img/how-runme-works/runme-network-global-actions.png)
 
-**Cell Code Block Actions**
+### Cell Code Block Actions
 
 To configure a cell code block, this feature provides a list of actions that can be used to define the code block executions. This includes a [cell programming language](https://docs.runme.dev/usage/shebang), [configurations](https://docs.runme.dev/configuration/cell-level), etc.
 
 ![cell code block actions](/img/how-runme-works/runme-block-actions.png)
 
-**Cell Execution Result Actions**
+### Cell Execution Result Actions
 
 This feature allows users to perform specific actions, such as copying the output or previewing a gist. [Runme Gis](https://docs.runme.dev/usage/runme-gist)t allows users to store and share plain texts or code snippets with others without needing a full repository while also masking sensitive information.
 

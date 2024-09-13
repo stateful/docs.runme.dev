@@ -210,10 +210,8 @@ This command opens Runme in your web browser.
 
 ## Additional Resources
 
-See more resources on how Runme works
+See more resources on how Runme works:
 
-[How Runme Works on the Web](/getting-started/web)
-
-[How Runme Works in VS Code](/getting-started/vscode)
-
-[How Runme works on VS Code SSH and Remote](/getting-started/vscode-ssh)
+[Getting started with the browser](/getting-started/web)
+[Getting started in VS Code](/getting-started/vscode)
+[Getting started on VS Code SSH and Remote](/getting-started/vscode-ssh)

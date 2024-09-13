@@ -42,7 +42,7 @@ At this point, you should have WSL set up on your local Windows machine. As stat
 
 To set up Runme on WSL, follow the steps below:
 
-- **Step One**
+### Step One
 
 In your VS Code, press `F1`. This will open up a dashboard containing a list of configuration/setup options. Select **Connect to WSL**.
 
@@ -52,13 +52,13 @@ Alternatively, you can click on the button at the bottom left side of your VS Co
 
 ![vs code dashboard](/img/how-runme-works/runme-wsl-vscode-windows.png)
 
-- **Step Two**
+### Step Two
 
 After connecting to your server using WSL, the next step is to install the Runme extension on the remote server so you can use it as you like.
 
 ![wsl windows](/img/how-runme-works/runme-install-wsl-windows.png)
 
-- **Step Three**
+### Step Three
 
 Use the File menu to open your folder. If you already have a folder open, you can also use the **WSL: Reopen Folder in WSL** command. You will be prompted which “Distro" to use.
 
@@ -82,8 +82,9 @@ This section will explore how [Runme works in VS Code on Windows](https://docs.r
 
 You can also access Runme from your CLI with WSL on your Windows machine. To use the Runme CLI on your WSL server, follow these steps:
 
-1. **Connect to WSL**
-   Open your terminal and run the command below:
+### 1. Connect to WSL
+
+Open your terminal and run the command below:
 
 ```bash {"id":"01J583JVRDADD3Y3TG3YRJNV4Y"}
 wsl
@@ -91,7 +92,7 @@ wsl
 
 This will connect your machine to your WSL server.
 
-2. **Install Runme CLI**
+### 2. Install Runme CLI
 
 After successfully connecting to the WSL server, the next step is to install Runme CLI on your local machine.
 
@@ -101,13 +102,13 @@ To do this, run the command below:
 brew install runme
 ```
 
-3. **Run tasks**
+### 3. Run tasks
 
 At this point, you have connected to the WSL server and installed Runme CLI. You can run any task of your choice within your CLI. To do this, use `runme <command>` to execute tasks defined in the Markdown `.md` files.
 
 ![runme cli](/img/how-runme-works/runme-cli-windows.png)
 
-For more details on how to use the Runme CLI, refer to the [Runme CLI documentation](/configuration/cli-reference).
+For more details on how to use the Runme CLI, refer to the [Runme CLI reference](/configuration/cli-reference).
 
 ## Additional Resources
 

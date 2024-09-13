@@ -57,21 +57,10 @@ To enhance security when using Runme, it is recommended that [SSH keys](https://
 
 To execute commands on a remote server using Runme, follow these steps:
 
-1. **Set up your SSH key configuration**
-
-Set up your SSH key configuration by following the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
-
-2. **Set Up the Remote Server**
-
-Ensure you can access the remote server and the necessary permissions to execute commands.
-
-3. **Create a Markdown File**
-
-Create a `.md` file to connect to the remote server and execute the desired commands.
-
-4. **Create a Block of Code**
-
-In the .md file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command.
+1. Set up your SSH key configuration by following the instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+2. Ensure you can access the remote server and the necessary permissions to execute commands.
+3. Create a `.md` file to connect to the remote server and execute the desired commands.
+4. In the .md file, create a block of code that uses the SSH command to connect to the remote server and execute the desired command.
 
 ```sh {"id":"01HPQBHPSY79T1NSR3P7E27BER"}
 ssh user@remote.server.com 'bash -s' < script.sh
@@ -81,18 +70,14 @@ This command will run a bash script called `script.sh` on the remote server. Mak
 
 By following these steps and using SSH keys for authentication, you can enhance the security of your Runme commands and reduce the risk of unauthorized access or attacks.
 
-5. **Execute the Runme command**
-
-To execute your command, run the command below
+### 6. Execute your command with the command below:
 
 ```sh {"id":"01HPQBHPSYNE6C9RPE3KXC51P7"}
 # short for "runme tui" is
 runme
 ```
 
-6. **Running Multiple Markdown files**
-
-Select the Markdown file `.md` you want to execute (if you have multiple `.md` files or different codeblocks and instruction in a `.md`)
+### 7. Select the Markdown file `.md` you want to execute (if you have multiple `.md` files or different codeblocks and instruction in a `.md`)
 
 ![runme](https://i.imgur.com/5CGxKCZ.png)
 

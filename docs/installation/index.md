@@ -15,4 +15,5 @@ Runme provides multiple client interfaces that enable you to interact with Runme
 - [CLI for the terminal](/installation/cli)
 - [Self-hosted web app version](/getting-started/web)
 - [CDE's like Codespaces or Gitpod](/installation/cdes)
+- [Docker](/installation/docker)
 - [Github action](https://github.com/stateful/runme-action)
