@@ -117,7 +117,7 @@
     },
     {
       "source": "/integrations/:path*",
-      "destination": "/guides/:path*",
+      "destination": "/guide/:path*",
       "permanent": true
     }
   ]
