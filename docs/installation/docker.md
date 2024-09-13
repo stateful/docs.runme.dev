@@ -1,10 +1,9 @@
 ---
-runme:
-  id: 01HMXXHBVGVRWDENHJX7JDPXSM
-  version: v3
+sidebar_position: 6
+title: Install in Docker
 ---
 
-# Install with Docker
+# **Install in Docker**
 
 You can containerize your Runme notebook using Docker. This method enables easy deployment of notebook across different environments, including cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , and/or local test environments.
 

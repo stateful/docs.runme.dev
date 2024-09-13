@@ -1,12 +1,9 @@
 ---
-runme:
-  id: 01HX525D9MCT9JC5FMWKE5RMKB
-  version: v3
-sidebar_position: 4
+sidebar_position: 3
 title: Web browser
 ---
 
-# Web browser
+# **Web browser**
 
 Runme can run as a self-contained web app. Since Runme's Notebook UX is built on the VS Code platform, we can leverage the [code-server](https://github.com/coder/code-server) project to run it as a local, self-contained web app.
 

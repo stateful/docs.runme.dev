@@ -1,12 +1,9 @@
 ---
-runme:
-  id: 01HFW523YXM0NQ9Z0ZZF87TBDV
-  version: v3
 sidebar_position: 1
 title: VS Code
 ---
 
-# Runme in VS Code
+# **Runme in VS Code**
 
 ## Your First Runme
 

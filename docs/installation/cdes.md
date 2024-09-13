@@ -1,11 +1,9 @@
 ---
-runme:
-  id: 01J01B5S4Y31Q8FAP5SREPGWRY
-  version: v3
+sidebar_position: 5
 title: Install in CDEs
 ---
 
-# Install Runme on Cloud Development Environments
+# **Install Runme in CDE's**
 
 Runme can easily be integrated with Cloud Development Environments (CDEs) like [GitHub Codespaces](https://docs.github.com/en/codespaces/overview), [Gitpod](https://www.gitpod.io/), and [Project IDX](https://idx.dev/) to enhance development process by creating a ready-to-code environments with an interactive notebook. Experience the ease of dependable documentation and instantly-ready coding setups
 

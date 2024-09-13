@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Document-level Options
 ---
 
-# Document-level Options
+# **Document-level Options**
 
 These are the options specified in the front-matter that apply to all the cells in the Markdown file.
 

@@ -1,10 +1,9 @@
 ---
-runme:
-  id: 01J583JVRDADD3Y3TG41EEF291
-  version: v3
+sidebar_position: 1
+title: Windows Prerequisites
 ---
 
-# Windows
+# **Windows Prerequisites**
 
 To use Runme on a Windows machine, you have to use the Windows Subsystem for Linux 2 (WSL 2). Currently, Runme is built on Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface, With WSL 2 you can get the full Runme exprience on your Windows machine. WSL 2 allows you to run a full Linux kernel inside a lightweight utility virtual machine (VM) on Windows 10 and Windows 11.
 

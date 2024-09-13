@@ -1,8 +1,8 @@
 ---
-title: Shebang Support
+title: Shebang (running code)
 ---
 
-# Shebang Support
+# **Shebang Support**
 
 Shebang is a versatile tool designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. Runme integrates Shebang to enable users to run the script of their choice directly from the Markdown file in their preferred programming language.
 

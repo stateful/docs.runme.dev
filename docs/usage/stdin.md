@@ -2,7 +2,7 @@
 title: Stdin, Stdout, Stderr
 ---
 
-## **Working with Stdin, Stdout, and Stderr**
+# **Working with Stdin, Stdout, and Stderr**
 
 As a system administrator or developer, using standard streams for scripting, automation, error handling, and managing system resources is one common task in your day-to-day life.
 

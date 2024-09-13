@@ -1,12 +1,9 @@
 ---
-runme:
-  id: 01HMXY7YB2QZ7XVYMRXX0H1B8M
-  version: v3
 sidebar_position: 2
 title: CLI
 ---
 
-# Runme CLI
+# **Runme CLI**
 
 With the CLI, you can run commands from your Notebooks in the terminal. The Runme CLI is available for MacOS, Windows, and other platforms.
 

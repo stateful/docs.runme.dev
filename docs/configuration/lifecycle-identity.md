@@ -1,16 +1,9 @@
 ---
-runme:
-  id: 01HFY0VFSB5F1PF7C28BW2YSVT
-  version: v3
 sidebar_position: 6
 title: Lifecycle Identity
 ---
 
-# Lifecycle Identity
-
-Would you love to easily track the changes you have made to your document or monitor its history? The Lifecycle Identity feature in Runme makes this easy for you.
-
-## **What is the lifecycle identity?**
+# **Lifecycle Identity**
 
 The Lifecycle Identity feature in Runme is a tool that assigns unique identifiers and versions to individual cells, the entire file, or both, depending on your [configuration](https://docs.runme.dev/configuration/).
 

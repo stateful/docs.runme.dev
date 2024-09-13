@@ -3,7 +3,9 @@ title: Run all cells
 sidebar_position: 4
 ---
 
-# Run all cells
+# **Run all cells**
+
+You can run all both from VS Code and the CLI.
 
 ## **Run All in the CLI**
 

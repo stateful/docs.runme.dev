@@ -1,11 +1,9 @@
 ---
-runme:
-  id: 01HX525D9JDANSP0J2F8K8PXG9
-  version: v3
-sidebar_position: 3
+sidebar_position: 4
+title: VS Code / SSH
 ---
 
-# VS Code / SSH
+# **VS Code / SSH**
 
 Runme integrates easily with [VS Code SSH](https://code.visualstudio.com/docs/remote/ssh) and allows users to connect to remote instances effortlessly. This integration allows for easy execution of specific instructions directly in Markdown files, streamlining workflows and boosting productivity.
 

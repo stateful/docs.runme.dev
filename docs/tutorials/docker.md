@@ -1,7 +1,5 @@
 ---
-runme:
-  id: 01HXCRQPTPH3KV5Z9HVC16PVBV
-  version: v3
+title: Runme and Docker
 ---
 
 # How to Use Docker with Runme

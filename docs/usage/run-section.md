@@ -1,9 +1,9 @@
 ---
 sidebar_position: 5
-title: Run cells by section
+title: Run section of cells
 ---
 
-# Running cells by section
+# **Run section of cells**
 
 An alternative way to run your Runme cell individually or the entire document is to run your Markdown file by sections.
 

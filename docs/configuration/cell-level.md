@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Cell-level Options
 ---
 
-# Cell-level Options
+# **Cell-level Options**
 
 Cell-level options allow you to configure the commands and their behvaior in your Markdown file by cell.
 
@@ -23,9 +23,30 @@ Cell-level options allow you to configure the commands and their behvaior in you
 
 This action will run your command and return an executed output, you can configure how your cell should run using the configuration options.
 
-## **Cell-Level configuration overview**
+## **Cell configuration keys**
 
-The cell-level option is designed with unique sub-features which makes it efficiently and gives users the flexibility to modify each cell to their preference.
+Cell level options gives users the flexibility to modify the behavior of each executable cell.
+
+| Configuration          | Description                                                                                                                          | Default value            |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
+| background             | Indicates if the cell should be runned as a background process                                                                       | false                    |
+| closeTerminalOnSuccess | Hide Terminal after cell successful execution                                                                                        | true                     |
+| category               | Execute this code cell within a category                                                                                             | [empty]                  |
+| cwd                    | Modify current working directory for cell execution                                                                                  | [empty]                  |
+| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation                                                                           | false                    |
+| interactive            | Indicates if run should allow interactive input                                                                                      | false                    |
+| interpreter            | The program or command line inserted into shebang (aka #!) line                                                                      | inferred from languageId |
+| mimeType               | If set skips auto-detection and uses specific media (MIME) type                                                                      | [empty]                  |
+| name                   | Cell’s canonical name useful for referencing the cell via CLI                                                                        | auto-generated           |
+| terminalRows           | Number of rows to display in the notebook terminal                                                                                   | auto-set                 |
+| promptEnv              | Prompt user to set exported environment vars                                                                                         | auto                     |
+| skipPrompts            | Bypasses interactive [prompts](../configuration/cell-level) that require inputting environment vars or authentication confirmations. | false                    |
+
+<Infobox type="sidenote" title="SkipPrompts">
+
+This feature can be used to prevent [prompting](../configuration/document-level) when exporting an environment variable. By configuring the [cell options](../configuration/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
+
+</Infobox>
 
 ### **Configuration UX**
 
@@ -332,26 +353,3 @@ If you have multiple workflows in a single Markdown file you can categorize them
   <source src="/videos/categories.webm" type="video/webm" />
 </video>
 <br />
-
-## These are the Metadata keys you can use inside Markdown's fenced code blocks.
-
-| Configuration          | Description                                                                                                                          | Default value            |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| background             | Indicates if the cell should be runned as a background process                                                                       | false                    |
-| closeTerminalOnSuccess | Hide Terminal after cell successful execution                                                                                        | true                     |
-| category               | Execute this code cell within a category                                                                                             | [empty]                  |
-| cwd                    | Modify current working directory for cell execution                                                                                  | [empty]                  |
-| excludeFromRunAll      | Prevent executing this cell during the "Run All" operation                                                                           | false                    |
-| interactive            | Indicates if run should allow interactive input                                                                                      | false                    |
-| interpreter            | The program or command line inserted into shebang (aka #!) line                                                                      | inferred from languageId |
-| mimeType               | If set skips auto-detection and uses specific media (MIME) type                                                                      | [empty]                  |
-| name                   | Cell’s canonical name useful for referencing the cell via CLI                                                                        | auto-generated           |
-| terminalRows           | Number of rows to display in the notebook terminal                                                                                   | auto-set                 |
-| promptEnv              | Prompt user to set exported environment vars                                                                                         | auto                     |
-| skipPrompts            | Bypasses interactive [prompts](../configuration/cell-level) that require inputting environment vars or authentication confirmations. | false                    |
-
-<Infobox type="sidenote" title="SkipPrompts">
-
-This feature can be used to prevent [prompting](../configuration/document-level) when exporting an environment variable. By configuring the [cell options](../configuration/cell-level) appropriately, you can streamline your workflow and make your environment setup more efficient.
-
-</Infobox>

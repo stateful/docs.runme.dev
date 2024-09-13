@@ -1,10 +1,9 @@
 ---
-runme:
-  id: 01HMXW3W0C2V6YSP2PPB33T61E
-  version: v3
+sidebar_position: 2
+title: Install in VS Code
 ---
 
-# Install in VS Code
+# **Install in VS Code**
 
 Runme can be easily installed on your VS Code editor. This installation will give you access to all the features of Runme directly within your code editor. In VS Code, Runme works using the Runme Notebook extension, which is the primary component installed in your editor.
 

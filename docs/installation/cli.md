@@ -1,10 +1,9 @@
 ---
-runme:
-  id: 01HMXWCY2H423QQTC496NY7S34
-  version: v3
+sidebar_position: 3
+title: Install the CLI
 ---
 
-# Install the CLI
+# **Install the CLI**
 
 Runme works effectively on the CLI. If you are a power user who enjoys running Markdown files from the terminal of your local machine, this section is for you.
 

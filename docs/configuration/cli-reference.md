@@ -6,7 +6,7 @@ sidebar_position: 2
 title: CLI reference
 ---
 
-# Commands and Flags
+# **Commands and Flags**
 
 Runme executes commands inside your runbooks, documentation, and READMEs. It parses commands directly from Markdown files to make them executable.
 
