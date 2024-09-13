@@ -21,7 +21,7 @@ In this guide, we will work with JSON data to specify that.
 
 ![Runme mimetype](/img/guide-page/runme-mimetype.png)
 
-However it is important to note that setting the `mimeType` is optional as Runme has an effective auto-detection that detects JSON/CSV files reliably.
+However it is important to note that setting the `mimetype` is optional as Runme has an effective auto-detection that detects JSON/CSV files reliably.
 
 - **Interactive Mode**
   The Interactive mode is another feature of Runme that makes rendering JSON data into human-friendly output possible. By default, Runme allows your scripts to run in the interactive mode. This mode enables you to interact with scripts in the output terminal.
