@@ -154,7 +154,7 @@ This runs the `runme-secrets-enc.yaml` file decrypts it and then applies the fil
 
 We successfully encrypted our Kubernetes secrets inside our Markdown file. Runme makes your automation process easy with its features.
 
-One of the useful features within the notebook environment is the [environment variable prompt](/getting-started/features#environment-variable-prompts) feature, which allows users to input values directly within the notebook environment and use them whenever needed rather than inputting them again.
+One of the useful features within the notebook environment is the [environment variable prompt](/configuration/cell-level#environment-variable-prompts) feature, which allows users to input values directly within the notebook environment and use them whenever needed rather than inputting them again.
 
 Another amazing key feature of Runme is the [Autosave](https://docs.runme.dev/configuration/auto-save) feature, which automatically records and tracks every change and activity in your processes without manual intervention.
 
