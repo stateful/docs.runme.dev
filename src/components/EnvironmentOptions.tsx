@@ -3,34 +3,34 @@ import { TerminalIcon, VSCodeIcon, GlobeIcon, SSHIcon } from "./Icons";
 
 const options = [
   {
-    title: "Runme VS Code Extension",
-    href: "/how-runme-works/vscode",
+    title: "VS Code extension",
+    href: "/getting-started/vscode",
     icon: VSCodeIcon,
   },
   {
-    title: "Runme CLI",
-    href: "/how-runme-works/cli",
+    title: "CLI",
+    href: "/getting-started/cli",
     icon: TerminalIcon,
   },
   {
-    title: "Runme via SSH",
-    href: "/how-runme-works/runme-via-ssh",
+    title: "VS Code via SSH",
+    href: "/getting-started/vscode-ssh",
     icon: SSHIcon,
   },
   {
-    title: "Runme Web",
-    href: "/how-runme-works/web",
+    title: "Web browser",
+    href: "/getting-started/web",
     icon: GlobeIcon,
   },
 ];
 
 export default function EnvironmentOptions() {
   return (
-    <div className="flex gap-1.5 justify-center items-center flex-row p-2 m-2 flex-wrap">
+    <div className="grid grid-cols-2 gap-2 justify-center items-center">
       {options.map(({ href, title, icon }) => {
         return (
           <a
-            className="text-center shadow-md p-2 m-4 min-w-[200px] rounded"
+            className="text-center shadow-md p-2 m-2 min-w-[200px] rounded"
             href={href}
             title={title}
             target="_self"

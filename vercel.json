@@ -22,12 +22,12 @@
     },
     {
       "source": "/r/extension/mimeType",
-      "destination": "https://docs.runme.dev/reference/mime",
+      "destination": "https://docs.runme.dev/configuration/mime",
       "permanent": false
     },
     {
       "source": "/r/extension/gist",
-      "destination": "https://runme.dev/blog/runme-gist",
+      "destination": "https://docs.runme.dev/usage/runme-gist",
       "permanent": false
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "source": "/r/extension/cwd",
-      "destination": "https://docs.runme.dev/configuration/cell-level#cells-current-working-directory",
+      "destination": "https://docs.runme.dev/configuration/cell-level#cell-cwd-current-working-directory",
       "permanent": false
     },
     {
@@ -62,27 +62,27 @@
     },
     {
       "source": "/getting-started/faq",
-      "destination": "/faq",
+      "destination": "/resources/faq",
       "permanent": true
     },
     {
       "source": "/features",
-      "destination": "/getting-started/features",
+      "destination": "/getting-started",
       "permanent": true
     },
     {
       "source": "/getting-started/vs-code",
-      "destination": "https://docs.runme.dev/how-runme-works/vscode",
+      "destination": "https://docs.runme.dev/getting-started/vscode",
       "permanent": true
     },
     {
       "source": "/getting-started/web",
-      "destination": "https://docs.runme.dev/how-runme-works/web",
+      "destination": "https://docs.runme.dev/getting-started/web",
       "permanent": true
     },
     {
       "source": "/getting-started/runme-via-ssh",
-      "destination": "https://docs.runme.dev/how-runme-works/runme-via-ssh",
+      "destination": "/getting-started/vscode-ssh",
       "permanent": true
     },
     {
@@ -96,33 +96,28 @@
       "permanent": true
     },
     {
+      "source": "/guides",
+      "destination": "/guide",
+      "permanent": true
+    },
+    {
       "source": "/Guide/terraform",
       "destination": "/guide/terraform",
       "permanent": true
     },
     {
       "source": "/Guide/devcontainer",
-      "destination": "/guide/devcontainer",
+      "destination": "/usage/devcontainers",
       "permanent": true
     },
     {
       "source": "/how-runme-works/vs-code",
-      "destination": "/how-runme-works/vscode",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/cli",
-      "destination": "/how-runme-works/cli",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/cli",
-      "destination": "/how-runme-works/cli",
+      "destination": "/getting-started/vscode",
       "permanent": true
     },
     {
       "source": "/configuration/runme-gist",
-      "destination": "/integrations/runme-gist",
+      "destination": "/usage/runme-gist",
       "permanent": true
     }
   ]

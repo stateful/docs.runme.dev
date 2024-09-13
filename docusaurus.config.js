@@ -208,8 +208,8 @@ const config = {
         rel: "preload",
         as: "image",
         referrerpolicy: "no-referrer-when-downgrade",
-      }
-    }
+      },
+    },
   ],
 };
 

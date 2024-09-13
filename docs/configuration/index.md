@@ -1,20 +1,16 @@
 ---
-runme:
-  id: 01HX525D9B2H33WXVN2AD1C94T
-  version: v3
-sidebar_position: 7
+sidebar_position: 6
+title: Configuration
 ---
 
 # Configuration
 
-This section provides information on the various configurations found in Runme. These configurations were designed to improve your ReadME experience and workflow on Runme. They allow you to define how you want your Markdown file to be executed.
+This section provides information on the various configurations options found in Runme.
 
 Some configurations found in Runme include:
 
-* [Cell-level Options](../configuration/cell-level)
-* [Document-level Options](../configuration/document-level)
-* [Lifecycle Identity](../configuration/lifecycle-identity)
-* [Auto-Save Feature](../configuration/auto-save)
-* [Shebang Support](../configuration/shebang)
-
-Remember that we are constantly improving Runme to provide more configurations to ensure you have a smooth experience executing your Markdown file in Runme.
+- [Document-level Options](/configuration/document-level)
+- [Cell-level Options](/configuration/cell-level)
+- [CLI reference](/configuration/cli-reference)
+- [Lifecycle Identity](/configuration/lifecycle-identity)
+- [Supported MIME types](/configuration/mime)

@@ -31,11 +31,11 @@
   --runme-font-size-base: 1rem;
   --runme-font-size-sm: 0.875rem;
 
-  --runme-color-warning: #FF776150;
-  --runme-color-warning-dark: #A8201150;
+  --runme-color-warning: #ff776150;
+  --runme-color-warning-dark: #a8201150;
 
-  --runme-color-lila-opac: #5B39DF50;
-  --runme-color-lila-dark-opac: #0D003D50;
+  --runme-color-lila-opac: #5b39df50;
+  --runme-color-lila-dark-opac: #0d003d50;
 
   --runme-font-size-h1: 2.25rem;
   --runme-font-size-h2: 2rem;
@@ -88,10 +88,10 @@ html[data-theme="dark"] {
 }
 
 h1.runmeLogo {
-  font-size: 1.5rem!important;
+  font-size: 1.5rem !important;
   line-height: 2rem;
   font-weight: bold;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   transform: translateX(-12px);
 }
 
@@ -122,7 +122,7 @@ h1.text-white {
   position: sticky;
   background-color: var(--runme-nav-background);
   z-index: 100;
-  box-shadow: none
+  box-shadow: none;
 }
 
 .navbar__brand {
@@ -171,7 +171,6 @@ main a {
 main a:hover {
   text-decoration: underline;
   color: var(--ifm-color-primary);
-
 }
 
 a:hover {
@@ -191,11 +190,9 @@ a:hover {
   display: none !important;
 }
 
-
 .docsLink {
   position: relative;
 }
-
 
 .theme-edit-this-page svg {
   display: inline;
@@ -248,7 +245,7 @@ strong {
 .table-of-contents__left-border li {
   border: 0;
   padding-left: 0;
-  marginLeft: 0;
+  marginleft: 0;
 }
 
 .table-of-contents__link {
@@ -277,13 +274,13 @@ ol {
   border-radius: 4px;
   padding: 0.75rem 1.25rem;
   max-width: 500px;
-  marginLeft: auto;
+  marginleft: auto;
   margin-right: auto;
   margin-bottom: var(--ifm-leading);
 }
 
-.infobox>p:not(:last-child) {
-  margin-bottom: calc(var(--ifm-leading)/2);
+.infobox > p:not(:last-child) {
+  margin-bottom: calc(var(--ifm-leading) / 2);
 }
 
 .markdown img {
@@ -297,6 +294,21 @@ ol {
   border-radius: 4px;
 }
 
+.markdown h1:first-child {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+.markdown h2 {
+  color: var(--ifm-color-primary);
+  font-weight: normal;
+}
+
+.markdown h3 {
+  color: var(--ifm-color-primary);
+  font-weight: normal;
+}
+
 .infobox-title {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -304,15 +316,15 @@ ol {
 
 @keyframes floating {
   0% {
-    transform: translate(0)
+    transform: translate(0);
   }
 
   50% {
-    transform: translateY(5px)
+    transform: translateY(5px);
   }
 
   to {
-    transform: translate(0)
+    transform: translate(0);
   }
 }
 
@@ -323,7 +335,7 @@ ol {
   animation: floating 3s ease-in-out infinite;
 }
 
-.infobox-sidenote>.infobox-icon {
+.infobox-sidenote > .infobox-icon {
   left: -2.6em;
   top: 0.6em;
 }

@@ -1,22 +1,12 @@
 ---
-runme:
-  id: 01HXCRQPTPH3KV5Z9HVC16PVBV
-  version: v3
+sidebar_position: 3
 ---
 
-# How to Use Docker with Runme
-
-[Docker](https://www.docker.com/) has transformed development tooling by streamlining the creation, deployment, and management of applications across diverse environments. Running Docker in a runbook ensures that tasks and workflows can be automated easily, as it enables you to create precise instructions on how to deploy, update, and manage Docker containers across all environments.
-
-Now, Runme is not just any runbook. Runme provides an interactive runbook that can turn your documentation into an interactive and executable environment.
-
-Runme enhances the use of Docker by simplifying the automation of tasks and the deployment of applications within secure Docker containers. By running Docker in Runme Notebook, you can execute commands, create, and follow the instructions in your documentation (within your runbook).
-
-Essentially, Runme takes the detailed guide you have written and turns it into actions directly in Docker's protected environment. This makes your workflow more efficient, consistent, and easy to manage.
+# Docker
 
 In this guide, we will walk you through the use cases of integrating Runme and Docker.
 
-## **Prerequisites**
+## Prerequisites
 
 To get started, ensure you have the following:
 
@@ -28,7 +18,7 @@ git clone --branch T-doc-notebook https://github.com/stateful/blog-examples.git
 cd blog-examples/docker-notebook
 ```
 
-- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
 - **Required Packages**: Run the command below to install the required packages for this guide.
 
 ```sh {"id":"01HYG0F007XK8RT7466DNS16RQ"}
@@ -58,7 +48,7 @@ Example:
 docker build -t my-test-app .
 ```
 
-![Docker build](../../static/img/guide-page/dockker-build.jpeg)
+![Docker build](/img/guide-page/dockker-build.jpeg)
 
 ### Run a Docker Image
 
@@ -82,7 +72,7 @@ Example:
 docker run nginx
 ```
 
-![docker run](../../static/img/guide-page/dockerr-run.png)
+![docker run](/img/guide-page/dockerr-run.png)
 
 **Run Container Using Runme Environment Variable**
 
@@ -113,7 +103,7 @@ Example:
 docker run -d -p 8010:8010 -v ${PWD}/nginx.conf:/etc/nginx/nginx.conf:ro nginx
 ```
 
-![Docker Volume](../../static/img/guide-page/docker-volume-mappings.png)
+![Docker Volume](/img/guide-page/docker-volume-mappings.png)
 
 **Port Mapping**
 
@@ -131,11 +121,11 @@ Example:
 docker run -p 80:5000 nginx
 ```
 
-![port-mapping](../../static/img/guide-page/docker-port-mappings.png)
+![port-mapping](/img/guide-page/docker-port-mappings.png)
 
-If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](../getting-started/features#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
+If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](/configuration/cell-level#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
 
-![background mode](../../static/img/runme-background.png)
+![background mode](/img/runme-background.png)
 
 ### Sleep a Container
 
@@ -191,7 +181,7 @@ Example:
 docker run nginx
 ```
 
-![docker-run-container](../../static/img/guide-page/docker-run-containers.png)
+![docker-run-container](/img/guide-page/docker-run-containers.png)
 
 **List Containers**
 
@@ -203,7 +193,7 @@ docker ps
 
 Example:
 
-![docker ps](../../static/img/guide-page/docker-pss.png)
+![docker ps](/img/guide-page/docker-pss.png)
 
 If you would love to get a list of all containers (including stopped ones), use the command below:
 
@@ -213,7 +203,7 @@ docker ps -a
 
 Example:
 
-![docker ps -a](../../static/img/guide-page/docker-psa.png)
+![docker ps -a](/img/guide-page/docker-psa.png)
 
 **Container Logs**
 
@@ -231,7 +221,7 @@ Example:
 docker logs $CONTAINER_ID
 ```
 
-![docker logs](../../static/img/guide-page/docker-log.png)
+![docker logs](/img/guide-page/docker-log.png)
 
 You can also use the inspect command to retrieve detailed information about your container or docker image. To do this, run the command below
 
@@ -243,7 +233,7 @@ docker inspect $CONTAINER_ID
 
 Executing a command inside a Docker container means running a specific command within the container. This allows you to interact with the containerized environment without interactively entering the container.
 
-Runme makes this easy through the use of [environment variables prompts](../getting-started/features#environment-variable-prompts). Runme’s environment variable prompts allow you to input values directly within your notebook environment and store them easily.
+Runme makes this easy through the use of [environment variables prompts](/configuration/cell-level#environment-variable-prompts). Runme’s environment variable prompts allow you to input values directly within your notebook environment and store them easily.
 
 To execute a command inside a container leveraging Runme’s environment variable prompt, run the command below:
 
@@ -258,7 +248,7 @@ docker exec -it $CONTAINER_ID_TEST bash
 
 Example:
 
-![Docker exec](../../static/img/guide-page/dockerr-exec.png)
+![Docker exec](/img/guide-page/dockerr-exec.png)
 
 **Stop a Running Container**
 
@@ -274,7 +264,7 @@ Example:
 docker stop $CONTAINER_ID_TEST
 ```
 
-![Docker stop](../../static/img/guide-page/dockerr-stop.png)
+![Docker stop](/img/guide-page/dockerr-stop.png)
 
 **Remove a Container**
 
@@ -290,15 +280,15 @@ Example:
 docker rm $CONTAINER_ID_TEST
 ```
 
-![remove container](../../static/img/guide-page/dockerr-remove.png)
+![remove container](/img/guide-page/dockerr-remove.png)
 
 ### Docker compose
 
 Docker Compose is a tool for defining and running multi-container Docker applications. It uses YAML files to configure the application’s services and performs the creation and setup process for all the containers.
 
-For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](../configuration/cell-level#cells-current-working-directory) to the directory where the file exists and then run the docker-compose command.
+For this example, we created a [YAML file](https://github.com/stateful/blog-examples/blob/T-doc-notebook/docker-notebook/compose.yaml) to demonstrate how docker-compose works. If your YAML file is in a different directory from your current working directory, you can easily [change your Runme cell](/configuration/cell-level#cell-cwd-current-working-directory) to the directory where the file exists and then run the docker-compose command.
 
-![docker-compose](../../static/img/guide-page/dockerr-compose.png)
+![docker-compose](/img/guide-page/dockerr-compose.png)
 
 ## How to Manage Docker Containers using Runme Run Cells by Section Feature
 
@@ -313,9 +303,8 @@ In this guide, we covered the basics of running Docker commands in Runme.
 
 Runme has several features that make it a choice platform for integrating and using Docker. Some key features of Runme include
 
-- The [background mode](../getting-started/features#background-task) makes it possible to run commands in the background.
-- [Autosave feature](../configuration/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
+- The [background mode](/configuration/cell-level#background-task) makes it possible to run commands in the background.
+- [Autosave feature](/usage/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
 - You can run your Markdown file by cells, an entire document, or sections.
 
 To explore more features of Runme and learn how they can be utilized in your workflows, visit our [documentation page](https://docs.runme.dev/).
-

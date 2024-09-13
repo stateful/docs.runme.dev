@@ -4,13 +4,7 @@ runme:
   version: v3
 ---
 
-# How to Set Up a Monitoring Stack For Your Application by Leveraging Runme
-
-Most often, instructions for setting up and configuring monitoring stack procedures are set in multiple documents, which can be overwhelming.
-
-This is where Runme comes in! Runme provides a platform that helps you document all the standardized processes needed to set up and configure your monitoring stack, enabling you to centralize your procedures in an interactive runbook accessible to you and your team.
-
-With Runme, you create a set of predefined procedures and instructions for installing and configuring all dependencies needed for your monitoring stack, such as [Prometheus](https://prometheus.io/), [Grafana](https://grafana.com/), Node exporter and Alertmanager.
+# Monitoring Stack
 
 In this guide, we will walk you through configuring a monitoring stack and creating a Runbook for your application setup and configuration using Runme.
 
@@ -18,7 +12,7 @@ In this guide, we will walk you through configuring a monitoring stack and creat
 
 To follow up on the steps in this guide, ensure you have the following:
 
-- Runme Extension: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can make Runme your [default Markdown viewer](https://docs.runme.dev/installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer), ensuring all your Markdown files are automatically opened as a Runme Notebook. Additionally, it provides other client interfaces where you can run your Markdown file. See the [Runme installation](https://docs-runme-jg6ocbnyb-stateful.vercel.app/installation/) guide.
+- Runme Extension: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can make Runme your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer), ensuring all your Markdown files are automatically opened as a Runme Notebook. Additionally, it provides other client interfaces where you can run your Markdown file. See the [Runme installation](/installation/) guide.
 - Clone Repository: We have provided an example repo to help you follow this tutorial. Clone the [repository here](https://github.com/stateful/blog-examples/tree/main/kubernetes/monitoring-stack). If you are a Linux user, navigate to the [Linux file](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/linux.md). For Mac users, see the [Mac file](https://github.com/stateful/blog-examples/blob/main/kubernetes/monitoring-stack/mac.md).
 
 This guide focuses on the Linux README.md file; other operating systems also work.
@@ -48,11 +42,11 @@ sudo nano /etc/systemd/system/node_exporter.service
 
 When the command is executed successfully, this is what you will see in your Runme terminal.
 
-![install node exporter](../../static/img/guide-page/runme-node-exporter.png)
+![install node exporter](/img/guide-page/runme-node-exporter.png)
 
 Runme uses its [environment variable prompt feature](https://docs.runme.dev/getting-started/features#environment-variable-prompts) to prompt users to enter a value for the version and the platform. Runme will store these values, so you no longer need to enter them when working on this project.
 
-![env prompt for node exporter](../../static/img/guide-page/node-exporter-env-prompt.png)
+![env prompt for node exporter](/img/guide-page/node-exporter-env-prompt.png)
 
 ## Configure Your Node Exporter In Your Runbook
 
@@ -79,7 +73,7 @@ EOF
 
 Here is a visual representation of the command in a Runme cell and how it outputs when executed.
 
-![Node exporter service](../../static/img/guide-page/create-node-exporters-service.png)
+![Node exporter service](/img/guide-page/create-node-exporters-service.png)
 
 - Step Two: Run Node Exporter as a Service
 
@@ -104,7 +98,7 @@ sudo systemctl restart node_exporter
 
 Here is a visual representation of the command in your Runme cell and its output when executed successfully.
 
-![node exporter service](../../static/img/guide-page/runme-node-exporter-services.png)
+![node exporter service](/img/guide-page/runme-node-exporter-services.png)
 
 ## Install Prometheus
 
@@ -126,7 +120,7 @@ cp -r prometheus-${version}.linux-amd64/promtool ${PWD}/prometheus
 
 Here is a visual representation of the command in a Runme cell and the output when executed successfully.
 
-![Install prometheus](../../static/img/guide-page/install-prometheuss.png)
+![Install prometheus](/img/guide-page/install-prometheuss.png)
 
 Runme will leverage its environment prompt feature to prompt you to input the version of Prometheus you want to install. Once you input the version, you will have an output similar to the one above.
 
@@ -154,7 +148,7 @@ EOF
 
 This is a visual representation of the command in a Runme cell.
 
-![promtheus yaml file](../../static/img/guide-page/runme-prometheus-yaml.jpeg)
+![promtheus yaml file](/img/guide-page/runme-prometheus-yaml.jpeg)
 
 Step Two: Set up Prometheus as a service
 
@@ -176,7 +170,7 @@ EOF
 
 **Output**:
 
-![prometheus service](../../static/img/guide-page/create-prometheus-service.jpeg)
+![prometheus service](/img/guide-page/create-prometheus-service.jpeg)
 
 Step Three: Run Prometheus as a Service
 
@@ -200,7 +194,7 @@ sudo systemctl restart prometheus
 
 This is what this command and its output, when executed successfully, looks like in a Runme cell.
 
-![prometheus](../../static/img/guide-page/prometheus-services-runme.png)
+![prometheus](/img/guide-page/prometheus-services-runme.png)
 
 Step four: Open the app
 
@@ -225,7 +219,7 @@ systemctl restart grafana-server
 
 Here is a pictorial representation of the code in the Runme cell and the output in the Runme terminal when executed successfully.
 
-![Install Grafana](../../static/img/guide-page/installgrafana-runme.png)
+![Install Grafana](/img/guide-page/installgrafana-runme.png)
 
 Open the App:
 
@@ -324,18 +318,18 @@ Some key features of Runme that make it a choice platform for your monitoring st
 
 - Environment Variable Prompts
 
-   As you can see from the procedure above, the [environment variable prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) is one feature that makes it a choice platform for this task. This feature comes in handy when your runbooks need user-specific values. It allows you to input values directly within your notebook environment, thus making your task execution more efficient.
+  As you can see from the procedure above, the [environment variable prompt](https://docs.runme.dev/getting-started/features#environment-variable-prompts) is one feature that makes it a choice platform for this task. This feature comes in handy when your runbooks need user-specific values. It allows you to input values directly within your notebook environment, thus making your task execution more efficient.
 
 - Run Sections
 
-   Runme makes [running the script by section](https://docs.runme.dev/configuration/cellsection) possible. For example, in your monitoring-stack notebook, you can choose to run each section (“Node Exporter,” “Prometheus,” “Grafana”) rather than individual cells. This feature makes running this task easier and faster.
+  Runme makes [running the script by section](https://docs.runme.dev/configuration/cellsection) possible. For example, in your monitoring-stack notebook, you can choose to run each section (“Node Exporter,” “Prometheus,” “Grafana”) rather than individual cells. This feature makes running this task easier and faster.
 
 - Auto-Save
 
-   Runme makes saving your outputs easier without manual intervention by triggering the [auto-save feature](https://docs.runme.dev/configuration/auto-save). This way, you can focus on your task and run your commands without worrying about losing your outputs.
+  Runme makes saving your outputs easier without manual intervention by triggering the [auto-save feature](https://docs.runme.dev/configuration/auto-save). This way, you can focus on your task and run your commands without worrying about losing your outputs.
 
 - Share Runbook With Members of Your Team
 
-   Runme makes sharing of outputs from an executed cell with team members easy. You only need to leverage Runme’s autosave feature to save your output, and you have unlocked the access to share that output with your team members.
+  Runme makes sharing of outputs from an executed cell with team members easy. You only need to leverage Runme’s autosave feature to save your output, and you have unlocked the access to share that output with your team members.
 
 These are just a few features of Runme. We continually work to improve your experience with Runme by providing you with more features and updates to enhance your documentation and automation processes. To explore other features of Runme, see the [Runme guide](https://docs.runme.dev/) for comprehensive details.
