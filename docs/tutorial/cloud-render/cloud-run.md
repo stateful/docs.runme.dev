@@ -84,7 +84,7 @@ This section will explain how Google Cloud Run works in Runme Notebook Cloud Ren
 
 **Set Your Project ID Using an Environment Variable**
 
-Use the [environment variable prompts](..//configuration/cell-level#environment-variable-prompts) to set your project ID. Run the command below to experience how it works.
+Use the [environment variable prompts](/configuration/cell-level#environment-variable-prompts) to set your project ID. Run the command below to experience how it works.
 
 ```sh {"id":"01J30CGS5MMDB865SCNVZNDJGH"}
 export PROJECT_ID="runme-ci"

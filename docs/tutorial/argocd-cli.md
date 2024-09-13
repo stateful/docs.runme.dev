@@ -94,7 +94,7 @@ kubectl get po -n argocd
 
 Port forwarding an Argo CD Server is a practical and secure way to access the Argo CD web UI for setup, development, and general use without exposing it to external networks.
 
-To do this, run the command below. You can run your code cell as a [background process](configuration/cell-level#long-running-processes). This feature enables you to run tasks in the background while continuing with your other tasks.
+To do this, run the command below. You can run your code cell as a [background process](/configuration/cell-level#long-running-processes). This feature enables you to run tasks in the background while continuing with your other tasks.
 
 ```sh {"background":"true","id":"01J0R8FX97QQR7ME2DH3C54C6E"}
 kubectl port-forward svc/argocd-server -n argocd 8080:443
