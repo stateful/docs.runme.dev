@@ -25,7 +25,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://docs.runme.dev/configuration/auto-save</loc>
+        <loc>https://docs.runme.dev/usage/auto-save</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -50,7 +50,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://docs.runme.dev/configuration/shebang</loc>
+        <loc>https://docs.runme.dev/usage/shebang</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
@@ -205,7 +205,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://docs.runme.dev/installation/runmecli</loc>
+        <loc>/installation/cli</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>

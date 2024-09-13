@@ -1,6 +1,6 @@
 # Argo CD advanced
 
-Our previous guide provided a detailed tutorial on [deploying and managing applications with ArgoCD and Runme.](https://docs.runme.dev/guide/agrocd)
+Our previous guide provided a detailed tutorial on [deploying and managing applications with ArgoCD and Runme.](https://docs.runme.dev/guide/k8s/agrocd)
 
 In this guide, we will take it a step higher by providing an advanced tutorial on how to use Argo CD with the Runme extension in VS Code. The best part of this integration is that everything can be done right inside your Markdown file without switching between terminals.
 
@@ -8,12 +8,12 @@ In this guide, we will take it a step higher by providing an advanced tutorial o
 
 To follow up on this tutorial, ensure you have the following:
 
-> 💡 Ensure you have installed the necessary tools as indicated in the [beginner guide](https://docs.runme.dev/guide/agrocd#prerequisites)
+> 💡 Ensure you have installed the necessary tools as indicated in the [beginner guide](https://docs.runme.dev/guide/k8s/agrocd#prerequisites)
 
 **Basic Requirement**
 
 - Basic familiarity with YAML and Kubernetes resource definitions
-- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Runme Extension**: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 **Clone Our Repository**
 
@@ -548,4 +548,4 @@ replicaCount: 3
 
 Deploying with high availability ensures that Argo CD can continue operating even if some instances fail.
 
-With Runme you can deploy your applications using Argo CD to perform CLI operations and customize Argo CD right inside your Markdown file, and its functionalities goes even further! To explore [more features](https://docs.runme.dev/configuration/) and [integrations](https://docs.runme.dev/integrations/) of Runme, visit our documentation page to learn about Runme and stay updated on additional features to optimize your workflow.
+With Runme you can deploy your applications using Argo CD to perform CLI operations and customize Argo CD right inside your Markdown file, and its functionalities goes even further! To explore [configuration](/configuration/) and [usage](/usage) of Runme, visit our documentation page to learn about Runme and stay updated on additional features to optimize your workflow.

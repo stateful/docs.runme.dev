@@ -10,15 +10,15 @@ This is not just limited to bash; [Runme](https://runme.dev/) supports scripting
 
 ## **Setting Up Your Environment**
 
-To get started with Bash scripts in Runme, you are required to first install and configure [Runme on your VS Code](https://docs.runme.dev/installation/vscode) editor. If you do not have Runme on VS Code installed yet, proceed to the Extension tab of your VS Code and search for “**Runme DevOps Notebook**.”
+To get started with Bash scripts in Runme, you are required to first install and configure [Runme on your VS Code](/installation/vscode) editor. If you do not have Runme on VS Code installed yet, proceed to the Extension tab of your VS Code and search for “**Runme DevOps Notebook**.”
 
 ![install runme](/img/guide-page/devops-notebook.png)
 
-You can configure your code editor to make Runme your [default Markdown viewer](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer). This means you `.md` will be displayed as a runbook whenever you open a Markdown.
+You can configure your code editor to make Runme your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer). This means you `.md` will be displayed as a runbook whenever you open a Markdown.
 
 ## **Writing Your First Bash Script in Runme**
 
-Runme integrates easily with Bash scripts via the [Shebang](https://docs.runme.dev/configuration/shebang) feature, which allows you to run any script you choose directly from the Markdown file in your preferred programming language.
+Runme integrates easily with Bash scripts via the [Shebang](https://docs.runme.dev/usage/shebang) feature, which allows you to run any script you choose directly from the Markdown file in your preferred programming language.
 
 This section will provide a step-by-step guide to creating a simple bash script within a Markdown file and executing it with Runme.
 
@@ -152,11 +152,11 @@ When it is executed successfully, here is the output.
 
 ### Save Your Outputs
 
-Every output generated can be automatically saved using the Runme [auto-save](https://docs.runme.dev/configuration/auto-save) feature.
+Every output generated can be automatically saved using the Runme [auto-save](https://docs.runme.dev/usage/auto-save) feature.
 
 Runme auto-save automatically saves your outputs, enabling you to access the history of the command and all cell output produced while running your file without manual intervention.
 
-Runme auto-save also incorporates a [separate Session](https://docs.runme.dev/configuration/auto-save#session-outputs) Outputs method that securely saves the time each cell was run and its exit codes. It stores this output in an external file for easy reference.
+Runme auto-save also incorporates a [separate Session](https://docs.runme.dev/usage/auto-save#session-outputs) Outputs method that securely saves the time each cell was run and its exit codes. It stores this output in an external file for easy reference.
 
 <br />
 <Infobox type="sidenote" title="Note">

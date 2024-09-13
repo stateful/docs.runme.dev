@@ -213,6 +213,6 @@ Congratulations!
 
 We believe, at this point, you have gotten an advanced understanding of how Runme works on VS Code. Now, it’s time to begin using Runme in VS Code for all your automation and documentation processes.
 
-We have provided an [FAQ page](https://docs.runme.dev/faq), which we constantly update to address common questions you may have about Runme.
+We have provided an [FAQ page](/resources/faq), which we constantly update to address common questions you may have about Runme.
 
 If you run into any issues kindly [file a ticket](https://github.com/stateful/runme/issues) or tell us about it [on Discord](https://discord.gg/runme). We are open to hearing your suggestions on how we can improve Runme.
