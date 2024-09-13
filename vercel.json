@@ -22,7 +22,7 @@
     },
     {
       "source": "/r/extension/mimeType",
-      "destination": "https://docs.runme.dev/reference/mime",
+      "destination": "https://docs.runme.dev/configuration/mime",
       "permanent": false
     },
     {
@@ -72,17 +72,17 @@
     },
     {
       "source": "/getting-started/vs-code",
-      "destination": "https://docs.runme.dev/how-runme-works/vscode",
+      "destination": "https://docs.runme.dev/getting-started/vscode",
       "permanent": true
     },
     {
       "source": "/getting-started/web",
-      "destination": "https://docs.runme.dev/how-runme-works/web",
+      "destination": "https://docs.runme.dev/getting-started/web",
       "permanent": true
     },
     {
       "source": "/getting-started/runme-via-ssh",
-      "destination": "https://docs.runme.dev/how-runme-works/runme-via-ssh",
+      "destination": "https://docs.runme.dev/getting-started/runme-via-ssh",
       "permanent": true
     },
     {
@@ -97,27 +97,22 @@
     },
     {
       "source": "/Guide/terraform",
-      "destination": "/guide/terraform",
+      "destination": "/tutorial/terraform",
       "permanent": true
     },
     {
       "source": "/Guide/devcontainer",
-      "destination": "/guide/devcontainer",
+      "destination": "/tutorial/devcontainer",
       "permanent": true
     },
     {
       "source": "/how-runme-works/vs-code",
-      "destination": "/how-runme-works/vscode",
+      "destination": "/getting-started/vscode",
       "permanent": true
     },
     {
-      "source": "/getting-started/cli",
-      "destination": "/how-runme-works/cli",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/cli",
-      "destination": "/how-runme-works/cli",
+      "source": "/configuration/runme-gist",
+      "destination": "/usage/runme-gist",
       "permanent": true
     }
   ]
