@@ -70,14 +70,14 @@ This command will run a bash script called `script.sh` on the remote server. Mak
 
 By following these steps and using SSH keys for authentication, you can enhance the security of your Runme commands and reduce the risk of unauthorized access or attacks.
 
-### 6. Execute your command with the command below:
+5. Execute your command with the command below:
 
 ```sh {"id":"01HPQBHPSYNE6C9RPE3KXC51P7"}
 # short for "runme tui" is
 runme
 ```
 
-### 7. Select the Markdown file `.md` you want to execute (if you have multiple `.md` files or different codeblocks and instruction in a `.md`)
+6. Select the Markdown file `.md` you want to execute (if you have multiple `.md` files or different codeblocks and instruction in a `.md`)
 
 ![runme](https://i.imgur.com/5CGxKCZ.png)
 
