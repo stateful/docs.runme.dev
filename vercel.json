@@ -2,12 +2,12 @@
   "redirects": [
     {
       "source": "/r/extension/:slug*",
-      "destination": "/configuration/cell-level/:slug*",
+      "destination": "/configuration/cell-level",
       "permanent": false
     },
     {
       "source": "/getting-started/:slug*",
-      "destination": "/getting-started/:slug*",
+      "destination": "/resources/faq",
       "permanent": true
     },
     {
@@ -31,28 +31,13 @@
       "permanent": true
     },
     {
-      "source": "/configuration/cellsection",
-      "destination": "/usage/run-section",
+      "source": "/configuration/:slug*",
+      "destination": "/usage/:slug*",
       "permanent": true
     },
     {
-      "source": "/configuration/document-level",
-      "destination": "/usage/document-level",
-      "permanent": true
-    },
-    {
-      "source": "/configuration/lifecycle-identity",
-      "destination": "/usage/lifecycle-identity",
-      "permanent": true
-    },
-    {
-      "source": "/guide/argocd",
-      "destination": "/guide/k8s/argocd",
-      "permanent": true
-    },
-    {
-      "source": "/guide/bigquery",
-      "destination": "/guide/data/bigquery",
+      "source": "/guide/:slug*",
+      "destination": "/guide/k8s/:slug*",
       "permanent": true
     },
     {
