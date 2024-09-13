@@ -176,6 +176,11 @@
       "permanent": true
     },
     {
+      "source": "/integrations/",
+      "destination": "/guide",
+      "permanent": true
+    },
+    {
       "source": "/integrations/:path*",
       "destination": "/guide/:path*",
       "permanent": true
@@ -188,6 +193,11 @@
     {
       "source": "/how-runme-works/:path*",
       "destination": "/getting-started/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/how-runme-works/",
+      "destination": "/getting-started",
       "permanent": true
     },
     {
