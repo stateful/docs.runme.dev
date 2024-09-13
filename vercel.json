@@ -176,6 +176,11 @@
       "permanent": true
     },
     {
+      "source": "/integrations/cloud-render/",
+      "destination": "/guide/cloud-render/",
+      "permanent": true
+    },
+    {
       "source": "/integrations/",
       "destination": "/guide",
       "permanent": true
