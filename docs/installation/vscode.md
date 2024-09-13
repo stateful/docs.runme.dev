@@ -48,7 +48,7 @@ Below is a full display of Runme’s action on a Markdown file in VS Code.
 4. **Run Cell Button:** Running code in Markdown files is now easier with just one click.
 5. **Cell Code Block:** Get a visual representation of commands to be executed with syntax highlighting.
 6. **Notebook Global Actions:** View common options that define your code input and execution in the context of the Notebook.
-7. **Cell Code Block Actions:** List of actions that define code block execution. This includes cell language, [configurations](../configuration/index.md) etc.
+7. **Cell Code Block Actions:** List of actions that define code block execution. This includes cell language, [configurations](/configuration/index.md) etc.
 8. **Cell Execution Result:** Copy your generated output.
 
 ## How to Set VS Code as Your Default Markdown Viewer

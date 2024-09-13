@@ -538,7 +538,7 @@ docker run -i -v ~/.kube:/home/argocd/.kube --rm quay.io/argoproj/argocd:$VERSIO
 
 **High Availability**
 
-Configure Argo CD for high availability (HA) by running multiple [replicas](/guide/replicaset) of its components and distributing them across different nodes and availability zones.
+Configure Argo CD for high availability (HA) by running multiple [replicas](/guide/k8s/replicaset) of its components and distributing them across different nodes and availability zones.
 
 Example HA configuration in Helm:
 

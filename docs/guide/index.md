@@ -13,7 +13,7 @@ In this guide section, we will walk you through using Runme with cloud-native se
 
 To follow along with each guide in this section, here are a few requirements you need to get started:
 
-- Install Runme on any client interface of your choice. You can install [Runme on VS Code](../installation/vscode), [CLI](/installation/cli), or the [Web](../installation/web). Depending on your preference, Runme is easy to use and integrates efficiently
+- Install Runme on any client interface of your choice. You can install [Runme on VS Code](/installation/vscode), [CLI](/installation/cli), or the [Web](/installation/web). Depending on your preference, Runme is easy to use and integrates efficiently
 - A basic understanding of Markdown.
 
 The guide section is a work in progress. We are consistently adding more examples to incorporate your possible use cases. If you have a use case not covered in this section, kindly let us know via [Discord](https://discord.com/invite/runme), and we will gladly include it.

@@ -11,7 +11,7 @@ To follow up on this guide, ensure you have the following:
 
 - **Install Runme Extension and Make it Your Default Markdown Viewer**
 
-Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](../installation/index.md) where you can run your Markdown file. Once installed, make Runme your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. Runme also provides other [client interfaces](/installation/index.md) where you can run your Markdown file. Once installed, make Runme your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Google Cloud SDK**
 

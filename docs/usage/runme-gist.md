@@ -16,8 +16,8 @@ Runme Gist combines [GitHub Gist](https://gist.github.com/) with Runme features 
 
 To utilize the Runme Gist feature, set up the following Runme tools.
 
-- Install the [Runme extension](../installation/vscode) in your VS Code If you already have Runme installed in your VS Code, ensure you are upgraded to the latest version `v3.4.0`.
-- Set Runme as your [default Markdown viewer](../installation/vscode) to ensure all Markdown files in your code editor are automatically opened as a Runme notebook.
+- Install the [Runme extension](/installation/vscode) in your VS Code If you already have Runme installed in your VS Code, ensure you are upgraded to the latest version `v3.4.0`.
+- Set Runme as your [default Markdown viewer](/installation/vscode) to ensure all Markdown files in your code editor are automatically opened as a Runme notebook.
 
 ## **Setting Up Runme Gist**
 

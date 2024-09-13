@@ -62,7 +62,7 @@ Through this you are not only running your command but your output is saved for 
 
 **Initialize Terraform**
 
-To begin, first create a `.md` file within your project directory. With Runme installed, every Markdown (`.md`) file created in your code editor will ipen with Markdown. Alternatively you can set Runme as your [editor Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+To begin, first create a `.md` file within your project directory. With Runme installed, every Markdown (`.md`) file created in your code editor will ipen with Markdown. Alternatively you can set Runme as your [editor Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 In your Markdown file, creating a code block to execute your command.
 

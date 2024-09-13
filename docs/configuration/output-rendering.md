@@ -37,7 +37,7 @@ To get started with rendering your JSON data, ensure you have the following:
 
 - **Install Runme**
 
-Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) to enable you access the Runme Notebook on your code editor. You can also set Runme as your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) to enable you access the Runme Notebook on your code editor. You can also set Runme as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Install Data Table Renderers**
 

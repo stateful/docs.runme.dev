@@ -11,7 +11,7 @@ If you would like to quickly understand how Runme works in VS Code, simply clone
 
 <Infobox type="sidenote" title="Install Runme VS Code extension">
 
-To get started with Runme on VS Code, ensure you have the Runme Notebook extension installed on your code editor. See the step-by-step [installation](../installation/vscode) guide to install the Runme Notebook extension proceed.
+To get started with Runme on VS Code, ensure you have the Runme Notebook extension installed on your code editor. See the step-by-step [installation](/installation/vscode) guide to install the Runme Notebook extension proceed.
 
 </Infobox>
 

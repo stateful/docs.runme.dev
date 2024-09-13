@@ -16,7 +16,7 @@ To get started, ensure you have the following installed:
 
 - **Runme Extension**
 
-To access the Runme Notebook, install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can also set Runme as your [default Markdown viewer](../installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+To access the Runme Notebook, install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can also set Runme as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
 - **Install Foyle**
 
@@ -40,7 +40,7 @@ foyle config set openai.apiKeyFile=/path/to/openai/apikey
 
 2. **Start the Server**
 
-Run the command below to start the Foyle server on your local machine. However, you must ensure your API Key is in the directory where this command will run. If it isn’t, you can set the directory of your code cell to the directory where your API Key is located using the [CWD feature of Runme](../configuration/cell-level#cells-current-working-directory).
+Run the command below to start the Foyle server on your local machine. However, you must ensure your API Key is in the directory where this command will run. If it isn’t, you can set the directory of your code cell to the directory where your API Key is located using the [CWD feature of Runme](/configuration/cell-level#cells-current-working-directory).
 
 ```sh {"background":"true","id":"01J331ERREM6TZ2VCVES792H65"}
 foyle serve
@@ -145,7 +145,7 @@ Now that logging is enabled, you can verify that logs are being written and iden
 
 To view the logs, you need to follow the steps below;
 
-- Create a new code cell block using Runme's [CWD feature](../configuration/cell-level#cells-current-working-directory) and configure the path for that code cell block to the log file path shown earlier.
+- Create a new code cell block using Runme's [CWD feature](/configuration/cell-level#cells-current-working-directory) and configure the path for that code cell block to the log file path shown earlier.
 - Run the command `ls -la` to access the file's content, as shown below.
 
 ![Check the list](/img/integration/runme-foyle-json-file.png)
