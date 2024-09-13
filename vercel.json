@@ -204,7 +204,7 @@
       "source": "/Reference/",
       "destination": "/configuration",
       "permanent": true
-    }
+    },
     {
       "source": "/guide/helm",
       "destination": "/guide/k8s/helm",
