@@ -53,7 +53,7 @@ This code uses the Dagger CLI to build a [Go](https://go.dev/) project from the 
 
 Output:
 
-![runme binary](/img/Integration/runme-dagger-runme-binary.png)
+![runme binary](/img/integration/runme-dagger-runme-binary.png)
 
 This output shows the steps executed by Dagger, which successfully performed the tasks in the code block.
 
@@ -63,7 +63,7 @@ Runme offers additional support for the Dagger CLI by providing options and supp
 
 When you insert a Dagger command into a Runme cell, Runme automatically provides helpful CLI options based on the type of result returned (like a file, directory, or text). It shows buttons like "Export" or "Size," allowing you to run the next step with a quick click.
 
-![runme cli dagger ](/img/Integration/runme-dagger-file-ready.png)
+![runme cli dagger ](/img/integration/runme-dagger-file-ready.png)
 
 To retrieve the file's name, click on `Name`. A code block similar to the one below will be created and automatically run to display the file's name.
 

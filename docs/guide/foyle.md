@@ -36,7 +36,7 @@ Once you have gotten your key, save it in a plain text file and run the command 
 foyle config set openai.apiKeyFile=/path/to/openai/apikey
 ```
 
-![open ai key](/img/Integration/runme-foyle-openai-key.png)
+![open ai key](/img/integration/runme-foyle-openai-key.png)
 
 2. **Start the Server**
 
@@ -50,7 +50,7 @@ This command should start Foyle in the background. To make it run without disrup
 
 Once that is done, run the cell, and you will get an output similar to the image below.
 
-![foyle serve](/img/Integration/runme-foyle-serve.png)
+![foyle serve](/img/integration/runme-foyle-serve.png)
 
 By default, Foyle uses port `8080` for the HTTP server and port `9080` for gRPC. You can configure this by running the command below if you would love to use different ports.
 
@@ -69,7 +69,7 @@ If you would love to confirm your Foyle Address in VS Code, do the following.
 - Search for `Runme: Foyle Address`
 - Set the address to `localhost:${GRPC_PORT}`. By default, the port is `9080`. If you set a non-default value, it will be the value of `server.grpcPort`
 
-![Extension Setting](/img/Integration/runme-foyle-setting.png)
+![Extension Setting](/img/integration/runme-foyle-setting.png)
 
 ## Running Foyle Operations with Runme
 
@@ -113,7 +113,7 @@ Additionally, you can also use Foyle to generate output based on your previous c
 
 In the image below, we are asking Foyle to describe a pod from the list of pods we got in the example above.
 
-![Output command](/img/Integration/runme-foyle-execute-command3.png)
+![Output command](/img/integration/runme-foyle-execute-command3.png)
 
 ## Learning with Foyle
 
@@ -135,20 +135,20 @@ The next step is to enable logging in Runme. Using Runme as the frontend for Foy
 1. In your VS Code, open the settings panel
 2. Search for `Runme › Experiments: Enable Ai Logs` in the search bar.
 
-![enable ai logs](/img/Integration/runme-foyle-ailogs-extension.png)
+![enable ai logs](/img/integration/runme-foyle-ailogs-extension.png)
 
 Enabling this feature makes logging server logs used for training AIs possible.
 
 Now that logging is enabled, you can verify that logs are being written and identify their location, as shown in the image below.
 
-![Foyle serve logs](/img/Integration/runme-foyle-serve-logs.png)
+![Foyle serve logs](/img/integration/runme-foyle-serve-logs.png)
 
 To view the logs, you need to follow the steps below;
 
 - Create a new code cell block using Runme's [CWD feature](../configuration/cell-level#cells-current-working-directory) and configure the path for that code cell block to the log file path shown earlier.
 - Run the command `ls -la` to access the file's content, as shown below.
 
-![Check the list](/img/Integration/runme-foyle-json-file.png)
+![Check the list](/img/integration/runme-foyle-json-file.png)
 
 - Now that you see the content and the logs, you will want to view the current log. To do that, run the command below in your Markdown file after setting your directory path, as you did in the step above.
 
@@ -171,7 +171,7 @@ foyle config set learner.logDirs=${RUNME_LOGS_DIR}
 
 This will use the Runme Environment Prompt Variable to prompt you to confirm your RUNME_LOGS_DIR path and output, as in the image below.
 
-![Set env var](/img/Integration/rume-foyle-envvar-ai-learning.png)
+![Set env var](/img/integration/rume-foyle-envvar-ai-learning.png)
 
 ## Feedback and Contribution
 
