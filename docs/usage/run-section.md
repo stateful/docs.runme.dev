@@ -1,9 +1,8 @@
 ---
-sidebar_position: 5
-title: Run section of cells
+sidebar_position: 3
 ---
 
-# **Run section of cells**
+# Run section of cells
 
 An alternative way to run your Runme cell individually or the entire document is to run your Markdown file by sections.
 
@@ -11,7 +10,7 @@ If you have a Markdown file with a large volume of codes and commands to be exec
 
 To do this, you first need to enable “Sticky Scroll” in your notebook. Sticky Scroll allows you to stick sections to the top of the editor so that they are always in view while you scroll through your Markdown file.
 
-## **Getting Started**
+## Getting Started
 
 This section will explore how to use the Sticky Scroll to run cells by section in Runme.
 
@@ -45,7 +44,7 @@ See the video below to represent the steps visually.
   <source src="/videos/cellsection.webm" type="video/webm" />
 </video>
 
-## **Run Cells by Section From Outline**
+## Run Cells by Section From Outline
 
 Alternatively, you can run your cells by section using the Outline feature of the VS Code editor. In this example, we use this [README file](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sealed-secret/Mac-sealedsecret.md) with several sections.
 

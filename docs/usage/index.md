@@ -1,9 +1,8 @@
 ---
 sidebar_position: 4
-title: Usage
 ---
 
-# **Usage**
+# Usage
 
 These are features you may want to utilize in crafting the Notebook experience.
 
@@ -15,7 +14,7 @@ These are features you may want to utilize in crafting the Notebook experience.
 - [Shebang (running code)](/usage/shebang)
 - [Stdin, Stdout, Stderr](/usage/stdin)
 
-## **Notebook UX in VS Code**
+## Notebook UX in VS Code
 
 These are all the pieces you may care about in creating and operating Notebooks in VS Code.
 
