@@ -34,7 +34,7 @@ The command above installs `brew` and `git,` and creates a local Kubernetes 
 
 💡 For your kind cluster to run, you need to have docker running.
 
-### Install Istio CLI[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#install-istio-cli)
+### Install Istio CLI[](/guide/servicemesh#install-istio-cli)
 
 Download the Istio release and install the Istio CLI.
 
@@ -49,9 +49,9 @@ cd istio-<version>
 export PATH=$PWD/bin:$PATH
 ```
 
-[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#install-istio-on-kubernetes)
+[](/guide/servicemesh#install-istio-on-kubernetes)
 
-## **Setting Up Your Cluster**[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/argocd-cli#setting-up-your-cluster)
+## **Setting Up Your Cluster**[](/guide/argocd-cli#setting-up-your-cluster)
 
 To proceed with this tutorial, you are required to set up your Kubernetes cluster. This is an important step as it ensures that service mesh can manage your microservices application.
 
@@ -85,7 +85,7 @@ To create a new namespace, execute the command below
 kubectl create namespace mesh
 ```
 
-## Install Istio on Kubernetes[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#install-istio-on-kubernetes)
+## Install Istio on Kubernetes[](/guide/servicemesh#install-istio-on-kubernetes)
 
 After successfully setting up your cluster, the next step is to install Istio on Kubernetes.
 
@@ -105,7 +105,7 @@ istioctl verify-install
 
 ![istio installed](../../static/img/guide-page/runme-verofy-istiocli-install.png)
 
-## Verify Istio Components[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#verify-installation)
+## Verify Istio Components[](/guide/servicemesh#verify-installation)
 
 Ensure all Istio components are running correctly.
 
@@ -117,7 +117,7 @@ kubectl get pods -n istio-system
 
 You should see pods for `istiod`, `istio-ingressgateway`, and other components.
 
-## Label the Namespace for Istio Injection[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#label-the-namespace-for-istio-injection)
+## Label the Namespace for Istio Injection[](/guide/servicemesh#label-the-namespace-for-istio-injection)
 
 After complete verification of all Istio components, you need to label the namespaces where your application is deployed for automatic sidecar injection. Run the command below to achieve this.
 
@@ -129,7 +129,7 @@ kubectl label namespace <your-namespace> istio-injection=enabled
 
 Be sure to replace `your-namespace` with the name of the namespace where Istio is running.
 
-## Deploy Sample Application[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#deploy-sample-application)
+## Deploy Sample Application[](/guide/servicemesh#deploy-sample-application)
 
 In this section, we will deploy a sample application to verify that the service mesh is working as it should.
 
@@ -143,7 +143,7 @@ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 
 Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
-## Expose the Application[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#expose-the-application)
+## Expose the Application[](/guide/servicemesh#expose-the-application)
 
 After deploying your sample application, the next step is to expose the application using the Istio ingress gateway. Run the command below to do this.
 
@@ -155,7 +155,7 @@ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 
 [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) here to set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
-## Verify the Application[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#verify-the-application)
+## Verify the Application[](/guide/servicemesh#verify-the-application)
 
 To verify the application and check the ingress IP and port, run the command below.
 
@@ -171,9 +171,9 @@ If you would want to analyze the entire cluster, run the command below.
 
 ![istioctl](../../static/img/guide-page/runme-istioctl-analyze.png)
 
-[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#additional-configuration)
+[](/guide/servicemesh#additional-configuration)
 
-## Traffic Management[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#traffic-management)
+## Traffic Management[](/guide/servicemesh#traffic-management)
 
 Now the next step is to properly handle traffic management. To do this, you need to create a `VirtualService` that will define the routing rules. The example in this tutorial routes all traffic to the `reviews` service to version `v1`
 
@@ -284,7 +284,7 @@ export GATEWAY_URL=$(kubectl -n istio-system get service istio-ingressgateway -o
 curl http://$GATEWAY_URL/productpage
 ```
 
-## Security[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#security)
+## Security[](/guide/servicemesh#security)
 
 To boost the application's security, we will enable strict mutual TLS mode in Istio. This mode secures service-to-service communication and provides authentication to protect sensitive data.
 
@@ -311,7 +311,7 @@ kubectl apply -f peer-authentication.yaml
 
 ![peer-auth](../../static/img/guide-page/runme-instio-security.png)
 
-## Observability[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/servicemesh#observability)
+## Observability[](/guide/servicemesh#observability)
 
 To get a visual view of your application's progress, consider integrating with [Prometheus](/guide/monitoring-stack#configure-your-prometheus), [Grafana](/guide/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
 
@@ -325,7 +325,7 @@ kubectl apply -f samples/addons
 
 Using the [Runme cwd feature](../configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
-## Cleanup[](https://docs-runme-q3n6krjle-stateful.vercel.app/guide/agrocd#cleanup)
+## Cleanup[](/guide/agrocd#cleanup)
 
 After successfully deploying your application, you can clean up when you’re done. Here are some steps to achieve this:
 

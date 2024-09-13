@@ -14,7 +14,7 @@ This guide will explore one such resource, Kubernetes secrets, with a specific f
 
 In this guide, we will demonstrate the steps required to encrypt Kubernetes secrets with sealed secrets in Runme successfully.
 
-## **Prerequisites**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#prerequisites)
+## **Prerequisites**[](/guide/k8s-secret#prerequisites)
 
 To get started, ensure you have the following:
 
@@ -44,7 +44,7 @@ brew install kubeseal
   <source src="/videos/sealed-secrets-runme.webm" type="video/webm" />
 </video>
 
-### **Encrypt a Secret in Runme**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#encrypt-a-secret)
+### **Encrypt a Secret in Runme**[](/guide/k8s-secret#encrypt-a-secret)
 
 To encrypt a secret, you must create a Kubernetes secret and then using `kubeseal` you can encrypt it. Run the command below in your Runme cell to encrypt your secret.
 
@@ -81,7 +81,7 @@ Here is a pictorial representation of the command when executed in Runme.
 
 From the output gotten, you can see that your new value has successfully been added.
 
-### Decrypt a Secret[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#decrypt-a-secret)
+### Decrypt a Secret[](/guide/k8s-secret#decrypt-a-secret)
 
 To retrieve the original version of `runme-secrets.yaml`, you can decrypt the encrypted secret, `mysealedsecret.yaml`. Run the command below
 
@@ -101,7 +101,7 @@ To delete the secret, use the `kubectl` command to delete the resource and run
 kubectl delete -f mysealedsecret.yaml
 ```
 
-### **Deploy the Sealed Secret**[](https://docs-runme-55rq3q1vz-stateful.vercel.app/guide/k8s-secret#deploy-the-sealed-secret)
+### **Deploy the Sealed Secret**[](/guide/k8s-secret#deploy-the-sealed-secret)
 
 To deploy your secret, execute the code below:
 
