@@ -14,5 +14,5 @@ Runme provides multiple client interfaces that enable you to interact with Runme
 - [VS Code extension](../installation/vscode.md)
 - [CLI for the terminal](/installation/cli)
 - [Self-hosted web app version](/getting-started/web)
-- [CDE's like Codespaces or Gitpod](/installation/runme-cdes)
+- [CDE's like Codespaces or Gitpod](/installation/cdes)
 - [Github action](https://github.com/stateful/runme-action)

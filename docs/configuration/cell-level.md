@@ -60,7 +60,7 @@ A new view will open, allowing you to select “general” or “advanced” cel
 
 ## Configure using Markdown
 
-If you feel more comfortable editing the Markdown file directly, you can do it using the following configuration options [schema](../Reference/configuration#cell-level):
+If you feel more comfortable editing the Markdown file directly, you can do it using the following configuration options [schema](/configuration/cell-level#cell-configuration-keys):
 
 Consider this example:
 
@@ -250,7 +250,7 @@ Runme has a `MimeType` feature that enables you to render images, CSV-based tabl
 
 ![Human-centric output](../../static/img/human-centric-output.png)
 
-See in the [reference page](../Reference/mime) for the list of supported MIME types!
+See in the [reference page](/configuration/mime) for the list of supported MIME types!
 
 ### Background Task
 

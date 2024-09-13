@@ -93,7 +93,7 @@ In this section, we will explore various BigQuery operations.
 
 With Runme features, you can successfully run and display your query's output, formatting it into a table for easy navigation.
 
-To do this, you first need to set your `FORMAT`. Using [Runme’s environment variable](../configuration/cell-level#set-environment-variables), you will be prompted to set the `FORMAT`. Run the command below in your code cell.
+To do this, you first need to set your `FORMAT`. Using [Runme’s environment variable](/configuration/cell-level#set-environment-variables), you will be prompted to set the `FORMAT`. Run the command below in your code cell.
 
 ```sh {"id":"01J2KDSN92SZZYTSN11D7GS2G9"}
 export FORMAT="json"
@@ -102,7 +102,7 @@ echo "FORMAT set to ${FORMAT}"
 
 The next step is to execute your query.
 
-To do this, set the code cell [programming language](../configuration/shebang.md) to **SQL** and also give your [code cell a name.](../configuration/cell-level#unnamed-vs-named-cells) For this example, we will call our code cell **QUERY**. Run the command below.
+To do this, set the code cell [programming language](/usage/shebang) to **SQL** and also give your [code cell a name.](/configuration/cell-level#unnamed-vs-named-cells) For this example, we will call our code cell **QUERY**. Run the command below.
 
 ```sql {"id":"01J2KDYDZHSYQW5M78AVG3NN1P","name":"QUERY"}
 SELECT title, num_characters, timestamp, id, revision_id FROM

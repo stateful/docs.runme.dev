@@ -14,13 +14,13 @@ Before proceeding, ensure you have the following installed:
 
 - **Install Runme**
 
-To access Runme on your web browser, you are required to [install Runme](..//installation/cli) on your terminal. To do that, run the command below:
+To access Runme on your web browser, you are required to [install Runme](/installation/cli) on your terminal. To do that, run the command below:
 
 ```sh {"id":"01J30C5KDGY6TVVXPNHWKZPTYX"}
 brew install runme
 ```
 
-Check out our detailed installation guide for instructions on [installing Runme CLI](..//installation/cli) on other operation systems.
+Check out our detailed installation guide for instructions on [installing Runme CLI](/installation/cli) on other operation systems.
 
 - **Change directory**
 

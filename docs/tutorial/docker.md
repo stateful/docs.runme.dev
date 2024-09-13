@@ -304,7 +304,7 @@ In this guide, we covered the basics of running Docker commands in Runme.
 Runme has several features that make it a choice platform for integrating and using Docker. Some key features of Runme include
 
 - The [background mode](/configuration/cell-level#background-task) makes it possible to run commands in the background.
-- [Autosave feature](../configuration/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
+- [Autosave feature](/usage/auto-save), which provides you with the opportunity to auto-save your outputs without manual intervention.
 - You can run your Markdown file by cells, an entire document, or sections.
 
 To explore more features of Runme and learn how they can be utilized in your workflows, visit our [documentation page](https://docs.runme.dev/).

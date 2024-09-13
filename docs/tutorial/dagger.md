@@ -36,7 +36,7 @@ This section will explore navigating the Dagger CLI in your Runme Notebooks. We 
 
 ### Writing Dagger Module within Runme Notebook cell
 
-Runme Notebook interface includes a terminal environment with [additional features](../getting-started/features.md), that gives you the experience of working in your regular terminal and more. With the Runme Notebook interface, you can write and execute Dagger commands.
+Runme Notebook interface includes a terminal environment with [additional features](/getting-started/vscode#interactive-mode), that gives you the experience of working in your regular terminal and more. With the Runme Notebook interface, you can write and execute Dagger commands.
 
 Let’s explore the code block below.
 

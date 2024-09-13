@@ -214,6 +214,6 @@ See more resources on how Runme works
 
 [How Runme Works on the Web](/getting-started/web)
 
-[How Runme Works in VS Code](getting-started/vscode)
+[How Runme Works in VS Code](/getting-started/vscode)
 
 [How Runme works on VS Code SSH and Remote](/getting-started/vscode-ssh)

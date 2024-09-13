@@ -120,7 +120,7 @@ To use this feature, just toggle the "Autosave" option at the top of your code e
 
 ![auto save](../../static/img/guide-page/runme-autosave.png)
 
-Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save](../configuration/auto-save.md) feature for more information.
+Alternatively you set the Auto-save as default. This will ensure that autosave is always on and your outputs are automatically saved. See the [Auto-save](/usage/auto-save.md) feature for more information.
 
 **Cleaning Up**
 

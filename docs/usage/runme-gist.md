@@ -28,7 +28,7 @@ As stated earlier, Runme Gist combines [GitHub Gist](https://gist.github.com/) w
 Create a `README.md` file and open it in your VS Code. If you already have the file you want to use, open it in VS Code.
 
 **Step 2: Activate Auto-Save**
-As part of the requirements to generate a gist, you need to activate the [auto-save feature](../configuration/auto-save) of Runme. This ensures your outputs are saved automatically without manual intervention.
+As part of the requirements to generate a gist, you need to activate the [auto-save feature](/usage/auto-save) of Runme. This ensures your outputs are saved automatically without manual intervention.
 
 ![runme gist Autosave ](../../static/img/configuration-page/runme-gist-autosave.png)
 
@@ -38,7 +38,7 @@ Now, run your notebook cells. A separate file containing your saved output will 
 
 **Step 4: View Sessions Output**
 
-Session Output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](../configuration/auto-save#session-outputs) guide.
+Session Output is a Runme feature that stores your generated cell outputs in a separate file so you can access them whenever necessary. See the [Session output](/usage/auto-save#session-outputs) guide.
 
 To view your Session Output, click “Sessions Outputs” to inspect the locally recorded session. Alternatively, you can find it on the left-hand side of your VS Code right inside your current working directory.
 

@@ -71,7 +71,7 @@ A great example of this is when you specify the **mimetype**, that config metada
 
 ## Runme's architecture
 
-Runme is built on the VS Code platform running in Codespaces, Coder's [code-server](https://github.com/coder/code-server), Google IDX, GCP Cloud Editor, Gitpod, VSCodium, etc. Under the hood, much like other Notebook technologies such as Jupyter, you can read more on the [Architecture page](/architecture).
+Runme is built on the VS Code platform running in Codespaces, Coder's [code-server](https://github.com/coder/code-server), Google IDX, GCP Cloud Editor, Gitpod, VSCodium, etc. Under the hood, much like other Notebook technologies such as Jupyter, you can read more on the [Architecture page](/resources/architecture).
 
 <br />
 <img src="/img/venn.png" style={{width: "60%", display: "inline"}} alt="What is runme"/>
@@ -82,4 +82,4 @@ Runme is built on the VS Code platform running in Codespaces, Coder's [code-serv
 - First you need to [install Runme](/installation) for the client you want to use.
 - Next follow the [getting started](/getting-started) guide
 
-If you've already done that, skip to [configuring Notebooks](/configuration) or our [tutorials](/tutorials).
+If you've already done that, skip to [configuring Notebooks](/configuration) or our [tutorials](/tutorial).
