@@ -48,7 +48,7 @@ A quick hands on example of Runme in action.
 
 <br /><br />
 <Infobox type="sidenote" title="Jump forward">
-[Install Runme](https://docs.runme.dev/installation) or [get started](https://docs.runme.dev/get-started).
+[Install Runme](/installation) or [get started](/getting-started).
 </Infobox>
 
 ## What makes a Runme Notebook?

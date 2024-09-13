@@ -18,7 +18,7 @@ git clone --branch T-doc-notebook https://github.com/stateful/blog-examples.git
 cd blog-examples/docker-notebook
 ```
 
-- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Install Runme**: Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set it as your [default Markdown viewer.](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
 - **Required Packages**: Run the command below to install the required packages for this guide.
 
 ```sh {"id":"01HYG0F007XK8RT7466DNS16RQ"}

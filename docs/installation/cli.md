@@ -81,7 +81,7 @@ This will connect your machine to your WSL server.
 
 After successfully connecting to the WSL server, you should install Runme CLI on your remote server.
 
-[Homebrew](https://brew.sh/) is one of the easiest ways to install Runme CLI. However, you must ensure you have the latest Brew version. Once that is done we can proceed to install the Runme CLI with [Brew](https://docs.runme.dev/installation/runmecli#install-runme-on-macos).
+[Homebrew](https://brew.sh/) is one of the easiest ways to install Runme CLI. However, you must ensure you have the latest Brew version. Once that is done we can proceed to install the Runme CLI with [Brew](/installation/cli#install-runme-on-macos).
 
 ```bash {"id":"01J58R4TJ430708WYDMXAZKVD4"}
 brew install runme

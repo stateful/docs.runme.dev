@@ -152,14 +152,12 @@ You can also run individual cells using the names of the cells or select them in
 </video>
 <br/>
 
-To learn more about how the Runme CLI functions and how to use it for your project, check out [our documentation.](https://docs.runme.dev/how-runme-works/cli)
+To learn more about how the Runme CLI functions and how to use it for your project, check out [our documentation.](/getting-started/cli)
 
 ## Additional Resources
 
 To learn more about Runme, see more resources on Runme Integrations:
 
-[Runme Cloud Renderers](https://docs.runme.dev/integrations/cloud-render/)
-
-[Data Rendering with Runme and JSON](https://docs.runme.dev/integrations/data-rendering)
-
-[How to Use Foyle AI with Runme](https://docs.runme.dev/integrations/foyle)
+[Runme Cloud Renderers](/guide/cloud-render/)
+[Data Rendering with Runme and JSON](/configuration/output-rendering)
+[How to Use Foyle AI with Runme](/guide/foyle)

@@ -19,7 +19,7 @@ git clone https://github.com/stateful/blog-examples.git
 cd kubernetes/k8s-secret/sops
 ```
 
-- **Install Runme:** Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set Runme as your [default Markdown viewer.](https://docs.runme.dev/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Install Runme:** Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) and set Runme as your [default Markdown viewer.](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer)
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-linux.md).
 
@@ -78,7 +78,7 @@ This command will prompt you to input a value for `alias` and create a KMS key. 
 
 ![kms](/img/guide-page/kms-key-runme.png)
 
-You can also save this output to the Runme cloud for future use with the [Runme auto-save](https://docs.runme.dev/configuration/auto-save) feature.
+You can also save this output to the Runme cloud for future use with the [Runme auto-save](https://docs.runme.dev/usage/auto-save) feature.
 
 ### Configure SOPS in Runme
 
@@ -156,6 +156,6 @@ We successfully encrypted our Kubernetes secrets inside our Markdown file. Runme
 
 One of the useful features within the notebook environment is the [environment variable prompt](/configuration/cell-level#environment-variable-prompts) feature, which allows users to input values directly within the notebook environment and use them whenever needed rather than inputting them again.
 
-Another amazing key feature of Runme is the [Autosave](https://docs.runme.dev/configuration/auto-save) feature, which automatically records and tracks every change and activity in your processes without manual intervention.
+Another amazing key feature of Runme is the [Autosave](https://docs.runme.dev/usage/auto-save) feature, which automatically records and tracks every change and activity in your processes without manual intervention.
 
 Visit the [Runme Documentation](https://docs.runme.dev/) to learn more about Runme and explore its features. Then, begin your journey to automating your operations processes.
