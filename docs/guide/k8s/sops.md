@@ -23,13 +23,13 @@ cd kubernetes/k8s-secret/sops
 
 This guide will focus on using the Mac specifications. If you use a Linux OS, follow the instructions in the [Linux Markdown files](https://github.com/stateful/blog-examples/blob/main/kubernetes/k8s-secret/sops/sops-linux.md).
 
-## **Securing Secrets with SOPS**[](/guide/k8s-secret#securing-secrets-with-sops)
+## Securing Secrets with SOPS
 
 To encrypt your Kubernetes secrets using SOPS, you need an advanced security measure, access to a cloud provider, and a Key Management Service (KMS). For this guide, we will use an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys).
 
 Navigate to the [SOPS file](https://github.com/stateful/blog-examples/tree/main/kubernetes/k8s-secret/sops) in the repository you cloned earlier and open the Markdown file based on the specifications of your operating system to follow up on this section of the guide.
 
-### **Installation of SOPS**[](/guide/k8s-secret#installation-of-sops)
+### Installation of SOPS
 
 Run the command within your Runme cell to install `kind`, `kubectl`, `sops`, and `awscli`
 
@@ -59,7 +59,7 @@ brew install sops
   <source src="/videos/runme-sops.webm" type="video/webm" />
 </video>
 
-### **Create a KMS Key within your Runme Cell**[](/guide/k8s-secret#create-a-kms-key)
+### Create a KMS Key within your Runme Cell
 
 You need a [KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) to encrypt and decrypt your secrets. As mentioned, we will use the AWS KMS key to carry out this action.
 
@@ -80,7 +80,7 @@ This command will prompt you to input a value for `alias` and create a KMS key. 
 
 You can also save this output to the Runme cloud for future use with the [Runme auto-save](https://docs.runme.dev/configuration/auto-save) feature.
 
-### **Configure SOPS in Runme** [](/guide/k8s-secret#configure-sops)
+### Configure SOPS in Runme
 
 To configure your SOPS, specify how to encrypt your secrets, then define the encryption keys. To do this, run the command below in your Runme cell.
 
@@ -100,7 +100,7 @@ Once this is executed, it returns the configuration of your sops.yaml file to en
 
 ![sops](/img/guide-page/configure-sops-runme.png)
 
-### **Encrypt Your Secrets**[](/guide/k8s-secret#encrypt-your-secrets)
+### Encrypt Your Secrets
 
 To encrypt your secret using SOPS with AWS KMS, ensure you have set the following:
 
@@ -116,7 +116,7 @@ sops --encrypt --kms arn:aws:kms:${region}:${accountid}:key/$keyid --encryption-
 
 Now, we have successfully encrypted your secrets within `runme-secrets.yaml`. Runme automatically transfers your information to `run me-secrets-enc.yaml`.
 
-### **Decrypt Your Secrets within the Runme cell.**[](/guide/k8s-secret#decrypt-your-secrets)
+### Decrypt Your Secrets within the Runme cell
 
 Similar to the encryption process, Runme you can decrypt your encrypted security in your Markdown file. This will ensure that every process is properly automated. You can do this in two ways.
 
@@ -138,7 +138,7 @@ Here is a pictorial representation on what happens when you decrypt your secrets
 
 When you decrypt the secret, it moves the decrypted secrets from a SOPS-encrypted secret `runtime-secrets-enc.yaml` into the original version before it was encrypted `runme-secrets.yaml`
 
-### **Apply Encrypted Secret**[](/guide/k8s-secret#apply-encrypted-secret)
+### Apply Encrypted Secret
 
 To apply the encrypted secrets in your `runme-secrets-enc.yaml` file, run the command below.
 
@@ -150,7 +150,7 @@ sops -d runme-secrets-enc.yaml | kubectl apply -f -
 
 This runs the `runme-secrets-enc.yaml` file decrypts it and then applies the file.
 
-## **Improved Documentation Experience with Runme Notebook**[](/guide/k8s-secret#improve-documentation-experience-with-runme-notebook)
+## Improved Documentation Experience with Runme Notebook
 
 We successfully encrypted our Kubernetes secrets inside our Markdown file. Runme makes your automation process easy with its features.
 

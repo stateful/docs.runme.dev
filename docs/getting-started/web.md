@@ -92,7 +92,7 @@ This feature allows users to perform specific actions, such as copying the outpu
 
 ![executionresult actions](/img/how-runme-works/runme-cells-execution-result-actions.png)
 
-## Additional Resources[](https://docs.runme.dev/how-runme-works/cli#additional-resources)
+## Additional Resources
 
 See more resources on how Runme works
 

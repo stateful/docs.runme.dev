@@ -75,7 +75,7 @@ Here is a pictorial representation of the command when executed in Runme.
 
 From the output gotten, you can see that your new value has successfully been added.
 
-### Decrypt a Secret[](/guide/k8s-secret#decrypt-a-secret)
+### Decrypt a Secret
 
 To retrieve the original version of `runme-secrets.yaml`, you can decrypt the encrypted secret, `mysealedsecret.yaml`. Run the command below
 

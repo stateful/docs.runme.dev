@@ -167,6 +167,6 @@ We are still developing more features for the Runme Notebook Cloud Renderers. If
 
 See more resources on the Runme Cloud Notebook Renderer feature:
 
-- [Manage your Google Cloud Console with Runme Cloud Renderer](../cloud-render/gcp.md)
-- [Execute a series of AWS operations in your Runbook](../cloud-render/aws.md)
-- [Organize your JSON Data with Runme Notebook Renderer](../data-rendering.md)
+- [Manage your Google Cloud Console with Runme Cloud Renderer](/guide/cloud-render/gcp)
+- [Execute a series of AWS operations in your Runbook](/guide/cloud-render/aws)
+- [Organize your JSON Data with Runme Notebook Renderer](/configuration/output-rendering)

@@ -34,7 +34,7 @@ The command above installs `brew` and `git,` and creates a local Kubernetes 
 
 💡 For your kind cluster to run, you need to have docker running.
 
-### Install Istio CLI[](/guide/servicemesh#install-istio-cli)
+### Install Istio CLI
 
 Download the Istio release and install the Istio CLI.
 
@@ -48,8 +48,6 @@ Replace `<version>` with the version of Istio you downloaded
 cd istio-<version>
 export PATH=$PWD/bin:$PATH
 ```
-
-[](/guide/servicemesh#install-istio-on-kubernetes)
 
 ## Setting Up Your Cluster
 
@@ -85,7 +83,7 @@ To create a new namespace, execute the command below
 kubectl create namespace mesh
 ```
 
-## Install Istio on Kubernetes[](/guide/servicemesh#install-istio-on-kubernetes)
+## Install Istio on Kubernetes
 
 After successfully setting up your cluster, the next step is to install Istio on Kubernetes.
 
@@ -105,7 +103,7 @@ istioctl verify-install
 
 ![istio installed](/img/guide-page/runme-verofy-istiocli-install.png)
 
-## Verify Istio Components[](/guide/servicemesh#verify-installation)
+## Verify Istio Components
 
 Ensure all Istio components are running correctly.
 
@@ -117,7 +115,7 @@ kubectl get pods -n istio-system
 
 You should see pods for `istiod`, `istio-ingressgateway`, and other components.
 
-## Label the Namespace for Istio Injection[](/guide/servicemesh#label-the-namespace-for-istio-injection)
+## Label the Namespace for Istio Injection
 
 After complete verification of all Istio components, you need to label the namespaces where your application is deployed for automatic sidecar injection. Run the command below to achieve this.
 
@@ -129,7 +127,7 @@ kubectl label namespace <your-namespace> istio-injection=enabled
 
 Be sure to replace `your-namespace` with the name of the namespace where Istio is running.
 
-## Deploy Sample Application[](/guide/servicemesh#deploy-sample-application)
+## Deploy Sample Application
 
 In this section, we will deploy a sample application to verify that the service mesh is working as it should.
 
@@ -143,7 +141,7 @@ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
 
 Using the [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
-## Expose the Application[](/guide/servicemesh#expose-the-application)
+## Expose the Application
 
 After deploying your sample application, the next step is to expose the application using the Istio ingress gateway. Run the command below to do this.
 
@@ -155,7 +153,7 @@ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml
 
 [Runme cwd feature](https://docs.runme.dev/configuration/cell-level#cells-current-working-directory) here to set your code cell block to the path where `samples/bookinfo/platform/kube/bookinfo.yaml` is located (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
-## Verify the Application[](/guide/servicemesh#verify-the-application)
+## Verify the Application
 
 To verify the application and check the ingress IP and port, run the command below.
 
@@ -171,9 +169,7 @@ If you would want to analyze the entire cluster, run the command below.
 
 ![istioctl](/img/guide-page/runme-istioctl-analyze.png)
 
-[](/guide/servicemesh#additional-configuration)
-
-## Traffic Management[](/guide/servicemesh#traffic-management)
+## Traffic Management
 
 Now the next step is to properly handle traffic management. To do this, you need to create a `VirtualService` that will define the routing rules. The example in this tutorial routes all traffic to the `reviews` service to version `v1`
 
@@ -284,7 +280,7 @@ export GATEWAY_URL=$(kubectl -n istio-system get service istio-ingressgateway -o
 curl http://$GATEWAY_URL/productpage
 ```
 
-## Security[](/guide/servicemesh#security)
+## Security
 
 To boost the application's security, we will enable strict mutual TLS mode in Istio. This mode secures service-to-service communication and provides authentication to protect sensitive data.
 
@@ -311,7 +307,7 @@ kubectl apply -f peer-authentication.yaml
 
 ![peer-auth](/img/guide-page/runme-instio-security.png)
 
-## Observability[](/guide/servicemesh#observability)
+## Observability
 
 To get a visual view of your application's progress, consider integrating with [Prometheus](/guide/monitoring-stack#configure-your-prometheus), [Grafana](/guide/monitoring-stack#install-grafana), and Jaeger for metrics, dashboards, and tracing.
 
@@ -323,9 +319,9 @@ kubectl apply -f samples/addons
 
 ![runme-sample-addons](/img/guide-page/runme-samples-addons.png)
 
-Using the [Runme cwd feature](../configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
+Using the [Runme cwd feature](/configuration/cell-level#cells-current-working-directory), you can confidently set your code cell block to the path where the samples folder is located on your local machine (the sample folder is inside of `istio-<version>` that you downloaded earlier).
 
-## Cleanup[](/guide/agrocd#cleanup)
+## Cleanup
 
 After successfully deploying your application, you can clean up when you’re done. Here are some steps to achieve this:
 
