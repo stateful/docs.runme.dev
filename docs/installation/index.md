@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Installation
 ---
 
-# **Installation**
+# Installation
 
 Install the Runme client for your use-case. The [VS Code extension](../installation/vscode.md) is a great way to start building and running Notebooks (if you don't want to install VS Code, it's easy to [launch a Notebook UI in your browser](/getting-started/web)). The [CLI](/installation/cli) makes it easy to direcly execute commands from your existing Notebooks. Also, if you have Notebooks you want to test in CI/CD, check out the [Github Action](https://github.com/stateful/runme-action).
 

@@ -51,7 +51,7 @@ export PATH=$PWD/bin:$PATH
 
 [](/guide/servicemesh#install-istio-on-kubernetes)
 
-## **Setting Up Your Cluster**[](/guide/argocd-cli#setting-up-your-cluster)
+## Setting Up Your Cluster
 
 To proceed with this tutorial, you are required to set up your Kubernetes cluster. This is an important step as it ensures that service mesh can manage your microservices application.
 

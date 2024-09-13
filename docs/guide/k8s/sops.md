@@ -8,7 +8,7 @@ runme:
 
 In this guide, we will walk you through automating your [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) encryption with Runme to ensure your encryption and decryption processes are automated and properly documented to improve your secret management.
 
-## **Prerequisites**[](/guide/k8s-secret#prerequisites)
+## Prerequisites
 
 To get started, ensure you have the following:
 

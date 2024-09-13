@@ -3,18 +3,18 @@ sidebar_position: 2
 title: Cell-level Options
 ---
 
-# **Cell-level Options**
+# Cell-level Options
 
 Cell-level options allow you to configure the commands and their behvaior in your Markdown file by cell.
 
-### **Some of the specific commands you may want to configure**
+## Some of the specific commands you may want to configure
 
 1. File-watchers for compilers & bundlers should run as background tasks.
 2. Executors for Interactive and Non-interactive programs & scripts.
 3. Human-centric output: JSON, text, images, etc.
 4. Terminal visibility when no errors occur.
 
-## **Run a cell**
+## Run a cell
 
 - Navigate to the specific cell you wish to run.
 - Click the **Run** icon on the left side of the code block.
@@ -23,7 +23,7 @@ Cell-level options allow you to configure the commands and their behvaior in you
 
 This action will run your command and return an executed output, you can configure how your cell should run using the configuration options.
 
-## **Cell configuration keys**
+## Cell configuration keys
 
 Cell level options gives users the flexibility to modify the behavior of each executable cell.
 
@@ -48,7 +48,7 @@ This feature can be used to prevent [prompting](../configuration/document-level)
 
 </Infobox>
 
-### **Configuration UX**
+### Configuration UX
 
 To modify the cell execution behavior of any cell you choose, click **Configure** on the respective cell.
 
@@ -90,7 +90,7 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 </Infobox>
 
-### **Running code in Notebook cells**
+### Running code in Notebook cells
 
 Runme has a [Shebang feature](/usage/shebang) which allows users to specify each cell's programming language inside the Markdown file.
 
@@ -113,7 +113,7 @@ While this works well in a lot of cases, the accuracy is not perfect.
 
 </Infobox>
 
-### **Long-running processes**
+### Long-running processes
 
 It is common to use file-watcher-enabled compilers/bundlers (e.g., `npm start dev`, `watchexec`, etc.) in the background during development.
 For any cell containing an instance of these commands, tick the background cell setting. This will prevent execution from permanently blocking the Notebook UX.
@@ -133,7 +133,7 @@ npm run watch
 
 ![background](/img/configuration-page/background-task.png)
 
-### **Cell CWD (current working directory)**
+### Cell CWD (current working directory)
 
 In most cases, you should set the current working directory at the document level; however, you can also set it per cell.
 
@@ -160,7 +160,7 @@ Please note that if both `cwd` is set for doc-level and cell, they don't overw
 
 </Infobox>
 
-### **Interactive vs non-interactive cells**
+### Interactive vs non-interactive cells
 
 If a cell's commands do not require any input from the user it might be a good fit to include the cell's output inside the Notebook. This is useful if the resulting output could be useful as input in a downstream cell. This is what `interactive=false` is for, and it defaults to _true_.
 
@@ -176,7 +176,7 @@ If a cell's commands do not require any input from the user it might be a good f
 openssl rand -base64 32
 ```
 
-### **Environment variables**
+### Environment variables
 
 If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
 
@@ -221,7 +221,7 @@ export PROJECT_ID=Enter a valid project ID
 cli make-call --project-id $PROJECT_ID describe
 ```
 
-### **Terminal visibility post-execution**
+### Terminal visibility post-execution
 
 A cell's execution terminal is auto-hidden unless it fails. This default behavior can be overwritten if keeping the terminal open is in the interest of the Runme notebook reader. Just untick `closeTerminalOnSuccess` (`false`).
 
@@ -234,7 +234,7 @@ A cell's execution terminal is auto-hidden unless it fails. This default behavio
 docker ps | grep runme/demo:latest
 ````
 
-### **Human-friendly output / MimeType configuration**
+### Human-friendly output / MimeType configuration
 
 Not all cells’ output is plain text. For example, you can have JSON, text, images, etc, all in your Markdown file.
 
@@ -260,7 +260,7 @@ Runme has a **background** mode that enables you to run tasks in the background.
 
 ![runme-background](/img/runme-background.png)
 
-### **Terminal Row**
+### Terminal Row
 
 The number of rows an output should be rendered is defined by a setting known as Terminal row. Set the number of rows with which your output should be displayed under a cell, 10 rows is the default.
 
@@ -282,7 +282,7 @@ We have provided a list of configuration settings to upgrade your experience usi
 
 - Lastly, set the number of rows you wish your output to be rendered in.
 
-### **Unnamed vs Named cells**
+### Unnamed vs Named cells
 
 On Runme cells are unnamed by default. However, you can name a cell directly in your notebook. This will enable you to easily identify the cell using the provided cell name. On the cell you wish to name, simply click on the “Add Name” button on the cell.
 
@@ -328,7 +328,7 @@ Take a look at more [examples](https://github.com/stateful/vscode-runme/tree/mai
 
 </Infobox>
 
-### **Exclude Cell from Run All**
+### Exclude Cell from Run All
 
 Every VS Code notebook allows users to run all available cells. This can be useful if you define a complete runbook in your Markdown file, allowing developers to click the **Run All** button to get set up and running.
 
@@ -343,7 +343,7 @@ However, sometimes certain cells should be excluded from this workflow. You can 
  # Do something optional here
 ````
 
-## **Environment Variable Prompts**
+## Environment Variable Prompts
 
 Runme simplifies the use of environment variables in your notebooks by allowing dynamic settings within each cell block of your notebook. It provides interactive prompts in each cell, tailored to your users' needs. This ensures a smooth and user-friendly experience when incorporating real-time user interaction.
 

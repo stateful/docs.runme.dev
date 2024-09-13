@@ -5,7 +5,7 @@
 
 In this guide, you will learn how to manage data queries using BigQueris and Runme.
 
-## **Prerequisites**
+## Prerequisites
 
 To follow up on this guide, ensure you have the following:
 

@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Install the CLI
 ---
 
-# **Install the CLI**
+# Install the CLI
 
 Runme works effectively on the CLI. If you are a power user who enjoys running Markdown files from the terminal of your local machine, this section is for you.
 
@@ -11,7 +11,7 @@ Runme works effectively on the CLI. If you are a power user who enjoys running M
 
 Here, we will give you detailed instructions on how to install Runme on your CLI.
 
-## **Install Runme On MacOS**
+## Install Runme On MacOS
 
 To get started, one of the easiest ways to install Runme on MacOS is by using [Homebrew.](https://brew.sh/)
 
@@ -89,7 +89,7 @@ brew install runme
 
 While Homebrew provides an easy way to install Runme using the `brew command`, you can also conveniently install Runme using other platforms, such as `curl` and `wget`, regardless of your operating system. See the “Installing Runme Binary” section.
 
-### **Installing Runme on Windows Using Scoop.sh**
+### Installing Runme on Windows Using Scoop.sh
 
 With Scoop, you can quickly install and set up your Runme CLI on your Windows machine.
 
@@ -155,7 +155,7 @@ The displayed version may appear as “0.0.0”. This is an expected behavior an
 
 If you don't have Go developer tools installed and still want to use this method, download and install Go.
 
-## **Basic Usage with Runme TUI**
+## Basic Usage with Runme TUI
 
 Runme provides a user-friendly text-based user interface (TUI) that allows users to interact with Runme through typed commands and responses displayed on their screen.
 
@@ -222,7 +222,7 @@ Feedback:
 
 Runme’s TUI is awesome however, if you want to run a specific command quickly, simply run a specific script by name using the `runme run <command>` subcommand.
 
-## **Next Steps**
+## Next Steps
 
 You have successfully installed Runme on your CLI. Now, it’s time to explore just how Runme works on CLI and how you can leverage it for your Markdown files right in your MacOS or Windows terminal
 

@@ -2,7 +2,7 @@
 title: Supported MIME types
 ---
 
-# **Supported MIME types**
+# Supported MIME types
 
 Runme supports the standard VS Code MIME types alongside custom Runme MIME types.
 

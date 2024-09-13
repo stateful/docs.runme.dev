@@ -3,13 +3,13 @@ sidebar_position: 4
 title: VS Code / SSH
 ---
 
-# **VS Code / SSH**
+# VS Code / SSH
 
 Runme integrates easily with [VS Code SSH](https://code.visualstudio.com/docs/remote/ssh) and allows users to connect to remote instances effortlessly. This integration allows for easy execution of specific instructions directly in Markdown files, streamlining workflows and boosting productivity.
 
 To follow the instructions on this page, ensure you have installed Runme on your [VS Code](https://docs.runme.dev/installation/vscode) or [CLI](https://docs.runme.dev/installation/runmecli). Also, ensure you have access to the remote server you need.
 
-## **VS Code Remote Development**
+## VS Code Remote Development
 
 Runme leverages the [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) provided by VS Code to enable you to attach remote SSH hosts to your local VS Code environment. This makes task execution easier and enhances productivity by simplifying development processes, minimizing the need for manual commands, and automating repetitive tasks, saving time and reducing the likelihood of errors.
 
@@ -51,7 +51,7 @@ touch example.txt
 
 ![ssh with Vsc](/img/how-runme-works/runme-via-ssh.png)
 
-## **Key-Based Authentication**
+## Key-Based Authentication
 
 To enhance security when using Runme, it is recommended that [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) be used for authentication. This eliminates the need for password transmission and reduces the risk of brute-force attacks.
 

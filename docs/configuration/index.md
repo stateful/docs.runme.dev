@@ -3,7 +3,7 @@ sidebar_position: 6
 title: Configuration
 ---
 
-# **Configuration**
+# Configuration
 
 This section provides information on the various configurations options found in Runme.
 

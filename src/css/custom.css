@@ -304,6 +304,11 @@ ol {
   font-weight: normal;
 }
 
+.markdown h3 {
+  color: var(--ifm-color-primary);
+  font-weight: normal;
+}
+
 .infobox-title {
   font-weight: bold;
   margin-bottom: 0.5rem;

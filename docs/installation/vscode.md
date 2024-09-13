@@ -3,14 +3,14 @@ sidebar_position: 2
 title: Install in VS Code
 ---
 
-# **Install in VS Code**
+# Install in VS Code
 
 Runme can be easily installed on your VS Code editor. This installation will give you access to all the features of Runme directly within your code editor. In VS Code, Runme works using the Runme Notebook extension, which is the primary component installed in your editor.
 
 With the extension you will be able to create and manage runbooks, as well as perform various runbook operations.
 The sections below will guide you through installing Runme on VS Code executing code command right inside your Markdown file.
 
-## **Installing Runme on VS Code**
+## Installing Runme on VS Code
 
 To get started, follow the steps below:
 
@@ -75,7 +75,7 @@ Alternatively, set the following in your .vscode/settings.json file of your pr
   // ...
 ```
 
-### **Bleeding Edge Features**
+### Bleeding Edge Features
 
 Are you a curious developer who loves trying out new things? Runme has a pre-release version with every new update made to the extension. You can try out these new updates and additions firsthand. Follow these steps to access the pre-release version of Runme:
 

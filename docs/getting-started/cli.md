@@ -3,7 +3,7 @@ sidebar_position: 2
 title: CLI
 ---
 
-# **Runme CLI**
+# Runme CLI
 
 With the CLI, you can run commands from your Notebooks in the terminal. The Runme CLI is available for MacOS, Windows, and other platforms.
 
@@ -21,7 +21,7 @@ In this section, we will demonstrate how to execute Runme commands and run Markd
 
 Runme won't work if your current working directory doesn't contain a README file at the top level!
 
-## **Executing Runme Commands and Flags**
+## Executing Runme Commands and Flags
 
 Runme parses every shell or bash code block of a Markdown file and allows you to execute it within your terminal environment. It comes with several commands that help you to run code blocks in your Markdown successfully. To get a list of the available commands, run the command below:
 
@@ -142,7 +142,7 @@ The highlighted code block in the image below is an unnamed code block.
 
 ![runme cli ](/img/how-runme-works/runme-cli-list.png)
 
-## **Running Scripts**
+## Running Scripts
 
 With Runme CLI, markdown files can be executed in the terminal. This section will explore the various ways to run scripts in the Runme CLI. To run a specific script by name, use the `runme run <command>` subcommand.
 

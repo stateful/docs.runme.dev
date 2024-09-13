@@ -3,11 +3,11 @@ sidebar_position: 6
 title: Install in Docker
 ---
 
-# **Install in Docker**
+# Install in Docker
 
 You can containerize your Runme notebook using Docker. This method enables easy deployment of notebook across different environments, including cloud computing platforms,[CI/CD pipelines](https://docs.runme.dev/integrations/github-actions-workflow) , and/or local test environments.
 
-## **Docker Image**
+## Docker Image
 
 Docker images for each released version of Runme are available on [Docker Hub](https://hub.docker.com/r/statefulhq/runme). To get the latest version, use the following command:
 
@@ -15,7 +15,7 @@ Docker images for each released version of Runme are available on [Docker Hub](h
 docker pull statefulhq/runme:latest
 ```
 
-## **Basic Usage**
+## Basic Usage
 
 Use the default working directory:
 
@@ -46,7 +46,7 @@ RUN echo "Installing dependencies..."
 ENTRYPOINT ["/opt/bin/runme", "--filename", "example_runme.md"]
 ```
 
-## **Additional Considerations**
+## Additional Considerations
 
 **ARM64 Architecture**:
 If you are using an ARM64 architecture, include the `--platform=linux/arm64` flag:
@@ -55,7 +55,7 @@ If you are using an ARM64 architecture, include the `--platform=linux/arm64` fla
 docker run --platform=linux/arm64 -it --volume $(pwd):/opt/var/runme statefulhq/runme
 ```
 
-## **Multi-Stage Build**
+## Multi-Stage Build
 
 Consider using a multi-stage Docker build to bring and install your dependencies before finalizing the Runme image. Below is an example Dockerfile illustrating this approach:
 

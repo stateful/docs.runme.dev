@@ -26,7 +26,7 @@ To install on other platforms, check out the AWS [documentation](https://docs.aw
 
 This section will explore setting up your AWS profile, listing configured profiles, and configuring your desired profile.
 
-### **Setting Up Your Working AWS Profile**
+### Setting Up Your Working AWS Profile
 
 After installing the AWS CLI, it stores your configuration settings and credentials in files. Within this credentials file, information is organized into profiles, each potentially holding data such as your `AWS Access Key ID` and `AWS Secret Access Key`.
 
@@ -85,7 +85,7 @@ Your AWS CLI is correctly configured, and you can proceed to the next section.
 
 AWS EC2 enables you to deploy cloud-native applications with high performance and security. In the sections below, you will discover how to leverage Runme Cloud Rendering to engage with your EC2 resources.
 
-### **List EC2 Instances**
+### List EC2 Instances
 
 Listing EC2 instances is a crucial part of managing your AWS environment, and it serves as a foundation for performing other operations, such as managing instance states or securely connecting via SSH.
 
@@ -108,7 +108,7 @@ When this command is executed in your Runme code cell, the output is given below
 
 ![AWS Dashboard](/img/integration/runme-aws-ec2-dashboard.png)
 
-### **Get Specific EC2 Instance**
+### Get Specific EC2 Instance
 
 With Runme Cloud Rendering, you can get specific instance details right inside your Notebook with a single click. To do this, follow the steps below.
 
@@ -135,7 +135,7 @@ https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetai
 
 This will unlock the visual display of the specific EC2 instance, which will give details of the instance ID, launch time, platform, availability zone, security groups, etc. You will also find useful links to the AWS Console like details and manage state.
 
-### **Connect to EC2 instance via SSH**
+### Connect to EC2 instance via SSH
 
 SSH is essential for securely accessing, managing, and troubleshooting EC2 instances, thus giving you efficient and effective control over your cloud resources.
 

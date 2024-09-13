@@ -3,7 +3,7 @@ sidebar_position: 1
 title: VS Code
 ---
 
-# **Runme in VS Code**
+# Runme in VS Code
 
 ## Your First Runme
 
@@ -81,7 +81,7 @@ Note that the Node.js example is entirely optional. You can use any script of yo
 
 </Infobox>
 
-## **Running Scripts**
+## Running Scripts
 
 Runme automatically converts all bash codeblocks in your README into runnable scripts. This makes getting started with a new project a breeze - say goodbye to annoying copy-and-pasting!
 
@@ -94,7 +94,7 @@ To run a script, click the Run button on its left-hand side. Start by running th
 
 As you can see, we have downloaded the `business_data.csv` file, which contains business statistics about New Zealand in the years 2000-2021. It's a pretty big file!
 
-## **Command Output**
+## Command Output
 
 Now, try running Steps 1 and 2 in the [Example Repo](https://github.com/stateful/blog-examples/blob/main/node-streams/README.md).
 
@@ -128,7 +128,7 @@ Alternatively, select the output and use the **Option+Delete shortcut**.
 
 Congratulations on running your first Runme notebook! 🎉. While you've understood the basics, there's more to discover about Runme's powerful features. Let's get ready to dive deeper.
 
-## **Interactive Mode**
+## Interactive Mode
 
 What is an interactive runbook without interaction?
 
@@ -156,7 +156,7 @@ Our code block will now display its output exactly as below:
   <source src="/videos/non-interactive-mode.webm" type="video/webm" />
 </video>
 
-## **Frontmatter**
+## Frontmatter
 
 [Frontmatter](https://jekyllrb.com/docs/front-matter/) is a common occurrence in Markdown documents. At the moment Runme won’t break your frontmatter, but we also haven’t yet implemented an interface for managing or editing it from within the notebook. Stay tuned!
 
@@ -209,7 +209,7 @@ At this point, we believe you now feel comfortable creating and using Runme on V
 
 ![feedback](/img/feedback.png)
 
-## **Useful Tips & Tricks**
+## Useful Tips & Tricks
 
 Here are some useful tips and tricks to enable you to use Runme in your VS Code editor without hassle.
 

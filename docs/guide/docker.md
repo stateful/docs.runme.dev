@@ -6,7 +6,7 @@ sidebar_position: 3
 
 In this guide, we will walk you through the use cases of integrating Runme and Docker.
 
-## **Prerequisites**
+## Prerequisites
 
 To get started, ensure you have the following:
 

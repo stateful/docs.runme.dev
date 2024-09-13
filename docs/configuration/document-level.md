@@ -3,11 +3,11 @@ sidebar_position: 1
 title: Document-level Options
 ---
 
-# **Document-level Options**
+# Document-level Options
 
 These are the options specified in the front-matter that apply to all the cells in the Markdown file.
 
-### **Options**
+### Options
 
 Cen be specified in yaml, json, or toml on top of the document.
 
@@ -17,7 +17,7 @@ Cen be specified in yaml, json, or toml on top of the document.
 | shell         | Overwrites shell with custom preference  | [system/user default]     |
 | skipPrompts   | Bypasses interactive prompts             | [system/user default]     |
 
-## **Set Custom Shell**
+## Set Custom Shell
 
 To specify the custom shell of each cell block in your file, you can do so using the Frontmatter.
 
@@ -37,7 +37,7 @@ shell: /bin/ksh
 
 > Both front-matter and VS Code settings effect the execution of the document
 
-## **Global CWD**
+## Global CWD
 
 To simplify commands and avoid long pathnames in commands you can set the base directory using 'cwd' in the front-matter config.
 

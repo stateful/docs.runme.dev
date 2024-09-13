@@ -38,7 +38,7 @@ brew install kubeseal
   <source src="/videos/sealed-secrets-runme.webm" type="video/webm" />
 </video>
 
-### **Encrypt a Secret in Runme**[](/guide/k8s-secret#encrypt-a-secret)
+### Encrypt a Secret in Runme
 
 To encrypt a secret, you must create a Kubernetes secret and then using `kubeseal` you can encrypt it. Run the command below in your Runme cell to encrypt your secret.
 
@@ -95,7 +95,7 @@ To delete the secret, use the `kubectl` command to delete the resource and run
 kubectl delete -f mysealedsecret.yaml
 ```
 
-### **Deploy the Sealed Secret**[](/guide/k8s-secret#deploy-the-sealed-secret)
+### Deploy the Sealed Secret
 
 To deploy your secret, execute the code below:
 

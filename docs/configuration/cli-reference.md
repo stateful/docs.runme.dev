@@ -6,17 +6,17 @@ sidebar_position: 2
 title: CLI reference
 ---
 
-# **Commands and Flags**
+# Commands and Flags
 
 Runme executes commands inside your runbooks, documentation, and READMEs. It parses commands directly from Markdown files to make them executable.
 
-### **NAME**
+### NAME
 
 Runme [command]: Specific commands or actions in Runme to perform different tasks.
 
 Runme [flags]: Optional configurations to modify the behavior of our Runme runbook.
 
-### **Runme Commands**:
+### Runme Commands:
 
 Below are some available commands within Runme
 
@@ -36,7 +36,7 @@ Below are some available commands within Runme
 | suggest    | Use our suggestion engine to give contextual advice        |
 | tui        | Run the interactive TUI                                    |
 
-### **Runme Flags**
+### Runme Flags
 
 Runme supported configuration flags.
 

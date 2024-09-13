@@ -2,7 +2,7 @@
 title: Architecture
 ---
 
-# **Architecture**
+# Architecture
 
 Runme is built on the VS Code platform running in Codespaces, Coder's [code-server](https://github.com/coder/code-server), Google IDX, GCP Cloud Editor, Gitpod, VSCodium, etc. Under the hood, much like other Notebook technologies such as Jupyter, Runme breaks down into the following components:
 
