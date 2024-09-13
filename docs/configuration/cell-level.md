@@ -296,7 +296,7 @@ Where a cell is not named, a generated name is provided for each cell. We recomm
 
 These examples showcase improved ways you can use Runme in your documentation to enhance your workflow and overall documentation process.
 
-If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](../Reference/configuration/cell-level):
+If you feel more comfortable editing the Markdown file directly, you can do it by using the following configuration options [schema](/configuration/cell-level):
 
 ````md {"id":"01HFPW3ES2Y7TXV064BKC5WS41"}
 ```sh {"id":"01HPM33PJFH2Q9R5S123X0HCSC","interactive":"false"}
@@ -314,7 +314,7 @@ Try out the previous command
 echo hello world
 ````
 
-The entire [configuration schema](../Reference/configuration/cell-level): as an example
+The entire [configuration schema](/configuration/cell-level): as an example
 
 ````sh {"id":"01HPPF1PRA4XA9SXB45Y5VX5W0"}
 
