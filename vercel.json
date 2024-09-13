@@ -101,6 +101,11 @@
       "permanent": true
     },
     {
+      "source": "/guide/devcontainer",
+      "destination": "/usage/devcontainers",
+      "permanent": true
+    },
+    {
       "source": "/configuration/runme-gist",
       "destination": "/usage/runme-gist",
       "permanent": true
@@ -113,6 +118,46 @@
     {
       "source": "/guide/agrocd",
       "destination": "/guide/k8s/argocd",
+      "permanent": true
+    },
+    {
+      "source": "/guide/agrocd-cli",
+      "destination": "/guide/k8s/argocd",
+      "permanent": true
+    },
+    {
+      "source": "/guide/bashscripting",
+      "destination": "/usage/hello-world",
+      "permanent": true
+    },
+    {
+      "source": "/guide/runme-blog-launcher",
+      "destination": "/usage/runme-blog-launcher",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/runme-gist",
+      "destination": "/usage/runme-gist",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/browser-extension",
+      "destination": "/usage/browser-launcher-extension",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/data-rendering",
+      "destination": "/configuration/output-rendering",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/embed-github-action",
+      "destination": "/usage/embedded-github-action",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/github-actions-workflow",
+      "destination": "/usage/github-actions-workflow",
       "permanent": true
     },
     {
@@ -136,11 +181,6 @@
       "permanent": true
     },
     {
-      "source": "/Reference",
-      "destination": "/configuration",
-      "permanent": true
-    },
-    {
       "source": "/Reference/configuration",
       "destination": "/configuration",
       "permanent": true
@@ -150,6 +190,21 @@
       "destination": "/configuration/cli-reference",
       "permanent": true
     },
+    {
+      "source": "/Reference/mime",
+      "destination": "/configuration/mime",
+      "permanent": true
+    },
+    {
+      "source": "/Reference",
+      "destination": "/configuration",
+      "permanent": true
+    },
+    {
+      "source": "/Reference/",
+      "destination": "/configuration",
+      "permanent": true
+    }
     {
       "source": "/guide/helm",
       "destination": "/guide/k8s/helm",
@@ -173,6 +228,31 @@
     {
       "source": "/guide/sops",
       "destination": "/guide/k8s/sops",
+      "permanent": true
+    },
+    {
+      "source": "/architecture",
+      "destination": "/resources/architecture",
+      "permanent": true
+    },
+    {
+      "source": "/why",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/configuration/cellsection",
+      "destination": "/usage/run-section",
+      "permanent": true
+    },
+    {
+      "source": "/installation/installrunme",
+      "destination": "/installation/vscode",
+      "permanent": true
+    },
+    {
+      "source": "/installation/runme-cdes",
+      "destination": "/installation/cdes",
       "permanent": true
     }
   ]
