@@ -1,68 +1,43 @@
 {
   "redirects": [
     {
-      "source": "/r/extension/background",
-      "destination": "https://docs.runme.dev/configuration/cell-level#handle-long-running-processes",
+      "source": "/r/extension/(.*)",
+      "destination": "/configuration/cell-level#$1",
       "permanent": false
     },
     {
-      "source": "/r/extension/interactive",
-      "destination": "https://docs.runme.dev/configuration/cell-level#interactive-vs-non-interactive-cells",
-      "permanent": false
+      "source": "/getting-started/(.*)",
+      "destination": "/getting-started/$1",
+      "permanent": true
     },
     {
-      "source": "/r/extension/closeTerminalOnSuccess",
-      "destination": "https://docs.runme.dev/configuration/cell-level#terminal-visibility-post-execution",
-      "permanent": false
+      "source": "/(Guide|guides)",
+      "destination": "/guide",
+      "permanent": true
     },
     {
-      "source": "/r/extension/promptEnv",
-      "destination": "https://docs.runme.dev/configuration/cell-level#set-environment-variables",
-      "permanent": false
+      "source": "/Reference/(.*)",
+      "destination": "/configuration/$1",
+      "permanent": true
     },
     {
-      "source": "/r/extension/mimeType",
-      "destination": "/configuration/mime",
-      "permanent": false
+      "source": "/integrations/cloud-render/(.*)",
+      "destination": "/guides/cloud-render/$1",
+      "permanent": true
     },
     {
-      "source": "/r/extension/gist",
+      "source": "/integrations/runme-gist",
       "destination": "/usage/runme-gist",
-      "permanent": false
+      "permanent": true
     },
     {
-      "source": "/r/extension/name",
-      "destination": "https://docs.runme.dev/configuration/cell-level#unnamed-vs-named-cells",
-      "permanent": false
+      "source": "/integrations",
+      "destination": "/usage",
+      "permanent": true
     },
     {
-      "source": "/r/extension/cwd",
-      "destination": "https://docs.runme.dev/configuration/cell-level#cell-cwd-current-working-directory",
-      "permanent": false
-    },
-    {
-      "source": "/r/extension/interpreter",
-      "destination": "/usage/shebang",
-      "permanent": false
-    },
-    {
-      "source": "/r/extension/category",
-      "destination": "https://docs.runme.dev/configuration/cell-level#run-all-cells-by-category",
-      "permanent": false
-    },
-    {
-      "source": "/r/extension/excludeFromRunAll",
-      "destination": "https://docs.runme.dev/configuration/cell-level#exclude-cell-from-run-all",
-      "permanent": false
-    },
-    {
-      "source": "/r/extension/terminalRows",
-      "destination": "https://docs.runme.dev/configuration/cell-level#terminal-row",
-      "permanent": false
-    },
-    {
-      "source": "/getting-started/faq",
-      "destination": "/resources/faq",
+      "source": "/open-source",
+      "destination": "/resources/open-source",
       "permanent": true
     },
     {
@@ -71,33 +46,8 @@
       "permanent": true
     },
     {
-      "source": "/getting-started/vs-code",
-      "destination": "https://docs.runme.dev/getting-started/vscode",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/web",
-      "destination": "https://docs.runme.dev/getting-started/web",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/runme-via-ssh",
-      "destination": "/getting-started/vscode-ssh",
-      "permanent": true
-    },
-    {
-      "source": "/install",
+      "source": "/installation",
       "destination": "/installation",
-      "permanent": true
-    },
-    {
-      "source": "/Guide",
-      "destination": "/guide",
-      "permanent": true
-    },
-    {
-      "source": "/guides",
-      "destination": "/guide",
       "permanent": true
     },
     {
@@ -108,26 +58,6 @@
     {
       "source": "/Guide/devcontainer",
       "destination": "/usage/devcontainers",
-      "permanent": true
-    },
-    {
-      "source": "/how-runme-works/vscode",
-      "destination": "/getting-started/vscode",
-      "permanent": true
-    },
-    {
-      "source": "/configuration/runme-gist",
-      "destination": "/usage/runme-gist",
-      "permanent": true
-    },
-    {
-      "source": "/integrations",
-      "destination": "/usage",
-      "permanent": true
-    },
-    {
-      "source": "/getting-started/features",
-      "destination": "/getting-started",
       "permanent": true
     },
     {
@@ -224,6 +154,32 @@
       "source": "/integrations/dagger",
       "destination": "/guides/dagger",
       "permanent": true
+    },
+    {
+      "source": "/guide/agrocd",
+      "destination": "/guide/argocd",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/browser-extension",
+      "destination": "/usage/browser-launcher-extension",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/embed-github-action",
+      "destination": "/usage/embed-github-action",
+      "permanent": true
+    },
+    {
+      "source": "/integrations/github-actions-workflow",
+      "destination": "/usage/github-actions-workflow",
+      "permanent": true
+    },
+    {
+      "source": "/Reference/flag",
+      "destination": "/configuration/cli-reference",
+      "permanent": true
     }
   ]
 }
+
