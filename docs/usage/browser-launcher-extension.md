@@ -1,6 +1,3 @@
----
----
-
 # Browser launcher extension
 
 If you like to quickly check out a GitHub project from your browser, you can use the Runme Web Extension. It is supported in all Chromium browsers (e.g. Chrome, Brave, or Opera) and Firefox. You can download the extension through:
@@ -10,15 +7,15 @@ If you like to quickly check out a GitHub project from your browser, you can use
 
 The web extension adds Runme links to the following places:
 
-### **Local Clone Section**
+### Local Clone Section
 
 ![Runme Link in Local Clone Section](/img/web-extension/list.png)
 
-### **Markdown Title Header**
+### Markdown Title Header
 
 ![Runme Link in Markdown Title Header](/img/web-extension/markdown.png)
 
-### **Code Sections**
+### Code Sections
 
 ![Runme Link in Code Sections](/img/web-extension/code.png)
 

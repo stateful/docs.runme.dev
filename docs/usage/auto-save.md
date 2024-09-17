@@ -2,11 +2,11 @@
 title: Auto-Save session outputs
 ---
 
-# **Auto-Save Auto-Save session outputs**
+# Auto-Save Auto-Save session outputs
 
 The Runme auto-save feature efficiently saves and manages your commands and executed cells for future reference. When you run a command within your Runme Notebook, a Session Ouputs file is automatically generated. This captures a complete copy of the original Markdown document, along with the generated outputs, details on when each cell was run, the time it took to run the cell, and exit codes. You can also turn your command/generated outputs into a [Runme gist](/usage/runme-gist).
 
-### **Enable Auto-Save**
+## Enable Auto-Save
 
 - Toggle Auto-Save On/Off:
 
@@ -20,7 +20,7 @@ If you would like to turn the auto-save off, you can simply use the toggle butto
 
 Alternatively, you can set autosave to the default setting. This way, you do not need to manually enable the feature whenever you want to use it.
 
-### **Auto-save default**
+### Auto-save default
 
 By default, auto-save is turned off, as indicated by the autosave button at the top bar displaying off. However, if you want to use the session output feature, you can toggle the feature (on) or (off) using the autosave button.
 
@@ -37,7 +37,7 @@ Alternatively, you can change the settings to be permanently on by adjusting the
 
 This action configures the system to automatically save the output of each cell execution.
 
-## **Session Outputs**
+## Session Outputs
 
 Runme uses the session output feature to provide advanced auto-save functionality. When auto-save is enabled, Runme captures a complete copy of the original Markdown document and creates the entire Markdown file during the notebook’s execution.
 
@@ -57,7 +57,7 @@ The session outputs are written per Runme session, which is saved throughout the
 
 If there are more forms you would like to be added to the session output, kindly [let us know](https://github.com/stateful/runme/issues/new). We are open to incorporating your requests.
 
-### **Why Separate Session Outputs?**
+### Why Separate Session Outputs?
 
 You might wonder why we have created a separate Session Outputs file instead of embedding outputs directly into the Markdown document. Here are some reasons:
 
@@ -74,7 +74,7 @@ While we are contemplating the possibility of transparently opening Session Outp
 
 > It is strongly recommended that you do not deploy the session output files to your version control. You can `.gitignore` the files to ensure that it doesn't get deployed.
 
-## **Additional Information**
+## Additional Information
 
 The auto-save feature is also used in other Runme’s features. Some of these include:
 

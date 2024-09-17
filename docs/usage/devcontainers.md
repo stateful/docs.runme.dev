@@ -6,7 +6,7 @@ runme:
 
 # Runme in a DevContainer
 
-## **Creating your development container**
+## Creating your development container
 
 A development container, also known as a `DevContainer`, is a dockerized container that allows you to run your software in a fully configured development environment. This significantly speeds up application deployment and scalability.
 
@@ -67,11 +67,11 @@ This will execute your Python app within the dev container.
 1. Ensure Docker is open and running on your system before you create a Dev container.
 2. You do not need to create a separate dockerfile for this as the base image and settings needed for your development environment are specified in the dev container configuration (`devcontainer.json`). This eliminates the need for explicit Dockerfile maintenance and makes it simple to share and replicate the development environment across several machines.
 
-## **Setting up Runme on VSCode**
+## Setting up Runme in VSCode
 
 Installing Runme in your VS Code is one of the various ways you can utilize the awesome features of Runme. To set up Runme on VS Code, follow our [installation guide.](/installation/vscode)
 
-## **Running development tasks using Runme within your container**
+## Running development tasks using Runme within your container
 
 Runme works perfectly  to automate processes and conduct development operations within the container . To run your code with Runme in your dev container, follow the steps below:
 
@@ -106,13 +106,13 @@ You must take it back to a Runme setting to enable you to run your code with Run
 
 ![ouput](/img/guide-page/runme-terminal-devcontainer.png)
 
-## **Other Features**
+## Other Features
 
 Some other actions that can be performed in your Dev container include cloning repository, configuring container features, exploring a volume, etc. The image below shows you a non-exhaustive list of some of these actions.
 
 ![output dev container](/img/devcontainer-output.png)
 
-## **Conclusion**
+## Conclusion
 
 In this guide, we demonstrated how to create a dev container, set up Runme on VS Code, run development tasks using Runme within your container.
 

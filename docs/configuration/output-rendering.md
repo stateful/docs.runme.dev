@@ -1,21 +1,14 @@
----
-runme:
-  id: 01J2E98VM6SX1VTPJ524RPCTK4
-  version: v3
----
-
 # Custom output rendering
 
 Navigating through a large amount of JSON data can be overwhelming. Runme makes this much easier by taking your data and transforming it into an organized format, which can be a tabular arrangement, a flat data grid, or a data summary.
 
 ## How It Works
 
-Runme uses two specific features to render JSON Data into human-friendly output.
+Runme uses two specific features to render JSON Data into human-friendly output:
 
-These features are:
+### Mime Type
 
-- **Mime Type**
-  Multipurpose Internet Mail Extensions(MIME) types are a standard way of indicating a nature and format of a file. Runme has an advanced configuration that allows users to specify the data's [MIME type](/configuration/mime.md).
+Multipurpose Internet Mail Extensions(MIME) types are a standard way of indicating a nature and format of a file. Runme has an advanced configuration that allows users to specify the data's [MIME type](/configuration/mime.md).
 
 In this guide, we will work with JSON data to specify that.
 
@@ -23,9 +16,10 @@ In this guide, we will work with JSON data to specify that.
 
 However it is important to note that setting the `mimetype` is optional as Runme has an effective auto-detection that detects JSON/CSV files reliably.
 
-- **Interactive Mode**
-  The Interactive mode is another feature of Runme that makes rendering JSON data into human-friendly output possible. By default, Runme allows your scripts to run in the interactive mode. This mode enables you to interact with scripts in the output terminal.
-  However, you must turn that off to render your JSON data successfully. This can be done with a single click.
+### Interactive Mode
+
+The Interactive mode is another feature of Runme that makes rendering JSON data into human-friendly output possible. By default, Runme allows your scripts to run in the interactive mode. This mode enables you to interact with scripts in the output terminal.
+However, you must turn that off to render your JSON data successfully. This can be done with a single click.
 
 ![interaction mode](/img/guide-page/runme-interaction.png)
 
@@ -35,15 +29,15 @@ Now that we have explored how it works let’s discuss what you need to get star
 
 To get started with rendering your JSON data, ensure you have the following:
 
-- **Install Runme**
+### Install Runme
 
 Install the [Runme extension on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme) to enable you access the Runme Notebook on your code editor. You can also set Runme as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
 
-- **Install Data Table Renderers**
+### Install Data Table Renderers
 
 Install [Data Table Renderers](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table) extension on VS Code.
 
-- **Install Jq**
+### Install Jq
 
 To install the JSON processor, jq using brew, run the command below
 
@@ -55,11 +49,11 @@ brew install jq
 
 This section will explore the step-by-step process of executing JSON data rendering with Bash script.
 
-**Step One**
+### Step One
 
 The first step is to create a `.json` file containing the JSON data to be rendered. Next, create a new `README.md` file.
 
-**Step Two**
+### Step Two
 
 In your `README.md` file, enter the command below into your Runme cell.
 
@@ -73,16 +67,13 @@ Now, click the `configuration icon` to configure your cell. In the general confi
 
 Next, navigate to the advanced dashboard and enter the MIME type for your file, which is `application/json`. One good thing about Runme is that if you ignore this setting of your MIME type, Runme can automatically detect the file type and fill it in for you.
 
-**Step Three**
+### Step Three
 
 Click on the `run icon` to run the command and watch how your JSON data gets rendered into a human-friendly output.
-Here is an example of the output that was obtained.
 
-IMAGES
+### Step Four
 
-**Step Four**
-
-If you would love to explore other output types, you only need to click the menu icon (three vertical dots) beside your output.
+If you want to explore other output types, you only need to click the menu icon (three vertical dots) beside your output.
 
 ![JSON output](/img/guide-page/runme-terminal-data-rendering.png)
 
@@ -97,13 +88,10 @@ A small dashboard with several options will pop up. Carry out these actions:
   <source src="/videos/runme-data-rendering.webm" type="video/webm" />
 </video>
 
-Another great functionality is that you can download your data as a CSV or JSON when you select the `Flat Data Grid` presentation option, as shown in the image below.
+<br />
+You can also download your data as a CSV or JSON when you select the `Flat Data Grid` presentation option, as shown in the image below.
 
 ![JSON output save](/img/guide-page/runme-save-json-output.jpg)
-
-## Feedback and Contribution
-
-We are still developing more features for Runme. If you have feedback on this or new ideas for improving this feature, feel free to [contact us](https://github.com/stateful/runme?tab=readme-ov-file#feedback).
 
 ## Additional Resources
 

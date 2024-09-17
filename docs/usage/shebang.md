@@ -2,15 +2,15 @@
 title: Shebang (running code)
 ---
 
-# **Shebang Support**
+# Shebang Support
 
 Shebang is a versatile tool designed to execute scripts written in various scripting languages including Shell, Perl, Python, and more. Runme integrates Shebang to enable users to run the script of their choice directly from the Markdown file in their preferred programming language.
 
-## **Prerequisites**
+## Prerequisites
 
 Before proceeding with the integration of Shebang in [Runme](/installation/cli), ensure that Runme is properly [installed](/installation/cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
-## **Run your Code with Runme in VS Code Using Shebang**
+## Run your Code with Runme in VS Code Using Shebang
 
 Runme gives you the power to run your code right inside your Markdown file in VS Code without having to switch to a terminal. To do this, follow the steps below:
 
@@ -19,7 +19,7 @@ Runme gives you the power to run your code right inside your Markdown file in VS
 3. Click on the **Select Cell Language Mode** and select a language of your choice.
 4. Now click on **Execute Cell**
 
-## **Configuring Shebang Custom Interpreter in VS Code**
+## Configuring Shebang Custom Interpreter in VS Code
 
 Before proceeding with the integration of Shebang in [Runme](/installation/cli), ensure that Runme is properly [installed](/installation/cli) on your system. This is a crucial step to guarantee the smooth execution of your runbooks
 
@@ -46,13 +46,13 @@ runme
 
 ![shebang-output](/img/shebang-outputt.png)
 
-## **Examples of Shebang Lines for Different Languages**
+## Examples of Shebang Lines for Different Languages
 
 We have attached some scripts in various languages as seen below to enable you to test how Runme works in your VS Code.
 
 Each of the following examples, written in Python, Ruby, Bash, and Node.js (JavaScript), accomplishes the same task: they define a greeting ("_Hello, World!_"), obtain the current date and time, and then combine these into a single message. The primary difference lies in the syntax and functions/methods used for date and time formatting in each language.
 
-### **Python**
+### Python
 
 To run the Python code, you need to set the path to the Python interpreter, which is **_/usr/bin/python3_**, in the advanced section of your configuration in your code block.
 
@@ -72,7 +72,7 @@ fullGreeting = greeting + " It's now " + currentDateTime
 print(fullGreeting)
 ```
 
-### **Bash**
+### Bash
 
 To use Bash, you need to set the Interpreter to point to the Bash interpreter, which is **_/usr/bin/bash_**, in the advanced section of your configuration in your code block.
 
@@ -91,7 +91,7 @@ fullGreeting="$greeting It's now $currentDateTime"
 echo $fullGreeting
 ```
 
-### **Ruby**
+### Ruby
 
 To use Ruby, you need to add the path to the Ruby interpreter, which is **_/usr/bin/ruby_**, in the advanced section of your configuration in your code block.
 
@@ -109,7 +109,7 @@ fullGreeting = "#{greeting} It's now #{currentDateTime}"
 puts fullGreeting
 ```
 
-### **PHP**
+### PHP
 
 To use PHP, you need to add the path to the PHP interpreter, which is **_/usr/bin/php_**, in the advanced section of your configuration in your code block..
 
@@ -131,7 +131,7 @@ echo $fullGreeting;
 ?>
 ```
 
-### **Node**
+### Node
 
 To use Node.js, you need to add the path to the node interpreter, which is **_/usr/bin/node_**, in the advanced section of your configuration in your code block.
 
@@ -152,7 +152,7 @@ const fullGreeting = `${greeting} It's now ${currentDateTime}`;
 console.log(fullGreeting);
 ```
 
-## **List of Auto-Detected Language Runtimes**
+## List of Auto-Detected Language Runtimes
 
 Runme auto-detects runtimes based on the language selection per cell.
 
@@ -245,6 +245,6 @@ Runme auto-detects runtimes based on the language selection per cell.
 
 Missing a language? Please [raise an issue](https://github.com/stateful/runme/issues/new).
 
-## **Combining Multiple Languages in Your Notebook**
+## Combining Multiple Languages in Your Notebook
 
 It's possible to combine multiple languages in a single notebook by using different shebang lines for each script block. For an example of a notebook with multiple languages, see the [Shebang Notebooks example on GitHub](https://github.com/stateful/Shebang-Notebooks/blob/main/shebang-example.md).
