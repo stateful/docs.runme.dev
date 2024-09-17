@@ -1,54 +1,65 @@
 ---
 sidebar_position: 2
-title: Install in VS Code
+title: Install from Open VSX
 ---
 
-# Install in VS Code
+# Install from Open VSX
 
-Runme can be easily installed in VS Code as an extension.
+Runme can be easily installed in your editor as an extension.
 
-The sections below will guide you through installing Runme on VS Code executing commands right inside your Markdown file.
+The sections below will guide you through installing Runme and executing commands right inside your Markdown file.
 
-## Installing Runme on VS Code
+## Installing Runme in the editor
 
 To get started, follow the steps below:
 
-1. Open up VS Code on your local machine.
-2. Navigate to the **`Extension`** tab, which can be located on the dashboard on your left.
-3. In your search bar, type "Runme". This will display the Runme Notebook extension.
+1. Open up the editor on your local machine
+2. Navigate to the **`Extension`** tab, which can be located on the dashboard on your left
+3. In your search bar, type "Runme" (This will display the Runme Notebooks extension)
 4. Now click on Install to install the Notebook extension
 
 ![install runme gif](/img/install.gif)
 
-## Installing Runme From the VS Code Marketplace
+## Installing Runme From Open VSX
 
-Alternatively, you can install Runme from the [VS Code Marketplace](https://marketplace.visualstudio.com). To do this, follow the steps below.
+Alternatively, you can install Runme from the [Open VSX Marketplace](https://open-vsx.org). To do this, follow the steps below.
 
-1. Go to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=stateful.runme)
-2. Next, click on the **`Install`** button.
+![Download](/img/installation-page/open-vsx-download.png)
 
-![VS Code Marketplace](/img/installation-page/VSCodemarketplace.png)
+1. Go to the [Open VSX Marketplace](https://open-vsx.org/extension/stateful/runme)
+2. Search for Runme, find the "Runme Notebooks" extension
+3. **Download the `.vsix` file** you want to install
+4. Open your editor locally
+5. Go to the **Extensions view** by either:
+   - Clicking on the Extensions icon on the left sidebar, or
+   - Using the keyboard shortcut `Ctrl+Shift+X`
+6. In the Extensions view, click the **three dots (`...`)** in the top-right corner
+7. Select **Install from VSIX...** from the dropdown menu
+8. Navigate to the location where you downloaded the `.vsix` file, select it, and click **Open**.
+9. The extension should get installed, and you should see it in the Extensions list once the installation is complete
+
+After installation, you might need to reload the window for the extension to take effect.
 
 You have successfully installed Runme! 🎉
 
 ## Available features
 
-You can now open any Markdown file (**`*.md`** or **`*.mdx`**) with VS Code, and it will open as a Runme notebook.
+After successfully installing Runme, you can open any Markdown file (**`*.md`** or **`*.mdx`**), and it will open as a Runme Notebook.
 
-![VS Code Marketplace](/img/installation-page/runme-for-vscode.png)
+![Marketplace](/img/installation-page/runme-for-vscode.png)
 
 1. **Notebooks Explorer:** You can easily access all your Markdown files using the Notebook Explorer. This will display all Markdown files existing in your project directory.
 2. **Cell Execution Status Indicator:** When a code block is executed, the status indicator displays an icon that indicates the status of the executed code. If the code fails, an “X” symbol is returned, indicating failure; however, if the code is successfully run, a symbol, as seen in the image above, is displayed.
-3. **Cell Execution Result:** View the executed cell result using the integrated VS Code terminal and prevent context switching using this terminal.
+3. **Cell Execution Result:** View the executed cell result using the integrated terminal and prevent context switching using this terminal.
 4. **Run Cell Button:** Running code in Markdown files is now easier with just one click.
 5. **Cell Code Block:** Get a visual representation of commands to be executed with syntax highlighting.
 6. **Notebook Global Actions:** View common options that define your code input and execution in the context of the Notebook.
 7. **Cell Code Block Actions:** List of actions that define code block execution. This includes cell language, [configurations](/configuration/index.md) etc.
 8. **Cell Execution Result:** Copy your generated output.
 
-## Configure your default Markdown editor
+## Change your default Markdown viewer
 
-If you want to change your default Markdown file viewer in VS Code, follow the steps below:
+Follow the steps below:
 
 1. Right-click on any `.md` or `.mdx` file in the explorer window (in the directory file list, not under **Open Editors**).
 2. Select **Open With**
@@ -68,19 +79,5 @@ Alternatively, set the following in your .vscode/settings.json file of your pr
   },
   // ...
 ```
-
-### Bleeding Edge Features
-
-Runme has a pre-release version with every new update made to the extension:
-
-1. Go to the Extension tab on VS Code
-2. Search for **Runme**
-3. Click **Switch to Pre-release Version** to access new pre-released updates.
-
-If you don't see this option, make sure your VS Code is updated to at least version `1.63.0`.
-
-![Find runme in VS Codet](/img/bleed-edge-feature.png)
-
-### How Runme Works in VS Code
 
 Next up, [Get Started](/getting-started/vscode), and explore verything you can do with the extension.
