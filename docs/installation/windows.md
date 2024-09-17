@@ -5,23 +5,21 @@ title: Windows Prerequisites
 
 # Windows Prerequisites
 
-To use Runme on a Windows machine, you have to use the Windows Subsystem for Linux 2 (WSL 2). Currently, Runme is built on Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface, With WSL 2 you can get the full Runme exprience on your Windows machine. WSL 2 allows you to run a full Linux kernel inside a lightweight utility virtual machine (VM) on Windows 10 and Windows 11.
+To use Runme on a Windows machine, you have to use the Windows Subsystem for Linux 2 (WSL 2). Currently, Runme is built on Cloud-native Shell Kernel with a notebook, editor, terminal, and CLI interface. WSL 2 makes it possible for Windows users to access the full Runme feature-set by running a full Linux kernel inside a lightweight utility virtual machine (VM) on Windows 10 and Windows 11.
 
 In this section, we will explore the various steps required to get Runme working on your Windows machine.
 
 ## Requirements
 
-To get started, you need to :
+To get started, you need to:
 
 - Set up the [Windows Subsystem for Linux](https://learn.microsoft.com/windows/wsl/install) and choose your preferred Linux distribution.
 - Ensure you have [Visual Studio Code](https://code.visualstudio.com/) installed on the Windows side rather than within WSL.
 - Install the [WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) in your VS Code editor.
 
-Once all the requirements are fulfilled, the next thing you need to do is start your WSL. To learn all about starting WSL, check out [this article.](https://learn.microsoft.com/en-us/windows/wsl/install)
+Once all the requirements are fulfilled, start your WSL by [following this article.](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-## How to Install Runme Extension on VS Code on Windows
-
-In this section, we will provide a step-by-step guide to help you install the Runme VS Code extension on your Windows machine.
+## Install the Runme Extension
 
 To get Runme installed in VS Code on your Windows machine, follow the steps below:
 
@@ -38,11 +36,9 @@ To get Runme installed in VS Code on your Windows machine, follow the steps belo
 
 ## Setting up Runme on WSL
 
-At this point, you should have WSL set up on your local Windows machine. As stated earlier, Runme is built on Cloud-native Shell Kernel. WSL helps you get the full experience of Runme on your Windows machine.
+To set up Runme with WSL in VS Code, follow the steps below:
 
-To set up Runme on WSL, follow the steps below:
-
-### Step One
+### Connect to WSL
 
 In your VS Code, press `F1`. This will open up a dashboard containing a list of configuration/setup options. Select **Connect to WSL**.
 
@@ -52,19 +48,19 @@ Alternatively, you can click on the button at the bottom left side of your VS Co
 
 ![vs code dashboard](/img/how-runme-works/runme-wsl-vscode-windows.png)
 
-### Step Two
+### Use Runme
 
 After connecting to your server using WSL, the next step is to install the Runme extension on the remote server so you can use it as you like.
 
 ![wsl windows](/img/how-runme-works/runme-install-wsl-windows.png)
 
-### Step Three
+### Choose a distro
 
 Use the File menu to open your folder. If you already have a folder open, you can also use the **WSL: Reopen Folder in WSL** command. You will be prompted which “Distro" to use.
 
-## Running Runme works on Windows
+## Verifying that it worked
 
-This section will explore how [Runme works in VS Code on Windows](https://docs.runme.dev/how-runme-works/vscode).
+Bringing it all together, you should now be able to run a command and verify that it's executing within WSL.
 
 - Create a Markdown file and click the “+Code” button to create a code cell for your scripts or command.
 
@@ -80,7 +76,7 @@ This section will explore how [Runme works in VS Code on Windows](https://docs.r
 
 ## Runme CLI with WSL
 
-You can also access Runme from your CLI with WSL on your Windows machine. To use the Runme CLI on your WSL server, follow these steps:
+You can also access Runme from your CLI with WSL on your Windows machine by following these steps:
 
 ### 1. Connect to WSL
 
@@ -92,7 +88,7 @@ wsl
 
 This will connect your machine to your WSL server.
 
-### 2. Install Runme CLI
+### 2. Install the Runme CLI
 
 After successfully connecting to the WSL server, the next step is to install Runme CLI on your local machine.
 
@@ -104,7 +100,7 @@ brew install runme
 
 ### 3. Run tasks
 
-At this point, you have connected to the WSL server and installed Runme CLI. You can run any task of your choice within your CLI. To do this, use `runme <command>` to execute tasks defined in the Markdown `.md` files.
+You can run any task of your choice within your CLI. To do this, use `runme <command>` to execute tasks defined in the Markdown `.md` files.
 
 ![runme cli](/img/how-runme-works/runme-cli-windows.png)
 
