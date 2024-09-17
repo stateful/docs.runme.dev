@@ -2,7 +2,7 @@
 title: Pipes and variables
 ---
 
-# **Usage of Piping and Variables**
+# Usage of Piping and Variables
 
 Runme works a lot like a terminal, however, unlike Python's Jupyter it does not allow block-scope sharing of variables. Instead, you are encourage to use environment variables for inter-referencing of cells. Similar to how piping in and out of commands would work. Piping works in two ways. 1.) It's declared using `$__` to pass a variable declared in a previous execution to another cell or 2.) using a ENV variable.
 

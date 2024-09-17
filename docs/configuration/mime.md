@@ -6,7 +6,7 @@ title: Supported MIME types
 
 Runme supports the standard VS Code MIME types alongside custom Runme MIME types.
 
-**Standard VS Code MIME types**
+## Standard VS Code MIME types
 
 - text/plain
 - application/javascript
@@ -16,7 +16,7 @@ Runme supports the standard VS Code MIME types alongside custom Runme MIME types
 - image/png
 - image/jpeg
 
-**MIME types for rendering code**
+## MIME types for rendering code
 
 - text/x-json
 - text/x-javascript
