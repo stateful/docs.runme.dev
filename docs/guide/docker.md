@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Docker
 
 In this guide, we will walk you through the use cases of integrating Runme and Docker.
@@ -124,8 +120,6 @@ docker run -p 80:5000 nginx
 ![port-mapping](/img/guide-page/docker-port-mappings.png)
 
 If a cell block takes a lot of time to execute, you can also run such a cell in the background using [Runme’s background mode](/configuration/cell-level#background-task). This will enable you to save time and move on to other tasks while your previous task is still running.
-
-![background mode](/img/runme-background.png)
 
 ### Sleep a Container
 

@@ -1,8 +1,4 @@
----
-title: Auto-Save session outputs
----
-
-# Auto-Save Auto-Save session outputs
+# Auto-Save session outputs
 
 The Runme auto-save feature efficiently saves and manages your commands and executed cells for future reference. When you run a command within your Runme Notebook, a Session Ouputs file is automatically generated. This captures a complete copy of the original Markdown document, along with the generated outputs, details on when each cell was run, the time it took to run the cell, and exit codes. You can also turn your command/generated outputs into a [Runme gist](/usage/runme-gist).
 

@@ -1,8 +1,3 @@
----
-sidebar_position: 6
-title: Lifecycle Identity
----
-
 # Lifecycle Identity
 
 The Lifecycle Identity feature in Runme is a tool that assigns unique identifiers and versions to individual cells, the entire file, or both, depending on your [configuration](https://docs.runme.dev/configuration/).
@@ -49,17 +44,3 @@ As shown in the image above, there are three levels of tracking available:
 - [Cell level](https://docs.runme.dev/configuration/cell-level): This tracks changes within individual cells in a document.
 - [Document level](https://docs.runme.dev/configuration/document-level): This monitors the entire document for any modifications or version changes.
 - All: This tracks changes made to both [Cell level](https://docs.runme.dev/configuration/cell-level) and [document](https://docs.runme.dev/configuration/document-level) levels.
-
-## Cell Run Grouping
-
-Cell Run Grouping is an important tool in Runme that works together with the Lifecycle Identity feature. It improves the organization and tracking of code runs, especially when working with Markdown files or individual cells within these files. This functionality works when outputs are saved to the [Runme Cloud](https://app.runme.dev/), as it allows for a more structured and insightful analysis of the code's performance over time.
-
-### How Cell Run Grouping Works
-
-When a user saves the output of a cell or an entire Markdown file to the Runme Cloud, Runme assigns a unique identity to that file or cell. This identity is important for the cell run grouping process, as it ensures that any subsequent iterations or runs of that file or cell are recorded and grouped under the same identity in the cloud.
-
-**Here is a breakdown**: Whenever a code is run, the output is stored in the same group as the previous, with the exact time of each run clearly stated. This chronological arrangement of each code provides a comprehensive view of the code's changes and performance over time.
-
-![cell-grouping](/img/cell-run-grouping.png)
-
-Cell grouping is not just a simple collection of executed commands in a cell or document but it is an organized, time-stamped record of each run.

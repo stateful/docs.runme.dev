@@ -1,7 +1,3 @@
----
-title: Google Cloud Run
----
-
 # Google Cloud Run
 
 Runme Cloud Renderers enable you to access various cloud resources directly within your Markdown files without the need to log into your cloud console. With Cloud Renderers, you can manage your Google Cloud Run resources and perform various operations without leaving your Markdown environment.
@@ -90,10 +86,6 @@ Use the [environment variable prompts](/configuration/cell-level#environment-var
 export PROJECT_ID="runme-ci"
 echo "PROJECT_ID set to $PROJECT_ID"
 ```
-
-This is how the prompt looks like.
-
-![prompt](/img/integration/runme-set-var.png)
 
 **Specify the Project for Visualization**
 

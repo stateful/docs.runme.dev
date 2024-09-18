@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01J82VN641J9K3A3G98ASV75SR
+  version: v3
+---
+
 # Sealed Secrets
 
 Runme provides a platform for documenting processes and instructions. It integrates swiftly with cloud infrastructures, including Kubernetes and its resources.
@@ -113,7 +119,7 @@ Make sure to replace placeholders like **`mysecret.yaml`** and **`mysealedsec
 
 In this guide, we explored how to encrypt, decrypt, delete, deploy a Kubernetes secrtes using sealed secrets and Runme. Runme made the process of carrying all these operations out swiftly by utilizing its features.
 
-Some [key features](/usage/hello-world) of Runme that make it stand out include:
+Some [key features](/usage) of Runme that make it stand out include:
 
 - Its ability to simplify the copying and pasting of commands and codes,
 - Run tasks in the background, interact with your terminal,
