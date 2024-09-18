@@ -1,8 +1,3 @@
----
-runme:
-  id: 01J4PEEDGDB2XNDVEMT2A5NAY9
-  version: v3
----
 
 # Istio Service Mesh
 
