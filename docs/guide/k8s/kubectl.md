@@ -10,15 +10,15 @@ Before we proceed, there are a few requirements needed to get started
 - Basic knowledge of Kubernetes concepts (pods, services, deployments).
 - Access to a Kubernetes cluster (for this guide, we will be using a kind cluster).
 - Docker installed ( to create your kind cluster)
-- `kubectl` installed on your system. [Official installation guide](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/). ( install with Brew if you have already)
+- kubectl installed on your system. [Official installation guide](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/). ( install with Brew if you have already)
 
-```jsx {"id":"01J82YTHEHH70ZG99ZAZSW2PJF"}
+```sh {"id":"01J82YTHEHH70ZG99ZAZSW2PJF"}
 brew install kubectl
 ```
 
-### Verify `kubectl` is Installed
+### Verify kubectl is Installed
 
-To check if `kubectl` is installed and configured correctly:
+To check if kubectl is installed and configured correctly:
 
 ```bash {"id":"01J82YTHEHH70ZG99ZB2XP844G"}
 kubectl version --client
@@ -45,13 +45,13 @@ kind create cluster --name kubectl-runme
 
 Check if your cluster is running
 
-```jsx {"id":"01J82YTHEHH70ZG99ZBCAKWHEP"}
+```sh {"id":"01J82YTHEHH70ZG99ZBCAKWHEP"}
 kubectl get namespaces
 ```
 
 ## Basic Command
 
-Here are some essential Kubernetes commands to help you interact with and monitor your cluster. These commands allow you to check the status of your cluster, view nodes, inspect running pods, and review services. Using Runme, you can execute these commands directly from this guide, streamlining the process and ensuring accuracy. Let’s get started with the basics
+Here are some essential Kubernetes commands to help you interact with and monitor your cluster. These commands allow you to check the status of your cluster, view nodes, inspect running pods, and review services. Using Runme, you can execute these commands directly from this guide, simplifying (make easy) the process and ensuring accuracy; easier to debug issues. Let’s get started with the basics
 
 ### Get Cluster Info
 
@@ -143,7 +143,7 @@ Most Kubernetes objects can be created using YAML files. Here’s an example of 
 
 ```sh {"id":"01J82YTHEHH70ZG99ZCC6GHAWX"}
 
-cat <<EOF | sudo tee ./myapp-pod.yaml > /dev/null
+cat <<EOF | sudo tee ./runme-pod.yaml > /dev/null
 apiVersion: v1
 kind: Pod
 metadata:
@@ -159,16 +159,16 @@ EOF
 
 ```
 
-To create this pod, save it to a file (e.g., `myapp-pod.yaml`) and apply it using:
+To create this pod, save it to a file (e.g., `runme-pod.yaml`) and apply it using:
 
 ```bash {"id":"01J82YTHEHH70ZG99ZCFBVCCND"}
-kubectl apply -f myapp-pod.yaml
+kubectl apply -f runme-pod.yaml
 ```
 
 To delete resources defined by a YAML file:
 
 ```bash {"id":"01J82YTHEHH70ZG99ZCG7Z04AV"}
-kubectl delete -f myapp-pod.yaml
+kubectl delete -f runme-pod.yaml
 ```
 
 ## Working with Pods
@@ -178,7 +178,7 @@ kubectl delete -f myapp-pod.yaml
 You can run a pod manually using the following command:
 
 ```bash {"id":"01J82YTHEHH70ZG99ZCKDNGR11"}
-kubectl run myapp --image=nginx
+kubectl run myrunmeapp --image=nginx
 ```
 
 To check the logs of a running pod:
