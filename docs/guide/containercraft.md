@@ -1,8 +1,3 @@
----
-runme:
-  id: 01J82Q55W8VCTN920F41PC7JB0
-  version: v3
----
 
 # ContainerCraft
 
