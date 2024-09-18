@@ -14,7 +14,7 @@ In this guide, we will use a development container by ContainerCraft with Runme.
 
 To get started, ensure you have the following installed on your local machine:
 
-- **Runme**: Runme provides various [client interfaces](../installation/index.md) for accessing the Runme Notebook. For this guide, we will be using [Runme on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme). With Runme installed on your code editor, proceed to set Runme as your [default Markdown viewer](../installation/installrunme#how-to-set-vs-code-as-your-default-markdown-viewer)
+- **Runme**: Runme provides various [client interfaces](../installation/index.md) for accessing the Runme Notebook. For this guide, we will be using [Runme on VS Code](https://marketplace.visualstudio.com/items?itemName=stateful.runme). With Runme installed on your code editor, proceed to set Runme as your [default Markdown viewer](../installation/vscode#configure-your-default-markdown-editor)
 - **Docker**: Ensure you have [Docker installed](https://www.docker.com/products/docker-desktop/) and running on your machine.
 - **VS Code Remote—Containers Extension**: Install the [VS Code Remote—Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) to work with containers directly in VS Code.
 
@@ -141,7 +141,7 @@ Your container environment is set up with pre-configured tools required for DevO
 
 ## Runme Features
 
-With Runme in your development container, you can build projects in any programming language. This is made possible with the [Shebang support feature](../configuration/shebang). It allows you to easily set the code block of the specific programming language you intend to use. You can also add and run the different supported languages in one Markdown file.
+With Runme in your development container, you can build projects in any programming language. This is made possible with the [Shebang support feature](../usage/shebang). It allows you to easily set the code block of the specific programming language you intend to use. You can also add and run the different supported languages in one Markdown file.
 
 Here is an example of a simple Python project showcasing how the Runme Shebang feature enables you to execute commands and scripts in a development container.
 
@@ -183,6 +183,6 @@ After completing the task, you can shut down the container by closing the VS Cod
 
 To learn more about using Development Containers with Runme, see more resources below:
 
-- [Running Runme in a Development Container](../guide/devcontainer)
+- [Running Runme in a Development Container](../usage/devcontainers)
 - [How to Integrate Python Virtual Environments with Runme](../guide/pythonenv)
 - [Developing Inside Container](https://code.visualstudio.com/docs/devcontainers/containers)
