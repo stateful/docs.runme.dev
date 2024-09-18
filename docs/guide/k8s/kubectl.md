@@ -1,8 +1,4 @@
----
-runme:
-  id: 01J82YTHEHH70ZG99ZDANDS9XY
-  version: v3
----
+# Kubectl
 
 In this guide, we will help you understand how to use kubectl to interact with your kubernetes cluster using Runme
 
@@ -10,7 +6,7 @@ Before we proceed, there are a few requirements needed to get started
 
 ## Prerequisites
 
-- Runme Extension: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can make Runme your [default Markdown viewer](/docs/installation/vscode#configure-your-default-markdown-editor), ensuring all your Markdown files are automatically opened as a Runme Notebook. Additionally, it provides other client interfaces where you can run your Markdown file. See the [Runme installation](/docs/installation/index) guide.
+- Runme Extension: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor. You can make Runme your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer), ensuring all your Markdown files are automatically opened as a Runme Notebook. Additionally, it provides other client interfaces where you can run your Markdown file. See the [Runme installation](/installation/index) guide.
 - Basic knowledge of Kubernetes concepts (pods, services, deployments).
 - Access to a Kubernetes cluster (for this guide, we will be using a kind cluster).
 - Docker installed ( to create your kind cluster)
@@ -253,7 +249,3 @@ To check CPU and memory usage of nodes and pods:
 kubectl top nodes
 kubectl top pod
 ```
-
-## Conclusion
-
-This guide covers the basic to intermediate operations you’ll frequently use in Kubernetes with `kubectl`. As you grow more comfortable, explore more advanced operations such as custom resources, autoscaling, and Helm charts.
