@@ -61,6 +61,11 @@
       "permanent": false
     },
     {
+      "source": "/r/extension/unsupported-shell",
+      "destination": "/installation/windows",
+      "permanent": false
+    },
+    {
       "source": "/getting-started/faq",
       "destination": "/resources/faq",
       "permanent": true
