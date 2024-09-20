@@ -1,5 +1,5 @@
 ---
-title: Telemtry
+title: Telemetry
 ---
 
 Your privacy is of utmost importance. Runme collects telemetry information, all of which is pseudo-anonymized (no PII). Runme respects both [VS Code's global "no telemetry"](https://code.visualstudio.com/docs/getstarted/telemetry) (id: `telemetry.telemetryLevel`) setting and the common `DO_NO_TRACK=1` environment variable.
