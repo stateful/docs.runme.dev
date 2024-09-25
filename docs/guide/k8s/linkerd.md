@@ -1,3 +1,9 @@
+---
+runme:
+  id: 01J8M72V254RGQ6SDZKQZZE33Q
+  version: v3
+---
+
 # Linkerd
 
 This guide will walk you through installing Linkerd, deploying a basic application, and using its observability and security features with Runme.
@@ -6,7 +12,7 @@ This guide will walk you through installing Linkerd, deploying a basic applicati
 
 Before proceeding with this guide, ensure you have the following.
 
-- Runme Extension: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](/docs/installation/vscode#configure-your-default-markdown-editor).
+- Runme Extension: Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](/installation/vscode#configure-your-default-markdown-editor).
 - Kubernetes cluster: A functioning Kubernetes cluster (such as Minikube, k3d, or a cloud provider's managed Kubernetes).
 - kubectl: Kubernetes CLI installed and configured to interact with your cluster.
 - Helm (optional): For easier management of Linkerd and its extensions.
@@ -138,7 +144,7 @@ You can now access advanced visualizations, including the Grafana dashboards.
 
 Linkerd has a powerful web dashboard that allows you to view your services.
 
-To open the Linkerd dashboard, run this command. You can also use the [Runme background task feature](/docs/getting-started/vscode#background-processes) to make this run in the background while executing other commands.
+To open the Linkerd dashboard, run this command. You can also use the [Runme background task feature](/getting-started/vscode#background-processes) to make this run in the background while executing other commands.
 
 ```sh {"id":"01J8M5K3HVDMCAVXF7BDH1WV8Z"}
 linkerd viz dashboard
@@ -164,7 +170,7 @@ linkerd stat deploy -n emojivoto
 
 This will show success rates, request latencies, and request volumes for your services.
 
-To get more detailed traffic information, you can use `tap`. You can set this command to run in the background using the [background task feature](/docs/getting-started/vscode#background-processes) of Runme.
+To get more detailed traffic information, you can use `tap`. You can set this command to run in the background using the [background task feature](/getting-started/vscode#background-processes) of Runme.
 
 ```sh {"id":"01J8M5NV3J8JG8Y6SCJ1G62VDT"}
 linkerd tap deploy -n emojivoto
@@ -196,6 +202,6 @@ In this guide, you’ve learned how to install and use Linkerd for service mesh 
 
 To learn more about Runme and how it works with Kubernetes to make work easier, read our guides:
 
-- [Istio Service Mesh](/docs/guide/k8s/istio)
-- [Kubectl](/docs/guide/k8s/kubectl)
-- [Argo CD](/docs/guide/k8s/argocd-cli)
+- [Istio Service Mesh](/guide/k8s/istio)
+- [Kubectl](/guide/k8s/kubectl)
+- [Argo CD](/guide/k8s/argocd-cli)
