@@ -1,9 +1,3 @@
----
-runme:
-  id: 01J8M72V254RGQ6SDZKQZZE33Q
-  version: v3
----
-
 # Linkerd
 
 This guide will walk you through installing Linkerd, deploying a basic application, and using its observability and security features with Runme.
@@ -195,6 +189,79 @@ linkerd viz stat deploy -n emojivoto
 You should see the percentage of requests secured by mTLS in the output.
 
 Linkerd automatically manages mTLS certificates and handles certificate rotation, so minimal configuration is required. You can enforce policy checks to ensure all communication is encrypted.
+
+## How to USE Linkerd Annotations on Kubernetes
+
+Using Linkerd annotations in Kubernetes allows Linkerd to inject its service mesh sidecar proxy into your pods or deployments. These sidecar proxies enable traffic management, security, and observability features that Linkerd provides.
+
+**Pod Annotation**
+
+In this example, you are manually annotating a Pod to inject the Linkerd sidecar proxy.
+
+```yaml {"id":"01J8M8Q3AS2V58MNX3J36HVKYV"}
+cat <<EOF | sudo tee ./linkerd-pod.yaml > /dev/null
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  annotations:                   # <<<<< Injected annotation
+    linkerd.io/inject: enabled    # <<<<< This annotation tells Linkerd to inject the proxy
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      ports:
+        - containerPort: 80
+EOF
+
+```
+
+To apply this pod definition to your Kubernetes cluster, run the following command:
+
+```yaml {"id":"01J8M95ZZ7D5M8NNYXBG4NMQVV"}
+kubectl apply -f linkerd-pod.yaml
+```
+
+![linkerd-pod](../../../static/img/linkerd-pod.png)
+
+**Deployment Annotation**
+
+For Deployments, the annotation works similarly. However, you add the annotation to the pod template inside the deployment configuration. This ensures that every pod created by the deployment will have the Linkerd sidecar proxy injected.
+
+```yaml {"id":"01J8M8QSR547MPJDGHH1Z7PFA7"}
+cat <<EOF | sudo tee ./linkerd-deployment.yaml > /dev/null
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+      annotations:                     # <<<<< Injected annotation
+        linkerd.io/inject: enabled      # <<<<< This annotation enables injection for all pods in this deployment
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+EOF
+
+```
+
+To deploy this configuration, run the following command:
+
+```sh {"id":"01J8M996K615PHTRBKWGRVS5RS"}
+kubectl apply -f linkerd-deployment.yaml
+```
+
+![linkerd-depoloyment](../../../static/img/linkerd-deployment.png)
 
 ## **Conclusion**
 
