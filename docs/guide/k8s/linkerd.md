@@ -42,7 +42,7 @@ kubectl get ns
 
 ## **Install the Linkerd CLI**
 
-After setting up the project, the next step is to install the Linkerd CLI. The CLI helps with tasks like installing Linkerd into your cluster, validating your setup, and checking the status of your mesh. To install, run the command below.
+After setting up the project, the next step is to install the [Linkerd CLI](https://linkerd.io/2.16/getting-started/#step-1-install-the-cli). The CLI helps with tasks like installing Linkerd into your cluster, validating your setup, and checking the status of your mesh. To install, run the command below ( if you have [brew](https://brew.sh/) already installed).
 
 ```sh {"id":"01J8M55WEWHYWXJE9ZRC1Q6TPE"}
 brew install linkerd
@@ -116,7 +116,7 @@ kubectl get -n emojivoto deploy -o yaml \
 
 This command injects the Linkerd sidecar proxy into the application. The proxy helps secure and monitor service-to-service communication.
 
-**Extend Linkerd (Optional)**
+**Extend Linkerd**
 
 Linkerd has several extensions that can be installed to add extra functionality, such as:
 
