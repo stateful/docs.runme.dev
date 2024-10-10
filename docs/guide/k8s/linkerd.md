@@ -1,8 +1,14 @@
+---
+runme:
+  id: 01J9VTS994A2MRWZRQNFWNT05D
+  version: v3
+---
+
 # Linkerd
 
 This guide will walk you through installing Linkerd, deploying a basic application, and using its observability and security features with Runme.
 
-### **Prerequisites**
+## Prerequisites
 
 Before proceeding with this guide, ensure you have the following.
 
@@ -34,7 +40,7 @@ To check if your cluster is running, run the command below.
 kubectl get ns
 ```
 
-## **Install the Linkerd CLI**
+## Install the Linkerd CLI
 
 After setting up the project, the next step is to install the [Linkerd CLI](https://linkerd.io/2.16/getting-started/#step-1-install-the-cli). The CLI helps with tasks like installing Linkerd into your cluster, validating your setup, and checking the status of your mesh. To install, run the command below ( if you have [brew](https://brew.sh/) already installed).
 
@@ -48,7 +54,7 @@ Verify the installation by checking the version:
 linkerd version
 ```
 
-### **Validate Your Cluster**
+### Validate Your Cluster
 
 To validate and ensure your cluster is ready to use Linkerd, run this command.
 
@@ -58,7 +64,7 @@ linkerd check --pre
 
 This command will validate that your Kubernetes cluster meets Linkerd’s requirements (e.g., proper Kubernetes version, sufficient resources, etc.).
 
-### **Install Linkerd Control Plane**
+### Install Linkerd Control Plane
 
 To install Linkerd’s control plane, run the following commands. The control plane comprises components like the Linkerd controller, proxy injector, and web UI.
 
@@ -82,7 +88,7 @@ linkerd check
 
 Once installed, you’ll see a confirmation that Linkerd is running correctly.
 
-## **Deploy Your First Application with Linkerd**
+## Deploy Your First Application with Linkerd
 
 You can deploy a sample application to demonstrate Linkerd in action. Let's use Linkerd's sample app, `emojivoto`. In this section, we will explore the steps to achieving that.
 
@@ -263,7 +269,7 @@ kubectl apply -f linkerd-deployment.yaml
 
 ![linkerd-depoloyment](../../../static/img/linkerd-deployment.png)
 
-## **Conclusion**
+## Conclusion
 
 In this guide, you’ve learned how to install and use Linkerd for service mesh capabilities on a Kubernetes cluster. You’ve explored core features like proxy injection, observability and secure mTLS communication.
 
