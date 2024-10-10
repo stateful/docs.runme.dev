@@ -4,11 +4,11 @@ runme:
   version: v3
 ---
 
-# Runme in a DevContainer
+# Runme in a Devcontainer
 
 ## Creating your development container
 
-A development container, also known as a `DevContainer`, is a dockerized container that allows you to run your software in a fully configured development environment. This significantly speeds up application deployment and scalability.
+A development container, also known as a `Devcontainer`, is a dockerized container that allows you to run your software in a fully configured development environment. This significantly speeds up application deployment and scalability.
 
 Dev containers are highly preferred as they enable developers to run programs without configuring anything and with zero setup required.
 

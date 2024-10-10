@@ -271,6 +271,11 @@
       "permanent": true
     },
     {
+      "source": "/usage/run-category",
+      "destination": "/usage/run-tag",
+      "permanent": true
+    },
+    {
       "source": "/architecture",
       "destination": "/resources/architecture",
       "permanent": true

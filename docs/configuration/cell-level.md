@@ -31,7 +31,7 @@ Cell level options gives users the flexibility to modify the behavior of each ex
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | background             | Indicates if the cell should be runned as a background process                                                                     | false                    |
 | closeTerminalOnSuccess | Hide Terminal after cell successful execution                                                                                      | true                     |
-| category               | Execute this code cell within a category                                                                                           | [empty]                  |
+| tag / category         | Execute code cells matching a tag or category (deprecated)                                                                         | [empty]                  |
 | cwd                    | Modify current working directory for cell execution                                                                                | [empty]                  |
 | excludeFromRunAll      | Prevent executing this cell during the "Run All" operation                                                                         | false                    |
 | interactive            | Indicates if run should allow interactive input                                                                                    | false                    |

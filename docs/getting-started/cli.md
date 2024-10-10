@@ -1,8 +1,3 @@
----
-sidebar_position: 2
-title: CLI
----
-
 # Runme CLI
 
 With the CLI, you can run commands from your Notebooks in the terminal. The Runme CLI is available for MacOS, Windows, and other platforms.
@@ -212,6 +207,6 @@ This command opens Runme in your web browser.
 
 See more resources on how Runme works:
 
-[Getting started with the browser](/getting-started/web)
-[Getting started in VS Code](/getting-started/vscode)
-[Getting started on VS Code SSH and Remote](/getting-started/vscode-ssh)
+- [Getting started with the browser](/getting-started/web)
+- [Getting started in VS Code](/getting-started/vscode)
+- [Getting started on VS Code SSH and Remote](/getting-started/vscode-ssh)

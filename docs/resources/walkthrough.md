@@ -49,9 +49,9 @@ Create generic documentation and notebooks using Runme's smart prompting feature
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/prompting.mp4" type="video/mp4" />
-  <source src="/videos/prompting.mp4" type="video/mp4" />
+  <source src="../../static/videos/prompting.mp4" type="video/mp4" />
   <source src="/videos/prompting.webm" type="video/webm" />
-  <source src="/videos/prompting.webm" type="video/webm" />
+  <source src="../../static/videos/prompting.webm" type="video/webm" />
 </video>
 <br/>
 
@@ -77,9 +77,9 @@ Outside of that, you can reference cells in two ways. This is particularly usefu
 
 <video autoPlay loop muted playsInline controls>
   <source src="/videos/referencing.mp4" type="video/mp4" />
-  <source src="/videos/referencing.mp4" type="video/mp4" />
+  <source src="../../static/videos/referencing.mp4" type="video/mp4" />
   <source src="/videos/referencing.webm" type="video/webm" />
-  <source src="/videos/referencing.webm" type="video/webm" />
+  <source src="../../static/videos/referencing.webm" type="video/webm" />
 </video>
 <br/>
 
