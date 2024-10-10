@@ -61,6 +61,11 @@
       "permanent": false
     },
     {
+      "source": "/r/extension/unsupported-shell",
+      "destination": "/installation/windows",
+      "permanent": false
+    },
+    {
       "source": "/getting-started/faq",
       "destination": "/resources/faq",
       "permanent": true
@@ -263,6 +268,11 @@
     {
       "source": "/guide/sops",
       "destination": "/guide/k8s/sops",
+      "permanent": true
+    },
+    {
+      "source": "/usage/run-category",
+      "destination": "/usage/run-tag",
       "permanent": true
     },
     {
