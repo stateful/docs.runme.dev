@@ -1,9 +1,6 @@
----
----
-
 # BigQuery
 
-In this guide, you will learn how to manage data queries using BigQueris and Runme.
+In this guide, you will learn how to manage data queries using BigQuery and Runme.
 
 ## Prerequisites
 

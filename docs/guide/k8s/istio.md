@@ -1,14 +1,7 @@
----
-runme:
-  id: 01J4PEEDGDB2XNDVEMT2A5NAY9
-  version: v3
----
 
 # Istio Service Mesh
 
-Runme interactive notebook is designed to help you execute and document your daily automation tasks.
-
-With Runme, you can run your code and commands directly within the notebook, which makes it easy to manage and improve your workflow.
+Runme is designed to help you execute and document your daily automation tasks. With Runme, you can run your code and commands directly within the notebook, which makes it easy to manage and improve your workflow.
 
 In this guide, we will focus on integrating Istio, a powerful service mesh, into your Markdown files using Runme. Istio helps you manage and secure your microservices.
 
@@ -18,9 +11,8 @@ By the end of this guide, you'll be able to use Runme to efficiently set up and 
 
 To follow up on this tutorial, ensure you have the following:
 
-**Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
-
-**Required Packages:** Install the required packages (kind, kubectl, helm) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
+- **Runme Extension:** Install the [Runme extension](https://marketplace.visualstudio.com/items?itemName=stateful.runme) in your VS Code editor and set it as your [default Markdown viewer](/installation/vscode#how-to-set-vs-code-as-your-default-markdown-viewer).
+- **Required Packages:** Install the required packages (kind, kubectl, helm) in your Markdown file. Runme allows you to achieve this! Simply run the command below.
 
 ```sh {"id":"01J4PEEDESRWQG8MDQNJATK6CD"}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -353,8 +345,6 @@ kind delete cluster --name my-cluster
 
 Some other guides you may want to explore:
 
-[Deploying and Managing Applications with Runme and Argo CD](/guide/k8s/argocd)
-
-[Advanced Guide to Argo CD and Runme](/guide/k8s/argocd-cli)
-
-[How to Setup a Monitoring Stack for Your Applications by Leveraging Runme](/guide/monitoring-stack)
+- [Deploying and Managing Applications with Runme and Argo CD](/guide/k8s/argocd)
+- [Advanced Guide to Argo CD and Runme](/guide/k8s/argocd-cli)
+- [How to Setup a Monitoring Stack for Your Applications by Leveraging Runme](/guide/monitoring-stack)
