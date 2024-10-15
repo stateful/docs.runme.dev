@@ -8,11 +8,11 @@ With this feature, you can easily track changes, versions, and the complete hist
 
 ### Usage
 
-The following metadata will be added to your Markdown file :
+The following metadata will be added to your Markdown file:
 
 `id`: The unique identifier that represents the specific instance of your document or cell.
 
-`version`: The current version number on your document or cell is the version of Runme you are using.
+`version`: The current version number on your document is the version of Runme you are using.
 
 Here is a sample of what the lifecycle identity on your file looks like:
 
