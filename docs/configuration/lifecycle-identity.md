@@ -38,6 +38,8 @@ To manually remove the lifecycle identities, cell- & doc-level, from your markdo
 runme fmt reset --write
 ```
 
+Remove `--write` to only print the updated markdown files (dry-run) to the console.
+
 ### Configuration
 
 To update the Lifecycle Identity feature in Runme, follow these steps:
