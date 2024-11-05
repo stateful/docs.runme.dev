@@ -1,0 +1,18 @@
+{
+  "name": "docs.runme.dev",
+  "engineVersion": "v0.13.7",
+  "sdk": "typescript",
+  "dependencies": [
+    {
+      "name": "docusaurus",
+      "source": "github.com/levlaz/daggerverse/docusaurus@docusaurus/v0.7.0",
+      "pin": "f073c72e0a7345bba2173a15269307df297c3c13"
+    },
+    {
+      "name": "google-cloud-run",
+      "source": "github.com/vvaswani/daggerverse/google-cloud-run@google-cloud-run/v0.1.5",
+      "pin": "6e44ee4a901dda7d742574354132745701db3c52"
+    }
+  ],
+  "source": "dagger"
+}
