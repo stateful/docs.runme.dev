@@ -2,6 +2,7 @@
 cwd: ..
 runme:
   id: 01JBWW23ENADYZXX5KFGME12KR
+  version: v3
 terminalRows: 20
 ---
 
@@ -23,8 +24,8 @@ dagger call --site . \
 
 ## Deploy a docs site preview
 
-```sh {"id":"01JBWVFDXVDBBMRQAQA61NN6CB","name":"check","terminalRows":"3"}
-echo "Deploying preview into \"${DOCS_GCP_PROJECT_ID}\" in \"${DOCS_GCP_REGION}\" from registry repo \"${DOCS_GCP_ARTIFACTS_REPO}\"."
+```sh {"id":"01JBWVFDXVDBBMRQAQA61NN6CB","name":"where","terminalRows":"3"}
+echo "Deploying preview into \"${DOCS_GCP_PROJECT_ID}\" in \"${DOCS_GCP_REGION}\" via artifacts repo \"${DOCS_GCP_ARTIFACTS_REPO}\"."
 ```
 
 This will deploy a preview of the docs site to the cloud.
@@ -38,7 +39,7 @@ dagger call --site . \
     --credentials="env:DOCS_GCP_CREDENTIALS"
 ```
 
-```sh {"id":"01JBWV44M5ZJCAERKS9E5KP7RS","interactive":"true"}
+```sh {"id":"01JBWV44M5ZJCAERKS9E5KP7RS","interactive":"true","terminalRows":"5"}
 echo "Opening ${DEPLOY_URL}"
 open ${DEPLOY_URL}
 ```
