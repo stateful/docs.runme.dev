@@ -24,7 +24,7 @@ dagger call --site . \
 
 ## Deploy a docs site preview
 
-```sh {"id":"01JBWVFDXVDBBMRQAQA61NN6CB","name":"where","terminalRows":"3"}
+```sh {"id":"01JBWVFDXVDBBMRQAQA61NN6CB","name":"deploy-where","terminalRows":"3"}
 echo "Deploying preview into \"${DOCS_GCP_PROJECT_ID}\" in \"${DOCS_GCP_REGION}\" via artifacts repo \"${DOCS_GCP_ARTIFACTS_REPO}\"."
 ```
 
