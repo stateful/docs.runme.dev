@@ -10,6 +10,10 @@ terminalRows: 20
 
 See what functions are available in the `docs` module, and how to use them.
 
+If you're running this example for the first time, please complete the steps in [prerequisites](#SETUP.md) first.
+
+> 💡 Be sure to switch to the pre-release version of the Runme extension to see the `Env Store` tab. [Here](https://docs.runme.dev/installation/vscode#bleeding-edge-features) is how.
+
 ```sh {"id":"01JBW9KGZT5XE4B0G1Z8GK1239","terminalRows":"8"}
 dagger functions
 ```
