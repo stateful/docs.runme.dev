@@ -10,7 +10,7 @@ terminalRows: 20
 
 See what functions are available in the `docs` module, and how to use them.
 
-If you're running this example for the first time, please complete the steps in [prerequisites](#SETUP.md) first.
+If you're running this example for the first time, please complete the steps in [prerequisites](SETUP.md) first.
 
 > 💡 Be sure to switch to the pre-release version of the Runme extension to see the `Env Store` tab. [Here](https://docs.runme.dev/installation/vscode#bleeding-edge-features) is how.
 
