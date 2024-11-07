@@ -70,7 +70,7 @@ gcloud iam service-accounts keys create key.json \
 
 ```sh {"id":"01JC48Q5C34FBCHQX9R01ED9R5"}
 gcloud secrets create "credentials" --replication-policy="automatic"
-gcloud secrets versions add "credentials" --data-file=~/key.json
+gcloud secrets versions add "credentials" --data-file=./key.json
 gcloud secrets create "artifacts_repo" --replication-policy="automatic"
 echo "runme-docs" | gcloud secrets versions add "artifacts_repo" --data-file=-
 ```
