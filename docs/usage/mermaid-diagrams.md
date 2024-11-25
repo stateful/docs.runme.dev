@@ -8,7 +8,7 @@ If you want to render Mermaid diagrams in your Runme Notebooks it can actually b
 
 ### Install the VS Code extension
 
-Either from [this link](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or in the VS Code extension panel, search for "Markdown Preview Mermaid Support".
+Either from [this link](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) or in the VS Code extension panel, search for "Markdown Preview Mermaid Support". We recommend adding `bierner.markdown-mermaid` to your project's `.vscode/extensions.json` file.
 
 ### Put the following syntax in a Markdown block
 
@@ -26,9 +26,9 @@ C-->D;
 
 ![Mermaid example](/img/mermaid.svg)
 
-### If you need to render the source of a Mermaid diagram, add the following annotation:
+### If you want a cell do display the source of a Mermaid diagram, add the following annotation:
 ````text
-```mermaid {"transform":"false"}
+```mermaid {"transform":"true"}
 graph TD;
 A-->B;
 A-->C;
