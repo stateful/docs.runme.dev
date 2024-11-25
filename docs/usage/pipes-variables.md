@@ -14,7 +14,7 @@ Runme swiftly allows for complex piping and usage of variables across cells. Her
 git branch -l | grep -v "chore"
 ```
 
-- **Process the Output in `$**` a Subsequent Cell\_\_:
+**Process the Output inside `$GIT_BRANCHES` in a Subsequent Cell**:
 
 ```sh {"id":"01HRVZ4RR371G2PTEPCADCP58A"}
 echo "$__" | while read line
@@ -25,7 +25,9 @@ done
 
 **Process a ENV-variable-named Output**:
 
-Please note how above's cell is conveniently available in the environment via `$GIT_BRANCHES` (please [inspect raw markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/main/docs/getting-started/runbyexample.md)). Only cells named with uppercase letters and separated by underscores (min length is 3) are exported as environment variables:
+Please note how above's cell is conveniently available in the environment via `$GIT_BRANCHES` (see screen below or [inspect raw markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/refs/heads/main/docs/usage/pipes-variables.md)). Only cells named with uppercase letters and separated by underscores (min length is 3) are exported as environment variables:
+
+![Named cell in raw markdown](../../static/img/raw-name-for-cell.png)
 
 The convention is simple e.g.:
 
