@@ -1,11 +1,8 @@
----
----
-
 # Launch Runme from your website
 
 As a developer, you may often find yourself writing and reading technical blog posts, GitHub project READMEs, Stack Overflow answers and developer documentation. Have you ever wished you could click a link within any of them to launch a VS Code environment and automatically run the commands? This is a useful (and easy) way to verify that all the commands in the project are correct and the outputs/responses make sense. Also, if you have code examples this is a great way to help people quickly check them out and start experimenting.
 
-**With our latest release, you can do just that!**
+**You can do just that!**
 
 Let’s take for example the blog post “[How to Process Large Files with Node.js](https://stateful.com/blog/process-large-files-nodejs-streams)” which is one of our most popular blog posts.
 

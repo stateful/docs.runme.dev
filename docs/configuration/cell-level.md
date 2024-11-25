@@ -72,10 +72,11 @@ echo "hello world"
 
 The above example uses the `echo` command to display the text **_hello world_** on the terminal. The context `{"interactive":"false","name":"echo-hello-world"}` indicates that the command is intended for non-interactive execution and has been labeled accordingly.
 
-Another example:
+Another example (HTML-attributes notation):
 
 ````sh {"id":"01HPM6HZEJKM8PPG6T38RABV9A"}
-```sh { interactive=true name=example mimetype=text/plain closeTerminalOnSuccess=false background=false }echo hello world
+```sh { interactive=true name=example mimetype=text/plain closeTerminalOnSuccess=false background=false }
+echo hello world
 ````
 
 To edit the Markdown syntax of your cell in Runme, click on the button indicated in the image below

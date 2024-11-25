@@ -9,7 +9,7 @@ These are the options specified in the front-matter that apply to all the cells 
 
 ### Options
 
-Cen be specified in yaml, json, or toml on top of the document.
+Can be specified in yaml, json, or toml on top of the document.
 
 | Configuration | Description                              | Default value             |
 | ------------- | ---------------------------------------- | ------------------------- |
