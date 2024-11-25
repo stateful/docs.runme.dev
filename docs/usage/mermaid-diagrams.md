@@ -12,16 +12,27 @@ Either from [this link](https://marketplace.visualstudio.com/items?itemName=bier
 
 ### Put the following syntax in a Markdown block
 
-<pre>
-::: mermaid
+````text
+```mermaid
 graph TD;
 A-->B;
 A-->C;
 B-->D;
 C-->D;
-:::
-</pre>
+```
+````
 
 ### You should get a diagram rendering, like the following:
 
-![Mermaid example](/img/mermaid.png)
+![Mermaid example](/img/mermaid.svg)
+
+### If you need to render the source of a Mermaid diagram, add the following annotation:
+````text
+```mermaid {"transform":"false"}
+graph TD;
+A-->B;
+A-->C;
+B-->D;
+C-->D;
+```
+````
