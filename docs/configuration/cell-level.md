@@ -179,12 +179,18 @@ openssl rand -base64 32
 
 ### Environment variables
 
-If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell.
+If a cell has exported variables, the user will be prompted to set these variables. This can be useful to have a parameterized cell while not needing to manually modify the cell. Following modes are available:
 
-**How to Enable PromptEnv**
+| Mode   | Description                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| auto [default] | Prompt when environment variable has no value (e.g. loaded from .env).                                |
+| always         | Always prompt allow for environment variable. Use existing value as placeholder if present.           |
+| never          | Never prompt for any environment variables. Evaluate expression and values as is or leave them empty. |
+
+**How to Set PromptEnv**
 
 - Click on `configure ⚙️` in your code cell
-- Click `promptEnv` to set the condition you want the cell to run in
+- Click `promptEnv` to set the mode you want the cell to run in
 
 ![promptenv](/img/getting-started/promptsenv.png)
 
