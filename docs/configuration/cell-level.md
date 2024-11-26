@@ -184,8 +184,8 @@ If a cell has exported variables, the user will be prompted to set these variabl
 | Mode   | Description                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------------------------------- |
 | auto [default] | Prompt when environment variable has no value (e.g. loaded from .env).                                |
-| always         | Always prompt allow for environment variable. Use existing value as placeholder if present.           |
-| never          | Never prompt for any environment variables. Evaluate expression and values as is or leave them empty. |
+| always / yes   | Always prompt allow for environment variable. Use existing value as placeholder if present.           |
+| never / no     | Never prompt for any environment variables. Evaluate expression and values as is or leave them empty. |
 
 **How to Set PromptEnv**
 
