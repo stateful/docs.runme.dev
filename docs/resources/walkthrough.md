@@ -8,7 +8,7 @@ title: Walkthrough
 
 # Runme Walkthrough
 
-> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on **[docs.runme.dev](https://docs.runme.dev/)** which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
+> 💡 This document is a self contained Runme Notebook which will guide you through Runme's key features. If you have _VS Code_ installed locally, you can open this document in Runme by clicking the _"Open with Runme"_ badge on __[docs.runme.dev](https://docs.runme.dev/)__ which will open this document as a notebook locally. If you are already inside VS Code, you can skip over the next paragraph.
 
 ## Clone the Repository
 
@@ -35,7 +35,7 @@ npx runme open
 
 Let's quickly run through some examples:
 
-> 🚨 Please be absolutely sure that you have cloned into the repository and opened the `docs/index.md` file in the notebook UI inside VS Code.
+> 🚨 Please be absolutely sure that you have cloned into the repository and opened the `docs/resources/walkthrough.md` file in the notebook UI inside VS Code.
 
 <br/>
 
@@ -55,7 +55,7 @@ Create generic documentation and notebooks using Runme's smart prompting feature
 </video>
 <br/>
 
-Runme's default prompt setting is _"auto"_, meaning it won't prompt again on re-runs if the values are already known. To change this, click **"Configure"** on the cell and set `promptEnv` to `no` (never prompt; run as is) or `yes` (always prompt; overwrite previous values).
+Runme's default prompt setting is _"auto"_, meaning it won't prompt again on re-runs if the values are already known. To change this, click __"Configure"__ on the cell and set `promptEnv` to `never` (never prompt; run as is) or `always` (always prompt; overwrite previous values).
 
 Try it yourself—just click the play button!
 
@@ -67,7 +67,7 @@ export CLUSTER_ZONE="us-central1-c"
 echo "CLUSTER_ZONE set to $CLUSTER_ZONE"
 ```
 
-You can reset all environment variables using the **Reset Session** button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
+You can reset all environment variables using the __Reset Session__ button in the top bar or choose _"Execute and always prompt for input"_ from the caret menu next to the play button. Learn more [here](https://docs.runme.dev/configuration/cell-level#set-environment-variables).
 
 ## Piping and Referencing Cells
 
@@ -99,7 +99,7 @@ echo -n "Previous cell's output was:\n\n$__"
 
 ### 2. Reference by Cell Name
 
-Notice how the cell above is named `FILE_LIST` (visible in notebook UI & [raw Markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/main/docs/index.md)). This allows you to reference the output of that cell by using the cell name as an environment variable. This makes reference outputs more robust since they no longer have to run back-to-back. However, sequence still matters. The referenced cells has to run first.
+Notice how the cell above is named `FILE_LIST` (visible in notebook UI & [raw Markdown](https://raw.githubusercontent.com/stateful/docs.runme.dev/refs/heads/main/docs/resources/walkthrough.md)). This allows you to reference the output of that cell by using the cell name as an environment variable. This makes reference outputs more robust since they no longer have to run back-to-back. However, sequence still matters. The referenced cells has to run first.
 
 ```sh {"id":"01HY18W7RX74HFNZSBNYB9SEFR"}
 echo "Reference a cell via the ENV using its name \"\$FILE_LIST\":"
