@@ -44,7 +44,7 @@ Remove `--write` to only print the updated markdown files (dry-run) to the conso
 
 To update the Lifecycle Identity feature in Runme, follow these steps:
 
-- Navigate to Runme's [Extension Settings](https://docs.runme.dev/getting-started/vs-code#runme-settings-for-vs-code) on your [VS code](https://docs.runme.dev/install#runme-for-vs-code). Click on the **Settings** icon and select **Extension Settings**. The Runme extension can be found in the extension toolbar on the left side of your screen.
+- Navigate to Runme's [Extension Settings](https://docs.runme.dev/configuration/lifecycle-identity) on your [VS code](https://docs.runme.dev/installation/vscode). Click on the **Settings** icon and select **Extension Settings**. The Runme extension can be found in the extension toolbar on the left side of your screen.
 - Next, choose the tracking level by selecting the document you wish to enable lifecycle identity tracking.
 
 ![lifecycle-identity](/img/lifecycle-identity1.png)
