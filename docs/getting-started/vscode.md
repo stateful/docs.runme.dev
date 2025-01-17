@@ -205,7 +205,7 @@ Sometimes, you will want to see the file as a regular Markdown file, and you don
 
 To help you navigate the Markdown files in your project, Runme adds a super handy `Runme Notebooks` panel. Clicking any Markdown file will open it in your code editor view:
 
-![notebook explorer](/img/runme-noteboooks.png)
+![notebook explorer](/img/runme-notebooks.png)
 
 ## Next Steps
 
