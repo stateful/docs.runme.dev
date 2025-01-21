@@ -203,9 +203,17 @@ Sometimes, you will want to see the file as a regular Markdown file, and you don
 
 ### Notebook Explorer
 
-To help you navigate the Markdown files in your project, Runme adds a super handy `Runme Notebooks` panel. Clicking any Markdown file will open it in your code editor view:
+To help you navigate the Markdown files in your project, Runme adds a super handy `Runme Notebooks` panel. It allows you to open and run cells quickly:
 
-![notebook explorer](/img/runme-noteboooks.png)
+![notebook explorer](/img/runme-notebooks.png)
+
+Include or Exclude unnamed cells
+
+![notebook explorer - Include / Exclude](/videos/runme-notebooks-1.gif)
+
+Open and Run cells
+
+![notebook explorer - Open and Run](/videos/runme-notebooks-2.gif)
 
 ## Next Steps
 
