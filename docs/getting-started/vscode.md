@@ -211,6 +211,10 @@ Include or Exclude unnamed cells
 
 ![notebook explorer - Include / Exclude](/videos/runme-notebooks-1.gif)
 
+Open and Run cells
+
+![notebook explorer - Open and Run](/videos/runme-notebooks-2.gif)
+
 ## Next Steps
 
 Congratulations!
