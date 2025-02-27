@@ -1,4 +1,5 @@
 {
+  "framework": "docusaurus",
   "redirects": [
     {
       "source": "/r/extension/background",
