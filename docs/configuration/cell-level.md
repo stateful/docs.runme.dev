@@ -39,7 +39,7 @@ Cell level options gives users the flexibility to modify the behavior of each ex
 | mimetype               | If set skips auto-detection and uses specific media (MIME) type                                                                    | [empty]                    |
 | name                   | Cell’s canonical name useful for referencing the cell via CLI                                                                      | [auto-generated]           |
 | ignore                 | Ingore code block from CLI and notebook transformation into a runnable cell                                                        | false                      |
-| transform              | Transform code block from CLI and notebook transformation into a runnable cell (inverse of ignore; most relevant for `mermaid`)    | true                       |
+| transform              | Transform code block into a runnable cell (notebook) and include as task in CLI (inverse of ignore; most relevant for `mermaid`)   | true                       |
 | terminalRows           | Number of rows to display in the notebook terminal                                                                                 | [auto-set]                 |
 | promptEnv              | Prompt user to set exported environment vars                                                                                       | auto                       |
 | skipPrompts            | Bypasses interactive [prompts](/configuration/cell-level) that require inputting environment vars or authentication confirmations. | false                      |
