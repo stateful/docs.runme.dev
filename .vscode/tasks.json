@@ -1,16 +1,4 @@
 {
   "version": "2.0.0",
-  "tasks": [
-    {
-      "type": "runme",
-      "fileUri": "",
-      "command": "start",
-      "problemMatcher": [],
-      "label": "README.md: start",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    }
-  ]
+  "tasks": []
 }
