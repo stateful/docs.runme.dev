@@ -228,7 +228,7 @@ Runme auto-detects runtimes based on the language selection per cell.
     <tr>
       <td><a target="_blank" href="https://www.rust-lang.org/">Rust</a></td>
       <td>rust, rs</td>
-      <td>rust-script</td>
+      <td><a target="_blank" href="https://rust-script.org/">rust-script</a></td>
     </tr>
     <tr>
       <td><a target="_blank" href="https://en.wikipedia.org/wiki/Unix_shell">Unix Shell</a></td>
