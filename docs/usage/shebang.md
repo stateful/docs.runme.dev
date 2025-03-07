@@ -226,6 +226,11 @@ Runme auto-detects runtimes based on the language selection per cell.
       <td>ruby</td>
     </tr>
     <tr>
+      <td><a target="_blank" href="https://www.rust-lang.org/">Rust</a></td>
+      <td>rust, rs</td>
+      <td>rust-script</td>
+    </tr>
+    <tr>
       <td><a target="_blank" href="https://en.wikipedia.org/wiki/Unix_shell">Unix Shell</a></td>
       <td>shell, sh</td>
       <td>bash, sh</td>
